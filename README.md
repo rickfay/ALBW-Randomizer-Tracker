@@ -1,4 +1,4 @@
-# Zelda: A Link Between Worlds Randomizer Dungeon Tracker
+# The Legend of Zelda: A Link Between Worlds Randomizer Dungeon Tracker
 
 ## About
 
@@ -6,7 +6,7 @@ This is an EmoTracker pack for tracking progress in The Legend of Zelda: A Link 
 
 ## Download
 
-- Download here: (tba)
+- Download here: https://github.com/rickfay/ZALBWR-Dungeon-Tracker/raw/master/zalbwr_dungeon_tracker.zip
 
 ## Release Notes
 

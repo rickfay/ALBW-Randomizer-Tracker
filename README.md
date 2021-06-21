@@ -17,6 +17,14 @@ This is an EmoTracker pack for tracking progress in The Legend of Zelda: A Link 
 - Author: LemonKong
 - Version: 0.0.1
     - Initial Beta release. Moved to new repo.
+    
+## Screen Shots
+
+![screenshot_01.png](screenshots/screenshot_01.png?raw=true)
+![screenshot_02.png](screenshots/screenshot_02.png?raw=true)
+![screenshot_03.png](screenshots/screenshot_03.png?raw=true)
+![screenshot_04.png](screenshots/screenshot_04.png?raw=true)
+
 
 ## Features
 

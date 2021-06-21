@@ -1,24 +1,28 @@
 # The Legend of Zelda: A Link Between Worlds Randomizer Dungeon Tracker
 
+## Download + Installation
+
+Link: https://github.com/rickfay/ZALBWR-Dungeon-Tracker/raw/master/zalbwr_dungeon_tracker.zip
+
+Drop in this directory:  C:/Users/your_name/Documents/EmoTracker/packs
+
+That's it!
+
 ## About
 
 This is an EmoTracker pack for tracking progress in The Legend of Zelda: A Link Between Worlds Randomizer.
-
-## Download
-
-- Download here: https://github.com/rickfay/ZALBWR-Dungeon-Tracker/raw/master/zalbwr_dungeon_tracker.zip
 
 ## Release Notes
 
 - Author: LemonKong
 - Version: 0.0.1
-    - Initial Beta version
+    - Initial Beta release. Moved to new repo.
 
 ## Features
 
 - **Dungeon Tracker:** Maps for every dungeon, with full logic tracking! Check out the locations and accessibility of
   chests, small keys, heart containers, and dungeon rewards at a glance. A multi-tabbed, flexible layout is provided,
-  one that can neatly accommodate even Hera's massive thirteen floors and provide quick and ease switching between maps.
+  one that can neatly accommodate even Tower of Hera's massive thirteen floors!
 
 
 - **Maiamai Map**: Click the Maiamai Map icon to be shown all Maiamai currently in logic! All 100 Maiamai are present,
@@ -40,14 +44,34 @@ This is an EmoTracker pack for tracking progress in The Legend of Zelda: A Link 
   game's new additions. The entire layout is kept compact, with all items fitting neatly inside a 6x8 grid.
 
 
-- **Options Menu**: The tracker supports Standard + Open modes, but will default to the popular Open Mode settings. You can tweak these as you like in the Options Menu; presets are a planned feature for a future update. Also, several difficult tricks are not considered in logic by default, but can be enabled from this same menu.
+- **Options Menu**: The tracker supports Standard + Open modes, but will default to the popular Open Mode settings. You
+  can tweak these as you like in the Options Menu; presets are a planned feature for a future update. Also, several
+  difficult tricks are not considered in logic by default, but can be enabled from this same menu. Currently available
+  options include:
+    - Use Items without Lamp
+    - Skip Captain's Sword Delivery
+    - Skip Sanctuary ("Open" Mode)
+    - Barrier Up before Eastern Palace
+    - Shuffle the Sword
+    - Shuffle the Lamp
+    - Lampless
+    - Lamp as a Weapon
+    - Net as a Weapon
+    - Pegasus Boots as a Weapon
+    - Regular Bomb Boosting
+    - Shield Rod Clipping
+    - Bee Boosting
+    - Portal Clipping
+    - Zaganaga with Bow
+    - Zaganaga with Sword Beams
 
 
 - **Item-Only Mode:** Disable maps and show only the compact item tracker.
     - Broadcast Mode will similarly show only the compact item tracker.
 
 
-- **Pinned Locations**: Pin any location to the side bar for later! Scroll bar support added for those who like to pin all the things.
+- **Pinned Locations**: Pin any location to the side bar for later! Scroll bar support added for those who like to pin
+  all the things.
 
 
 - **Capture Item Support**: Take notes! The tracker supports recording the contents of all dungeon chests and
@@ -59,7 +83,7 @@ This is an EmoTracker pack for tracking progress in The Legend of Zelda: A Link 
 
 - **Why did you make this?**
     - Why does anyone make anything?
-    
+
 
 - **Why all the Triforces?**
     - The black Lorulean Triforce (I like to call it the "Loforce") represents gaining access to Lorule, and is the
@@ -92,13 +116,16 @@ This is an EmoTracker pack for tracking progress in The Legend of Zelda: A Link 
 
 
 - **Why isn't the trigger for Ravio's Signs available?**
-    - On Standard Mode, the signs won't appear until you go through the game's prologue story triggers. After completing the Sanctuary, you need to go to Zelda to get the Special Charm, and then Sahasrahla's House to have him mark your map with an X.
-      - There are no checks on the map for Special Charm/Sahasrahla. If this becomes a problem or creates confusion, I will add them, but I didn't think they were necessary.
+    - On Standard Mode, the signs won't appear until you go through the game's prologue story triggers. After completing
+      the Sanctuary, you need to go to Zelda to get the Special Charm, and then Sahasrahla's House to have him mark your
+      map with an X.
+        - I've chosen not to include checks on the map for the Special Charm and Sahasrahla. If this becomes a problem
+          or creates confusion, I will add them.
 
 
 - **What's the trigger to activate Hyrule Hotfoot?**
     - Any of the Irene triggers.
-    
+
 
 - **What's the star next to the Master Sword?**
     - That's the Great Spin you uncultured swine.
@@ -120,6 +147,7 @@ This is an EmoTracker pack for tracking progress in The Legend of Zelda: A Link 
 - **I found a problem with the logic!**
     - Probably. There's an awful lot of combinations, I probably missed at least a few. Please send me a polite message
       explaining the behavior you're seeing, with a screenshot (if possible) should the logic be particularly complex.
+      Please also include which options you currently have enabled/disabled.
 
 ## Planned Features
 

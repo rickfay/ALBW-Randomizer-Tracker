@@ -1,0 +1,285 @@
+[
+  {
+    "name": "Turtle Rock",
+    "color": "#a332ce",
+    "access_rules": [
+      "lorule, merge, $yButton, irod, flippers",
+      "lorule, merge, $yButton, irod, [flippers], $fakeFlippers"
+    ],
+    "children": [
+      {
+        "name": "Turtle Rock",
+        "map_locations": [
+          {
+            "map": "turtle1F",
+            "x": 89,
+            "y": 95
+          }
+        ],
+        "sections": [
+          {
+            "name": "1F Center Switches Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Turtle Rock",
+        "map_locations": [
+          {
+            "map": "turtle1F",
+            "x": 67,
+            "y": 85
+          }
+        ],
+        "sections": [
+          {
+            "name": "1F Flomola Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Turtle Rock",
+        "map_locations": [
+          {
+            "map": "turtle1F",
+            "x": 109,
+            "y": 74
+          }
+        ],
+        "sections": [
+          {
+            "name": "1F North East Key",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Turtle Rock",
+        "map_locations": [
+          {
+            "map": "turtle1F",
+            "x": 89,
+            "y": 58
+          }
+        ],
+        "sections": [
+          {
+            "name": "1F Miniboss Room Key",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Turtle Rock",
+        "map_locations": [
+          {
+            "map": "turtle1F",
+            "x": 120,
+            "y": 133
+          }
+        ],
+        "sections": [
+          {
+            "name": "1F Warp Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Turtle Rock",
+        "map_locations": [
+          {
+            "map": "turtle1F",
+            "x": 52,
+            "y": 54
+          }
+        ],
+        "sections": [
+          {
+            "name": "1F Warp Key",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Turtle Rock",
+        "map_locations": [
+          {
+            "map": "turtleB1",
+            "x": 89,
+            "y": 47
+          }
+        ],
+        "sections": [
+          {
+            "name": "B1 Chest Under Big Key Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Crystal Switch Ice Rod Can't Hit",
+        "access_rules": [
+          "fsword",
+          "bow",
+          "boomerang",
+          "hookshot",
+          "bombs",
+          "hammer",
+          "boots",
+          // Toss a Skull from a different room
+          "[], irod"
+        ],
+        "children": [
+          {
+            "name": "Turtle Rock",
+            "map_locations": [
+              {
+                "map": "turtleB1",
+                "x": 89,
+                "y": 58
+              }
+            ],
+            "sections": [
+              {
+                "name": "B1 Big Key Chest",
+                "chest_unopened_img": "images/chest_big_unopened.png",
+                "chest_opened_img": "images/chest_big_opened.png",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Turtle Rock",
+            "map_locations": [
+              {
+                "map": "turtleB1",
+                "x": 89,
+                "y": 85
+              }
+            ],
+            "sections": [
+              {
+                "name": "B1 Hylian Shield Chest",
+                "chest_unopened_img": "images/chest_big_unopened.png",
+                "chest_opened_img": "images/chest_big_opened.png",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Turtle Rock",
+        "map_locations": [
+          {
+            "map": "turtleB1",
+            "x": 136,
+            "y": 49
+          }
+        ],
+        "sections": [
+          {
+            "name": "B1 North East Room Key",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Turtle Rock",
+        "map_locations": [
+          {
+            "map": "turtleB1",
+            "x": 109,
+            "y": 85
+          }
+        ],
+        "sections": [
+          {
+            "name": "B1 Wizrobe Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Turtle Rock",
+        "map_locations": [
+          {
+            "map": "turtleB2",
+            "x": 78,
+            "y": 92
+          }
+        ],
+        "sections": [
+          {
+            "name": "Heart Container",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Turtle Rock",
+        "map_locations": [
+          {
+            "map": "lorule",
+            "x": 1572,
+            "y": 1710
+          },
+          {
+            "map": "turtleB2",
+            "x": 89,
+            "y": 75
+          }
+        ],
+        "sections": [
+          {
+            "name": "Sage Impa",
+            "hosted_item": "turtle"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Turtle Rock",
+    "map_locations": [
+      {
+        "map": "turtle1F",
+        "x": 16,
+        "y": 46
+      },
+      {
+        "map": "lorule",
+        "x": 1508,
+        "y": 1639
+      }
+    ],
+    "sections": [
+      {
+        "name": "Outdoor Heart Piece",
+        "access_rules": [
+          "{lorule, merge}",
+          "lorule, merge, $yButton, irod, flippers",
+          "lorule, merge, $yButton, irod, [flippers], boots, trod, frod",
+          "lorule, merge, $yButton, irod, [flippers], boots, trod, nicebombs"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      }
+    ]
+  }
+]

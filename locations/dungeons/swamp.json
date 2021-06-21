@@ -1,0 +1,256 @@
+[
+  {
+    "name": "Swamp Palace",
+    "color": "#d25432",
+    "access_rules": [
+      "lorule, merge, flippers, $yButton, hookshot, bombflower",
+      "lorule, merge, flippers, $yButton, hookshot, [bombflower], irod"
+    ],
+    "children": [
+      {
+        "name": "Swamp Palace",
+        "map_locations": [
+          {
+            "map": "swampB1",
+            "x": 126,
+            "y": 65
+          }
+        ],
+        "sections": [
+          {
+            "name": "B1 East Key",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Swamp Palace",
+        "map_locations": [
+          {
+            "map": "swampB1",
+            "x": 53,
+            "y": 65
+          }
+        ],
+        "sections": [
+          {
+            "name": "B1 West Key",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Swamp Palace",
+        "map_locations": [
+          {
+            "map": "swampB1",
+            "x": 89,
+            "y": 51
+          }
+        ],
+        "sections": [
+          {
+            "name": "B1 North Center Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Swamp Palace",
+        "map_locations": [
+          {
+            "map": "swampB1",
+            "x": 58,
+            "y": 81
+          }
+        ],
+        "sections": [
+          {
+            "name": "B1 Staircase Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Swamp Palace",
+        "map_locations": [
+          {
+            "map": "swampB1",
+            "x": 32,
+            "y": 80
+          }
+        ],
+        "sections": [
+          {
+            "name": "B1 Raft Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Swamp Palace",
+        "map_locations": [
+          {
+            "map": "swampB1",
+            "x": 36,
+            "y": 110
+          }
+        ],
+        "sections": [
+          {
+            "name": "B1 Side Room Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Post-Miniboss",
+        "access_rules": [
+          "$attack",
+          "boots, []"
+        ],
+        "children": [
+          {
+            "name": "Swamp Palace",
+            "map_locations": [
+              {
+                "map": "swampB1",
+                "x": 89,
+                "y": 69
+              }
+            ],
+            "sections": [
+              {
+                "name": "B1 Blue Mail Chest",
+                "chest_unopened_img": "images/chest_big_unopened.png",
+                "chest_opened_img": "images/chest_big_opened.png",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Swamp Palace",
+            "map_locations": [
+              {
+                "map": "swamp1F",
+                "x": 89,
+                "y": 105
+              }
+            ],
+            "sections": [
+              {
+                "name": "1F Big Key Chest",
+                "chest_unopened_img": "images/chest_big_unopened.png",
+                "chest_opened_img": "images/chest_big_opened.png",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Swamp Palace",
+            "map_locations": [
+              {
+                "map": "swamp1F",
+                "x": 41,
+                "y": 86
+              }
+            ],
+            "sections": [
+              {
+                "name": "1F West Chest",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Swamp Palace",
+            "map_locations": [
+              {
+                "map": "swamp1F",
+                "x": 137,
+                "y": 86
+              }
+            ],
+            "sections": [
+              {
+                "name": "1F East Chest",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Swamp Palace",
+            "map_locations": [
+              {
+                "map": "swamp1F",
+                "x": 54,
+                "y": 144
+              }
+            ],
+            "sections": [
+              {
+                "name": "1F South East Chest",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Swamp Palace",
+            "access_rules": [
+              "$attack"
+            ],
+            "map_locations": [
+              {
+                "map": "swamp1F",
+                "x": 89,
+                "y": 67
+              }
+            ],
+            "sections": [
+              {
+                "name": "Heart Container",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Swamp Palace",
+            "access_rules": [
+              "$attack"
+            ],
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 962,
+                "y": 1808
+              },
+              {
+                "map": "swamp2F",
+                "x": 89,
+                "y": 71
+              }
+            ],
+            "sections": [
+              {
+                "name": "Sage Oren",
+                "hosted_item": "swamp"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

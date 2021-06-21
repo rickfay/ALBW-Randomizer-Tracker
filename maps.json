@@ -1,0 +1,350 @@
+﻿[
+  {
+    "name": "hyrule",
+    "location_size": 40,
+    "location_border_thickness": 4,
+    "img": "images/maps/hyrule.png"
+  },
+  {
+    "name": "lorule",
+    "location_size": 40,
+    "location_border_thickness": 4,
+    "img": "images/maps/lorule.png"
+  },
+  {
+    "name": "ep1F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/ep1F.png"
+  },
+  {
+    "name": "ep2F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/ep2F.png"
+  },
+  {
+    "name": "ep3F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/ep3F.png"
+  },
+  {
+    "name": "hog1F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/hog1F.png"
+  },
+  {
+    "name": "hog2F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/hog2F.png"
+  },
+  {
+    "name": "hog3F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/hog3F.png"
+  },
+  {
+    "name": "hera1F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/hera1F.png"
+  },
+  {
+    "name": "hera2F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/hera2F.png"
+  },
+  {
+    "name": "hera3F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/hera3F.png"
+  },
+  {
+    "name": "hera4F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/hera4F.png"
+  },
+  {
+    "name": "hera5F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/hera5F.png"
+  },
+  {
+    "name": "hera6F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/hera6F.png"
+  },
+  {
+    "name": "hera7F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/hera7F.png"
+  },
+  {
+    "name": "hera8F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/hera8F.png"
+  },
+  {
+    "name": "hera9F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/hera9F.png"
+  },
+  {
+    "name": "hera10F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/hera10F.png"
+  },
+  {
+    "name": "hera11F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/hera11F.png"
+  },
+  {
+    "name": "hera12F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/hera12F.png"
+  },
+  {
+    "name": "hera13F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/hera13F.png"
+  },
+  {
+    "name": "hyrule2F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/hyrule2F.png"
+  },
+  {
+    "name": "hyrule3F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/hyrule3F.png"
+  },
+  {
+    "name": "hyrule4F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/hyrule4F.png"
+  },
+  {
+    "name": "hyrule5F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/hyrule5F.png"
+  },
+  {
+    "name": "hyrule6F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/hyrule6F.png"
+  },
+  {
+    "name": "hyrule7F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/hyrule7F.png"
+  },
+  {
+    "name": "hyrule8F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/hyrule8F.png"
+  },
+  {
+    "name": "darkB1",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/darkB1.png"
+  },
+  {
+    "name": "dark1F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/dark1F.png"
+  },
+  {
+    "name": "dark2F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/dark2F.png"
+  },
+  {
+    "name": "swampB1",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/swampB1.png"
+  },
+  {
+    "name": "swamp1F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/swamp1F.png"
+  },
+  {
+    "name": "swamp2F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/swamp2F.png"
+  },
+  {
+    "name": "skullB1",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/skullB1.png"
+  },
+  {
+    "name": "skullB2",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/skullB2.png"
+  },
+  {
+    "name": "thievesB1",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/thievesB1.png"
+  },
+  {
+    "name": "thievesB2",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/thievesB2.png"
+  },
+  {
+    "name": "thievesB3",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/thievesB3.png"
+  },
+  {
+    "name": "turtle1F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/turtle1F.png"
+  },
+  {
+    "name": "turtleB1",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/turtleB1.png"
+  },
+  {
+    "name": "turtleB2",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/turtleB2.png"
+  },
+  {
+    "name": "desert1F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/desert1F.png"
+  },
+  {
+    "name": "desert2F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/desert2F.png"
+  },
+  {
+    "name": "desert3F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/desert3F.png"
+  },
+  {
+    "name": "ice1F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/ice1F.png"
+  },
+  {
+    "name": "iceB1",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/iceB1.png"
+  },
+  {
+    "name": "iceB2",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/iceB2.png"
+  },
+  {
+    "name": "iceB3",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/iceB3.png"
+  },
+  {
+    "name": "iceB4",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/iceB4.png"
+  },
+  {
+    "name": "iceB5",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/iceB5.png"
+  },
+  {
+    "name": "iceB6",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/iceB6.png"
+  },
+  {
+    "name": "lorule1F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/lorule1F.png"
+  },
+  {
+    "name": "lorule2F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/lorule2F.png"
+  },
+  {
+    "name": "lorule3F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/lorule3F.png"
+  },
+  {
+    "name": "lorule4F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/lorule4F.png"
+  },
+  {
+    "name": "lorule5F",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/lorule5F.png"
+  },
+  {
+    "name": "throneRoom",
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/throneRoom.png"
+  }
+]

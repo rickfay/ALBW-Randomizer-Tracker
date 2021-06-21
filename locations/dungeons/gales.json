@@ -1,0 +1,271 @@
+[
+  {
+    "name": "House of Gales",
+    "color": "#0000FF",
+    "access_rules": [
+      "$yButton, trod, flippers",
+      // Crow Boost + Bergshot
+      "$yButton, trod, [flippers], irod, hookshot",
+      // Fake Flippers
+      "trod, [flippers], $fakeFlippers"
+    ],
+    "children": [
+      {
+        "name": "House of Gales",
+        "access_rules": [
+          "merge"
+        ],
+        "map_locations": [
+          {
+            "map": "hog1F",
+            "x": 142,
+            "y": 98
+          }
+        ],
+        "sections": [
+          {
+            "name": "1F Bubble Room Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "House of Gales",
+        "access_rules": [
+          "[merge]"
+        ],
+        "map_locations": [
+          {
+            "map": "hog1F",
+            "x": 151,
+            "y": 30
+          }
+        ],
+        "sections": [
+          {
+            "name": "1F NE Room Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "House of Gales",
+        "access_rules": [
+          "$fire"
+        ],
+        "map_locations": [
+          {
+            "map": "hog1F",
+            "x": 92,
+            "y": 34
+          }
+        ],
+        "sections": [
+          {
+            "name": "1F Torch Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "House of Gales",
+        "access_rules": [
+          "[merge]"
+        ],
+        "map_locations": [
+          {
+            "map": "hog1F",
+            "x": 46,
+            "y": 84
+          }
+        ],
+        "sections": [
+          {
+            "name": "1F Block Room Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "House of Gales",
+        "access_rules": [
+          "merge"
+        ],
+        "map_locations": [
+          {
+            "map": "hog1F",
+            "x": 21,
+            "y": 116
+          }
+        ],
+        "sections": [
+          {
+            "name": "1F Block Room Hidden Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "House of Gales Upper Floors",
+        "access_rules": [
+          "[merge], $switch"
+        ],
+        "children": [
+          {
+            "name": "House of Gales",
+            "map_locations": [
+              {
+                "map": "hog2F",
+                "x": 109,
+                "y": 107
+              }
+            ],
+            "sections": [
+              {
+                "name": "2F Ledge Key",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "House of Gales",
+            "map_locations": [
+              {
+                "map": "hog2F",
+                "x": 31,
+                "y": 139
+              }
+            ],
+            "sections": [
+              {
+                "name": "2F Fire Key",
+                "access_rules": [
+                  "merge"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "House of Gales",
+            "map_locations": [
+              {
+                "map": "hog2F",
+                "x": 119,
+                "y": 135
+              }
+            ],
+            "sections": [
+              {
+                "name": "2F Big Key Chest",
+                "chest_unopened_img": "images/chest_big_unopened.png",
+                "chest_opened_img": "images/chest_big_opened.png",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "3F Post-Miniboss",
+            "access_rules": [
+              "merge, [$attack]"
+            ],
+            "children": [
+              {
+                "name": "House of Gales",
+                "access_rules": [
+                  "$fire"
+                ],
+                "map_locations": [
+                  {
+                    "map": "hog3F",
+                    "x": 57,
+                    "y": 123
+                  }
+                ],
+                "sections": [
+                  {
+                    "name": "3F Bubble Room Chest",
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ]
+              },
+              {
+                "name": "House of Gales",
+                "access_rules": [
+                  "$fire"
+                ],
+                "map_locations": [
+                  {
+                    "map": "hog3F",
+                    "x": 134,
+                    "y": 84
+                  }
+                ],
+                "sections": [
+                  {
+                    "name": "3F Wind Chest",
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ]
+              },
+              {
+                "name": "House of Gales",
+                "access_rules": [
+                  "$margomill"
+                ],
+                "map_locations": [
+                  {
+                    "map": "hog3F",
+                    "x": 92,
+                    "y": 42
+                  }
+                ],
+                "sections": [
+                  {
+                    "name": "Heart Container",
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ]
+              },
+              {
+                "name": "House of Gales",
+                "access_rules": [
+                  "$margomill"
+                ],
+                "map_locations": [
+                  {
+                    "map": "hyrule",
+                    "x": 1620,
+                    "y": 1709
+                  },
+                  {
+                    "map": "hog3F",
+                    "x": 92,
+                    "y": 30
+                  }
+                ],
+                "sections": [
+                  {
+                    "name": "Pendant of Wisdom",
+                    "hosted_item": "gales"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

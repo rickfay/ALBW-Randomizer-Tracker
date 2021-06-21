@@ -1,0 +1,219 @@
+[
+  {
+    "name": "Skull Woods",
+    "color": "#43c2be",
+    "access_rules": [
+      "lorule, merge, $lampless"
+    ],
+    "children": [
+      {
+        "name": "Skull Woods",
+        "map_locations": [
+          {
+            "map": "skullB1",
+            "x": 128,
+            "y": 112
+          }
+        ],
+        "sections": [
+          {
+            "name": "B1 South Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Skull Woods",
+        "map_locations": [
+          {
+            "map": "skullB1",
+            "x": 131,
+            "y": 50
+          }
+        ],
+        "sections": [
+          {
+            "name": "B1 North Ground Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Skull Woods",
+        "map_locations": [
+          {
+            "map": "skullB1",
+            "x": 142,
+            "y": 33
+          }
+        ],
+        "sections": [
+          {
+            "name": "B1 North Fall Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Skull Woods",
+        "map_locations": [
+          {
+            "map": "skullB1",
+            "x": 97,
+            "y": 38
+          }
+        ],
+        "sections": [
+          {
+            "name": "B1 Smash Tile Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Post-Miniboss",
+        "access_rules": [
+          // Have Wall Master kill all the enemies
+          "[$attack]"
+        ],
+        "children": [
+          {
+            "name": "Skull Woods",
+            "map_locations": [
+              {
+                "map": "skullB2",
+                "x": 113,
+                "y": 23
+              }
+            ],
+            "sections": [
+              {
+                "name": "B2 Long Elevator Chest",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "B1 West Basement",
+            "access_rules": [
+              "$fire"
+            ],
+            "children": [
+              {
+                "name": "Skull Woods",
+                "map_locations": [
+                  {
+                    "map": "skullB1",
+                    "x": 40,
+                    "y": 16
+                  }
+                ],
+                "sections": [
+                  {
+                    "name": "B1 Big Key Chest",
+                    "chest_unopened_img": "images/chest_big_unopened.png",
+                    "chest_opened_img": "images/chest_big_opened.png",
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ]
+              },
+              {
+                "name": "Skull Woods",
+                "map_locations": [
+                  {
+                    "map": "skullB1",
+                    "x": 24,
+                    "y": 68
+                  }
+                ],
+                "sections": [
+                  {
+                    "name": "B1 Master Ore Chest",
+                    "chest_unopened_img": "images/chest_big_unopened.png",
+                    "chest_opened_img": "images/chest_big_opened.png",
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ]
+              },
+              {
+                "name": "Skull Woods",
+                "map_locations": [
+                  {
+                    "map": "skullB1",
+                    "x": 41,
+                    "y": 115
+                  },
+                  {
+                    "map": "lorule",
+                    "x": 88,
+                    "y": 296
+                  }
+                ],
+                "sections": [
+                  {
+                    "name": "Outdoor Chest",
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Skull Woods",
+            "access_rules": [
+              "$fire, $attack",
+              "[], $attack"
+            ],
+            "map_locations": [
+              {
+                "map": "skullB2",
+                "x": 63,
+                "y": 25
+              }
+            ],
+            "sections": [
+              {
+                "name": "Heart Container",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Skull Woods",
+            "access_rules": [
+              "$fire, $attack",
+              "[], $attack"
+            ],
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 245,
+                "y": 166
+              },
+              {
+                "map": "skullB2",
+                "x": 63,
+                "y": 9
+              }
+            ],
+            "sections": [
+              {
+                "name": "Sage Seres",
+                "hosted_item": "skull"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

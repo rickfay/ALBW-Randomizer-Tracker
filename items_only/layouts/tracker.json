@@ -1,0 +1,15 @@
+{
+  "tracker_default": {
+    "type": "container",
+    "background": "#848AAD",
+    "width": 345,
+    "content": [
+      {
+        "type": "layout",
+        "background": "#434554",
+        "dropshadow": true,
+        "key": "item_grid"
+      }
+    ]
+  }
+}

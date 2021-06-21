@@ -1,0 +1,295 @@
+[
+  {
+    "name": "Ice Ruins",
+    "color": "#ef3435",
+    "access_rules": [
+      "lorule, merge, $yButton, frod, hookshot, [powerglove]"
+    ],
+    "children": [
+      {
+        "name": "Ice Ruins",
+        "map_locations": [
+          {
+            "map": "ice1F",
+            "x": 90,
+            "y": 133
+          }
+        ],
+        "sections": [
+          {
+            "name": "1F Hidden Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Ice Ruins",
+        "map_locations": [
+          {
+            "map": "iceB1",
+            "x": 137,
+            "y": 75
+          }
+        ],
+        "sections": [
+          {
+            "name": "B1 Torches Key",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Ice Ruins",
+        "map_locations": [
+          {
+            "map": "iceB1",
+            "x": 137,
+            "y": 116
+          }
+        ],
+        "sections": [
+          {
+            "name": "B1 East Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Ice Ruins",
+        "map_locations": [
+          {
+            "map": "iceB1",
+            "x": 99,
+            "y": 108
+          }
+        ],
+        "sections": [
+          {
+            "name": "B1 Center Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Ice Ruins",
+        "map_locations": [
+          {
+            "map": "iceB2",
+            "x": 80,
+            "y": 134
+          }
+        ],
+        "sections": [
+          {
+            "name": "B2 Ice Pillar Key",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Ice Ruins",
+        "access_rules": [
+          "scroll",
+          "[scroll], boots"
+        ],
+        "map_locations": [
+          {
+            "map": "iceB2",
+            "x": 90,
+            "y": 54
+          }
+        ],
+        "sections": [
+          {
+            "name": "B2 Long Merge Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Ice Ruins",
+        "map_locations": [
+          {
+            "map": "iceB3",
+            "x": 85,
+            "y": 142
+          }
+        ],
+        "sections": [
+          {
+            "name": "B3 Elevator Left Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Ice Ruins",
+        "map_locations": [
+          {
+            "map": "iceB3",
+            "x": 95,
+            "y": 142
+          }
+        ],
+        "sections": [
+          {
+            "name": "B3 Elevator Right Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Ice Ruins",
+        "map_locations": [
+          {
+            "map": "iceB3",
+            "x": 90,
+            "y": 94
+          }
+        ],
+        "sections": [
+          {
+            "name": "B3 Stamina Scroll Chest",
+            "chest_unopened_img": "images/chest_big_unopened.png",
+            "chest_opened_img": "images/chest_big_opened.png",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Ice Ruins",
+        "map_locations": [
+          {
+            "map": "iceB4",
+            "x": 84,
+            "y": 57
+          }
+        ],
+        "sections": [
+          {
+            "name": "B4 4 Switches",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Ice Ruins",
+        "map_locations": [
+          {
+            "map": "iceB4",
+            "x": 23,
+            "y": 142
+          }
+        ],
+        "sections": [
+          {
+            "name": "B4 SW Fall Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Ice Ruins",
+        "map_locations": [
+          {
+            "map": "iceB4",
+            "x": 122,
+            "y": 136
+          }
+        ],
+        "sections": [
+          {
+            "name": "B4 SE Fall Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Ice Ruins",
+        "map_locations": [
+          {
+            "map": "iceB4",
+            "x": 86,
+            "y": 144
+          }
+        ],
+        "sections": [
+          {
+            "name": "B4 Shortcut Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Ice Ruins",
+        "map_locations": [
+          {
+            "map": "iceB5",
+            "x": 90,
+            "y": 113
+          }
+        ],
+        "sections": [
+          {
+            "name": "B5 Big Key Chest",
+            "chest_unopened_img": "images/chest_big_unopened.png",
+            "chest_opened_img": "images/chest_big_opened.png",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Ice Ruins",
+        "map_locations": [
+          {
+            "map": "iceB6",
+            "x": 90,
+            "y": 81
+          }
+        ],
+        "sections": [
+          {
+            "name": "Heart Container",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Ice Ruins",
+        "map_locations": [
+          {
+            "map": "lorule",
+            "x": 1880,
+            "y": 156
+          },
+          {
+            "map": "iceB6",
+            "x": 90,
+            "y": 53
+          }
+        ],
+        "sections": [
+          {
+            "name": "Sage Rosso",
+            "hosted_item": "ice"
+          }
+        ]
+      }
+    ]
+  }
+]

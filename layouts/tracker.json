@@ -1,0 +1,1854 @@
+{
+  "tracker_default": {
+    "background": "#848AAD",
+    "type": "dock",
+    "content": [
+      {
+        "type": "dock",
+        "orientation": "vertical",
+        "dock": "left",
+        "content": [
+          {
+            "type": "group",
+            "header": "Gear & Items",
+            "header_content": {
+              "type": "button_popup",
+              "style": "settings",
+              "layout": "options_menu"
+            },
+            "dock": "top",
+            "content": [
+              {
+                "type": "layout",
+                "v_alignment": "left",
+                "key": "item_grid"
+              }
+            ]
+          },
+          {
+            "type": "scroll",
+            "horizontal_scrollbar_visibility": "disabled",
+            "content": [
+              {
+                "type": "group",
+                "header": "Pinned Locations",
+                "max_width": "356",
+                "content": {
+                  "type": "recentpins",
+                  "style": "wrap",
+                  "orientation": "horizontal"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "container",
+        "content": [
+          {
+            "type": "tabbed",
+            "tabs": [
+              {
+                "title": "World",
+                "content": {
+                  "type": "container",
+                  "content": [
+                    {
+                      "type": "tabbed",
+                      "tabs": [
+                        {
+                          "title": "Side-by-Side",
+                          "icon": "images/sidebyside.png",
+                          "content": {
+                            "type": "scroll",
+                            "horizontal_scrollbar_visibility": "disabled",
+                            "content": [
+                              {
+                                "type": "array",
+                                "orientation": "horizontal",
+                                "style": "wrap",
+                                "content": [
+                                  {
+                                    "type": "map",
+                                    "min_width": 600,
+                                    "maps": [
+                                      "hyrule",
+                                      "lorule"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "title": "Zoomed",
+                          "icon": "images/double.png",
+                          "content": {
+                            "type": "scroll",
+                            "horizontal_scrollbar_visibility": "disabled",
+                            "content": [
+                              {
+                                "type": "array",
+                                "orientation": "horizontal",
+                                "style": "wrap",
+                                "content": [
+                                  {
+                                    "type": "map",
+                                    "min_width": 325,
+                                    "maps": [
+                                      "hyrule"
+                                    ]
+                                  },
+                                  {
+                                    "type": "map",
+                                    "min_width": 325,
+                                    "maps": [
+                                      "lorule"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "item_size": 60,
+                      "margin": "0,60,0,0",
+                      "h_alignment": "left",
+                      "rows": [
+                        [
+                          "maiamai_map"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "Eastern",
+                //"icon": "images/eastern.png",
+                "content": {
+                  "type": "scroll",
+                  "horizontal_scrollbar_visibility": "disabled",
+                  "content": [
+                    {
+                      "type": "array",
+                      "orientation": "horizontal",
+                      "style": "wrap",
+                      "content": [
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "ep3F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/3F_Boss.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "ep2F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/2F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-25",
+                              "maps": [
+                                "ep1F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/1F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "Gales",
+                //"icon": "images/gales.png",
+                "content": {
+                  "type": "scroll",
+                  "horizontal_scrollbar_visibility": "disabled",
+                  "content": [
+                    {
+                      "type": "array",
+                      "orientation": "horizontal",
+                      "style": "wrap",
+                      "content": [
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "hog3F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/3F_Boss.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "hog2F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/2F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-25",
+                              "maps": [
+                                "hog1F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/1F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "Hera",
+                //"icon": "images/hera.png",
+                "content": {
+                  "type": "scroll",
+                  "horizontal_scrollbar_visibility": "disabled",
+                  "content": [
+                    {
+                      "type": "array",
+                      "orientation": "horizontal",
+                      "style": "wrap",
+                      "content": [
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "hera13F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/13F_Boss.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "hera12F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/12F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "hera11F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/11F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "hera10F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/10F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "hera9F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/9F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "hera8F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/8F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "hera7F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/7F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "hera6F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/6F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "hera5F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/5F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "hera4F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/4F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "hera3F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/3F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "hera2F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/2F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-25",
+                              "maps": [
+                                "hera1F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/1F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "Hyrule",
+                //"icon": "images/msword.png",
+                "content": {
+                  "type": "scroll",
+                  "horizontal_scrollbar_visibility": "disabled",
+                  "content": [
+                    {
+                      "type": "array",
+                      "orientation": "horizontal",
+                      "style": "wrap",
+                      "content": [
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "hyrule8F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/8F_Boss.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "hyrule7F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/7F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "hyrule6F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/6F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "hyrule5F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/5F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "hyrule4F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/4F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "hyrule3F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/3F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-25",
+                              "maps": [
+                                "hyrule2F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/2F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "Dark",
+                //"icon": "images/dark.png",
+                "content": {
+                  "type": "scroll",
+                  "horizontal_scrollbar_visibility": "disabled",
+                  "content": [
+                    {
+                      "type": "array",
+                      "orientation": "horizontal",
+                      "style": "wrap",
+                      "content": [
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "dark2F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/2F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "dark1F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/1F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-25",
+                              "maps": [
+                                "darkB1"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/B1_Boss.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "Swamp",
+                //"icon": "images/swamp.png",
+                "content": {
+                  "type": "scroll",
+                  "horizontal_scrollbar_visibility": "disabled",
+                  "content": [
+                    {
+                      "type": "array",
+                      "orientation": "horizontal",
+                      "style": "wrap",
+                      "content": [
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "swamp2F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/Blank.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "swamp1F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/1F_Boss.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-25",
+                              "maps": [
+                                "swampB1"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/B1.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "Skull",
+                //"icon": "images/skull.png",
+                "content": {
+                  "type": "scroll",
+                  "horizontal_scrollbar_visibility": "disabled",
+                  "content": [
+                    {
+                      "type": "array",
+                      "orientation": "horizontal",
+                      "style": "wrap",
+                      "content": [
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "skullB1"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/B1.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-25",
+                              "maps": [
+                                "skullB2"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/B2_Boss.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "Thieves",
+                //"icon": "images/thieves.png",
+                "content": {
+                  "type": "scroll",
+                  "horizontal_scrollbar_visibility": "disabled",
+                  "content": [
+                    {
+                      "type": "array",
+                      "orientation": "horizontal",
+                      "style": "wrap",
+                      "content": [
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "thievesB1"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/B1_Boss.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "thievesB2"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/B2.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-25",
+                              "maps": [
+                                "thievesB3"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/B3.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "Turtle",
+                //"icon": "images/turtle.png",
+                "content": {
+                  "type": "scroll",
+                  "horizontal_scrollbar_visibility": "disabled",
+                  "content": [
+                    {
+                      "type": "array",
+                      "orientation": "horizontal",
+                      "style": "wrap",
+                      "content": [
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "turtle1F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/1F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "turtleB1"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/B1.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-25",
+                              "maps": [
+                                "turtleB2"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/B2_Boss.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "Desert",
+                //"icon": "images/desert.png",
+                "content": {
+                  "type": "scroll",
+                  "horizontal_scrollbar_visibility": "disabled",
+                  "content": [
+                    {
+                      "type": "array",
+                      "orientation": "horizontal",
+                      "style": "wrap",
+                      "content": [
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "desert3F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/3F_Boss.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "desert2F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/2F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-25",
+                              "maps": [
+                                "desert1F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/1F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "Ice",
+                //"icon": "images/ice.png",
+                "content": {
+                  "type": "scroll",
+                  "horizontal_scrollbar_visibility": "disabled",
+                  "content": [
+                    {
+                      "type": "array",
+                      "orientation": "horizontal",
+                      "style": "wrap",
+                      "content": [
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "ice1F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/1F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "iceB1"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/B1.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "iceB2"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/B2.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "iceB3"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/B3.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "iceB4"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/B4.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "iceB5"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/B5.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-25",
+                              "maps": [
+                                "iceB6"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/B6_Boss.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "Lorule",
+                //"icon": "images/bow_light.png",
+                "content": {
+                  "type": "scroll",
+                  "horizontal_scrollbar_visibility": "disabled",
+                  "content": [
+                    {
+                      "type": "array",
+                      "orientation": "horizontal",
+                      "style": "wrap",
+                      "content": [
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "throneRoom"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/1F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "lorule5F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/5F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "lorule4F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/4F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "lorule3F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/3F_Boss.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "lorule2F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/2F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-25",
+                              "maps": [
+                                "lorule1F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/1F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

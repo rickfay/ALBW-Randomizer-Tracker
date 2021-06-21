@@ -1,0 +1,290 @@
+[
+  {
+    "name": "Y Button Enabled",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/options/yes.png",
+        "codes": "ybutton",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/options/no.png",
+        "codes": "ybutton_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Lampless",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/options/no.png",
+        "codes": "lampful",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/options/yes.png",
+        "codes": "lampless",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Lamp as a Weapon",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/options/no.png",
+        "codes": "lampAsWeapon_false",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/options/yes.png",
+        "codes": "lampAsWeapon",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Net as a Weapon",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/options/no.png",
+        "codes": "netAsWeapon_false",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/options/yes.png",
+        "codes": "netAsWeapon",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Boots as a Weapon",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/options/no.png",
+        "codes": "bootsAsWeapon_false",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/options/yes.png",
+        "codes": "bootsAsWeapon",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Bee Boost",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/options/no.png",
+        "codes": "beeBoost_false",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/options/yes.png",
+        "codes": "beeBoost",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Bomb Boost to Ledges",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/options/no.png",
+        "codes": "bombBoost_false",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/options/yes.png",
+        "codes": "bombBoost",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Lamp Shuffle",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/options/yes.png",
+        "codes": "lampShuffle",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/options/no.png",
+        "codes": "lampVanilla",
+        "inherit_codes": false
+      }
+    ],
+    "allow_disabled": false
+  },
+  {
+    "name": "Sword Shuffle",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/options/yes.png",
+        "codes": "swordShuffle",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/options/no.png",
+        "codes": "swordVanilla",
+        "inherit_codes": false
+      }
+    ],
+    "allow_disabled": false
+  },
+  {
+    "name": "Skip Delivery",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/options/yes.png",
+        "codes": "skipDelivery",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/options/no.png",
+        "codes": "delivery",
+        "inherit_codes": false
+      }
+    ],
+    "allow_disabled": false
+  },
+  {
+    "name": "Open",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/options/yes.png",
+        "codes": "open",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/options/no.png",
+        "codes": "standard",
+        "inherit_codes": false
+      }
+    ],
+    "allow_disabled": false
+  },
+  {
+    "name": "Barrier Requires Eastern Palace",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/options/yes.png",
+        "codes": "barrierSkipEP",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/options/no.png",
+        "codes": "barrierRequireEP",
+        "inherit_codes": false
+      }
+    ],
+    "allow_disabled": false
+  },
+  {
+    "name": "Shield Rod Clipping",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/options/no.png",
+        "codes": "shieldRodClip_false",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/options/yes.png",
+        "codes": "shieldRodClip",
+        "inherit_codes": false
+      }
+    ],
+    "allow_disabled": false
+  },
+  {
+    "name": "Zaganaga with Bow",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/options/no.png",
+        "codes": "zagaBow_false",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/options/yes.png",
+        "codes": "zagaBow",
+        "inherit_codes": false
+      }
+    ],
+    "allow_disabled": false
+  },
+  {
+    "name": "Zaganaga with Sword Beams",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/options/no.png",
+        "codes": "zagaSwordBeams_false",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/options/yes.png",
+        "codes": "zagaSwordBeams",
+        "inherit_codes": false
+      }
+    ],
+    "allow_disabled": false
+  },
+  {
+    "name": "Portal Clipping",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/options/no.png",
+        "codes": "portalClipping_false",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/options/yes.png",
+        "codes": "portalClipping",
+        "inherit_codes": false
+      }
+    ],
+    "allow_disabled": false
+  }
+]

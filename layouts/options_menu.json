@@ -1,0 +1,236 @@
+{
+  "options_menu": {
+    "type": "canvas",
+    "background": "#303841",
+    "item_size": 40,
+    "item_margin": "1",
+    "width": 315,
+    "height": 640,
+    "content": [
+      {
+        "type": "item",
+        "item": "yButton",
+        "height": 40,
+        "canvas_top": 0,
+        "canvas_left": 0
+      },
+      {
+        "type": "image",
+        "image": "images/options/desc_y_button.png",
+        "height": 40,
+        "canvas_top": 0,
+        "canvas_left": 40
+      },
+      {
+        "type": "item",
+        "item": "skipDelivery",
+        "height": 40,
+        "canvas_top": 40,
+        "canvas_left": 0
+      },
+      {
+        "type": "image",
+        "image": "images/options/desc_skip_delivery.png",
+        "height": 40,
+        "canvas_top": 40,
+        "canvas_left": 40
+      },
+      {
+        "type": "item",
+        "item": "open",
+        "height": 40,
+        "canvas_top": 80,
+        "canvas_left": 0
+      },
+      {
+        "type": "image",
+        "image": "images/options/desc_open.png",
+        "height": 40,
+        "canvas_top": 80,
+        "canvas_left": 40
+      },
+      {
+        "type": "item",
+        "item": "barrierSkipEP",
+        "height": 40,
+        "canvas_top": 120,
+        "canvas_left": 0
+      },
+      {
+        "type": "image",
+        "image": "images/options/desc_barrier_skip_ep.png",
+        "height": 40,
+        "canvas_top": 120,
+        "canvas_left": 40
+      },
+      {
+        "type": "item",
+        "item": "swordShuffle",
+        "height": 40,
+        "canvas_top": 160,
+        "canvas_left": 0
+      },
+      {
+        "type": "image",
+        "image": "images/options/desc_sword_shuffle.png",
+        "height": 40,
+        "canvas_top": 160,
+        "canvas_left": 40
+      },
+      {
+        "type": "item",
+        "item": "lampShuffle",
+        "height": 40,
+        "canvas_top": 200,
+        "canvas_left": 0
+      },
+      {
+        "type": "image",
+        "image": "images/options/desc_lamp_shuffle.png",
+        "height": 40,
+        "canvas_top": 200,
+        "canvas_left": 40
+      },
+      {
+        "type": "item",
+        "item": "lampless",
+        "height": 40,
+        "canvas_top": 240,
+        "canvas_left": 0
+      },
+      {
+        "type": "image",
+        "image": "images/options/desc_lampless.png",
+        "height": 40,
+        "canvas_top": 240,
+        "canvas_left": 40
+      },
+      {
+        "type": "item",
+        "item": "lampAsWeapon",
+        "height": 40,
+        "canvas_top": 280,
+        "canvas_left": 0
+      },
+      {
+        "type": "image",
+        "image": "images/options/desc_lamp_weapon.png",
+        "height": 40,
+        "canvas_top": 280,
+        "canvas_left": 40
+      },
+      {
+        "type": "item",
+        "item": "netAsWeapon",
+        "height": 40,
+        "canvas_top": 320,
+        "canvas_left": 0
+      },
+      {
+        "type": "image",
+        "image": "images/options/desc_net_weapon.png",
+        "height": 40,
+        "canvas_top": 320,
+        "canvas_left": 40
+      },
+      {
+        "type": "item",
+        "item": "bootsAsWeapon",
+        "height": 40,
+        "canvas_top": 360,
+        "canvas_left": 0
+      },
+      {
+        "type": "image",
+        "image": "images/options/desc_boots_weapon.png",
+        "height": 40,
+        "canvas_top": 360,
+        "canvas_left": 40
+      },
+      {
+        "type": "item",
+        "item": "bombBoost",
+        "height": 40,
+        "canvas_top": 400,
+        "canvas_left": 0
+      },
+      {
+        "type": "image",
+        "image": "images/options/desc_bomb_boost.png",
+        "height": 40,
+        "canvas_top": 400,
+        "canvas_left": 40
+      },
+      {
+        "type": "item",
+        "item": "shieldRodClip",
+        "height": 40,
+        "canvas_top": 440,
+        "canvas_left": 0
+      },
+      {
+        "type": "image",
+        "image": "images/options/desc_shield_rod_clip.png",
+        "height": 40,
+        "canvas_top": 440,
+        "canvas_left": 40
+      },
+      {
+        "type": "item",
+        "item": "beeBoost",
+        "height": 40,
+        "canvas_top": 480,
+        "canvas_left": 0
+      },
+      {
+        "type": "image",
+        "image": "images/options/desc_bee_boost.png",
+        "height": 40,
+        "canvas_top": 480,
+        "canvas_left": 40
+      },
+      {
+        "type": "item",
+        "item": "portalClipping",
+        "height": 40,
+        "canvas_top": 520,
+        "canvas_left": 0
+      },
+      {
+        "type": "image",
+        "image": "images/options/desc_portal_clipping.png",
+        "height": 40,
+        "canvas_top": 520,
+        "canvas_left": 40
+      },
+      {
+        "type": "item",
+        "item": "zagaBow",
+        "height": 40,
+        "canvas_top": 560,
+        "canvas_left": 0
+      },
+      {
+        "type": "image",
+        "image": "images/options/desc_zaga_bow.png",
+        "height": 40,
+        "canvas_top": 560,
+        "canvas_left": 40
+      },
+      {
+        "type": "item",
+        "item": "zagaSwordBeams",
+        "height": 40,
+        "canvas_top": 600,
+        "canvas_left": 0
+      },
+      {
+        "type": "image",
+        "image": "images/options/desc_zaga_sword_beams.png",
+        "height": 40,
+        "canvas_top": 600,
+        "canvas_left": 40
+      }
+    ]
+  }
+}

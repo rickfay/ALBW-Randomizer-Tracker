@@ -1,0 +1,70 @@
+{
+  "tracker_capture_item": {
+    "type": "itemgrid",
+    "h_alignment": "center",
+    "item_size": "40",
+    "item_margin": "1,2",
+    "rows": [
+      [
+        "bow",
+        "boomerang",
+        "hookshot",
+        "bombs",
+        "pouch",
+        "heart",
+        "hp",
+        "hc"
+      ],
+      [
+        "frod",
+        "irod",
+        "scoot",
+        "foul",
+        "beebadge",
+        "rupee_silver",
+        "bigkey",
+        "rupee_red"
+      ],
+      [
+        "lamp",
+        "hammer",
+        "bell",
+        "net",
+        "scroll",
+        "rupee_gold",
+        "key",
+        "rupee_green"
+      ],
+      [
+        "bottle",
+        "srod",
+        "trod",
+        "hintglasses",
+        "bracelet",
+        "rupee_blue",
+        "compass",
+        "rupee_purple"
+      ],
+      [
+        "boots",
+        "powerglove",
+        "flippers",
+        "smoothgem",
+        "bowlight",
+        "fsword",
+        "shield",
+        "greentunic"
+      ],
+      [
+        "maiamai",
+        "tail",
+        "horn",
+        "guts",
+        "masterore",
+        "letter",
+        "milk",
+        "goldenbee"
+      ]
+    ]
+  }
+}

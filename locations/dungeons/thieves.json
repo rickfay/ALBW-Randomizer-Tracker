@@ -1,0 +1,244 @@
+[
+  {
+    "name": "Thieves' Hideout",
+    "color": "#dde44e",
+    "access_rules": [
+      "lorule, merge"
+    ],
+    "children": [
+      {
+        "name": "Thieves' Hideout",
+        "map_locations": [
+          {
+            "map": "thievesB1",
+            "x": 56,
+            "y": 98
+          }
+        ],
+        "sections": [
+          {
+            "name": "B1 First/Final Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Thieves' Hideout",
+        "map_locations": [
+          {
+            "map": "thievesB1",
+            "x": 59,
+            "y": 117
+          }
+        ],
+        "sections": [
+          {
+            "name": "B1 Jail Chest",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Post-Jail Crystal Switch",
+        "access_rules": [
+          "$switch"
+        ],
+        "children": [
+          {
+            "name": "Thieves' Hideout",
+            "map_locations": [
+              {
+                "map": "thievesB2",
+                "x": 51,
+                "y": 53
+              }
+            ],
+            "sections": [
+              {
+                "name": "B2 NW Grate Chest",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Thieves' Hideout",
+            "map_locations": [
+              {
+                "map": "thievesB2",
+                "x": 99,
+                "y": 91
+              }
+            ],
+            "sections": [
+              {
+                "name": "B2 Cellmate Chest",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Thieves' Hideout",
+            "map_locations": [
+              {
+                "map": "thievesB2",
+                "x": 80,
+                "y": 32
+              }
+            ],
+            "sections": [
+              {
+                "name": "B2 Eyegores Chest",
+                "access_rules": [
+                  "$attack",
+                  "$thievesOoB, trod"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Thieves' Hideout",
+            "map_locations": [
+              {
+                "map": "thievesB2",
+                "x": 122,
+                "y": 117
+              }
+            ],
+            "sections": [
+              {
+                "name": "B2 SW Room Chest",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Post-Flippers Section",
+            "access_rules": [
+              "$attack, flippers",
+              "$thievesOoB, trod"
+            ],
+            "children": [
+              {
+                "name": "Thieves' Hideout",
+                "map_locations": [
+                  {
+                    "map": "thievesB3",
+                    "x": 132,
+                    "y": 79
+                  }
+                ],
+                "sections": [
+                  {
+                    "name": "B3 Sunken Chest",
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ]
+              },
+              {
+                "name": "Thieves' Hideout",
+                "map_locations": [
+                  {
+                    "map": "thievesB3",
+                    "x": 102,
+                    "y": 32
+                  }
+                ],
+                "sections": [
+                  {
+                    "name": "B3 Master Ore Chest",
+                    "chest_unopened_img": "images/chest_big_unopened.png",
+                    "chest_opened_img": "images/chest_big_opened.png",
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ]
+              },
+              {
+                "name": "Thieves' Hideout",
+                "map_locations": [
+                  {
+                    "map": "thievesB1",
+                    "x": 56,
+                    "y": 79
+                  }
+                ],
+                "sections": [
+                  {
+                    "name": "B1 Thief Girl Chest",
+                    "access_rules": [
+                      // need attack to get Thief Girl down to B3
+                      "$attack",
+                      // access chest early with trod+boomerang (no $attack), need a way to escape
+                      "scoot"
+                    ],
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ]
+              },
+              {
+                "name": "Thieves' Hideout",
+                "map_locations": [
+                  {
+                    "map": "thievesB1",
+                    "x": 81,
+                    "y": 75
+                  }
+                ],
+                "sections": [
+                  {
+                    "name": "B1 Big Key Chest",
+                    "chest_unopened_img": "images/chest_big_unopened.png",
+                    "chest_opened_img": "images/chest_big_opened.png",
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ]
+              },
+              {
+                "name": "Thieves' Hideout",
+                "map_locations": [
+                  {
+                    "map": "lorule",
+                    "x": 442,
+                    "y": 982
+                  },
+                  {
+                    "map": "thievesB1",
+                    "x": 136,
+                    "y": 167
+                  }
+                ],
+                "sections": [
+                  {
+                    "name": "Sage Osfala",
+                    "access_rules": [
+                      "$attack"
+                    ],
+                    "hosted_item": "thieves"
+                  },
+                  {
+                    "name": "Heart Container",
+                    "access_rules": [
+                      "$attack"
+                    ],
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

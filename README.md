@@ -17,10 +17,10 @@ The pack can be installed directly through EmoTracker's built-in package managem
     
 ## Screen Shots
 
-![screenshot_01.png](screenshots/screenshot_01.png?raw=true)
-![screenshot_02.png](screenshots/screenshot_02.png?raw=true)
-![screenshot_03.png](screenshots/screenshot_03.png?raw=true)
-![screenshot_04.png](screenshots/screenshot_04.png?raw=true)
+![screenshot_01.png](docs/screenshots/screenshot_01.png?raw=true)
+![screenshot_02.png](docs/screenshots/screenshot_02.png?raw=true)
+![screenshot_03.png](docs/screenshots/screenshot_03.png?raw=true)
+![screenshot_04.png](docs/screenshots/screenshot_04.png?raw=true)
 
 
 ## Features

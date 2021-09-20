@@ -9,7 +9,7 @@
       "required_app_version": "2.3.8.14",
       "uid": "zalbwr_dungeon_tracker",
       "flags": [ "map", "pins", "chathud" ],
-      "link": "https://github.com/rickfay/ZALBWR-Dungeon-Tracker/raw/master/zalbwr_dungeon_tracker.zip",
+      "link": "https://rickfay.github.io/ZALBWR-Dungeon-Tracker/zalbwr_dungeon_tracker.zip",
       "variants": [
         {
           "name": "Dungeon Tracker",

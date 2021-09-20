@@ -3,7 +3,7 @@
   "game_name": "The Legend of Zelda: A Link Between Worlds",
   "platform": "3DS",
   "package_version": "1.0.0",
-  "package_uid": "zalbwr_dungeon_tracker",
+  "package_uid": "lemonkong_zalbwr_dungeon_tracker",
   "author": "LemonKong",
   "variants": {
     "standard": {

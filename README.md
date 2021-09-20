@@ -1,22 +1,19 @@
 # The Legend of Zelda: A Link Between Worlds Randomizer Dungeon Tracker
 
-## Download + Installation
-
-Link: https://github.com/rickfay/ZALBWR-Dungeon-Tracker/raw/master/zalbwr_dungeon_tracker.zip
-
-Drop in this directory:  C:/Users/your_name/Documents/EmoTracker/packs
-
-That's it!
-
 ## About
 
 This is an EmoTracker pack for tracking progress in The Legend of Zelda: A Link Between Worlds Randomizer.
 
+## Installation
+
+The pack can be installed directly through EmoTracker's built-in package management system.
+
 ## Release Notes
 
 - Author: LemonKong
-- Version: 0.0.1
-    - Initial Beta release. Moved to new repo.
+- Version:
+    - 1.0.0 Official release. Updated README.
+    - 0.0.1 Initial Beta release. Moved to new repo.
     
 ## Screen Shots
 
@@ -40,7 +37,7 @@ This is an EmoTracker pack for tracking progress in The Legend of Zelda: A Link 
       Maiamai.
 
 
-- **High Definition Overworld Maps:** 2048x2048 maps supplied for tracking the Hyrule and Lorule Overworlds in great
+- **HD Overworld Maps:** 2048x2048 maps supplied for tracking the Hyrule and Lorule Overworlds in great
   detail! Two options are provided to give you more viewing control:
     - The "Side-by-Side" view shows Hyrule and Lorule together so you can see everything at once.
     - The "Zoomed" view provides a close-up look at both maps, making it easier to focus on a specific area.
@@ -104,19 +101,19 @@ This is an EmoTracker pack for tracking progress in The Legend of Zelda: A Link 
           don't feel like clicking them all.
 
 
-- **What's the Bomb Flower for?**
+- **What's the ![Bomb Flower](images/bomb_flower.png?raw=true) for?**
     - Purchase the Big Bomb Flower at the Bomb Flower Store to unlock this. The Bomb Flower can be used to blow up huge
       rocks blocking several other checks, and in a pinch it can be used in place of the usual bombs to blast open the
       Vacant House.
 
 
-- **What's the blonde haired guy for?**
+- **What's the ![blonde haired guy](images/shady_guy.png?raw=true) for?**
     - That's the Shady Guy, you run into him when first approaching Zora's Domain. That short cutscene is a trigger that
       activates two checks in Kakariko Village: one for buying the item in the Smooth Gem Slot from the Street Merchant,
       and one for sneaking up on the Shady Guy himself to get an item.
 
 
-- **What's the purple bunny sign for?**
+- **What's the ![purple sign](images/signs.png?raw=true) for?**
     - The Ravio Sign represents a trigger you can activate by watching a short cutscene near Eastern Palace. This
       trigger will cause Ravio to give you the item in the Bow slot for free the next time you enter his shop. This
       trigger is superseded by the triggers that unlock Ravio's full shop, and so activating any of them will "upgrade"
@@ -149,7 +146,7 @@ This is an EmoTracker pack for tracking progress in The Legend of Zelda: A Link 
 
 
 - **You labelled the 2F in Swamp and 6F in Lorule Castle incorrectly!!**
-    - Are you sure?
+    - You sure about that?
 
 
 - **I found a problem with the logic!**

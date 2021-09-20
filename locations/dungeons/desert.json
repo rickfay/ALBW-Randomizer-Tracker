@@ -307,9 +307,9 @@
     "color": "#2d3bb7",
     "access_rules": [
       "lorule, merge, $yButton, srod, titansmitt, $attack",
-      // Desert Palace Skip. IRod + TRod make it faster, but all you actually need is to be able to boost
+      // Desert Palace Skip. IRod + TRod make it faster, but aren't actually needed for the boost method
       "$miseryMireOoB, boots",
-      // Skip Dungeon, but fight Zaganaga. Titan's Mitt not needed with the skip, and $boost implies $attack
+      // Skip Dungeon, but fight Zaganaga. Titan's Mitt not needed with the skip
       "$miseryMireOoB, srod, $attack",
       // Low% shitty fight
       "$miseryMireOoB, bow, zagaBow",

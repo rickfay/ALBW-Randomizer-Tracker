@@ -1,0 +1,25 @@
+{
+  "name": "LemonKong's Trackers",
+  "packages": [
+    {
+      "name": "ZALBWR Dungeon Tracker",
+      "author": "LemonKong",
+      "game_name": "The Legend of Zelda: A Link Between Worlds",
+      "version": "1.0.0",
+      "required_app_version": "2.3.8.14",
+      "uid": "zalbwr_dungeon_tracker",
+      "flags": [ "map", "pins", "chathud" ],
+      "link": "https://github.com/rickfay/ZALBWR-Dungeon-Tracker/raw/master/zalbwr_dungeon_tracker.zip",
+      "variants": [
+        {
+          "name": "Dungeon Tracker",
+          "flags": [ "map", "pins", "chathud" ]
+        },
+        {
+          "name": "Items Only",
+          "flags": [ "chathud" ]
+        }
+      ]
+    }
+  ]
+}

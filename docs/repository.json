@@ -9,7 +9,7 @@
       "required_app_version": "2.3.8.14",
       "uid": "lemonkong_albwr_tracker",
       "flags": [ "map", "pins", "chathud" ],
-      "link": "https://rickfay.github.io/ZALBWR-Dungeon-Tracker/zalbwr_dungeon_tracker.zip",
+      "link": "https://rickfay.github.io/ZALBWR-Dungeon-Tracker/lemonkong_albwr_tracker.zip",
       "variants": [
         {
           "name": "Overworld + Dungeon Map Tracker",

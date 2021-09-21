@@ -7,7 +7,7 @@
   "author": "LemonKong",
   "variants": {
     "standard": {
-      "display_name": "Overworld + Dungeon Map Tracker"
+      "display_name": "Overworld + Dungeon Maps"
     },
     "items_only": {
       "display_name": "Items Only"

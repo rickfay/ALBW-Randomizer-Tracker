@@ -2,11 +2,7 @@
 
 ## About
 
-This is an EmoTracker pack for tracking progress in The Legend of Zelda: A Link Between Worlds Randomizer.
-
-## Installation
-
-The pack can be installed directly through EmoTracker's built-in package management system.
+This is an [EmoTracker](https://emotracker.net/) pack for tracking progress in The Legend of Zelda: A Link Between Worlds Randomizer.
 
 ## Release Notes
 
@@ -14,7 +10,7 @@ The pack can be installed directly through EmoTracker's built-in package managem
 - Version:
     - 1.0.0 Official release. Updated README.
     - 0.0.1 Initial Beta release. Moved to new repo.
-    
+
 ## Screen Shots
 
 ![screenshot_01.png](docs/screenshots/screenshot_01.png?raw=true)
@@ -43,7 +39,7 @@ The pack can be installed directly through EmoTracker's built-in package managem
     - The "Zoomed" view provides a close-up look at both maps, making it easier to focus on a specific area.
 
 
-- **A Link to the Past-Inspired Compact Menu Layout**: Given this is the sequel to one of the most famous games to
+- **ALttP Inspired Compact Menu Layout**: Given this is the sequel to one of the most famous games to
   receive a randomizer, I really wanted this tracker to pay homage to ALttP with its item layout. The layout tries to
   copy the Start Menu of ALttP using its sequel's items, with minimal substitutions, while also making room for this
   game's new additions. The entire layout is kept compact, with all items fitting neatly inside a 6x8 grid.

@@ -1,4 +1,4 @@
--- ALBWR Dungeon Tracker Init
+-- ALBW Randomizer Tracker Init
 
 ScriptHost:LoadScript("scripts/control.lua")
 

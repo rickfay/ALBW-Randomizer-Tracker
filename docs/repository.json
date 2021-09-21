@@ -2,17 +2,17 @@
   "name": "LemonKong's Trackers",
   "packages": [
     {
-      "name": "ZALBWR Dungeon Tracker",
+      "name": "ALBW Randomizer Map Tracker",
       "author": "LemonKong",
       "game_name": "The Legend of Zelda: A Link Between Worlds",
       "version": "1.0.0",
       "required_app_version": "2.3.8.14",
-      "uid": "lemonkong_zalbwr_dungeon_tracker",
+      "uid": "lemonkong_albwr_tracker",
       "flags": [ "map", "pins", "chathud" ],
       "link": "https://rickfay.github.io/ZALBWR-Dungeon-Tracker/zalbwr_dungeon_tracker.zip",
       "variants": [
         {
-          "name": "Dungeon Tracker",
+          "name": "Overworld + Dungeon Map Tracker",
           "flags": [ "map", "pins", "chathud" ]
         },
         {

@@ -1,4 +1,4 @@
-# The Legend of Zelda: A Link Between Worlds Randomizer Dungeon Tracker
+# ALBW Randomizer Map Tracker
 
 ## About
 

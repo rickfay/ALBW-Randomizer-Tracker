@@ -1,13 +1,13 @@
 ﻿{
-  "name": "ZALBWR Dungeon Tracker",
+  "name": "ALBW Randomizer Map Tracker",
   "game_name": "The Legend of Zelda: A Link Between Worlds",
   "platform": "3DS",
   "package_version": "1.0.0",
-  "package_uid": "lemonkong_zalbwr_dungeon_tracker",
+  "package_uid": "lemonkong_albwr_tracker",
   "author": "LemonKong",
   "variants": {
     "standard": {
-      "display_name": "Dungeon Tracker"
+      "display_name": "Overworld + Dungeon Map Tracker"
     },
     "items_only": {
       "display_name": "Items Only"

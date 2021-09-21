@@ -1,4 +1,4 @@
-# ALBW Randomizer Map Tracker
+# ALBW Randomizer Tracker
 
 ## About
 

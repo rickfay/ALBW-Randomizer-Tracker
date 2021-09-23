@@ -13,11 +13,11 @@
       "variants": [
         {
           "name": "Overworld + Dungeon Maps",
-          "flags": [ "map", "pins", "chathud" ]
+          "flags": [ "map", "pins" ]
         },
         {
           "name": "Items Only",
-          "flags": [ "chathud" ]
+          "flags": []
         }
       ]
     }

@@ -8,7 +8,7 @@
       "version": "1.0.0",
       "required_app_version": "2.3.8.14",
       "uid": "lemonkong_albwr_tracker",
-      "flags": [ "map", "pins", "chathud" ],
+      "flags": [ "map", "pins" ],
       "link": "https://rickfay.github.io/ALBW-Randomizer-Tracker/lemonkong_albwr_tracker.zip",
       "variants": [
         {

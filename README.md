@@ -8,6 +8,7 @@ This is an [EmoTracker](https://emotracker.net/) pack for tracking progress in T
 
 - Author: LemonKong
 - Version:
+    - 1.0.1 Removed explicit background color from broadcast view.
     - 1.0.0 Official release. Updated README.
     - 0.0.1 Initial Beta release. Moved to new repo.
 

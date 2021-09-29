@@ -1,7 +1,6 @@
 {
   "tracker_broadcast": {
     "type": "layout",
-    "background": "#5c6075",
     "width": 345,
     "dropshadow": true,
     "key": "item_grid"

@@ -8,16 +8,24 @@ This is an [EmoTracker](https://emotracker.net/) pack for tracking progress in T
 
 - Author: LemonKong
 - Version:
-    - 1.0.1 Removed explicit background color from broadcast view.
-    - 1.0.0 Official release. Updated README.
-    - 0.0.1 Initial Beta release. Moved to new repo.
+    - 1.0.2:
+      - Add logic to consider new Dash Dungeon strategies with just Bombs or Boomerang
+      - Remove Dropshadow from tracker icons
+      - Adjust floor icons in Swamp and Lorule Castle
+      - Rearrange directory structure slightly to ease building dev artifacts
+    - 1.0.1:
+      - Removed explicit background color from broadcast view.
+    - 1.0.0:
+      - Official release. Updated README.
+    - 0.0.1:
+      - Initial Beta release. Moved to new repo.
 
 ## Screen Shots
 
-![screenshot_01.png](docs/screenshots/screenshot_01.png?raw=true)
-![screenshot_02.png](docs/screenshots/screenshot_02.png?raw=true)
-![screenshot_03.png](docs/screenshots/screenshot_03.png?raw=true)
-![screenshot_04.png](docs/screenshots/screenshot_04.png?raw=true)
+![screenshot_01.png](screenshots/screenshot_01.png?raw=true)
+![screenshot_02.png](screenshots/screenshot_02.png?raw=true)
+![screenshot_03.png](screenshots/screenshot_03.png?raw=true)
+![screenshot_04.png](screenshots/screenshot_04.png?raw=true)
 
 
 ## Features

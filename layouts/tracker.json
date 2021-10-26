@@ -1027,7 +1027,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/Blank.png",
+                                  "image": "images/maps/floors/2F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1777,7 +1777,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/3F_Boss.png",
+                                  "image": "images/maps/floors/3F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235

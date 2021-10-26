@@ -354,7 +354,9 @@
                 "chest_unopened_img": "images/chest_big_unopened.png",
                 "chest_opened_img": "images/chest_big_opened.png",
                 "access_rules": [
-                  "boots"
+                  "boots",
+                  "[boots], bombs",
+                  "[boots], boomerang"
                 ],
                 "item_count": 1
               }

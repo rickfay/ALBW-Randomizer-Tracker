@@ -8,9 +8,11 @@ This is an [EmoTracker](https://emotracker.net/) pack for tracking progress in T
 
 - Author: LemonKong
 - Version:
+    - 1.0.3:
+      - Add sequence break for Dash Dungeon with Sword Beams
     - 1.0.2:
       - Add logic to consider new Dash Dungeon strategies with just Bombs or Boomerang
-      - Remove Dropshadow from tracker icons
+      - Remove Dropshadow from broadcast tracker icons
       - Adjust floor icons in Swamp and Lorule Castle
       - Rearrange directory structure slightly to ease building dev artifacts
     - 1.0.1:

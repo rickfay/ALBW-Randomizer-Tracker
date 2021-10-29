@@ -356,7 +356,8 @@
                 "access_rules": [
                   "boots",
                   "[boots], bombs",
-                  "[boots], boomerang"
+                  "[boots], boomerang",
+                  "[boots], msword"
                 ],
                 "item_count": 1
               }

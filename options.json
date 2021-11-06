@@ -6,12 +6,12 @@
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/options/yes.png",
+        "img": "images/yes.png",
         "codes": "ybutton",
         "inherit_codes": false
       },
       {
-        "img": "images/options/no.png",
+        "img": "images/no.png",
         "codes": "ybutton_false",
         "inherit_codes": false
       }
@@ -24,12 +24,12 @@
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/options/no.png",
+        "img": "images/no.png",
         "codes": "lampful",
         "inherit_codes": false
       },
       {
-        "img": "images/options/yes.png",
+        "img": "images/yes.png",
         "codes": "lampless",
         "inherit_codes": false
       }
@@ -42,12 +42,12 @@
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/options/no.png",
+        "img": "images/no.png",
         "codes": "lampAsWeapon_false",
         "inherit_codes": false
       },
       {
-        "img": "images/options/yes.png",
+        "img": "images/yes.png",
         "codes": "lampAsWeapon",
         "inherit_codes": false
       }
@@ -60,12 +60,12 @@
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/options/no.png",
+        "img": "images/no.png",
         "codes": "netAsWeapon_false",
         "inherit_codes": false
       },
       {
-        "img": "images/options/yes.png",
+        "img": "images/yes.png",
         "codes": "netAsWeapon",
         "inherit_codes": false
       }
@@ -78,12 +78,12 @@
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/options/no.png",
+        "img": "images/no.png",
         "codes": "bootsAsWeapon_false",
         "inherit_codes": false
       },
       {
-        "img": "images/options/yes.png",
+        "img": "images/yes.png",
         "codes": "bootsAsWeapon",
         "inherit_codes": false
       }
@@ -96,12 +96,12 @@
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/options/no.png",
+        "img": "images/no.png",
         "codes": "beeBoost_false",
         "inherit_codes": false
       },
       {
-        "img": "images/options/yes.png",
+        "img": "images/yes.png",
         "codes": "beeBoost",
         "inherit_codes": false
       }
@@ -114,12 +114,12 @@
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/options/no.png",
+        "img": "images/no.png",
         "codes": "bombBoost_false",
         "inherit_codes": false
       },
       {
-        "img": "images/options/yes.png",
+        "img": "images/yes.png",
         "codes": "bombBoost",
         "inherit_codes": false
       }
@@ -131,12 +131,12 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/options/yes.png",
+        "img": "images/yes.png",
         "codes": "lampShuffle",
         "inherit_codes": false
       },
       {
-        "img": "images/options/no.png",
+        "img": "images/no.png",
         "codes": "lampVanilla",
         "inherit_codes": false
       }
@@ -149,12 +149,12 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/options/yes.png",
+        "img": "images/yes.png",
         "codes": "swordShuffle",
         "inherit_codes": false
       },
       {
-        "img": "images/options/no.png",
+        "img": "images/no.png",
         "codes": "swordVanilla",
         "inherit_codes": false
       }
@@ -167,12 +167,12 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/options/yes.png",
+        "img": "images/yes.png",
         "codes": "skipDelivery",
         "inherit_codes": false
       },
       {
-        "img": "images/options/no.png",
+        "img": "images/no.png",
         "codes": "delivery",
         "inherit_codes": false
       }
@@ -185,12 +185,12 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/options/yes.png",
+        "img": "images/yes.png",
         "codes": "open",
         "inherit_codes": false
       },
       {
-        "img": "images/options/no.png",
+        "img": "images/no.png",
         "codes": "standard",
         "inherit_codes": false
       }
@@ -203,12 +203,12 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/options/yes.png",
+        "img": "images/yes.png",
         "codes": "barrierSkipEP",
         "inherit_codes": false
       },
       {
-        "img": "images/options/no.png",
+        "img": "images/no.png",
         "codes": "barrierRequireEP",
         "inherit_codes": false
       }
@@ -221,12 +221,12 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/options/no.png",
+        "img": "images/no.png",
         "codes": "shieldRodClip_false",
         "inherit_codes": false
       },
       {
-        "img": "images/options/yes.png",
+        "img": "images/yes.png",
         "codes": "shieldRodClip",
         "inherit_codes": false
       }
@@ -239,12 +239,12 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/options/no.png",
+        "img": "images/no.png",
         "codes": "zagaBow_false",
         "inherit_codes": false
       },
       {
-        "img": "images/options/yes.png",
+        "img": "images/yes.png",
         "codes": "zagaBow",
         "inherit_codes": false
       }
@@ -257,12 +257,12 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/options/no.png",
+        "img": "images/no.png",
         "codes": "zagaSwordBeams_false",
         "inherit_codes": false
       },
       {
-        "img": "images/options/yes.png",
+        "img": "images/yes.png",
         "codes": "zagaSwordBeams",
         "inherit_codes": false
       }
@@ -275,13 +275,31 @@
     "loop": true,
     "stages": [
       {
-        "img": "images/options/no.png",
+        "img": "images/no.png",
         "codes": "portalClipping_false",
         "inherit_codes": false
       },
       {
-        "img": "images/options/yes.png",
+        "img": "images/yes.png",
         "codes": "portalClipping",
+        "inherit_codes": false
+      }
+    ],
+    "allow_disabled": false
+  },
+  {
+    "name": "Vulture Boosting",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/no.png",
+        "codes": "vulture_false",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/yes.png",
+        "codes": "vulture",
         "inherit_codes": false
       }
     ],

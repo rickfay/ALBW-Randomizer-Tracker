@@ -200,9 +200,6 @@
               },
               {
                 "name": "House of Gales",
-                "access_rules": [
-                  "$fire"
-                ],
                 "map_locations": [
                   {
                     "map": "hog3F",

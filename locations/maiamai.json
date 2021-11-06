@@ -170,7 +170,12 @@
               "maiamai_map"
             ],
             "access_rules": [
-              "powerglove"
+              "titansmitt",
+              "powerglove, hammer",
+              "powerglove, [hammer], hookshot",
+              "powerglove, [hammer], boomerang, $escape",
+              "powerglove, [hammer], srod, $escape",
+              "powerglove, [hammer], $shieldRodClip, $escape",
             ]
           }
         ]
@@ -294,7 +299,8 @@
               "maiamai_map"
             ],
             "access_rules": [
-              "powerglove, hookshot"
+              "merge, powerglove, hookshot",
+              "[merge], powerglove, hookshot, boots, trod"
             ]
           }
         ]
@@ -318,7 +324,9 @@
               "maiamai_map"
             ],
             "access_rules": [
-              "powerglove, hookshot"
+              "merge, powerglove, hookshot",
+              "[merge], powerglove, hookshot, boots", // Fast Descent
+              "[merge], powerglove, hookshot, $boost" // Alt Alt ROM Skip
             ]
           }
         ]
@@ -617,8 +625,8 @@
               "maiamai_map"
             ],
             "access_rules": [
-              "{}",
-              "merge"
+              "{ravio}",
+              "ravio, merge"
             ]
           }
         ]

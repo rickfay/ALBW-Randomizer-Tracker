@@ -306,12 +306,13 @@
     "name": "Zaganaga's Arena",
     "color": "#2d3bb7",
     "access_rules": [
+      // Intended
       "lorule, merge, $yButton, srod, titansmitt, $attack",
       // Desert Palace Skip. IRod + TRod make it faster, but aren't actually needed for the boost method
       "$miseryMireOoB, boots",
       // Skip Dungeon, but fight Zaganaga. Titan's Mitt not needed with the skip
       "$miseryMireOoB, srod, $attack",
-      // Low% shitty fight
+      // Shitty versions
       "$miseryMireOoB, bow, zagaBow",
       "$miseryMireOoB, msword, zagaSwordBeams"
     ],

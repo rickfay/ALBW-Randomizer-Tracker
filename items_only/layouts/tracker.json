@@ -7,7 +7,6 @@
       {
         "type": "layout",
         "background": "#434554",
-        "dropshadow": true,
         "key": "item_grid"
       }
     ]

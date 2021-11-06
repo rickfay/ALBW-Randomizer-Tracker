@@ -355,8 +355,10 @@
                 "chest_opened_img": "images/chest_big_opened.png",
                 "access_rules": [
                   "boots",
-                  "[boots], bombs",
-                  "[boots], boomerang",
+                  "[boots], $yButton, bombs",
+                  "[boots], $yButton, boomerang",
+                  "[boots], $yButton, nicebow",
+                  "[boots], $yButton, niceirod",
                   "[boots], msword"
                 ],
                 "item_count": 1
@@ -559,9 +561,11 @@
                 "access_rules": [
                   "{}",
                   "$yButton, srod, bombs",
-                  "$yButton, [srod], bombs, scroll",
-                  "$yButton, [srod], bombs, frod",
-                  "$yButton, [srod], [bombs], frod, boots"
+                  "$yButton, [srod], bombs, frod", // FRod boost in Hyrule
+                  "$yButton, [srod], nicebombs", // Lemon boost in Hyrule
+                  "$yButton, [srod], bombs, vulture", // Vulture boost
+                  "$yButton, [srod], bombs, bombBoost", // Regular bomb boost
+                  "$yButton, [srod], [bombs], frod, boots" // FRod boost + wall dash
                 ],
                 "item_count": 1
               }

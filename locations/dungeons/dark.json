@@ -24,254 +24,262 @@
         ]
       },
       {
-        "name": "Dark Palace",
-        "map_locations": [
-          {
-            "map": "dark1F",
-            "x": 71,
-            "y": 103
-          }
+        "name": "Dark Palace Dark Rooms",
+        "access_rules": [
+          "$lampless"
         ],
-        "sections": [
+        "children": [
           {
-            "name": "1F Left Pit Key",
-            "capture_item": true,
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Dark Palace",
-        "map_locations": [
-          {
-            "map": "dark1F",
-            "x": 36,
-            "y": 59
-          }
-        ],
-        "sections": [
-          {
-            "name": "1F Switches Chest",
-            "capture_item": true,
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Dark Palace",
-        "map_locations": [
-          {
-            "map": "dark1F",
-            "x": 141,
-            "y": 91
-          }
-        ],
-        "sections": [
-          {
-            "name": "1F East Upper Hidden Room",
-            "capture_item": true,
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Dark Palace",
-        "map_locations": [
-          {
-            "map": "dark1F",
-            "x": 124,
-            "y": 82
-          }
-        ],
-        "sections": [
-          {
-            "name": "1F East Lower Hidden Room",
-            "capture_item": true,
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Dark Palace",
-        "map_locations": [
-          {
-            "map": "dark1F",
-            "x": 109,
-            "y": 47
-          }
-        ],
-        "sections": [
-          {
-            "name": "1F Fall Chest",
-            "capture_item": true,
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Dark Palace",
-        "map_locations": [
-          {
-            "map": "dark2F",
-            "x": 88,
-            "y": 65
-          }
-        ],
-        "sections": [
-          {
-            "name": "2F Master Ore Chest",
-            "chest_unopened_img": "images/chest_big_unopened.png",
-            "chest_opened_img": "images/chest_big_opened.png",
-            "capture_item": true,
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Dark Palace",
-        "map_locations": [
-          {
-            "map": "dark2F",
-            "x": 119,
-            "y": 98
-          }
-        ],
-        "sections": [
-          {
-            "name": "2F East Wall Chest",
-            "capture_item": true,
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Dark Palace",
-        "map_locations": [
-          {
-            "map": "darkB1",
-            "x": 98,
-            "y": 44
-          }
-        ],
-        "sections": [
-          {
-            "name": "B1 Center Fall Key",
-            "capture_item": true,
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Dark Palace",
-        "map_locations": [
-          {
-            "map": "darkB1",
-            "x": 149,
-            "y": 70
-          }
-        ],
-        "sections": [
-          {
-            "name": "B1 East Fall Chest",
-            "capture_item": true,
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Dark Palace",
-        "map_locations": [
-          {
-            "map": "darkB1",
-            "x": 149,
-            "y": 31
-          }
-        ],
-        "sections": [
-          {
-            "name": "B1 East Key",
-            "capture_item": true,
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Dark Palace",
-        "map_locations": [
-          {
-            "map": "darkB1",
-            "x": 32,
-            "y": 71
-          }
-        ],
-        "sections": [
-          {
-            "name": "B1 Maze Room Chest",
-            "capture_item": true,
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Dark Palace",
-        "map_locations": [
-          {
-            "map": "darkB1",
-            "x": 44,
-            "y": 89
-          }
-        ],
-        "sections": [
-          {
-            "name": "B1 Big Key Chest",
-            "chest_unopened_img": "images/chest_big_unopened.png",
-            "chest_opened_img": "images/chest_big_opened.png",
-            "capture_item": true,
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Dark Palace",
-        "map_locations": [
-          {
-            "map": "darkB1",
-            "x": 88,
-            "y": 68
-          }
-        ],
-        "sections": [
-          {
-            "name": "Heart Container",
-            "access_rules": [
-              "$fire"
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "dark1F",
+                "x": 71,
+                "y": 103
+              }
             ],
-            "capture_item": true,
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Dark Palace",
-        "map_locations": [
-          {
-            "map": "lorule",
-            "x": 1921,
-            "y": 852
+            "sections": [
+              {
+                "name": "1F Left Pit Key",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
           },
           {
-            "map": "darkB1",
-            "x": 88,
-            "y": 58
-          }
-        ],
-        "sections": [
-          {
-            "name": "Sage Gulley",
-            "access_rules": [
-              "$fire"
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "dark1F",
+                "x": 36,
+                "y": 59
+              }
             ],
-            "hosted_item": "dark"
+            "sections": [
+              {
+                "name": "1F Switches Chest",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "dark1F",
+                "x": 141,
+                "y": 91
+              }
+            ],
+            "sections": [
+              {
+                "name": "1F East Upper Hidden Room",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "dark1F",
+                "x": 124,
+                "y": 82
+              }
+            ],
+            "sections": [
+              {
+                "name": "1F East Lower Hidden Room",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "dark1F",
+                "x": 109,
+                "y": 47
+              }
+            ],
+            "sections": [
+              {
+                "name": "1F Fall Chest",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "dark2F",
+                "x": 88,
+                "y": 65
+              }
+            ],
+            "sections": [
+              {
+                "name": "2F Master Ore Chest",
+                "chest_unopened_img": "images/chest_big_unopened.png",
+                "chest_opened_img": "images/chest_big_opened.png",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "dark2F",
+                "x": 119,
+                "y": 98
+              }
+            ],
+            "sections": [
+              {
+                "name": "2F East Wall Chest",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "darkB1",
+                "x": 98,
+                "y": 44
+              }
+            ],
+            "sections": [
+              {
+                "name": "B1 Center Fall Key",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "darkB1",
+                "x": 149,
+                "y": 70
+              }
+            ],
+            "sections": [
+              {
+                "name": "B1 East Fall Chest",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "darkB1",
+                "x": 149,
+                "y": 31
+              }
+            ],
+            "sections": [
+              {
+                "name": "B1 East Key",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "darkB1",
+                "x": 32,
+                "y": 71
+              }
+            ],
+            "sections": [
+              {
+                "name": "B1 Maze Room Chest",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "darkB1",
+                "x": 44,
+                "y": 89
+              }
+            ],
+            "sections": [
+              {
+                "name": "B1 Big Key Chest",
+                "chest_unopened_img": "images/chest_big_unopened.png",
+                "chest_opened_img": "images/chest_big_opened.png",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "darkB1",
+                "x": 88,
+                "y": 68
+              }
+            ],
+            "sections": [
+              {
+                "name": "Heart Container",
+                "access_rules": [
+                  "$fire"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 1921,
+                "y": 852
+              },
+              {
+                "map": "darkB1",
+                "x": 88,
+                "y": 58
+              }
+            ],
+            "sections": [
+              {
+                "name": "Sage Gulley",
+                "access_rules": [
+                  "$fire"
+                ],
+                "hosted_item": "dark"
+              }
+            ]
           }
         ]
       }

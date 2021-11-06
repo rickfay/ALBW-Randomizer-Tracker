@@ -5,6 +5,7 @@
       "sanctuary, eastern, msword",
       "open, barrierSkipEP, msword",
       "open, barrierRequireEP, eastern, msword",
+      "open, barrierRequireEP, $notEastern",
       "standard, sanctuary, barrierSkipEP, msword",
       "standard, sanctuary, barrierRequireEP, eastern, msword",
       "standard, sanctuary, barrierRequireEP, $notEastern"

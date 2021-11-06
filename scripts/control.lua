@@ -86,8 +86,13 @@ end
 
 -- Return if the player is able to escape an otherwise softlock-able area
 -- Having Bell would be ideal, but death warping using bombs or fire rod also works
+-- If we can't escape, still return true, but with access level Inspect b/c the player can technically die to view it
 function escape()
-    return has("bell") or (yButton() and hasAny({ "bombs", "frod" })), AccessibilityLevel.SequenceBreak
+    if (has("bell") or (yButton() and hasAny({ "bombs", "frod" }))) then
+        return true, AccessibilityLevel.SequenceBreak
+    else
+        return true, AccessibilityLevel.Inspect
+    end
 end
 
 -- Return if Link has a Fire source
@@ -99,8 +104,7 @@ end
 -- Return if Link can hit Crystal Switches
 -- Pots aren't accounted for here, but may make hitting some switches possible
 function switch()
-    return has("fsword")
-            or (yButton() and hasAny({ "bow", "boomerang", "hookshot", "bombs", "irod", "hammer", "boots" }))
+    return has("fsword") or (yButton() and hasAny({ "bow", "boomerang", "hookshot", "bombs", "irod", "hammer", "boots" }))
 end
 
 -- Return if Link either has lamp, or lampless is enabled
@@ -109,6 +113,8 @@ function lampless()
         return true
     elseif has("lampless") then
         return true, AccessibilityLevel.SequenceBreak
+    else
+        return false
     end
 end
 
@@ -129,7 +135,7 @@ end
 
 -- Return if Portal Clipping is enabled and we can perform it
 function portalClip()
-    return has("portalClipping") and (hasAll({ "trod", "$stun" }) or shieldRodClip()), AccessibilityLevel.SequenceBreak
+    return hasAll({ "portalClipping", "trod" }) and (hasAny({ "boomerang", "hookshot" }) or shieldRodClip()), AccessibilityLevel.SequenceBreak
 end
 
 -- Return if we can get Out of Bounds in Thieves

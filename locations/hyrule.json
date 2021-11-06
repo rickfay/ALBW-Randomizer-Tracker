@@ -14,6 +14,7 @@
         "sections": [
           {
             "name": "Big Rock Chest",
+            "capture_item": true,
             "access_rules": [
               "titansmitt",
               "[titansmitt], $stun, $escape",
@@ -76,7 +77,7 @@
         ],
         "sections": [
           {
-            "name": "Hand-Me-Down",
+            "name": "Crooked Chest",
             "chest_unopened_img": "images/chest_crooked_unopened.png",
             "chest_opened_img": "images/chest_crooked_opened.png",
             "access_rules": [
@@ -692,8 +693,10 @@
             "capture_item": true,
             "access_rules": [
               "flippers",
-              "[flippers], merge, $boost",
-              "[flippers], $fakeFlippers"
+              "[flippers], $fakeFlippers",
+              // Crow Boost - negates need for $boost
+              "[flippers], merge",
+              "[flippers], [merge], beeBoost"
             ],
             "item_count": 1
           }
@@ -868,6 +871,7 @@
         "sections": [
           {
             "name": "Bottle Slot (100)",
+            "chest_opened_img": "images/soldout.png",
             "access_rules": [
               "open",
               "standard, sanctuary"
@@ -962,7 +966,6 @@
           {
             "name": "Ice Rod Slot (100)     ",
             "capture_item": true,
-            "chest_unopened_img": "images/rent_irod.png",
             "chest_opened_img": "images/soldout.png",
             "access_rules": [
               "ravio"
@@ -972,7 +975,6 @@
           {
             "name": "Hookshot Slot (50)   ",
             "capture_item": true,
-            "chest_unopened_img": "images/rent_hookshot.png",
             "chest_opened_img": "images/soldout.png",
             "access_rules": [
               "ravio"
@@ -982,7 +984,6 @@
           {
             "name": "Tornado Rod Slot (20/50)",
             "capture_item": true,
-            "chest_unopened_img": "images/rent_trod.png",
             "chest_opened_img": "images/soldout.png",
             "access_rules": [
               "ravio"
@@ -992,7 +993,6 @@
           {
             "name": "Bombs Slot (50)        ",
             "capture_item": true,
-            "chest_unopened_img": "images/rent_bombs.png",
             "chest_opened_img": "images/soldout.png",
             "access_rules": [
               "ravio"
@@ -1002,7 +1002,6 @@
           {
             "name": "Bow Slot (0/10/50)   ",
             "capture_item": true,
-            "chest_unopened_img": "images/rent_bow.png",
             "chest_opened_img": "images/soldout.png",
             "access_rules": [
               "signs"
@@ -1012,7 +1011,6 @@
           {
             "name": "Sand Rod Slot (50)",
             "capture_item": true,
-            "chest_unopened_img": "images/rent_srod.png",
             "chest_opened_img": "images/soldout.png",
             "access_rules": [
               "{ravio}",
@@ -1023,7 +1021,6 @@
           {
             "name": "Hammer Slot (20/50)",
             "capture_item": true,
-            "chest_unopened_img": "images/rent_hammer.png",
             "chest_opened_img": "images/soldout.png",
             "access_rules": [
               "ravio"
@@ -1033,7 +1030,6 @@
           {
             "name": "Boomerang Slot (50)",
             "capture_item": true,
-            "chest_unopened_img": "images/rent_boomerang.png",
             "chest_opened_img": "images/soldout.png",
             "access_rules": [
               "ravio"
@@ -1043,7 +1039,6 @@
           {
             "name": "Fire Rod Slot (100)",
             "capture_item": true,
-            "chest_unopened_img": "images/rent_frod.png",
             "chest_opened_img": "images/soldout.png",
             "access_rules": [
               "ravio"
@@ -1205,7 +1200,7 @@
             "access_rules": [
               "eastern"
             ],
-            "hosted_item": "irene",
+            "hosted_item": "ireneTrigger",
             "item_count": 1
           }
         ]
@@ -1519,8 +1514,7 @@
           {
             "name": "Win 2 Races",
             "access_rules": [
-              "{irene}",
-              "irene, boots"
+              "ireneTrigger, boots"
             ],
             "item_count": 1
           }

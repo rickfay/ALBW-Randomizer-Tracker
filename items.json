@@ -15,7 +15,7 @@
     "name": "Big Bomb Flower",
     "type": "toggle",
     "img": "images/bomb_flower.png",
-    "codes": "bombflower"
+    "codes": "bombflower, bigbombflower"
   },
   {
     "name": "Big Key",
@@ -88,7 +88,7 @@
     "name": "Bow of Light",
     "type": "toggle",
     "img": "images/bow_light.png",
-    "codes": "bowlight"
+    "codes": "bowlight, bowoflight"
   },
   {
     "name": "Bug Net",
@@ -97,12 +97,12 @@
       {
         "name": "Bug Net",
         "img": "images/net.png",
-        "codes": "net"
+        "codes": "net, bugnet"
       },
       {
         "name": "Super Net",
         "img": "images/net_super.png",
-        "codes": "supernet"
+        "codes": "supernet, superbugnet"
       }
     ]
   },
@@ -122,13 +122,13 @@
     "name": "Sage Gulley",
     "type": "toggle",
     "img": "images/dark.png",
-    "codes": "dark"
+    "codes": "dark, gulley"
   },
   {
     "name": "Sage Irene",
     "type": "toggle",
     "img": "images/desert.png",
-    "codes": "desert"
+    "codes": "desert, irene"
   },
   {
     "name": "Pendant of Courage",
@@ -143,12 +143,12 @@
       {
         "name": "Fire Rod",
         "img": "images/frod.png",
-        "codes": "frod"
+        "codes": "frod, firerod"
       },
       {
         "name": "Nice Fire Rod",
         "img": "images/frod_nice.png",
-        "codes": "nicefrod"
+        "codes": "nicefrod, nicefirerod"
       }
     ]
   },
@@ -156,7 +156,7 @@
     "name": "Foul Fruit",
     "type": "toggle",
     "img": "images/foul_fruit.png",
-    "codes": "foul"
+    "codes": "foul, foulfruit"
   },
   {
     "name": "Gold Rupee",
@@ -168,7 +168,7 @@
     "name": "Golden Bee",
     "type": "toggle",
     "img": "images/bottle_goldenbee.png",
-    "codes": "goldenbee"
+    "codes": "goldenbee, goldbee"
   },
   {
     "name": "Green Rupee",
@@ -243,7 +243,7 @@
     "name": "Hint Glasses",
     "type": "toggle",
     "img": "images/hint_glasses.png",
-    "codes": "hintglasses"
+    "codes": "hintglasses, glasses"
   },
   {
     "name": "Hookshot",
@@ -274,12 +274,12 @@
       {
         "name": "Ice Rod",
         "img": "images/irod.png",
-        "codes": "irod"
+        "codes": "irod, icerod"
       },
       {
         "name": "Nice Ice Rod",
         "img": "images/irod_nice.png",
-        "codes": "niceirod"
+        "codes": "niceirod, niceicerod"
       }
     ]
   },
@@ -287,13 +287,13 @@
     "name": "Irene Trigger",
     "type": "toggle",
     "img": "images/irene.png",
-    "codes": "irene"
+    "codes": "ireneTrigger"
   },
   {
     "name": "Sage Rosso",
     "type": "toggle",
     "img": "images/ice.png",
-    "codes": "ice"
+    "codes": "ice, rosso"
   },
   {
     "name": "Lamp",
@@ -347,7 +347,7 @@
     "type": "consumable",
     "img": "images/master_ore.png",
     "max_quantity": 4,
-    "codes": "masterore"
+    "codes": "masterore, ore"
   },
   {
     "name": "Monster Guts",
@@ -371,7 +371,7 @@
     "name": "Pegasus Boots",
     "type": "toggle",
     "img": "images/pegasus_boots.png",
-    "codes": "boots"
+    "codes": "boots, pegasusboots"
   },
   {
     "name": "Pouch",
@@ -386,7 +386,7 @@
       {
         "name": "Power Glove",
         "img": "images/power_glove.png",
-        "codes": "powerglove"
+        "codes": "powerglove, glove"
       },
       {
         "name": "Titan's Mitt",
@@ -399,7 +399,7 @@
     "name": "Premium Milk",
     "type": "toggle",
     "img": "images/bottle_milk.png",
-    "codes": "milk"
+    "codes": "milk, premiummilk"
   },
   {
     "name": "Purple Rupee",
@@ -456,12 +456,12 @@
       {
         "name": "Sand Rod",
         "img": "images/srod.png",
-        "codes": "srod"
+        "codes": "srod, sandrod"
       },
       {
         "name": "Nice Sand Rod",
         "img": "images/srod_nice.png",
-        "codes": "nicesrod"
+        "codes": "nicesrod, nicesandrod"
       }
     ]
   },
@@ -469,13 +469,13 @@
     "name": "Scoot Fruit",
     "type": "toggle",
     "img": "images/scoot_fruit.png",
-    "codes": "scoot"
+    "codes": "scoot, scootfruit"
   },
   {
     "name": "Shady Guy",
     "type": "toggle",
     "img": "images/shady_guy.png",
-    "codes": "shadyguy"
+    "codes": "shady, shadyguy"
   },
   {
     "name": "Shield",
@@ -515,19 +515,19 @@
     "name": "Stamina Scroll",
     "type": "toggle",
     "img": "images/stamina_scroll.png",
-    "codes": "scroll"
+    "codes": "scroll, staminascroll"
   },
   {
     "name": "Sage Seres",
     "type": "toggle",
     "img": "images/skull.png",
-    "codes": "skull"
+    "codes": "skull, seres"
   },
   {
     "name": "Sage Oren",
     "type": "toggle",
     "img": "images/swamp.png",
-    "codes": "swamp"
+    "codes": "swamp, oren, worstsage"
   },
   {
     "name": "Sword",
@@ -537,22 +537,22 @@
       {
         "name": "Forgotten Sword",
         "img": "images/fsword.png",
-        "codes": "fsword"
+        "codes": "fsword, forgottensword, sword"
       },
       {
         "name": "Master Sword",
         "img": "images/msword.png",
-        "codes": "msword"
+        "codes": "msword, mastersword"
       },
       {
         "name": "Master Sword Lv2",
         "img": "images/msword2.png",
-        "codes": "msword2"
+        "codes": "msword2, mastersword2, tempered, temperedsword"
       },
       {
         "name": "Master Sword Lv3",
         "img": "images/msword3.png",
-        "codes": "msword3"
+        "codes": "msword3, mastersword3, butter, buttersword"
       }
     ]
   },
@@ -560,7 +560,7 @@
     "name": "Sage Osfala",
     "type": "toggle",
     "img": "images/thieves.png",
-    "codes": "thieves"
+    "codes": "thieves, osfala"
   },
   {
     "name": "Tornado Rod",
@@ -568,12 +568,12 @@
     "stages": [
       {
         "img": "images/trod.png",
-        "codes": "trod"
+        "codes": "trod, tornadorod"
       },
       {
         "name": "Nice Tornado Rod",
         "img": "images/trod_nice.png",
-        "codes": "nicetrod"
+        "codes": "nicetrod, nicetornadorod"
       }
     ]
   },
@@ -589,7 +589,7 @@
     "stages": [
       {
         "img": "images/triforce_courage.png",
-        "codes": "triforcec"
+        "codes": "triforcec, triforceofcourage"
       },
       {
         "img": "images/triforce.png",
@@ -601,7 +601,7 @@
     "name": "Sage Impa",
     "type": "toggle",
     "img": "images/turtle.png",
-    "codes": "turtle"
+    "codes": "turtle, impa"
   },
   {
     "name": "Zelda",

@@ -8,6 +8,12 @@ This is an [EmoTracker](https://emotracker.net/) pack for tracking progress in T
 
 - Author: LemonKong
 - Version:
+    - 1.1.1:
+        - Change Pendant of Courage to a progressive item with the Charm as its first stage to alleviate confusion for people playing on Standard Mode.
+        - Add new Modify Glitch Logic option "Use Crows to Escape Locations"
+        - Expand Bee Boost logic into all ledge boosting locations, but only if player doesn't have Bee Badge
+        - Shield Rod Clipping now requires sword
+        - Fix Desert Maiamai showing as obtainable before having Merge and access to Lorule
     - 1.1.0:
         - UI Changes:
             - Add a purple outline around the Lorule icon to make it easier to see when it's been obtained

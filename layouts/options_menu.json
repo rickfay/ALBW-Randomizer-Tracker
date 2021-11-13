@@ -5,7 +5,7 @@
     "item_size": 40,
     "item_margin": "1",
     "width": 660,
-    "height": 450,
+    "height": 486,
     "content": [
 
       // ----- Game Options -----//
@@ -134,6 +134,13 @@
         "item": "vulture",
         "height": 40,
         "canvas_top": 404,
+        "canvas_left": 352
+      },
+      {
+        "type": "item",
+        "item": "crowEscape",
+        "height": 40,
+        "canvas_top": 440,
         "canvas_left": 352
       }
     ]

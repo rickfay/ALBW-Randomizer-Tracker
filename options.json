@@ -304,5 +304,23 @@
       }
     ],
     "allow_disabled": false
+  },
+  {
+    "name": "Crow Escape",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/no.png",
+        "codes": "crowEscape_false",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/yes.png",
+        "codes": "crowEscape",
+        "inherit_codes": false
+      }
+    ],
+    "allow_disabled": false
   }
 ]

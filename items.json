@@ -132,9 +132,19 @@
   },
   {
     "name": "Pendant of Courage",
-    "type": "toggle",
-    "img": "images/eastern.png",
-    "codes": "eastern"
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "Special Charm",
+        "img": "images/charm.png",
+        "codes": "charm"
+      },
+      {
+        "name": "Pendant of Courage",
+        "img": "images/eastern.png",
+        "codes": "eastern"
+      }
+    ]
   },
   {
     "name": "Fire Rod",

@@ -67,9 +67,10 @@ end
 
 -- Return if the player can Fire Rod Boost or Lemon Boost to small ledges
 -- Regular Bomb Boosting is not considered unless the player enables the option
+-- Bee Boosting is also considered if enabled and the player doesn't have the Bee Badge
 function boost()
-    return yButton() and (hasAny({ "frod", "nicebombs" })
-            or hasAll({ "bombs", "bombBoost" })), AccessibilityLevel.SequenceBreak
+    return (yButton() and (hasAny({ "frod", "nicebombs" }) or hasAll({ "bombs", "bombBoost" })))
+            or beeBoost(), AccessibilityLevel.SequenceBreak
 end
 
 -- Return if the player can perform Fake Flippers
@@ -79,16 +80,16 @@ function fakeFlippers()
 end
 
 -- Return if the player can perform a Shield Rod Clip
--- This must be enabled in options to be considered
+-- This must be enabled in options to be considered, and the player needs a sword to use the shield
 function shieldRodClip()
-    return yButton() and hasAll({ "trod", "shield", "shieldRodClip" }), AccessibilityLevel.SequenceBreak
+    return yButton() and hasAll({ "fsword", "trod", "shield", "shieldRodClip" }), AccessibilityLevel.SequenceBreak
 end
 
 -- Return if the player is able to escape an otherwise softlock-able area
 -- Having Bell would be ideal, but death warping using bombs or fire rod also works
 -- If we can't escape, still return true, but with access level Inspect b/c the player can technically die to view it
 function escape()
-    if (has("bell") or (yButton() and hasAny({ "bombs", "frod" }))) then
+    if (has("bell") or (yButton() and hasAny({ "bombs", "frod" })) or has("crowEscape")) then
         return true, AccessibilityLevel.SequenceBreak
     else
         return true, AccessibilityLevel.Inspect
@@ -142,4 +143,10 @@ end
 -- Hammer, Hookshot, Sword Slashes, Boots, and all the optional weapons don't give you enough time to perform the clip
 function thievesOoB()
     return yButton() and hasAny({ "msword", "bow", "boomerang", "bombs", "irod" }), AccessibilityLevel.SequenceBreak
+end
+
+-- Bee Boosting
+-- This is a hard opt-in trick, and it can't be done if the player has the Bee Badge
+function beeBoost()
+    return has("beeBoost") and not has("beebadge"), AccessibilityLevel.SequenceBreak
 end

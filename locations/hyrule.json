@@ -671,7 +671,7 @@
             "name": "Shady Guy Cutscene",
             "access_rules": [
               "merge",
-              "[merge], beeBoost"
+              "[merge], $beeBoost"
             ],
             "hosted_item": "shadyguy",
             "item_count": 0
@@ -696,7 +696,7 @@
               "[flippers], $fakeFlippers",
               // Crow Boost - negates need for $boost
               "[flippers], merge",
-              "[flippers], [merge], beeBoost"
+              "[flippers], [merge], $beeBoost"
             ],
             "item_count": 1
           }
@@ -716,7 +716,7 @@
             "name": "Throw Smooth Gem",
             "access_rules": [
               "smoothgem, merge",
-              "smoothgem, [merge], beeBoost"
+              "smoothgem, [merge], $beeBoost"
             ],
             "item_count": 1,
             "hosted_item": "ravio"
@@ -1348,8 +1348,7 @@
                 "access_rules": [
                   "merge",
                   "[merge], trod",
-                  "[merge], nicebombs",
-                  "[merge], bombs, bombBoost"
+                  "[merge], $boost"
                 ],
                 "item_count": 1
               }

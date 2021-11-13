@@ -173,9 +173,9 @@
               "titansmitt",
               "powerglove, hammer",
               "powerglove, [hammer], hookshot",
-              "powerglove, [hammer], boomerang, $escape",
-              "powerglove, [hammer], srod, $escape",
-              "powerglove, [hammer], $shieldRodClip, $escape",
+              "powerglove, [hammer], boomerang",
+              "powerglove, [hammer], srod",
+              "powerglove, [hammer], $shieldRodClip",
             ]
           }
         ]
@@ -402,9 +402,9 @@
             ],
             "access_rules": [
               "{merge}",
-              "{[merge], beeBoost}",
+              "{$beeBoost}",
               "flippers, merge",
-              "flippers, [merge], beeBoost"
+              "flippers, [merge], $beeBoost"
             ]
           }
         ]
@@ -429,7 +429,7 @@
             ],
             "access_rules": [
               "{merge}",
-              "{[merge], beeBoost}",
+              "{$beeBoost}",
               "merge"
             ]
           }
@@ -1021,7 +1021,7 @@
               "maiamai_map"
             ],
             "access_rules": [
-              "srod"
+              "lorule, merge, srod"
             ]
           }
         ]
@@ -1045,7 +1045,7 @@
               "maiamai_map"
             ],
             "access_rules": [
-              "srod"
+              "lorule, merge, srod"
             ]
           }
         ]

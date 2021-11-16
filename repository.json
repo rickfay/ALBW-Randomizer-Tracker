@@ -5,7 +5,7 @@
       "name": "ALBW Randomizer Tracker",
       "author": "LemonKong",
       "game_name": "The Legend of Zelda: A Link Between Worlds",
-      "version": "1.1.1",
+      "version": "1.1.2",
       "required_app_version": "2.3.8.14",
       "uid": "lemonkong_albwr_tracker",
       "flags": [ "map", "pins" ],

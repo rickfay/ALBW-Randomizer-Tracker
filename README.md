@@ -8,7 +8,7 @@ This is an [EmoTracker](https://emotracker.net/) pack for tracking progress in T
 
 - Author: LemonKong
 - Version:
-    - Staged SNAPSHOT Changes:
+    - 1.1.2:
         - Add sequence breaks to get Eastern Ruins Pegs check with an Enemy Clip from a Tektite
     - 1.1.1:
         - Change Pendant of Courage to a progressive item with the Charm as its first stage to alleviate confusion for people playing on Standard Mode.

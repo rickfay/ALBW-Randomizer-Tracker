@@ -1261,7 +1261,11 @@
             "capture_item": true,
             "access_rules": [
               "{}",
-              "$yButton, hammer"
+              "$yButton, hammer",
+              "$yButton, [hammer], boomerang",
+              "$yButton, [hammer], hookshot",
+              "$yButton, [hammer], srod",
+              "$yButton, [hammer], trod"
             ],
             "item_count": 1
           }

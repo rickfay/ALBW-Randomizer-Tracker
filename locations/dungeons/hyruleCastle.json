@@ -53,12 +53,14 @@
           {
             "map": "hyrule",
             "x": 1023,
-            "y": 870
+            "y": 870,
+            "size": 60
           },
           {
             "map": "hyrule8F",
             "x": 83,
-            "y": 59
+            "y": 59,
+            "size": 15
           }
         ],
         "sections": [

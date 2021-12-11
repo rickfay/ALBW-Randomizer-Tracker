@@ -305,46 +305,79 @@
   {
     "name": "Zaganaga's Arena",
     "color": "#2d3bb7",
-    "access_rules": [
-      // Intended
-      "lorule, merge, $yButton, srod, titansmitt, $attack",
-      // Desert Palace Skip. IRod + TRod make it faster, but aren't actually needed for the boost method
-      "$miseryMireOoB, boots",
-      // Skip Dungeon, but fight Zaganaga. Titan's Mitt not needed with the skip
-      "$miseryMireOoB, srod, $attack",
-      // Shitty versions
-      "$miseryMireOoB, bow, zagaBow",
-      "$miseryMireOoB, msword, zagaSwordBeams"
-    ],
+
     "children": [
+      {
+        "name": "Desert Palace",
+        "map_locations": [
+          {
+            "map": "lorule",
+            "x": 165,
+            "y": 1602
+          },
+          {
+            "map": "desert3F",
+            "x": 126,
+            "y": 127
+          }
+        ],
+        "sections": [
+          {
+            "name": "Heart Container",
+            "capture_item": true,
+            "item_count": 1,
+            "access_rules": [
+              // Intended
+              "lorule, merge, $yButton, srod, titansmitt, $attack",
+              // Desert Palace Skip. IRod + TRod make it faster, but aren't actually needed for the boost method
+              "$miseryMireOoB, boots",
+              // Skip Dungeon, but fight Zaganaga. Titan's Mitt not needed with the skip
+              "$miseryMireOoB, srod, $attack",
+              // Shitty versions
+              "$miseryMireOoB, bow, zagaBow",
+              "$miseryMireOoB, msword, zagaSwordBeams"
+            ]
+          }
+        ]
+      },
       {
         "name": "Desert Palace",
         "map_locations": [
           {
             "map": "hyrule",
             "x": 185,
-            "y": 1543
+            "y": 1605,
+            "size": 60
           },
           {
             "map": "lorule",
             "x": 192,
-            "y": 1602
+            "y": 1602,
+            "size": 60
           },
           {
             "map": "desert3F",
             "x": 134,
-            "y": 127
+            "y": 127,
+            "size": 15
           }
         ],
         "sections": [
           {
             "name": "Sage Irene",
-            "hosted_item": "desert"
-          },
-          {
-            "name": "Heart Container",
-            "capture_item": true,
-            "item_count": 1
+            "hosted_item": "desert",
+            "access_rules": [
+              "{lorule, merge, $yButton, srod}",
+              // Intended
+              "lorule, merge, $yButton, srod, titansmitt, $attack",
+              // Desert Palace Skip. IRod + TRod make it faster, but aren't actually needed for the boost method
+              "$miseryMireOoB, boots",
+              // Skip Dungeon, but fight Zaganaga. Titan's Mitt not needed with the skip
+              "$miseryMireOoB, srod, $attack",
+              // Shitty versions
+              "$miseryMireOoB, bow, zagaBow",
+              "$miseryMireOoB, msword, zagaSwordBeams"
+            ]
           }
         ]
       }

@@ -295,28 +295,39 @@
                   }
                 ]
               },
-              {
-                "name": "Eastern Palace",
-                "sections": [
-                  {
-                    "name": "Pendant of Courage",
-                    "hosted_item": "eastern"
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "hyrule",
-                    "x": 1921,
-                    "y": 820
-                  },
-                  {
-                    "map": "ep1F",
-                    "x": 89,
-                    "y": 162
-                  }
-                ]
-              }
             ]
+          }
+        ]
+      },
+      {
+        "name": "Eastern Palace",
+        "sections": [
+          {
+            "name": "Pendant of Courage",
+            "access_rules": [
+              "{}",
+              "$yButton, bow",
+              "$yButton, bombs",
+              "$yButton, frod",
+              "$yButton, irod",
+              "$stun, $attack",
+              "msword, []"
+            ],
+            "hosted_item": "eastern"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1921,
+            "y": 820,
+            "size": 60
+          },
+          {
+            "map": "ep1F",
+            "x": 89,
+            "y": 162,
+            "size": 15
           }
         ]
       }

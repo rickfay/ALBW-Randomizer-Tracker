@@ -1696,7 +1696,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/1F.png",
+                                  "image": "images/maps/floors/1F_Boss.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235

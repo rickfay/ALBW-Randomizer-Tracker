@@ -243,7 +243,7 @@
               {
                 "map": "darkB1",
                 "x": 88,
-                "y": 68
+                "y": 70
               }
             ],
             "sections": [
@@ -263,18 +263,21 @@
               {
                 "map": "lorule",
                 "x": 1921,
-                "y": 852
+                "y": 852,
+                "size": 60
               },
               {
                 "map": "darkB1",
                 "x": 88,
-                "y": 58
+                "y": 58,
+                "size": 15
               }
             ],
             "sections": [
               {
                 "name": "Sage Gulley",
                 "access_rules": [
+                  "{}",
                   "$fire"
                 ],
                 "hosted_item": "dark"

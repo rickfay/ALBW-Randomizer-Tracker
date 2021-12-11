@@ -221,6 +221,7 @@
       {
         "name": "Tower of Hera",
         "access_rules": [
+          "{bombs, fsword}",
           "merge",
           "[merge], fsword, bombs, trod"
         ],
@@ -228,12 +229,14 @@
           {
             "map": "hyrule",
             "x": 1211,
-            "y": 39
+            "y": 39,
+            "size": 60
           },
           {
             "map": "hera13F",
             "x": 93,
-            "y": 58
+            "y": 58,
+            "size": 15
           }
         ],
         "sections": [

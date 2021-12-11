@@ -1158,13 +1158,13 @@
           {
             "map": "hyrule",
             "x": 1648,
-            "y": 1682,
+            "y": 1670,
             "size": 25
           }
         ],
         "sections": [
           {
-            "name": "House of Gales Wind Tiles",
+            "name": "House of Gales Wind Tile",
             "item_count": 1,
             "capture_item": true,
             "visibility_rules": [

@@ -8,6 +8,19 @@ This is an [EmoTracker](https://emotracker.net/) pack for tracking progress in T
 
 - Author: LemonKong
 - Version:
+    - 1.1.3:
+        - Fix Cucco Minigame check to no longer require Ravio's shop
+        - UI Changes:
+            - Split several overworld checks with multiple sub-checks into separate checks.
+                - This may change in the future based on feedback.
+            - Dungeon Rewards have slightly larger icons on the maps now
+                - These will now show as Blue if the dungeon can be entered (beyond the lobby)
+        - Change to "Crossing Dark Room Lampless" logic:
+            - All checks in dark rooms now show as Yellow without Lamp by default
+            - Enabling "Cross Dark Rooms Lampless" will now switch those checks to Green
+        - Lorule Castle logic has been expanded:
+            - Go Mode items aren't explicitly required anymore if you have the Sages or ToC
+            - Remember you need Sword (or Net with "Net as a Weapon" enabled) to play Tennis with Yuganon
     - 1.1.2:
         - Add sequence breaks to get Eastern Ruins Pegs check with an Enemy Clip from a Tektite
     - 1.1.1:

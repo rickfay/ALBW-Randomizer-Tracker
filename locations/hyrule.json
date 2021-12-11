@@ -71,7 +71,7 @@
         "map_locations": [
           {
             "map": "hyrule",
-            "x": 700,
+            "x": 680,
             "y": 146
           }
         ],
@@ -85,7 +85,19 @@
               "[eastern], lorule, merge"
             ],
             "item_count": 1
-          },
+          }
+        ]
+      },
+      {
+        "name": "Rosso's House",
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 720,
+            "y": 146
+          }
+        ],
+        "sections": [
           {
             "name": "Smash the Rocks",
             "access_rules": [
@@ -776,7 +788,7 @@
         "map_locations": [
           {
             "map": "hyrule",
-            "x": 351,
+            "x": 331,
             "y": 1074
           }
         ],
@@ -787,7 +799,19 @@
               "bottle"
             ],
             "item_count": 1
-          },
+          }
+        ]
+      },
+      {
+        "name": "Bee Guy",
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 371,
+            "y": 1074
+          }
+        ],
+        "sections": [
           {
             "name": "Trade Golden Bee",
             "access_rules": [
@@ -810,9 +834,6 @@
         "sections": [
           {
             "name": "Rooster Prize",
-            "access_rules": [
-              "ravio"
-            ],
             "item_count": 1
           }
         ]
@@ -864,13 +885,13 @@
         "map_locations": [
           {
             "map": "hyrule",
-            "x": 216,
+            "x": 196,
             "y": 959
           }
         ],
         "sections": [
           {
-            "name": "Bottle Slot (100)",
+            "name": "Left Slot (100)",
             "chest_opened_img": "images/soldout.png",
             "access_rules": [
               "open",
@@ -878,9 +899,21 @@
             ],
             "capture_item": true,
             "item_count": 1
-          },
+          }
+        ]
+      },
+      {
+        "name": "Street Merchant",
+        "map_locations": [
           {
-            "name": "Smooth Gem Slot (200)",
+            "map": "hyrule",
+            "x": 236,
+            "y": 959
+          }
+        ],
+        "sections": [
+          {
+            "name": "Right Slot (200)",
             "chest_opened_img": "images/soldout.png",
             "capture_item": true,
             "access_rules": [
@@ -919,12 +952,24 @@
         ],
         "sections": [
           {
-            "name": "Heart Piece",
+            "name": "Cucco jump into Well",
             "capture_item": true,
             "item_count": 1
-          },
+          }
+        ]
+      },
+      {
+        "name": "Kakariko Well",
+        "map_locations": [
           {
-            "name": "Exit Chest",
+            "map": "hyrule",
+            "x": 131,
+            "y": 883
+          }
+        ],
+        "sections": [
+          {
+            "name": "Cave Chest",
             "item_count": 1
           }
         ]
@@ -1517,6 +1562,7 @@
           {
             "name": "Win 2 Races",
             "access_rules": [
+              "{ireneTrigger}",
               "ireneTrigger, boots"
             ],
             "item_count": 1
@@ -1553,7 +1599,7 @@
         ],
         "sections": [
           {
-            "name": "Bomb Cave",
+            "name": "Hidden Bomb Cave",
             "access_rules": [
               "$yButton, bombs"
             ],

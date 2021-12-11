@@ -190,19 +190,23 @@
           {
             "name": "Skull Woods",
             "access_rules": [
+              "{}",
               "$fire, $attack",
+              "[], trod",
               "[], $attack"
             ],
             "map_locations": [
               {
                 "map": "lorule",
                 "x": 245,
-                "y": 166
+                "y": 166,
+                "size": 60
               },
               {
                 "map": "skullB2",
                 "x": 63,
-                "y": 9
+                "y": 9,
+                "size": 15
               }
             ],
             "sections": [

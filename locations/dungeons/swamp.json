@@ -204,50 +204,53 @@
                 "item_count": 1
               }
             ]
+          }
+        ]
+      },
+      {
+        "name": "Swamp Palace",
+        "access_rules": [
+          "$attack"
+        ],
+        "map_locations": [
+          {
+            "map": "swamp1F",
+            "x": 89,
+            "y": 67
+          }
+        ],
+        "sections": [
+          {
+            "name": "Heart Container",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Swamp Palace",
+        "access_rules": [
+          "{}",
+          "$attack"
+        ],
+        "map_locations": [
+          {
+            "map": "lorule",
+            "x": 962,
+            "y": 1808,
+            "size": 60
           },
           {
-            "name": "Swamp Palace",
-            "access_rules": [
-              "$attack"
-            ],
-            "map_locations": [
-              {
-                "map": "swamp1F",
-                "x": 89,
-                "y": 67
-              }
-            ],
-            "sections": [
-              {
-                "name": "Heart Container",
-                "capture_item": true,
-                "item_count": 1
-              }
-            ]
-          },
+            "map": "swamp2F",
+            "x": 89,
+            "y": 71,
+            "size": 15
+          }
+        ],
+        "sections": [
           {
-            "name": "Swamp Palace",
-            "access_rules": [
-              "$attack"
-            ],
-            "map_locations": [
-              {
-                "map": "lorule",
-                "x": 962,
-                "y": 1808
-              },
-              {
-                "map": "swamp2F",
-                "x": 89,
-                "y": 71
-              }
-            ],
-            "sections": [
-              {
-                "name": "Sage Oren",
-                "hosted_item": "swamp"
-              }
-            ]
+            "name": "Sage Oren",
+            "hosted_item": "swamp"
           }
         ]
       }

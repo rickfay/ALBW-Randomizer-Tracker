@@ -110,12 +110,10 @@ end
 
 -- Return if Link either has lamp, or lampless is enabled
 function lampless()
-    if has("lamp") then
+    if hasAny({ "lamp", "lampless" }) then
         return true
-    elseif has("lampless") then
-        return true, AccessibilityLevel.SequenceBreak
     else
-        return false
+        return true, AccessibilityLevel.SequenceBreak
     end
 end
 
@@ -149,4 +147,34 @@ end
 -- This is a hard opt-in trick, and it can't be done if the player has the Bee Badge
 function beeBoost()
     return has("beeBoost") and not has("beebadge"), AccessibilityLevel.SequenceBreak
+end
+
+-- Can we get Zelda?
+-- Need Sword or Net to play Tennis with Yuganon
+-- Need Hookshot to enter Hookshot trial and to fight Argus
+-- Bombs may be not be needed depending on key logic
+-- Fire is not technically needed if you don't extinguish the torches (or if you have Bow to hit the shortcut switch)
+-- Don't need anything for Ball Trial
+-- If doing Trial's Skip, need bombs to get to recoil jump spot (without blowing up big rock)
+function zelda()
+
+    if not yButton() then
+        return false
+    end
+
+    if fire() and hasAll({ "fsword", "hookshot", "bombs" }) then
+        return true
+
+        -- Trials Skip
+    elseif (hasAll({ "fsword", "bombs" })
+            or hasAll({ "net", "netAsWeapon", "bombs" })
+
+            -- Lucky Key Logic that doesn't need bombs (lamp can potentially be skipped)
+            or hasAll({ "fsword", "hookshot" })
+            or hasAll({ "net", "netAsWeapon", "hookshot" }))
+    then
+        return true, AccessibilityLevel.SequenceBreak
+    else
+        return false
+    end
 end

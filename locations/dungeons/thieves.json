@@ -208,23 +208,16 @@
                 "map_locations": [
                   {
                     "map": "lorule",
-                    "x": 442,
+                    "x": 472,
                     "y": 982
                   },
                   {
                     "map": "thievesB1",
-                    "x": 136,
+                    "x": 144,
                     "y": 167
                   }
                 ],
                 "sections": [
-                  {
-                    "name": "Sage Osfala",
-                    "access_rules": [
-                      "$attack"
-                    ],
-                    "hosted_item": "thieves"
-                  },
                   {
                     "name": "Heart Container",
                     "access_rules": [
@@ -234,8 +227,36 @@
                     "item_count": 1
                   }
                 ]
-              }
+              },
             ]
+          }
+        ]
+      },
+      {
+        "name": "Thieves' Hideout",
+        "map_locations": [
+          {
+            "map": "thievesB1",
+            "x": 136,
+            "y": 167,
+            "size": 15
+          },
+          {
+            "map": "lorule",
+            "x": 442,
+            "y": 982,
+            "size": 60
+          }
+        ],
+        "sections": [
+          {
+            "name": "Sage Osfala",
+            "access_rules": [
+              "{}",
+              "$switch, $attack, flippers",
+              "$switch, $attack, trod, $thievesOoB"
+            ],
+            "hosted_item": "thieves"
           }
         ]
       }

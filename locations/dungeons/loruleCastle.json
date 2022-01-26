@@ -3,8 +3,7 @@
     "name": "Lorule Castle",
     "color": "#5e518d",
     "access_rules": [
-      "lorule, merge, dark, swamp, skull, thieves, turtle, desert, ice",
-      "lorule, merge, triforcec"
+      "merge, dark, swamp, skull, thieves, turtle, desert, ice"
     ],
     "children": [
       {
@@ -157,8 +156,8 @@
                 "name": "3F Bomb Trial Center Chest",
                 "capture_item": true,
                 "access_rules": [
-                  "$yButton, bombs",
-                  "$yButton, [bombs], irod"
+                  "bombs",
+                  "[bombs], irod"
                 ],
                 "item_count": 1
               }
@@ -178,8 +177,8 @@
                 "name": "3F Bomb Trial Rock Chest",
                 "capture_item": true,
                 "access_rules": [
-                  "$yButton, bombs",
-                  "$yButton, [bombs], niceirod"
+                  "bombs",
+                  "[bombs], niceirod"
                 ],
                 "item_count": 1
               }
@@ -256,7 +255,7 @@
                 "name": "4F Hookshot Trial Eyeball Chest",
                 "capture_item": true,
                 "access_rules": [
-                  "$yButton, hookshot"
+                  "hookshot"
                 ],
                 "item_count": 1
               }
@@ -276,7 +275,7 @@
                 "name": "4F Hookshot Trial East Chest",
                 "capture_item": true,
                 "access_rules": [
-                  "$yButton, hookshot"
+                  "hookshot"
                 ],
                 "item_count": 1
               }

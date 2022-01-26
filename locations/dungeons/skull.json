@@ -3,7 +3,7 @@
     "name": "Skull Woods",
     "color": "#43c2be",
     "access_rules": [
-      "lorule, merge, $lampless"
+      "merge, $lampless"
     ],
     "children": [
       {

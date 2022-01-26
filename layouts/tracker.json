@@ -32,7 +32,7 @@
               {
                 "type": "group",
                 "header": "Pinned Locations",
-                "max_width": "356",
+                "max_width": "366",
                 "content": {
                   "type": "recentpins",
                   "style": "wrap",

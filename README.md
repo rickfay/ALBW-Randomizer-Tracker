@@ -1,4 +1,4 @@
-# ALBW Randomizer Tracker
+# Z17 Randomizer Tracker
 
 ## About
 
@@ -8,6 +8,20 @@ This is an [EmoTracker](https://emotracker.net/) pack for tracking progress in T
 
 - Author: LemonKong
 - Version:
+    - 2.0.0:
+        - Updated to support the new Z17 Randomizer
+        - Layout Changes:
+            - Removed Ravio/Signs, Shady Guy, and both Triforces
+            - Moved Bracelet, Smooth Gem, and Bow of Light to new spots
+            - Design tweaked to accommodate changes
+        - Logic Updates:
+            - Ravio's Shop is open by default
+            - Shady Guy Trigger is triggered by default
+            - Portals to Lorule are open by default
+            - Bombs are no longer required to collect Maiamai
+                - New Logic added for cases when you do not have Bombs
+            - Fix errors in Bee Boost logic I doubt anyone noticed
+        - Remove several legacy game options no longer relevant to the randomizer
     - 1.1.3:
         - Fix Cucco Minigame check to no longer require Ravio's shop
         - UI Changes:
@@ -56,14 +70,6 @@ This is an [EmoTracker](https://emotracker.net/) pack for tracking progress in T
     - 0.0.1:
         - Initial Beta release. Moved to new repo.
 
-## Screen Shots
-
-![screenshot_01.png](screenshots/screenshot_01.png?raw=true)
-![screenshot_02.png](screenshots/screenshot_02.png?raw=true)
-![screenshot_03.png](screenshots/screenshot_03.png?raw=true)
-![screenshot_04.png](screenshots/screenshot_04.png?raw=true)
-
-
 ## Features
 
 - **Dungeon Tracker:** Maps for every dungeon, with full logic tracking! Check out the locations and accessibility of
@@ -90,18 +96,9 @@ This is an [EmoTracker](https://emotracker.net/) pack for tracking progress in T
   game's new additions. The entire layout is kept compact, with all items fitting neatly inside a 6x8 grid.
 
 
-- **Options Menu**: The tracker supports Standard + Open modes, but will default to the popular Open Mode settings. You
-  can tweak these as you like in the Options Menu; presets are a planned feature for a future update. Also, several
-  difficult tricks are not considered in logic by default, but can be enabled from this same menu. Currently available
+- **Options Menu**: Several difficult tricks are not considered in logic by default, but can easily be toggled on/off. Currently available
   options include:
-  
-    - Game Options:
-        - Use Items without Lamp
-        - Skip Captain's Sword Delivery
-        - Skip Sanctuary ("Open" Mode)
-        - Barrier Up before Eastern Palace
-        - Shuffle the Sword
-        - Shuffle the Lamp
+
     - Modify Glitch Logic:
         - Cross Dark Rooms Lampless
         - Lamp as a Weapon
@@ -130,60 +127,16 @@ This is an [EmoTracker](https://emotracker.net/) pack for tracking progress in T
 
 ## FAQ
 
-
-- **What do the Triforces mean?**
-    - Lorule's Triforce ![Lorule's Triforce](images/loforce.png) represents gaining access to Lorule, and is the
-      prize for defeating Yuga 2 in Hyrule Castle. It is a prerequisite for every single check in Lorule, along with
-      Ravio's Bracelet. As this item would otherwise be completely black, a purple outline has been added to make it easier to see when it has been collected.
-    - The Triforce of Courage ![Triforce of Courage](images/triforce_courage.png) is largely decorative; you can ignore it, and the tracker will work just fine. It's there
-      for those who want to record when they collect it, or not record it to signify it's been skipped. Clicking it a
-      second time will upgrade it to the full Triforce, to show that the game has been completed.
-        - Lorule Castle's logic will accept the Triforce of Courage in place of the seven Sages, if for some reason you
-          don't feel like clicking them all.
-
-
-- **What's the ![Bomb Flower](images/bomb_flower.png?raw=true) for?**
-    - Purchase the Big Bomb Flower at the Bomb Flower Store to unlock this. The Big Bomb Flower can be used to blow up huge
-      rocks blocking several other checks, and in a pinch it can be used in place of the usual bombs to blast open the
-      Vacant House.
-
-
-- **What's the ![blonde haired guy](images/shady_guy.png?raw=true) for?**
-    - That's the Shady Guy, you run into him when first approaching Zora's Domain. That short cutscene is a trigger that
-      activates two checks in Kakariko Village: one for buying the item in the Smooth Gem Slot from the Street Merchant,
-      and one for sneaking up on the Shady Guy himself to get an item.
-
-
-- **What's the ![purple sign](images/signs.png?raw=true) / ![purple sign](images/ravio.png?raw=true) for?**
-    - The Ravio Sign represents a trigger you can activate by watching a short cutscene near Eastern Palace. This
-      trigger will cause Ravio to give you the item in the Bow slot for free the next time you enter his shop. This
-      trigger is superseded by the triggers that unlock Ravio's full shop, and so activating any of them will "upgrade"
-      the Sign on the tracker to Ravio, indicating the shop is fully open.
-
-
-- **Why isn't the trigger for Ravio's Signs available?**
-    - On Standard Mode, the signs won't appear until you go through the game's prologue story triggers. After completing
-      the Sanctuary, you need to go to Zelda to get the Special Charm, and then Sahasrahla's House to have him mark your
-      map with an X.
-        - I've chosen not to include checks on the map for the Special Charm and Sahasrahla. If this becomes a problem
-          or creates confusion, I will add them.
-
-
-- **What's the trigger to activate Hyrule Hotfoot?**
-    - Any of the Irene triggers.
-
-
-- **What's the star next to the Master Sword?**
-    - That's the Great Spin you uncultured swine.
-
-
 - **I can't see any Maiamai?**
-    - In addition to clicking the golden Maiamai Map icon, you must also have Bombs to see any Maiamai. This is because
-      Bombs are needed to open Mother Maiamai's Cave, and so are required for every single Maiamai.
+    - Click the golden Maiamai Map icon in the upper left part of the overworld map.
 
 
 - **There are too many Maiamai!**
     - Click the Maiamai Map icon again to hide all the Maiamai checks.
+
+
+- **What's the star next to the Master Sword?**
+    - That's the Great Spin you uncultured swine.
 
 
 - **You labelled the 6F in Lorule Castle incorrectly!!**
@@ -203,6 +156,5 @@ This is an [EmoTracker](https://emotracker.net/) pack for tracking progress in T
 
 - Adjustments to keep the tracker in line with future Randomizer updates and modes
 - Higher quality dungeon map pictures
-- Presets for settings
 - Limited Key information in dungeons (under consideration)
-- Considering more logic options to accommodate the many obscure ways to skip Desert Palace
+- Simplify logic choices to match settings for the Z17 Randomizer

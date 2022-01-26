@@ -3,8 +3,8 @@
     "name": "Tower of Hera",
     "color": "#FF0000",
     "access_rules": [
-      "$yButton, hammer, powerglove, merge",
-      "$yButton, hammer, [powerglove], [merge]"
+      "hammer, powerglove, merge",
+      "hammer, [powerglove], [merge]"
     ],
     "children": [
       {

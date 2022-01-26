@@ -82,7 +82,7 @@
             "chest_opened_img": "images/chest_crooked_opened.png",
             "access_rules": [
               "eastern",
-              "[eastern], lorule, merge"
+              "merge"
             ],
             "item_count": 1
           }
@@ -119,9 +119,9 @@
         "sections": [
           {
             "access_rules": [
-              "$yButton, hammer",
-              "$yButton, [hammer], $stun",
-              "$yButton, [hammer], $shieldRodClip"
+              "hammer",
+              "[hammer], $stun",
+              "[hammer], $shieldRodClip"
             ],
             "item_count": 1
           }
@@ -138,10 +138,6 @@
         ],
         "sections": [
           {
-            "access_rules": [
-              "open",
-              "standard, sanctuary"
-            ],
             "item_count": 1
           }
         ]
@@ -155,26 +151,6 @@
     ],
     "children": [
       {
-        "name": "Ravio Trigger",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 826,
-            "y": 406
-          }
-        ],
-        "sections": [
-          {
-            "name": "Watch Eruption Cutscene",
-            "access_rules": [
-              "[powerglove]"
-            ],
-            "hosted_item": "ravio",
-            "item_count": 0
-          }
-        ]
-      },
-      {
         "name": "Death Mountain",
         "map_locations": [
           {
@@ -187,7 +163,7 @@
           {
             "name": "Bomb Cave",
             "access_rules": [
-              "merge, $yButton, bombs"
+              "merge, bombs"
             ],
             "item_count": 1
           }
@@ -222,8 +198,8 @@
           {
             "name": "Trade Premium Milk",
             "access_rules": [
-              "milk, $yButton, hookshot, merge",
-              "milk, $yButton, hookshot, [merge], trod, boots"
+              "milk, hookshot, merge",
+              "milk, hookshot, [merge], trod, boots"
             ],
             "item_count": 1
           }
@@ -242,8 +218,8 @@
           {
             "name": "Fairy Cave",
             "access_rules": [
-              "merge, $yButton, hammer",
-              "merge, $yButton, bombs",
+              "merge, hammer",
+              "merge, bombs",
               "[merge], $boost, hammer",
               "[merge], $boost, bombs"
             ],
@@ -283,7 +259,7 @@
           {
             "name": "First Cave Peg Chest",
             "access_rules": [
-              "[merge], $yButton, hammer"
+              "[merge], hammer"
             ],
             "item_count": 1
           }
@@ -345,8 +321,8 @@
           {
             "name": "Island Heart Piece",
             "access_rules": [
-              "{$yButton, hookshot}",
-              "$yButton, lorule, merge, hookshot, trod"
+              "{hookshot}",
+              "merge, hookshot, trod"
             ],
             "capture_item": true,
             "item_count": 1
@@ -366,7 +342,7 @@
           {
             "name": "Treasure Dungeon",
             "access_rules": [
-              "merge, $yButton, hookshot"
+              "merge, hookshot"
             ],
             "item_count": 1
           }
@@ -386,7 +362,7 @@
             "name": "Fire Cave Pillar",
             "capture_item": true,
             "access_rules": [
-              "merge, $yButton, hookshot, hammer"
+              "merge, hookshot, hammer"
             ],
             "item_count": 1
           }
@@ -409,96 +385,6 @@
         "sections": [
           {
             "name": "Dampé",
-            "visibility_rules": [
-              "swordShuffle"
-            ],
-            "access_rules": [
-              "captainsSword",
-              "skipDelivery"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Sanctuary",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 948,
-            "y": 630
-          }
-        ],
-        "sections": [
-          {
-            "name": "Dampé",
-            "visibility_rules": [
-              "swordVanilla"
-            ],
-            "access_rules": [
-              "captainsSword",
-              "skipDelivery"
-            ],
-            "hosted_item": "fsword"
-          }
-        ]
-      },
-      {
-        "name": "Sanctuary",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1147,
-            "y": 652
-          }
-        ],
-        "access_rules": [
-          "fsword",
-          "powerglove",
-          "lamp",
-          "$yButton, frod",
-          "$yButton, bombs",
-          "$yButton, irod",
-          "boots"
-        ],
-        "sections": [
-          {
-            "name": "Lamp Chest",
-            "visibility_rules": [
-              "lampVanilla"
-            ],
-            "hosted_item": "lamp"
-          },
-          {
-            "name": "Lower Chest",
-            "visibility_rules": [
-              "lampVanilla"
-            ],
-            "access_rules": [
-              "$fire"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Upper Chest",
-            "visibility_rules": [
-              "lampVanilla"
-            ],
-            "access_rules": [
-              "$fire"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Ledge Heart Piece",
-            "visibility_rules": [
-              "lampVanilla"
-            ],
-            "capture_item": true,
-            "access_rules": [
-              "{$fire}",
-              "$fire, merge"
-            ],
             "item_count": 1
           }
         ]
@@ -516,74 +402,41 @@
           "fsword",
           "powerglove",
           "lamp",
-          "$yButton, frod",
-          "$yButton, bombs",
-          "$yButton, irod",
+          "frod",
+          "bombs",
+          "irod",
           "boots"
         ],
         "sections": [
           {
             "name": "Lamp Chest",
-            "visibility_rules": [
-              "lampShuffle"
-            ],
             "item_count": 1
           },
           {
             "name": "Lower Chest",
-            "visibility_rules": [
-              "lampShuffle"
-            ],
             "access_rules": [
+              "[]",
               "$fire"
             ],
             "item_count": 1
           },
           {
             "name": "Upper Chest",
-            "visibility_rules": [
-              "lampShuffle"
-            ],
             "access_rules": [
+              "[]",
               "$fire"
             ],
             "item_count": 1
           },
           {
             "name": "Ledge Heart Piece",
-            "visibility_rules": [
-              "lampShuffle"
-            ],
             "capture_item": true,
             "access_rules": [
               "{$fire}",
+              "[], merge",
               "$fire, merge"
             ],
             "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Sanctuary",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 948,
-            "y": 577
-          }
-        ],
-        "sections": [
-          {
-            "name": "Finish",
-            "visibility_rules": [
-              "standard"
-            ],
-            "access_rules": [
-              "{standard}",
-              "standard, $fire, $attack"
-            ],
-            "hosted_item": "sanctuary",
-            "always_allow_chest_manipulation": true
           }
         ]
       },
@@ -606,7 +459,7 @@
             "name": "Portal Cave",
             "capture_item": true,
             "access_rules": [
-              "lorule, merge, $yButton, bombs"
+              "merge, bombs"
             ],
             "item_count": 1
           }
@@ -625,7 +478,7 @@
           {
             "name": "Treasure Dungeon",
             "access_rules": [
-              "$yButton, bombs, merge"
+              "bombs, merge"
             ],
             "item_count": 1
           }
@@ -644,7 +497,7 @@
           {
             "name": "Peg Chest",
             "access_rules": [
-              "$yButton, hammer"
+              "hammer"
             ],
             "item_count": 1
           }
@@ -666,27 +519,6 @@
               "merge"
             ],
             "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Zora's Domain",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1804,
-            "y": 358
-          }
-        ],
-        "sections": [
-          {
-            "name": "Shady Guy Cutscene",
-            "access_rules": [
-              "merge",
-              "[merge], $beeBoost"
-            ],
-            "hosted_item": "shadyguy",
-            "item_count": 0
           }
         ]
       },
@@ -730,8 +562,7 @@
               "smoothgem, merge",
               "smoothgem, [merge], $beeBoost"
             ],
-            "item_count": 1,
-            "hosted_item": "ravio"
+            "item_count": 1
           }
         ]
       }
@@ -777,7 +608,7 @@
           {
             "name": "Enter from Lorule",
             "access_rules": [
-              "lorule, merge"
+              "merge"
             ],
             "item_count": 1
           }
@@ -893,10 +724,6 @@
           {
             "name": "Left Slot (100)",
             "chest_opened_img": "images/soldout.png",
-            "access_rules": [
-              "open",
-              "standard, sanctuary"
-            ],
             "capture_item": true,
             "item_count": 1
           }
@@ -916,9 +743,6 @@
             "name": "Right Slot (200)",
             "chest_opened_img": "images/soldout.png",
             "capture_item": true,
-            "access_rules": [
-              "shadyguy"
-            ],
             "item_count": 1
           }
         ]
@@ -935,7 +759,8 @@
         "sections": [
           {
             "access_rules": [
-              "shadyguy, merge"
+              "merge",
+              "boots"
             ],
             "item_count": 1
           }
@@ -986,9 +811,6 @@
         "sections": [
           {
             "name": "Score 100+",
-            "access_rules": [
-              "ravio"
-            ],
             "item_count": 1
           }
         ]
@@ -1012,45 +834,30 @@
             "name": "Ice Rod Slot (100)     ",
             "capture_item": true,
             "chest_opened_img": "images/soldout.png",
-            "access_rules": [
-              "ravio"
-            ],
             "item_count": 1
           },
           {
             "name": "Hookshot Slot (50)   ",
             "capture_item": true,
             "chest_opened_img": "images/soldout.png",
-            "access_rules": [
-              "ravio"
-            ],
             "item_count": 1
           },
           {
             "name": "Tornado Rod Slot (20/50)",
             "capture_item": true,
             "chest_opened_img": "images/soldout.png",
-            "access_rules": [
-              "ravio"
-            ],
             "item_count": 1
           },
           {
             "name": "Bombs Slot (50)        ",
             "capture_item": true,
             "chest_opened_img": "images/soldout.png",
-            "access_rules": [
-              "ravio"
-            ],
             "item_count": 1
           },
           {
             "name": "Bow Slot (0/10/50)   ",
             "capture_item": true,
             "chest_opened_img": "images/soldout.png",
-            "access_rules": [
-              "signs"
-            ],
             "item_count": 1
           },
           {
@@ -1058,8 +865,8 @@
             "capture_item": true,
             "chest_opened_img": "images/soldout.png",
             "access_rules": [
-              "{ravio}",
-              "ravio, thieves"
+              "{}",
+              "thieves"
             ],
             "item_count": 1
           },
@@ -1067,27 +874,18 @@
             "name": "Hammer Slot (20/50)",
             "capture_item": true,
             "chest_opened_img": "images/soldout.png",
-            "access_rules": [
-              "ravio"
-            ],
             "item_count": 1
           },
           {
             "name": "Boomerang Slot (50)",
             "capture_item": true,
             "chest_opened_img": "images/soldout.png",
-            "access_rules": [
-              "ravio"
-            ],
             "item_count": 1
           },
           {
             "name": "Fire Rod Slot (100)",
             "capture_item": true,
             "chest_opened_img": "images/soldout.png",
-            "access_rules": [
-              "ravio"
-            ],
             "item_count": 1
           }
         ]
@@ -1105,7 +903,7 @@
           {
             "name": "Give 2 Master Ore",
             "access_rules": [
-              "lorule, masterore:2"
+              "masterore:2"
             ],
             "item_count": 1
           }
@@ -1127,7 +925,8 @@
             "access_rules": [
               "{}",
               "merge",
-              "[merge], $boost"
+              "[merge], $boost",
+              "[merge], $beeBoost"
             ],
             "item_count": 1
           }
@@ -1148,31 +947,10 @@
             "capture_item": true,
             "access_rules": [
               "titansmitt",
-              "[titansmitt], $boost"
+              "[titansmitt], $boost",
+              "[titansmitt], $beeBoost"
             ],
             "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Hyrule Blacksmith",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 644,
-            "y": 1096
-          }
-        ],
-        "sections": [
-          {
-            "name": "Captain's Forgotten Sword",
-            //            "access_rules": [
-            //              "delivery"
-            //            ],
-            "visibility_rules": [
-              "delivery"
-            ],
-            "hosted_item": "captainsSword"
           }
         ]
       },
@@ -1251,26 +1029,6 @@
         ]
       },
       {
-        "name": "Ravio's Signs",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1612,
-            "y": 1088
-          }
-        ],
-        "sections": [
-          {
-            "name": "Watch Cutscene",
-            "access_rules": [
-              "open",
-              "standard, sanctuary"
-            ],
-            "hosted_item": "signs"
-          }
-        ]
-      },
-      {
         "name": "Eastern Ruins",
         "map_locations": [
           {
@@ -1285,7 +1043,7 @@
             "capture_item": true,
             "access_rules": [
               "{}",
-              "$yButton, bombs, merge"
+              "bombs, merge"
             ],
             "item_count": 1
           }
@@ -1306,11 +1064,11 @@
             "capture_item": true,
             "access_rules": [
               "{}",
-              "$yButton, hammer",
-              "$yButton, [hammer], boomerang",
-              "$yButton, [hammer], hookshot",
-              "$yButton, [hammer], srod",
-              "$yButton, [hammer], trod"
+              "hammer",
+              "[hammer], boomerang",
+              "[hammer], hookshot",
+              "[hammer], srod",
+              "[hammer], trod"
             ],
             "item_count": 1
           }
@@ -1339,11 +1097,11 @@
         "name": "Eastern Ruins Gated Area",
         "access_rules": [
           "merge",
-          "$yButton, bow",
-          "$yButton, hookshot",
-          "$yButton, boomerang",
-          "$yButton, bombs",
-          "$yButton, irod",
+          "bow",
+          "hookshot",
+          "boomerang",
+          "bombs",
+          "irod",
           "powerglove, []"
         ],
         "children": [
@@ -1376,7 +1134,7 @@
               {
                 "name": "Hookshot Chest",
                 "access_rules": [
-                  "$yButton, hookshot"
+                  "hookshot"
                 ],
                 "item_count": 1
               }
@@ -1461,7 +1219,7 @@
           {
             "name": "Give Scoot Fruit",
             "access_rules": [
-              "$yButton, bombs, scoot"
+              "bombs, scoot"
             ],
             "item_count": 1
           }
@@ -1482,7 +1240,7 @@
             "capture_item": true,
             "access_rules": [
               "{}",
-              "$yButton, bombs"
+              "bombs"
             ],
             "item_count": 1
           }
@@ -1502,19 +1260,19 @@
             "name": "Treasure Dungeon",
             "access_rules": [
               // Normal
-              "flippers, $yButton, hookshot, [boomerang], titansmitt",
+              "flippers, hookshot, [boomerang], titansmitt",
               // Titan's Mitt Skip
-              "flippers, $yButton, hookshot, irod, []",
+              "flippers, hookshot, irod, []",
               // Flipperless w/ Nice Bombs
-              "$yButton, titansmitt, nicebombs, []",
+              "titansmitt, nicebombs, []",
               // Flipperless w/ Nice Bombs + Titan's Mitt Skip
-              "$yButton, irod, nicebombs, []",
+              "irod, nicebombs, []",
               // Flipperless w/ Great Spin (no Y button needed)
               "titansmitt, fsword, greatspin, []",
               // Flipperless w/ Great Spin + Titan's Mitt Skip
-              "$yButton, irod, fsword, greatspin, []",
+              "irod, fsword, greatspin, []",
               // NICE Rod
-              "$yButton, niceirod, []"
+              "niceirod, []"
             ],
             "item_count": 1
           }
@@ -1525,30 +1283,6 @@
   {
     "name": "Lake Hylia",
     "children": [
-      {
-        "name": "Ravio Trigger",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1555,
-            "y": 1736
-          }
-        ],
-        "sections": [
-          {
-            "name": "Activate Weather Vane",
-            "access_rules": [
-              "flippers",
-              // Crow Boost + Bergshot
-              "[flippers], irod, hookshot",
-              // Fake Flippers
-              "[flippers], $fakeFlippers"
-            ],
-            "hosted_item": "ravio",
-            "item_count": 0
-          }
-        ]
-      },
       {
         "name": "Hyrule Hotfoot",
         "map_locations": [
@@ -1562,8 +1296,7 @@
           {
             "name": "Win 2 Races",
             "access_rules": [
-              "{ireneTrigger}",
-              "ireneTrigger, boots"
+              "boots"
             ],
             "item_count": 1
           }
@@ -1601,7 +1334,7 @@
           {
             "name": "Hidden Bomb Cave",
             "access_rules": [
-              "$yButton, bombs"
+              "bombs"
             ],
             "item_count": 1
           }
@@ -1622,7 +1355,8 @@
             "hosted_item": "letter",
             "access_rules": [
               "flippers",
-              "[flippers], $boost"
+              "[flippers], $boost",
+              "[flippers], $beeBoost"
             ],
             "item_count": 0
           }

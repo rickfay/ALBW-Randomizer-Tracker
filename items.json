@@ -12,12 +12,6 @@
     "codes": "bell"
   },
   {
-    "name": "Big Bomb Flower",
-    "type": "toggle",
-    "img": "images/bomb_flower.png",
-    "codes": "bombflower, bigbombflower"
-  },
-  {
     "name": "Big Key",
     "type": "toggle",
     "img": "images/key_big.png",
@@ -107,12 +101,6 @@
     ]
   },
   {
-    "name": "Captain's Sword",
-    "type": "toggle",
-    "img": "images/captain.png",
-    "codes": "captainsSword"
-  },
-  {
     "name": "Compass",
     "type": "toggle",
     "img": "images/compass.png",
@@ -132,19 +120,9 @@
   },
   {
     "name": "Pendant of Courage",
-    "type": "progressive",
-    "stages": [
-      {
-        "name": "Special Charm",
-        "img": "images/charm.png",
-        "codes": "charm"
-      },
-      {
-        "name": "Pendant of Courage",
-        "img": "images/eastern.png",
-        "codes": "eastern"
-      }
-    ]
+    "type": "toggle",
+    "img": "images/eastern.png",
+    "codes": "eastern"
   },
   {
     "name": "Fire Rod",
@@ -328,13 +306,6 @@
     "codes": "letter"
   },
   {
-    "name": "Lorule",
-    "type": "toggle",
-    "img": "images/loforce.png",
-    "disabled_img": "images/loforce_disabled.png",
-    "codes": "lorule"
-  },
-  {
     "name": "Maiamai",
     "type": "consumable",
     "img": "images/maiamai.png",
@@ -420,6 +391,7 @@
   {
     "name": "Ravio's Bracelet",
     "type": "progressive",
+    "allow_disabled": false,
     "stages": [
       {
         "img": "images/bracelet.png",
@@ -432,32 +404,10 @@
     ]
   },
   {
-    "name": "Ravio's Shop",
-    "type": "progressive",
-    "stages": [
-      {
-        "name": "Ravio Signs",
-        "img": "images/signs.png",
-        "codes": "signs"
-      },
-      {
-        "name": "Ravio's Shop",
-        "img": "images/ravio.png",
-        "codes": "ravio"
-      }
-    ]
-  },
-  {
     "name": "Red Rupee",
     "type": "toggle",
     "img": "images/rupee_red.png",
     "codes": "rupee_red"
-  },
-  {
-    "name": "Sanctuary",
-    "type": "toggle",
-    "img": "images/sanctuary.png",
-    "codes": "sanctuary"
   },
   {
     "name": "Sand Rod",
@@ -480,12 +430,6 @@
     "type": "toggle",
     "img": "images/scoot_fruit.png",
     "codes": "scoot, scootfruit"
-  },
-  {
-    "name": "Shady Guy",
-    "type": "toggle",
-    "img": "images/shady_guy.png",
-    "codes": "shady, shadyguy"
   },
   {
     "name": "Shield",
@@ -595,17 +539,9 @@
   },
   {
     "name": "Triforce",
-    "type": "progressive",
-    "stages": [
-      {
-        "img": "images/triforce_courage.png",
-        "codes": "triforcec, triforceofcourage"
-      },
-      {
-        "img": "images/triforce.png",
-        "codes": "triforce"
-      }
-    ]
+    "type": "toggle",
+    "img": "images/triforce.png",
+    "codes": "triforce"
   },
   {
     "name": "Sage Impa",

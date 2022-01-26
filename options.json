@@ -1,23 +1,5 @@
 [
   {
-    "name": "Y Button Enabled",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/yes.png",
-        "codes": "ybutton",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/no.png",
-        "codes": "ybutton_false",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
     "name": "Lampless",
     "type": "progressive",
     "loop": true,
@@ -124,96 +106,6 @@
         "inherit_codes": false
       }
     ]
-  },
-  {
-    "name": "Lamp Shuffle",
-    "type": "progressive",
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/yes.png",
-        "codes": "lampShuffle",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/no.png",
-        "codes": "lampVanilla",
-        "inherit_codes": false
-      }
-    ],
-    "allow_disabled": false
-  },
-  {
-    "name": "Sword Shuffle",
-    "type": "progressive",
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/yes.png",
-        "codes": "swordShuffle",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/no.png",
-        "codes": "swordVanilla",
-        "inherit_codes": false
-      }
-    ],
-    "allow_disabled": false
-  },
-  {
-    "name": "Skip Delivery",
-    "type": "progressive",
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/yes.png",
-        "codes": "skipDelivery",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/no.png",
-        "codes": "delivery",
-        "inherit_codes": false
-      }
-    ],
-    "allow_disabled": false
-  },
-  {
-    "name": "Open",
-    "type": "progressive",
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/yes.png",
-        "codes": "open",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/no.png",
-        "codes": "standard",
-        "inherit_codes": false
-      }
-    ],
-    "allow_disabled": false
-  },
-  {
-    "name": "Barrier Requires Eastern Palace",
-    "type": "progressive",
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/yes.png",
-        "codes": "barrierSkipEP",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/no.png",
-        "codes": "barrierRequireEP",
-        "inherit_codes": false
-      }
-    ],
-    "allow_disabled": false
   },
   {
     "name": "Shield Rod Clipping",

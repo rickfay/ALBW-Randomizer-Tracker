@@ -2,7 +2,7 @@
   {
     "name": "Lorule",
     "access_rules": [
-      "lorule, merge"
+      "merge"
     ],
     "children": [
       {
@@ -142,7 +142,7 @@
               {
                 "name": "Behind Ice Gimos Trio",
                 "access_rules": [
-                  "$yButton, hookshot, frod"
+                  "hookshot, frod"
                 ],
                 "item_count": 1
               }
@@ -161,7 +161,7 @@
               {
                 "name": "East Cliff Chest",
                 "access_rules": [
-                  "$yButton, hookshot, trod"
+                  "hookshot, trod"
                 ],
                 "item_count": 1
               }
@@ -303,24 +303,6 @@
         "name": "Lorule Castle Area",
         "children": [
           {
-            "name": "Bomb Flower Store",
-            "map_locations": [
-              {
-                "map": "lorule",
-                "x": 455,
-                "y": 1425
-              }
-            ],
-            "sections": [
-              {
-                "name": "Big Bomb Flower (200)",
-                "access_rules": [],
-                "hosted_item": "bombflower",
-                "item_count": 0
-              }
-            ]
-          },
-          {
             "name": "Lorule Blacksmith",
             "map_locations": [
               {
@@ -355,10 +337,10 @@
                 "chest_opened_img": "images/chest_big_opened.png",
                 "access_rules": [
                   "boots",
-                  "[boots], $yButton, bombs",
-                  "[boots], $yButton, boomerang",
-                  "[boots], $yButton, nicebow",
-                  "[boots], $yButton, niceirod",
+                  "[boots], bombs",
+                  "[boots], boomerang",
+                  "[boots], nicebow",
+                  "[boots], niceirod",
                   "[boots], msword"
                 ],
                 "item_count": 1
@@ -376,10 +358,6 @@
             ],
             "sections": [
               {
-                "access_rules": [
-                  "$yButton, bombs",
-                  "bombflower"
-                ],
                 "item_count": 1
               }
             ]
@@ -412,11 +390,6 @@
                 "y": 1839
               }
             ],
-            "access_rules": [
-              "bombflower",
-              "[bombflower], $yButton, trod, scroll",
-              "[bombflower], $boost"
-            ],
             "sections": [
               {
                 "name": "Big Bomb Cave",
@@ -438,7 +411,7 @@
               {
                 "name": "Hookshot Chest",
                 "access_rules": [
-                  "$yButton, hookshot"
+                  "hookshot"
                 ],
                 "item_count": 1
               }
@@ -456,9 +429,6 @@
             "sections": [
               {
                 "name": "Big Bomb Cave",
-                "access_rules": [
-                  "bombflower"
-                ],
                 "item_count": 1
               }
             ]
@@ -509,9 +479,6 @@
             "sections": [
               {
                 "name": "Give 3000 Rupees",
-                "access_rules": [
-                  "bombflower"
-                ],
                 "item_count": 1
               }
             ]
@@ -534,7 +501,7 @@
               {
                 "name": "Treasure Dungeon",
                 "access_rules": [
-                  "$yButton, srod, trod"
+                  "srod, trod"
                 ],
                 "item_count": 1
               }
@@ -560,12 +527,12 @@
                 "capture_item": true,
                 "access_rules": [
                   "{}",
-                  "$yButton, srod, bombs",
-                  "$yButton, [srod], bombs, frod", // FRod boost in Hyrule
-                  "$yButton, [srod], nicebombs", // Lemon boost in Hyrule
-                  "$yButton, [srod], bombs, vulture", // Vulture boost
-                  "$yButton, [srod], bombs, bombBoost", // Regular bomb boost
-                  "$yButton, [srod], [bombs], frod, boots" // FRod boost + wall dash
+                  "srod, bombs",
+                  "[srod], bombs, frod", // FRod boost in Hyrule
+                  "[srod], nicebombs", // Lemon boost in Hyrule
+                  "[srod], bombs, vulture", // Vulture boost
+                  "[srod], bombs, bombBoost", // Regular bomb boost
+                  "[srod], [bombs], frod, boots" // FRod boost + wall dash
                 ],
                 "item_count": 1
               }

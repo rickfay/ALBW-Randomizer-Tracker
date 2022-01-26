@@ -2,13 +2,7 @@
   {
     "name": "Inside Hyrule Castle",
     "access_rules": [
-      "sanctuary, eastern, msword",
-      "open, barrierSkipEP, msword",
-      "open, barrierRequireEP, eastern, msword",
-      "open, barrierRequireEP, $notEastern",
-      "standard, sanctuary, barrierSkipEP, msword",
-      "standard, sanctuary, barrierRequireEP, eastern, msword",
-      "standard, sanctuary, barrierRequireEP, $notEastern"
+      "msword"
     ],
     "children": [
       {
@@ -40,33 +34,6 @@
           {
             "name": "Right Wall Chest",
             "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Hyrule Castle",
-        "access_rules": [
-          "barrierSkipEP, msword, merge",
-          "barrierRequireEP, eastern, msword, merge"
-        ],
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1023,
-            "y": 870,
-            "size": 60
-          },
-          {
-            "map": "hyrule8F",
-            "x": 83,
-            "y": 59,
-            "size": 15
-          }
-        ],
-        "sections": [
-          {
-            "name": "Lorule",
-            "hosted_item": "lorule"
           }
         ]
       }

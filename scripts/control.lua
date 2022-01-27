@@ -23,20 +23,13 @@ function hasAll(items)
     return true;
 end
 
--- Y Button needs to be unlocked to use items
--- This is normally tied to the Lamp, although a popular option is to enable it by default
-function yButton()
-    return hasAny({ "yButton", "lamp" })
-end
-
 -- Return if the player can deal damage
 -- Player options are provided to consider lamp, net, and boots as viable damage sources (flagged as Seq Breaks)
 function attack()
-    local yButton = yButton()
-    if has("fsword") or (yButton and hasAny({ "bow", "bombs", "frod", "irod", "hammer" })) then
+    if hasAny({ "fsword", "bow", "bombs", "frod", "irod", "hammer" }) then
         return true
     elseif hasAll({ "lamp", "lampAsWeapon" })
-            or (yButton and hasAll({ "net", "netAsWeapon" }))
+            or hasAll({ "net", "netAsWeapon" })
             or hasAll({ "boots", "bootsAsWeapon" }) then
         return true, AccessibilityLevel.SequenceBreak
     else
@@ -47,11 +40,10 @@ end
 -- Return if the player can attack Margomill
 -- This is the same as attack(), minus the ice rod
 function margomill()
-    local yButton = yButton()
-    if has("fsword") or (yButton and hasAny({ "bow", "bombs", "frod", "hammer" })) then
+    if hasAny({ "fsword", "bow", "bombs", "frod", "hammer" }) then
         return true
     elseif hasAll({ "lamp", "lampAsWeapon" })
-            or (yButton and hasAll({ "net", "netAsWeapon" }))
+            or hasAll({ "net", "netAsWeapon" })
             or hasAll({ "boots", "bootsAsWeapon" }) then
         return true, AccessibilityLevel.SequenceBreak
     else
@@ -62,15 +54,14 @@ end
 -- Return if the player can stun enemies
 -- Foul Fruit is not considered here as its single-use nature makes it rarely useful
 function stun()
-    return yButton() and hasAny({ "boomerang", "hookshot", "srod" })
+    return hasAny({ "boomerang", "hookshot", "srod" })
 end
 
 -- Return if the player can Fire Rod Boost or Lemon Boost to small ledges
 -- Regular Bomb Boosting is not considered unless the player enables the option
 -- Bee Boosting is also considered if enabled and the player doesn't have the Bee Badge
 function boost()
-    return (yButton() and (hasAny({ "frod", "nicebombs" }) or hasAll({ "bombs", "bombBoost" })))
-            or beeBoost(), AccessibilityLevel.SequenceBreak
+    return hasAny({ "frod", "nicebombs" }) or hasAll({ "bombs", "bombBoost" }), AccessibilityLevel.SequenceBreak
 end
 
 -- Return if the player can perform Fake Flippers
@@ -82,14 +73,14 @@ end
 -- Return if the player can perform a Shield Rod Clip
 -- This must be enabled in options to be considered, and the player needs a sword to use the shield
 function shieldRodClip()
-    return yButton() and hasAll({ "fsword", "trod", "shield", "shieldRodClip" }), AccessibilityLevel.SequenceBreak
+    return hasAll({ "fsword", "trod", "shield", "shieldRodClip" }), AccessibilityLevel.SequenceBreak
 end
 
 -- Return if the player is able to escape an otherwise softlock-able area
 -- Having Bell would be ideal, but death warping using bombs or fire rod also works
 -- If we can't escape, still return true, but with access level Inspect b/c the player can technically die to view it
 function escape()
-    if (has("bell") or (yButton() and hasAny({ "bombs", "frod" })) or has("crowEscape")) then
+    if hasAny({ "bell", "bombs", "frod", "crowEscape" }) then
         return true, AccessibilityLevel.SequenceBreak
     else
         return true, AccessibilityLevel.Inspect
@@ -99,13 +90,13 @@ end
 -- Return if Link has a Fire source
 -- This is mostly for checking if Link can light torches
 function fire()
-    return has("lamp") or hasAll({ "yButton", "frod" })
+    return hasAny({ "lamp", "frod" })
 end
 
 -- Return if Link can hit Crystal Switches
 -- Pots aren't accounted for here, but may make hitting some switches possible
 function switch()
-    return has("fsword") or (yButton() and hasAny({ "bow", "boomerang", "hookshot", "bombs", "irod", "hammer", "boots" }))
+    return hasAny({ "fsword", "bow", "boomerang", "hookshot", "bombs", "irod", "hammer", "boots" })
 end
 
 -- Return if Link either has lamp, or lampless is enabled
@@ -117,19 +108,9 @@ function lampless()
     end
 end
 
--- Return if the Captain's Forgotten Sword cannot be skipped (annoying work-around)
-function dontSkipDelivery()
-    return not has("skipDelivery")
-end
-
--- Return if the Eastern Palace is NOT complete, meaning the Barrier isn't up (standard mode)
-function notEastern()
-    return not has("eastern")
-end
-
 -- Return if we can get OoB on the south wall of Misery Mire
 function miseryMireOoB()
-    return hasAll({ "lorule", "merge" }) and (boost() or portalClip()), AccessibilityLevel.SequenceBreak
+    return has("merge") and (boost() or portalClip()), AccessibilityLevel.SequenceBreak
 end
 
 -- Return if Portal Clipping is enabled and we can perform it
@@ -140,13 +121,17 @@ end
 -- Return if we can get Out of Bounds in Thieves
 -- Hammer, Hookshot, Sword Slashes, Boots, and all the optional weapons don't give you enough time to perform the clip
 function thievesOoB()
-    return yButton() and hasAny({ "msword", "bow", "boomerang", "bombs", "irod" }), AccessibilityLevel.SequenceBreak
+    return hasAny({ "msword", "bow", "boomerang", "bombs", "irod" }), AccessibilityLevel.SequenceBreak
 end
 
 -- Bee Boosting
 -- This is a hard opt-in trick, and it can't be done if the player has the Bee Badge
 function beeBoost()
     return has("beeBoost") and not has("beebadge"), AccessibilityLevel.SequenceBreak
+end
+
+function cutGrass()
+    return hasAny({ "fsword", "boomerang", "bombs", "frod", "irod", "lamp", "boots" });
 end
 
 -- Can we get Zelda?
@@ -157,11 +142,6 @@ end
 -- Don't need anything for Ball Trial
 -- If doing Trial's Skip, need bombs to get to recoil jump spot (without blowing up big rock)
 function zelda()
-
-    if not yButton() then
-        return false
-    end
-
     if fire() and hasAll({ "fsword", "hookshot", "bombs" }) then
         return true
 

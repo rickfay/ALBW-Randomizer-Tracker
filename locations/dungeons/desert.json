@@ -3,7 +3,7 @@
     "name": "Desert Palace",
     "color": "#384ce2",
     "access_rules": [
-      "lorule, merge, $yButton, srod"
+      "merge, srod"
     ],
     "children": [
       {
@@ -328,7 +328,7 @@
             "item_count": 1,
             "access_rules": [
               // Intended
-              "lorule, merge, $yButton, srod, titansmitt, $attack",
+              "merge, srod, titansmitt, $attack",
               // Desert Palace Skip. IRod + TRod make it faster, but aren't actually needed for the boost method
               "$miseryMireOoB, boots",
               // Skip Dungeon, but fight Zaganaga. Titan's Mitt not needed with the skip
@@ -367,9 +367,9 @@
             "name": "Sage Irene",
             "hosted_item": "desert",
             "access_rules": [
-              "{lorule, merge, $yButton, srod}",
+              "{merge, srod}",
               // Intended
-              "lorule, merge, $yButton, srod, titansmitt, $attack",
+              "merge, srod, titansmitt, $attack",
               // Desert Palace Skip. IRod + TRod make it faster, but aren't actually needed for the boost method
               "$miseryMireOoB, boots",
               // Skip Dungeon, but fight Zaganaga. Titan's Mitt not needed with the skip

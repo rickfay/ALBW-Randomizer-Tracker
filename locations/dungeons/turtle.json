@@ -3,8 +3,8 @@
     "name": "Turtle Rock",
     "color": "#a332ce",
     "access_rules": [
-      "lorule, merge, $yButton, irod, flippers",
-      "lorule, merge, $yButton, irod, [flippers], $fakeFlippers"
+      "merge, irod, flippers",
+      "merge, irod, [flippers], $fakeFlippers"
     ],
     "children": [
       {
@@ -274,10 +274,10 @@
       {
         "name": "Outdoor Heart Piece",
         "access_rules": [
-          "{lorule, merge}",
-          "lorule, merge, $yButton, irod, flippers",
-          "lorule, merge, $yButton, irod, [flippers], boots, trod, frod",
-          "lorule, merge, $yButton, irod, [flippers], boots, trod, nicebombs"
+          "{merge}",
+          "merge, irod, flippers",
+          "merge, irod, [flippers], boots, trod, frod",
+          "merge, irod, [flippers], boots, trod, nicebombs"
         ],
         "capture_item": true,
         "item_count": 1

@@ -3,7 +3,7 @@
     "name": "Thieves' Hideout",
     "color": "#dde44e",
     "access_rules": [
-      "lorule, merge"
+      "merge"
     ],
     "children": [
       {

@@ -3,8 +3,7 @@
     "name": "Swamp Palace",
     "color": "#d25432",
     "access_rules": [
-      "lorule, merge, flippers, $yButton, hookshot, bombflower",
-      "lorule, merge, flippers, $yButton, hookshot, [bombflower], irod"
+      "merge, flippers, hookshot"
     ],
     "children": [
       {

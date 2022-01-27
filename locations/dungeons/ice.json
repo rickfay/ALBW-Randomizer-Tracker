@@ -3,7 +3,7 @@
     "name": "Ice Ruins",
     "color": "#ef3435",
     "access_rules": [
-      "lorule, merge, $yButton, frod, hookshot, [powerglove]"
+      "merge, frod, hookshot, [powerglove]"
     ],
     "children": [
       {

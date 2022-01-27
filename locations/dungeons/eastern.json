@@ -4,11 +4,11 @@
     "color": "#00FF00",
     "access_rules": [
       "merge",
-      "$yButton, bow",
-      "$yButton, hookshot",
-      "$yButton, boomerang",
-      "$yButton, bombs",
-      "$yButton, niceirod",
+      "bow",
+      "hookshot",
+      "boomerang",
+      "bombs",
+      "niceirod",
       "msword, []"
     ],
     "children": [
@@ -38,11 +38,11 @@
           // Throw Pots
           "[]",
           // Normal
-          "$yButton, bow",
-          "$yButton, hookshot",
-          "$yButton, boomerang",
-          "$yButton, bombs",
-          "$yButton, niceirod",
+          "bow",
+          "hookshot",
+          "boomerang",
+          "bombs",
+          "niceirod",
           "msword, []"
         ],
         "map_locations": [
@@ -103,11 +103,11 @@
       {
         "name": "Eastern Palace",
         "access_rules": [
-          "$yButton, bow",
-          "$yButton, boomerang",
-          "$yButton, hookshot",
-          "$yButton, bombs",
-          "$yButton, irod, []",
+          "bow",
+          "boomerang",
+          "hookshot",
+          "bombs",
+          "irod, []",
           "msword, []"
         ],
         "map_locations": [
@@ -170,11 +170,11 @@
             "access_rules": [
               // You can use 4 of the 6 pots
               "[]",
-              "$yButton, bow",
-              "$yButton, boomerang",
-              "$yButton, hookshot",
-              "$yButton, bombs",
-              "$yButton, irod"
+              "bow",
+              "boomerang",
+              "hookshot",
+              "bombs",
+              "irod"
             ],
             "map_locations": [
               {
@@ -213,10 +213,10 @@
           {
             "name": "Post-Boss Fight",
             "access_rules": [
-              "$yButton, bow",
-              "$yButton, bombs",
-              "$yButton, frod",
-              "$yButton, irod",
+              "bow",
+              "bombs",
+              "frod",
+              "irod",
               "$stun, $attack",
               "msword, []"
             ],
@@ -306,10 +306,10 @@
             "name": "Pendant of Courage",
             "access_rules": [
               "{}",
-              "$yButton, bow",
-              "$yButton, bombs",
-              "$yButton, frod",
-              "$yButton, irod",
+              "bow",
+              "bombs",
+              "frod",
+              "irod",
               "$stun, $attack",
               "msword, []"
             ],

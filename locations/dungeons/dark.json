@@ -3,7 +3,7 @@
     "name": "Dark Palace",
     "color": "#41c341",
     "access_rules": [
-      "lorule, merge, $yButton, bombs"
+      "merge, bombs"
     ],
     "children": [
       {

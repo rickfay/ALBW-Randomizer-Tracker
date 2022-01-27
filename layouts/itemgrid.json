@@ -10,78 +10,112 @@
             "type": "item",
             "item": "greatspin",
             "height": 20,
-            "canvas_left": 217,
+            "canvas_left": 227,
             "canvas_top": 179
           }
         ]
       },
       {
-        "type": "itemgrid",
-        "dropshadow": true,
-        "h_alignment": "left",
-        "item_size": "40",
-        "item_margin": "1,2",
-        "rows": [
-          [
-            "bow",
-            "boomerang",
-            "hookshot",
-            "bombs",
-            "pouch",
-            "gales",
-            "hera",
-            "eastern"
-          ],
-          [
-            "frod",
-            "irod",
-            "scoot",
-            "foul",
-            "beebadge",
-            "skull",
-            "triforcec",
-            "ice"
-          ],
-          [
-            "lamp",
-            "hammer",
-            "bell",
-            "net",
-            "scroll",
-            "thieves",
-            "lorule",
-            "dark"
-          ],
-          [
-            "bottle",
-            "srod",
-            "trod",
-            "hintglasses",
-            "bracelet",
-            "desert",
-            "swamp",
-            "turtle"
-          ],
-          [
-            "boots",
-            "powerglove",
-            "flippers",
-            "smoothgem",
-            "bowlight",
-            "fsword",
-            "shield",
-            "greentunic"
-          ],
-          [
-            "maiamai",
-            "bombflower",
-            "shadyguy",
-            "signs",
-            "masterore",
-            "letter",
-            "milk",
-            "goldenbee"
-          ]
+        "type": "array",
+        "orientation": "vertical",
+        "content": [
+          {
+            "type": "array",
+            "orientation": "horizontal",
+            "content": [
+              {
+                "type": "itemgrid",
+                "dropshadow": true,
+                "h_alignment": "left",
+                "item_size": "40",
+                "item_margin": "1,2",
+                "rows": [
+                  [
+                    "bow",
+                    "boomerang",
+                    "hookshot",
+                    "bombs",
+                    "pouch"
+                  ],
+                  [
+                    "frod",
+                    "irod",
+                    "scoot",
+                    "foul",
+                    "beebadge"
+                  ],
+                  [
+                    "lamp",
+                    "hammer",
+                    "bell",
+                    "net",
+                    "scroll"
+                  ],
+                  [
+                    "bottle",
+                    "srod",
+                    "trod",
+                    "hintglasses",
+                    "bowlight"
+                  ],
+                  [
+                    "boots",
+                    "powerglove",
+                    "flippers",
+                    "bracelet"
+                  ]
+                ]
+              },
+              {
+                "type": "itemgrid",
+                "dropshadow": true,
+                //"h_alignment": "left",
+                "item_size": "40",
+                "item_margin": "1,2",
+                "rows": [
+                  [
+                    "gales",
+                    "hera",
+                    "eastern"
+                  ],
+                  [
+                    "desert",
+                    "dark"
+                  ],
+                  [
+                    "ice",
+                    "turtle",
+                    "swamp"
+                  ],
+                  [
+                    "thieves",
+                    "skull"
+                  ],
+                  [
+                    "fsword",
+                    "shield",
+                    "greentunic"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "type": "itemgrid",
+            "dropshadow": true,
+            "item_size": "40",
+            "item_margin": "1,2",
+            "rows": [
+              [
+                "maiamai",
+                "ore",
+                "smoothgem",
+                "letter",
+                "milk",
+                "goldenbee"
+              ]
+            ]
+          }
         ]
       }
     ]

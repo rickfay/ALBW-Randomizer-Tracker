@@ -1,9 +1,6 @@
 [
   {
     "name": "Hyrule Maiamai",
-    "access_rules": [
-      "$yButton, bombs"
-    ],
     "children": [
       // Lost Woods Area - 8
       {
@@ -325,8 +322,8 @@
             ],
             "access_rules": [
               "merge, powerglove, hookshot",
-              "[merge], powerglove, hookshot, boots", // Fast Descent
-              "[merge], powerglove, hookshot, $boost" // Alt Alt ROM Skip
+              "[merge], powerglove, hookshot, boots, trod", // Old ROM Skip
+              "[merge], powerglove, hookshot, $boost" // Fringe ROM Skip
             ]
           }
         ]
@@ -507,7 +504,7 @@
             ],
             "access_rules": [
               "{}",
-              "lorule, merge, bombs"
+              "merge, bombs"
             ]
           }
         ]
@@ -625,8 +622,8 @@
               "maiamai_map"
             ],
             "access_rules": [
-              "{ravio}",
-              "ravio, merge"
+              "{}",
+              "merge"
             ]
           }
         ]
@@ -1021,7 +1018,7 @@
               "maiamai_map"
             ],
             "access_rules": [
-              "lorule, merge, srod"
+              "merge, srod"
             ]
           }
         ]
@@ -1045,7 +1042,7 @@
               "maiamai_map"
             ],
             "access_rules": [
-              "lorule, merge, srod"
+              "merge, srod"
             ]
           }
         ]
@@ -1096,7 +1093,7 @@
             ],
             "access_rules": [
               "{bombs}",
-              "flippers"
+              "bombs, flippers"
             ]
           }
         ]
@@ -1258,7 +1255,7 @@
   {
     "name": "Lorule Maiamai",
     "access_rules": [
-      "$yButton, bombs, lorule, merge"
+      "merge"
     ],
     "children": [
       // Skull Woods - 8
@@ -1408,6 +1405,9 @@
             "capture_item": true,
             "visibility_rules": [
               "maiamai_map"
+            ],
+            "access_rules": [
+              "$cutGrass"
             ]
           }
         ]
@@ -1750,6 +1750,9 @@
             "capture_item": true,
             "visibility_rules": [
               "maiamai_map"
+            ],
+            "access_rules": [
+              "$cutGrass"
             ]
           }
         ]
@@ -1996,11 +1999,6 @@
             "name": "Cut the Grass",
             "item_count": 1,
             "capture_item": true,
-            "access_rules": [
-              // bombs can blow up the grass to show you maiamai early
-              "{}",
-              "bombflower"
-            ],
             "visibility_rules": [
               "maiamai_map"
             ]
@@ -2045,6 +2043,20 @@
             "capture_item": true,
             "visibility_rules": [
               "maiamai_map"
+            ],
+            "access_rules": [
+              "[]", // Grab a bush from lower screen and throw
+              "fsword",
+              "bow",
+              "boomerang",
+              "hookshot",
+              "bombs",
+              "frod",
+              "irod",
+              "hammer",
+              "srod",
+              "boots",
+              "powerglove"
             ]
           }
         ]

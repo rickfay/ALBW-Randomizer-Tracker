@@ -3,9 +3,9 @@
     "name": "House of Gales",
     "color": "#0000FF",
     "access_rules": [
-      "$yButton, trod, flippers",
+      "trod, flippers",
       // Crow Boost + Bergshot
-      "$yButton, trod, [flippers], irod, hookshot",
+      "trod, [flippers], irod, hookshot",
       // Fake Flippers
       "trod, [flippers], $fakeFlippers"
     ],

@@ -11,7 +11,7 @@ This is an [EmoTracker](https://emotracker.net/) pack for tracking progress in T
     - 2.0.0:
         - Updated to support the new Z17 Randomizer
         - Layout Changes:
-            - Removed Ravio/Signs, Shady Guy, and both Triforces
+            - Removed Ravio/Signs, Shady Guy, Big Bomb Flower, and both Triforces
             - Moved Bracelet, Smooth Gem, and Bow of Light to new spots
             - Design tweaked to accommodate changes
         - Logic Updates:

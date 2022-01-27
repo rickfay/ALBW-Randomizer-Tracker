@@ -96,13 +96,6 @@
                     "shield",
                     "greentunic"
                   ]
-                  //          [
-                  //            "maiamai",
-                  //            "",
-                  //            "letter",
-                  //            "milk",
-                  //            "goldenbee"
-                  //          ],
                 ]
               }
             ]
@@ -110,7 +103,6 @@
           {
             "type": "itemgrid",
             "dropshadow": true,
-            //"h_alignment": "left",
             "item_size": "40",
             "item_margin": "1,2",
             "rows": [

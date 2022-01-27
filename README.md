@@ -20,6 +20,8 @@ This is an [EmoTracker](https://emotracker.net/) pack for tracking progress in T
             - Portals to Lorule are open by default
             - Bombs are no longer required to collect Maiamai
                 - New Logic added for cases when you do not have Bombs
+            - Lorule Blacksmith now requires Hyrule Blacksmith check cleared first
+            - Shady Guy check can be obtained with Pegasus Boots
             - Fix errors in Bee Boost logic I doubt anyone noticed
         - Remove several legacy game options no longer relevant to the randomizer
     - 1.1.3:

@@ -315,7 +315,7 @@
               {
                 "name": "Give 2 more Master Ore",
                 "access_rules": [
-                  "masterore:4"
+                  "blacksmith, masterore:4"
                 ],
                 "item_count": 1
               }
@@ -528,11 +528,16 @@
                 "access_rules": [
                   "{}",
                   "srod, bombs",
-                  "[srod], bombs, frod", // FRod boost in Hyrule
-                  "[srod], nicebombs", // Lemon boost in Hyrule
-                  "[srod], bombs, vulture", // Vulture boost
-                  "[srod], bombs, bombBoost", // Regular bomb boost
-                  "[srod], [bombs], frod, boots" // FRod boost + wall dash
+                  "[srod], bombs, frod",
+                  // FRod boost in Hyrule
+                  "[srod], nicebombs",
+                  // Lemon boost in Hyrule
+                  "[srod], bombs, vulture",
+                  // Vulture boost
+                  "[srod], bombs, bombBoost",
+                  // Regular bomb boost
+                  "[srod], [bombs], frod, boots"
+                  // FRod boost + wall dash
                 ],
                 "item_count": 1
               }

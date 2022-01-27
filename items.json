@@ -18,6 +18,12 @@
     "codes": "bigkey"
   },
   {
+    "name": "Blacksmith",
+    "type": "toggle",
+    "img": "images/blacksmith.png",
+    "codes": "blacksmith"
+  },
+  {
     "name": "Blue Rupee",
     "type": "toggle",
     "img": "images/rupee_blue.png",
@@ -270,12 +276,6 @@
         "codes": "niceirod, niceicerod"
       }
     ]
-  },
-  {
-    "name": "Irene Trigger",
-    "type": "toggle",
-    "img": "images/irene.png",
-    "codes": "ireneTrigger"
   },
   {
     "name": "Sage Rosso",

@@ -905,6 +905,7 @@
             "access_rules": [
               "masterore:2"
             ],
+            "hosted_item": "blacksmith",
             "item_count": 1
           }
         ]
@@ -1023,7 +1024,6 @@
             "access_rules": [
               "eastern"
             ],
-            "hosted_item": "ireneTrigger",
             "item_count": 1
           }
         ]

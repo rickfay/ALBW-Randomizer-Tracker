@@ -10,109 +10,124 @@
             "type": "item",
             "item": "greatspin",
             "height": 20,
-            "canvas_left": 227,
-            "canvas_top": 179
+            "canvas_left": 257,
+            "canvas_top": 4
+          }
+        ]
+      },
+      {
+        "type": "canvas",
+        "content": [
+          {
+            "type": "item",
+            "item": "letter",
+            "height": 20,
+            "canvas_left": 7,
+            "canvas_top": 141
+          }
+        ]
+      },
+      {
+        "type": "canvas",
+        "content": [
+          {
+            "type": "item",
+            "item": "milk",
+            "height": 20,
+            "canvas_left": 27,
+            "canvas_top": 141
+          }
+        ]
+      },
+      {
+        "type": "canvas",
+        "content": [
+          {
+            "type": "item",
+            "item": "goldbee",
+            "height": 20,
+            "canvas_left": 7, //17
+            "canvas_top": 162
+          }
+        ]
+      },
+
+      {
+        "type": "canvas",
+        "content": [
+          {
+            "type": "item",
+            "item": "bottle",
+            "height": 20,
+            "canvas_left": 27,
+            "canvas_top": 162
           }
         ]
       },
       {
         "type": "array",
-        "orientation": "vertical",
+        "orientation": "horizontal",
         "content": [
-          {
-            "type": "array",
-            "orientation": "horizontal",
-            "content": [
-              {
-                "type": "itemgrid",
-                "dropshadow": true,
-                "h_alignment": "left",
-                "item_size": "40",
-                "item_margin": "1,2",
-                "rows": [
-                  [
-                    "bow",
-                    "boomerang",
-                    "hookshot",
-                    "bombs",
-                    "pouch"
-                  ],
-                  [
-                    "frod",
-                    "irod",
-                    "scoot",
-                    "foul",
-                    "beebadge"
-                  ],
-                  [
-                    "lamp",
-                    "hammer",
-                    "bell",
-                    "net",
-                    "scroll"
-                  ],
-                  [
-                    "bottle",
-                    "srod",
-                    "trod",
-                    "hintglasses",
-                    "bowlight"
-                  ],
-                  [
-                    "boots",
-                    "powerglove",
-                    "flippers",
-                    "bracelet"
-                  ]
-                ]
-              },
-              {
-                "type": "itemgrid",
-                "dropshadow": true,
-                //"h_alignment": "left",
-                "item_size": "40",
-                "item_margin": "1,2",
-                "rows": [
-                  [
-                    "gales",
-                    "hera",
-                    "eastern"
-                  ],
-                  [
-                    "desert",
-                    "dark"
-                  ],
-                  [
-                    "ice",
-                    "turtle",
-                    "swamp"
-                  ],
-                  [
-                    "thieves",
-                    "skull"
-                  ],
-                  [
-                    "fsword",
-                    "shield",
-                    "greentunic"
-                  ]
-                ]
-              }
-            ]
-          },
           {
             "type": "itemgrid",
             "dropshadow": true,
+            "h_alignment": "left",
             "item_size": "40",
             "item_margin": "1,2",
             "rows": [
               [
-                "maiamai",
-                "ore",
+                "bow",
+                "boomerang",
+                "hookshot",
+                "bombs",
+                "pouch",
+                "boots",
+                "fsword"
+              ],
+              [
+                "frod",
+                "irod",
+                "scoot",
+                "foul",
+                "beebadge",
+                "powerglove",
+                "shield"
+              ],
+              [
+                "lamp",
+                "hammer",
+                "bell",
+                "net",
+                "scroll",
+                "flippers",
+                "greentunic"
+              ],
+              [
+                "",
+                "srod",
+                "trod",
+                "hintglasses",
+                "gomode",
                 "smoothgem",
-                "letter",
-                "milk",
-                "goldenbee"
+                "bracelet"
+              ],
+              [
+                "ore",
+                "maiamai",
+                "gales",
+                "hera",
+                "eastern",
+                "yuga",
+                "bowoflight"
+              ],
+              [
+                "dark",
+                "swamp",
+                "skull",
+                "thieves",
+                "ice",
+                "desert",
+                "turtle"
               ]
             ]
           }

@@ -8,8 +8,8 @@
       "hookshot",
       "boomerang",
       "bombs",
-      "niceirod",
-      "msword, []"
+      "[hard], msword",
+      "[], niceirod"
     ],
     "children": [
       {
@@ -35,15 +35,13 @@
       {
         "name": "Eastern Palace",
         "access_rules": [
-          // Throw Pots
-          "[]",
-          // Normal
           "bow",
           "hookshot",
           "boomerang",
           "bombs",
-          "niceirod",
-          "msword, []"
+          // pots,
+          "[hard]",
+          "[], niceirod"
         ],
         "map_locations": [
           {
@@ -107,8 +105,8 @@
           "boomerang",
           "hookshot",
           "bombs",
-          "irod, []",
-          "msword, []"
+          "[hard], irod",
+          "[hard], msword"
         ],
         "map_locations": [
           {
@@ -168,13 +166,13 @@
           {
             "name": "Eastern Palace",
             "access_rules": [
-              // You can use 4 of the 6 pots
-              "[]",
               "bow",
               "boomerang",
               "hookshot",
               "bombs",
-              "irod"
+              "irod",
+              // You can use 4 of the 6 pots
+              "[hard]"
             ],
             "map_locations": [
               {
@@ -215,10 +213,10 @@
             "access_rules": [
               "bow",
               "bombs",
-              "frod",
-              "irod",
-              "$stun, $attack",
-              "msword, []"
+              "hookshot, $attack",
+              "boomerang, $attack",
+              "[hell], msword",
+              "[hell], irod"
             ],
             "children": [
               {
@@ -269,7 +267,7 @@
                 ],
                 "sections": [
                   {
-                    "name": "Escape Silver Chest",
+                    "name": "3F Escape Chest",
                     "capture_item": true,
                     "item_count": 1
                   }
@@ -289,12 +287,12 @@
                 ],
                 "sections": [
                   {
-                    "name": "Escape Purple Chest",
+                    "name": "1F Escape Chest",
                     "capture_item": true,
                     "item_count": 1
                   }
                 ]
-              },
+              }
             ]
           }
         ]
@@ -308,10 +306,10 @@
               "{}",
               "bow",
               "bombs",
-              "frod",
-              "irod",
-              "$stun, $attack",
-              "msword, []"
+              "hookshot, $attack",
+              "boomerang, $attack",
+              "[hell], msword",
+              "[hell], irod"
             ],
             "hosted_item": "eastern"
           }

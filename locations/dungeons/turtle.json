@@ -4,7 +4,8 @@
     "color": "#a332ce",
     "access_rules": [
       "merge, irod, flippers",
-      "merge, irod, [flippers], $fakeFlippers"
+      "[advanced], merge, irod, $fakeFlippers",
+      "[hell], merge, irod, boots"
     ],
     "children": [
       {
@@ -129,15 +130,8 @@
       {
         "name": "Crystal Switch Ice Rod Can't Hit",
         "access_rules": [
-          "fsword",
-          "bow",
-          "boomerang",
-          "hookshot",
-          "bombs",
-          "hammer",
-          "boots",
-          // Toss a Skull from a different room
-          "[], irod"
+          "$shielded_switch",
+          "[hard]"
         ],
         "children": [
           {
@@ -151,7 +145,7 @@
             ],
             "sections": [
               {
-                "name": "B1 Big Key Chest",
+                "name": "B1 North Big Chest",
                 "chest_unopened_img": "images/chest_big_unopened.png",
                 "chest_opened_img": "images/chest_big_opened.png",
                 "capture_item": true,
@@ -170,7 +164,7 @@
             ],
             "sections": [
               {
-                "name": "B1 Hylian Shield Chest",
+                "name": "B1 Center Big Chest",
                 "chest_unopened_img": "images/chest_big_unopened.png",
                 "chest_opened_img": "images/chest_big_opened.png",
                 "capture_item": true,
@@ -276,8 +270,8 @@
         "access_rules": [
           "{merge}",
           "merge, irod, flippers",
-          "merge, irod, [flippers], boots, trod, frod",
-          "merge, irod, [flippers], boots, trod, nicebombs"
+          "[advanced], merge, irod, $fakeFlippers",
+          "[hell], merge, irod, boots"
         ],
         "capture_item": true,
         "item_count": 1

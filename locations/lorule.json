@@ -1,12 +1,12 @@
 [
   {
     "name": "Lorule",
-    "access_rules": [
-      "merge"
-    ],
     "children": [
       {
         "name": "Skull Woods Region",
+        "access_rules": [
+          "merge"
+        ],
         "children": [
           {
             "name": "Skull Woods Region",
@@ -70,7 +70,8 @@
       {
         "name": "Lorule Death Mountain",
         "access_rules": [
-          "[powerglove]"
+          "powerglove, merge",
+          "[basic], merge"
         ],
         "children": [
           {
@@ -86,7 +87,7 @@
               {
                 "name": "Ice Gimos Fight",
                 "access_rules": [
-                  "$attack"
+                  "$margomill"
                 ],
                 "item_count": 1
               }
@@ -105,11 +106,14 @@
               {
                 "name": "Intermediate",
                 "access_rules": [
-                  "$attack, [bombs]",
-                  "$attack, [hammer]",
-                  "$attack, [trod]"
+                  "$attack, bombs",
+                  "$attack, hammer",
+                  "$attack, trod"
                 ],
-                "item_count": 1
+                "item_count": 1,
+                "visibility_rules": [
+                  "minigames_enabled"
+                ]
               }
             ]
           },
@@ -171,11 +175,14 @@
       },
       {
         "name": "Graveyard",
+        "access_rules": [
+          "merge, lamp, $attack"
+        ],
         "children": [
           {
             "name": "Lorule Sanctuary",
             "access_rules": [
-              "titansmitt, $lampless"
+              "titansmitt"
             ],
             "map_locations": [
               {
@@ -205,7 +212,7 @@
             ]
           },
           {
-            "name": "Lorule Sanctuary",
+            "name": "Philosopher's Cave",
             "map_locations": [
               {
                 "map": "lorule",
@@ -215,11 +222,11 @@
             ],
             "sections": [
               {
-                "name": "Master Ore Chest",
+                "name": "Big Chest",
                 "chest_unopened_img": "images/chest_big_unopened.png",
                 "chest_opened_img": "images/chest_big_opened.png",
                 "access_rules": [
-                  "titansmitt, $lampless, $attack"
+                  "titansmitt"
                 ],
                 "item_count": 1
               }
@@ -245,6 +252,9 @@
       },
       {
         "name": "Dark Ruins",
+        "access_rules": [
+          "merge"
+        ],
         "children": [
           {
             "name": "Ku's Domain",
@@ -273,9 +283,7 @@
             ],
             "sections": [
               {
-                "name": "East Chest",
-                "access_rules": [
-                ],
+                "name": "Chest",
                 "item_count": 1
               }
             ]
@@ -291,7 +299,7 @@
             ],
             "sections": [
               {
-                "name": "Above Guarded Rupees",
+                "name": "Ledge",
                 "capture_item": true,
                 "item_count": 1
               }
@@ -301,6 +309,10 @@
       },
       {
         "name": "Lorule Castle Area",
+        "access_rules": [
+          "merge",
+          "yuga"
+        ],
         "children": [
           {
             "name": "Lorule Blacksmith",
@@ -337,11 +349,11 @@
                 "chest_opened_img": "images/chest_big_opened.png",
                 "access_rules": [
                   "boots",
-                  "[boots], bombs",
-                  "[boots], boomerang",
-                  "[boots], nicebow",
-                  "[boots], niceirod",
-                  "[boots], msword"
+                  "[hard], bombs",
+                  "[hard], boomerang",
+                  "[hard], msword",
+                  "[], nicebow",
+                  "[], niceirod"
                 ],
                 "item_count": 1
               }
@@ -358,6 +370,10 @@
             ],
             "sections": [
               {
+                "access_rules": [
+                  "bombs",
+                  "[hard]"
+                ],
                 "item_count": 1
               }
             ]
@@ -411,7 +427,7 @@
               {
                 "name": "Hookshot Chest",
                 "access_rules": [
-                  "hookshot"
+                  "merge, hookshot"
                 ],
                 "item_count": 1
               }
@@ -445,7 +461,10 @@
             "sections": [
               {
                 "name": "Score 100+",
-                "item_count": 1
+                "item_count": 1,
+                "visibility_rules": [
+                  "minigames_enabled"
+                ]
               }
             ]
           },
@@ -463,7 +482,10 @@
                 "name": "Score 150+",
                 "access_rules": [
                 ],
-                "item_count": 1
+                "item_count": 1,
+                "visibility_rules": [
+                  "minigames_enabled"
+                ]
               }
             ]
           },
@@ -487,6 +509,9 @@
       },
       {
         "name": "Misery Mire",
+        "access_rules": [
+          "merge"
+        ],
         "children": [
           {
             "name": "Misery Mire",
@@ -523,21 +548,16 @@
             ],
             "sections": [
               {
-                "name": "North Ledge",
+                "name": "Ledge",
                 "capture_item": true,
                 "access_rules": [
                   "{}",
                   "srod, bombs",
-                  "[srod], bombs, frod",
-                  // FRod boost in Hyrule
-                  "[srod], nicebombs",
-                  // Lemon boost in Hyrule
-                  "[srod], bombs, vulture",
-                  // Vulture boost
-                  "[srod], bombs, bombBoost",
-                  // Regular bomb boost
-                  "[srod], [bombs], frod, boots"
-                  // FRod boost + wall dash
+                  "[hard], bombs, merge, scroll",
+                  "[basic], nicebombs",
+                  "[basic], bombs, frod",
+                  "[basic], frod, boots",
+                  "[advanced], bombs",
                 ],
                 "item_count": 1
               }
@@ -547,6 +567,9 @@
       },
       {
         "name": "Lorule Lake",
+        "access_rules": [
+          "merge"
+        ],
         "children": [
           {
             "name": "Lorule Lake",

@@ -7,6 +7,7 @@ Tracker:AddItems("options.json")
 Tracker:AddMaps("maps.json")
 
 Tracker:AddLayouts("layouts/itemgrid.json")
+Tracker:AddLayouts("layouts/tracker_settings.json")
 Tracker:AddLayouts("layouts/options_menu.json")
 Tracker:AddLayouts("layouts/capturable.json")
 Tracker:AddLayouts("layouts/broadcast.json")

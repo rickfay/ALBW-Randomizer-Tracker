@@ -1,6 +1,6 @@
 [
   {
-    "name": "Inside Hyrule Castle",
+    "name": "Hyrule Castle",
     "access_rules": [
       "msword"
     ],
@@ -34,6 +34,36 @@
           {
             "name": "Right Wall Chest",
             "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Inside Hyrule Castle",
+        "access_rules": [
+          "{msword}",
+          "msword, bow",
+          "msword, irod",
+          "[hard], msword, nicebombs",
+          "[], msword, nicetrod"
+        ],
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1023,
+            "y": 870,
+            "size": 60
+          },
+          {
+            "map": "hyrule8F",
+            "x": 83,
+            "y": 59,
+            "size": 15
+          }
+        ],
+        "sections": [
+          {
+            "name": "Yuga",
+            "hosted_item": "yuga"
           }
         ]
       }

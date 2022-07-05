@@ -1,0 +1,32 @@
+{
+  "tracker_settings": {
+    "type": "container",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "content": [
+          {
+            "type": "itemgrid",
+            "dropshadow": true,
+            "h_alignment": "left",
+            "item_size": "40",
+            "item_margin": "1,2",
+            "rows": [
+              [
+                "",
+                "logic",
+                "",
+                "minigames_enabled",
+                "",
+                "trials_normal",
+                "",
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

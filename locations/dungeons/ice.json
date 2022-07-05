@@ -3,7 +3,8 @@
     "name": "Ice Ruins",
     "color": "#ef3435",
     "access_rules": [
-      "merge, frod, hookshot, [powerglove]"
+      "powerglove, merge, frod, hookshot",
+      "[basic], merge, frod, hookshot"
     ],
     "children": [
       {
@@ -95,7 +96,7 @@
         "name": "Ice Ruins",
         "access_rules": [
           "scroll",
-          "[scroll], boots"
+          "[advanced], boots"
         ],
         "map_locations": [
           {
@@ -157,7 +158,7 @@
         ],
         "sections": [
           {
-            "name": "B3 Stamina Scroll Chest",
+            "name": "B3 Big Chest",
             "chest_unopened_img": "images/chest_big_unopened.png",
             "chest_opened_img": "images/chest_big_opened.png",
             "capture_item": true,
@@ -244,7 +245,7 @@
         ],
         "sections": [
           {
-            "name": "B5 Big Key Chest",
+            "name": "B5 Big Chest",
             "chest_unopened_img": "images/chest_big_unopened.png",
             "chest_opened_img": "images/chest_big_opened.png",
             "capture_item": true,

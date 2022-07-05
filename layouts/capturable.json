@@ -11,9 +11,8 @@
         "hookshot",
         "bombs",
         "pouch",
-        "heart",
-        "hp",
-        "hc"
+        "boots",
+        "fsword"
       ],
       [
         "frod",
@@ -21,9 +20,8 @@
         "scoot",
         "foul",
         "beebadge",
-        "rupee_silver",
-        "bigkey",
-        "rupee_red"
+        "powerglove",
+        "shield"
       ],
       [
         "lamp",
@@ -31,39 +29,44 @@
         "bell",
         "net",
         "scroll",
-        "rupee_gold",
-        "key",
-        "rupee_green"
+        "flippers",
+        "greentunic"
       ],
       [
         "bottle",
         "srod",
         "trod",
         "hintglasses",
-        "bracelet",
-        "rupee_blue",
-        "compass",
-        "rupee_purple"
-      ],
-      [
-        "boots",
-        "powerglove",
-        "flippers",
+        "greatspin",
         "smoothgem",
-        "bowlight",
-        "fsword",
-        "shield",
-        "greentunic"
+        "bracelet"
       ],
       [
+        "letter",
+        "masterore",
         "maiamai",
+        "compass",
+        "key",
+        "bigkey",
+        "bowoflight"
+      ],
+      [
+        "milk",
         "tail",
         "horn",
         "guts",
-        "masterore",
-        "letter",
-        "milk",
-        "goldenbee"
+        "heart",
+        "hp",
+        "hc"
+      ],
+      [
+        "goldenbee",
+        "rupee_green",
+        "rupee_blue",
+        "rupee_red",
+        "rupee_purple",
+        "rupee_silver",
+        "rupee_gold"
       ]
     ]
   }

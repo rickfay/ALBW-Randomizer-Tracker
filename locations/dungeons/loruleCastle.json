@@ -10,8 +10,8 @@
         "name": "Lorule Castle",
         "access_rules": [
           "$attack",
-          "[]",
-          "[], boots"
+          // kill miniboss with thrown skulls
+          "[hard]"
         ],
         "map_locations": [
           {
@@ -50,8 +50,8 @@
         "name": "Lorule Castle Post-Miniboss",
         "access_rules": [
           "$attack",
-          "[$attack]"
           // Attack with the skulls on the ground
+          "[hard]"
         ],
         "children": [
           {
@@ -84,6 +84,13 @@
               {
                 "name": "2F East Room Hidden Chest",
                 "capture_item": true,
+                "access_rules": [
+                  "fsword",
+                  "bombs",
+                  "trod",
+                  "irod",
+                  "[hard]"
+                ],
                 "item_count": 1
               }
             ]
@@ -137,6 +144,13 @@
                 "chest_unopened_img": "images/chest_big_unopened.png",
                 "chest_opened_img": "images/chest_big_opened.png",
                 "capture_item": true,
+                "access_rules": [
+                  "fsword",
+                  "bombs",
+                  "trod",
+                  "irod",
+                  "[hard]"
+                ],
                 "item_count": 1
               }
             ]
@@ -157,7 +171,7 @@
                 "capture_item": true,
                 "access_rules": [
                   "bombs",
-                  "[bombs], irod"
+                  "[basic], irod"
                 ],
                 "item_count": 1
               }
@@ -178,7 +192,7 @@
                 "capture_item": true,
                 "access_rules": [
                   "bombs",
-                  "[bombs], niceirod"
+                  "[], niceirod"
                 ],
                 "item_count": 1
               }
@@ -234,7 +248,8 @@
                 "name": "4F Lamp Trial Chest",
                 "capture_item": true,
                 "access_rules": [
-                  "[$fire]"
+                  "$fire",
+                  "[hard]"
                 ],
                 "item_count": 1
               }
@@ -297,7 +312,11 @@
             "name": "Zelda",
             "chest_unopened_img": "images/zelda.png",
             "access_rules": [
-              "$zelda"
+              "sword, hookshot, bombs, $fire",
+              "sword, trials_skipped",
+              "[hard], net, hookshot, bombs",
+              "[hard], net, trials_skipped",
+              "[advanced], sword, bombs"
             ],
             "capture_item": true,
             "item_count": 1
@@ -326,7 +345,11 @@
             "name": "Triforce",
             "access_rules": [
               "{}",
-              "bowlight, $zelda"
+              "sword, hookshot, bombs, $fire, bowlight",
+              "sword, trials_skipped, bowlight",
+              "[hard], net, hookshot, bombs, bowlight",
+              "[hard], net, trials_skipped, bowlight",
+              "[advanced], sword, bombs, bowlight"
             ],
             "hosted_item": "triforce"
           }

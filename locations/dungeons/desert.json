@@ -26,9 +26,8 @@
       {
         "name": "1F Post-Miniboss Chests",
         "access_rules": [
-          "[$switch], $attack",
-          // Reverse Desert Palace
-          "$miseryMireOoB"
+          "$switch, $attack",
+          "[advanced], $miseryMireOoB"
         ],
         "children": [
           {
@@ -113,7 +112,7 @@
             ],
             "sections": [
               {
-                "name": "1F Titan's Mitt Chest",
+                "name": "1F Big Chest",
                 "chest_unopened_img": "images/chest_big_unopened.png",
                 "chest_opened_img": "images/chest_big_opened.png",
                 "capture_item": true,
@@ -125,8 +124,7 @@
             "name": "Desert Palace Upper Floors",
             "access_rules": [
               "titansmitt",
-              // Reverse Desert Palace
-              "$miseryMireOoB"
+              "[advanced], $miseryMireOoB"
             ],
             "children": [
               {
@@ -197,7 +195,7 @@
                 ],
                 "sections": [
                   {
-                    "name": "2F Big Key Chest",
+                    "name": "2F Big Chest",
                     "chest_unopened_img": "images/chest_big_unopened.png",
                     "chest_opened_img": "images/chest_big_opened.png",
                     "capture_item": true,
@@ -216,7 +214,7 @@
                 ],
                 "sections": [
                   {
-                    "name": "2F Next to Big Key Chest",
+                    "name": "2F Next to Big Chest",
                     "capture_item": true,
                     "item_count": 1
                   }
@@ -330,12 +328,12 @@
               // Intended
               "merge, srod, titansmitt, $attack",
               // Desert Palace Skip. IRod + TRod make it faster, but aren't actually needed for the boost method
-              "$miseryMireOoB, boots",
+              "[advanced], $miseryMireOoB, boots",
               // Skip Dungeon, but fight Zaganaga. Titan's Mitt not needed with the skip
-              "$miseryMireOoB, srod, $attack",
+              "[advanced], $miseryMireOoB, srod, $attack",
               // Shitty versions
-              "$miseryMireOoB, bow, zagaBow",
-              "$miseryMireOoB, msword, zagaSwordBeams"
+              "[hell], $miseryMireOoB, bow",
+              "[hell], $miseryMireOoB, msword"
             ]
           }
         ]
@@ -371,12 +369,12 @@
               // Intended
               "merge, srod, titansmitt, $attack",
               // Desert Palace Skip. IRod + TRod make it faster, but aren't actually needed for the boost method
-              "$miseryMireOoB, boots",
+              "[advanced], $miseryMireOoB, boots",
               // Skip Dungeon, but fight Zaganaga. Titan's Mitt not needed with the skip
-              "$miseryMireOoB, srod, $attack",
+              "[advanced], $miseryMireOoB, srod, $attack",
               // Shitty versions
-              "$miseryMireOoB, bow, zagaBow",
-              "$miseryMireOoB, msword, zagaSwordBeams"
+              "[hell], $miseryMireOoB, bow",
+              "[hell], $miseryMireOoB, msword"
             ]
           }
         ]

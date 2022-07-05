@@ -3,7 +3,8 @@
     "name": "Swamp Palace",
     "color": "#d25432",
     "access_rules": [
-      "merge, flippers, hookshot"
+      "merge, flippers, hookshot",
+      "yuga, flippers, hookshot"
     ],
     "children": [
       {
@@ -109,108 +110,118 @@
         ]
       },
       {
-        "name": "Post-Miniboss",
-        "access_rules": [
-          "$attack",
-          "boots, []"
+        "name": "Swamp Palace",
+        "map_locations": [
+          {
+            "map": "swampB1",
+            "x": 89,
+            "y": 69
+          }
         ],
-        "children": [
+        "sections": [
           {
-            "name": "Swamp Palace",
-            "map_locations": [
-              {
-                "map": "swampB1",
-                "x": 89,
-                "y": 69
-              }
+            "name": "B1 Big Chest",
+            "chest_unopened_img": "images/chest_big_unopened.png",
+            "chest_opened_img": "images/chest_big_opened.png",
+            "capture_item": true,
+            "access_rules": [
+              "merge",
+              "[hard], bow",
+              "[basic], boots",
+              "[advanced], irod"
             ],
-            "sections": [
-              {
-                "name": "B1 Blue Mail Chest",
-                "chest_unopened_img": "images/chest_big_unopened.png",
-                "chest_opened_img": "images/chest_big_opened.png",
-                "capture_item": true,
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Swamp Palace",
-            "map_locations": [
-              {
-                "map": "swamp1F",
-                "x": 89,
-                "y": 105
-              }
-            ],
-            "sections": [
-              {
-                "name": "1F Big Key Chest",
-                "chest_unopened_img": "images/chest_big_unopened.png",
-                "chest_opened_img": "images/chest_big_opened.png",
-                "capture_item": true,
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Swamp Palace",
-            "map_locations": [
-              {
-                "map": "swamp1F",
-                "x": 41,
-                "y": 86
-              }
-            ],
-            "sections": [
-              {
-                "name": "1F West Chest",
-                "capture_item": true,
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Swamp Palace",
-            "map_locations": [
-              {
-                "map": "swamp1F",
-                "x": 137,
-                "y": 86
-              }
-            ],
-            "sections": [
-              {
-                "name": "1F East Chest",
-                "capture_item": true,
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Swamp Palace",
-            "map_locations": [
-              {
-                "map": "swamp1F",
-                "x": 54,
-                "y": 144
-              }
-            ],
-            "sections": [
-              {
-                "name": "1F South West Chest",
-                "capture_item": true,
-                "item_count": 1
-              }
-            ]
+            "item_count": 1
           }
         ]
       },
       {
         "name": "Swamp Palace",
-        "access_rules": [
-          "$attack"
+        "map_locations": [
+          {
+            "map": "swamp1F",
+            "x": 89,
+            "y": 105
+          }
         ],
+        "sections": [
+          {
+            "name": "1F Big Chest",
+            "chest_unopened_img": "images/chest_big_unopened.png",
+            "chest_opened_img": "images/chest_big_opened.png",
+            "capture_item": true,
+            "access_rules": [
+              "merge",
+              "[basic], boots",
+              "[advanced], irod"
+            ],
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Swamp Palace",
+        "map_locations": [
+          {
+            "map": "swamp1F",
+            "x": 41,
+            "y": 86
+          }
+        ],
+        "sections": [
+          {
+            "name": "1F West Chest",
+            "capture_item": true,
+            "access_rules": [
+              "merge",
+              "[advanced], irod"
+            ],
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Swamp Palace",
+        "map_locations": [
+          {
+            "map": "swamp1F",
+            "x": 137,
+            "y": 86
+          }
+        ],
+        "sections": [
+          {
+            "name": "1F East Chest",
+            "capture_item": true,
+            "access_rules": [
+              "merge",
+              "[advanced], irod"
+            ],
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Swamp Palace",
+        "map_locations": [
+          {
+            "map": "swamp1F",
+            "x": 54,
+            "y": 144
+          }
+        ],
+        "sections": [
+          {
+            "name": "1F South West Chest",
+            "capture_item": true,
+            "access_rules": [
+              "merge"
+            ],
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Swamp Palace",
         "map_locations": [
           {
             "map": "swamp1F",
@@ -222,6 +233,10 @@
           {
             "name": "Heart Container",
             "capture_item": true,
+            "access_rules": [
+              "merge, $attack",
+              "[advanced], irod"
+            ],
             "item_count": 1
           }
         ]
@@ -230,7 +245,8 @@
         "name": "Swamp Palace",
         "access_rules": [
           "{}",
-          "$attack"
+          "merge, $attack",
+          "[advanced], irod, trod"
         ],
         "map_locations": [
           {

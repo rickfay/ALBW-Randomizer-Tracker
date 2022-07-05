@@ -17,8 +17,10 @@
             "capture_item": true,
             "access_rules": [
               "titansmitt",
-              "[titansmitt], $stun, $escape",
-              "[titansmitt], $shieldRodClip, $escape"
+              "[basic], boomerang, $escape",
+              "[basic], hookshot, $escape",
+              "[advanced], hookshot",
+              "[advanced], boomerang"
             ],
             "item_count": 1
           }
@@ -40,8 +42,10 @@
             "access_rules": [
               "{}",
               "merge",
-              "[merge], $stun, $escape",
-              "[merge], $shieldRodClip, $escape"
+              "[basic], boomerang, $escape",
+              "[basic], hookshot, $escape",
+              "[advanced], boomerang",
+              "[advanced], hookshot"
             ],
             "item_count": 1
           }
@@ -71,7 +75,7 @@
         "map_locations": [
           {
             "map": "hyrule",
-            "x": 680,
+            "x": 700,
             "y": 146
           }
         ],
@@ -80,28 +84,12 @@
             "name": "Crooked Chest",
             "chest_unopened_img": "images/chest_crooked_unopened.png",
             "chest_opened_img": "images/chest_crooked_opened.png",
-            "access_rules": [
-              "eastern",
-              "merge"
-            ],
             "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Rosso's House",
-        "map_locations": [
+          },
           {
-            "map": "hyrule",
-            "x": 720,
-            "y": 146
-          }
-        ],
-        "sections": [
-          {
-            "name": "Smash the Rocks",
+            "name": "Smash Rosso's Pet Rocks",
             "access_rules": [
-              "eastern, powerglove"
+              "powerglove"
             ],
             "item_count": 1
           }
@@ -120,8 +108,10 @@
           {
             "access_rules": [
               "hammer",
-              "[hammer], $stun",
-              "[hammer], $shieldRodClip"
+              "[basic], boomerang",
+              "[basic], hookshot",
+              "[advanced], shield, trod",
+              "[hell], srod"
             ],
             "item_count": 1
           }
@@ -147,7 +137,8 @@
   {
     "name": "Death Mountain",
     "access_rules": [
-      "[powerglove]"
+      "powerglove",
+      "[basic]"
     ],
     "children": [
       {
@@ -199,7 +190,8 @@
             "name": "Trade Premium Milk",
             "access_rules": [
               "milk, hookshot, merge",
-              "milk, hookshot, [merge], trod, boots"
+              "[advanced], bottle, milk, hookshot, trod, boots",
+              "[advanced], bluemail, milk, hookshot, trod, boots"
             ],
             "item_count": 1
           }
@@ -220,8 +212,12 @@
             "access_rules": [
               "merge, hammer",
               "merge, bombs",
-              "[merge], $boost, hammer",
-              "[merge], $boost, bombs"
+              "[advanced], bluemail, $boost, hammer",
+              "[advanced], bottle, $boost, hammer",
+              "[advanced], bluemail, $boost, bombs",
+              "[advanced], bottle, $boost, bombs",
+              "[hell], bluemail, bombs",
+              "[hell], bottle, bombs"
             ],
             "item_count": 1
           }
@@ -240,7 +236,9 @@
           {
             "name": "Ledge Chest",
             "access_rules": [
-              "[merge]"
+              "merge",
+              "[advanced], bottle",
+              "[advanced], bluemail"
             ],
             "item_count": 1
           }
@@ -259,7 +257,9 @@
           {
             "name": "First Cave Peg Chest",
             "access_rules": [
-              "[merge], hammer"
+              "merge, hammer",
+              "[advanced], bottle, hammer",
+              "[advanced], bluemail, hammer"
             ],
             "item_count": 1
           }
@@ -278,7 +278,9 @@
           {
             "name": "Third Cave Chest",
             "access_rules": [
-              "[merge]"
+              "merge",
+              "[advanced], bottle",
+              "[advanced], bluemail"
             ],
             "item_count": 1
           }
@@ -297,7 +299,9 @@
           {
             "name": "Spectacle Rock",
             "access_rules": [
-              "[merge]"
+              "merge",
+              "[advanced], bottle",
+              "[advanced], bluemail"
             ],
             "item_count": 1
           }
@@ -319,9 +323,11 @@
         ],
         "sections": [
           {
-            "name": "Island Heart Piece",
+            "name": "Floating Island",
             "access_rules": [
-              "{hookshot}",
+              "{merge, hookshot}",
+              "{advanced, bottle, hookshot}",
+              "{advanced, bluemail, hookshot}",
               "merge, hookshot, trod"
             ],
             "capture_item": true,
@@ -342,7 +348,9 @@
           {
             "name": "Treasure Dungeon",
             "access_rules": [
-              "merge, hookshot"
+              "merge, hookshot",
+              "[advanced], bottle, hookshot",
+              "[advanced], bluemail, hookshot"
             ],
             "item_count": 1
           }
@@ -371,7 +379,7 @@
     ]
   },
   {
-    "name": "Sanctuary + Zora's River's",
+    "name": "Sanctuary + Zora's River",
     "children": [
       {
         "name": "Sanctuary",
@@ -415,16 +423,14 @@
           {
             "name": "Lower Chest",
             "access_rules": [
-              "[]",
-              "$fire"
+              "lamp"
             ],
             "item_count": 1
           },
           {
             "name": "Upper Chest",
             "access_rules": [
-              "[]",
-              "$fire"
+              "lamp"
             ],
             "item_count": 1
           },
@@ -432,16 +438,15 @@
             "name": "Ledge Heart Piece",
             "capture_item": true,
             "access_rules": [
-              "{$fire}",
-              "[], merge",
-              "$fire, merge"
+              "{lamp}",
+              "lamp, merge"
             ],
             "item_count": 1
           }
         ]
       },
       {
-        "name": "Sanctuary",
+        "name": "Graveyard Ledge",
         "map_locations": [
           {
             "map": "hyrule",
@@ -456,10 +461,10 @@
         ],
         "sections": [
           {
-            "name": "Portal Cave",
+            "name": "Cave",
             "capture_item": true,
             "access_rules": [
-              "merge, bombs"
+              "merge, lamp, bombs"
             ],
             "item_count": 1
           }
@@ -537,10 +542,9 @@
             "capture_item": true,
             "access_rules": [
               "flippers",
-              "[flippers], $fakeFlippers",
-              // Crow Boost - negates need for $boost
-              "[flippers], merge",
-              "[flippers], [merge], $beeBoost"
+              "[basic], merge",
+              "[advanced], $fakeFlippers",
+              "[hell], $beeBoost"
             ],
             "item_count": 1
           }
@@ -559,8 +563,8 @@
           {
             "name": "Throw Smooth Gem",
             "access_rules": [
-              "smoothgem, merge",
-              "smoothgem, [merge], $beeBoost"
+              "merge, smoothgem",
+              "[hell], smoothgem, $beeBoost"
             ],
             "item_count": 1
           }
@@ -619,7 +623,7 @@
         "map_locations": [
           {
             "map": "hyrule",
-            "x": 331,
+            "x": 351,
             "y": 1074
           }
         ],
@@ -630,24 +634,12 @@
               "bottle"
             ],
             "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Bee Guy",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 371,
-            "y": 1074
-          }
-        ],
-        "sections": [
+          },
           {
             "name": "Trade Golden Bee",
             "access_rules": [
               "bottle, goldenbee",
-              "bottle, net, [goldenbee]"
+              "[hell], bottle, net"
             ],
             "item_count": 1
           }
@@ -665,7 +657,10 @@
         "sections": [
           {
             "name": "Rooster Prize",
-            "item_count": 1
+            "item_count": 1,
+            "visibility_rules": [
+              "minigames_enabled"
+            ]
           }
         ]
       },
@@ -686,8 +681,6 @@
         "sections": [
           {
             "name": "Scoot Fruit (50)",
-            //            "capture_item": true,
-            //
             "hosted_item": "scoot"
           }
         ]
@@ -716,31 +709,19 @@
         "map_locations": [
           {
             "map": "hyrule",
-            "x": 196,
+            "x": 216,
             "y": 959
           }
         ],
         "sections": [
           {
-            "name": "Left Slot (100)",
+            "name": "Left (100)",
             "chest_opened_img": "images/soldout.png",
             "capture_item": true,
             "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Street Merchant",
-        "map_locations": [
+          },
           {
-            "map": "hyrule",
-            "x": 236,
-            "y": 959
-          }
-        ],
-        "sections": [
-          {
-            "name": "Right Slot (200)",
+            "name": "Right (200)",
             "chest_opened_img": "images/soldout.png",
             "capture_item": true,
             "item_count": 1
@@ -777,8 +758,12 @@
         ],
         "sections": [
           {
-            "name": "Cucco jump into Well",
+            "name": "Jump into Well",
             "capture_item": true,
+            "access_rules": [
+              "powerglove",
+              "[hard]"
+            ],
             "item_count": 1
           }
         ]
@@ -811,7 +796,10 @@
         "sections": [
           {
             "name": "Score 100+",
-            "item_count": 1
+            "item_count": 1,
+            "visibility_rules": [
+              "minigames_enabled"
+            ]
           }
         ]
       }
@@ -831,37 +819,37 @@
         ],
         "sections": [
           {
-            "name": "Ice Rod Slot (100)     ",
+            "name": "Ravio 1 (100)      ",
             "capture_item": true,
             "chest_opened_img": "images/soldout.png",
             "item_count": 1
           },
           {
-            "name": "Hookshot Slot (50)   ",
+            "name": "Ravio 2 (50)         ",
             "capture_item": true,
             "chest_opened_img": "images/soldout.png",
             "item_count": 1
           },
           {
-            "name": "Tornado Rod Slot (20/50)",
+            "name": "Ravio 3 (20/50)",
             "capture_item": true,
             "chest_opened_img": "images/soldout.png",
             "item_count": 1
           },
           {
-            "name": "Bombs Slot (50)        ",
+            "name": "Ravio 4 (50)        ",
             "capture_item": true,
             "chest_opened_img": "images/soldout.png",
             "item_count": 1
           },
           {
-            "name": "Bow Slot (0/10/50)   ",
+            "name": "Ravio 5 (10/50)    ",
             "capture_item": true,
             "chest_opened_img": "images/soldout.png",
             "item_count": 1
           },
           {
-            "name": "Sand Rod Slot (50)",
+            "name": "Ravio 6 (50)",
             "capture_item": true,
             "chest_opened_img": "images/soldout.png",
             "access_rules": [
@@ -871,19 +859,19 @@
             "item_count": 1
           },
           {
-            "name": "Hammer Slot (20/50)",
+            "name": "Ravio 7 (20/50)   ",
             "capture_item": true,
             "chest_opened_img": "images/soldout.png",
             "item_count": 1
           },
           {
-            "name": "Boomerang Slot (50)",
+            "name": "Ravio 8 (50)         ",
             "capture_item": true,
             "chest_opened_img": "images/soldout.png",
             "item_count": 1
           },
           {
-            "name": "Fire Rod Slot (100)",
+            "name": "Ravio 9 (100)",
             "capture_item": true,
             "chest_opened_img": "images/soldout.png",
             "item_count": 1
@@ -926,8 +914,8 @@
             "access_rules": [
               "{}",
               "merge",
-              "[merge], $boost",
-              "[merge], $beeBoost"
+              "[basic], $boost",
+              "[hell], $beeBoost"
             ],
             "item_count": 1
           }
@@ -948,8 +936,8 @@
             "capture_item": true,
             "access_rules": [
               "titansmitt",
-              "[titansmitt], $boost",
-              "[titansmitt], $beeBoost"
+              "[basic], $boost",
+              "[hell], $beeBoost"
             ],
             "item_count": 1
           }
@@ -1000,34 +988,34 @@
   {
     "name": "Eastern Ruins",
     "children": [
-      {
-        "name": "Irene Trigger",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1403,
-            "y": 1403
-          },
-          {
-            "map": "hyrule",
-            "x": 718,
-            "y": 742
-          },
-          {
-            "map": "hyrule",
-            "x": 536,
-            "y": 671
-          }
-        ],
-        "sections": [
-          {
-            "access_rules": [
-              "eastern"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
+      //      {
+      //        "name": "Irene Trigger",
+      //        "map_locations": [
+      //          {
+      //            "map": "hyrule",
+      //            "x": 1403,
+      //            "y": 1403
+      //          },
+      //          {
+      //            "map": "hyrule",
+      //            "x": 718,
+      //            "y": 742
+      //          },
+      //          {
+      //            "map": "hyrule",
+      //            "x": 536,
+      //            "y": 671
+      //          }
+      //        ],
+      //        "sections": [
+      //          {
+      //            "access_rules": [
+      //              "eastern"
+      //            ],
+      //            "item_count": 1
+      //          }
+      //        ]
+      //      },
       {
         "name": "Eastern Ruins",
         "map_locations": [
@@ -1065,10 +1053,10 @@
             "access_rules": [
               "{}",
               "hammer",
-              "[hammer], boomerang",
-              "[hammer], hookshot",
-              "[hammer], srod",
-              "[hammer], trod"
+              "[basic], boomerang",
+              "[basic], hookshot",
+              "[advanced], trod",
+              "[hell], srod"
             ],
             "item_count": 1
           }
@@ -1079,8 +1067,8 @@
         "map_locations": [
           {
             "map": "hyrule",
-            "x": 1429,
-            "y": 1414
+            "x": 1403,
+            "y": 1403
           }
         ],
         "sections": [
@@ -1102,7 +1090,7 @@
           "boomerang",
           "bombs",
           "irod",
-          "powerglove, []"
+          "[hard], powerglove"
         ],
         "children": [
           {
@@ -1154,8 +1142,10 @@
                 "name": "Merge Chest",
                 "access_rules": [
                   "merge",
-                  "[merge], trod",
-                  "[merge], $boost"
+                  "[basic], trod",
+                  "[basic], frod",
+                  "[basic], nicebombs",
+                  "[hell], bombs"
                 ],
                 "item_count": 1
               }
@@ -1259,20 +1249,17 @@
           {
             "name": "Treasure Dungeon",
             "access_rules": [
-              // Normal
-              "flippers, hookshot, [boomerang], titansmitt",
-              // Titan's Mitt Skip
-              "flippers, hookshot, irod, []",
-              // Flipperless w/ Nice Bombs
-              "titansmitt, nicebombs, []",
-              // Flipperless w/ Nice Bombs + Titan's Mitt Skip
-              "irod, nicebombs, []",
-              // Flipperless w/ Great Spin (no Y button needed)
-              "titansmitt, fsword, greatspin, []",
-              // Flipperless w/ Great Spin + Titan's Mitt Skip
-              "irod, fsword, greatspin, []",
-              // NICE Rod
-              "niceirod, []"
+              "titansmitt, flippers, hookshot, boomerang",
+              "[hard], titansmitt, hookshot, flippers, msword",
+              "[hard], titansmitt, hookshot, flippers, bombs",
+              "[basic], fsword, irod, flippers, hookshot",
+              "[basic], fsword, irod, nicebombs",
+              "[basic], titansmitt, nicebombs",
+              "[advanced], irod, flippers, hookshot",
+              "[advanced], irod, nicebombs",
+              "[], niceirod",
+              "[], irod, msword, greatspin",
+              "[], titansmitt, msword, greatspin"
             ],
             "item_count": 1
           }
@@ -1296,9 +1283,13 @@
           {
             "name": "Win 2 Races",
             "access_rules": [
-              "boots"
+              "boots",
+              "[hard], merge, bell"
             ],
-            "item_count": 1
+            "item_count": 1,
+            "visibility_rules": [
+              "minigames_enabled"
+            ]
           }
         ]
       },
@@ -1355,8 +1346,9 @@
             "hosted_item": "letter",
             "access_rules": [
               "flippers",
-              "[flippers], $boost",
-              "[flippers], $beeBoost"
+              "[basic], frod",
+              "[basic], nicebombs",
+              "[hell], $beeBoost"
             ],
             "item_count": 0
           }

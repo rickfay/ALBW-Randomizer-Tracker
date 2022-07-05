@@ -113,19 +113,19 @@
     "codes": "compass"
   },
   {
-    "name": "Sage Gulley",
+    "name": "Dark Palace",
     "type": "toggle",
     "img": "images/dark.png",
     "codes": "dark, gulley"
   },
   {
-    "name": "Sage Irene",
+    "name": "Desert Palace",
     "type": "toggle",
     "img": "images/desert.png",
     "codes": "desert, irene"
   },
   {
-    "name": "Pendant of Courage",
+    "name": "Eastern Palace",
     "type": "toggle",
     "img": "images/eastern.png",
     "codes": "eastern"
@@ -256,7 +256,7 @@
     ]
   },
   {
-    "name": "Pendant of Wisdom",
+    "name": "House of Gales",
     "type": "toggle",
     "img": "images/gales.png",
     "codes": "gales"
@@ -278,7 +278,7 @@
     ]
   },
   {
-    "name": "Sage Rosso",
+    "name": "Ice Ruins",
     "type": "toggle",
     "img": "images/ice.png",
     "codes": "ice, rosso"
@@ -391,7 +391,7 @@
   {
     "name": "Ravio's Bracelet",
     "type": "progressive",
-    "allow_disabled": false,
+    //"allow_disabled": false,
     "stages": [
       {
         "img": "images/bracelet.png",
@@ -472,13 +472,13 @@
     "codes": "scroll, staminascroll"
   },
   {
-    "name": "Sage Seres",
+    "name": "Skull Woods",
     "type": "toggle",
     "img": "images/skull.png",
     "codes": "skull, seres"
   },
   {
-    "name": "Sage Oren",
+    "name": "Swamp Palace",
     "type": "toggle",
     "img": "images/swamp.png",
     "codes": "swamp, oren, worstsage"
@@ -511,7 +511,7 @@
     ]
   },
   {
-    "name": "Sage Osfala",
+    "name": "Thieves' Hideout",
     "type": "toggle",
     "img": "images/thieves.png",
     "codes": "thieves, osfala"
@@ -532,7 +532,7 @@
     ]
   },
   {
-    "name": "Pendant of Power",
+    "name": "Tower of Hera",
     "type": "toggle",
     "img": "images/hera.png",
     "codes": "hera"
@@ -544,10 +544,22 @@
     "codes": "triforce"
   },
   {
-    "name": "Sage Impa",
+    "name": "Turtle Rock",
     "type": "toggle",
     "img": "images/turtle.png",
     "codes": "turtle, impa"
+  },
+  {
+    "name": "Go Mode",
+    "type": "toggle",
+    "img": "images/gomode.png",
+    "codes": "gomode"
+  },
+  {
+    "name": "Yuga",
+    "type": "toggle",
+    "img": "images/yuga.png",
+    "codes": "yuga"
   },
   {
     "name": "Zelda",

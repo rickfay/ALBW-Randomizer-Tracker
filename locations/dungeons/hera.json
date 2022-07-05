@@ -4,13 +4,16 @@
     "color": "#FF0000",
     "access_rules": [
       "hammer, powerglove, merge",
-      "hammer, [powerglove], [merge]"
+      "[basic], hammer, merge",
+      "[advanced], hammer, bottle",
+      "[advanced], hammer, bluemail"
     ],
     "children": [
       {
         "name": "Tower of Hera",
         "access_rules": [
-          "merge"
+          "merge",
+          "[advanced], fsword, bombs, trod"
         ],
         "map_locations": [
           {
@@ -31,7 +34,7 @@
         "name": "Tower of Hera",
         "access_rules": [
           "merge",
-          "[merge], fsword, bombs"
+          "[advanced], fsword, bombs"
         ],
         "map_locations": [
           {
@@ -52,7 +55,7 @@
         "name": "Tower of Hera",
         "access_rules": [
           "merge",
-          "[merge], fsword, bombs"
+          "[advanced], fsword, bombs"
         ],
         "map_locations": [
           {
@@ -73,7 +76,7 @@
         "name": "Tower of Hera",
         "access_rules": [
           "merge",
-          "[merge], fsword, bombs, trod"
+          "[advanced], fsword, bombs, trod"
         ],
         "map_locations": [
           {
@@ -94,7 +97,7 @@
         "name": "Tower of Hera",
         "access_rules": [
           "merge",
-          "[merge], fsword, bombs, trod"
+          "[advanced], fsword, bombs, trod"
         ],
         "map_locations": [
           {
@@ -115,7 +118,7 @@
         "name": "Tower of Hera",
         "access_rules": [
           "merge",
-          "[merge], fsword, bombs, trod"
+          "[advanced], fsword, bombs, trod"
         ],
         "map_locations": [
           {
@@ -136,7 +139,7 @@
         "name": "Tower of Hera",
         "access_rules": [
           "merge",
-          "[merge], fsword, bombs, trod"
+          "[advanced], fsword, bombs, trod"
         ],
         "map_locations": [
           {
@@ -157,7 +160,7 @@
         "name": "Tower of Hera",
         "access_rules": [
           "merge",
-          "[merge], fsword, bombs, trod"
+          "[advanced], fsword, bombs, trod"
         ],
         "map_locations": [
           {
@@ -178,7 +181,7 @@
         "name": "Tower of Hera",
         "access_rules": [
           "merge",
-          "[merge], fsword, bombs, trod"
+          "[advanced], fsword, bombs, trod"
         ],
         "map_locations": [
           {
@@ -201,7 +204,7 @@
         "name": "Tower of Hera",
         "access_rules": [
           "merge",
-          "[merge], fsword, bombs, trod"
+          "[advanced], fsword, bombs, trod"
         ],
         "map_locations": [
           {
@@ -223,7 +226,7 @@
         "access_rules": [
           "{bombs, fsword}",
           "merge",
-          "[merge], fsword, bombs, trod"
+          "[advanced], fsword, bombs, trod"
         ],
         "map_locations": [
           {

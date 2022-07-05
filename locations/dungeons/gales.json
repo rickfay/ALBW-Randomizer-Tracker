@@ -4,16 +4,15 @@
     "color": "#0000FF",
     "access_rules": [
       "trod, flippers",
-      // Crow Boost + Bergshot
-      "trod, [flippers], irod, hookshot",
-      // Fake Flippers
-      "trod, [flippers], $fakeFlippers"
+      "[advanced], trod, irod, hookshot",
+      "[advanced], trod, $fakeFlippers",
+      "[hell], trod, boots"
     ],
     "children": [
       {
         "name": "House of Gales",
         "access_rules": [
-          "merge"
+          "merge, $attack"
         ],
         "map_locations": [
           {
@@ -33,7 +32,8 @@
       {
         "name": "House of Gales",
         "access_rules": [
-          "[merge]"
+          "merge",
+          "[hard]"
         ],
         "map_locations": [
           {
@@ -73,7 +73,8 @@
       {
         "name": "House of Gales",
         "access_rules": [
-          "[merge]"
+          "merge",
+          "[hard]"
         ],
         "map_locations": [
           {
@@ -113,7 +114,19 @@
       {
         "name": "House of Gales Upper Floors",
         "access_rules": [
-          "[merge], $switch"
+          "merge, bow",
+          "merge, boomerang",
+          "merge, hookshot",
+          "merge, bombs",
+          "merge, irod",
+          "merge, fsword",
+          "merge, hammer",
+          "[hard], bow",
+          "[hard], boomerang",
+          "[hard], hookshot",
+          "[hard], bombs",
+          "[hard], irod",
+          "[hard], msword",
         ],
         "children": [
           {
@@ -129,6 +142,12 @@
               {
                 "name": "2F Ledge Key",
                 "capture_item": true,
+                "access_rules": [
+                  "merge",
+                  "boomerang",
+                  "hookshot",
+                  "[hard]"
+                ],
                 "item_count": 1
               }
             ]
@@ -175,7 +194,8 @@
           {
             "name": "3F Post-Miniboss",
             "access_rules": [
-              "merge, [$attack]"
+              "merge, $attack, $switch",
+              "[basic], merge"
             ],
             "children": [
               {

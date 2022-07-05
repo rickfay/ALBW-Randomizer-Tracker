@@ -2,9 +2,6 @@
   {
     "name": "Thieves' Hideout",
     "color": "#dde44e",
-    "access_rules": [
-      "merge"
-    ],
     "children": [
       {
         "name": "Thieves' Hideout",
@@ -36,6 +33,13 @@
           {
             "name": "B1 Jail Chest",
             "capture_item": true,
+            "access_rules": [
+              "merge",
+              "[basic], boots",
+              "[advanced], trod, bombs",
+              "[advanced], trod, irod, frod",
+              "[advanced], trod, irod, scoot"
+            ],
             "item_count": 1
           }
         ]
@@ -43,7 +47,14 @@
       {
         "name": "Post-Jail Crystal Switch",
         "access_rules": [
-          "$switch"
+          "merge, $switch",
+          "[basic], boots, irod",
+          "[basic], boots, bow",
+          "[basic], boots, boomerang",
+          "[basic], boots, hookshot",
+          "[basic], boots, bombs",
+          "[advanced], bombs",
+          "[advanced], irod"
         ],
         "children": [
           {
@@ -76,6 +87,11 @@
               {
                 "name": "B2 Cellmate Chest",
                 "capture_item": true,
+                "access_rules": [
+                  "merge",
+                  "[advanced], trod, bombs",
+                  "[advanced], trod, irod"
+                ],
                 "item_count": 1
               }
             ]
@@ -93,8 +109,9 @@
               {
                 "name": "B2 Eyegores Chest",
                 "access_rules": [
-                  "$attack",
-                  "$thievesOoB, trod"
+                  "merge, $attack, $shielded_switch",
+                  "[advanced], bombs",
+                  "[advanced], irod"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -121,8 +138,9 @@
           {
             "name": "Post-Flippers Section",
             "access_rules": [
-              "$attack, flippers",
-              "$thievesOoB, trod"
+              "merge, $attack, flippers",
+              "[advanced], trod, bombs",
+              "[advanced], trod, irod"
             ],
             "children": [
               {
@@ -138,6 +156,9 @@
                   {
                     "name": "B3 Sunken Chest",
                     "capture_item": true,
+                    "access_rules": [
+                      "merge"
+                    ],
                     "item_count": 1
                   }
                 ]
@@ -153,7 +174,7 @@
                 ],
                 "sections": [
                   {
-                    "name": "B3 Master Ore Chest",
+                    "name": "B3 Big Chest",
                     "chest_unopened_img": "images/chest_big_unopened.png",
                     "chest_opened_img": "images/chest_big_opened.png",
                     "capture_item": true,
@@ -175,9 +196,10 @@
                     "name": "B1 Thief Girl Chest",
                     "access_rules": [
                       // need attack to get Thief Girl down to B3
-                      "$attack",
-                      // access chest early with trod+boomerang (no $attack), need a way to escape
-                      "scoot"
+                      "merge, $attack",
+                      "[], scoot",
+                      "[], bombs",
+                      "[], frod",
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -195,10 +217,14 @@
                 ],
                 "sections": [
                   {
-                    "name": "B1 Big Key Chest",
+                    "name": "B1 Big Chest",
                     "chest_unopened_img": "images/chest_big_unopened.png",
                     "chest_opened_img": "images/chest_big_opened.png",
                     "capture_item": true,
+                    "access_rules": [
+                      "merge, $attack",
+                      "[]"
+                    ],
                     "item_count": 1
                   }
                 ]
@@ -208,7 +234,7 @@
                 "map_locations": [
                   {
                     "map": "lorule",
-                    "x": 472,
+                    "x": 442,
                     "y": 982
                   },
                   {
@@ -221,7 +247,7 @@
                   {
                     "name": "Heart Container",
                     "access_rules": [
-                      "$attack"
+                      "merge, $attack"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -243,8 +269,8 @@
           },
           {
             "map": "lorule",
-            "x": 442,
-            "y": 982,
+            "x": 324, //442,
+            "y": 962, //982,
             "size": 60
           }
         ],
@@ -252,9 +278,11 @@
           {
             "name": "Sage Osfala",
             "access_rules": [
-              "{}",
-              "$switch, $attack, flippers",
-              "$switch, $attack, trod, $thievesOoB"
+              "{merge}",
+              "{yuga}",
+              "merge, $switch, $attack, flippers",
+              "merge, $switch, $attack, trod, irod",
+              "merge, $switch, $attack, trod, bombs"
             ],
             "hosted_item": "thieves"
           }

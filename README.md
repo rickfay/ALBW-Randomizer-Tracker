@@ -8,6 +8,12 @@ This is an [EmoTracker](https://emotracker.net/) pack for tracking progress in T
 
 - Author: LemonKong
 - Version:
+    - 3.0.0:
+      - Changes to support Z17 Randomizer v0.1.0
+      - Support for Yuga Seeds
+      - Support for new logic modes
+      - New Layout
+      - Simplified game Settings/Options
     - 2.0.0:
         - Updated to support the new Z17 Randomizer
         - Layout Changes:

@@ -1,5 +1,74 @@
 [
   {
+    "name": "Logic Mode",
+    "type": "progressive",
+    //"loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/logic_normal.png",
+        "codes": "logic",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/logic_hard.png",
+        "codes": "hard",
+        "inherit_codes": true
+      },
+      {
+        "img": "images/logic_basic.png",
+        "codes": "basic",
+        "inherit_codes": true
+      },
+      {
+        "img": "images/logic_advanced.png",
+        "codes": "advanced",
+        "inherit_codes": true
+      },
+      {
+        "img": "images/logic_hell.png",
+        "codes": "hell",
+        "inherit_codes": true
+      }
+    ]
+  },
+  {
+    "name": "Minigames",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/minigames_enabled.png",
+        "codes": "minigames_enabled",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/minigames_disabled.png",
+        "codes": "minigames_disabled",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Trials",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/trials_normal.png",
+        "codes": "trials_normal",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/trials_skipped.png",
+        "codes": "trials_skipped",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Lampless",
     "type": "progressive",
     "loop": true,
@@ -13,60 +82,6 @@
       {
         "img": "images/yes.png",
         "codes": "lampless",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Lamp as a Weapon",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/no.png",
-        "codes": "lampAsWeapon_false",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/yes.png",
-        "codes": "lampAsWeapon",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Net as a Weapon",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/no.png",
-        "codes": "netAsWeapon_false",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/yes.png",
-        "codes": "netAsWeapon",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Boots as a Weapon",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/no.png",
-        "codes": "bootsAsWeapon_false",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/yes.png",
-        "codes": "bootsAsWeapon",
         "inherit_codes": false
       }
     ]

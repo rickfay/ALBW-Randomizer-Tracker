@@ -10,12 +10,12 @@
         "content": [
           {
             "type": "group",
-            "header": "Gear & Items",
-            "header_content": {
-              "type": "button_popup",
-              "style": "settings",
-              "layout": "options_menu"
-            },
+            "header": "Items",
+//            "header_content": {
+//              "type": "button_popup",
+//              "style": "settings",
+//              "layout": "options_menu"
+//            },
             "dock": "top",
             "content": [
               {
@@ -26,17 +26,30 @@
             ]
           },
           {
+            "type": "group",
+            "header": "Settings",
+            "dock": "bottom",
+            "content": [
+              {
+                "type": "layout",
+                "v_alignment": "left",
+                "key": "tracker_settings"
+              }
+            ]
+          },
+          {
             "type": "scroll",
             "horizontal_scrollbar_visibility": "disabled",
             "content": [
               {
                 "type": "group",
                 "header": "Pinned Locations",
-                "max_width": "366",
+                "max_width": "316",
                 "content": {
                   "type": "recentpins",
-                  "style": "wrap",
-                  "orientation": "horizontal"
+                  //"style": "wrap",
+                  //"compact": false,
+                  "orientation": "vertical"
                 }
               }
             ]
@@ -130,7 +143,7 @@
                 }
               },
               {
-                "title": "Eastern",
+                "title": "EP",
                 //"icon": "images/eastern.png",
                 "content": {
                   "type": "scroll",
@@ -228,7 +241,7 @@
                 }
               },
               {
-                "title": "Gales",
+                "title": "HoG",
                 //"icon": "images/gales.png",
                 "content": {
                   "type": "scroll",
@@ -326,7 +339,7 @@
                 }
               },
               {
-                "title": "Hera",
+                "title": "ToH",
                 //"icon": "images/hera.png",
                 "content": {
                   "type": "scroll",
@@ -694,7 +707,7 @@
                 }
               },
               {
-                "title": "Hyrule",
+                "title": "HC",
                 //"icon": "images/msword.png",
                 "content": {
                   "type": "scroll",
@@ -874,7 +887,7 @@
                               "type": "map",
                               "width": 250,
                               "scale": 1.5,
-                              "margin": "-25,0,-25,-25",
+                              "margin": "-25,0,-25,-50",
                               "maps": [
                                 "hyrule2F"
                               ]
@@ -900,7 +913,7 @@
                 }
               },
               {
-                "title": "Dark",
+                "title": "PoD",
                 //"icon": "images/dark.png",
                 "content": {
                   "type": "scroll",
@@ -998,7 +1011,7 @@
                 }
               },
               {
-                "title": "Swamp",
+                "title": "SP",
                 //"icon": "images/swamp.png",
                 "content": {
                   "type": "scroll",
@@ -1096,7 +1109,7 @@
                 }
               },
               {
-                "title": "Skull",
+                "title": "SW",
                 //"icon": "images/skull.png",
                 "content": {
                   "type": "scroll",
@@ -1167,7 +1180,7 @@
                 }
               },
               {
-                "title": "Thieves",
+                "title": "TH",
                 //"icon": "images/thieves.png",
                 "content": {
                   "type": "scroll",
@@ -1265,203 +1278,7 @@
                 }
               },
               {
-                "title": "Turtle",
-                //"icon": "images/turtle.png",
-                "content": {
-                  "type": "scroll",
-                  "horizontal_scrollbar_visibility": "disabled",
-                  "content": [
-                    {
-                      "type": "array",
-                      "orientation": "horizontal",
-                      "style": "wrap",
-                      "content": [
-                        {
-                          "type": "container",
-                          "content": [
-                            {
-                              "type": "map",
-                              "width": 250,
-                              "scale": 1.5,
-                              "margin": "-25,0,-25,-50",
-                              "maps": [
-                                "turtle1F"
-                              ]
-                            },
-                            {
-                              "type": "canvas",
-                              "dropshadow": true,
-                              "content": [
-                                {
-                                  "type": "image",
-                                  "image": "images/maps/floors/1F.png",
-                                  "width": 50,
-                                  "canvas_top": 30,
-                                  "canvas_left": 235
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "container",
-                          "content": [
-                            {
-                              "type": "map",
-                              "width": 250,
-                              "scale": 1.5,
-                              "margin": "-25,0,-25,-50",
-                              "maps": [
-                                "turtleB1"
-                              ]
-                            },
-                            {
-                              "type": "canvas",
-                              "dropshadow": true,
-                              "content": [
-                                {
-                                  "type": "image",
-                                  "image": "images/maps/floors/B1.png",
-                                  "width": 50,
-                                  "canvas_top": 30,
-                                  "canvas_left": 235
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "container",
-                          "content": [
-                            {
-                              "type": "map",
-                              "width": 250,
-                              "scale": 1.5,
-                              "margin": "-25,0,-25,-25",
-                              "maps": [
-                                "turtleB2"
-                              ]
-                            },
-                            {
-                              "type": "canvas",
-                              "dropshadow": true,
-                              "content": [
-                                {
-                                  "type": "image",
-                                  "image": "images/maps/floors/B2_Boss.png",
-                                  "width": 50,
-                                  "canvas_top": 30,
-                                  "canvas_left": 235
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              },
-              {
-                "title": "Desert",
-                //"icon": "images/desert.png",
-                "content": {
-                  "type": "scroll",
-                  "horizontal_scrollbar_visibility": "disabled",
-                  "content": [
-                    {
-                      "type": "array",
-                      "orientation": "horizontal",
-                      "style": "wrap",
-                      "content": [
-                        {
-                          "type": "container",
-                          "content": [
-                            {
-                              "type": "map",
-                              "width": 250,
-                              "scale": 1.5,
-                              "margin": "-25,0,-25,-50",
-                              "maps": [
-                                "desert3F"
-                              ]
-                            },
-                            {
-                              "type": "canvas",
-                              "dropshadow": true,
-                              "content": [
-                                {
-                                  "type": "image",
-                                  "image": "images/maps/floors/3F_Boss.png",
-                                  "width": 50,
-                                  "canvas_top": 30,
-                                  "canvas_left": 235
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "container",
-                          "content": [
-                            {
-                              "type": "map",
-                              "width": 250,
-                              "scale": 1.5,
-                              "margin": "-25,0,-25,-50",
-                              "maps": [
-                                "desert2F"
-                              ]
-                            },
-                            {
-                              "type": "canvas",
-                              "dropshadow": true,
-                              "content": [
-                                {
-                                  "type": "image",
-                                  "image": "images/maps/floors/2F.png",
-                                  "width": 50,
-                                  "canvas_top": 30,
-                                  "canvas_left": 235
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "container",
-                          "content": [
-                            {
-                              "type": "map",
-                              "width": 250,
-                              "scale": 1.5,
-                              "margin": "-25,0,-25,-25",
-                              "maps": [
-                                "desert1F"
-                              ]
-                            },
-                            {
-                              "type": "canvas",
-                              "dropshadow": true,
-                              "content": [
-                                {
-                                  "type": "image",
-                                  "image": "images/maps/floors/1F.png",
-                                  "width": 50,
-                                  "canvas_top": 30,
-                                  "canvas_left": 235
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              },
-              {
-                "title": "Ice",
+                "title": "IR",
                 //"icon": "images/ice.png",
                 "content": {
                   "type": "scroll",
@@ -1667,7 +1484,203 @@
                 }
               },
               {
-                "title": "Lorule",
+                "title": "DP",
+                //"icon": "images/desert.png",
+                "content": {
+                  "type": "scroll",
+                  "horizontal_scrollbar_visibility": "disabled",
+                  "content": [
+                    {
+                      "type": "array",
+                      "orientation": "horizontal",
+                      "style": "wrap",
+                      "content": [
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "desert3F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/3F_Boss.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "desert2F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/2F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-25",
+                              "maps": [
+                                "desert1F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/1F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "TR",
+                //"icon": "images/turtle.png",
+                "content": {
+                  "type": "scroll",
+                  "horizontal_scrollbar_visibility": "disabled",
+                  "content": [
+                    {
+                      "type": "array",
+                      "orientation": "horizontal",
+                      "style": "wrap",
+                      "content": [
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "turtle1F"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/1F.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-50",
+                              "maps": [
+                                "turtleB1"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/B1.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "container",
+                          "content": [
+                            {
+                              "type": "map",
+                              "width": 250,
+                              "scale": 1.5,
+                              "margin": "-25,0,-25,-25",
+                              "maps": [
+                                "turtleB2"
+                              ]
+                            },
+                            {
+                              "type": "canvas",
+                              "dropshadow": true,
+                              "content": [
+                                {
+                                  "type": "image",
+                                  "image": "images/maps/floors/B2_Boss.png",
+                                  "width": 50,
+                                  "canvas_top": 30,
+                                  "canvas_left": 235
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "LC",
                 //"icon": "images/bow_light.png",
                 "content": {
                   "type": "scroll",

@@ -169,10 +169,8 @@
             "access_rules": [
               "titansmitt",
               "powerglove, hammer",
-              "powerglove, [hammer], hookshot",
-              "powerglove, [hammer], boomerang",
-              "powerglove, [hammer], srod",
-              "powerglove, [hammer], $shieldRodClip",
+              "[basic], powerglove, hookshot",
+              "[basic], powerglove, boomerang, $escape"
             ]
           }
         ]
@@ -246,8 +244,10 @@
               "maiamai_map"
             ],
             "access_rules": [
-              "{[powerglove]}",
-              "[powerglove], merge"
+              "{advanced, bottle}",
+              "{advanced, bluemail}",
+              "powerglove, merge",
+              "[basic], merge"
             ]
           }
         ]
@@ -271,8 +271,10 @@
               "maiamai_map"
             ],
             "access_rules": [
-              "{[powerglove], hookshot}",
-              "[powerglove], hookshot, merge"
+              "{advanced, bottle, hookshot}",
+              "{advanced, bluemail, hookshot}",
+              "powerglove, hookshot, merge",
+              "[basic], hookshot, merge"
             ]
           }
         ]
@@ -297,7 +299,8 @@
             ],
             "access_rules": [
               "merge, powerglove, hookshot",
-              "[merge], powerglove, hookshot, boots, trod"
+              "[advanced], bottle, powerglove, hookshot, boots, trod",
+              "[advanced], bluemail, powerglove, hookshot, boots, trod"
             ]
           }
         ]
@@ -322,8 +325,10 @@
             ],
             "access_rules": [
               "merge, powerglove, hookshot",
-              "[merge], powerglove, hookshot, boots, trod", // Old ROM Skip
-              "[merge], powerglove, hookshot, $boost" // Fringe ROM Skip
+              "[advanced], bottle, powerglove, hookshot, boots, trod",
+              "[advanced], bluemail, powerglove, hookshot, boots, trod",
+              "[advanced], bottle, powerglove, hookshot, nicebombs",
+              "[advanced], bluemail, powerglove, hookshot, nicebombs"
             ]
           }
         ]
@@ -401,7 +406,7 @@
               "{merge}",
               "{$beeBoost}",
               "flippers, merge",
-              "flippers, [merge], $beeBoost"
+              "[hell], flippers, $beeBoost"
             ]
           }
         ]
@@ -426,7 +431,7 @@
             ],
             "access_rules": [
               "{merge}",
-              "{$beeBoost}",
+              "{hell, $beeBoost}",
               "merge"
             ]
           }
@@ -453,7 +458,8 @@
             "access_rules": [
               "{}",
               "merge, flippers",
-              "merge, [flippers], $fakeFlippers"
+              "[advanced], merge, $fakeFlippers",
+              "[hell], merge, boots"
             ]
           }
         ]
@@ -479,7 +485,8 @@
             "access_rules": [
               "{}",
               "flippers",
-              "[flippers], $fakeFlippers"
+              "[advanced], $fakeFlippers",
+              "[hell], boots"
             ]
           }
         ]
@@ -496,7 +503,7 @@
         ],
         "sections": [
           {
-            "name": "Portal Cave Wall",
+            "name": "Graveyard Ledge Wall",
             "item_count": 1,
             "capture_item": true,
             "visibility_rules": [
@@ -870,7 +877,8 @@
             "access_rules": [
               "{}",
               "flippers",
-              "[flippers], $fakeFlippers"
+              "[advanced], $fakeFlippers",
+              "[hell], boots"
             ]
           }
         ]
@@ -968,8 +976,7 @@
               "maiamai_map"
             ],
             "access_rules": [
-              "titansmitt, merge",
-              "titansmitt, [merge], $boost"
+              "titansmitt, merge"
             ]
           }
         ]
@@ -1169,8 +1176,8 @@
             ],
             "access_rules": [
               "trod, flippers",
-              "trod, [flippers], $fakeFlippers",
-              "trod, [flippers], irod, hookshot"
+              "[advanced], trod, $fakeFlippers",
+              "[advanced], trod, irod, hookshot"
             ]
           }
         ]
@@ -1221,7 +1228,8 @@
             "access_rules": [
               "{}",
               "flippers",
-              "[flippers], $fakeFlippers"
+              "[advanced], $fakeFlippers",
+              "[hell], boots"
             ]
           }
         ]
@@ -1254,184 +1262,189 @@
   },
   {
     "name": "Lorule Maiamai",
-    "access_rules": [
-      "merge"
-    ],
     "children": [
-      // Skull Woods - 8
       {
+        // Skull Woods - 8
         "name": "Skull Woods Region",
-        "map_locations": [
-          {
-            "map": "lorule",
-            "x": 289,
-            "y": 856,
-            "size": 25
-          }
+        "access_rules": [
+          "merge"
         ],
-        "sections": [
+        "children": [
           {
-            "name": "Stuck to Cliff House",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Skull Woods Region",
-        "map_locations": [
-          {
-            "map": "lorule",
-            "x": 353,
-            "y": 752,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Wall Near Entrance Sign",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Skull Woods Region",
-        "map_locations": [
-          {
-            "map": "lorule",
-            "x": 679,
-            "y": 702,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Dry Pond",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Skull Woods Region",
-        "map_locations": [
-          {
-            "map": "lorule",
-            "x": 650,
-            "y": 472,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Under V Tree Bushes",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Skull Woods Region",
-        "map_locations": [
-          {
-            "map": "lorule",
-            "x": 657,
-            "y": 231,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Dark Cucco Shack Dash Tree",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
+            "name": "Skull Woods Region",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 289,
+                "y": 856,
+                "size": 25
+              }
             ],
-            "access_rules": [
-              "boots"
+            "sections": [
+              {
+                "name": "Stuck to Cliff House",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ]
+              }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Skull Woods Region",
-        "map_locations": [
+          },
           {
-            "map": "lorule",
-            "x": 117,
-            "y": 111,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Under NW Bush",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Skull Woods Region",
-        "map_locations": [
-          {
-            "map": "lorule",
-            "x": 204,
-            "y": 395,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Cut the Grass",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
+            "name": "Skull Woods Region",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 353,
+                "y": 752,
+                "size": 25
+              }
             ],
-            "access_rules": [
-              "$cutGrass"
+            "sections": [
+              {
+                "name": "Wall Near Entrance Sign",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ]
+              }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Skull Woods Region",
-        "map_locations": [
+          },
           {
-            "map": "lorule",
-            "x": 203,
-            "y": 733,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Under Big Rock Fence",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
+            "name": "Skull Woods Region",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 679,
+                "y": 702,
+                "size": 25
+              }
             ],
-            "access_rules": [
-              "titansmitt"
+            "sections": [
+              {
+                "name": "Dry Pond",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Skull Woods Region",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 650,
+                "y": 472,
+                "size": 25
+              }
+            ],
+            "sections": [
+              {
+                "name": "Under V Tree Bushes",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Skull Woods Region",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 657,
+                "y": 231,
+                "size": 25
+              }
+            ],
+            "sections": [
+              {
+                "name": "Dark Cucco Shack Dash Tree",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ],
+                "access_rules": [
+                  "boots"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Skull Woods Region",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 117,
+                "y": 111,
+                "size": 25
+              }
+            ],
+            "sections": [
+              {
+                "name": "Under NW Bush",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Skull Woods Region",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 204,
+                "y": 395,
+                "size": 25
+              }
+            ],
+            "sections": [
+              {
+                "name": "Cut the Grass",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ],
+                "access_rules": [
+                  "$cutGrass"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Skull Woods Region",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 203,
+                "y": 733,
+                "size": 25
+              }
+            ],
+            "sections": [
+              {
+                "name": "Under Big Rock Fence",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ],
+                "access_rules": [
+                  "titansmitt"
+                ]
+              }
             ]
           }
         ]
@@ -1440,7 +1453,8 @@
       {
         "name": "Lorule Death Mountain",
         "access_rules": [
-          "[powerglove]"
+          "powerglove, merge",
+          "[basic], merge"
         ],
         "children": [
           {
@@ -1587,70 +1601,78 @@
       },
       // Graveyard - 3
       {
-        "name": "Graveyard",
-        "map_locations": [
-          {
-            "map": "lorule",
-            "x": 895,
-            "y": 614,
-            "size": 25
-          }
+        "name": "Lorule Graveyard",
+        "access_rules": [
+          "merge, lamp, $attack"
         ],
-        "sections": [
+        "children": [
           {
-            "name": "Under West Big Rock",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
+            "name": "Graveyard",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 895,
+                "y": 614,
+                "size": 25
+              }
             ],
-            "access_rules": [
-              "titansmitt"
+            "sections": [
+              {
+                "name": "Under West Big Rock",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ],
+                "access_rules": [
+                  "titansmitt"
+                ]
+              }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Graveyard",
-        "map_locations": [
+          },
           {
-            "map": "lorule",
-            "x": 1100,
-            "y": 589,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Stuck to Portal Wall",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Graveyard",
-        "map_locations": [
-          {
-            "map": "lorule",
-            "x": 1356,
-            "y": 836,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Peninsula Dash Tree",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
+            "name": "Graveyard",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 1100,
+                "y": 589,
+                "size": 25
+              }
             ],
-            "access_rules": [
-              "boots"
+            "sections": [
+              {
+                "name": "Stuck to Portal Wall",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Graveyard",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 1356,
+                "y": 836,
+                "size": 25
+              }
+            ],
+            "sections": [
+              {
+                "name": "Peninsula Dash Tree",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ],
+                "access_rules": [
+                  "boots"
+                ]
+              }
             ]
           }
         ]
@@ -1658,587 +1680,635 @@
       // Dark Ruins - 10
       {
         "name": "Dark Ruins",
-        "map_locations": [
-          {
-            "map": "lorule",
-            "x": 1438,
-            "y": 1142,
-            "size": 25
-          }
+        "access_rules": [
+          "merge"
         ],
-        "sections": [
+        "children": [
           {
-            "name": "Dash Rock",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
+            "name": "Dark Ruins",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 1438,
+                "y": 1142,
+                "size": 25
+              }
             ],
-            "access_rules": [
-              "{}",
-              "boots"
+            "sections": [
+              {
+                "name": "Dash Rock",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ],
+                "access_rules": [
+                  "{}",
+                  "boots"
+                ]
+              }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Dark Ruins",
-        "map_locations": [
+          },
           {
-            "map": "lorule",
-            "x": 1426,
-            "y": 575,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Under the Waterfall",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
+            "name": "Dark Ruins",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 1426,
+                "y": 575,
+                "size": 25
+              }
             ],
-            "access_rules": [
-              "{}",
-              "flippers",
-              "[flippers], $fakeFlippers"
+            "sections": [
+              {
+                "name": "Under the Waterfall",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ],
+                "access_rules": [
+                  "{}",
+                  "flippers",
+                  "[advanced], $fakeFlippers",
+                  "[hell], boots"
+                ]
+              }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Ku's Domain",
-        "map_locations": [
+          },
           {
-            "map": "lorule",
-            "x": 1720,
-            "y": 588,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "River by Scared Hinox",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
+            "name": "Ku's Domain",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 1720,
+                "y": 588,
+                "size": 25
+              }
             ],
-            "access_rules": [
-              "{}",
-              "flippers",
-              "[flippers], $fakeFlippers"
+            "sections": [
+              {
+                "name": "River by Scared Hinox",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ],
+                "access_rules": [
+                  "{}",
+                  "flippers",
+                  "[advanced], $fakeFlippers",
+                  "[hell], boots"
+                ]
+              }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Ku's Domain",
-        "map_locations": [
+          },
           {
-            "map": "lorule",
-            "x": 1860,
-            "y": 749,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Grassy Ledge",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
+            "name": "Ku's Domain",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 1860,
+                "y": 749,
+                "size": 25
+              }
             ],
-            "access_rules": [
-              "$cutGrass"
+            "sections": [
+              {
+                "name": "Grassy Ledge",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ],
+                "access_rules": [
+                  "$cutGrass"
+                ]
+              }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Ku's Domain",
-        "map_locations": [
+          },
           {
-            "map": "lorule",
-            "x": 1785,
-            "y": 444,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Submerged",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
+            "name": "Ku's Domain",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 1785,
+                "y": 444,
+                "size": 25
+              }
             ],
-            "access_rules": [
-              "{}",
-              "flippers"
+            "sections": [
+              {
+                "name": "Submerged",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ],
+                "access_rules": [
+                  "{}",
+                  "flippers"
+                ]
+              }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Dark Ruins",
-        "map_locations": [
+          },
           {
-            "map": "lorule",
-            "x": 1353,
-            "y": 1333,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Canyon Dash Tree",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
+            "name": "Dark Ruins",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 1353,
+                "y": 1333,
+                "size": 25
+              }
             ],
-            "access_rules": [
-              "boots"
+            "sections": [
+              {
+                "name": "Canyon Dash Tree",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ],
+                "access_rules": [
+                  "boots"
+                ]
+              }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Dark Ruins",
-        "map_locations": [
+          },
           {
-            "map": "lorule",
-            "x": 1581,
-            "y": 1335,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Dash into Leftmost Tree",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
+            "name": "Dark Ruins",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 1581,
+                "y": 1335,
+                "size": 25
+              }
             ],
-            "access_rules": [
-              "boots"
+            "sections": [
+              {
+                "name": "Dash into Leftmost Tree",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ],
+                "access_rules": [
+                  "boots"
+                ]
+              }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Dark Maze",
-        "map_locations": [
+          },
           {
-            "map": "lorule",
-            "x": 1575,
-            "y": 1185,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Entrance Wall",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
+            "name": "Dark Maze",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 1575,
+                "y": 1185,
+                "size": 25
+              }
+            ],
+            "sections": [
+              {
+                "name": "Entrance Wall",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ]
+              }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Dark Maze",
-        "map_locations": [
+          },
           {
-            "map": "lorule",
-            "x": 1927,
-            "y": 1487,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "South Area Wall",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
+            "name": "Dark Maze",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 1927,
+                "y": 1487,
+                "size": 25
+              }
+            ],
+            "sections": [
+              {
+                "name": "South Area Wall",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ]
+              }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Dark Maze",
-        "map_locations": [
+          },
           {
-            "map": "lorule",
-            "x": 1834,
-            "y": 914,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Guarded Wall",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
+            "name": "Dark Maze",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 1834,
+                "y": 914,
+                "size": 25
+              }
+            ],
+            "sections": [
+              {
+                "name": "Guarded Wall",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ]
+              }
             ]
           }
         ]
       },
       // Lorule Castle Area - 15
       {
-        "name": "Lorule Blacksmith",
-        "map_locations": [
-          {
-            "map": "lorule",
-            "x": 614,
-            "y": 1065,
-            "size": 25
-          }
+        "name": "Lorule Castle Field",
+        "access_rules": [
+          "merge",
+          "yuga"
         ],
-        "sections": [
+        "children": [
           {
-            "name": "Stuck to House",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Lorule Fortune-Teller",
-        "map_locations": [
-          {
-            "map": "lorule",
-            "x": 600,
-            "y": 946,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Under Nearby Big Rock",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
+            "name": "Lorule Blacksmith",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 614,
+                "y": 1065,
+                "size": 25
+              }
             ],
-            "access_rules": [
-              "titansmitt"
+            "sections": [
+              {
+                "name": "Stuck to House",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "{}",
+                  "merge"
+                ],
+                "visibility_rules": [
+                  "maiamai_map"
+                ]
+              }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Thieves' Town",
-        "map_locations": [
+          },
           {
-            "map": "lorule",
-            "x": 466,
-            "y": 1172,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Dash Tree",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
+            "name": "Lorule Fortune-Teller",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 600,
+                "y": 946,
+                "size": 25
+              }
             ],
-            "access_rules": [
-              "boots"
+            "sections": [
+              {
+                "name": "Under Nearby Big Rock",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ],
+                "access_rules": [
+                  "titansmitt"
+                ]
+              }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Thieves' Town",
-        "map_locations": [
+          },
           {
-            "map": "lorule",
-            "x": 120,
-            "y": 1205,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "SW Walls",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Bomb Flower Store",
-        "map_locations": [
-          {
-            "map": "lorule",
-            "x": 455,
-            "y": 1345,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Cut the Grass",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Lorule Rupee Rush",
-        "map_locations": [
-          {
-            "map": "lorule",
-            "x": 114,
-            "y": 1288,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Northern Wall",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Octoball Derby",
-        "map_locations": [
-          {
-            "map": "lorule",
-            "x": 603,
-            "y": 1456,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Under Skull",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
+            "name": "Thieves' Town",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 466,
+                "y": 1172,
+                "size": 25
+              }
             ],
-            "access_rules": [
-              "[]", // Grab a bush from lower screen and throw
-              "fsword",
-              "bow",
-              "boomerang",
-              "hookshot",
-              "bombs",
-              "frod",
-              "irod",
-              "hammer",
-              "srod",
-              "boots",
-              "powerglove"
+            "sections": [
+              {
+                "name": "Dash Tree",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ],
+                "access_rules": [
+                  "boots"
+                ]
+              }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Lorule Haunted Grove",
-        "map_locations": [
+          },
           {
-            "map": "lorule",
-            "x": 543,
-            "y": 1695,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Stuck to High Wall",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Vacant House",
-        "map_locations": [
-          {
-            "map": "lorule",
-            "x": 903,
-            "y": 1411,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Under Big Rock",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
+            "name": "Thieves' Town",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 120,
+                "y": 1205,
+                "size": 25
+              }
             ],
-            "access_rules": [
-              "titansmitt"
+            "sections": [
+              {
+                "name": "SW Walls",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "{}",
+                  "merge"
+                ],
+                "visibility_rules": [
+                  "maiamai_map"
+                ]
+              }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Vacant House",
-        "map_locations": [
+          },
           {
-            "map": "lorule",
-            "x": 1071,
-            "y": 1336,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Stuck to Wall Behind House",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Lorule Castle",
-        "map_locations": [
-          {
-            "map": "lorule",
-            "x": 1098,
-            "y": 1092,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Stuck to Castle Wall",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Lorule Castle",
-        "map_locations": [
-          {
-            "map": "lorule",
-            "x": 1208,
-            "y": 1214,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Dash Tree",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
+            "name": "Bomb Flower Field",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 455,
+                "y": 1345,
+                "size": 25
+              }
             ],
-            "access_rules": [
-              "boots"
+            "sections": [
+              {
+                "name": "Cut the Grass",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ]
+              }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Lorule Southern Ruins",
-        "map_locations": [
+          },
           {
-            "map": "lorule",
-            "x": 1215,
-            "y": 1573,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Stuck to NE Wall",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Lorule Southern Ruins",
-        "map_locations": [
-          {
-            "map": "lorule",
-            "x": 952,
-            "y": 1650,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Submerged in Pond",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
+            "name": "Lorule Rupee Rush",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 114,
+                "y": 1288,
+                "size": 25
+              }
             ],
-            "access_rules": [
-              "{}",
-              "flippers"
+            "sections": [
+              {
+                "name": "Northern Wall",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "{}",
+                  "merge"
+                ],
+                "visibility_rules": [
+                  "maiamai_map"
+                ]
+              }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Lorule Southern Ruins",
-        "map_locations": [
+          },
           {
-            "map": "lorule",
-            "x": 1139,
-            "y": 1789,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Dash Pillars",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
+            "name": "Octoball Derby",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 603,
+                "y": 1456,
+                "size": 25
+              }
             ],
-            "access_rules": [
-              "{}",
-              "boots"
+            "sections": [
+              {
+                "name": "Under Skull",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ],
+                "access_rules": [
+                  "[hard]",
+                  // Grab a bush from lower screen and throw
+                  "fsword",
+                  "bow",
+                  "boomerang",
+                  "hookshot",
+                  "bombs",
+                  "frod",
+                  "irod",
+                  "hammer",
+                  "srod",
+                  "boots",
+                  "powerglove"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Lorule Haunted Grove",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 543,
+                "y": 1695,
+                "size": 25
+              }
+            ],
+            "sections": [
+              {
+                "name": "Stuck to High Wall",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "{}",
+                  "merge"
+                ],
+                "visibility_rules": [
+                  "maiamai_map"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Vacant House",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 903,
+                "y": 1411,
+                "size": 25
+              }
+            ],
+            "sections": [
+              {
+                "name": "Under Big Rock",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ],
+                "access_rules": [
+                  "titansmitt"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Vacant House",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 1071,
+                "y": 1336,
+                "size": 25
+              }
+            ],
+            "sections": [
+              {
+                "name": "Stuck to Wall Behind House",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "{}",
+                  "merge"
+                ],
+                "visibility_rules": [
+                  "maiamai_map"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Lorule Castle",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 1098,
+                "y": 1092,
+                "size": 25
+              }
+            ],
+            "sections": [
+              {
+                "name": "Stuck to Castle Wall",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "{}",
+                  "merge"
+                ],
+                "visibility_rules": [
+                  "maiamai_map"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Lorule Castle",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 1208,
+                "y": 1214,
+                "size": 25
+              }
+            ],
+            "sections": [
+              {
+                "name": "Dash Tree",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ],
+                "access_rules": [
+                  "boots"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Lorule Southern Ruins",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 1215,
+                "y": 1573,
+                "size": 25
+              }
+            ],
+            "sections": [
+              {
+                "name": "Stuck to NE Wall",
+                "item_count": 1,
+                "capture_item": true,
+                "access_rules": [
+                  "{}",
+                  "merge"
+                ],
+                "visibility_rules": [
+                  "maiamai_map"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Lorule Southern Ruins",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 952,
+                "y": 1650,
+                "size": 25
+              }
+            ],
+            "sections": [
+              {
+                "name": "Submerged in Pond",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ],
+                "access_rules": [
+                  "{}",
+                  "flippers"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Lorule Southern Ruins",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 1139,
+                "y": 1789,
+                "size": 25
+              }
+            ],
+            "sections": [
+              {
+                "name": "Dash Pillars",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ],
+                "access_rules": [
+                  "{}",
+                  "boots"
+                ]
+              }
             ]
           }
         ]
@@ -2246,70 +2316,78 @@
       // Misery Mire - 3
       {
         "name": "Misery Mire",
-        "map_locations": [
-          {
-            "map": "lorule",
-            "x": 470,
-            "y": 1816,
-            "size": 25
-          }
+        "access_rules": [
+          "merge"
         ],
-        "sections": [
+        "children": [
           {
-            "name": "Behind Weather Vane",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Misery Mire",
-        "map_locations": [
-          {
-            "map": "lorule",
-            "x": 134,
-            "y": 1902,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Submerged Underwater",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
+            "name": "Misery Mire",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 470,
+                "y": 1816,
+                "size": 25
+              }
             ],
-            "access_rules": [
-              "{}",
-              "flippers"
+            "sections": [
+              {
+                "name": "Behind Weather Vane",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ]
+              }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Misery Mire",
-        "map_locations": [
+          },
           {
-            "map": "lorule",
-            "x": 658,
-            "y": 1923,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Under Portal Big Rock",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
+            "name": "Misery Mire",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 134,
+                "y": 1902,
+                "size": 25
+              }
             ],
-            "access_rules": [
-              "titansmitt"
+            "sections": [
+              {
+                "name": "Submerged Underwater",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ],
+                "access_rules": [
+                  "{}",
+                  "flippers"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Misery Mire",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 658,
+                "y": 1923,
+                "size": 25
+              }
+            ],
+            "sections": [
+              {
+                "name": "Under Portal Big Rock",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ],
+                "access_rules": [
+                  "titansmitt"
+                ]
+              }
             ]
           }
         ]
@@ -2317,113 +2395,122 @@
       // Lorule Lake - 5
       {
         "name": "Lorule Lake",
-        "map_locations": [
-          {
-            "map": "lorule",
-            "x": 1344,
-            "y": 1790,
-            "size": 25
-          }
+        "access_rules": [
+          "merge"
         ],
-        "sections": [
+        "children": [
           {
-            "name": "Near Lake Shop",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Lorule Lake",
-        "map_locations": [
-          {
-            "map": "lorule",
-            "x": 1351,
-            "y": 1950,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Under SW Big Rock",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
+            "name": "Lorule Lake",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 1344,
+                "y": 1790,
+                "size": 25
+              }
             ],
-            "access_rules": [
-              "titansmitt"
+            "sections": [
+              {
+                "name": "Near Lake Shop",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ]
+              }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Lorule Lake",
-        "map_locations": [
+          },
           {
-            "map": "lorule",
-            "x": 1906,
-            "y": 1971,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Stuck to SE Wall",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Lorule Lake",
-        "map_locations": [
-          {
-            "map": "lorule",
-            "x": 1773,
-            "y": 1616,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "East Ledge Skull",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Lorule Lake",
-        "map_locations": [
-          {
-            "map": "lorule",
-            "x": 1675,
-            "y": 1698,
-            "size": 25
-          }
-        ],
-        "sections": [
-          {
-            "name": "Lake Rupee Ring",
-            "item_count": 1,
-            "capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
+            "name": "Lorule Lake",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 1351,
+                "y": 1950,
+                "size": 25
+              }
             ],
-            "access_rules": [
-              "{}",
-              "flippers",
-              "[flippers], $fakeFlippers"
+            "sections": [
+              {
+                "name": "Under SW Big Rock",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ],
+                "access_rules": [
+                  "titansmitt"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Lorule Lake",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 1906,
+                "y": 1971,
+                "size": 25
+              }
+            ],
+            "sections": [
+              {
+                "name": "Stuck to SE Wall",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Lorule Lake",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 1773,
+                "y": 1616,
+                "size": 25
+              }
+            ],
+            "sections": [
+              {
+                "name": "East Ledge Skull",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Lorule Lake",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 1675,
+                "y": 1698,
+                "size": 25
+              }
+            ],
+            "sections": [
+              {
+                "name": "Lake Rupee Ring",
+                "item_count": 1,
+                "capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ],
+                "access_rules": [
+                  "{}",
+                  "flippers",
+                  "[advanced], $fakeFlippers",
+                  "[hell], boots"
+                ]
+              }
             ]
           }
         ]

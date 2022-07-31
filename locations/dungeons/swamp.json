@@ -18,9 +18,9 @@
         ],
         "sections": [
           {
-            "name": "B1 East Key",
+            "name": "B1 East Pillar",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "sp_chest_01"
           }
         ]
       },
@@ -35,9 +35,9 @@
         ],
         "sections": [
           {
-            "name": "B1 West Key",
+            "name": "B1 West Pillar",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "sp_chest_02"
           }
         ]
       },
@@ -52,9 +52,9 @@
         ],
         "sections": [
           {
-            "name": "B1 North Center Chest",
+            "name": "B1 North Center",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "sp_chest_03"
           }
         ]
       },
@@ -69,9 +69,9 @@
         ],
         "sections": [
           {
-            "name": "B1 Staircase Chest",
+            "name": "B1 Staircase",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "sp_chest_04"
           }
         ]
       },
@@ -88,7 +88,7 @@
           {
             "name": "B1 Raft Chest",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "sp_chest_05"
           }
         ]
       },
@@ -103,9 +103,9 @@
         ],
         "sections": [
           {
-            "name": "B1 Side Room Chest",
+            "name": "B1 Side Room",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "sp_chest_06"
           }
         ]
       },
@@ -130,7 +130,7 @@
               "[basic], boots",
               "[advanced], irod"
             ],
-            "item_count": 1
+            "hosted_item": "sp_chest_07"
           }
         ]
       },
@@ -154,7 +154,7 @@
               "[basic], boots",
               "[advanced], irod"
             ],
-            "item_count": 1
+            "hosted_item": "sp_chest_08"
           }
         ]
       },
@@ -169,13 +169,13 @@
         ],
         "sections": [
           {
-            "name": "1F West Chest",
+            "name": "1F West Pillar",
             "capture_item": true,
             "access_rules": [
               "merge",
               "[advanced], irod"
             ],
-            "item_count": 1
+            "hosted_item": "sp_chest_09"
           }
         ]
       },
@@ -190,13 +190,13 @@
         ],
         "sections": [
           {
-            "name": "1F East Chest",
+            "name": "1F East Pillar",
             "capture_item": true,
             "access_rules": [
               "merge",
               "[advanced], irod"
             ],
-            "item_count": 1
+            "hosted_item": "sp_chest_10"
           }
         ]
       },
@@ -211,12 +211,12 @@
         ],
         "sections": [
           {
-            "name": "1F South West Chest",
+            "name": "1F SW Room",
             "capture_item": true,
             "access_rules": [
               "merge"
             ],
-            "item_count": 1
+            "hosted_item": "sp_chest_11"
           }
         ]
       },
@@ -231,30 +231,19 @@
         ],
         "sections": [
           {
-            "name": "Heart Container",
+            "name": "1F Arrgus",
             "capture_item": true,
             "access_rules": [
               "merge, $attack",
               "[advanced], irod"
             ],
-            "item_count": 1
+            "hosted_item": "sp_chest_12"
           }
         ]
       },
       {
         "name": "Swamp Palace",
-        "access_rules": [
-          "{}",
-          "merge, $attack",
-          "[advanced], irod, trod"
-        ],
         "map_locations": [
-          {
-            "map": "lorule",
-            "x": 962,
-            "y": 1808,
-            "size": 60
-          },
           {
             "map": "swamp2F",
             "x": 89,
@@ -265,7 +254,119 @@
         "sections": [
           {
             "name": "Sage Oren",
-            "hosted_item": "swamp"
+            "hosted_item": "swamp",
+            "access_rules": [
+              "merge, $attack",
+              "[advanced], irod"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Swamp Palace",
+        "map_locations": [
+          {
+            "map": "lorule",
+            "x": 962,
+            "y": 1808,
+            "size": 60
+          }
+        ],
+        "sections": [
+          {
+            "name": "B1 East Pillar",
+            "capture_item": true,
+            "hosted_item": "sp_chest_01"
+          },
+          {
+            "name": "B1 North Center",
+            "capture_item": true,
+            "hosted_item": "sp_chest_03"
+          },
+          {
+            "name": "B1 West Pillar",
+            "capture_item": true,
+            "hosted_item": "sp_chest_02"
+          },
+          {
+            "name": "B1 Raft Chest",
+            "capture_item": true,
+            "hosted_item": "sp_chest_05",
+            "access_rules": []
+          },
+          {
+            "name": "B1 Staircase",
+            "capture_item": true,
+            "hosted_item": "sp_chest_04"
+          },
+          {
+            "name": "B1 Side Room",
+            "capture_item": true,
+            "hosted_item": "sp_chest_06"
+          },
+          {
+            "name": "B1 Big Chest",
+            "capture_item": true,
+            "hosted_item": "sp_chest_07",
+            "access_rules": [
+              "merge",
+              "[hard], bow",
+              "[basic], boots",
+              "[advanced], irod"
+            ]
+          },
+          {
+            "name": "1F SW Room",
+            "capture_item": true,
+            "hosted_item": "sp_chest_11",
+            "access_rules": [
+              "merge"
+            ]
+          },
+          {
+            "name": "1F Big Chest",
+            "capture_item": true,
+            "hosted_item": "sp_chest_08",
+            "access_rules": [
+              "merge",
+              "[basic], boots",
+              "[advanced], irod"
+            ]
+          },
+          {
+            "name": "1F East Pillar",
+            "capture_item": true,
+            "hosted_item": "sp_chest_10",
+            "access_rules": [
+              "merge",
+              "[advanced], irod"
+            ]
+          },
+          {
+            "name": "1F West Pillar",
+            "capture_item": true,
+            "hosted_item": "sp_chest_09",
+            "access_rules": [
+              "merge",
+              "[advanced], irod"
+            ]
+          },
+          {
+            "name": "1F Arrgus",
+            "capture_item": true,
+            "hosted_item": "sp_chest_12",
+            "access_rules": [
+              "merge, $attack",
+              "[advanced], irod"
+            ]
+          },
+          {
+            "name": "Sage Oren",
+            "hosted_item": "swamp",
+            "access_rules": [
+              "merge, $attack",
+              "[advanced], irod"
+            ]
           }
         ]
       }

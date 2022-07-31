@@ -3,7 +3,7 @@
     "name": "Skull Woods",
     "color": "#43c2be",
     "access_rules": [
-      "merge, $lampless"
+      "merge"
     ],
     "children": [
       {
@@ -19,7 +19,10 @@
           {
             "name": "B1 South Chest",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "sw_chest_01",
+            "access_rules": [
+              "$lampless"
+            ]
           }
         ]
       },
@@ -34,9 +37,12 @@
         ],
         "sections": [
           {
-            "name": "B1 North Ground Chest",
+            "name": "B1 NE Room Lower",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "sw_chest_03",
+            "access_rules": [
+              "$lampless"
+            ]
           }
         ]
       },
@@ -51,9 +57,12 @@
         ],
         "sections": [
           {
-            "name": "B1 North Fall Chest",
+            "name": "B1 NE Room Fall",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "sw_chest_02",
+            "access_rules": [
+              "$lampless"
+            ]
           }
         ]
       },
@@ -68,149 +77,240 @@
         ],
         "sections": [
           {
-            "name": "B1 Smash Tile Chest",
+            "name": "B1 Grate Room",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "sw_chest_04",
+            "access_rules": [
+              "$lampless"
+            ]
           }
         ]
       },
       {
-        "name": "Post-Miniboss",
-        "access_rules": [
-          "$attack"
+        "name": "Skull Woods",
+        "map_locations": [
+          {
+            "map": "skullB2",
+            "x": 113,
+            "y": 23
+          }
         ],
-        "children": [
+        "sections": [
           {
-            "name": "Skull Woods",
-            "map_locations": [
-              {
-                "map": "skullB2",
-                "x": 113,
-                "y": 23
-              }
-            ],
-            "sections": [
-              {
-                "name": "B2 Long Elevator Chest",
-                "capture_item": true,
-                "item_count": 1
-              }
+            "name": "B2 Elevator Room",
+            "capture_item": true,
+            "hosted_item": "sw_chest_05",
+            "access_rules": [
+              "$lampless, merge, $attack",
+              // Have hand kill everything
+              "[hell], $lampless, merge"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Skull Woods",
+        "map_locations": [
+          {
+            "map": "skullB1",
+            "x": 40,
+            "y": 16
+          }
+        ],
+        "sections": [
+          {
+            "name": "B1 Big Chest (Eyes)",
+            "chest_unopened_img": "images/chest_big_unopened.png",
+            "chest_opened_img": "images/chest_big_opened.png",
+            "capture_item": true,
+            "hosted_item": "sw_chest_08",
+            "access_rules": [
+              "$lampless, merge, $attack, $fire"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Skull Woods",
+        "map_locations": [
+          {
+            "map": "skullB1",
+            "x": 24,
+            "y": 68
+          }
+        ],
+        "sections": [
+          {
+            "name": "B1 Big Chest (SW)",
+            "chest_unopened_img": "images/chest_big_unopened.png",
+            "chest_opened_img": "images/chest_big_opened.png",
+            "capture_item": true,
+            "hosted_item": "sw_chest_07",
+            "access_rules": [
+              "$lampless, merge, $attack, $fire"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Skull Woods",
+        "map_locations": [
+          {
+            "map": "skullB1",
+            "x": 41,
+            "y": 115
+          },
+          {
+            "map": "lorule",
+            "x": 88,
+            "y": 296
+          }
+        ],
+        "sections": [
+          {
+            "name": "Outdoor Chest",
+            "capture_item": true,
+            "hosted_item": "sw_chest_06",
+            "access_rules": [
+              "$lampless, merge, $attack, $fire"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Skull Woods",
+        "map_locations": [
+          {
+            "map": "skullB2",
+            "x": 63,
+            "y": 25
+          }
+        ],
+        "sections": [
+          {
+            "name": "B1 Not Mothula",
+            "capture_item": true,
+            "hosted_item": "sw_chest_09",
+            "access_rules": [
+              "$lampless, merge, $knucklemaster"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Skull Woods",
+        "map_locations": [
+          {
+            "map": "skullB2",
+            "x": 63,
+            "y": 9,
+            "size": 15
+          }
+        ],
+        "sections": [
+          {
+            "name": "Sage Seres",
+            "hosted_item": "skull",
+            "access_rules": [
+              "{merge}",
+              "$lampless, merge, $knucklemaster",
+              "[basic], $lampless, merge, bow, trod"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Skull Woods",
+        "map_locations": [
+          {
+            "map": "lorule",
+            "x": 245,
+            "y": 166,
+            "size": 60
+          }
+        ],
+        "sections": [
+          {
+            "name": "B1 South Chest    ",
+            "capture_item": true,
+            "hosted_item": "sw_chest_01",
+            "access_rules": [
+              "$lampless"
             ]
           },
           {
-            "name": "B1 West Basement",
+            "name": "B1 NE Room Fall    ",
+            "capture_item": true,
+            "hosted_item": "sw_chest_02",
             "access_rules": [
-              "$fire"
-            ],
-            "children": [
-              {
-                "name": "Skull Woods",
-                "map_locations": [
-                  {
-                    "map": "skullB1",
-                    "x": 40,
-                    "y": 16
-                  }
-                ],
-                "sections": [
-                  {
-                    "name": "B1 Eyeball Big Chest",
-                    "chest_unopened_img": "images/chest_big_unopened.png",
-                    "chest_opened_img": "images/chest_big_opened.png",
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ]
-              },
-              {
-                "name": "Skull Woods",
-                "map_locations": [
-                  {
-                    "map": "skullB1",
-                    "x": 24,
-                    "y": 68
-                  }
-                ],
-                "sections": [
-                  {
-                    "name": "B1 Ledge Big Chest",
-                    "chest_unopened_img": "images/chest_big_unopened.png",
-                    "chest_opened_img": "images/chest_big_opened.png",
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ]
-              },
-              {
-                "name": "Skull Woods",
-                "map_locations": [
-                  {
-                    "map": "skullB1",
-                    "x": 41,
-                    "y": 115
-                  },
-                  {
-                    "map": "lorule",
-                    "x": 88,
-                    "y": 296
-                  }
-                ],
-                "sections": [
-                  {
-                    "name": "Outdoor Chest",
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ]
-              }
+              "$lampless"
             ]
           },
           {
-            "name": "Skull Woods",
+            "name": "B1 NE Room Lower",
+            "capture_item": true,
+            "hosted_item": "sw_chest_03",
             "access_rules": [
-              "$knucklemaster"
-            ],
-            "map_locations": [
-              {
-                "map": "skullB2",
-                "x": 63,
-                "y": 25
-              }
-            ],
-            "sections": [
-              {
-                "name": "Heart Container",
-                "capture_item": true,
-                "item_count": 1
-              }
+              "$lampless"
             ]
           },
           {
-            "name": "Skull Woods",
+            "name": "B1 Grate Room    ",
+            "capture_item": true,
+            "hosted_item": "sw_chest_04",
             "access_rules": [
-              "{}",
-              "$lampless, $knucklemaster",
-              "[basic], trod"
-            ],
-            "map_locations": [
-              {
-                "map": "lorule",
-                "x": 245,
-                "y": 166,
-                "size": 60
-              },
-              {
-                "map": "skullB2",
-                "x": 63,
-                "y": 9,
-                "size": 15
-              }
-            ],
-            "sections": [
-              {
-                "name": "Sage Seres",
-                "hosted_item": "skull"
-              }
+              "$lampless"
+            ]
+          },
+          {
+            "name": "B1 Elevator Room  ",
+            "capture_item": true,
+            "hosted_item": "sw_chest_05",
+            "access_rules": [
+              "$lampless, merge, $attack",
+              // Have hand kill everything
+              "[hell], $lampless, merge"
+            ]
+          },
+          {
+            "name": "Outdoor Chest",
+            "capture_item": true,
+            "hosted_item": "sw_chest_06",
+            "access_rules": [
+              "$lampless, merge, $attack, $fire"
+            ]
+          },
+          {
+            "name": "B1 Big Chest (SW)",
+            "capture_item": true,
+            "hosted_item": "sw_chest_07",
+            "access_rules": [
+              "$lampless, merge, $attack, $fire"
+            ]
+          },
+          {
+            "name": "B1 Big Chest (Eyes)",
+            "capture_item": true,
+            "hosted_item": "sw_chest_08",
+            "access_rules": [
+              "$lampless, merge, $attack, $fire"
+            ]
+          },
+          {
+            "name": "B1 Not Mothula",
+            "capture_item": true,
+            "hosted_item": "sw_chest_09",
+            "access_rules": [
+              "$lampless, merge, $knucklemaster"
+            ]
+          },
+          {
+            "name": "Sage Seres",
+            "hosted_item": "skull",
+            "access_rules": [
+              "{merge}",
+              "$lampless, merge, $knucklemaster",
+              "[basic], $lampless, merge, bow, trod"
             ]
           }
         ]

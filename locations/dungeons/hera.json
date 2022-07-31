@@ -6,15 +6,12 @@
       "hammer, powerglove, merge",
       "[basic], hammer, merge",
       "[advanced], hammer, bottle",
-      "[advanced], hammer, bluemail"
+      "[advanced], hammer, bluemail",
+//      "[hell], hammer"
     ],
     "children": [
       {
         "name": "Tower of Hera",
-        "access_rules": [
-          "merge",
-          "[advanced], fsword, bombs, trod"
-        ],
         "map_locations": [
           {
             "map": "hera1F",
@@ -26,16 +23,16 @@
           {
             "name": "1F Window Chest",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "toh_chest_01",
+            "access_rules": [
+              "merge",
+              "[advanced], fsword, bombs, trod"
+            ]
           }
         ]
       },
       {
         "name": "Tower of Hera",
-        "access_rules": [
-          "merge",
-          "[advanced], fsword, bombs"
-        ],
         "map_locations": [
           {
             "map": "hera1F",
@@ -47,16 +44,16 @@
           {
             "name": "1F Center Chest",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "toh_chest_02",
+            "access_rules": [
+              "merge",
+              "[advanced], fsword, bombs"
+            ]
           }
         ]
       },
       {
         "name": "Tower of Hera",
-        "access_rules": [
-          "merge",
-          "[advanced], fsword, bombs"
-        ],
         "map_locations": [
           {
             "map": "hera3F",
@@ -66,18 +63,18 @@
         ],
         "sections": [
           {
-            "name": "3F Key",
+            "name": "3F Center",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "toh_chest_03",
+            "access_rules": [
+              "merge",
+              "[advanced], fsword, bombs"
+            ]
           }
         ]
       },
       {
         "name": "Tower of Hera",
-        "access_rules": [
-          "merge",
-          "[advanced], fsword, bombs, trod"
-        ],
         "map_locations": [
           {
             "map": "hera5F",
@@ -89,16 +86,16 @@
           {
             "name": "5F Red/Blue Chest",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "toh_chest_04",
+            "access_rules": [
+              "merge",
+              "[advanced], fsword, bombs, trod"
+            ]
           }
         ]
       },
       {
         "name": "Tower of Hera",
-        "access_rules": [
-          "merge",
-          "[advanced], fsword, bombs, trod"
-        ],
         "map_locations": [
           {
             "map": "hera6F",
@@ -108,18 +105,18 @@
         ],
         "sections": [
           {
-            "name": "6F Left Tile Key",
+            "name": "6F Left Tiles",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "toh_chest_06",
+            "access_rules": [
+              "merge",
+              "[advanced], fsword, bombs, trod"
+            ]
           }
         ]
       },
       {
         "name": "Tower of Hera",
-        "access_rules": [
-          "merge",
-          "[advanced], fsword, bombs, trod"
-        ],
         "map_locations": [
           {
             "map": "hera6F",
@@ -129,18 +126,18 @@
         ],
         "sections": [
           {
-            "name": "6F Right Tile Chest",
+            "name": "6F Right Tiles",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "toh_chest_05",
+            "access_rules": [
+              "merge",
+              "[advanced], fsword, bombs, trod"
+            ]
           }
         ]
       },
       {
         "name": "Tower of Hera",
-        "access_rules": [
-          "merge",
-          "[advanced], fsword, bombs, trod"
-        ],
         "map_locations": [
           {
             "map": "hera7F",
@@ -152,16 +149,16 @@
           {
             "name": "7F Ledge Chest",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "toh_chest_07",
+            "access_rules": [
+              "merge",
+              "[advanced], fsword, bombs, trod"
+            ]
           }
         ]
       },
       {
         "name": "Tower of Hera",
-        "access_rules": [
-          "merge",
-          "[advanced], fsword, bombs, trod"
-        ],
         "map_locations": [
           {
             "map": "hera8F",
@@ -171,18 +168,18 @@
         ],
         "sections": [
           {
-            "name": "8F Fairy Room Chest",
+            "name": "8F Fairy Room",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "toh_chest_08",
+            "access_rules": [
+              "merge",
+              "[advanced], fsword, bombs, trod"
+            ]
           }
         ]
       },
       {
         "name": "Tower of Hera",
-        "access_rules": [
-          "merge",
-          "[advanced], fsword, bombs, trod"
-        ],
         "map_locations": [
           {
             "map": "hera11F",
@@ -192,20 +189,20 @@
         ],
         "sections": [
           {
-            "name": "Big Key Chest",
+            "name": "11F Big Chest",
             "chest_unopened_img": "images/chest_big_unopened.png",
             "chest_opened_img": "images/chest_big_opened.png",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "toh_chest_09",
+            "access_rules": [
+              "merge",
+              "[advanced], fsword, bombs, trod"
+            ]
           }
         ]
       },
       {
         "name": "Tower of Hera",
-        "access_rules": [
-          "merge",
-          "[advanced], fsword, bombs, trod"
-        ],
         "map_locations": [
           {
             "map": "hera13F",
@@ -215,26 +212,23 @@
         ],
         "sections": [
           {
-            "name": "Heart Container",
+            "name": "13F Moldorm",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "toh_chest_10",
+            "access_rules": [
+              "merge",
+              "[advanced], fsword, bombs, trod"
+            ]
           }
         ]
       },
       {
         "name": "Tower of Hera",
         "access_rules": [
-          "{bombs, fsword}",
           "merge",
           "[advanced], fsword, bombs, trod"
         ],
         "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1211,
-            "y": 39,
-            "size": 60
-          },
           {
             "map": "hera13F",
             "x": 93,
@@ -246,6 +240,117 @@
           {
             "name": "Pendant of Power",
             "hosted_item": "hera"
+          }
+        ]
+      },
+      {
+        "name": "Tower of Hera",
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1211,
+            "y": 39,
+            "size": 60
+          }
+        ],
+        "sections": [
+          {
+            "name": "1F Window Chest ",
+            "capture_item": true,
+            "hosted_item": "toh_chest_01",
+            "access_rules": [
+              "merge",
+              "[advanced], fsword, bombs, trod"
+            ]
+          },
+          {
+            "name": "1F Center Chest",
+            "capture_item": true,
+            "hosted_item": "toh_chest_02",
+            "access_rules": [
+              "merge",
+              "[advanced], fsword, bombs"
+            ]
+          },
+          {
+            "name": "3F Center",
+            "capture_item": true,
+            "hosted_item": "toh_chest_03",
+            "access_rules": [
+              "merge",
+              "[advanced], fsword, bombs"
+            ]
+          },
+          {
+            "name": "5F Red/Blue Chest",
+            "capture_item": true,
+            "hosted_item": "toh_chest_04",
+            "access_rules": [
+              "merge",
+              "[advanced], fsword, bombs, trod"
+            ]
+          },
+          {
+            "name": "6F Right Tiles",
+            "capture_item": true,
+            "hosted_item": "toh_chest_05",
+            "access_rules": [
+              "merge",
+              "[advanced], fsword, bombs, trod"
+            ]
+          },
+          {
+            "name": "6F Left Tiles",
+            "capture_item": true,
+            "hosted_item": "toh_chest_06",
+            "access_rules": [
+              "merge",
+              "[advanced], fsword, bombs, trod"
+            ]
+          },
+          {
+            "name": "7F Ledge Chest     ",
+            "capture_item": true,
+            "hosted_item": "toh_chest_07",
+            "access_rules": [
+              "merge",
+              "[advanced], fsword, bombs, trod"
+            ]
+          },
+          {
+            "name": "8F Fairy Room",
+            "capture_item": true,
+            "hosted_item": "toh_chest_08",
+            "access_rules": [
+              "merge",
+              "[advanced], fsword, bombs, trod"
+            ]
+          },
+          {
+            "name": "11F Big Chest",
+            "capture_item": true,
+            "hosted_item": "toh_chest_09",
+            "access_rules": [
+              "merge",
+              "[advanced], fsword, bombs, trod"
+            ]
+          },
+          {
+            "name": "13F Moldorm       ",
+            "capture_item": true,
+            "hosted_item": "toh_chest_10",
+            "access_rules": [
+              "merge",
+              "[advanced], fsword, bombs, trod"
+            ]
+          },
+          {
+            "name": "Pendant of Power",
+            "hosted_item": "hera",
+            "access_rules": [
+              "merge",
+              "[advanced], fsword, bombs, trod"
+            ]
           }
         ]
       }

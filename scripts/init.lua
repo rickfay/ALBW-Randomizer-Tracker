@@ -3,6 +3,7 @@
 ScriptHost:LoadScript("scripts/control.lua")
 
 Tracker:AddItems("items.json")
+Tracker:AddItems("items_dungeon.json")
 Tracker:AddItems("options.json")
 Tracker:AddMaps("maps.json")
 

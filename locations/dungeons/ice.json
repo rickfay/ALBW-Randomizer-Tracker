@@ -18,9 +18,9 @@
         ],
         "sections": [
           {
-            "name": "1F Hidden Chest",
+            "name": "1F Hidden",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "ir_chest_01"
           }
         ]
       },
@@ -35,9 +35,9 @@
         ],
         "sections": [
           {
-            "name": "B1 Torches Key",
+            "name": "B1 Torches",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "ir_chest_02"
           }
         ]
       },
@@ -54,7 +54,7 @@
           {
             "name": "B1 East Chest",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "ir_chest_03"
           }
         ]
       },
@@ -71,7 +71,7 @@
           {
             "name": "B1 Center Chest",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "ir_chest_04"
           }
         ]
       },
@@ -86,18 +86,14 @@
         ],
         "sections": [
           {
-            "name": "B2 Ice Pillar Key",
+            "name": "B2 Icicle",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "ir_chest_05"
           }
         ]
       },
       {
         "name": "Ice Ruins",
-        "access_rules": [
-          "scroll",
-          "[advanced], boots"
-        ],
         "map_locations": [
           {
             "map": "iceB2",
@@ -107,9 +103,13 @@
         ],
         "sections": [
           {
-            "name": "B2 Long Merge Chest",
+            "name": "B2 Long Merge",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "ir_chest_06",
+            "access_rules": [
+              "scroll",
+              "[advanced], boots"
+            ]
           }
         ]
       },
@@ -124,9 +124,9 @@
         ],
         "sections": [
           {
-            "name": "B3 Elevator Left Chest",
+            "name": "B3 Elevator Left",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "ir_chest_07"
           }
         ]
       },
@@ -141,9 +141,9 @@
         ],
         "sections": [
           {
-            "name": "B3 Elevator Right Chest",
+            "name": "B3 Elevator Right",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "ir_chest_08"
           }
         ]
       },
@@ -159,10 +159,8 @@
         "sections": [
           {
             "name": "B3 Big Chest",
-            "chest_unopened_img": "images/chest_big_unopened.png",
-            "chest_opened_img": "images/chest_big_opened.png",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "ir_chest_09"
           }
         ]
       },
@@ -177,9 +175,9 @@
         ],
         "sections": [
           {
-            "name": "B4 4 Switches",
+            "name": "B4 Switches",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "ir_chest_10"
           }
         ]
       },
@@ -196,7 +194,7 @@
           {
             "name": "B4 SW Fall Chest",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "ir_chest_11"
           }
         ]
       },
@@ -213,7 +211,7 @@
           {
             "name": "B4 SE Fall Chest",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "ir_chest_12"
           }
         ]
       },
@@ -228,9 +226,9 @@
         ],
         "sections": [
           {
-            "name": "B4 Shortcut Chest",
+            "name": "B4 Shortcut",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "ir_chest_13"
           }
         ]
       },
@@ -246,10 +244,8 @@
         "sections": [
           {
             "name": "B5 Big Chest",
-            "chest_unopened_img": "images/chest_big_unopened.png",
-            "chest_opened_img": "images/chest_big_opened.png",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "ir_chest_14"
           }
         ]
       },
@@ -264,9 +260,26 @@
         ],
         "sections": [
           {
-            "name": "Heart Container",
+            "name": "B6 Dharkstare",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "ir_chest_15"
+          }
+        ]
+      },
+      {
+        "name": "Ice Ruins",
+        "map_locations": [
+          {
+            "map": "iceB6",
+            "x": 90,
+            "y": 53,
+            "size": 15
+          }
+        ],
+        "sections": [
+          {
+            "name": "Sage Rosso",
+            "hosted_item": "ice"
           }
         ]
       },
@@ -278,15 +291,89 @@
             "x": 1880,
             "y": 156,
             "size": 60
-          },
-          {
-            "map": "iceB6",
-            "x": 90,
-            "y": 53,
-            "size": 15
           }
         ],
         "sections": [
+          {
+            "name": "1F Hidden Chest",
+            "capture_item": true,
+            "hosted_item": "ir_chest_01"
+          },
+          {
+            "name": "B2 Icicle",
+            "capture_item": true,
+            "hosted_item": "ir_chest_05"
+          },
+          {
+            "name": "B3 Elevator Right",
+            "capture_item": true,
+            "hosted_item": "ir_chest_08"
+          },
+          {
+            "name": "B3 Elevator Left",
+            "capture_item": true,
+            "hosted_item": "ir_chest_07"
+          },
+
+          {
+            "name": "B5 Big Chest",
+            "capture_item": true,
+            "hosted_item": "ir_chest_14"
+          },
+          {
+            "name": "B1 Torches",
+            "capture_item": true,
+            "hosted_item": "ir_chest_02"
+          },
+          {
+            "name": "B1 East Chest",
+            "capture_item": true,
+            "hosted_item": "ir_chest_03"
+          },
+          {
+            "name": "B1 Center Chest",
+            "capture_item": true,
+            "hosted_item": "ir_chest_04"
+          },
+          {
+            "name": "B4 Switches",
+            "capture_item": true,
+            "hosted_item": "ir_chest_10"
+          },
+          {
+            "name": "B4 SW Fall Chest",
+            "capture_item": true,
+            "hosted_item": "ir_chest_11"
+          },
+          {
+            "name": "B2 Long Merge",
+            "capture_item": true,
+            "hosted_item": "ir_chest_06",
+            "access_rules": [
+              "scroll",
+              "[advanced], boots"
+            ]
+          },
+          {
+            "name": "B3 Big Chest",
+            "capture_item": true,
+            "hosted_item": "ir_chest_09"
+          },
+          {
+            "name": "B4 SE Fall Chest",
+            "capture_item": true,
+            "hosted_item": "ir_chest_12"
+          },
+          {
+            "name": "B4 Shortcut",
+            "capture_item": true,
+            "hosted_item": "ir_chest_13"
+          },
+          {
+            "name": "B6 Dharkstare",
+            "capture_item": true,
+            "hosted_item": "ir_chest_15"
+          },
           {
             "name": "Sage Rosso",
             "hosted_item": "ice"

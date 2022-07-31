@@ -2,7 +2,6 @@
   {
     "name": "Logic Mode",
     "type": "progressive",
-    //"loop": true,
     "allow_disabled": false,
     "stages": [
       {
@@ -51,7 +50,7 @@
     ]
   },
   {
-    "name": "Trials",
+    "name": "Lorule Castle Trials",
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
@@ -69,165 +68,184 @@
     ]
   },
   {
-    "name": "Lampless",
+    "name": "Require Lamp",
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/no.png",
+        "img": "images/lamp_required.png",
         "codes": "lampful",
         "inherit_codes": false
       },
       {
-        "img": "images/yes.png",
+        "img": "images/lamp_not_required.png",
         "codes": "lampless",
         "inherit_codes": false
       }
     ]
   },
   {
-    "name": "Bee Boost",
+    "name": "Maiamai Map",
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/no.png",
-        "codes": "beeBoost_false",
+        "img": "images/maiamai_map_hide.png",
         "inherit_codes": false
       },
       {
-        "img": "images/yes.png",
-        "codes": "beeBoost",
+        "img": "images/maiamai_map_show.png",
+        "codes": "maiamai_map",
         "inherit_codes": false
       }
     ]
-  },
-  {
-    "name": "Bomb Boost to Ledges",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/no.png",
-        "codes": "bombBoost_false",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/yes.png",
-        "codes": "bombBoost",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Shield Rod Clipping",
-    "type": "progressive",
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/no.png",
-        "codes": "shieldRodClip_false",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/yes.png",
-        "codes": "shieldRodClip",
-        "inherit_codes": false
-      }
-    ],
-    "allow_disabled": false
-  },
-  {
-    "name": "Zaganaga with Bow",
-    "type": "progressive",
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/no.png",
-        "codes": "zagaBow_false",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/yes.png",
-        "codes": "zagaBow",
-        "inherit_codes": false
-      }
-    ],
-    "allow_disabled": false
-  },
-  {
-    "name": "Zaganaga with Sword Beams",
-    "type": "progressive",
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/no.png",
-        "codes": "zagaSwordBeams_false",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/yes.png",
-        "codes": "zagaSwordBeams",
-        "inherit_codes": false
-      }
-    ],
-    "allow_disabled": false
-  },
-  {
-    "name": "Portal Clipping",
-    "type": "progressive",
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/no.png",
-        "codes": "portalClipping_false",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/yes.png",
-        "codes": "portalClipping",
-        "inherit_codes": false
-      }
-    ],
-    "allow_disabled": false
-  },
-  {
-    "name": "Vulture Boosting",
-    "type": "progressive",
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/no.png",
-        "codes": "vulture_false",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/yes.png",
-        "codes": "vulture",
-        "inherit_codes": false
-      }
-    ],
-    "allow_disabled": false
-  },
-  {
-    "name": "Crow Escape",
-    "type": "progressive",
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/no.png",
-        "codes": "crowEscape_false",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/yes.png",
-        "codes": "crowEscape",
-        "inherit_codes": false
-      }
-    ],
-    "allow_disabled": false
   }
+
+  // Old Options below:
+  //  {
+  //    "name": "Bee Boost",
+  //    "type": "progressive",
+  //    "loop": true,
+  //    "allow_disabled": false,
+  //    "stages": [
+  //      {
+  //        "img": "images/no.png",
+  //        "codes": "beeBoost_false",
+  //        "inherit_codes": false
+  //      },
+  //      {
+  //        "img": "images/yes.png",
+  //        "codes": "beeBoost",
+  //        "inherit_codes": false
+  //      }
+  //    ]
+  //  },
+  //  {
+  //    "name": "Bomb Boost to Ledges",
+  //    "type": "progressive",
+  //    "loop": true,
+  //    "allow_disabled": false,
+  //    "stages": [
+  //      {
+  //        "img": "images/no.png",
+  //        "codes": "bombBoost_false",
+  //        "inherit_codes": false
+  //      },
+  //      {
+  //        "img": "images/yes.png",
+  //        "codes": "bombBoost",
+  //        "inherit_codes": false
+  //      }
+  //    ]
+  //  },
+  //  {
+  //    "name": "Shield Rod Clipping",
+  //    "type": "progressive",
+  //    "loop": true,
+  //    "stages": [
+  //      {
+  //        "img": "images/no.png",
+  //        "codes": "shieldRodClip_false",
+  //        "inherit_codes": false
+  //      },
+  //      {
+  //        "img": "images/yes.png",
+  //        "codes": "shieldRodClip",
+  //        "inherit_codes": false
+  //      }
+  //    ],
+  //    "allow_disabled": false
+  //  },
+  //  {
+  //    "name": "Zaganaga with Bow",
+  //    "type": "progressive",
+  //    "loop": true,
+  //    "stages": [
+  //      {
+  //        "img": "images/no.png",
+  //        "codes": "zagaBow_false",
+  //        "inherit_codes": false
+  //      },
+  //      {
+  //        "img": "images/yes.png",
+  //        "codes": "zagaBow",
+  //        "inherit_codes": false
+  //      }
+  //    ],
+  //    "allow_disabled": false
+  //  },
+  //  {
+  //    "name": "Zaganaga with Sword Beams",
+  //    "type": "progressive",
+  //    "loop": true,
+  //    "stages": [
+  //      {
+  //        "img": "images/no.png",
+  //        "codes": "zagaSwordBeams_false",
+  //        "inherit_codes": false
+  //      },
+  //      {
+  //        "img": "images/yes.png",
+  //        "codes": "zagaSwordBeams",
+  //        "inherit_codes": false
+  //      }
+  //    ],
+  //    "allow_disabled": false
+  //  },
+  //  {
+  //    "name": "Portal Clipping",
+  //    "type": "progressive",
+  //    "loop": true,
+  //    "stages": [
+  //      {
+  //        "img": "images/no.png",
+  //        "codes": "portalClipping_false",
+  //        "inherit_codes": false
+  //      },
+  //      {
+  //        "img": "images/yes.png",
+  //        "codes": "portalClipping",
+  //        "inherit_codes": false
+  //      }
+  //    ],
+  //    "allow_disabled": false
+  //  },
+  //  {
+  //    "name": "Vulture Boosting",
+  //    "type": "progressive",
+  //    "loop": true,
+  //    "stages": [
+  //      {
+  //        "img": "images/no.png",
+  //        "codes": "vulture_false",
+  //        "inherit_codes": false
+  //      },
+  //      {
+  //        "img": "images/yes.png",
+  //        "codes": "vulture",
+  //        "inherit_codes": false
+  //      }
+  //    ],
+  //    "allow_disabled": false
+  //  },
+  //  {
+  //    "name": "Crow Escape",
+  //    "type": "progressive",
+  //    "loop": true,
+  //    "stages": [
+  //      {
+  //        "img": "images/no.png",
+  //        "codes": "crowEscape_false",
+  //        "inherit_codes": false
+  //      },
+  //      {
+  //        "img": "images/yes.png",
+  //        "codes": "crowEscape",
+  //        "inherit_codes": false
+  //      }
+  //    ],
+  //    "allow_disabled": false
+  //  }
 ]

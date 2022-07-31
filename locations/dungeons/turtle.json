@@ -3,9 +3,7 @@
     "name": "Turtle Rock",
     "color": "#a332ce",
     "access_rules": [
-      "merge, irod, flippers",
-      "[advanced], merge, irod, $fakeFlippers",
-      "[hell], merge, irod, boots"
+      "merge"
     ],
     "children": [
       {
@@ -19,9 +17,12 @@
         ],
         "sections": [
           {
-            "name": "1F Center Switches Chest",
+            "name": "1F Center Switches",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "tr_chest_01",
+            "access_rules": [
+              "$enterTR"
+            ]
           }
         ]
       },
@@ -36,9 +37,12 @@
         ],
         "sections": [
           {
-            "name": "1F Flomola Chest",
+            "name": "1F Kill Flamolas",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "tr_chest_02",
+            "access_rules": [
+              "$enterTR"
+            ]
           }
         ]
       },
@@ -53,9 +57,12 @@
         ],
         "sections": [
           {
-            "name": "1F North East Key",
+            "name": "1F NE Ledge",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "tr_chest_03",
+            "access_rules": [
+              "$enterTR"
+            ]
           }
         ]
       },
@@ -70,9 +77,12 @@
         ],
         "sections": [
           {
-            "name": "1F Miniboss Room Chest",
+            "name": "1F Miniboss Room",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "tr_chest_04",
+            "access_rules": [
+              "$enterTR"
+            ]
           }
         ]
       },
@@ -87,9 +97,12 @@
         ],
         "sections": [
           {
-            "name": "1F Warp Chest",
+            "name": "1F SE Room",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "tr_chest_05",
+            "access_rules": [
+              "$enterTR"
+            ]
           }
         ]
       },
@@ -104,9 +117,38 @@
         ],
         "sections": [
           {
-            "name": "1F Warp Key",
+            "name": "1F NW Room",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "tr_chest_06",
+            "access_rules": [
+              "$enterTR"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Turtle Rock",
+        "map_locations": [
+          {
+            "map": "turtle1F",
+            "x": 16,
+            "y": 46
+          },
+          {
+            "map": "lorule",
+            "x": 1508,
+            "y": 1639
+          }
+        ],
+        "sections": [
+          {
+            "name": "Left Balcony",
+            "access_rules": [
+              "{merge}",
+              "$enterTR"
+            ],
+            "capture_item": true,
+            "hosted_item": "tr_chest_07"
           }
         ]
       },
@@ -121,55 +163,53 @@
         ],
         "sections": [
           {
-            "name": "B1 Chest Under Big Key Chest",
+            "name": "B1 Near Big Chest",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "tr_chest_08",
+            "access_rules": [
+              "$enterTR"
+            ]
           }
         ]
       },
       {
-        "name": "Crystal Switch Ice Rod Can't Hit",
-        "access_rules": [
-          "$shielded_switch",
-          "[hard]"
+        "name": "Turtle Rock",
+        "map_locations": [
+          {
+            "map": "turtleB1",
+            "x": 89,
+            "y": 58
+          }
         ],
-        "children": [
+        "sections": [
           {
-            "name": "Turtle Rock",
-            "map_locations": [
-              {
-                "map": "turtleB1",
-                "x": 89,
-                "y": 58
-              }
-            ],
-            "sections": [
-              {
-                "name": "B1 North Big Chest",
-                "chest_unopened_img": "images/chest_big_unopened.png",
-                "chest_opened_img": "images/chest_big_opened.png",
-                "capture_item": true,
-                "item_count": 1
-              }
+            "name": "B1 North Big Chest",
+            "capture_item": true,
+            "hosted_item": "tr_chest_09",
+            "access_rules": [
+              "$enterTR, $shielded_switch",
+              "[hard], $enterTR"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "name": "Turtle Rock",
+        "map_locations": [
           {
-            "name": "Turtle Rock",
-            "map_locations": [
-              {
-                "map": "turtleB1",
-                "x": 89,
-                "y": 85
-              }
-            ],
-            "sections": [
-              {
-                "name": "B1 Center Big Chest",
-                "chest_unopened_img": "images/chest_big_unopened.png",
-                "chest_opened_img": "images/chest_big_opened.png",
-                "capture_item": true,
-                "item_count": 1
-              }
+            "map": "turtleB1",
+            "x": 89,
+            "y": 85
+          }
+        ],
+        "sections": [
+          {
+            "name": "B1 Center Big Chest",
+            "capture_item": true,
+            "hosted_item": "tr_chest_10",
+            "access_rules": [
+              "$enterTR, $shielded_switch",
+              "[hard], $enterTR"
             ]
           }
         ]
@@ -185,9 +225,12 @@
         ],
         "sections": [
           {
-            "name": "B1 North East Room Key",
+            "name": "B1 NE Room",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "tr_chest_11",
+            "access_rules": [
+              "$enterTR"
+            ]
           }
         ]
       },
@@ -202,9 +245,12 @@
         ],
         "sections": [
           {
-            "name": "B1 Wizrobe Chest",
+            "name": "B1 Kill Wizrobes",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "tr_chest_12",
+            "access_rules": [
+              "$enterTR"
+            ]
           }
         ]
       },
@@ -219,9 +265,32 @@
         ],
         "sections": [
           {
-            "name": "Heart Container",
+            "name": "B3 Grinexx",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "tr_chest_13",
+            "access_rules": [
+              "$enterTR"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Turtle Rock",
+        "map_locations": [
+          {
+            "map": "turtleB2",
+            "x": 89,
+            "y": 75,
+            "size": 15
+          }
+        ],
+        "sections": [
+          {
+            "name": "Sage Impa",
+            "hosted_item": "turtle",
+            "access_rules": [
+              "$enterTR"
+            ]
           }
         ]
       },
@@ -233,48 +302,124 @@
             "x": 1572,
             "y": 1710,
             "size": 60
-          },
-          {
-            "map": "turtleB2",
-            "x": 89,
-            "y": 75,
-            "size": 15
           }
         ],
         "sections": [
           {
+            "name": "1F Center Switches",
+            "capture_item": true,
+            "hosted_item": "tr_chest_01",
+            "access_rules": [
+              "$enterTR"
+            ]
+          },
+          {
+            "name": "1F SE Room            ",
+            "capture_item": true,
+            "hosted_item": "tr_chest_05",
+            "access_rules": [
+              "$enterTR"
+            ]
+          },
+          {
+            "name": "1F Kill Flamolas",
+            "capture_item": true,
+            "hosted_item": "tr_chest_02",
+            "access_rules": [
+              "$enterTR"
+            ]
+          },
+          {
+            "name": "Left Balcony           ",
+            "capture_item": true,
+            "hosted_item": "tr_chest_07",
+            "access_rules": [
+              "{merge}",
+              "$enterTR"
+            ]
+          },
+          {
+            "name": "1F NW Room          ",
+            "capture_item": true,
+            "hosted_item": "tr_chest_06",
+            "access_rules": [
+              "$enterTR"
+            ]
+          },
+          {
+            "name": "1F NE Ledge",
+            "capture_item": true,
+            "hosted_item": "tr_chest_03",
+            "access_rules": [
+              "$enterTR"
+            ]
+          },
+          {
+            "name": "1F Miniboss Room ",
+            "capture_item": true,
+            "hosted_item": "tr_chest_04",
+            "access_rules": [
+              "$enterTR"
+            ]
+          },
+          {
+            "name": "B1 NE Room           ",
+            "capture_item": true,
+            "hosted_item": "tr_chest_11",
+            "access_rules": [
+              "$enterTR"
+            ]
+          },
+          {
+            "name": "B1 Near Big Chest",
+            "capture_item": true,
+            "hosted_item": "tr_chest_08",
+            "access_rules": [
+              "$enterTR"
+            ]
+          },
+          {
+            "name": "B1 North Big Chest",
+            "capture_item": true,
+            "hosted_item": "tr_chest_09",
+            "access_rules": [
+              "$enterTR, $shielded_switch",
+              "[hard], $enterTR"
+            ]
+          },
+          {
+            "name": "B1 Center Big Chest",
+            "capture_item": true,
+            "hosted_item": "tr_chest_10",
+            "access_rules": [
+              "$enterTR, $shielded_switch",
+              "[hard], $enterTR"
+            ]
+          },
+          {
+            "name": "B1 Kill Wizrobes",
+            "capture_item": true,
+            "hosted_item": "tr_chest_12",
+            "access_rules": [
+              "$enterTR"
+            ]
+          },
+          {
+            "name": "B3 Grinexx              ",
+            "capture_item": true,
+            "hosted_item": "tr_chest_13",
+            "access_rules": [
+              "$enterTR"
+            ]
+          },
+          {
             "name": "Sage Impa",
-            "hosted_item": "turtle"
+            "hosted_item": "turtle",
+            "access_rules": [
+              "$enterTR"
+            ]
           }
         ]
-      }
-    ]
-  },
-  {
-    "name": "Turtle Rock",
-    "map_locations": [
-      {
-        "map": "turtle1F",
-        "x": 16,
-        "y": 46
-      },
-      {
-        "map": "lorule",
-        "x": 1508,
-        "y": 1639
-      }
-    ],
-    "sections": [
-      {
-        "name": "Outdoor Heart Piece",
-        "access_rules": [
-          "{merge}",
-          "merge, irod, flippers",
-          "[advanced], merge, irod, $fakeFlippers",
-          "[hell], merge, irod, boots"
-        ],
-        "capture_item": true,
-        "item_count": 1
       }
     ]
   }

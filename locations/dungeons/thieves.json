@@ -2,6 +2,10 @@
   {
     "name": "Thieves' Hideout",
     "color": "#dde44e",
+    "access_rules": [
+      "merge",
+      "yuga"
+    ],
     "children": [
       {
         "name": "Thieves' Hideout",
@@ -16,7 +20,7 @@
           {
             "name": "B1 Grate Chest",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "th_chest_01"
           }
         ]
       },
@@ -31,230 +35,210 @@
         ],
         "sections": [
           {
-            "name": "B1 Jail Chest",
+            "name": "B1 Jail Cell",
             "capture_item": true,
             "access_rules": [
               "merge",
               "[basic], boots",
-              "[advanced], trod, bombs",
-              "[advanced], trod, irod, frod",
-              "[advanced], trod, irod, scoot"
+              "[hell], trod, $dungeon_escape"
             ],
-            "item_count": 1
+            "hosted_item": "th_chest_02"
           }
         ]
       },
       {
-        "name": "Post-Jail Crystal Switch",
-        "access_rules": [
-          "merge, $switch",
-          "[basic], boots, irod",
-          "[basic], boots, bow",
-          "[basic], boots, boomerang",
-          "[basic], boots, hookshot",
-          "[basic], boots, bombs",
-          "[advanced], bombs",
-          "[advanced], irod"
+        "name": "Thieves' Hideout",
+        "map_locations": [
+          {
+            "map": "thievesB2",
+            "x": 51,
+            "y": 53
+          }
         ],
-        "children": [
+        "sections": [
           {
-            "name": "Thieves' Hideout",
-            "map_locations": [
-              {
-                "map": "thievesB2",
-                "x": 51,
-                "y": 53
-              }
-            ],
-            "sections": [
-              {
-                "name": "B2 NW Grate Chest",
-                "capture_item": true,
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Thieves' Hideout",
-            "map_locations": [
-              {
-                "map": "thievesB2",
-                "x": 99,
-                "y": 91
-              }
-            ],
-            "sections": [
-              {
-                "name": "B2 Cellmate Chest",
-                "capture_item": true,
-                "access_rules": [
-                  "merge",
-                  "[advanced], trod, bombs",
-                  "[advanced], trod, irod"
-                ],
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Thieves' Hideout",
-            "map_locations": [
-              {
-                "map": "thievesB2",
-                "x": 80,
-                "y": 32
-              }
-            ],
-            "sections": [
-              {
-                "name": "B2 Eyegores Chest",
-                "access_rules": [
-                  "merge, $attack, $shielded_switch",
-                  "[advanced], bombs",
-                  "[advanced], irod"
-                ],
-                "capture_item": true,
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Thieves' Hideout",
-            "map_locations": [
-              {
-                "map": "thievesB2",
-                "x": 122,
-                "y": 117
-              }
-            ],
-            "sections": [
-              {
-                "name": "B2 SW Room Chest",
-                "capture_item": true,
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Post-Flippers Section",
+            "name": "B2 NW Room",
+            "capture_item": true,
+            "hosted_item": "th_chest_03",
             "access_rules": [
-              "merge, $attack, flippers",
-              "[advanced], trod, bombs",
-              "[advanced], trod, irod"
-            ],
-            "children": [
-              {
-                "name": "Thieves' Hideout",
-                "map_locations": [
-                  {
-                    "map": "thievesB3",
-                    "x": 132,
-                    "y": 79
-                  }
-                ],
-                "sections": [
-                  {
-                    "name": "B3 Sunken Chest",
-                    "capture_item": true,
-                    "access_rules": [
-                      "merge"
-                    ],
-                    "item_count": 1
-                  }
-                ]
-              },
-              {
-                "name": "Thieves' Hideout",
-                "map_locations": [
-                  {
-                    "map": "thievesB3",
-                    "x": 102,
-                    "y": 32
-                  }
-                ],
-                "sections": [
-                  {
-                    "name": "B3 Big Chest",
-                    "chest_unopened_img": "images/chest_big_unopened.png",
-                    "chest_opened_img": "images/chest_big_opened.png",
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ]
-              },
-              {
-                "name": "Thieves' Hideout",
-                "map_locations": [
-                  {
-                    "map": "thievesB1",
-                    "x": 56,
-                    "y": 79
-                  }
-                ],
-                "sections": [
-                  {
-                    "name": "B1 Thief Girl Chest",
-                    "access_rules": [
-                      // need attack to get Thief Girl down to B3
-                      "merge, $attack",
-                      "[], scoot",
-                      "[], bombs",
-                      "[], frod",
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ]
-              },
-              {
-                "name": "Thieves' Hideout",
-                "map_locations": [
-                  {
-                    "map": "thievesB1",
-                    "x": 81,
-                    "y": 75
-                  }
-                ],
-                "sections": [
-                  {
-                    "name": "B1 Big Chest",
-                    "chest_unopened_img": "images/chest_big_unopened.png",
-                    "chest_opened_img": "images/chest_big_opened.png",
-                    "capture_item": true,
-                    "access_rules": [
-                      "merge, $attack",
-                      "[]"
-                    ],
-                    "item_count": 1
-                  }
-                ]
-              },
-              {
-                "name": "Thieves' Hideout",
-                "map_locations": [
-                  {
-                    "map": "lorule",
-                    "x": 442,
-                    "y": 982
-                  },
-                  {
-                    "map": "thievesB1",
-                    "x": 144,
-                    "y": 167
-                  }
-                ],
-                "sections": [
-                  {
-                    "name": "Heart Container",
-                    "access_rules": [
-                      "merge, $attack"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ]
-              },
+              "$thB2"
             ]
+          }
+        ]
+      },
+      {
+        "name": "Thieves' Hideout",
+        "map_locations": [
+          {
+            "map": "thievesB2",
+            "x": 99,
+            "y": 91
+          }
+        ],
+        "sections": [
+          {
+            "name": "B2 Jail Cell",
+            "capture_item": true,
+            "access_rules": [
+              "$thB2, merge",
+              "[hell], trod, bombs",
+              "[hell], trod, irod"
+            ],
+            "hosted_item": "th_chest_04"
+          }
+        ]
+      },
+      {
+        "name": "Thieves' Hideout",
+        "map_locations": [
+          {
+            "map": "thievesB2",
+            "x": 80,
+            "y": 32
+          }
+        ],
+        "sections": [
+          {
+            "name": "B2 Eyegores",
+            "access_rules": [
+              "$thB2, merge, $attack, $shielded_switch",
+              "[advanced], bombs, trod",
+              "[advanced], bombs, boots",
+              "[advanced], irod, trod",
+              "[advanced], irod, boots"
+            ],
+            "capture_item": true,
+            "hosted_item": "th_chest_05"
+          }
+        ]
+      },
+      {
+        "name": "Thieves' Hideout",
+        "map_locations": [
+          {
+            "map": "thievesB2",
+            "x": 122,
+            "y": 117
+          }
+        ],
+        "sections": [
+          {
+            "name": "B2 SE Room",
+            "capture_item": true,
+            "hosted_item": "th_chest_06",
+            "access_rules": [
+              "$thB2"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Thieves' Hideout",
+        "map_locations": [
+          {
+            "map": "thievesB3",
+            "x": 132,
+            "y": 79
+          }
+        ],
+        "sections": [
+          {
+            "name": "B3 Underwater",
+            "capture_item": true,
+            "access_rules": [
+              "$thB2, $thEscape, merge"
+            ],
+            "hosted_item": "th_chest_07"
+          }
+        ]
+      },
+      {
+        "name": "Thieves' Hideout",
+        "map_locations": [
+          {
+            "map": "thievesB3",
+            "x": 102,
+            "y": 32
+          }
+        ],
+        "sections": [
+          {
+            "name": "B3 Big Chest",
+            "capture_item": true,
+            "hosted_item": "th_chest_08",
+            "access_rules": [
+              "$thB2, $thEscape, merge",
+              "[advanced], $thEscape"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Thieves' Hideout",
+        "map_locations": [
+          {
+            "map": "thievesB1",
+            "x": 56,
+            "y": 79
+          }
+        ],
+        "sections": [
+          {
+            "name": "B1 Behind Wall",
+            "access_rules": [
+              "$thB2, $thEscape, merge",
+              "[hell], trod, bombs, $dungeon_escape",
+              "[hell], trod, irod, $dungeon_escape"
+            ],
+            "capture_item": true,
+            "hosted_item": "th_chest_09"
+          }
+        ]
+      },
+      {
+        "name": "Thieves' Hideout",
+        "map_locations": [
+          {
+            "map": "thievesB1",
+            "x": 81,
+            "y": 75
+          }
+        ],
+        "sections": [
+          {
+            "name": "B1 Big Chest",
+            "capture_item": true,
+            "access_rules": [
+              "$thB2, $thEscape, merge",
+              "[hell], trod, bombs",
+              "[hell], trod, irod"
+            ],
+            "hosted_item": "th_chest_10"
+          }
+        ]
+      },
+      {
+        "name": "Thieves' Hideout",
+        "map_locations": [
+          {
+            "map": "lorule",
+            "x": 442,
+            "y": 982
+          },
+          {
+            "map": "thievesB1",
+            "x": 144,
+            "y": 167
+          }
+        ],
+        "sections": [
+          {
+            "name": "Stalblind",
+            "access_rules": [
+              "$thB2, $thEscape, merge"
+            ],
+            "capture_item": true,
+            "hosted_item": "th_chest_11"
           }
         ]
       },
@@ -266,23 +250,133 @@
             "x": 136,
             "y": 167,
             "size": 15
-          },
-          {
-            "map": "lorule",
-            "x": 324, //442,
-            "y": 962, //982,
-            "size": 60
           }
         ],
         "sections": [
           {
             "name": "Sage Osfala",
             "access_rules": [
-              "{merge}",
-              "{yuga}",
-              "merge, $switch, $attack, flippers",
-              "merge, $switch, $attack, trod, irod",
-              "merge, $switch, $attack, trod, bombs"
+              "$thB2, $thEscape, merge"
+            ],
+            "hosted_item": "thieves"
+          }
+        ]
+      },
+      {
+        "name": "Thieves' Hideout",
+        "map_locations": [
+          {
+            "map": "lorule",
+            "x": 324,
+            //442,
+            "y": 962,
+            //982,
+            "size": 60
+          }
+        ],
+        "sections": [
+          {
+            "name": "B1 Grate Chest",
+            "capture_item": true,
+            "hosted_item": "th_chest_01"
+          },
+          {
+            "name": "B1 Jail Cell",
+            "capture_item": true,
+            "hosted_item": "th_chest_02",
+            "access_rules": [
+              "merge",
+              "[basic], boots",
+              "[hell], trod, $dungeon_escape"
+            ]
+          },
+          {
+            "name": "B2 NW Room",
+            "capture_item": true,
+            "hosted_item": "th_chest_03",
+            "access_rules": [
+              "$thB2"
+            ]
+          },
+          {
+            "name": "B2 Jail Cell",
+            "capture_item": true,
+            "hosted_item": "th_chest_04",
+            "access_rules": [
+              "$thB2, merge",
+              "[hell], trod, bombs",
+              "[hell], trod, irod"
+            ]
+          },
+          {
+            "name": "B2 Eyegores",
+            "capture_item": true,
+            "hosted_item": "th_chest_05",
+            "access_rules": [
+              "$thB2, merge, $attack, $shielded_switch",
+              "[advanced], bombs, trod",
+              "[advanced], bombs, boots",
+              "[advanced], irod, trod",
+              "[advanced], irod, boots"
+            ]
+          },
+          {
+            "name": "B2 SE Room",
+            "capture_item": true,
+            "hosted_item": "th_chest_06",
+            "access_rules": [
+              "$thB2"
+            ]
+          },
+          {
+            "name": "B3 Underwater",
+            "capture_item": true,
+            "hosted_item": "th_chest_07",
+            "access_rules": [
+              "$thB2, $thEscape, merge"
+            ]
+          },
+          {
+            "name": "B3 Big Chest",
+            "capture_item": true,
+            "hosted_item": "th_chest_08",
+            "access_rules": [
+              "$thB2, $thEscape, merge",
+              "[advanced], $thEscape"
+            ]
+          },
+          {
+            "name": "B1 Behind Wall",
+            "capture_item": true,
+            "hosted_item": "th_chest_09",
+            "access_rules": [
+              "$thB2, $thEscape, merge",
+              "[hell], trod, bombs, $dungeon_escape",
+              "[hell], trod, irod, $dungeon_escape"
+            ]
+          },
+          {
+            "name": "B1 Big Chest",
+            "capture_item": true,
+            "hosted_item": "th_chest_10",
+            "access_rules": [
+              "$thB2, $thEscape, merge",
+              "[hell], trod, bombs",
+              "[hell], trod, irod"
+            ]
+          },
+          {
+            "name": "Stalblind",
+            "capture_item": true,
+            "hosted_item": "th_chest_11",
+            "access_rules": [
+              "$thB2, $thEscape, merge"
+            ]
+          },
+          {
+            "name": "Sage Osfala",
+            "access_rules": [
+              "$thB2, $thEscape, merge"
             ],
             "hosted_item": "thieves"
           }

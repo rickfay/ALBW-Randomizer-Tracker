@@ -23,10 +23,9 @@ function hasAll(items)
     return true;
 end
 
--- Glitch Logic
--- Always returns true, but if glitch_logic is enabled checks will show as green instead of yellow
-function glitch()
-    if has("glitch_logic") then
+-- Returns true if we're using the specified logic, or (true, SequenceBreak) if not
+function logic(logic)
+    if has(logic) then
         return true
     else
         return true, AccessibilityLevel.SequenceBreak
@@ -38,14 +37,21 @@ function attack()
     if hasAny({ "fsword", "bow", "bombs", "frod", "irod", "hammer", "boots" }) then
         return true
     elseif hasAny({ "lamp", "net" }) then
-        if (has("hard")) then
-            return true
-        else
-            return true, AccessibilityLevel.SequenceBreak
-        end
+        return logic("hard")
+    else
+        return false
     end
+end
 
-    return false
+-- Return if the player can deal damage to enemies that are immune to fire
+function fire_enemy()
+    if hasAny({ "fsword", "bow", "bombs", "irod", "hammer", "boots" }) then
+        return true
+    elseif has("net") then
+        return logic("hard")
+    else
+        return false
+    end
 end
 
 -- Return if the player can attack Margomill
@@ -54,27 +60,19 @@ function margomill()
     if hasAny({ "fsword", "bow", "bombs", "frod", "hammer", "boots" }) then
         return true
     elseif hasAny({ "lamp", "net" }) then
-        if (has("hard")) then
-            return true
-        else
-            return true, AccessibilityLevel.SequenceBreak
-        end
+        return logic("hard")
     end
 
     return false
 end
 
 -- Return if the player can attack Knucklemaster
--- This is the same as attack(), minus the bow rod
+-- This is the same as attack(), minus the bow
 function knucklemaster()
     if hasAny({ "fsword", "bombs", "frod", "irod", "hammer", "boots" }) then
         return true
     elseif hasAny({ "lamp", "net" }) then
-        if (has("hard")) then
-            return true
-        else
-            return true, AccessibilityLevel.SequenceBreak
-        end
+        return logic("hard")
     end
 
     return false
@@ -106,10 +104,15 @@ function shieldRodClip()
 end
 
 -- Return if the player is able to escape an otherwise softlock-able area
--- Having Bell would be ideal, but death warping using bombs or fire rod also works
--- If we can't escape, still return true, but with access level Inspect b/c the player can technically die to view it
+-- Having Bell would be ideal, but death warping using Bombs or Fire Rod also works
 function escape()
     return hasAny({ "bell", "bombs", "frod" })
+end
+
+-- Return if the player is able to escape an otherwise softlock-able area in a Dungeon
+-- Having Scoot Fruit would be ideal, but death warping using Bombs or Fire Rod also works
+function dungeon_escape()
+    return hasAny({ "scoot", "bombs", "frod" })
 end
 
 -- Return if Link has a Fire source
@@ -132,17 +135,13 @@ end
 
 -- Return if Link either has lamp, or lampless is enabled
 function lampless()
-    return hasAny({ "lamp", "lampless" })
-end
+    --return hasAny({ "lamp", "lampless" })
 
--- Return if we can get OoB on the south wall of Misery Mire
-function miseryMireOoB()
-    return has("merge") and (boost() or portalClip())
-end
-
--- Return if Portal Clipping is enabled and we can perform it
-function portalClip()
-    return has("trod") and (hasAny({ "boomerang", "hookshot" }) or shieldRodClip())
+    if has("lamp") then
+        return true
+    else
+        return logic("lampless") -- hacky but w/e
+    end
 end
 
 -- Bee Boosting
@@ -153,4 +152,120 @@ end
 
 function cutGrass()
     return hasAny({ "fsword", "boomerang", "bombs", "frod", "irod", "lamp", "boots" });
+end
+
+function has_all_sages()
+    return hasAll({ "dark", "swamp", "skull", "thieves", "turtle", "desert", "ice" });
+end
+
+function does_not_have_all_sages()
+    return not has_all_sages();
+end
+
+-- Can defeat Yuga 1 in Eastern Palace
+function yuga1()
+    if hasAny({ "bow", "bombs" }) or hasAny({ "boomerang", "hookshot" }) then
+        return attack()
+    elseif hasAny({ "irod", "msword" }) then
+        return logic("hell")
+    else
+        return false
+    end
+end
+
+-- Can reach House of Gales 2F (assume TRod)
+function hog2F()
+    if has("merge") and switch() then
+        return true
+    elseif hasAny({ "bow", "boomerang", "hookshot", "bombs", "irod", "msword" }) then
+        return logic("hard")
+    else
+        return false
+    end
+end
+
+-- Can reach House of Gales 3F (assume TRod)
+function hog3F()
+    if hog2F() and has("merge") then
+        if fire_enemy() then
+            return fire_enemy()
+        else
+            return logic("basic")
+        end
+    else
+        return false
+    end
+end
+
+-- Can reach Thieves' Hideout B2
+function thB2()
+    if has("merge") and switch() then
+        return true
+    elseif hasAll({ "boots", "irod" }) then
+        return logic("basic")
+    elseif hasAny({ "bombs", "irod" }) then
+        return logic("advanced")
+    else
+        return false
+    end
+end
+
+-- Can reach the Thieves' Hideout Escape
+function thEscape()
+    if hasAll({ "merge", "flippers" }) and attack() then
+        return true
+    elseif has("trod") and hasAny({ "bombs", "irod" }) then
+        return logic("advanced")
+    else
+        return false
+    end
+end
+
+-- Return if we can reach Desert Palace 2F
+function dp2F()
+    return hasAll({ "merge", "srod", "titansmitt" }) and switch() and attack()
+end
+
+-- Return if we can get OoB on the south wall of Misery Mire
+function miseryMireOoB()
+    if has("merge") and boost() then
+        return logic("advanced")
+    elseif has("trod") and (hasAny({ "boomerang", "hookshot" }) or shieldRodClip()) then
+        return logic("hell")
+    else
+        return false
+    end
+end
+
+-- Return if we can perform Reverse Desert Palace
+function reverseDP()
+    if has("srod") and miseryMireOoB() then
+        return logic("advanced")
+    else
+        return false
+    end
+end
+
+-- Return if we can enter Turtle Rock
+function enterTR()
+    if hasAll({ "merge", "irod" }) then
+        if has("flippers") then
+            return true
+        elseif fakeFlippers() then
+            return logic("advanced")
+        elseif has("boots") then
+            return logic("hell")
+        end
+    end
+
+    return false
+end
+
+-- Return if we can reach Lorule Castle 2F
+function lc2F()
+    if attack() then
+        return true
+    else
+        return logic("hard")
+    end
 end

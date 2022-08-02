@@ -16,55 +16,6 @@
         ]
       },
       {
-        "type": "canvas",
-        "content": [
-          {
-            "type": "item",
-            "item": "letter",
-            "height": 20,
-            "canvas_left": 7,
-            "canvas_top": 141
-          }
-        ]
-      },
-      {
-        "type": "canvas",
-        "content": [
-          {
-            "type": "item",
-            "item": "milk",
-            "height": 20,
-            "canvas_left": 27,
-            "canvas_top": 141
-          }
-        ]
-      },
-      {
-        "type": "canvas",
-        "content": [
-          {
-            "type": "item",
-            "item": "goldbee",
-            "height": 20,
-            "canvas_left": 7, //17
-            "canvas_top": 162
-          }
-        ]
-      },
-
-      {
-        "type": "canvas",
-        "content": [
-          {
-            "type": "item",
-            "item": "bottle",
-            "height": 20,
-            "canvas_left": 27,
-            "canvas_top": 162
-          }
-        ]
-      },
-      {
         "type": "array",
         "orientation": "horizontal",
         "content": [
@@ -87,8 +38,8 @@
               [
                 "frod",
                 "irod",
-                "scoot",
-                "foul",
+                "trod",
+                "srod",
                 "beebadge",
                 "powerglove",
                 "shield"
@@ -103,11 +54,11 @@
                 "greentunic"
               ],
               [
-                "",
-                "srod",
-                "trod",
-                "hintglasses",
-                "gomode",
+                "bottle",
+                "letter",
+                "milk",
+                "goldbee",
+                "scoot",
                 "smoothgem",
                 "bracelet"
               ],

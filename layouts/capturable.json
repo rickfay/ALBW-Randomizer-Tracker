@@ -17,8 +17,8 @@
       [
         "frod",
         "irod",
-        "scoot",
-        "foul",
+        "trod",
+        "srod",
         "beebadge",
         "powerglove",
         "shield"
@@ -34,33 +34,31 @@
       ],
       [
         "bottle",
-        "srod",
-        "trod",
-        "hintglasses",
-        "greatspin",
+        "letter",
+        "milk",
+        "goldenbee",
+        "scoot",
         "smoothgem",
         "bracelet"
       ],
       [
-        "letter",
         "masterore",
         "maiamai",
-        "compass",
-        "key",
-        "bigkey",
+        "hp",
+        "hc",
+        "foul",
+        "hintglasses",
         "bowoflight"
       ],
       [
-        "milk",
         "tail",
         "horn",
         "guts",
-        "heart",
-        "hp",
-        "hc"
+        "compass",
+        "key",
+        "bigkey"
       ],
       [
-        "goldenbee",
         "rupee_green",
         "rupee_blue",
         "rupee_red",

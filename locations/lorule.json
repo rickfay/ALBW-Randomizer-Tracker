@@ -176,7 +176,8 @@
       {
         "name": "Graveyard",
         "access_rules": [
-          "merge, lamp, $attack"
+          "merge, lamp, $attack",
+          "merge, frod, $lampless"
         ],
         "children": [
           {

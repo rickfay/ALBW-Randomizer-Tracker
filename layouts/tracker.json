@@ -63,7 +63,7 @@
             "type": "tabbed",
             "tabs": [
               {
-                "title": "World",
+                "title": "Worlds",
                 "content": {
                   "type": "container",
                   "content": [
@@ -128,23 +128,23 @@
                         }
                       ]
                     },
-                    {
-                      "type": "itemgrid",
-                      "item_size": 60,
-                      "margin": "0,60,0,0",
-                      "h_alignment": "left",
-                      "rows": [
-                        [
-                          "maiamai_map"
-                        ]
-                      ]
-                    }
+//                    {
+//                      "type": "itemgrid",
+//                      "item_size": 60,
+//                      "margin": "0,60,0,0",
+//                      "h_alignment": "left",
+//                      "rows": [
+//                        [
+//                          "maiamai_map"
+//                        ]
+//                      ]
+//                    }
                   ]
                 }
               },
               {
                 "title": "EP",
-                //"icon": "images/eastern.png",
+                "icon": "images/bow.png",
                 "content": {
                   "type": "scroll",
                   "horizontal_scrollbar_visibility": "disabled",
@@ -242,7 +242,7 @@
               },
               {
                 "title": "HoG",
-                //"icon": "images/gales.png",
+                "icon": "images/trod.png",
                 "content": {
                   "type": "scroll",
                   "horizontal_scrollbar_visibility": "disabled",
@@ -340,7 +340,7 @@
               },
               {
                 "title": "ToH",
-                //"icon": "images/hera.png",
+                "icon": "images/hammer.png",
                 "content": {
                   "type": "scroll",
                   "horizontal_scrollbar_visibility": "disabled",
@@ -708,7 +708,7 @@
               },
               {
                 "title": "HC",
-                //"icon": "images/msword.png",
+                "icon": "images/msword.png",
                 "content": {
                   "type": "scroll",
                   "horizontal_scrollbar_visibility": "disabled",
@@ -914,7 +914,7 @@
               },
               {
                 "title": "PoD",
-                //"icon": "images/dark.png",
+                "icon": "images/bombs.png",
                 "content": {
                   "type": "scroll",
                   "horizontal_scrollbar_visibility": "disabled",
@@ -1012,7 +1012,7 @@
               },
               {
                 "title": "SP",
-                //"icon": "images/swamp.png",
+                "icon": "images/hookshot.png",
                 "content": {
                   "type": "scroll",
                   "horizontal_scrollbar_visibility": "disabled",
@@ -1110,7 +1110,7 @@
               },
               {
                 "title": "SW",
-                //"icon": "images/skull.png",
+                "icon": "images/lamp.png",
                 "content": {
                   "type": "scroll",
                   "horizontal_scrollbar_visibility": "disabled",
@@ -1181,7 +1181,7 @@
               },
               {
                 "title": "TH",
-                //"icon": "images/thieves.png",
+                "icon": "images/flippers.png",
                 "content": {
                   "type": "scroll",
                   "horizontal_scrollbar_visibility": "disabled",
@@ -1279,7 +1279,7 @@
               },
               {
                 "title": "IR",
-                //"icon": "images/ice.png",
+                "icon": "images/frod.png",
                 "content": {
                   "type": "scroll",
                   "horizontal_scrollbar_visibility": "disabled",
@@ -1485,7 +1485,7 @@
               },
               {
                 "title": "DP",
-                //"icon": "images/desert.png",
+                "icon": "images/srod.png",
                 "content": {
                   "type": "scroll",
                   "horizontal_scrollbar_visibility": "disabled",
@@ -1583,7 +1583,7 @@
               },
               {
                 "title": "TR",
-                //"icon": "images/turtle.png",
+                "icon": "images/irod.png",
                 "content": {
                   "type": "scroll",
                   "horizontal_scrollbar_visibility": "disabled",
@@ -1681,7 +1681,7 @@
               },
               {
                 "title": "LC",
-                //"icon": "images/bow_light.png",
+                "icon": "images/bow_light.png",
                 "content": {
                   "type": "scroll",
                   "horizontal_scrollbar_visibility": "disabled",

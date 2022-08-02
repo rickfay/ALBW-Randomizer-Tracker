@@ -14,9 +14,6 @@
     "children": [
       {
         "name": "Eastern Palace",
-        "access_rules": [
-          "merge"
-        ],
         "map_locations": [
           {
             "map": "ep1F",
@@ -26,23 +23,17 @@
         ],
         "sections": [
           {
-            "name": "1F Entrance Merge Chest",
+            "name": "1F Merge Chest",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "ep_chest_01",
+            "access_rules": [
+              "merge"
+            ]
           }
         ]
       },
       {
         "name": "Eastern Palace",
-        "access_rules": [
-          "bow",
-          "hookshot",
-          "boomerang",
-          "bombs",
-          // pots,
-          "[hard]",
-          "[], niceirod"
-        ],
         "map_locations": [
           {
             "map": "ep1F",
@@ -54,15 +45,21 @@
           {
             "name": "1F Left Door Chest",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "ep_chest_02",
+            "access_rules": [
+              "bow",
+              "hookshot",
+              "boomerang",
+              "bombs",
+              // pots,
+              "[hard]",
+              "[], niceirod"
+            ]
           }
         ]
       },
       {
         "name": "Eastern Palace",
-        "access_rules": [
-          "$attack"
-        ],
         "map_locations": [
           {
             "map": "ep1F",
@@ -72,17 +69,17 @@
         ],
         "sections": [
           {
-            "name": "1F Left Popo Room",
+            "name": "1F Popo Room",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "ep_chest_03",
+            "access_rules": [
+              "$attack"
+            ]
           }
         ]
       },
       {
         "name": "Eastern Palace",
-        "access_rules": [
-          "$attack"
-        ],
         "map_locations": [
           {
             "map": "ep1F",
@@ -94,20 +91,15 @@
           {
             "name": "1F Secret Room",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "ep_chest_04",
+            "access_rules": [
+              "$attack"
+            ]
           }
         ]
       },
       {
         "name": "Eastern Palace",
-        "access_rules": [
-          "bow",
-          "boomerang",
-          "hookshot",
-          "bombs",
-          "[hard], irod",
-          "[hard], msword"
-        ],
         "map_locations": [
           {
             "map": "ep1F",
@@ -119,180 +111,182 @@
           {
             "name": "1F Switch Room",
             "capture_item": true,
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Eastern Palace Upper Floors",
-        "access_rules": [
-          "$attack"
-        ],
-        "children": [
-          {
-            "name": "Eastern Palace",
-            "map_locations": [
-              {
-                "map": "ep2F",
-                "x": 48,
-                "y": 69
-              }
-            ],
-            "sections": [
-              {
-                "name": "2F Ball Room",
-                "capture_item": true,
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Eastern Palace",
-            "map_locations": [
-              {
-                "map": "ep2F",
-                "x": 130,
-                "y": 41
-              }
-            ],
-            "sections": [
-              {
-                "name": "2F Kill Popos",
-                "capture_item": true,
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Eastern Palace",
+            "hosted_item": "ep_chest_05",
             "access_rules": [
               "bow",
               "boomerang",
               "hookshot",
               "bombs",
-              "irod",
-              // You can use 4 of the 6 pots
-              "[hard]"
-            ],
-            "map_locations": [
-              {
-                "map": "ep2F",
-                "x": 165,
-                "y": 110
-              }
-            ],
-            "sections": [
-              {
-                "name": "2F 4 Switches Room",
-                "capture_item": true,
-                "item_count": 1
-              }
+              "[hard], irod",
+              "[hard], msword"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "name": "Eastern Palace",
+        "map_locations": [
           {
-            "name": "Eastern Palace",
-            "map_locations": [
-              {
-                "map": "ep2F",
-                "x": 40,
-                "y": 100
-              }
-            ],
-            "sections": [
-              {
-                "name": "2F Big Key Chest",
-                "chest_unopened_img": "images/chest_big_unopened.png",
-                "chest_opened_img": "images/chest_big_opened.png",
-                "capture_item": true,
-                "item_count": 1
-              }
+            "map": "ep2F",
+            "x": 48,
+            "y": 69
+          }
+        ],
+        "sections": [
+          {
+            "name": "2F Ball Room",
+            "capture_item": true,
+            "hosted_item": "ep_chest_06",
+            "access_rules": [
+              "$attack"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "name": "Eastern Palace",
+        "map_locations": [
           {
-            "name": "Post-Boss Fight",
+            "map": "ep2F",
+            "x": 130,
+            "y": 41
+          }
+        ],
+        "sections": [
+          {
+            "name": "2F Kill Popos",
+            "capture_item": true,
+            "hosted_item": "ep_chest_07",
+            "access_rules": [
+              "$attack"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Eastern Palace",
+        "map_locations": [
+          {
+            "map": "ep2F",
+            "x": 165,
+            "y": 110
+          }
+        ],
+        "sections": [
+          {
+            "name": "2F Switches Room",
+            "capture_item": true,
+            "hosted_item": "ep_chest_08",
             "access_rules": [
               "bow",
               "bombs",
-              "hookshot, $attack",
-              "boomerang, $attack",
-              "[hell], msword",
-              "[hell], irod"
-            ],
-            "children": [
-              {
-                "name": "Eastern Palace",
-                "map_locations": [
-                  {
-                    "map": "ep3F",
-                    "x": 80,
-                    "y": 77
-                  }
-                ],
-                "sections": [
-                  {
-                    "name": "Defeat Yuga",
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ]
-              },
-              {
-                "name": "Eastern Palace",
-                "map_locations": [
-                  {
-                    "map": "ep3F",
-                    "x": 88,
-                    "y": 69
-                  }
-                ],
-                "sections": [
-                  {
-                    "name": "Heart Container",
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ]
-              },
-              {
-                "name": "Eastern Palace",
-                "access_rules": [
-                  "merge"
-                ],
-                "map_locations": [
-                  {
-                    "map": "ep3F",
-                    "x": 132,
-                    "y": 77
-                  }
-                ],
-                "sections": [
-                  {
-                    "name": "3F Escape Chest",
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ]
-              },
-              {
-                "name": "Eastern Palace",
-                "access_rules": [
-                  "merge"
-                ],
-                "map_locations": [
-                  {
-                    "map": "ep1F",
-                    "x": 50,
-                    "y": 100
-                  }
-                ],
-                "sections": [
-                  {
-                    "name": "1F Escape Chest",
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ]
-              }
+              "irod",
+              "$attack, boomerang",
+              "$attack, hookshot",
+              // You can use 4 of the 6 pots
+              "[hard], $attack"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Eastern Palace",
+        "map_locations": [
+          {
+            "map": "ep2F",
+            "x": 40,
+            "y": 100
+          }
+        ],
+        "sections": [
+          {
+            "name": "2F Big Chest",
+            "chest_unopened_img": "images/chest_big_unopened.png",
+            "chest_opened_img": "images/chest_big_opened.png",
+            "capture_item": true,
+            "hosted_item": "ep_chest_09",
+            "access_rules": [
+              "$attack"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Eastern Palace",
+        "map_locations": [
+          {
+            "map": "ep3F",
+            "x": 80,
+            "y": 77
+          }
+        ],
+        "sections": [
+          {
+            "name": "3F Yuga",
+            "capture_item": true,
+            "hosted_item": "ep_chest_10",
+            "access_rules": [
+              "$yuga1"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Eastern Palace",
+        "map_locations": [
+          {
+            "map": "ep3F",
+            "x": 88,
+            "y": 69
+          }
+        ],
+        "sections": [
+          {
+            "name": "3F Heart Container",
+            "capture_item": true,
+            "hosted_item": "ep_chest_11",
+            "access_rules": [
+              "$yuga1"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Eastern Palace",
+        "map_locations": [
+          {
+            "map": "ep3F",
+            "x": 132,
+            "y": 77
+          }
+        ],
+        "sections": [
+          {
+            "name": "3F Escape Chest",
+            "capture_item": true,
+            "hosted_item": "ep_chest_12",
+            "access_rules": [
+              "$yuga1, merge"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Eastern Palace",
+        "map_locations": [
+          {
+            "map": "ep1F",
+            "x": 50,
+            "y": 100
+          }
+        ],
+        "sections": [
+          {
+            "name": "1F Escape Chest",
+            "capture_item": true,
+            "hosted_item": "ep_chest_13",
+            "access_rules": [
+              "$yuga1, merge"
             ]
           }
         ]
@@ -303,15 +297,150 @@
           {
             "name": "Pendant of Courage",
             "access_rules": [
-              "{}",
-              "bow",
-              "bombs",
-              "hookshot, $attack",
-              "boomerang, $attack",
-              "[hell], msword",
-              "[hell], irod"
+              "$yuga1"
             ],
             "hosted_item": "eastern"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "ep1F",
+            "x": 89,
+            "y": 162,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "name": "Eastern Palace",
+        "sections": [
+          {
+            "name": "1F Merge Chest",
+            "capture_item": true,
+            "hosted_item": "ep_chest_01",
+            "access_rules": [
+              "merge"
+            ]
+          },
+          {
+            "name": "1F Left Door Chest",
+            "capture_item": true,
+            "hosted_item": "ep_chest_02",
+            "access_rules": [
+              "bow",
+              "hookshot",
+              "boomerang",
+              "bombs",
+              // pots,
+              "[hard]",
+              "[], niceirod"
+            ]
+          },
+          {
+            "name": "1F Popo Room",
+            "capture_item": true,
+            "hosted_item": "ep_chest_03",
+            "access_rules": [
+              "$attack"
+            ]
+          },
+          {
+            "name": "1F Secret Room",
+            "capture_item": true,
+            "hosted_item": "ep_chest_04",
+            "access_rules": [
+              "$attack"
+            ]
+          },
+          {
+            "name": "1F Switch Room    ",
+            "capture_item": true,
+            "hosted_item": "ep_chest_05",
+            "access_rules": [
+              "bow",
+              "boomerang",
+              "hookshot",
+              "bombs",
+              "[hard], irod",
+              "[hard], msword"
+            ]
+          },
+          {
+            "name": "2F Ball Room",
+            "capture_item": true,
+            "hosted_item": "ep_chest_06",
+            "access_rules": [
+              "$attack"
+            ]
+          },
+          {
+            "name": "2F Kill Popos",
+            "capture_item": true,
+            "hosted_item": "ep_chest_07",
+            "access_rules": [
+              "$attack"
+            ]
+          },
+          {
+            "name": "2F Switches Room ",
+            "capture_item": true,
+            "hosted_item": "ep_chest_08",
+            "access_rules": [
+              "bow",
+              "bombs",
+              "irod",
+              "$attack, boomerang",
+              "$attack, hookshot",
+              // You can use 4 of the 6 pots
+              "[hard], $attack"
+            ]
+          },
+          {
+            "name": "2F Big Chest",
+            "capture_item": true,
+            "hosted_item": "ep_chest_09",
+            "access_rules": [
+              "$attack"
+            ]
+          },
+          {
+            "name": "3F Yuga",
+            "capture_item": true,
+            "hosted_item": "ep_chest_10",
+            "access_rules": [
+              "$yuga1"
+            ]
+          },
+          {
+            "name": "3F Heart Container",
+            "capture_item": true,
+            "hosted_item": "ep_chest_11",
+            "access_rules": [
+              "$yuga1"
+            ]
+          },
+          {
+            "name": "3F Escape Chest",
+            "capture_item": true,
+            "hosted_item": "ep_chest_12",
+            "access_rules": [
+              "$yuga1, merge"
+            ]
+          },
+          {
+            "name": "1F Escape Chest",
+            "capture_item": true,
+            "hosted_item": "ep_chest_13",
+            "access_rules": [
+              "$yuga1, merge"
+            ]
+          },
+          {
+            "name": "Pendant of Courage",
+            "hosted_item": "eastern",
+            "access_rules": [
+              "$yuga1"
+            ]
           }
         ],
         "map_locations": [
@@ -320,12 +449,6 @@
             "x": 1921,
             "y": 820,
             "size": 60
-          },
-          {
-            "map": "ep1F",
-            "x": 89,
-            "y": 162,
-            "size": 15
           }
         ]
       }

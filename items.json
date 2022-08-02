@@ -313,17 +313,6 @@
     "max_quantity": 100
   },
   {
-    "name": "Maiamai Map",
-    "type": "progressive",
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/maiamai_map.png",
-        "codes": "maiamai_map"
-      }
-    ]
-  },
-  {
     "name": "Master Ore",
     "type": "consumable",
     "img": "images/master_ore.png",

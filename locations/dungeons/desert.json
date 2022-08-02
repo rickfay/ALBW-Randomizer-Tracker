@@ -1,9 +1,9 @@
 [
   {
     "name": "Desert Palace",
-    "color": "#384ce2",
+    "color": "#2d3bb7",
     "access_rules": [
-      "merge, srod"
+      "merge"
     ],
     "children": [
       {
@@ -17,321 +17,358 @@
         ],
         "sections": [
           {
-            "name": "1F Entrance Chest",
+            "name": "1F Entrance",
             "capture_item": true,
-            "item_count": 1
+            "hosted_item": "dp_chest_01",
+            "access_rules": [
+              "srod"
+            ]
           }
         ]
       },
       {
-        "name": "1F Post-Miniboss Chests",
-        "access_rules": [
-          "$switch, $attack",
-          "[advanced], $miseryMireOoB"
+        "name": "Desert Palace",
+        "map_locations": [
+          {
+            "map": "desert1F",
+            "x": 46,
+            "y": 54
+          }
         ],
-        "children": [
+        "sections": [
           {
-            "name": "Desert Palace",
-            "map_locations": [
-              {
-                "map": "desert1F",
-                "x": 46,
-                "y": 54
-              }
-            ],
-            "sections": [
-              {
-                "name": "1F West Upper Chest",
-                "capture_item": true,
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Desert Palace",
-            "map_locations": [
-              {
-                "map": "desert1F",
-                "x": 41,
-                "y": 82
-              }
-            ],
-            "sections": [
-              {
-                "name": "1F West Lower Chest",
-                "capture_item": true,
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Desert Palace",
-            "map_locations": [
-              {
-                "map": "desert1F",
-                "x": 54,
-                "y": 26
-              }
-            ],
-            "sections": [
-              {
-                "name": "1F Sand Control Room Chest",
-                "capture_item": true,
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Desert Palace",
-            "map_locations": [
-              {
-                "map": "desert1F",
-                "x": 54,
-                "y": 136
-              }
-            ],
-            "sections": [
-              {
-                "name": "1F Miniboss Room Chest",
-                "capture_item": true,
-                "access_rules": [
-                  "titansmitt"
-                ],
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Desert Palace",
-            "map_locations": [
-              {
-                "map": "desert1F",
-                "x": 110,
-                "y": 27
-              }
-            ],
-            "sections": [
-              {
-                "name": "1F Big Chest",
-                "chest_unopened_img": "images/chest_big_unopened.png",
-                "chest_opened_img": "images/chest_big_opened.png",
-                "capture_item": true,
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Desert Palace Upper Floors",
+            "name": "1F Sand Island",
+            "capture_item": true,
+            "hosted_item": "dp_chest_02",
             "access_rules": [
-              "titansmitt",
-              "[advanced], $miseryMireOoB"
-            ],
-            "children": [
-              {
-                "name": "Desert Palace",
-                "map_locations": [
-                  {
-                    "map": "desert2F",
-                    "x": 98,
-                    "y": 61
-                  }
-                ],
-                "sections": [
-                  {
-                    "name": "2F Center Room Chest",
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ]
-              },
-              {
-                "name": "Desert Palace",
-                "map_locations": [
-                  {
-                    "map": "desert2F",
-                    "x": 68,
-                    "y": 54
-                  }
-                ],
-                "sections": [
-                  {
-                    "name": "2F Left Hallway Big Rock",
-                    "access_rules": [
-                      "titansmitt"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ]
-              },
-              {
-                "name": "Desert Palace",
-                "map_locations": [
-                  {
-                    "map": "desert2F",
-                    "x": 113,
-                    "y": 54
-                  }
-                ],
-                "sections": [
-                  {
-                    "name": "2F Right Hallway Big Rock",
-                    "access_rules": [
-                      "titansmitt"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ]
-              },
-              {
-                "name": "Desert Palace",
-                "map_locations": [
-                  {
-                    "map": "desert2F",
-                    "x": 148,
-                    "y": 76
-                  }
-                ],
-                "sections": [
-                  {
-                    "name": "2F Big Chest",
-                    "chest_unopened_img": "images/chest_big_unopened.png",
-                    "chest_opened_img": "images/chest_big_opened.png",
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ]
-              },
-              {
-                "name": "Desert Palace",
-                "map_locations": [
-                  {
-                    "map": "desert2F",
-                    "x": 148,
-                    "y": 88
-                  }
-                ],
-                "sections": [
-                  {
-                    "name": "2F Next to Big Chest",
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ]
-              },
-              {
-                "name": "Desert Palace",
-                "map_locations": [
-                  {
-                    "map": "desert2F",
-                    "x": 148,
-                    "y": 33
-                  }
-                ],
-                "sections": [
-                  {
-                    "name": "2F NE Big Rock",
-                    "access_rules": [
-                      "titansmitt"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ]
-              },
-              {
-                "name": "Desert Palace",
-                "map_locations": [
-                  {
-                    "map": "desert2F",
-                    "x": 45,
-                    "y": 89
-                  }
-                ],
-                "sections": [
-                  {
-                    "name": "2F West Fight Room Chest",
-                    "access_rules": [
-                      "$attack"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ]
-              },
-              {
-                "name": "Desert Palace",
-                "map_locations": [
-                  {
-                    "map": "desert3F",
-                    "x": 33,
-                    "y": 24
-                  }
-                ],
-                "sections": [
-                  {
-                    "name": "3F Behind the Falling Sand",
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ]
-              },
-              {
-                "name": "Desert Palace",
-                "map_locations": [
-                  {
-                    "map": "desert3F",
-                    "x": 100,
-                    "y": 88
-                  }
-                ],
-                "sections": [
-                  {
-                    "name": "3F Gimos Chest",
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ]
-              }
+              "srod, $switch, $attack",
+              "$reverseDP"
             ]
           }
         ]
-      }
-    ]
-  },
-  {
-    "name": "Zaganaga's Arena",
-    "color": "#2d3bb7",
-
-    "children": [
+      },
+      {
+        "name": "Desert Palace",
+        "map_locations": [
+          {
+            "map": "desert1F",
+            "x": 41,
+            "y": 82
+          }
+        ],
+        "sections": [
+          {
+            "name": "1F West Middle",
+            "capture_item": true,
+            "hosted_item": "dp_chest_03",
+            "access_rules": [
+              "srod, $switch, $attack",
+              "$reverseDP"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Desert Palace",
+        "map_locations": [
+          {
+            "map": "desert1F",
+            "x": 54,
+            "y": 26
+          }
+        ],
+        "sections": [
+          {
+            "name": "1F Sand Controls",
+            "capture_item": true,
+            "hosted_item": "dp_chest_04",
+            "access_rules": [
+              "srod, $switch, $attack",
+              "$reverseDP"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Desert Palace",
+        "map_locations": [
+          {
+            "map": "desert1F",
+            "x": 54,
+            "y": 136
+          }
+        ],
+        "sections": [
+          {
+            "name": "1F Miniboss Room",
+            "capture_item": true,
+            "hosted_item": "dp_chest_05",
+            "access_rules": [
+              "srod, $switch, $attack, titansmitt",
+              "$reverseDP, titansmitt"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Desert Palace",
+        "map_locations": [
+          {
+            "map": "desert1F",
+            "x": 110,
+            "y": 27
+          }
+        ],
+        "sections": [
+          {
+            "name": "1F Big Chest",
+            "capture_item": true,
+            "hosted_item": "dp_chest_06",
+            "access_rules": [
+              "srod, $switch, $attack",
+              "$reverseDP"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Desert Palace",
+        "map_locations": [
+          {
+            "map": "desert2F",
+            "x": 98,
+            "y": 61
+          }
+        ],
+        "sections": [
+          {
+            "name": "2F Center Room",
+            "capture_item": true,
+            "hosted_item": "dp_chest_07",
+            "access_rules": [
+              "$dp2F",
+              "$reverseDP"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Desert Palace",
+        "map_locations": [
+          {
+            "map": "desert2F",
+            "x": 68,
+            "y": 54
+          }
+        ],
+        "sections": [
+          {
+            "name": "2F W Big Rock",
+            "capture_item": true,
+            "hosted_item": "dp_chest_08",
+            "access_rules": [
+              "$dp2F",
+              "$reverseDP, titansmitt"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Desert Palace",
+        "map_locations": [
+          {
+            "map": "desert2F",
+            "x": 113,
+            "y": 54
+          }
+        ],
+        "sections": [
+          {
+            "name": "2F E Big Rock",
+            "capture_item": true,
+            "hosted_item": "dp_chest_09",
+            "access_rules": [
+              "$dp2F",
+              "$reverseDP, titansmitt"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Desert Palace",
+        "map_locations": [
+          {
+            "map": "desert2F",
+            "x": 148,
+            "y": 76
+          }
+        ],
+        "sections": [
+          {
+            "name": "2F Big Chest",
+            "capture_item": true,
+            "hosted_item": "dp_chest_10",
+            "access_rules": [
+              "$dp2F",
+              "$reverseDP"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Desert Palace",
+        "map_locations": [
+          {
+            "map": "desert2F",
+            "x": 148,
+            "y": 88
+          }
+        ],
+        "sections": [
+          {
+            "name": "2F Below Big Chest",
+            "capture_item": true,
+            "hosted_item": "dp_chest_11",
+            "access_rules": [
+              "$dp2F",
+              "$reverseDP"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Desert Palace",
+        "map_locations": [
+          {
+            "map": "desert2F",
+            "x": 148,
+            "y": 33
+          }
+        ],
+        "sections": [
+          {
+            "name": "2F NE Big Rock",
+            "capture_item": true,
+            "hosted_item": "dp_chest_12",
+            "access_rules": [
+              "$dp2F",
+              "$reverseDP, titansmitt"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Desert Palace",
+        "map_locations": [
+          {
+            "map": "desert2F",
+            "x": 45,
+            "y": 89
+          }
+        ],
+        "sections": [
+          {
+            "name": "2F Leever Room",
+            "capture_item": true,
+            "hosted_item": "dp_chest_13",
+            "access_rules": [
+              "$dp2F",
+              "$reverseDP, $attack"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Desert Palace",
+        "map_locations": [
+          {
+            "map": "desert3F",
+            "x": 33,
+            "y": 24
+          }
+        ],
+        "sections": [
+          {
+            "name": "3F Behind Sand",
+            "capture_item": true,
+            "hosted_item": "dp_chest_14",
+            "access_rules": [
+              "$dp2F",
+              "$reverseDP"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Desert Palace",
+        "map_locations": [
+          {
+            "map": "desert3F",
+            "x": 100,
+            "y": 88
+          }
+        ],
+        "sections": [
+          {
+            "name": "3F Gimos Chest",
+            "capture_item": true,
+            "hosted_item": "dp_chest_15",
+            "access_rules": [
+              "$dp2F",
+              "$reverseDP"
+            ]
+          }
+        ]
+      },
       {
         "name": "Desert Palace",
         "map_locations": [
           {
             "map": "lorule",
-            "x": 165,
+            "x": 140,
+            //165
             "y": 1602
           },
           {
             "map": "desert3F",
-            "x": 126,
+            "x": 121,
+            // 126
             "y": 127
           }
         ],
         "sections": [
           {
-            "name": "Heart Container",
+            "name": "Zaganaga",
             "capture_item": true,
-            "item_count": 1,
+            "hosted_item": "dp_chest_16",
             "access_rules": [
-              // Intended
-              "merge, srod, titansmitt, $attack",
-              // Desert Palace Skip. IRod + TRod make it faster, but aren't actually needed for the boost method
-              "[advanced], $miseryMireOoB, boots",
-              // Skip Dungeon, but fight Zaganaga. Titan's Mitt not needed with the skip
-              "[advanced], $miseryMireOoB, srod, $attack",
-              // Shitty versions
+              "$dp2F",
+              "$miseryMireOoB, boots",
+              "$miseryMireOoB, srod, $attack",
+              "[hell], $miseryMireOoB, bow",
+              "[hell], $miseryMireOoB, msword"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Desert Palace",
+        "map_locations": [
+          {
+            "map": "desert3F",
+            "x": 134,
+            "y": 127,
+            "size": 15
+          }
+        ],
+        "sections": [
+          {
+            "name": "Sage Irene",
+            "hosted_item": "desert",
+            "access_rules": [
+              "$dp2F",
+              "$miseryMireOoB, boots",
+              "$miseryMireOoB, srod, $attack",
               "[hell], $miseryMireOoB, bow",
               "[hell], $miseryMireOoB, msword"
             ]
@@ -352,27 +389,162 @@
             "x": 192,
             "y": 1602,
             "size": 60
-          },
-          {
-            "map": "desert3F",
-            "x": 134,
-            "y": 127,
-            "size": 15
           }
         ],
         "sections": [
           {
+            "name": "1F Entrance",
+            "capture_item": true,
+            "hosted_item": "dp_chest_01",
+            "access_rules": [
+              "srod"
+            ]
+          },
+          {
+            "name": "1F West Middle",
+            "capture_item": true,
+            "hosted_item": "dp_chest_03",
+            "access_rules": [
+              "srod, $switch, $attack",
+              "$reverseDP"
+            ]
+          },
+          {
+            "name": "1F Sand Controls",
+            "capture_item": true,
+            "hosted_item": "dp_chest_04",
+            "access_rules": [
+              "srod, $switch, $attack",
+              "$reverseDP"
+            ]
+          },
+          {
+            "name": "1F Sand Island",
+            "capture_item": true,
+            "hosted_item": "dp_chest_02",
+            "access_rules": [
+              "srod, $switch, $attack",
+              "$reverseDP"
+            ]
+          },
+          {
+            "name": "1F Big Chest",
+            "capture_item": true,
+            "hosted_item": "dp_chest_06",
+            "access_rules": [
+              "srod, $switch, $attack",
+              "$reverseDP"
+            ]
+          },
+          {
+            "name": "1F Miniboss Room",
+            "capture_item": true,
+            "hosted_item": "dp_chest_05",
+            "access_rules": [
+              "srod, $switch, $attack, titansmitt",
+              "$reverseDP, titansmitt"
+            ]
+          },
+          {
+            "name": "2F W Big Rock",
+            "capture_item": true,
+            "hosted_item": "dp_chest_08",
+            "access_rules": [
+              "$dp2F",
+              "$reverseDP, titansmitt"
+            ]
+          },
+          {
+            "name": "2F Center Room",
+            "capture_item": true,
+            "hosted_item": "dp_chest_07",
+            "access_rules": [
+              "$dp2F",
+              "$reverseDP"
+            ]
+          },
+          {
+            "name": "2F Below Big Chest",
+            "capture_item": true,
+            "hosted_item": "dp_chest_11",
+            "access_rules": [
+              "$dp2F",
+              "$reverseDP"
+            ]
+          },
+          {
+            "name": "2F NE Big Rock",
+            "capture_item": true,
+            "hosted_item": "dp_chest_12",
+            "access_rules": [
+              "$dp2F",
+              "$reverseDP, titansmitt"
+            ]
+          },
+          {
+            "name": "2F E Big Rock",
+            "capture_item": true,
+            "hosted_item": "dp_chest_09",
+            "access_rules": [
+              "$dp2F",
+              "$reverseDP, titansmitt"
+            ]
+          },
+          {
+            "name": "2F Big Chest",
+            "capture_item": true,
+            "hosted_item": "dp_chest_10",
+            "access_rules": [
+              "$dp2F",
+              "$reverseDP"
+            ]
+          },
+          {
+            "name": "2F Leever Room",
+            "capture_item": true,
+            "hosted_item": "dp_chest_13",
+            "access_rules": [
+              "$dp2F",
+              "$reverseDP, $attack"
+            ]
+          },
+          {
+            "name": "3F Behind Sand",
+            "capture_item": true,
+            "hosted_item": "dp_chest_14",
+            "access_rules": [
+              "$dp2F",
+              "$reverseDP"
+            ]
+          },
+          {
+            "name": "3F Gimos Chest",
+            "capture_item": true,
+            "hosted_item": "dp_chest_15",
+            "access_rules": [
+              "$dp2F",
+              "$reverseDP"
+            ]
+          },
+          {
+            "name": "Zaganaga",
+            "capture_item": true,
+            "hosted_item": "dp_chest_16",
+            "access_rules": [
+              "$dp2F",
+              "$miseryMireOoB, boots",
+              "$miseryMireOoB, srod, $attack",
+              "[hell], $miseryMireOoB, bow",
+              "[hell], $miseryMireOoB, msword"
+            ]
+          },
+          {
             "name": "Sage Irene",
             "hosted_item": "desert",
             "access_rules": [
-              "{merge, srod}",
-              // Intended
-              "merge, srod, titansmitt, $attack",
-              // Desert Palace Skip. IRod + TRod make it faster, but aren't actually needed for the boost method
-              "[advanced], $miseryMireOoB, boots",
-              // Skip Dungeon, but fight Zaganaga. Titan's Mitt not needed with the skip
-              "[advanced], $miseryMireOoB, srod, $attack",
-              // Shitty versions
+              "$dp2F",
+              "$miseryMireOoB, boots",
+              "$miseryMireOoB, srod, $attack",
               "[hell], $miseryMireOoB, bow",
               "[hell], $miseryMireOoB, msword"
             ]

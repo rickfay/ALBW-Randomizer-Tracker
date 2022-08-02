@@ -153,7 +153,7 @@ This is an [EmoTracker](https://emotracker.net/) pack for tracking progress in T
 - **ALttP Inspired Compact Menu Layout**: Given this is the sequel to one of the most famous games to
   receive a randomizer, I really wanted this tracker to pay homage to ALttP with its item layout. The layout tries to
   copy the Start Menu of ALttP using its sequel's items, with minimal substitutions, while also making room for this
-  game's new additions. The entire layout is kept compact, with all items fitting neatly inside a 6x8 grid.
+  game's new additions.
 
 
 - **Item-Only Mode:** Disable maps and show only the compact item tracker.

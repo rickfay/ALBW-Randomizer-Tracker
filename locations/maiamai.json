@@ -160,7 +160,7 @@
         ],
         "sections": [
           {
-            "name": "Kakariko Path Rock",
+            "name": "Lost Woods Path Rock",
             "item_count": 1,
             "capture_item": true,
             "visibility_rules": [
@@ -459,7 +459,9 @@
               "{}",
               "merge, flippers",
               "[advanced], merge, $fakeFlippers",
-              "[hell], merge, boots"
+              "[hell], merge, boots",
+              "[hell], merge, frod",
+              "[hell], merge, bombs",
             ]
           }
         ]
@@ -511,7 +513,8 @@
             ],
             "access_rules": [
               "{}",
-              "merge, bombs"
+              "lamp, merge, bombs",
+              "$lampless, frod, merge, bombs"
             ]
           }
         ]
@@ -626,7 +629,7 @@
             "item_count": 1,
             "capture_item": true,
             "visibility_rules": [
-              "maiamai_map"
+              "minigames_enabled, maiamai_map"
             ],
             "access_rules": [
               "{}",
@@ -1390,11 +1393,24 @@
             ],
             "sections": [
               {
-                "name": "Under NW Bush",
+                "name": "Under Skull",
                 "item_count": 1,
                 "capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
+                ],
+                "access_rules": [
+                  "fsword",
+                  "bow",
+                  "boomerang",
+                  "hookshot",
+                  "bombs",
+                  "frod",
+                  "irod",
+                  "hammer",
+                  "srod",
+                  "boots",
+                  "powerglove"
                 ]
               }
             ]
@@ -1469,11 +1485,25 @@
             ],
             "sections": [
               {
-                "name": "West Cliff Skull",
+                "name": "West Skull",
                 "item_count": 1,
                 "capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
+                ],
+                "access_rules": [
+                  "fsword",
+                  "bow",
+                  "boomerang",
+                  "hookshot",
+                  "bombs",
+                  "frod",
+                  "irod",
+                  "hammer",
+                  "srod",
+                  "boots",
+                  "powerglove",
+                  "[hard], merge",
                 ]
               }
             ]
@@ -1494,7 +1524,9 @@
                 "item_count": 1,
                 "capture_item": true,
                 "access_rules": [
-                  "titansmitt"
+                  "hammer, titansmitt",
+                  "[basic], titansmitt, nicebombs",
+                  "[hell], titansmitt, bombs"
                 ],
                 "visibility_rules": [
                   "maiamai_map"
@@ -1757,8 +1789,7 @@
                 "access_rules": [
                   "{}",
                   "flippers",
-                  "[advanced], $fakeFlippers",
-                  "[hell], boots"
+                  "[advanced], boots"
                 ]
               }
             ]
@@ -2072,7 +2103,7 @@
                   "merge"
                 ],
                 "visibility_rules": [
-                  "maiamai_map"
+                  "minigames_enabled, maiamai_map"
                 ]
               }
             ]

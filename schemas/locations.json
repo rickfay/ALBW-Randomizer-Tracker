@@ -1,0 +1,172 @@
+{
+    "$id": "https://emotracker.net/developers/schemas/locations.json",
+    "title": "EmoTracker: Locations Container",
+    "definitions": {
+        "location_visual_properties": {
+            "type": "object",
+            "properties": {
+                "chest_opened_img" : {
+                    "type": "string"
+                },
+                "chest_unopened_img" : {
+                    "type": "string"
+                },                       
+                "always_allow_chest_manipulation": {
+                    "type": "boolean",
+                    "description": "If set to true, chests here can be manipulated regardless of whether they are logically accessible or not (default is false)"
+                }
+            }
+        },
+        "section": {
+            "type": "object",
+            "description": "A section within a location, which can contain chests",
+            "required": [
+                "name"
+            ],
+            "allOf": [
+                { "$ref": "#/definitions/location_visual_properties" }
+            ],
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "The human-readable name of the section. Must be unique within the pack."
+                },
+                "short_name": {
+                    "type": "string",
+                    "description": "An optional shortened human-readable name of the section. Will be used when locations are pinned."
+                },
+                "clear_as_group": {
+                    "type": "boolean",
+                    "description": "Determines whether this section's chests are cleared in one click, or must be cleared one at a time (default is true)"
+                },
+                "capture_item": {
+                    "type": "boolean",
+                    "description": "Determines whether this section has an item capture spot or not (default is false)"
+                },
+                "hosted_item": {
+                    "type": "string",
+                    "description": "An item code which is 'hosted' by this section. It will be granted when this section is cleared, and can be tracked from the section's UI"
+                },
+                "item_count": {
+                    "type":"integer",
+                    "description": "The number of available items (chests) in this section."
+                },                
+                "access_rules": {
+                    "type":"array",
+                    "description": "An array of access rules, where each is a comma delimited list of codes and modifiers",
+                    "items" : {
+                        "type":"string"
+                    }
+                },
+                "visibility_rules": {
+                    "type":"array",
+                    "description": "An array of access rules which can filter the visibility of this section",
+                    "items": { "type":"string" }
+                },
+                "capture_item_layout": {
+                    "type": "string",
+                    "description": "A layout name (must already be loaded) that the item capture spot, if enabled, will use for the associated popup."
+                }
+            }
+        },
+        "location": {
+            "type": "object",
+            "required": [
+                "name"
+            ],
+            "allOf": [
+                { "$ref": "#/definitions/location_visual_properties" }
+            ],
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "The human-readable name of the location. Must be unique within the pack."
+                },
+                "short_name": {
+                    "type": "string",
+                    "description": "An optional shortened human-readable name of the location. Will be used when locations are pinned."
+                },
+                "parent": {
+                    "type": "string",
+                    "description": "Allows for manually marking a node as the child of another node. The specified parent must have already been declared."
+                },                
+                "color": {
+                    "type": "string",
+                    "description": "The color of the strip along the side of the location card. This value is inherited."
+                },
+                "access_rules": {
+                    "type":"array",
+                    "description": "An array of access rules, where each is a comma delimited list of codes and modifiers",
+                    "items" : { "type":"string" }
+                },
+                "sections": {
+                    "type":"array",
+                    "description": "An array of sections contained within this location",
+                    "items" : { "$ref": "#/definitions/section" }                        
+                },
+                "children": {
+                    "type":"array",
+                    "description": "An array of child locations which inherit the logical access requirements of this location",
+                    "items" : { "$ref": "#/definitions/location" }                        
+                },                
+                "map_locations": {
+                    "type":"array",
+                    "description": "An array of map locations, which place this location on a map",
+                    "items" : {
+                        "type":"object",
+                        "description": "An array of access rules, where each is a comma delimited list of codes and modifiers",
+                        "required": [ "map", "x", "y" ],
+                        "properties": {
+                            "map": {
+                                "type": "string",
+                                "description": "The name of a previously registered map"
+                            },
+                            "x": {
+                                "type": "integer",
+                                "description": "The X (horizontal) coordinate of this location on the specified map"
+                            },
+                            "y": {
+                                "type": "integer",
+                                "description": "The Y (vertical) coordinate of this location on the specified map"
+                            },
+                            "size": {
+                                "type": "integer",
+                                "description": "The display size of this location on the specified map"
+                            },                            
+                            "badge_size": {
+                                "type": "integer",
+                                "description": "The display size of badges added to this location on the specified map. The default 75% of the location size"
+                            },
+                            "enable_badge_hit_test": {
+                                "type": "boolean",
+                                "description": "Determines badges on this location prevent input to the underlying location square (default: false)"
+                            },                            
+                            "force_visibility_rules": {
+                                "type":"array",
+                                "description": "An array of access rules which can force this location to be visible on the map, regardless of it's current accessibility",
+                                "items": { "type":"string" }
+                            },
+                            "force_invisibility_rules": {
+                                "type":"array",
+                                "description": "An array of access rules which can force this location to be hidden on the map, regardless of it's current accessibility",
+                                "items": { "type":"string" }
+                            },                            
+                            "restrict_visibility_rules": {
+                                "type":"array",
+                                "description": "An array of access rules which can restrict the visibility of this location on the map, regardless of it's current accessibility",
+                                "items": { "type":"string" }
+                            },                                                        
+                            "visibility_rules": {
+                                "type":"array",
+                                "description": "DEPRECATED - Use restrict_visibility_rules for future development. An array of access rules which can filter the visibility of this location on the map, regardless of it's current accessibility",
+                                "items": { "type":"string" }
+                            }
+                        }
+                    }
+                }                
+            }
+        }
+    },
+    "type":"array",
+    "items" : { "$ref": "#/definitions/location" }
+}

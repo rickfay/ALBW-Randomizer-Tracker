@@ -1,0 +1,396 @@
+{
+    "title": "EmoTracker: Items Container",
+    "type": "array",
+    "$id": "https://emotracker.net/developers/schemas/items.json",
+    "definitions": {
+        "item_base": {
+            "type": "object",
+            "required": [
+                "name",
+                "type"
+            ],
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "The human-readable name of the item. Must be unique within the pack."
+                },
+                "type": {
+                    "type": "string",
+                    "description": "The type of item to create",
+                    "enum": [ "blank", "composite_toggle", "consumable", "progressive", "progressive_toggle", "static", "toggle", "toggle_badged", "sectionchests" ]
+                },
+                "capturable": {
+                    "type": "boolean",
+                    "description": "Determines whether this item can be selected in capture-item UIs (defaults to false)"
+                },
+                "ignore_user_input": {
+                    "type": "boolean",
+                    "description": "If set to true, the item will not respond to mouse clicks (defaults to false)"
+                },                
+                "mask_input": {
+                    "type": "boolean",
+                    "description": "If set to true, only the visible portion of the current image will be clickable. If false (default), the entire rectangular area will be clickable"
+                },
+                "disabled_image_spec": {
+                    "type": "string",
+                    "description": "Allows for overring the image filter applied by default to disabled states for this item"
+                }
+            }
+        }
+    },
+    "items": {
+        "oneOf": [
+            {
+                "type": "object",
+                "description": "",
+                "allOf": [
+                    { "$ref": "#/definitions/item_base" }
+                ],
+                "required": [ "img", "codes" ],
+                "properties": {
+                    "type" : {
+                        "type": "string",
+                        "enum": [ "consumable" ]
+                    },
+                    "img" : {
+                        "type": "string"
+                    },
+                    "img_mods" : {
+                        "type": "string",
+                        "description": "Comma-separated list of image filters applied to img"
+                    },
+                    "disabled_img" : {
+                        "type": "string",
+                        "description": "A different image to display when the consumable is emptry"
+                    },
+                    "disabled_img_mods" : {
+                        "type": "string",
+                        "description": "Comma-separated list of image filters applied to disabled_img"
+                    },
+                    "codes" : {
+                        "type": "string"
+                    },
+                    "initial_quantity" : {
+                        "type":"integer",
+                        "description": "Sets the initial count for the consumable"
+                    },
+                    "min_quantity" : {
+                        "type":"integer",
+                        "description": "Sets the minimum count for the consumable"
+                    },
+                    "max_quantity" : {
+                        "type":"integer",
+                        "description": "Sets the maxmimum count for the consumable"
+                    },
+                    "increment" : {
+                        "type":"integer",
+                        "description": "Specifies the amount of this consumable granted by each click"
+                    },                           
+                    "swap_actions" : {
+                        "type":"boolean",
+                        "description": "If set to true, the behavior of the left and right mouse buttons will be swapped (default is false)"
+                    },
+                    "display_as_fraction_of_max" : {
+                        "type":"boolean",
+                        "description": "If set to true, the consumable will be displayed as 'current_quantity/max_quantity' (default is false)"
+                    }                    
+                }                
+            },            
+            {
+                "type": "object",
+                "description": "",
+                "allOf": [
+                    { "$ref": "#/definitions/item_base" }
+                ],
+                "required": [ "img", "codes" ],
+                "properties": {
+                    "type" : {
+                        "type": "string",
+                        "enum": [ "toggle" ]
+                    },
+                    "img" : {
+                        "type": "string"
+                    },
+                    "img_mods" : {
+                        "type": "string",
+                        "description": "Comma-separated list of image filters applied to img"
+                    },
+                    "disabled_img" : {
+                        "type": "string",
+                        "description": "A different image to display when the toggle is 'off'"
+                    },
+                    "disabled_img_mods" : {
+                        "type": "string",
+                        "description": "Comma-separated list of image filters applied to disabled_img"
+                    },
+                    "codes" : {
+                        "type": "string"
+                    },
+                    "initial_active_state" : {
+                        "type":"boolean",
+                        "description": "Controls whether the item is 'on' by default or not (defaults to 'false')"
+                    },
+                    "loop" : {
+                        "type":"boolean",
+                        "description": "If true, the toggle will wrap back to 'off' when using the primary action (left click)"
+                    }                        
+                }                
+            },
+            {
+                "type": "object",
+                "description": "",
+                "allOf": [
+                    { "$ref": "#/definitions/item_base" }
+                ],
+                "required": [ "stages" ],
+                "properties": {
+                    "type" : {
+                        "type": "string",
+                        "enum": [ "progressive" ]
+                    },
+                    "stages" : {
+                        "type": "array",
+                        "description": "Defines a set of stages that the progressive item advances through",
+                        "items": {
+                            "type":"object",
+                            "required": [ "img" ],
+                            "properties": {
+                                "codes" : {
+                                    "type": "string"
+                                },
+                                "inherit_codes" : {
+                                    "type":"boolean",
+                                    "description": "If false, this stage will not inherit the codes of the previous stage (default is true)"
+                                } ,                                      
+                                "img" : {
+                                    "type": "string"
+                                },
+                                "img_mods" : {
+                                    "type": "string",
+                                    "description": "Comma-separated list of image filters applied to img"
+                                }
+                            }
+                        }
+                    },
+                    "allow_disabled": {
+                        "type": "boolean",
+                        "default": true,
+                        "description": "If false, no disabled stage will be created for you. You should add one manually if necessary (default: true)"
+                    },
+                    "initial_stage_idx" : {
+                        "type": "integer",
+                        "description": "Allows to set the zero-based index of the stage this item should start in"
+                    },
+                    "loop" : {
+                        "type":"boolean",
+                        "description": "If true, the item will wrap back to its first (or disabled) stage when using the primary action (left click)"
+                    }
+                }                
+            },
+            {
+                "type": "object",
+                "description": "",
+                "allOf": [
+                    { "$ref": "#/definitions/item_base" }
+                ],
+                "required": [ "stages" ],
+                "properties": {
+                    "type" : {
+                        "type": "string",
+                        "enum": [ "progressive_toggle" ]
+                    },
+                    "stages" : {
+                        "type": "array",
+                        "description": "Defines a set of stages that the progressive item advances through",
+                        "items": {
+                            "type":"object",
+                            "required": [ "img", "codes" ],
+                            "properties": {
+                                "codes" : {
+                                    "type": "string"
+                                },
+                                "secondary_codes" : {
+                                    "type": "string"
+                                },                                
+                                "img" : {
+                                    "type": "string"
+                                },
+                                "img_mods" : {
+                                    "type": "string",
+                                    "description": "Comma-separated list of image filters applied to img"
+                                },
+                                "disabled_img" : {
+                                    "type": "string",
+                                    "description": "A different image to display when the toggle is 'off'"
+                                },
+                                "disabled_img_mods" : {
+                                    "type": "string",
+                                    "description": "Comma-separated list of image filters applied to disabled_img"
+                                }
+                            }
+                        }
+                    },
+                    "initial_stage_idx" : {
+                        "type": "integer",
+                        "description": "Allows to set the zero-based index of the stage this item should start in"
+                    },
+                    "initial_active_state" : {
+                        "type":"boolean",
+                        "description": "Controls whether the item is 'on' by default or not (defaults to 'false')"
+                    },
+                    "swap_actions" : {
+                        "type":"boolean",
+                        "description": "If set to true, the behavior of the left and right mouse buttons will be swapped (default is false)"
+                    }                         
+                }
+            },
+            {
+                "type": "object",
+                "description": "",
+                "allOf": [
+                    { "$ref": "#/definitions/item_base" }
+                ],
+                "required": [ "codes", "item_left", "item_right", "images" ],
+                "properties": {
+                    "type" : {
+                        "type": "string",
+                        "enum": [ "composite_toggle" ]
+                    },
+                    "codes" : {
+                        "type": "string"
+                    },
+                    "item_left" : {
+                        "type": "string",
+                        "description": "An item code used to find the 'left' item for this composite toggle. The referenced item must have been defined prior to this item."
+                    },
+                    "item_right" : {
+                        "type": "string",
+                        "description": "An item code used to find the 'right' item for this composite toggle. The referenced item must have been defined prior to this item."                        
+                    },                                                            
+                    "images" : {
+                        "type": "array",
+                        "description": "Defines a set of image pairs, mapped to the active state of each referenced toggle",
+                        "items": {
+                            "type":"object",
+                            "required": [ "left", "right", "img" ],
+                            "properties": {
+                                "left" : {
+                                    "type": "boolean",
+                                    "description": "Indicates the active state for the left item that this is mapping to"
+                                },
+                                "right" : {
+                                    "type": "boolean",
+                                    "description": "Indicates the active state for the right item that this is mapping to"
+                                },
+                                "img" : {
+                                    "type": "string"
+                                },
+                                "img_mods" : {
+                                    "type": "string",
+                                    "description": "Comma-separated list of image filters applied to img"
+                                }
+                            }
+                        }
+                    },
+                    "initial_stage_idx" : {
+                        "type": "integer",
+                        "description": "Allows to set the zero-based index of the stage this item should start in"
+                    },
+                    "initial_active_state" : {
+                        "type":"boolean",
+                        "description": "Controls whether the item is 'on' by default or not (defaults to 'false')"
+                    },
+                    "swap_actions" : {
+                        "type":"boolean",
+                        "description": "If set to true, the behavior of the left and right mouse buttons will be swapped (default is false)"
+                    }                         
+                }
+            },
+            {
+                "type": "object",
+                "description": "",
+                "allOf": [
+                    { "$ref": "#/definitions/item_base" }
+                ],
+                "required": [ "base_item", "codes", "img" ],
+                "properties": {
+                    "type" : {
+                        "type": "string",
+                        "enum": [ "toggle_badged" ]
+                    },
+                    "base_item": {
+                        "type": "string",
+                        "description": "An identifying code for the underyling item on top of which this toggle badge will be implemented"
+                    },
+                    "codes" : {
+                        "type": "string"
+                    },
+                    "img" : {
+                        "type": "string"
+                    },
+                    "img_mods" : {
+                        "type": "string",
+                        "description": "Comma-separated list of image filters applied to img"
+                    },
+                    "disabled_img" : {
+                        "type": "string",
+                        "description": "A different image to display when the badge is 'off'"
+                    },
+                    "disabled_img_mods" : {
+                        "type": "string",
+                        "description": "Comma-separated list of image filters applied to disabled_img"
+                    },
+                    "initial_active_state" : {
+                        "type":"boolean",
+                        "description": "Controls whether the item is 'on' by default or not (defaults to 'false')"
+                    }                         
+                }
+            },
+            {
+                "type": "object",
+                "description": "",
+                "allOf": [
+                    { "$ref": "#/definitions/item_base" }
+                ],
+                "required": [ "codes", "img" ],
+                "properties": {
+                    "type" : {
+                        "type": "string",
+                        "enum": [ "static" ]
+                    },
+                    "codes" : {
+                        "type": "string"
+                    },
+                    "img" : {
+                        "type": "string"
+                    },
+                    "img_mods" : {
+                        "type": "string",
+                        "description": "Comma-separated list of image filters applied to img"
+                    }
+                }
+            },                           
+            {
+                "type": "object",
+                "description": "",
+                "allOf": [
+                    { "$ref": "#/definitions/item_base" }
+                ],
+                "required": [ "codes", "section" ],
+                "properties": {
+                    "type" : {
+                        "type": "string",
+                        "enum": [ "sectionchests" ]
+                    },
+                    "codes" : {
+                        "type": "string"
+                    },
+                    "section" : {
+                        "type": "string",
+                        "description": "Code-formatted section reference to proxy, e.g. '@Eastern Palace/Dungeon'"
+                    }
+                }
+            }            
+        ]
+    }            
+}

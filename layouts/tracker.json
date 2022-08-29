@@ -11,11 +11,11 @@
           {
             "type": "group",
             "header": "Items",
-//            "header_content": {
-//              "type": "button_popup",
-//              "style": "settings",
-//              "layout": "options_menu"
-//            },
+            //            "header_content": {
+            //              "type": "button_popup",
+            //              "style": "settings",
+            //              "layout": "options_menu"
+            //            },
             "dock": "top",
             "content": [
               {
@@ -127,18 +127,18 @@
                           }
                         }
                       ]
-                    },
+                    }
 //                    {
-//                      "type": "itemgrid",
-//                      "item_size": 60,
-//                      "margin": "0,60,0,0",
-//                      "h_alignment": "left",
-//                      "rows": [
-//                        [
-//                          "maiamai_map"
-//                        ]
-//                      ]
-//                    }
+                    //                      "type": "itemgrid",
+                    //                      "item_size": 60,
+                    //                      "margin": "0,60,0,0",
+                    //                      "h_alignment": "left",
+                    //                      "rows": [
+                    //                        [
+                    //                          "maiamai_map"
+                    //                        ]
+                    //                      ]
+                    //                    }
                   ]
                 }
               },

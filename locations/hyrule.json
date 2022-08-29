@@ -106,6 +106,7 @@
         ],
         "sections": [
           {
+            "name": "",
             "access_rules": [
               "hammer",
               "[basic], boomerang",
@@ -128,6 +129,7 @@
         ],
         "sections": [
           {
+            "name": "",
             "item_count": 1
           }
         ]
@@ -191,8 +193,8 @@
             "access_rules": [
               "milk, hookshot, merge",
               "[advanced], bottle, milk, hookshot, trod, boots",
-              "[advanced], bluemail, milk, hookshot, trod, boots",
-//              "[hell], milk, hookshot, trod, boots"
+              "[advanced], bluemail, milk, hookshot, trod, boots"
+              //"[hell], milk, hookshot, trod, boots"
             ],
             "item_count": 1
           }
@@ -216,9 +218,9 @@
               "[advanced], bluemail, $boost, hammer",
               "[advanced], bottle, $boost, hammer",
               "[advanced], bluemail, $boost, bombs",
-              "[advanced], bottle, $boost, bombs",
-//              "[hell], frod, hammer",
-//              "[hell], bombs"
+              "[advanced], bottle, $boost, bombs"
+              //"[hell], frod, hammer",
+              //"[hell], bombs"
             ],
             "item_count": 1
           }
@@ -239,10 +241,10 @@
             "access_rules": [
               "merge",
               "[advanced], bottle",
-              "[advanced], bluemail",
-//              "[hell], hammer",
-//              "[hell], bombs",
-//              "[hell], trod"
+              "[advanced], bluemail"
+              //              "[hell], hammer",
+              //              "[hell], bombs",
+              //              "[hell], trod"
             ],
             "item_count": 1
           }
@@ -746,6 +748,7 @@
         ],
         "sections": [
           {
+            "name": "",
             "access_rules": [
               "merge",
               "boots"
@@ -900,7 +903,7 @@
             "access_rules": [
               "masterore:2"
             ],
-            "hosted_item": "blacksmith",
+            "hosted_item": "blacksmith"
             //"item_count": 1
           }
         ]

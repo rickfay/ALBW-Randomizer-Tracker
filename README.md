@@ -148,10 +148,10 @@ Worlds Randomizer.
 
 | Image                                             | Meaning                                                                                                             |
 |---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| ![Sage](images\sage.png)                          | Sage (generic)<br /><br />This is a stand-in for the six Sages that don't unlock anything by themselves.            |
-| ![Sage Osfala](images\sage_osfala.png)            | Sage Osfala<br /><br />A Sage that also unlocks the Sand Rod slot item in Ravio's Shop.                             |
-| ![Pendant](images\pendant.png)                    | Pendant (generic)<br /><br />This is a stand-in for the Red/Blue Pendants that don't unlock anything by themselves. |
-| ![Pendant of Courage](images\pendant_courage.png) | Pendant of Courage<br /><br />A Pendant that also unlocks Irene and the Haunted Grove Tree Stump.                   |
+| ![Sage](images/sage.png)                          | Sage (generic)<br /><br />This is a stand-in for the six Sages that don't unlock anything by themselves.            |
+| ![Sage Osfala](images/sage_osfala.png)            | Sage Osfala<br /><br />A Sage that also unlocks the Sand Rod slot item in Ravio's Shop.                             |
+| ![Pendant](images/pendant.png)                    | Pendant (generic)<br /><br />This is a stand-in for the Red/Blue Pendants that don't unlock anything by themselves. |
+| ![Pendant of Courage](images/pendant_courage.png) | Pendant of Courage<br /><br />A Pendant that also unlocks Irene and the Haunted Grove Tree Stump.                   |
 
 - 7 Sages are needed to enter Lorule Castle.
   - The tracker does not verify that exactly one is Osfala.
@@ -194,7 +194,7 @@ This tracker follows EmoTracker's standard color scheme for its locations:
 
 ### Logic Modes
 
-![Normal Logic](images\logic_normal.png) ![Hard Logic](images\logic_hard.png) ![Hard Logic](images\logic_hard.png) ![Glitched Basic Logic](images\logic_basic.png) ![Glitched Advanced Logic](images\logic_advanced.png) ![Glitched Hell Logic](images\logic_hell.png)
+![Normal Logic](images/logic_normal.png) ![Hard Logic](images/logic_hard.png) ![Hard Logic](images/logic_hard.png) ![Glitched Basic Logic](images/logic_basic.png) ![Glitched Advanced Logic](images/logic_advanced.png) ![Glitched Hell Logic](images/logic_hell.png)
 
 The randomizer supports five* Logic Modes, and so does this tracker. You can select the mode matching your seed in the
 settings panel in the bottom left of the tracker.
@@ -216,7 +216,7 @@ available checks.
 
 ### Swordless Mode
 
-![Swordless](images\swordless.png)
+![Swordless](images/swordless.png)
 
 Right-click the base Sword item to tell the tracker you're playing in Swordless Mode, which slightly changes the logic:
 
@@ -225,7 +225,7 @@ Right-click the base Sword item to tell the tracker you're playing in Swordless 
 
 ### Minigames
 
-![Minigames Enabled](images\minigames_enabled.png) ![Minigames Disabled](images\minigames_disabled.png)
+![Minigames Enabled](images/minigames_enabled.png) ![Minigames Disabled](images/minigames_disabled.png)
 
 You can tell the tracker whether you've Enabled or Disabled Minigames down in the Settings panel. Disabling Minigames
 will hide their checks on the tracker.
@@ -243,14 +243,14 @@ Note that the 2 Maiamai located inside the Rupee Rush minigames will not be hidd
 
 ### Lorule Castle Trials
 
-![Trials Normal](images\trials_normal.png) ![Trials Skipped](images\trials_skipped.png)
+![Trials Normal](images/trials_normal.png) ![Trials Skipped](images/trials_skipped.png)
 
 This setting tells the tracker whether the option to skip the Lorule Castle Trials was selected in the randomizer. This
 setting slightly alters the logic needed to reach the Final Boss fight, as the player won't need to complete the trials.
 
 ### Lamp Requirement
 
-![Lamp Required](images\lamp_required.png) ![Lamp Not Required](images\lamp_not_required.png)
+![Lamp Required](images/lamp_required.png) ![Lamp Not Required](images/lamp_not_required.png)
 
 This setting determines whether the logic considers the Lamp as a necessary item to cross dark rooms.
 
@@ -263,7 +263,7 @@ places them in logic, and the seed may require the player to cross a dark room w
 
 ### Display Bee Boost Glitches
 
-![Hide Bee Boost Glitches](images\bee_boost_hide.png) ![Show Bee Boost Glitches](images\bee_boost_show.png)
+![Hide Bee Boost Glitches](images/bee_boost_hide.png) ![Show Bee Boost Glitches](images/bee_boost_show.png)
 
 Turn this setting on to show `🟨 Sequence Break` checks that require using the Bee Boost glitch.
 
@@ -274,7 +274,7 @@ logic.
 
 ### Maiamai Map
 
-![Maiamai Map Hide](images\maiamai_map_hide.png) ![Maiamai Map Show](images\maiamai_map_show.png)
+![Maiamai Map Hide](images/maiamai_map_hide.png) ![Maiamai Map Show](images/maiamai_map_show.png)
 
 This setting toggles the visibility of the Maiamai checks.
 

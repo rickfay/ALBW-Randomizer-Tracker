@@ -286,7 +286,7 @@
         ],
         "sections": [
           {
-            "name": "Sage Impa",
+            "name": "Prize",
             "hosted_item": "turtle",
             "access_rules": [
               "$enterTR"
@@ -301,7 +301,7 @@
             "map": "lorule",
             "x": 1572,
             "y": 1710,
-            "size": 60
+            "size": 70
           }
         ],
         "sections": [
@@ -413,7 +413,7 @@
             ]
           },
           {
-            "name": "Sage Impa",
+            "name": "Prize",
             "hosted_item": "turtle",
             "access_rules": [
               "$enterTR"

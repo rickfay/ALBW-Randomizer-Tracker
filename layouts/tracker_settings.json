@@ -13,13 +13,15 @@
             "width": "306",
             "h_alignment": "center",
             "item_size": "40",
-            "item_margin": "10,2",
+            "item_margin": "5,2",
             "rows": [
               [
                 "logic",
                 "minigames_enabled",
                 "trials_normal",
                 "lampless",
+                "beeBoost_hide",
+                //"weathervania",
                 "maiamai_map"
               ]
             ]

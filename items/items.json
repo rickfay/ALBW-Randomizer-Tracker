@@ -62,7 +62,7 @@
     ]
   },
   {
-    "name": "Bottles",
+    "name": "Bottle",
     "type": "consumable",
     "img": "images/bottle.png",
     "codes": "bottle",
@@ -113,24 +113,6 @@
     "codes": "compass"
   },
   {
-    "name": "Dark Palace",
-    "type": "toggle",
-    "img": "images/dark.png",
-    "codes": "dark, gulley"
-  },
-  {
-    "name": "Desert Palace",
-    "type": "toggle",
-    "img": "images/desert.png",
-    "codes": "desert, irene"
-  },
-  {
-    "name": "Eastern Palace",
-    "type": "toggle",
-    "img": "images/eastern.png",
-    "codes": "eastern"
-  },
-  {
     "name": "Fire Rod",
     "type": "progressive",
     "stages": [
@@ -149,6 +131,7 @@
   {
     "name": "Foul Fruit",
     "type": "toggle",
+    "mask_input": true,
     "img": "images/foul_fruit.png",
     "codes": "foul, foulfruit"
   },
@@ -171,33 +154,17 @@
     "codes": "rupee_green"
   },
   {
-    "name": "Tunic/Mail",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "name": "Green Tunic",
-        "img": "images/green_tunic.png",
-        "codes": "greentunic"
-      },
-      {
-        "name": "Blue Mail",
-        "img": "images/blue_mail.png",
-        "codes": "bluemail"
-      },
-      {
-        "name": "Red Mail",
-        "img": "images/red_mail.png",
-        "codes": "redmail"
-      }
-    ]
-  },
-  {
     "name": "Great Spin",
     "type": "toggle",
     "mask_input": true,
     "img": "images/great_spin.png",
     "codes": "greatspin"
+  },
+  {
+    "name": "Go Mode",
+    "type": "toggle",
+    "img": "images/gomode.png",
+    "codes": "gomode"
   },
   {
     "name": "Hammer",
@@ -256,12 +223,6 @@
     ]
   },
   {
-    "name": "House of Gales",
-    "type": "toggle",
-    "img": "images/gales.png",
-    "codes": "gales"
-  },
-  {
     "name": "Ice Rod",
     "type": "progressive",
     "stages": [
@@ -276,12 +237,6 @@
         "codes": "niceirod, niceicerod"
       }
     ]
-  },
-  {
-    "name": "Ice Ruins",
-    "type": "toggle",
-    "img": "images/ice.png",
-    "codes": "ice, rosso"
   },
   {
     "name": "Lamp",
@@ -380,7 +335,6 @@
   {
     "name": "Ravio's Bracelet",
     "type": "progressive",
-    //"allow_disabled": false,
     "stages": [
       {
         "img": "images/bracelet.png",
@@ -417,8 +371,47 @@
   {
     "name": "Scoot Fruit",
     "type": "toggle",
+    "mask_input": true,
     "img": "images/scoot_fruit.png",
     "codes": "scoot, scootfruit"
+  },
+  {
+    "name": "Scoot / Foul Fruit",
+    "type": "composite_toggle",
+    "item_left": "scoot",
+    "item_right": "foul",
+    "codes": "fruit",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/fruit_scoot.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/fruit_scoot.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/fruit_scoot.png",
+        "img_mods": "@disabled,overlay|images/fruit_foul_small.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/fruit_scoot.png",
+        "img_mods": "overlay|images/fruit_foul_small.png"
+      }
+    ]
+  },
+  {
+    "name": "Shady Guy",
+    "type": "toggle",
+    "img": "images/shady_guy.png",
+    "codes": "shadyguy"
   },
   {
     "name": "Shield",
@@ -461,26 +454,28 @@
     "codes": "scroll, staminascroll"
   },
   {
-    "name": "Skull Woods",
-    "type": "toggle",
-    "img": "images/skull.png",
-    "codes": "skull, seres"
-  },
-  {
-    "name": "Swamp Palace",
-    "type": "toggle",
-    "img": "images/swamp.png",
-    "codes": "swamp, oren, worstsage"
-  },
-  {
     "name": "Sword",
     "type": "progressive",
     "mask_input": true,
+    "allow_disabled": false,
+    "initial_stage_idx": 1,
     "stages": [
+      {
+        "name": "Swordless",
+        "img": "images/swordless.png",
+        "codes": "swordless"
+      },
+      {
+        "name": "Disabled Sword",
+        "img": "images/fsword.png",
+        "img_mods": "@disabled",
+        "inherit_codes": false
+      },
       {
         "name": "Forgotten Sword",
         "img": "images/fsword.png",
-        "codes": "fsword, forgottensword, sword"
+        "codes": "fsword, forgottensword, sword",
+        "inherit_codes": false
       },
       {
         "name": "Master Sword",
@@ -500,12 +495,6 @@
     ]
   },
   {
-    "name": "Thieves' Hideout",
-    "type": "toggle",
-    "img": "images/thieves.png",
-    "codes": "thieves, osfala"
-  },
-  {
     "name": "Tornado Rod",
     "type": "progressive",
     "stages": [
@@ -521,28 +510,32 @@
     ]
   },
   {
-    "name": "Tower of Hera",
-    "type": "toggle",
-    "img": "images/hera.png",
-    "codes": "hera"
-  },
-  {
     "name": "Triforce",
     "type": "toggle",
     "img": "images/triforce.png",
     "codes": "triforce"
   },
   {
-    "name": "Turtle Rock",
-    "type": "toggle",
-    "img": "images/turtle.png",
-    "codes": "turtle, impa"
-  },
-  {
-    "name": "Go Mode",
-    "type": "toggle",
-    "img": "images/gomode.png",
-    "codes": "gomode"
+    "name": "Tunic/Mail",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Green Tunic",
+        "img": "images/green_tunic.png",
+        "codes": "greentunic"
+      },
+      {
+        "name": "Blue Mail",
+        "img": "images/blue_mail.png",
+        "codes": "bluemail"
+      },
+      {
+        "name": "Red Mail",
+        "img": "images/red_mail.png",
+        "codes": "redmail"
+      }
+    ]
   },
   {
     "name": "Yuga",

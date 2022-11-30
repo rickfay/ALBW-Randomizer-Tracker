@@ -238,7 +238,7 @@
         ],
         "sections": [
           {
-            "name": "Pendant of Power",
+            "name": "Prize",
             "hosted_item": "hera"
           }
         ]
@@ -250,7 +250,7 @@
             "map": "hyrule",
             "x": 1211,
             "y": 39,
-            "size": 60
+            "size": 70
           }
         ],
         "sections": [
@@ -345,7 +345,7 @@
             ]
           },
           {
-            "name": "Pendant of Power",
+            "name": "Prize",
             "hosted_item": "hera",
             "access_rules": [
               "merge",

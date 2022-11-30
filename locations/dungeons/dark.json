@@ -295,7 +295,7 @@
         ],
         "sections": [
           {
-            "name": "Sage Gulley",
+            "name": "Prize",
             "access_rules": [
               "bombs, $fire"
             ],
@@ -310,17 +310,19 @@
             "map": "lorule",
             "x": 1921,
             "y": 852,
-            "size": 60
+            "size": 70
           }
         ],
         "sections": [
           {
             "name": "1F Right Pit         ",
+
             "capture_item": true,
             "hosted_item": "pod_chest_01",
             "access_rules": [
               "bombs"
-            ]
+            ],
+
           },
           {
             "name": "1F Left Pit           ",
@@ -418,7 +420,7 @@
             ]
           },
           {
-            "name": "Sage Gulley",
+            "name": "Prize",
             "access_rules": [
               "bombs, $fire"
             ],

@@ -8,7 +8,7 @@
       "hookshot",
       "boomerang",
       "bombs",
-      "[hard], msword",
+      "[hard], bell, wv_eastern, msword",
       "[], niceirod"
     ],
     "children": [
@@ -295,7 +295,7 @@
         "name": "Eastern Palace",
         "sections": [
           {
-            "name": "Pendant of Courage",
+            "name": "Prize",
             "access_rules": [
               "$yuga1"
             ],
@@ -436,7 +436,7 @@
             ]
           },
           {
-            "name": "Pendant of Courage",
+            "name": "Prize",
             "hosted_item": "eastern",
             "access_rules": [
               "$yuga1"
@@ -448,7 +448,7 @@
             "map": "hyrule",
             "x": 1921,
             "y": 820,
-            "size": 60
+            "size": 70
           }
         ]
       }

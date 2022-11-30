@@ -86,6 +86,41 @@
     ]
   },
   {
+    "name": "Weather Vanes",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/wv_hide.png",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/wv_show.png",
+        "codes": "weathervania",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Display Bee Boost Glitches",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/bee_boost_hide.png",
+        "codes": "beeBoost_hide",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bee_boost_show.png",
+        "codes": "beeBoost_show",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Maiamai Map",
     "type": "progressive",
     "loop": true,

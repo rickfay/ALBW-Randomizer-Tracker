@@ -3,6 +3,7 @@
     "name": "Hyrule Castle",
     "access_rules": [
       "msword",
+      "swordless",
       // Barrier Skip, only works before getting all sages
       "[], merge, boots, trod, bombs, $does_not_have_all_sages, boomerang",
       "[], merge, boots, trod, bombs, $does_not_have_all_sages, hookshot"
@@ -43,18 +44,18 @@
       {
         "name": "Inside Hyrule Castle",
         "access_rules": [
-          "merge",
-          "bow",
+          "merge, $yuga2",
+          "bow, $yuga2",
           "irod",
-          "[hard], nicebombs",
-          "[], nicetrod"
+          "[basic], nicebombs",
+          "[], nicetrod, $yuga2"
         ],
         "map_locations": [
           {
             "map": "hyrule",
             "x": 1023,
             "y": 870,
-            "size": 60
+            "size": 70
           },
           {
             "map": "hyrule8F",

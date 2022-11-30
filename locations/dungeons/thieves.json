@@ -40,7 +40,9 @@
             "access_rules": [
               "merge",
               "[basic], boots",
-              "[hell], trod, $dungeon_escape"
+              "[hell], trod, bombs",
+              "{hell, trod, irod}",
+              "[hell], trod, irod, $dungeon_escape"
             ],
             "hosted_item": "th_chest_02"
           }
@@ -102,10 +104,10 @@
             "name": "B2 Eyegores",
             "access_rules": [
               "$thB2, merge, $attack, $shielded_switch",
-              "[advanced], bombs, trod",
-              "[advanced], bombs, boots",
-              "[advanced], irod, trod",
-              "[advanced], irod, boots"
+              "[advanced], $thB2, bombs, trod",
+              "[advanced], $thB2, bombs, boots",
+              "[advanced], $thB2, irod, trod",
+              "[advanced], $thB2, irod, boots"
             ],
             "capture_item": true,
             "hosted_item": "th_chest_05"
@@ -254,7 +256,7 @@
         ],
         "sections": [
           {
-            "name": "Sage Osfala",
+            "name": "Prize",
             "access_rules": [
               "$thB2, $thEscape, merge"
             ],
@@ -268,10 +270,8 @@
           {
             "map": "lorule",
             "x": 324,
-            //442,
             "y": 962,
-            //982,
-            "size": 60
+            "size": 70
           }
         ],
         "sections": [
@@ -287,7 +287,9 @@
             "access_rules": [
               "merge",
               "[basic], boots",
-              "[hell], trod, $dungeon_escape"
+              "[hell], trod, bombs",
+              "{hell, trod, irod}",
+              "[hell], trod, irod, $dungeon_escape"
             ]
           },
           {
@@ -314,10 +316,10 @@
             "hosted_item": "th_chest_05",
             "access_rules": [
               "$thB2, merge, $attack, $shielded_switch",
-              "[advanced], bombs, trod",
-              "[advanced], bombs, boots",
-              "[advanced], irod, trod",
-              "[advanced], irod, boots"
+              "[advanced], $thB2, bombs, trod",
+              "[advanced], $thB2, bombs, boots",
+              "[advanced], $thB2, irod, trod",
+              "[advanced], $thB2, irod, boots"
             ]
           },
           {
@@ -374,7 +376,7 @@
             ]
           },
           {
-            "name": "Sage Osfala",
+            "name": "Prize",
             "access_rules": [
               "$thB2, $thEscape, merge"
             ],

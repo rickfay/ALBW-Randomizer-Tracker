@@ -4,84 +4,84 @@
     "orientation": "vertical",
     "content": [
       {
-        "type": "canvas",
-        "content": [
-          {
-            "type": "item",
-            "item": "greatspin",
-            "height": 20,
-            "canvas_left": 257,
-            "canvas_top": 4
-          }
+        "type": "itemgrid",
+        "dropshadow": true,
+        "h_alignment": "center",
+        "item_size": "40",
+        "item_margin": "1,2",
+        "rows": [
+          // Making an override?
+          // Move the greatspin to the same grid location as the Sword.
+          [ "", "", "", "", "", "greatspin", "" ],
+//          [ "", "", "", "", "", "", "" ],
+//          [ "", "", "", "", "", "", "" ],
+//          [ "", "", "", "", "", "", "" ],
+//          [ "", "", "", "", "", "", "" ],
+//          [ "", "", "", "", "", "", "" ]
         ]
       },
       {
-        "type": "array",
-        "orientation": "horizontal",
-        "content": [
-          {
-            "type": "itemgrid",
-            "dropshadow": true,
-            "h_alignment": "left",
-            "item_size": "40",
-            "item_margin": "1,2",
-            "rows": [
-              [
-                "bow",
-                "boomerang",
-                "hookshot",
-                "bombs",
-                "pouch",
-                "boots",
-                "fsword"
-              ],
-              [
-                "frod",
-                "irod",
-                "trod",
-                "srod",
-                "beebadge",
-                "powerglove",
-                "shield"
-              ],
-              [
-                "lamp",
-                "hammer",
-                "bell",
-                "net",
-                "scroll",
-                "flippers",
-                "greentunic"
-              ],
-              [
-                "bottle",
-                "letter",
-                "milk",
-                "goldbee",
-                "scoot",
-                "smoothgem",
-                "bracelet"
-              ],
-              [
-                "ore",
-                "maiamai",
-                "gales",
-                "hera",
-                "eastern",
-                "yuga",
-                "bowoflight"
-              ],
-              [
-                "dark",
-                "swamp",
-                "skull",
-                "thieves",
-                "ice",
-                "desert",
-                "turtle"
-              ]
-            ]
-          }
+        "type": "itemgrid",
+        "dropshadow": true,
+        "h_alignment": "center",
+        "item_size": "40",
+        "item_margin": "1,2",
+
+        "rows": [
+          [
+            "bow",
+            "boomerang",
+            "hookshot",
+            "bombs",
+            "pouch",
+            "fsword",
+            "eastern"
+          ],
+          [
+            "frod",
+            "irod",
+            "trod",
+            "srod",
+            "beebadge",
+            "shield",
+            "gales"
+          ],
+          [
+            "lamp",
+            "hammer",
+            "bell",
+            "net",
+            "scroll",
+            "greentunic",
+            "hera"
+          ],
+          [
+            "bottle",
+            "letter",
+            "milk",
+            "goldbee",
+            "fruit",
+            "bracelet",
+            "yuga"
+          ],
+          [
+            "boots",
+            "powerglove",
+            "flippers",
+            "smoothgem",
+            "ore",
+            "maiamai",
+            "bowoflight"
+          ],
+          [
+            "dark",
+            "swamp",
+            "skull",
+            "thieves",
+            "turtle",
+            "desert",
+            "ice"
+          ]
         ]
       }
     ]

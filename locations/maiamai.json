@@ -629,7 +629,7 @@
             "item_count": 1,
             "capture_item": true,
             "visibility_rules": [
-              "minigames_enabled, maiamai_map"
+              "maiamai_map"
             ],
             "access_rules": [
               "{}",
@@ -864,7 +864,7 @@
         "map_locations": [
           {
             "map": "hyrule",
-            "x": 1458,
+            "x": 1473,
             "y": 1421,
             "size": 32
           }
@@ -2103,7 +2103,7 @@
                   "merge"
                 ],
                 "visibility_rules": [
-                  "minigames_enabled, maiamai_map"
+                  "maiamai_map"
                 ]
               }
             ]
@@ -2356,8 +2356,8 @@
             "map_locations": [
               {
                 "map": "lorule",
-                "x": 470,
-                "y": 1816,
+                "x": 460,
+                "y": 1800,
                 "size": 32
               }
             ],

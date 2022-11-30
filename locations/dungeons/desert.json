@@ -363,7 +363,7 @@
         ],
         "sections": [
           {
-            "name": "Sage Irene",
+            "name": "Prize",
             "hosted_item": "desert",
             "access_rules": [
               "$dp2F",
@@ -382,13 +382,13 @@
             "map": "hyrule",
             "x": 185,
             "y": 1605,
-            "size": 60
+            "size": 70
           },
           {
             "map": "lorule",
             "x": 192,
             "y": 1602,
-            "size": 60
+            "size": 70
           }
         ],
         "sections": [
@@ -539,7 +539,7 @@
             ]
           },
           {
-            "name": "Sage Irene",
+            "name": "Prize",
             "hosted_item": "desert",
             "access_rules": [
               "$dp2F",

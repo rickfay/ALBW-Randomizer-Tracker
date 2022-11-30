@@ -1,0 +1,262 @@
+[
+  {
+    "name": "Eastern Palace",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/sage.png",
+        "img_mods": "overlay|images/label_EP.png",
+        "codes": "eastern, sage"
+      },
+      {
+        "img": "images/sage_osfala.png",
+        "img_mods": "overlay|images/label_EP.png",
+        "codes": "eastern, sage, osfala"
+      },
+      {
+        "img": "images/pendant.png",
+        "img_mods": "overlay|images/label_EP.png",
+        "codes": "eastern, pendant"
+      },
+      {
+        "img": "images/pendant_courage.png",
+        "img_mods": "overlay|images/label_EP.png",
+        "codes": "eastern, pendant, courage"
+      }
+    ]
+  },
+  {
+    "name": "House of Gales",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/sage.png",
+        "img_mods": "overlay|images/label_HG.png",
+        "codes": "gales, sage"
+      },
+      {
+        "img": "images/sage_osfala.png",
+        "img_mods": "overlay|images/label_HG.png",
+        "codes": "gales, sage, osfala"
+      },
+      {
+        "img": "images/pendant.png",
+        "img_mods": "overlay|images/label_HG.png",
+        "codes": "gales, pendant"
+      },
+      {
+        "img": "images/pendant_courage.png",
+        "img_mods": "overlay|images/label_HG.png",
+        "codes": "gales, pendant, courage"
+      }
+    ]
+  },
+  {
+    "name": "Tower of Hera",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/sage.png",
+        "img_mods": "overlay|images/label_TH.png",
+        "codes": "hera, sage"
+      },
+      {
+        "img": "images/sage_osfala.png",
+        "img_mods": "overlay|images/label_TH.png",
+        "codes": "hera, sage, osfala"
+      },
+      {
+        "img": "images/pendant.png",
+        "img_mods": "overlay|images/label_TH.png",
+        "codes": "hera, pendant"
+      },
+      {
+        "img": "images/pendant_courage.png",
+        "img_mods": "overlay|images/label_TH.png",
+        "codes": "hera, pendant, courage"
+      }
+    ]
+  },
+  {
+    "name": "Dark Palace",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/sage.png",
+        "img_mods": "overlay|images/label_PD.png",
+        "codes": "dark, sage"
+      },
+      {
+        "img": "images/sage_osfala.png",
+        "img_mods": "overlay|images/label_PD.png",
+        "codes": "dark, sage, osfala"
+      },
+      {
+        "img": "images/pendant.png",
+        "img_mods": "overlay|images/label_PD.png",
+        "codes": "dark, pendant"
+      },
+      {
+        "img": "images/pendant_courage.png",
+        "img_mods": "overlay|images/label_PD.png",
+        "codes": "dark, pendant, courage"
+      }
+    ]
+  },
+  {
+    "name": "Swamp Palace",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/sage.png",
+        "img_mods": "overlay|images/label_SP.png",
+        "codes": "swamp, sage"
+      },
+      {
+        "img": "images/sage_osfala.png",
+        "img_mods": "overlay|images/label_SP.png",
+        "codes": "swamp, sage, osfala"
+      },
+      {
+        "img": "images/pendant.png",
+        "img_mods": "overlay|images/label_SP.png",
+        "codes": "swamp, pendant"
+      },
+      {
+        "img": "images/pendant_courage.png",
+        "img_mods": "overlay|images/label_SP.png",
+        "codes": "swamp, pendant, courage"
+      }
+    ]
+  },
+  {
+    "name": "Skull Woods",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/sage.png",
+        "img_mods": "overlay|images/label_SW.png",
+        "codes": "skull, sage"
+      },
+      {
+        "img": "images/sage_osfala.png",
+        "img_mods": "overlay|images/label_SW.png",
+        "codes": "skull, sage, osfala"
+      },
+      {
+        "img": "images/pendant.png",
+        "img_mods": "overlay|images/label_SW.png",
+        "codes": "skull, pendant"
+      },
+      {
+        "img": "images/pendant_courage.png",
+        "img_mods": "overlay|images/label_SW.png",
+        "codes": "skull, pendant, courage"
+      }
+    ]
+  },
+  {
+    "name": "Thieves' Hideout",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/sage.png",
+        "img_mods": "overlay|images/label_T'H.png",
+        "codes": "thieves, sage"
+      },
+      {
+        "img": "images/sage_osfala.png",
+        "img_mods": "overlay|images/label_T'H.png",
+        "codes": "thieves, sage, osfala"
+      },
+      {
+        "img": "images/pendant.png",
+        "img_mods": "overlay|images/label_T'H.png",
+        "codes": "thieves, pendant"
+      },
+      {
+        "img": "images/pendant_courage.png",
+        "img_mods": "overlay|images/label_T'H.png",
+        "codes": "thieves, pendant, courage"
+      }
+    ]
+  },
+  {
+    "name": "Turtle Rock",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/sage.png",
+        "img_mods": "overlay|images/label_TR.png",
+        "codes": "turtle, sage"
+      },
+      {
+        "img": "images/sage_osfala.png",
+        "img_mods": "overlay|images/label_TR.png",
+        "codes": "turtle, sage, osfala"
+      },
+      {
+        "img": "images/pendant.png",
+        "img_mods": "overlay|images/label_TR.png",
+        "codes": "turtle, pendant"
+      },
+      {
+        "img": "images/pendant_courage.png",
+        "img_mods": "overlay|images/label_TR.png",
+        "codes": "turtle, pendant, courage"
+      }
+    ]
+  },
+  {
+    "name": "Desert Palace",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/sage.png",
+        "img_mods": "overlay|images/label_DP.png",
+        "codes": "desert, sage"
+      },
+      {
+        "img": "images/sage_osfala.png",
+        "img_mods": "overlay|images/label_DP.png",
+        "codes": "desert, sage, osfala"
+      },
+      {
+        "img": "images/pendant.png",
+        "img_mods": "overlay|images/label_DP.png",
+        "codes": "desert, pendant"
+      },
+      {
+        "img": "images/pendant_courage.png",
+        "img_mods": "overlay|images/label_DP.png",
+        "codes": "desert, pendant, courage"
+      }
+    ]
+  },
+  {
+    "name": "Ice Ruins",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/sage.png",
+        "img_mods": "overlay|images/label_IR.png",
+        "codes": "ice, sage"
+      },
+      {
+        "img": "images/sage_osfala.png",
+        "img_mods": "overlay|images/label_IR.png",
+        "codes": "ice, sage, osfala"
+      },
+      {
+        "img": "images/pendant.png",
+        "img_mods": "overlay|images/label_IR.png",
+        "codes": "ice, pendant"
+      },
+      {
+        "img": "images/pendant_courage.png",
+        "img_mods": "overlay|images/label_IR.png",
+        "codes": "ice, pendant, courage"
+      }
+    ]
+  },
+]

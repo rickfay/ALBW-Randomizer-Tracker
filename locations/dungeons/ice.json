@@ -278,7 +278,7 @@
         ],
         "sections": [
           {
-            "name": "Sage Rosso",
+            "name": "Prize",
             "hosted_item": "ice"
           }
         ]
@@ -290,7 +290,7 @@
             "map": "lorule",
             "x": 1880,
             "y": 156,
-            "size": 60
+            "size": 70
           }
         ],
         "sections": [
@@ -375,7 +375,7 @@
             "hosted_item": "ir_chest_15"
           },
           {
-            "name": "Sage Rosso",
+            "name": "Prize",
             "hosted_item": "ice"
           }
         ]

@@ -17,10 +17,8 @@
             "capture_item": true,
             "access_rules": [
               "titansmitt",
-              "[basic], boomerang, $escape",
-              "[basic], hookshot, $escape",
-              "[advanced], hookshot",
-              "[advanced], boomerang"
+              "[hell], hookshot",
+              "[hell], boomerang"
             ],
             "item_count": 1
           }
@@ -43,9 +41,7 @@
               "{}",
               "merge",
               "[basic], boomerang, $escape",
-              "[basic], hookshot, $escape",
-              "[advanced], boomerang",
-              "[advanced], hookshot"
+              "[basic], hookshot, $escape"
             ],
             "item_count": 1
           }
@@ -64,7 +60,7 @@
           {
             "name": "Master Sword Pedestal",
             "access_rules": [
-              "eastern, gales, hera"
+              "pendant:3"
             ],
             "item_count": 1
           }
@@ -84,12 +80,16 @@
             "name": "Crooked Chest",
             "chest_unopened_img": "images/chest_crooked_unopened.png",
             "chest_opened_img": "images/chest_crooked_opened.png",
+            "access_rules": [
+              "eastern",
+              "merge"
+            ],
             "item_count": 1
           },
           {
             "name": "Smash Rosso's Pet Rocks",
             "access_rules": [
-              "powerglove"
+              "eastern, powerglove"
             ],
             "item_count": 1
           }
@@ -140,6 +140,9 @@
     "name": "Death Mountain",
     "access_rules": [
       "powerglove",
+      "bell, wv_death_hyrule",
+      // TODO
+      "bell, wv_hera",
       "[basic]"
     ],
     "children": [
@@ -541,6 +544,27 @@
         "map_locations": [
           {
             "map": "hyrule",
+            "x": 1804,
+            "y": 358
+          }
+        ],
+        "sections": [
+          {
+            "name": "Bump into Shady Guy",
+            "access_rules": [
+              "merge",
+              "[hell], $beeBoost"
+            ],
+            "hosted_item": "shadyguy",
+            "item_count": 0
+          }
+        ]
+      },
+      {
+        "name": "Zora's Domain",
+        "map_locations": [
+          {
+            "map": "hyrule",
             "x": 1848,
             "y": 551
           }
@@ -733,12 +757,15 @@
             "name": "Right (200)",
             "chest_opened_img": "images/soldout.png",
             "capture_item": true,
+            "access_rules": [
+              "shadyguy"
+            ],
             "item_count": 1
           }
         ]
       },
       {
-        "name": "Shady Guy",
+        "name": "Kakariko Village",
         "map_locations": [
           {
             "map": "hyrule",
@@ -748,10 +775,10 @@
         ],
         "sections": [
           {
-            "name": "",
+            "name": "Shady Guy",
             "access_rules": [
-              "merge",
-              "boots"
+              "shadyguy, merge",
+              "shadyguy, boots"
             ],
             "item_count": 1
           }
@@ -864,7 +891,7 @@
             "chest_opened_img": "images/soldout.png",
             "access_rules": [
               "{}",
-              "thieves"
+              "osfala"
             ],
             "item_count": 1
           },
@@ -987,7 +1014,7 @@
           {
             "name": "Tree Stump",
             "access_rules": [
-              "eastern"
+              "courage"
             ],
             "item_count": 1
           }
@@ -998,34 +1025,35 @@
   {
     "name": "Eastern Ruins",
     "children": [
-      //      {
-      //        "name": "Irene Trigger",
-      //        "map_locations": [
-      //          {
-      //            "map": "hyrule",
-      //            "x": 1403,
-      //            "y": 1403
-      //          },
-      //          {
-      //            "map": "hyrule",
-      //            "x": 718,
-      //            "y": 742
-      //          },
-      //          {
-      //            "map": "hyrule",
-      //            "x": 536,
-      //            "y": 671
-      //          }
-      //        ],
-      //        "sections": [
-      //          {
-      //            "access_rules": [
-      //              "eastern"
-      //            ],
-      //            "item_count": 1
-      //          }
-      //        ]
-      //      },
+      {
+        "name": "Irene",
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1403,
+            "y": 1403
+          },
+          {
+            "map": "hyrule",
+            "x": 718,
+            "y": 742
+          },
+          {
+            "map": "hyrule",
+            "x": 536,
+            "y": 671
+          }
+        ],
+        "sections": [
+          {
+            "name": "",
+            "access_rules": [
+              "courage"
+            ],
+            "item_count": 1
+          }
+        ]
+      },
       {
         "name": "Eastern Ruins",
         "map_locations": [
@@ -1077,8 +1105,8 @@
         "map_locations": [
           {
             "map": "hyrule",
-            "x": 1403,
-            "y": 1403
+            "x": 1453,
+            "y": 1413
           }
         ],
         "sections": [
@@ -1100,6 +1128,7 @@
           "boomerang",
           "bombs",
           "irod",
+          "bell, wv_eastern",
           "[hard], powerglove"
         ],
         "children": [

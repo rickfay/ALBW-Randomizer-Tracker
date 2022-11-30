@@ -23,6 +23,11 @@ function hasAll(items)
     return true;
 end
 
+-- Returns true if the player has at least a given amount of an item or setting
+function has_amount(item, amount)
+    return Tracker:ProviderCountForCode(item) >= amount
+end
+
 -- Returns true if we're using the specified logic, or (true, SequenceBreak) if not
 function logic(logic)
     if has(logic) then
@@ -76,6 +81,10 @@ function knucklemaster()
     end
 
     return false
+end
+
+function yuga2()
+    return hasAny({ "fsword", "bombs", "frod", "irod", "hammer" })
 end
 
 -- Return if the player can stun enemies
@@ -147,7 +156,7 @@ end
 -- Bee Boosting
 -- This is a hard opt-in trick, and it can't be done if the player has the Bee Badge
 function beeBoost()
-    return not has("beebadge")
+    return hasAny({ "beeBoost_show", "hell" }) and not has("beebadge");
 end
 
 function cutGrass()
@@ -155,7 +164,7 @@ function cutGrass()
 end
 
 function has_all_sages()
-    return hasAll({ "dark", "swamp", "skull", "thieves", "turtle", "desert", "ice" });
+    return has_amount("sage", 7);
 end
 
 function does_not_have_all_sages()
@@ -201,10 +210,12 @@ end
 function thB2()
     if has("merge") and switch() then
         return true
-    elseif hasAll({ "boots", "irod" }) then
+    elseif has("boots") and hasAny({ "boomerang", "irod" }) then
         return logic("basic")
-    elseif hasAny({ "bombs", "irod" }) then
+    elseif hasAny({ "boomerang", "irod" }) then
         return logic("advanced")
+    elseif has("bombs") then
+        return logic("hell")
     else
         return false
     end

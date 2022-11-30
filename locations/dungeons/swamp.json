@@ -253,7 +253,7 @@
         ],
         "sections": [
           {
-            "name": "Sage Oren",
+            "name": "Prize",
             "hosted_item": "swamp",
             "access_rules": [
               "merge, $attack",
@@ -269,7 +269,7 @@
             "map": "lorule",
             "x": 962,
             "y": 1808,
-            "size": 60
+            "size": 70
           }
         ],
         "sections": [
@@ -361,7 +361,7 @@
             ]
           },
           {
-            "name": "Sage Oren",
+            "name": "Prize",
             "hosted_item": "swamp",
             "access_rules": [
               "merge, $attack",

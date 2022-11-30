@@ -3,7 +3,7 @@
     "name": "Lorule Castle",
     "color": "#5e518d",
     "access_rules": [
-      "merge, dark, swamp, skull, thieves, turtle, desert, ice"
+      "merge, sage:7"
     ],
     "children": [
       {
@@ -314,9 +314,12 @@
             "access_rules": [
               "sword, hookshot, $fire",
               "sword, trials_skipped",
+              "swordless, net, hookshot, $fire, $attack",
+              "swordless, net, trials_skipped, $attack",
               "[hard], sword, hookshot",
               "[hard], net, hookshot",
               "[hard], net, trials_skipped",
+              "[hard], swordless, net, trials_skipped",
               "[advanced], sword, bombs"
             ],
             "capture_item": true,
@@ -341,9 +344,12 @@
             "access_rules": [
               "sword, hookshot, $fire, bowlight",
               "sword, trials_skipped, bowlight",
+              "swordless, net, hookshot, $fire, $attack, bowlight",
+              "swordless, net, trials_skipped, $attack, bowlight",
               "[hard], sword, hookshot, bowlight",
               "[hard], net, hookshot, bowlight",
               "[hard], net, trials_skipped, bowlight",
+              "[hard], swordless, net, trials_skipped, bowlight",
               "[advanced], sword, bombs, bowlight"
             ],
             "hosted_item": "triforce"
@@ -358,7 +364,7 @@
             "map": "lorule",
             "x": 1024,
             "y": 934,
-            "size": 60
+            "size": 70
           }
         ],
         "sections": [
@@ -489,9 +495,12 @@
             "access_rules": [
               "sword, hookshot, $fire",
               "sword, trials_skipped",
+              "swordless, net, hookshot, $fire, $attack",
+              "swordless, net, trials_skipped, $attack",
               "[hard], sword, hookshot",
               "[hard], net, hookshot",
               "[hard], net, trials_skipped",
+              "[hard], swordless, net, trials_skipped",
               "[advanced], sword, bombs"
             ]
           },
@@ -500,9 +509,12 @@
             "access_rules": [
               "sword, hookshot, $fire, bowlight",
               "sword, trials_skipped, bowlight",
+              "swordless, net, hookshot, $fire, $attack, bowlight",
+              "swordless, net, trials_skipped, $attack, bowlight",
               "[hard], sword, hookshot, bowlight",
               "[hard], net, hookshot, bowlight",
               "[hard], net, trials_skipped, bowlight",
+              "[hard], swordless, net, trials_skipped, bowlight",
               "[advanced], sword, bombs, bowlight"
             ],
             "hosted_item": "triforce"

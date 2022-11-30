@@ -209,7 +209,7 @@
         ],
         "sections": [
           {
-            "name": "Sage Seres",
+            "name": "Prize",
             "hosted_item": "skull",
             "access_rules": [
               "{merge}",
@@ -226,7 +226,7 @@
             "map": "lorule",
             "x": 245,
             "y": 166,
-            "size": 60
+            "size": 70
           }
         ],
         "sections": [
@@ -305,7 +305,7 @@
             ]
           },
           {
-            "name": "Sage Seres",
+            "name": "Prize",
             "hosted_item": "skull",
             "access_rules": [
               "{merge}",

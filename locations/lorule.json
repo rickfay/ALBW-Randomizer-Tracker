@@ -390,7 +390,7 @@
           {
             "name": "Thief Girl Cave",
             "access_rules": [
-              "thieves"
+              "osfala"
             ],
             "item_count": 1
           }

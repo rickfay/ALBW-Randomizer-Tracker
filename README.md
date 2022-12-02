@@ -146,26 +146,17 @@ Worlds Randomizer.
 
 ### Dungeon Prize Explanation
 
-| Image                                             | Meaning                                                                                                             |
-|---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| ![Sage](images/sage.png)                          | Sage (generic)<br /><br />This is a stand-in for the six Sages that don't unlock anything by themselves.            |
-| ![Sage Osfala](images/sage_osfala.png)            | Sage Osfala<br /><br />A Sage that also unlocks the Sand Rod slot item in Ravio's Shop.                             |
-| ![Pendant](images/pendant.png)                    | Pendant (generic)<br /><br />This is a stand-in for the Red/Blue Pendants that don't unlock anything by themselves. |
-| ![Pendant of Courage](images/pendant_courage.png) | Pendant of Courage<br /><br />A Pendant that also unlocks Irene and the Haunted Grove Tree Stump.                   |
+| Prize                                             | Description                                                                                                                                                        |
+|---------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![Sage](images/sage_staff.png)                    | **Sage (generic)**<br /><br />This is a stand-in for the six Sages that don't unlock anything by themselves.                                                       |
+| ![Sage Osfala](images/sage_osfala.png)            | **Sage Osfala**<br /><br />A Sage that also gives an item, causes the Masked Thief Girl to appear in her cave, and unlocks the Sand Rod slot item in Ravio's Shop. |
+| ![Sage Gulley](images/sage_gulley.png)            | **Sage Gulley**<br /><br />A Sage that when collected causes the Dark Maze guards to disappear, making two checks available without Merge in certain modes.        |
+| ![Pendant](images/pendant.png)                    | **Pendant (generic)**<br /><br />This is a stand-in for the Red/Blue Pendants that don't unlock anything by themselves.                                            |
+| ![Pendant of Courage](images/pendant_courage.png) | **Pendant of Courage**<br /><br />A Pendant that also unlocks Irene and the Haunted Grove Tree Stump.                                                              |
 
-- 7 Sages are needed to enter Lorule Castle.
-  - The tracker does not verify that exactly one is Osfala.
-- 3 Pendants are needed to pull the Master Sword.
-  - The tracker does not verify that exactly one is the Pendant of Courage.
+<u>**Note**</u>: Completing Eastern Palace unlocks Rosso's House and causes the boulders to appear around it, ***NOT*** the Pendent of Courage. The Crooked Chest can be obtained early by entering the house via the Skull Woods Portal.
 
-### Checks Unlocked by Completing Specific Dungeons
-
-The following checks are unlocked not by any Dungeon Prize, but by completing a specific dungeon:
-
-| Dungeon          | Check                                                                                                                                                                                                                                                |
-|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Eastern Palace   | Rosso's House is unlocked and an eruption causes rocks to appear around it after defeating Yuga 1 in Eastern Palace.<br /><br />Note that the Crooked Chest may be reached without completing Eastern Palace by entering the house from Skull Woods. |
-| Thieves' Hideout | The Thief Girl Cave chest is obtainable any time after collecting the reward from Thieves' Hideout.                                                                                                                                                  |
+![Crooked Chest](images/chest_crooked_unopened.png) ![Crooked Chest](images/chest_crooked_opened.png)
 
 
 ### Location Color Codes
@@ -194,18 +185,16 @@ This tracker follows EmoTracker's standard color scheme for its locations:
 
 ### Logic Modes
 
-![Normal Logic](images/logic_normal.png) ![Hard Logic](images/logic_hard.png) ![Hard Logic](images/logic_hard.png) ![Glitched Basic Logic](images/logic_basic.png) ![Glitched Advanced Logic](images/logic_advanced.png) ![Glitched Hell Logic](images/logic_hell.png)
-
 The randomizer supports five* Logic Modes, and so does this tracker. You can select the mode matching your seed in the
 settings panel in the bottom left of the tracker.
 
-| Logic Mode          | Description                                                                                                                                                                         |
-|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Normal              | Standard gameplay, no tricky item use or glitches.                                                                                                                                  |
-| Hard                | Adds tricks that aren't technically glitches. Lamp + Net considered as weapons. No glitches.                                                                                        |
-| Glitched (Basic)    | Includes the above plus "basic", easy-to-learn glitches.                                                                                                                            |
-| Glitched (Advanced) | Includes the above plus "advanced" glitches that may be a challenge to master.                                                                                                      |
-| Glitched (Hell)     | Includes every known RTA-viable glitch, including the insane ones. Note that the Bee Badge is omitted from the item pool in this mode, to preserve the infamous Bee Boosting trick. |
+| Mode                                                  | Description                                                                                                                                                                                                        |
+|-------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![Normal Logic](images/logic_normal.png)              | **Normal**<br /><br />Standard gameplay, no tricky item use or glitches.                                                                                                                                           |
+| ![Hard Logic](images/logic_hard.png)                  | **Hard**<br /><br />Adds tricks that aren't technically glitches. Lamp + Net considered as weapons. No glitches.                                                                                                   |
+| ![Glitched Basic Logic](images/logic_basic.png)       | **Glitched (Basic)**<br /><br />Includes the above plus "basic", easy-to-learn glitches.                                                                                                                           |
+| ![Glitched Advanced Logic](images/logic_advanced.png) | **Glitched (Advanced)**<br /><br />Includes the above plus "advanced" glitches that may be a challenge to master.                                                                                                  |
+| ![Glitched Hell Logic](images/logic_hell.png)         | **Glitched (Hell)**<br /><br />Includes every known RTA-viable glitch, including the insane ones. Note that the Bee Badge is omitted from the item pool in this mode, to preserve the infamous Bee Boosting trick. |
 
 Raising the Logic Mode to higher difficulties will cause `🟨 Sequence Break` sections to become `🟩 Normal` as they
 enter logic.
@@ -269,7 +258,7 @@ Turn this setting on to show `🟨 Sequence Break` checks that require using the
 
 Checks requiring the Bee Boost glitch are hidden by default given the trick's extreme terribleness.
 
-<u>Note</u>: This setting will be ignored if the **Glitched (Hell)** Logic Mode is selected, as they would then be in
+<u>**Note**</u>: This setting will be ignored if the **Glitched (Hell)** Logic Mode is selected, as they would then be in
 logic.
 
 ### Maiamai Map
@@ -282,17 +271,18 @@ This setting toggles the visibility of the Maiamai checks.
 
 Take a minute to review these, you can use them in ANY EmoTracker package.
 
-| Hot Key                    | Action                    | Notes                                                                                                                                  |
-|----------------------------|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| F1                         | Package Documentation     | Opens this webpage                                                                                                                     |
-| F2                         | Opens the Broadcast View  |                                                                                                                                        |
-| F5                         | Reload                    |                                                                                                                                        |
-| F11                        | Shows/Hides all Locations | Extremely useful                                                                                                                       |
-| Ctrl + O                   | Open                      |                                                                                                                                        |
-| Ctrl + S                   | Save                      |                                                                                                                                        |
-| Ctrl + Shift + S           | Save As...                |                                                                                                                                        |
-| Ctrl + Mousewheel Up/Down  | Scale Layout              | Use this to enlarge Dungeon Maps if the defaults are too small. <br>You have to hover the mouse over the Items section for it to work. |
-| Ctrl + 0                   | Reset Layout Scale        |                                                                                                                                        |
+| Hot Key                   | Action                    | Notes                                                                                                                                  |
+|---------------------------|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| F1                        | Package Documentation     | Opens this webpage                                                                                                                     |
+| F2                        | Opens the Broadcast View  |                                                                                                                                        |
+| F5                        | Reload                    |                                                                                                                                        |
+| F11                       | Shows/Hides all Locations | Extremely useful                                                                                                                       |
+| Ctrl + O                  | Open                      |                                                                                                                                        |
+| Ctrl + S                  | Save                      |                                                                                                                                        |
+| Ctrl + Shift + S          | Save As...                |                                                                                                                                        |
+| Ctrl + Mousewheel Up/Down | Scale Layout              | Use this to enlarge Dungeon Maps if the defaults are too small. <br>You have to hover the mouse over the Items section for it to work. |
+| Ctrl + 0 (zero)           | Reset Layout Scale        | Undoes any zoom changes                                                                                                                |
+| Ctrl + Z                  | Undo                      |                                                                                                                                        |
 
 ## License
 

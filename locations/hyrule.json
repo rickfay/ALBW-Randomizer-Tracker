@@ -81,7 +81,7 @@
             "chest_unopened_img": "images/chest_crooked_unopened.png",
             "chest_opened_img": "images/chest_crooked_opened.png",
             "access_rules": [
-              "eastern",
+              "courage",
               "merge"
             ],
             "item_count": 1
@@ -89,7 +89,7 @@
           {
             "name": "Smash Rosso's Pet Rocks",
             "access_rules": [
-              "eastern, powerglove"
+              "courage, powerglove"
             ],
             "item_count": 1
           }

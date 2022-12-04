@@ -152,11 +152,7 @@ Worlds Randomizer.
 | ![Sage Osfala](images/sage_osfala.png)            | **Sage Osfala**<br /><br />A Sage that also gives an item, causes the Masked Thief Girl to appear in her cave, and unlocks the Sand Rod slot item in Ravio's Shop. |
 | ![Sage Gulley](images/sage_gulley.png)            | **Sage Gulley**<br /><br />A Sage that when collected causes the Dark Maze guards to disappear, making two checks available without Merge in certain modes.        |
 | ![Pendant](images/pendant.png)                    | **Pendant (generic)**<br /><br />This is a stand-in for the Red/Blue Pendants that don't unlock anything by themselves.                                            |
-| ![Pendant of Courage](images/pendant_courage.png) | **Pendant of Courage**<br /><br />A Pendant that also unlocks Irene and the Haunted Grove Tree Stump.                                                              |
-
-<u>**Note**</u>: Completing Eastern Palace unlocks Rosso's House and causes the boulders to appear around it, ***NOT*** the Pendent of Courage. The Crooked Chest can be obtained early by entering the house via the Skull Woods Portal.
-
-![Crooked Chest](images/chest_crooked_unopened.png) ![Crooked Chest](images/chest_crooked_opened.png)
+| ![Pendant of Courage](images/pendant_courage.png) | **Pendant of Courage**<br /><br />A Pendant that also unlocks the Haunted Grove Tree Stump, Irene, and Rosso's House.                                              |
 
 
 ### Location Color Codes

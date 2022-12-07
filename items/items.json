@@ -132,7 +132,7 @@
     "name": "Foul Fruit",
     "type": "toggle",
     "mask_input": true,
-    "img": "images/foul_fruit.png",
+    "img": "images/fruit_foul.png",
     "codes": "foul, foulfruit"
   },
   {
@@ -371,8 +371,7 @@
   {
     "name": "Scoot Fruit",
     "type": "toggle",
-    "mask_input": true,
-    "img": "images/scoot_fruit.png",
+    "img": "images/fruit_scoot.png",
     "codes": "scoot, scootfruit"
   },
   {

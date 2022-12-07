@@ -11,7 +11,6 @@
         "hookshot",
         "bombs",
         "pouch",
-        "boots",
         "fsword"
       ],
       [
@@ -20,7 +19,6 @@
         "trod",
         "srod",
         "beebadge",
-        "powerglove",
         "shield"
       ],
       [
@@ -29,7 +27,6 @@
         "bell",
         "net",
         "scroll",
-        "flippers",
         "greentunic"
       ],
       [
@@ -38,17 +35,23 @@
         "milk",
         "goldenbee",
         "scoot",
-        "smoothgem",
         "bracelet"
       ],
       [
-        "masterore",
-        "maiamai",
+        "boots",
+        "glove",
+        "flippers",
+        "smoothgem",
+        "foul",
+        "bowoflight"
+      ],
+      [
+        "heart",
         "hp",
         "hc",
-        "foul",
         "hintglasses",
-        "bowoflight"
+        "masterore",
+        "maiamai"
       ],
       [
         "tail",

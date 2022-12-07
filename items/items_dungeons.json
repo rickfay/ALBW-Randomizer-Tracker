@@ -4,7 +4,7 @@
     "type": "progressive_toggle",
     "stages": [
       {
-        "img": "images/sage_staff.png",
+        "img": "images/sage_rainbow.png",
         "img_mods": "overlay|images/label_EP.png",
         "codes": "eastern, sage"
       },
@@ -35,7 +35,7 @@
     "type": "progressive_toggle",
     "stages": [
       {
-        "img": "images/sage_staff.png",
+        "img": "images/sage_rainbow.png",
         "img_mods": "overlay|images/label_HG.png",
         "codes": "gales, sage"
       },
@@ -66,7 +66,7 @@
     "type": "progressive_toggle",
     "stages": [
       {
-        "img": "images/sage_staff.png",
+        "img": "images/sage_rainbow.png",
         "img_mods": "overlay|images/label_TH.png",
         "codes": "hera, sage"
       },
@@ -97,7 +97,7 @@
     "type": "progressive_toggle",
     "stages": [
       {
-        "img": "images/sage_staff.png",
+        "img": "images/sage_rainbow.png",
         "img_mods": "overlay|images/label_PD.png",
         "codes": "dark, sage"
       },
@@ -128,7 +128,7 @@
     "type": "progressive_toggle",
     "stages": [
       {
-        "img": "images/sage_staff.png",
+        "img": "images/sage_rainbow.png",
         "img_mods": "overlay|images/label_SP.png",
         "codes": "swamp, sage"
       },
@@ -159,7 +159,7 @@
     "type": "progressive_toggle",
     "stages": [
       {
-        "img": "images/sage_staff.png",
+        "img": "images/sage_rainbow.png",
         "img_mods": "overlay|images/label_SW.png",
         "codes": "skull, sage"
       },
@@ -190,7 +190,7 @@
     "type": "progressive_toggle",
     "stages": [
       {
-        "img": "images/sage_staff.png",
+        "img": "images/sage_rainbow.png",
         "img_mods": "overlay|images/label_T'H.png",
         "codes": "thieves, sage"
       },
@@ -221,7 +221,7 @@
     "type": "progressive_toggle",
     "stages": [
       {
-        "img": "images/sage_staff.png",
+        "img": "images/sage_rainbow.png",
         "img_mods": "overlay|images/label_TR.png",
         "codes": "turtle, sage"
       },
@@ -252,7 +252,7 @@
     "type": "progressive_toggle",
     "stages": [
       {
-        "img": "images/sage_staff.png",
+        "img": "images/sage_rainbow.png",
         "img_mods": "overlay|images/label_DP.png",
         "codes": "desert, sage"
       },
@@ -283,7 +283,7 @@
     "type": "progressive_toggle",
     "stages": [
       {
-        "img": "images/sage_staff.png",
+        "img": "images/sage_rainbow.png",
         "img_mods": "overlay|images/label_IR.png",
         "codes": "ice, sage"
       },

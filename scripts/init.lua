@@ -4,8 +4,8 @@ ScriptHost:LoadScript("scripts/control.lua")
 
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/items_chests.json")
---Tracker:AddItems("items/items_dungeons.json")
-Tracker:AddItems("items/items_dungeons_full.json")
+Tracker:AddItems("items/items_dungeons.json")
+--Tracker:AddItems("items/items_dungeons_full.json")
 --Tracker:AddItems("items/items_weather_vanes.json")
 
 Tracker:AddItems("options.json")

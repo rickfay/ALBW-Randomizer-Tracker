@@ -41,7 +41,9 @@
               "{}",
               "merge",
               "[basic], boomerang, $escape",
-              "[basic], hookshot, $escape"
+              "[basic], hookshot, $escape",
+              "[hell], boomerang",
+              "[hell], hookshot",
             ],
             "item_count": 1
           }

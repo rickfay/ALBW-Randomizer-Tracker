@@ -28,8 +28,8 @@ function has_amount(item, amount)
     return Tracker:ProviderCountForCode(item) >= amount
 end
 
--- Returns true if we're using the specified logic, or (true, SequenceBreak) if not
-function logic(logic)
+-- Returns true if we're using the specified settings, or (true, SequenceBreak) if not
+function true_for(logic)
     if has(logic) then
         return true
     else
@@ -42,7 +42,7 @@ function attack()
     if hasAny({ "fsword", "bow", "bombs", "frod", "irod", "hammer", "boots" }) then
         return true
     elseif hasAny({ "lamp", "net" }) then
-        return logic("hard")
+        return true_for("hard")
     else
         return false
     end
@@ -53,7 +53,7 @@ function fire_enemy()
     if hasAny({ "fsword", "bow", "bombs", "irod", "hammer", "boots" }) then
         return true
     elseif has("net") then
-        return logic("hard")
+        return true_for("hard")
     else
         return false
     end
@@ -65,7 +65,7 @@ function margomill()
     if hasAny({ "fsword", "bow", "bombs", "frod", "hammer", "boots" }) then
         return true
     elseif hasAny({ "lamp", "net" }) then
-        return logic("hard")
+        return true_for("hard")
     end
 
     return false
@@ -77,7 +77,7 @@ function knucklemaster()
     if hasAny({ "fsword", "bombs", "frod", "irod", "hammer", "boots" }) then
         return true
     elseif hasAny({ "lamp", "net" }) then
-        return logic("hard")
+        return true_for("hard")
     end
 
     return false
@@ -130,6 +130,10 @@ function fire()
     return hasAny({ "lamp", "frod" })
 end
 
+function canExtinguishTorches()
+    return hasAny({ "sword", "bombs", "trod", "irod", "net" })
+end
+
 -- Return if Link can hit Crystal Switches
 -- Pots aren't accounted for here, but may make hitting some switches possible
 function switch()
@@ -149,7 +153,7 @@ function lampless()
     if has("lamp") then
         return true
     else
-        return logic("lampless") -- hacky but w/e
+        return true_for("lampless")
     end
 end
 
@@ -176,7 +180,7 @@ function yuga1()
     if hasAny({ "bow", "bombs" }) or hasAny({ "boomerang", "hookshot" }) then
         return attack()
     elseif hasAny({ "irod", "msword" }) then
-        return logic("hell")
+        return true_for("hell")
     else
         return false
     end
@@ -187,7 +191,7 @@ function hog2F()
     if has("merge") and switch() then
         return true
     elseif hasAny({ "bow", "boomerang", "hookshot", "bombs", "irod", "msword" }) then
-        return logic("hard")
+        return true_for("hard")
     else
         return false
     end
@@ -199,7 +203,7 @@ function hog3F()
         if fire_enemy() then
             return fire_enemy()
         else
-            return logic("basic")
+            return true_for("basic")
         end
     else
         return false
@@ -211,11 +215,11 @@ function thB2()
     if has("merge") and switch() then
         return true
     elseif has("boots") and hasAny({ "boomerang", "irod" }) then
-        return logic("basic")
+        return true_for("basic")
     elseif hasAny({ "boomerang", "irod" }) then
-        return logic("advanced")
+        return true_for("advanced")
     elseif has("bombs") then
-        return logic("hell")
+        return true_for("hell")
     else
         return false
     end
@@ -226,7 +230,7 @@ function thEscape()
     if hasAll({ "merge", "flippers" }) and attack() then
         return true
     elseif has("trod") and hasAny({ "bombs", "irod" }) then
-        return logic("advanced")
+        return true_for("advanced")
     else
         return false
     end
@@ -240,9 +244,9 @@ end
 -- Return if we can get OoB on the south wall of Misery Mire
 function miseryMireOoB()
     if has("merge") and boost() then
-        return logic("advanced")
+        return true_for("advanced")
     elseif has("trod") and (hasAny({ "boomerang", "hookshot" }) or shieldRodClip()) then
-        return logic("hell")
+        return true_for("hell")
     else
         return false
     end
@@ -251,7 +255,7 @@ end
 -- Return if we can perform Reverse Desert Palace
 function reverseDP()
     if has("srod") and miseryMireOoB() then
-        return logic("advanced")
+        return true_for("advanced")
     else
         return false
     end
@@ -263,9 +267,9 @@ function enterTR()
         if has("flippers") then
             return true
         elseif fakeFlippers() then
-            return logic("advanced")
+            return true_for("advanced")
         elseif has("boots") then
-            return logic("hell")
+            return true_for("hell")
         end
     end
 
@@ -277,6 +281,38 @@ function lc2F()
     if attack() then
         return true
     else
-        return logic("hard")
+        return true_for("hard")
+    end
+end
+
+-- Return if we have the Sages needed to enter Lorule Castle
+function canEnterLC()
+    return hasAny({ "merge", "yuga" }) and
+            (Tracker:ProviderCountForCode("sage") >= Tracker:ProviderCountForCode("lc_requirement"))
+end
+
+-- Return if we can reach Zelda in Lorule Castle
+function zelda()
+
+    if Tracker:ProviderCountForCode("sage") < Tracker:ProviderCountForCode("yuganon_requirement") then
+        return false
+    end
+
+    local canPassTrials = has("trials_skipped") or (hasAll({ "merge", "hookshot" }) and fire())
+    local canGlitchTrials = hasAll({ "sword", "bombs" }) and hasAny({ "merge", "bow" })
+    local logicalTennis = has("sword") or hasAll({ "swordless", "net" })
+
+    if canPassTrials then
+        if logicalTennis then
+            return true
+        elseif has("net") then
+            return true_for("hard")
+        else
+            return false
+        end
+    elseif canGlitchTrials and hasAny({ "sword", "net" }) then
+        return true_for("advanced")
+    else
+        return false
     end
 end

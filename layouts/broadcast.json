@@ -1,7 +1,19 @@
 {
   "tracker_broadcast": {
-    "type": "layout",
-    //"width": 355,
-    "key": "item_grid"
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "layout",
+        "key": "item_grid"
+      },
+      // Uncomment if you want most recent pins to show up in broadcast view
+//      {
+//        "type": "recentpins",
+//        "max_width": 292,
+//        "num_items": 1,
+//        "orientation": "vertical"
+//      }
+    ]
   }
 }

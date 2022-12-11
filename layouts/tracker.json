@@ -11,11 +11,6 @@
           {
             "type": "group",
             "header": "Items",
-            //            "header_content": {
-            //              "type": "button_popup",
-            //              "style": "settings",
-            //              "layout": "options_menu"
-            //            },
             "dock": "top",
             "content": [
               {
@@ -44,11 +39,9 @@
               {
                 "type": "group",
                 "header": "Pinned Locations",
-                "max_width": "316",
+                "width": "306",
                 "content": {
                   "type": "recentpins",
-                  //"style": "wrap",
-                  //"compact": false,
                   "orientation": "vertical"
                 }
               }

@@ -10,10 +10,10 @@
           {
             "type": "itemgrid",
             "dropshadow": true,
-            "width": "306",
+            "width": "292",
             "h_alignment": "center",
             "item_size": "40",
-            "item_margin": "5,2",
+            "item_margin": "4,0",
             "rows": [
               [
                 "logic",

@@ -7,26 +7,25 @@
         "type": "itemgrid",
         "dropshadow": true,
         "h_alignment": "center",
-        "item_size": "40",
+        "item_size": "32",
         "item_margin": "1,2",
         "rows": [
           // Making an override?
           // Move the greatspin to the same grid location as the Sword.
-          [ "", "", "", "", "", "greatspin", "" ],
-//          [ "", "", "", "", "", "", "" ],
-//          [ "", "", "", "", "", "", "" ],
-//          [ "", "", "", "", "", "", "" ],
-//          [ "", "", "", "", "", "", "" ],
-//          [ "", "", "", "", "", "", "" ]
+          [ "", "", "", "", "", "greatspin", "", "" ],
+          //[ "", "", "", "", "", "", "", "" ],
+          //[ "", "", "", "", "", "", "", "" ],
+          //[ "", "", "", "", "", "", "", "" ],
+          //[ "", "", "", "", "", "", "", "" ],
+          //[ "", "", "", "", "", "", "", "" ],
         ]
       },
       {
         "type": "itemgrid",
         "dropshadow": true,
         "h_alignment": "center",
-        "item_size": "40",
+        "item_size": "32",
         "item_margin": "1,2",
-
         "rows": [
           [
             "bow",
@@ -35,7 +34,8 @@
             "bombs",
             "pouch",
             "fsword",
-            "eastern"
+            "eastern",
+            "lc_requirement"
           ],
           [
             "frod",
@@ -44,7 +44,8 @@
             "srod",
             "beebadge",
             "shield",
-            "gales"
+            "gales",
+            "yuganon_requirement"
           ],
           [
             "lamp",
@@ -53,7 +54,8 @@
             "net",
             "scroll",
             "greentunic",
-            "hera"
+            "hera",
+            ""
           ],
           [
             "bottle",
@@ -62,7 +64,8 @@
             "goldbee",
             "fruit",
             "bracelet",
-            "yuga"
+            "yuga",
+            ""
           ],
           [
             "boots",
@@ -71,7 +74,8 @@
             "smoothgem",
             "ore",
             "maiamai",
-            "bowoflight"
+            "bowoflight",
+            ""
           ],
           [
             "dark",
@@ -80,7 +84,8 @@
             "thieves",
             "turtle",
             "desert",
-            "ice"
+            "ice",
+            ""
           ]
         ]
       }

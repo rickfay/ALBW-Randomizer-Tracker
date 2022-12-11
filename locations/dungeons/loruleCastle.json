@@ -3,7 +3,7 @@
     "name": "Lorule Castle",
     "color": "#5e518d",
     "access_rules": [
-      "merge, sage:7"
+      "$canEnterLC"
     ],
     "children": [
       {
@@ -39,7 +39,10 @@
           {
             "name": "1F Right Wall",
             "capture_item": true,
-            "hosted_item": "lc_chest_02"
+            "hosted_item": "lc_chest_02",
+            "access_rules": [
+              "merge"
+            ]
           }
         ]
       },
@@ -77,10 +80,7 @@
             "name": "2F Dark Bridge",
             "capture_item": true,
             "access_rules": [
-              "fsword",
-              "bombs",
-              "$lc2F, trod",
-              "irod",
+              "$lc2F, $canExtinguishTorches",
               "$lc2F, [hard]"
             ],
             "hosted_item": "lc_chest_04"
@@ -102,7 +102,9 @@
             "capture_item": true,
             "hosted_item": "lc_chest_05",
             "access_rules": [
-              "$lc2F"
+              "$lc2F, merge",
+              "[basic], $lc2F, boots",
+              "[advanced], $lc2F"
             ]
           }
         ]
@@ -141,10 +143,7 @@
             "name": "4F Big Chest",
             "capture_item": true,
             "access_rules": [
-              "fsword",
-              "bombs",
-              "$lc2F, trod",
-              "irod",
+              "$lc2F, $canExtinguishTorches",
               "$lc2F, [hard]"
             ],
             "hosted_item": "lc_chest_07"
@@ -187,7 +186,8 @@
             "name": "3F Bomb Trial 2",
             "capture_item": true,
             "access_rules": [
-              "bombs",
+              "bombs, merge",
+              "[hard], bombs, bow",
               "[], niceirod"
             ],
             "hosted_item": "lc_chest_09"
@@ -230,7 +230,7 @@
             "capture_item": true,
             "hosted_item": "lc_chest_11",
             "access_rules": [
-              "$lc2F"
+              "$lc2F, merge"
             ]
           }
         ]
@@ -272,7 +272,8 @@
             "name": "4F Hookshot Trial 2",
             "capture_item": true,
             "access_rules": [
-              "$lc2F, hookshot"
+              "$lc2F, hookshot, merge",
+              "$lc2F, hookshot, irod"
             ],
             "hosted_item": "lc_chest_13"
           }
@@ -312,15 +313,7 @@
             "name": "Zelda",
             "chest_unopened_img": "images/zelda.png",
             "access_rules": [
-              "sword, hookshot, $fire",
-              "sword, trials_skipped",
-              "swordless, net, hookshot, $fire, $attack",
-              "swordless, net, trials_skipped, $attack",
-              "[hard], sword, hookshot",
-              "[hard], net, hookshot",
-              "[hard], net, trials_skipped",
-              "[hard], swordless, net, trials_skipped",
-              "[advanced], sword, bombs"
+              "$zelda"
             ],
             "capture_item": true,
             "hosted_item": "lc_chest_15"
@@ -342,15 +335,7 @@
           {
             "name": "Triforce",
             "access_rules": [
-              "sword, hookshot, $fire, bowlight",
-              "sword, trials_skipped, bowlight",
-              "swordless, net, hookshot, $fire, $attack, bowlight",
-              "swordless, net, trials_skipped, $attack, bowlight",
-              "[hard], sword, hookshot, bowlight",
-              "[hard], net, hookshot, bowlight",
-              "[hard], net, trials_skipped, bowlight",
-              "[hard], swordless, net, trials_skipped, bowlight",
-              "[advanced], sword, bombs, bowlight"
+              "$zelda, merge, bowlight"
             ],
             "hosted_item": "triforce"
           }
@@ -371,7 +356,11 @@
           {
             "name": "1F Right Wall          ",
             "capture_item": true,
-            "hosted_item": "lc_chest_02"
+            "hosted_item": "lc_chest_02",
+            "access_rules": [
+              "merge",
+              "[basic], $lc2F, trod"
+            ]
           },
           {
             "name": "2F East Room",
@@ -386,10 +375,7 @@
             "capture_item": true,
             "hosted_item": "lc_chest_04",
             "access_rules": [
-              "fsword",
-              "bombs",
-              "$lc2F, trod",
-              "irod",
+              "$lc2F, $canExtinguishTorches",
               "$lc2F, [hard]"
             ]
           },
@@ -398,7 +384,9 @@
             "capture_item": true,
             "hosted_item": "lc_chest_05",
             "access_rules": [
-              "$lc2F"
+              "$lc2F, merge",
+              "[basic], $lc2F, boots",
+              "[advanced], $lc2F"
             ]
           },
           {
@@ -431,10 +419,7 @@
             "capture_item": true,
             "hosted_item": "lc_chest_07",
             "access_rules": [
-              "fsword",
-              "bombs",
-              "$lc2F, trod",
-              "irod",
+              "$lc2F, $canExtinguishTorches",
               "$lc2F, [hard]"
             ]
           },
@@ -451,7 +436,8 @@
             "capture_item": true,
             "hosted_item": "lc_chest_13",
             "access_rules": [
-              "$lc2F, hookshot"
+              "$lc2F, hookshot, merge",
+              "$lc2F, hookshot, irod"
             ]
           },
           {
@@ -467,7 +453,7 @@
             "capture_item": true,
             "hosted_item": "lc_chest_11",
             "access_rules": [
-              "$lc2F"
+              "$lc2F, merge"
             ]
           },
           {
@@ -484,7 +470,8 @@
             "capture_item": true,
             "hosted_item": "lc_chest_09",
             "access_rules": [
-              "bombs",
+              "bombs, merge",
+              "[hard], bombs, bow",
               "[], niceirod"
             ]
           },
@@ -493,29 +480,13 @@
             "capture_item": true,
             "hosted_item": "lc_chest_15",
             "access_rules": [
-              "sword, hookshot, $fire",
-              "sword, trials_skipped",
-              "swordless, net, hookshot, $fire, $attack",
-              "swordless, net, trials_skipped, $attack",
-              "[hard], sword, hookshot",
-              "[hard], net, hookshot",
-              "[hard], net, trials_skipped",
-              "[hard], swordless, net, trials_skipped",
-              "[advanced], sword, bombs"
+              "$zelda"
             ]
           },
           {
             "name": "Triforce",
             "access_rules": [
-              "sword, hookshot, $fire, bowlight",
-              "sword, trials_skipped, bowlight",
-              "swordless, net, hookshot, $fire, $attack, bowlight",
-              "swordless, net, trials_skipped, $attack, bowlight",
-              "[hard], sword, hookshot, bowlight",
-              "[hard], net, hookshot, bowlight",
-              "[hard], net, trials_skipped, bowlight",
-              "[hard], swordless, net, trials_skipped, bowlight",
-              "[advanced], sword, bombs, bowlight"
+              "$zelda, merge, bowlight"
             ],
             "hosted_item": "triforce"
           }

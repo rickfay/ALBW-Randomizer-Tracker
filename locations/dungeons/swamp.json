@@ -4,7 +4,6 @@
     "color": "#d25432",
     "access_rules": [
       "merge, flippers, hookshot",
-      "yuga, flippers, hookshot"
     ],
     "children": [
       {

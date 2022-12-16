@@ -308,8 +308,7 @@
   {
     "name": "Lorule Castle Area",
     "access_rules": [
-      "merge",
-      "yuga"
+      "merge"
     ],
     "children": [
       {

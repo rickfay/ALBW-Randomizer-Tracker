@@ -1,13 +1,6 @@
 [
   {
     "name": "Hyrule Castle",
-    "access_rules": [
-      "msword",
-      "swordless",
-      // Barrier Skip, only works before getting all sages
-      "[], merge, boots, trod, bombs, $does_not_have_all_sages, boomerang",
-      "[], merge, boots, trod, bombs, $does_not_have_all_sages, hookshot"
-    ],
     "children": [
       {
         "name": "Hyrule Castle",
@@ -21,7 +14,11 @@
         "sections": [
           {
             "name": "Left Room Chest",
-            "item_count": 1
+            "item_count": 1,
+            "access_rules": [
+              "$hc_barrier",
+              "[$has_all_sages], $canEnterLC, $lc2F, merge, yuga"
+            ]
           }
         ]
       },
@@ -36,19 +33,20 @@
         ],
         "sections": [
           {
-            "name": "Right Wall Chest",
-            "item_count": 1
+            "name": "Roof Chest",
+            "item_count": 1,
+            "access_rules": [
+              "$hc_barrier",
+              "[$has_all_sages], $canEnterLC, $lc2F, merge, yuga"
+            ]
           }
         ]
       },
       {
         "name": "Inside Hyrule Castle",
         "access_rules": [
-          "merge, $yuga2",
-          "bow, $yuga2",
-          "irod",
-          "[basic], nicebombs",
-          "[], nicetrod, $yuga2"
+          "$hc_barrier, courage, merge, $yuga2",
+          "[$has_all_sages], $canEnterLC, $lc2F, merge, $yuga2"
         ],
         "map_locations": [
           {

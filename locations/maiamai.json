@@ -1960,8 +1960,7 @@
       {
         "name": "Lorule Castle Field",
         "access_rules": [
-          "merge",
-          "yuga"
+          "merge"
         ],
         "children": [
           {

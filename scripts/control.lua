@@ -83,10 +83,6 @@ function knucklemaster()
     return false
 end
 
-function yuga2()
-    return hasAny({ "fsword", "bombs", "frod", "irod", "hammer" })
-end
-
 -- Return if the player can stun enemies
 -- Foul Fruit is not considered here as its single-use nature makes it rarely useful
 function stun()
@@ -168,7 +164,7 @@ function cutGrass()
 end
 
 function has_all_sages()
-    return has_amount("sage", 7);
+    return (Tracker:ProviderCountForCode("sage") >= Tracker:ProviderCountForCode("lc_requirement"));
 end
 
 function does_not_have_all_sages()
@@ -276,6 +272,22 @@ function enterTR()
     return false
 end
 
+function hc_barrier()
+    if has("msword") then
+        return true
+    elseif hasAll({ "merge", "boots", "trod", "bombs" })
+            and hasAny({ "hookshot", "boomerang" })
+            and does_not_have_all_sages() then
+        return true, AccessibilityLevel.SequenceBreak -- barrier skip, not in any logic because it's missable
+    else
+        return false
+    end
+end
+
+function yuga2()
+    return hasAny({ "fsword", "bombs", "frod", "irod", "hammer" })
+end
+
 -- Return if we can reach Lorule Castle 2F
 function lc2F()
     if attack() then
@@ -285,26 +297,29 @@ function lc2F()
     end
 end
 
--- Return if we have the Sages needed to enter Lorule Castle
+-- Return if we can enter Lorule Castle, either with Sages or via the Hyrule Castle Portal
 function canEnterLC()
-    return hasAny({ "merge", "yuga" }) and
-            (Tracker:ProviderCountForCode("sage") >= Tracker:ProviderCountForCode("lc_requirement"))
+    return has("merge") and (has_all_sages() or (hc_barrier() and hasAll({ "courage", "yuga" })))
 end
 
 -- Return if we can reach Zelda in Lorule Castle
 function zelda()
 
-    if Tracker:ProviderCountForCode("sage") < Tracker:ProviderCountForCode("yuganon_requirement") then
+    if Tracker:ProviderCountForCode("sage") < Tracker:ProviderCountForCode("yg_requirement") then
         return false
     end
 
-    local canPassTrials = has("trials_skipped") or (hasAll({ "merge", "hookshot" }) and fire())
+    local canPassTrials = has("trials_skipped") or hasAll({ "merge", "hookshot" }) or hasAll({"yuga", "merge"})
     local canGlitchTrials = hasAll({ "sword", "bombs" }) and hasAny({ "merge", "bow" })
     local logicalTennis = has("sword") or hasAll({ "swordless", "net" })
 
     if canPassTrials then
         if logicalTennis then
-            return true
+            if fire() then
+                return true
+            else
+                return true_for("hard")
+            end
         elseif has("net") then
             return true_for("hard")
         else

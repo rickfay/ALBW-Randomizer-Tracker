@@ -19,7 +19,7 @@
     "initial_quantity": 7,
     "max_quantity": 7,
     "min_quantity": 0,
-    "codes": "yuganon_requirement",
+    "codes": "yg_requirement",
     "img": "images/yuganon.png",
     "img_mods": "overlay|images/sage_staff_small.png",
     "disabled_img": "images/yuganon.png",

@@ -146,13 +146,13 @@ Worlds Randomizer.
 
 ### Dungeon Prize Explanation
 
-| Prize                                             | Description                                                                                                                                                        |
-|---------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![Sage](images/sage_staff.png)                    | **Sage (generic)**<br /><br />This is a stand-in for the six Sages that don't unlock anything by themselves.                                                       |
-| ![Sage Osfala](images/sage_osfala.png)            | **Sage Osfala**<br /><br />A Sage that also gives an item, causes the Masked Thief Girl to appear in her cave, and unlocks the Sand Rod slot item in Ravio's Shop. |
-| ![Sage Gulley](images/sage_gulley.png)            | **Sage Gulley**<br /><br />A Sage that when collected causes the Dark Maze guards to disappear, making two checks available without Merge in certain modes.        |
-| ![Pendant](images/pendant.png)                    | **Pendant (generic)**<br /><br />This is a stand-in for the Red/Blue Pendants that don't unlock anything by themselves.                                            |
-| ![Pendant of Courage](images/pendant_courage.png) | **Pendant of Courage**<br /><br />A Pendant that also unlocks the Haunted Grove Tree Stump, Irene, and Rosso's House.                                              |
+| Prize                                                    | Description                                                                                                                                                        |
+|----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![Sage](images/prizes/sage_staff.png)                    | **Sage (generic)**<br /><br />This is a stand-in for the six Sages that don't unlock anything by themselves.                                                       |
+| ![Sage Osfala](images/prizes/sage_osfala.png)            | **Sage Osfala**<br /><br />A Sage that also gives an item, causes the Masked Thief Girl to appear in her cave, and unlocks the Sand Rod slot item in Ravio's Shop. |
+| ![Sage Gulley](images/prizes/sage_gulley.png)            | **Sage Gulley**<br /><br />A Sage that when collected causes the Dark Maze guards to disappear, making two checks available without Merge in certain modes.        |
+| ![Pendant](images/prizes/pendant.png)                    | **Pendant (generic)**<br /><br />This is a stand-in for the Red/Blue Pendants that don't unlock anything by themselves.                                            |
+| ![Pendant of Courage](images/prizes/pendant_courage.png) | **Pendant of Courage**<br /><br />A Pendant that also unlocks the Haunted Grove Tree Stump, Irene, and Rosso's House.                                              |
 
 
 ### Location Color Codes
@@ -186,11 +186,11 @@ settings panel in the bottom left of the tracker.
 
 | Mode                                                  | Description                                                                                                                                                                                                        |
 |-------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![Normal Logic](images/logic_normal.png)              | **Normal**<br /><br />Standard gameplay, no tricky item use or glitches.                                                                                                                                           |
-| ![Hard Logic](images/logic_hard.png)                  | **Hard**<br /><br />Adds tricks that aren't technically glitches. Lamp + Net considered as weapons. No glitches.                                                                                                   |
-| ![Glitched Basic Logic](images/logic_basic.png)       | **Glitched (Basic)**<br /><br />Includes the above plus "basic", easy-to-learn glitches.                                                                                                                           |
-| ![Glitched Advanced Logic](images/logic_advanced.png) | **Glitched (Advanced)**<br /><br />Includes the above plus "advanced" glitches that may be a challenge to master.                                                                                                  |
-| ![Glitched Hell Logic](images/logic_hell.png)         | **Glitched (Hell)**<br /><br />Includes every known RTA-viable glitch, including the insane ones. Note that the Bee Badge is omitted from the item pool in this mode, to preserve the infamous Bee Boosting trick. |
+| ![Normal Logic](images/settings/logic_normal.png)     | **Normal**<br /><br />Standard gameplay, no tricky item use or glitches.                                                                                                                                           |
+| ![Hard Logic](images/settings/logic_hard.png)                  | **Hard**<br /><br />Adds tricks that aren't technically glitches. Lamp + Net considered as weapons. No glitches.                                                                                                   |
+| ![Glitched Basic Logic](images/settings/logic_basic.png)       | **Glitched (Basic)**<br /><br />Includes the above plus "basic", easy-to-learn glitches.                                                                                                                           |
+| ![Glitched Advanced Logic](images/settings/logic_advanced.png) | **Glitched (Advanced)**<br /><br />Includes the above plus "advanced" glitches that may be a challenge to master.                                                                                                  |
+| ![Glitched Hell Logic](images/settings/logic_hell.png)         | **Glitched (Hell)**<br /><br />Includes every known RTA-viable glitch, including the insane ones. Note that the Bee Badge is omitted from the item pool in this mode, to preserve the infamous Bee Boosting trick. |
 
 Raising the Logic Mode to higher difficulties will cause `🟨 Sequence Break` sections to become `🟩 Normal` as they
 enter logic.
@@ -201,7 +201,9 @@ available checks.
 
 ### Swordless Mode
 
-![Swordless](images/swordless.png)
+![Swordless](images/items/fsword.png)
+![Swordless](images/items/x_small.png)
+
 
 Right-click the base Sword item to tell the tracker you're playing in Swordless Mode, which slightly changes the logic:
 
@@ -210,7 +212,8 @@ Right-click the base Sword item to tell the tracker you're playing in Swordless 
 
 ### Minigames
 
-![Minigames Enabled](images/minigames_enabled.png) ![Minigames Disabled](images/minigames_disabled.png)
+![Minigames Enabled](images/settings/minigames_enabled.png)
+![Minigames Disabled](images/settings/minigames_disabled.png)
 
 You can tell the tracker whether you've Enabled or Disabled Minigames down in the Settings panel. Disabling Minigames
 will hide their checks on the tracker.
@@ -228,14 +231,16 @@ Note that the 2 Maiamai located inside the Rupee Rush minigames will not be hidd
 
 ### Lorule Castle Trials
 
-![Trials Normal](images/trials_normal.png) ![Trials Skipped](images/trials_skipped.png)
+![Trials Normal](images/settings/trials_normal.png)
+![Trials Skipped](images/settings/trials_skipped.png)
 
 This setting tells the tracker whether the option to skip the Lorule Castle Trials was selected in the randomizer. This
 setting slightly alters the logic needed to reach the Final Boss fight, as the player won't need to complete the trials.
 
 ### Lamp Requirement
 
-![Lamp Required](images/lamp_required.png) ![Lamp Not Required](images/lamp_not_required.png)
+![Lamp Required](images/settings/lamp_required.png)
+![Lamp Not Required](images/settings/lamp_not_required.png)
 
 This setting determines whether the logic considers the Lamp as a necessary item to cross dark rooms.
 
@@ -248,7 +253,8 @@ places them in logic, and the seed may require the player to cross a dark room w
 
 ### Display Bee Boost Glitches
 
-![Hide Bee Boost Glitches](images/bee_boost_hide.png) ![Show Bee Boost Glitches](images/bee_boost_show.png)
+![Hide Bee Boost Glitches](images/settings/bee_boost_hide.png)
+![Show Bee Boost Glitches](images/settings/bee_boost_show.png)
 
 Turn this setting on to show `🟨 Sequence Break` checks that require using the Bee Boost glitch.
 
@@ -259,7 +265,8 @@ logic.
 
 ### Maiamai Map
 
-![Maiamai Map Hide](images/maiamai_map_hide.png) ![Maiamai Map Show](images/maiamai_map_show.png)
+![Maiamai Map Hide](images/settings/maiamai_map_hide.png)
+![Maiamai Map Show](images/settings/maiamai_map_show.png)
 
 This setting toggles the visibility of the Maiamai checks.
 

@@ -17,7 +17,7 @@
         "sections": [
           {
             "name": "Canyon Heart Piece",
-            "capture_item": true,
+            //"capture_item": true,
             "access_rules": [
               "merge"
             ],
@@ -37,7 +37,7 @@
         "sections": [
           {
             "name": "Dark Cucco Shack",
-            "capture_item": true,
+            //"capture_item": true,
             "item_count": 1
           }
         ]
@@ -56,7 +56,7 @@
             "name": "Golden Bee (888)",
             "hosted_item": "goldenbee",
             "access_rules": [
-              "bottle"
+              "bottle_1"
             ],
             "item_count": 0
           }
@@ -204,7 +204,7 @@
           },
           {
             "name": "Ledge Key",
-            "capture_item": true,
+            //"capture_item": true,
             "item_count": 1
           }
         ]
@@ -221,8 +221,8 @@
         "sections": [
           {
             "name": "Big Chest",
-            "chest_unopened_img": "images/chest_big_unopened.png",
-            "chest_opened_img": "images/chest_big_opened.png",
+            "chest_unopened_img": "images/checks/chest_big_unopened.png",
+            "chest_opened_img": "images/checks/chest_big_opened.png",
             "access_rules": [
               "titansmitt"
             ],
@@ -267,6 +267,27 @@
           {
             "name": "Scared Hinox Cave",
             "item_count": 6
+          }
+        ]
+      },
+      {
+        "name": "Ku's Domain",
+        "map_locations": [
+          {
+            "map": "lorule",
+            "x": 1904,
+            "y": 403
+          }
+        ],
+        "sections": [
+          {
+            "name": "Fight",
+            "access_rules": [
+              "bow",
+              "bombs",
+              "[hard], $attack"
+            ],
+            "item_count": 1
           }
         ]
       },
@@ -324,12 +345,28 @@
           {
             "name": "Give 2 more Master Ore",
             "access_rules": [
-              "blacksmith, masterore:4"
+              "blacksmith, ore_4"
             ],
             "item_count": 1
           }
         ]
       },
+//      {
+//        "name": "Fortune's Choice",
+//        "map_locations": [
+//          {
+//            "map": "lorule",
+//            "x": 446,
+//            "y": 1070
+//          }
+//        ],
+//        "sections": [
+//          {
+//            "name": "Win Game",
+//            "item_count": 1
+//          }
+//        ]
+//      },
       {
         "name": "Vacant House",
         "map_locations": [
@@ -342,8 +379,8 @@
         "sections": [
           {
             "name": "Treasure Dungeon",
-            "chest_unopened_img": "images/chest_big_unopened.png",
-            "chest_opened_img": "images/chest_big_opened.png",
+            "chest_unopened_img": "images/checks/chest_big_unopened.png",
+            "chest_opened_img": "images/checks/chest_big_opened.png",
             "access_rules": [
               "boots",
               "[hard], bombs",
@@ -407,7 +444,7 @@
         "sections": [
           {
             "name": "Big Bomb Cave",
-            "capture_item": true,
+            //"capture_item": true,
             "item_count": 3
           }
         ]
@@ -547,9 +584,9 @@
         "sections": [
           {
             "name": "Ledge",
-            "capture_item": true,
+            //"capture_item": true,
             "access_rules": [
-              "{}",
+              //"{}",
               "srod, bombs",
               "[hard], bombs, merge, scroll",
               "[basic], nicebombs",

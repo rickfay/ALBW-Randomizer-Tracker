@@ -4,28 +4,25 @@
     "orientation": "vertical",
     "content": [
       {
-        "type": "array",
-        "orientation": "horizontal",
-        "content": [
-          {
-            "type": "itemgrid",
-            "dropshadow": true,
-            "width": "292",
-            "h_alignment": "center",
-            "item_size": "40",
-            "item_margin": "4,0",
-            "rows": [
-              [
-                "logic",
-                "minigames_enabled",
-                "trials_normal",
-                "lampless",
-                "beeBoost_hide",
-                //"weathervania",
-                "maiamai_map"
-              ]
-            ]
-          }
+        "type": "itemgrid",
+        "dropshadow": true,
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "item_size": "40",
+        "item_margin": "5,5",
+        "rows": [
+          [
+            "logic",
+            "lc_requirement",
+            "yg_requirement",
+            "maiamai_map"
+          ],
+          [
+            "minigames_enabled",
+            "lampless",
+            "trials_normal",
+            "beeBoost_hide"
+          ]
         ]
       }
     ]

@@ -6,8 +6,8 @@
       "hammer, powerglove, merge",
       "[basic], hammer, merge",
       "[advanced], hammer, bottle",
-      "[advanced], hammer, bluemail",
-//      "[hell], hammer"
+      "[advanced], hammer, bluemail"
+      //      "[hell], hammer"
     ],
     "children": [
       {
@@ -22,7 +22,6 @@
         "sections": [
           {
             "name": "1F Window Chest",
-            "capture_item": true,
             "hosted_item": "toh_chest_01",
             "access_rules": [
               "merge",
@@ -43,7 +42,6 @@
         "sections": [
           {
             "name": "1F Center Chest",
-            "capture_item": true,
             "hosted_item": "toh_chest_02",
             "access_rules": [
               "merge",
@@ -64,7 +62,7 @@
         "sections": [
           {
             "name": "3F Center",
-            "capture_item": true,
+            //"capture_item": true,
             "hosted_item": "toh_chest_03",
             "access_rules": [
               "merge",
@@ -85,7 +83,6 @@
         "sections": [
           {
             "name": "5F Red/Blue Chest",
-            "capture_item": true,
             "hosted_item": "toh_chest_04",
             "access_rules": [
               "merge",
@@ -106,7 +103,7 @@
         "sections": [
           {
             "name": "6F Left Tiles",
-            "capture_item": true,
+            //"capture_item": true,
             "hosted_item": "toh_chest_06",
             "access_rules": [
               "merge",
@@ -127,7 +124,6 @@
         "sections": [
           {
             "name": "6F Right Tiles",
-            "capture_item": true,
             "hosted_item": "toh_chest_05",
             "access_rules": [
               "merge",
@@ -148,7 +144,6 @@
         "sections": [
           {
             "name": "7F Ledge Chest",
-            "capture_item": true,
             "hosted_item": "toh_chest_07",
             "access_rules": [
               "merge",
@@ -169,7 +164,6 @@
         "sections": [
           {
             "name": "8F Fairy Room",
-            "capture_item": true,
             "hosted_item": "toh_chest_08",
             "access_rules": [
               "merge",
@@ -192,7 +186,6 @@
             "name": "11F Big Chest",
             "chest_unopened_img": "images/chest_big_unopened.png",
             "chest_opened_img": "images/chest_big_opened.png",
-            "capture_item": true,
             "hosted_item": "toh_chest_09",
             "access_rules": [
               "merge",
@@ -213,7 +206,7 @@
         "sections": [
           {
             "name": "13F Moldorm",
-            "capture_item": true,
+            //"capture_item": true,
             "hosted_item": "toh_chest_10",
             "access_rules": [
               "merge",
@@ -255,8 +248,7 @@
         ],
         "sections": [
           {
-            "name": "1F Window Chest ",
-            "capture_item": true,
+            "name": "1F Window Chest",
             "hosted_item": "toh_chest_01",
             "access_rules": [
               "merge",
@@ -265,7 +257,6 @@
           },
           {
             "name": "1F Center Chest",
-            "capture_item": true,
             "hosted_item": "toh_chest_02",
             "access_rules": [
               "merge",
@@ -274,7 +265,7 @@
           },
           {
             "name": "3F Center",
-            "capture_item": true,
+            //"capture_item": true,
             "hosted_item": "toh_chest_03",
             "access_rules": [
               "merge",
@@ -283,7 +274,6 @@
           },
           {
             "name": "5F Red/Blue Chest",
-            "capture_item": true,
             "hosted_item": "toh_chest_04",
             "access_rules": [
               "merge",
@@ -292,7 +282,6 @@
           },
           {
             "name": "6F Right Tiles",
-            "capture_item": true,
             "hosted_item": "toh_chest_05",
             "access_rules": [
               "merge",
@@ -301,7 +290,7 @@
           },
           {
             "name": "6F Left Tiles",
-            "capture_item": true,
+            //"capture_item": true,
             "hosted_item": "toh_chest_06",
             "access_rules": [
               "merge",
@@ -309,8 +298,7 @@
             ]
           },
           {
-            "name": "7F Ledge Chest     ",
-            "capture_item": true,
+            "name": "7F Ledge Chest",
             "hosted_item": "toh_chest_07",
             "access_rules": [
               "merge",
@@ -319,7 +307,6 @@
           },
           {
             "name": "8F Fairy Room",
-            "capture_item": true,
             "hosted_item": "toh_chest_08",
             "access_rules": [
               "merge",
@@ -328,7 +315,6 @@
           },
           {
             "name": "11F Big Chest",
-            "capture_item": true,
             "hosted_item": "toh_chest_09",
             "access_rules": [
               "merge",
@@ -336,8 +322,8 @@
             ]
           },
           {
-            "name": "13F Moldorm       ",
-            "capture_item": true,
+            "name": "13F Moldorm",
+            //"capture_item": true,
             "hosted_item": "toh_chest_10",
             "access_rules": [
               "merge",

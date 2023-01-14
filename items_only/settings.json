@@ -1,3 +1,4 @@
 {
-  "allow_resize": false
+  "allow_resize": false,
+  "disabled_image_filter": "saturation|0|bt601,brightness|0.75"
 }

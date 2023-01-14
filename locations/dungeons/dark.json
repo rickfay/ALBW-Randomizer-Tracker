@@ -20,7 +20,6 @@
         "sections": [
           {
             "name": "1F Right Pit",
-            "capture_item": true,
             "hosted_item": "pod_chest_01",
             "access_rules": [
               "bombs"
@@ -40,7 +39,7 @@
         "sections": [
           {
             "name": "1F Left Pit",
-            "capture_item": true,
+            //"capture_item": true,
             "hosted_item": "pod_chest_02"
           }
         ]
@@ -57,7 +56,6 @@
         "sections": [
           {
             "name": "1F Switches Chest",
-            "capture_item": true,
             "hosted_item": "pod_chest_03"
           }
         ]
@@ -74,7 +72,6 @@
         "sections": [
           {
             "name": "1F Hidden Upper",
-            "capture_item": true,
             "access_rules": [
               "bombs"
             ],
@@ -94,7 +91,6 @@
         "sections": [
           {
             "name": "1F Hidden Lower",
-            "capture_item": true,
             "hosted_item": "pod_chest_05"
           }
         ]
@@ -111,7 +107,6 @@
         "sections": [
           {
             "name": "1F Fall Chest",
-            "capture_item": true,
             "access_rules": [
               "bombs",
               "hammer"
@@ -134,7 +129,6 @@
             "name": "2F Big Chest",
             "chest_unopened_img": "images/chest_big_unopened.png",
             "chest_opened_img": "images/chest_big_opened.png",
-            "capture_item": true,
             "access_rules": [
               "bombs"
             ],
@@ -154,7 +148,6 @@
         "sections": [
           {
             "name": "2F East Chest",
-            "capture_item": true,
             "access_rules": [
               "merge"
             ],
@@ -174,8 +167,9 @@
         "sections": [
           {
             "name": "B1 Center Fall",
-            "capture_item": true,
+            //"capture_item": true,
             "access_rules": [
+              //"{}",
               "bombs",
               "hammer"
             ],
@@ -195,7 +189,6 @@
         "sections": [
           {
             "name": "B1 East Fall",
-            "capture_item": true,
             "access_rules": [
               "bombs",
               "hammer"
@@ -216,7 +209,7 @@
         "sections": [
           {
             "name": "B1 North East",
-            "capture_item": true,
+            //"capture_item": true,
             "hosted_item": "pod_chest_11"
           }
         ]
@@ -233,7 +226,6 @@
         "sections": [
           {
             "name": "B1 Maze Room",
-            "capture_item": true,
             "access_rules": [
               "merge"
             ],
@@ -255,7 +247,6 @@
             "name": "B1 Big Chest",
             "chest_unopened_img": "images/chest_big_unopened.png",
             "chest_opened_img": "images/chest_big_opened.png",
-            "capture_item": true,
             "access_rules": [
               "bombs"
             ],
@@ -278,7 +269,7 @@
             "access_rules": [
               "bombs, $fire"
             ],
-            "capture_item": true,
+            //"capture_item": true,
             "hosted_item": "pod_chest_14"
           }
         ]
@@ -315,28 +306,23 @@
         ],
         "sections": [
           {
-            "name": "1F Right Pit         ",
-
-            "capture_item": true,
+            "name": "1F Right Pit",
             "hosted_item": "pod_chest_01",
             "access_rules": [
               "bombs"
-            ],
-
+            ]
           },
           {
-            "name": "1F Left Pit           ",
-            "capture_item": true,
+            "name": "1F Left Pit",
+            //"capture_item": true,
             "hosted_item": "pod_chest_02"
           },
           {
             "name": "1F Switches Chest",
-            "capture_item": true,
             "hosted_item": "pod_chest_03"
           },
           {
             "name": "1F Hidden Upper",
-            "capture_item": true,
             "hosted_item": "pod_chest_04",
             "access_rules": [
               "bombs"
@@ -344,12 +330,10 @@
           },
           {
             "name": "1F Hidden Lower",
-            "capture_item": true,
             "hosted_item": "pod_chest_05"
           },
           {
             "name": "B1 East Fall",
-            "capture_item": true,
             "hosted_item": "pod_chest_10",
             "access_rules": [
               "bombs",
@@ -357,13 +341,12 @@
             ]
           },
           {
-            "name": "B1 North East     ",
-            "capture_item": true,
+            "name": "B1 North East",
+            //"capture_item": true,
             "hosted_item": "pod_chest_11"
           },
           {
-            "name": "2F Big Chest        ",
-            "capture_item": true,
+            "name": "2F Big Chest",
             "hosted_item": "pod_chest_07",
             "access_rules": [
               "bombs"
@@ -371,15 +354,13 @@
           },
           {
             "name": "2F East Chest",
-            "capture_item": true,
             "hosted_item": "pod_chest_08",
             "access_rules": [
               "merge"
             ]
           },
           {
-            "name": "1F Fall Chest       ",
-            "capture_item": true,
+            "name": "1F Fall Chest",
             "hosted_item": "pod_chest_06",
             "access_rules": [
               "bombs",
@@ -387,25 +368,24 @@
             ]
           },
           {
-            "name": "B1 Center Fall      ",
-            "capture_item": true,
+            "name": "B1 Center Fall",
+            //"capture_item": true,
             "hosted_item": "pod_chest_09",
             "access_rules": [
+              //"{}",
               "bombs",
               "hammer"
             ]
           },
           {
             "name": "B1 Maze Room",
-            "capture_item": true,
             "hosted_item": "pod_chest_12",
             "access_rules": [
               "merge"
             ]
           },
           {
-            "name": "B1 Big Chest       ",
-            "capture_item": true,
+            "name": "B1 Big Chest",
             "hosted_item": "pod_chest_13",
             "access_rules": [
               "bombs"
@@ -413,7 +393,7 @@
           },
           {
             "name": "B1 Gemesaur King",
-            "capture_item": true,
+            //"capture_item": true,
             "hosted_item": "pod_chest_14",
             "access_rules": [
               "bombs, $fire"

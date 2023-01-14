@@ -18,7 +18,6 @@
         "sections": [
           {
             "name": "1F Center",
-            "capture_item": true,
             "hosted_item": "lc_chest_01",
             "access_rules": [
               "$lc2F"
@@ -38,7 +37,6 @@
         "sections": [
           {
             "name": "1F Right Wall",
-            "capture_item": true,
             "hosted_item": "lc_chest_02",
             "access_rules": [
               "merge"
@@ -58,7 +56,6 @@
         "sections": [
           {
             "name": "2F East Room",
-            "capture_item": true,
             "hosted_item": "lc_chest_03",
             "access_rules": [
               "$lc2F"
@@ -78,7 +75,6 @@
         "sections": [
           {
             "name": "2F Dark Bridge",
-            "capture_item": true,
             "access_rules": [
               "$lc2F, $canExtinguishTorches",
               "$lc2F, [hard]"
@@ -99,7 +95,6 @@
         "sections": [
           {
             "name": "2F West Wall",
-            "capture_item": true,
             "hosted_item": "lc_chest_05",
             "access_rules": [
               "$lc2F, merge",
@@ -121,7 +116,6 @@
         "sections": [
           {
             "name": "4F Torches",
-            "capture_item": true,
             "hosted_item": "lc_chest_06",
             "access_rules": [
               "$lc2F"
@@ -141,7 +135,6 @@
         "sections": [
           {
             "name": "4F Big Chest",
-            "capture_item": true,
             "access_rules": [
               "$lc2F, $canExtinguishTorches",
               "$lc2F, [hard]"
@@ -163,7 +156,6 @@
         "sections": [
           {
             "name": "3F Bomb Trial 1",
-            "capture_item": true,
             "access_rules": [
               "bombs",
               "[basic], irod"
@@ -184,7 +176,6 @@
         "sections": [
           {
             "name": "3F Bomb Trial 2",
-            "capture_item": true,
             "access_rules": [
               "bombs, merge",
               "[hard], bombs, bow",
@@ -207,7 +198,6 @@
         "sections": [
           {
             "name": "3F Ball Trial 1",
-            "capture_item": true,
             "hosted_item": "lc_chest_10",
             "access_rules": [
               "$lc2F"
@@ -227,7 +217,6 @@
         "sections": [
           {
             "name": "3F Ball Trial 2",
-            "capture_item": true,
             "hosted_item": "lc_chest_11",
             "access_rules": [
               "$lc2F, merge"
@@ -248,7 +237,6 @@
         "sections": [
           {
             "name": "4F Lamp Trial",
-            "capture_item": true,
             "access_rules": [
               "$lc2F, $fire",
               "[hard], $lc2F"
@@ -270,7 +258,6 @@
         "sections": [
           {
             "name": "4F Hookshot Trial 2",
-            "capture_item": true,
             "access_rules": [
               "$lc2F, hookshot, merge",
               "$lc2F, hookshot, irod"
@@ -291,7 +278,6 @@
         "sections": [
           {
             "name": "4F Hookshot Trial 1",
-            "capture_item": true,
             "access_rules": [
               "$lc2F, hookshot"
             ],
@@ -310,12 +296,11 @@
         ],
         "sections": [
           {
-            "name": "Zelda",
+            "name": "Final Zelda",
             "chest_unopened_img": "images/zelda.png",
             "access_rules": [
               "$zelda"
             ],
-            "capture_item": true,
             "hosted_item": "lc_chest_15"
           }
         ]
@@ -354,8 +339,7 @@
         ],
         "sections": [
           {
-            "name": "1F Right Wall          ",
-            "capture_item": true,
+            "name": "1F Right Wall",
             "hosted_item": "lc_chest_02",
             "access_rules": [
               "merge",
@@ -364,7 +348,6 @@
           },
           {
             "name": "2F East Room",
-            "capture_item": true,
             "hosted_item": "lc_chest_03",
             "access_rules": [
               "$lc2F"
@@ -372,7 +355,6 @@
           },
           {
             "name": "2F Dark Bridge",
-            "capture_item": true,
             "hosted_item": "lc_chest_04",
             "access_rules": [
               "$lc2F, $canExtinguishTorches",
@@ -380,8 +362,7 @@
             ]
           },
           {
-            "name": "2F West Wall          ",
-            "capture_item": true,
+            "name": "2F West Wall",
             "hosted_item": "lc_chest_05",
             "access_rules": [
               "$lc2F, merge",
@@ -391,7 +372,6 @@
           },
           {
             "name": "1F Center",
-            "capture_item": true,
             "hosted_item": "lc_chest_01",
             "access_rules": [
               "$lc2F"
@@ -399,7 +379,6 @@
           },
           {
             "name": "4F Lamp Trial",
-            "capture_item": true,
             "hosted_item": "lc_chest_12",
             "access_rules": [
               "$lc2F, $fire",
@@ -407,8 +386,7 @@
             ]
           },
           {
-            "name": "4F Torches              ",
-            "capture_item": true,
+            "name": "4F Torches",
             "hosted_item": "lc_chest_06",
             "access_rules": [
               "$lc2F"
@@ -416,7 +394,6 @@
           },
           {
             "name": "4F Big Chest",
-            "capture_item": true,
             "hosted_item": "lc_chest_07",
             "access_rules": [
               "$lc2F, $canExtinguishTorches",
@@ -425,7 +402,6 @@
           },
           {
             "name": "4F Hookshot Trial 1",
-            "capture_item": true,
             "hosted_item": "lc_chest_14",
             "access_rules": [
               "$lc2F, hookshot"
@@ -433,7 +409,6 @@
           },
           {
             "name": "4F Hookshot Trial 2",
-            "capture_item": true,
             "hosted_item": "lc_chest_13",
             "access_rules": [
               "$lc2F, hookshot, merge",
@@ -442,7 +417,6 @@
           },
           {
             "name": "3F Ball Trial 1",
-            "capture_item": true,
             "hosted_item": "lc_chest_10",
             "access_rules": [
               "$lc2F"
@@ -450,15 +424,13 @@
           },
           {
             "name": "3F Ball Trial 2",
-            "capture_item": true,
             "hosted_item": "lc_chest_11",
             "access_rules": [
               "$lc2F, merge"
             ]
           },
           {
-            "name": "3F Bomb Trial 1      ",
-            "capture_item": true,
+            "name": "3F Bomb Trial 1",
             "hosted_item": "lc_chest_08",
             "access_rules": [
               "bombs",
@@ -467,7 +439,6 @@
           },
           {
             "name": "3F Bomb Trial 2",
-            "capture_item": true,
             "hosted_item": "lc_chest_09",
             "access_rules": [
               "bombs, merge",
@@ -476,8 +447,7 @@
             ]
           },
           {
-            "name": "Zelda",
-            "capture_item": true,
+            "name": "Final Zelda",
             "hosted_item": "lc_chest_15",
             "access_rules": [
               "$zelda"

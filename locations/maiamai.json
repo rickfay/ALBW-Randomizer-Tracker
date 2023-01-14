@@ -17,12 +17,12 @@
           {
             "name": "Stuck to Tent",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
             "access_rules": [
-              "{}",
+              //"{}",
               "merge"
             ]
           }
@@ -42,12 +42,12 @@
           {
             "name": "Small Pond",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
             "access_rules": [
-              "{}",
+              //"{}",
               "flippers"
             ]
           }
@@ -67,12 +67,12 @@
           {
             "name": "Stuck to Nearby Wall",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
             "access_rules": [
-              "{}",
+              //"{}",
               "merge"
             ]
           }
@@ -92,7 +92,7 @@
           {
             "name": "Under Rock",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
@@ -116,12 +116,12 @@
           {
             "name": "Dash Tree",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
             "access_rules": [
-              "{}",
+              //"{}",
               "boots"
             ]
           }
@@ -141,7 +141,7 @@
           {
             "name": "Under Bush",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ]
@@ -162,7 +162,7 @@
           {
             "name": "Lost Woods Path Rock",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
@@ -189,12 +189,12 @@
           {
             "name": "Big Rock Exit",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
             "access_rules": [
-              "{}",
+              //"{}",
               "merge, titansmitt"
             ]
           }
@@ -215,7 +215,7 @@
           {
             "name": "Under West Rock",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
@@ -239,13 +239,13 @@
           {
             "name": "Near Ledge Chest",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
             "access_rules": [
-              "{advanced, bottle}",
-              "{advanced, bluemail}",
+              //"{advanced, bottle}",
+              //"{advanced, bluemail}",
               "powerglove, merge",
               "[basic], merge"
             ]
@@ -266,13 +266,13 @@
           {
             "name": "Stuck to Treasure Dungeon",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
             "access_rules": [
-              "{advanced, bottle, hookshot}",
-              "{advanced, bluemail, hookshot}",
+              //"{advanced, bottle, hookshot}",
+              //"{advanced, bluemail, hookshot}",
               "powerglove, hookshot, merge",
               "[basic], hookshot, merge"
             ]
@@ -293,7 +293,7 @@
           {
             "name": "Under Ledge Rock",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
@@ -319,7 +319,7 @@
           {
             "name": "Under Rock",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
@@ -348,12 +348,12 @@
           {
             "name": "Stuck to Nearby Wall",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
             "access_rules": [
-              "{}",
+              //"{}",
               "merge"
             ]
           }
@@ -373,12 +373,12 @@
           {
             "name": "Stuck to Inside Wall",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
             "access_rules": [
-              "{}",
+              //"{}",
               "merge"
             ]
           }
@@ -398,13 +398,13 @@
           {
             "name": "Submerged",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
             "access_rules": [
-              "{merge}",
-              "{$beeBoost}",
+              //"{merge}",
+              //"{$beeBoost}",
               "flippers, merge",
               "[hell], flippers, $beeBoost"
             ]
@@ -425,13 +425,13 @@
           {
             "name": "Stuck to South Wall",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
             "access_rules": [
-              "{merge}",
-              "{hell, $beeBoost}",
+              //"{merge}",
+              //"{hell, $beeBoost}",
               "merge"
             ]
           }
@@ -451,12 +451,12 @@
           {
             "name": "Ledge Across the River",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
             "access_rules": [
-              "{}",
+              //"{}",
               "merge, flippers",
               "[advanced], merge, $fakeFlippers",
               "[hell], merge, boots",
@@ -480,12 +480,12 @@
           {
             "name": "Beneath the Bridge",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
             "access_rules": [
-              "{}",
+              //"{}",
               "flippers",
               "[advanced], $fakeFlippers",
               "[hell], boots"
@@ -507,12 +507,12 @@
           {
             "name": "Graveyard Ledge Wall",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
             "access_rules": [
-              "{}",
+              //"{}",
               "lamp, merge, bombs",
               "$lampless, frod, merge, bombs"
             ]
@@ -534,7 +534,7 @@
           {
             "name": "Under a Bush",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ]
@@ -546,8 +546,8 @@
         "map_locations": [
           {
             "map": "hyrule",
-            "x": 431,
-            "y": 976,
+            "x": 423,
+            "y": 984,
             "size": 32
           }
         ],
@@ -555,7 +555,7 @@
           {
             "name": "Under Rooftop Rock",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
@@ -579,7 +579,7 @@
           {
             "name": "Buried in the Sand",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
@@ -603,7 +603,7 @@
           {
             "name": "Dash Tree",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
@@ -627,12 +627,12 @@
           {
             "name": "South Wall",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
             "access_rules": [
-              "{}",
+              //"{}",
               "merge"
             ]
           }
@@ -653,7 +653,7 @@
           {
             "name": "Dash Tree",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
@@ -677,7 +677,7 @@
           {
             "name": "Wind Tiles",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
@@ -701,7 +701,7 @@
           {
             "name": "Dash Tree",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
@@ -725,12 +725,12 @@
           {
             "name": "Dash Tree",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
             "access_rules": [
-              "{}",
+              //"{}",
               "boots"
             ]
           }
@@ -750,7 +750,7 @@
           {
             "name": "Under Big Rock",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
@@ -774,12 +774,12 @@
           {
             "name": "Stuck to Back of House",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
             "access_rules": [
-              "{}",
+              //"{}",
               "merge"
             ]
           }
@@ -799,7 +799,7 @@
           {
             "name": "Wind Tiles",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
@@ -823,7 +823,7 @@
           {
             "name": "Dash Tree",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
@@ -848,12 +848,12 @@
           {
             "name": "Dash Rock",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
             "access_rules": [
-              "{}",
+              //"{}",
               "boots"
             ]
           }
@@ -873,12 +873,12 @@
           {
             "name": "In the River",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
             "access_rules": [
-              "{}",
+              //"{}",
               "flippers",
               "[advanced], $fakeFlippers",
               "[hell], boots"
@@ -900,7 +900,7 @@
           {
             "name": "Dash into Rightmost Tree",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
@@ -924,12 +924,12 @@
           {
             "name": "Yellow Dash Tree",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
             "access_rules": [
-              "{}",
+              //"{}",
               "boots"
             ]
           }
@@ -949,12 +949,12 @@
           {
             "name": "Square Ledge",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
             "access_rules": [
-              "{}",
+              //"{}",
               "merge"
             ]
           }
@@ -974,7 +974,7 @@
           {
             "name": "Under Big Rock",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
@@ -999,7 +999,7 @@
           {
             "name": "Under Big Rock",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
@@ -1010,7 +1010,7 @@
         ]
       },
       {
-        "name": "Desert",
+        "name": "Desert of Mystery",
         "map_locations": [
           {
             "map": "hyrule",
@@ -1023,7 +1023,7 @@
           {
             "name": "Buried in the Desert",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
@@ -1034,7 +1034,7 @@
         ]
       },
       {
-        "name": "Desert",
+        "name": "Desert of Mystery",
         "map_locations": [
           {
             "map": "hyrule",
@@ -1045,9 +1045,9 @@
         ],
         "sections": [
           {
-            "name": "Buried outside Desert Palace",
+            "name": "Buried outside Palace",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
@@ -1072,12 +1072,12 @@
           {
             "name": "Pillars",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
             "access_rules": [
-              "{}",
+              //"{}",
               "boots"
             ]
           }
@@ -1097,12 +1097,12 @@
           {
             "name": "Bomb Cave",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
             "access_rules": [
-              "{bombs}",
+              //"{bombs}",
               "bombs, flippers"
             ]
           }
@@ -1122,12 +1122,12 @@
           {
             "name": "Submerged by Treasure Dungeon",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
             "access_rules": [
-              "{}",
+              //"{}",
               "flippers"
             ]
           }
@@ -1148,12 +1148,12 @@
           {
             "name": "Mother Maiamai's Cave",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
             "access_rules": [
-              "{}",
+              //"{}",
               "merge"
             ]
           }
@@ -1173,7 +1173,7 @@
           {
             "name": "House of Gales Wind Tile",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
@@ -1199,12 +1199,12 @@
           {
             "name": "Shallow Water Ring",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
             "access_rules": [
-              "{}",
+              //"{}",
               "flippers"
             ]
           }
@@ -1224,12 +1224,12 @@
           {
             "name": "SE River",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
             "access_rules": [
-              "{}",
+              //"{}",
               "flippers",
               "[advanced], $fakeFlippers",
               "[hell], boots"
@@ -1251,7 +1251,7 @@
           {
             "name": "Under Big Rock",
             "item_count": 1,
-            "capture_item": true,
+            //"capture_item": true,
             "visibility_rules": [
               "maiamai_map"
             ],
@@ -1287,7 +1287,7 @@
               {
                 "name": "Stuck to Cliff House",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ]
@@ -1308,7 +1308,7 @@
               {
                 "name": "Wall Near Entrance Sign",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ]
@@ -1329,7 +1329,7 @@
               {
                 "name": "Dry Pond",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ]
@@ -1350,7 +1350,7 @@
               {
                 "name": "Under V Tree Bushes",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ]
@@ -1371,7 +1371,7 @@
               {
                 "name": "Dark Cucco Shack Dash Tree",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ],
@@ -1395,7 +1395,7 @@
               {
                 "name": "Under Skull",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ],
@@ -1429,7 +1429,7 @@
               {
                 "name": "Cut the Grass",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ],
@@ -1453,7 +1453,7 @@
               {
                 "name": "Under Big Rock Fence",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ],
@@ -1487,7 +1487,7 @@
               {
                 "name": "West Skull",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ],
@@ -1522,7 +1522,7 @@
               {
                 "name": "Under NW Big Rock",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "access_rules": [
                   "hammer, titansmitt",
                   "[basic], titansmitt, nicebombs",
@@ -1548,7 +1548,7 @@
               {
                 "name": "Under Bridge Big Rock",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "access_rules": [
                   "titansmitt"
                 ],
@@ -1578,7 +1578,7 @@
                   {
                     "name": "Stuck to SE Wall",
                     "item_count": 1,
-                    "capture_item": true,
+                    //"capture_item": true,
                     "visibility_rules": [
                       "maiamai_map"
                     ]
@@ -1599,7 +1599,7 @@
                   {
                     "name": "East Cliff Skull",
                     "item_count": 1,
-                    "capture_item": true,
+                    //"capture_item": true,
                     "visibility_rules": [
                       "maiamai_map"
                     ]
@@ -1620,7 +1620,7 @@
                   {
                     "name": "Stuck to Ice Ruins",
                     "item_count": 1,
-                    "capture_item": true,
+                    //"capture_item": true,
                     "visibility_rules": [
                       "maiamai_map"
                     ]
@@ -1652,7 +1652,7 @@
               {
                 "name": "Under West Big Rock",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ],
@@ -1676,7 +1676,7 @@
               {
                 "name": "Stuck to Portal Wall",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ]
@@ -1697,7 +1697,7 @@
               {
                 "name": "Peninsula Dash Tree",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ],
@@ -1730,12 +1730,12 @@
               {
                 "name": "Dash Rock",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ],
                 "access_rules": [
-                  "{}",
+                  //"{}",
                   "boots"
                 ]
               }
@@ -1755,12 +1755,12 @@
               {
                 "name": "Under the Waterfall",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ],
                 "access_rules": [
-                  "{}",
+                  //"{}",
                   "flippers",
                   "[advanced], $fakeFlippers",
                   "[hell], boots"
@@ -1782,12 +1782,12 @@
               {
                 "name": "River by Scared Hinox",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ],
                 "access_rules": [
-                  "{}",
+                  //"{}",
                   "flippers",
                   "[advanced], boots"
                 ]
@@ -1808,7 +1808,7 @@
               {
                 "name": "Grassy Ledge",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ],
@@ -1832,12 +1832,12 @@
               {
                 "name": "Submerged",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ],
                 "access_rules": [
-                  "{}",
+                  //"{}",
                   "flippers"
                 ]
               }
@@ -1857,7 +1857,7 @@
               {
                 "name": "Canyon Dash Tree",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ],
@@ -1881,7 +1881,7 @@
               {
                 "name": "Dash into Leftmost Tree",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ],
@@ -1905,7 +1905,7 @@
               {
                 "name": "Entrance Wall",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ]
@@ -1926,7 +1926,7 @@
               {
                 "name": "South Area Wall",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ]
@@ -1947,7 +1947,7 @@
               {
                 "name": "Guarded Wall",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ]
@@ -1977,9 +1977,9 @@
               {
                 "name": "Stuck to House",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "access_rules": [
-                  "{}",
+                  //"{}",
                   "merge"
                 ],
                 "visibility_rules": [
@@ -2002,7 +2002,7 @@
               {
                 "name": "Under Nearby Big Rock",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ],
@@ -2026,7 +2026,7 @@
               {
                 "name": "Dash Tree",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ],
@@ -2050,9 +2050,9 @@
               {
                 "name": "SW Walls",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "access_rules": [
-                  "{}",
+                  //"{}",
                   "merge"
                 ],
                 "visibility_rules": [
@@ -2075,7 +2075,7 @@
               {
                 "name": "Cut the Grass",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ]
@@ -2096,9 +2096,9 @@
               {
                 "name": "Northern Wall",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "access_rules": [
-                  "{}",
+                  //"{}",
                   "merge"
                 ],
                 "visibility_rules": [
@@ -2121,7 +2121,7 @@
               {
                 "name": "Under Skull",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ],
@@ -2157,9 +2157,9 @@
               {
                 "name": "Stuck to High Wall",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "access_rules": [
-                  "{}",
+                  //"{}",
                   "merge"
                 ],
                 "visibility_rules": [
@@ -2182,7 +2182,7 @@
               {
                 "name": "Under Big Rock",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ],
@@ -2206,9 +2206,9 @@
               {
                 "name": "Stuck to Wall Behind House",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "access_rules": [
-                  "{}",
+                  //"{}",
                   "merge"
                 ],
                 "visibility_rules": [
@@ -2231,9 +2231,9 @@
               {
                 "name": "Stuck to Castle Wall",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "access_rules": [
-                  "{}",
+                  //"{}",
                   "merge"
                 ],
                 "visibility_rules": [
@@ -2256,7 +2256,7 @@
               {
                 "name": "Dash Tree",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ],
@@ -2280,9 +2280,9 @@
               {
                 "name": "Stuck to NE Wall",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "access_rules": [
-                  "{}",
+                  //"{}",
                   "merge"
                 ],
                 "visibility_rules": [
@@ -2305,12 +2305,12 @@
               {
                 "name": "Submerged in Pond",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ],
                 "access_rules": [
-                  "{}",
+                  //"{}",
                   "flippers"
                 ]
               }
@@ -2330,12 +2330,12 @@
               {
                 "name": "Dash Pillars",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ],
                 "access_rules": [
-                  "{}",
+                  //"{}",
                   "boots"
                 ]
               }
@@ -2364,7 +2364,7 @@
               {
                 "name": "Behind Weather Vane",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ]
@@ -2385,12 +2385,12 @@
               {
                 "name": "Submerged Underwater",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ],
                 "access_rules": [
-                  "{}",
+                  //"{}",
                   "flippers"
                 ]
               }
@@ -2410,7 +2410,7 @@
               {
                 "name": "Under Portal Big Rock",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ],
@@ -2443,7 +2443,7 @@
               {
                 "name": "Near Lake Shop",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ]
@@ -2464,7 +2464,7 @@
               {
                 "name": "Under SW Big Rock",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ],
@@ -2488,7 +2488,7 @@
               {
                 "name": "Stuck to SE Wall",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ]
@@ -2509,7 +2509,7 @@
               {
                 "name": "East Ledge Skull",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ]
@@ -2530,12 +2530,12 @@
               {
                 "name": "Lake Rupee Ring",
                 "item_count": 1,
-                "capture_item": true,
+                //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
                 ],
                 "access_rules": [
-                  "{}",
+                  //"{}",
                   "flippers",
                   "[advanced], $fakeFlippers",
                   "[hell], boots"

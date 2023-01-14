@@ -17,7 +17,7 @@
             "item_count": 1,
             "access_rules": [
               "$hc_barrier",
-              "[$has_all_sages], $canEnterLC, $lc2F, merge, yuga"
+              "[$lc_requirement], $canEnterLC, $lc2F, merge, yuga"
             ]
           }
         ]
@@ -37,7 +37,27 @@
             "item_count": 1,
             "access_rules": [
               "$hc_barrier",
-              "[$has_all_sages], $canEnterLC, $lc2F, merge, yuga"
+              "[$lc_requirement], $canEnterLC, $lc2F, merge, yuga"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hyrule Castle",
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1024,
+            "y": 940
+          }
+        ],
+        "sections": [
+          {
+            "name": "Zelda's Throne",
+            "item_count": 1,
+            "access_rules": [
+              "$hc_barrier",
+              "[$lc_requirement], $canEnterLC, $lc2F, merge, yuga"
             ]
           }
         ]
@@ -46,7 +66,7 @@
         "name": "Inside Hyrule Castle",
         "access_rules": [
           "$hc_barrier, courage, merge, $yuga2",
-          "[$has_all_sages], $canEnterLC, $lc2F, merge, $yuga2"
+          "[$lc_requirement], $canEnterLC, $lc2F, merge, $yuga2"
         ],
         "map_locations": [
           {

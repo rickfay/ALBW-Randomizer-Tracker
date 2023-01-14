@@ -8,16 +8,20 @@
         "dropshadow": true,
         "h_alignment": "center",
         "item_size": "32",
-        "item_margin": "1,2",
+        "item_margin": "1,1",
         "rows": [
           // Making an override?
           // Move the greatspin to the same grid location as the Sword.
-          [ "", "", "", "", "", "greatspin", "", "" ],
-          //[ "", "", "", "", "", "", "", "" ],
-          //[ "", "", "", "", "", "", "", "" ],
-          //[ "", "", "", "", "", "", "", "" ],
-          //[ "", "", "", "", "", "", "", "" ],
-          //[ "", "", "", "", "", "", "", "" ],
+          [
+            "greatspin",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
         ]
       },
       {
@@ -25,57 +29,47 @@
         "dropshadow": true,
         "h_alignment": "center",
         "item_size": "32",
-        "item_margin": "1,2",
+        "item_margin": "1,1",
         "rows": [
           [
+            "fsword",
+            "greentunic",
+            "shield",
+            "lamp",
             "bow",
             "boomerang",
             "hookshot",
-            "bombs",
-            "pouch",
-            "fsword",
-            "eastern",
-            "lc_requirement"
+            "eastern"
           ],
           [
+            "merge",
+            "glove",
+            "boots",
+            "hammer",
+            "bombs",
             "frod",
             "irod",
-            "trod",
-            "srod",
-            "beebadge",
-            "shield",
-            "gales",
-            "yg_requirement"
+            "gales"
           ],
           [
-            "lamp",
-            "hammer",
-            "bell",
-            "net",
-            "scroll",
-            "greentunic",
-            "hera",
-            ""
-          ],
-          [
-            "bottle",
-            "letter",
-            "milk",
-            "goldbee",
-            "fruit",
-            "bracelet",
-            "yuga",
-            ""
-          ],
-          [
-            "boots",
-            "powerglove",
             "flippers",
             "smoothgem",
-            "ore",
+            "scroll",
+            "trod",
+            "srod",
+            "net",
+            "fruit",
+            "hera"
+          ],
+          [
+            "bell",
             "maiamai",
-            "bowoflight",
-            ""
+            "ore",
+            "bottle",
+            "letter",
+            "premiummilk",
+            "goldenbee",
+            "yuga"
           ],
           [
             "dark",
@@ -85,7 +79,7 @@
             "turtle",
             "desert",
             "ice",
-            ""
+            "bowoflight"
           ]
         ]
       }

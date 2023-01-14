@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Fire Gloves",
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "Fire Gloves",
+        "img": "images/tfh/fgloves.png",
+        "codes": "fgloves, firegloves"
+      },
+      {
+        "name": "Nice Fire Gloves",
+        "img": "images/tfh/fgloves_nice.png",
+        "codes": "nicefgloves, nicefiregloves"
+      }
+    ]
+  },
+  {
+    "name": "Gust Jar",
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "Gust Jar",
+        "img": "images/tfh/gustjar.png",
+        "codes": "gustjar"
+      },
+      {
+        "name": "Nice Gust Jar",
+        "img": "images/tfh/gustjar_nice.png",
+        "codes": "nicegustjar"
+      }
+    ]
+  },
+  {
+    "name": "Water Rod",
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "Water Rod",
+        "img": "images/tfh/wrod.png",
+        "codes": "wrod, waterrod"
+      },
+      {
+        "name": "Nice Water Rod",
+        "img": "images/tfh/wrod_nice.png",
+        "codes": "nicewrod, nicewaterrod"
+      }
+    ]
+  }
+]

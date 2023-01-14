@@ -26,7 +26,6 @@
         "sections": [
           {
             "name": "1F Merge Chest",
-            "capture_item": true,
             "hosted_item": "ep_chest_01",
             "access_rules": [
               "merge"
@@ -46,7 +45,6 @@
         "sections": [
           {
             "name": "1F Left Door Chest",
-            "capture_item": true,
             "hosted_item": "ep_chest_02",
             "access_rules": [
               "bow",
@@ -72,7 +70,6 @@
         "sections": [
           {
             "name": "1F Popo Room",
-            "capture_item": true,
             "hosted_item": "ep_chest_03",
             "access_rules": [
               "$attack"
@@ -92,7 +89,6 @@
         "sections": [
           {
             "name": "1F Secret Room",
-            "capture_item": true,
             "hosted_item": "ep_chest_04",
             "access_rules": [
               "$attack"
@@ -112,7 +108,6 @@
         "sections": [
           {
             "name": "1F Switch Room",
-            "capture_item": true,
             "hosted_item": "ep_chest_05",
             "access_rules": [
               "bow",
@@ -137,7 +132,6 @@
         "sections": [
           {
             "name": "2F Ball Room",
-            "capture_item": true,
             "hosted_item": "ep_chest_06",
             "access_rules": [
               "$attack"
@@ -157,7 +151,6 @@
         "sections": [
           {
             "name": "2F Kill Popos",
-            "capture_item": true,
             "hosted_item": "ep_chest_07",
             "access_rules": [
               "$attack"
@@ -177,7 +170,6 @@
         "sections": [
           {
             "name": "2F Switches Room",
-            "capture_item": true,
             "hosted_item": "ep_chest_08",
             "access_rules": [
               "bow",
@@ -203,9 +195,6 @@
         "sections": [
           {
             "name": "2F Big Chest",
-            "chest_unopened_img": "images/chest_big_unopened.png",
-            "chest_opened_img": "images/chest_big_opened.png",
-            "capture_item": true,
             "hosted_item": "ep_chest_09",
             "access_rules": [
               "$attack"
@@ -225,7 +214,6 @@
         "sections": [
           {
             "name": "3F Yuga",
-            "capture_item": true,
             "hosted_item": "ep_chest_10",
             "access_rules": [
               "$yuga1"
@@ -245,7 +233,7 @@
         "sections": [
           {
             "name": "3F Heart Container",
-            "capture_item": true,
+            //"capture_item": true,
             "hosted_item": "ep_chest_11",
             "access_rules": [
               "$yuga1"
@@ -265,7 +253,6 @@
         "sections": [
           {
             "name": "3F Escape Chest",
-            "capture_item": true,
             "hosted_item": "ep_chest_12",
             "access_rules": [
               "$yuga1, merge"
@@ -285,7 +272,6 @@
         "sections": [
           {
             "name": "1F Escape Chest",
-            "capture_item": true,
             "hosted_item": "ep_chest_13",
             "access_rules": [
               "$yuga1, merge"
@@ -318,7 +304,6 @@
         "sections": [
           {
             "name": "1F Merge Chest",
-            "capture_item": true,
             "hosted_item": "ep_chest_01",
             "access_rules": [
               "merge"
@@ -326,7 +311,6 @@
           },
           {
             "name": "1F Left Door Chest",
-            "capture_item": true,
             "hosted_item": "ep_chest_02",
             "access_rules": [
               "bow",
@@ -340,7 +324,6 @@
           },
           {
             "name": "1F Popo Room",
-            "capture_item": true,
             "hosted_item": "ep_chest_03",
             "access_rules": [
               "$attack"
@@ -348,15 +331,13 @@
           },
           {
             "name": "1F Secret Room",
-            "capture_item": true,
             "hosted_item": "ep_chest_04",
             "access_rules": [
               "$attack"
             ]
           },
           {
-            "name": "1F Switch Room    ",
-            "capture_item": true,
+            "name": "1F Switch Room",
             "hosted_item": "ep_chest_05",
             "access_rules": [
               "bow",
@@ -369,7 +350,6 @@
           },
           {
             "name": "2F Ball Room",
-            "capture_item": true,
             "hosted_item": "ep_chest_06",
             "access_rules": [
               "$attack"
@@ -377,15 +357,13 @@
           },
           {
             "name": "2F Kill Popos",
-            "capture_item": true,
             "hosted_item": "ep_chest_07",
             "access_rules": [
               "$attack"
             ]
           },
           {
-            "name": "2F Switches Room ",
-            "capture_item": true,
+            "name": "2F Switches Room",
             "hosted_item": "ep_chest_08",
             "access_rules": [
               "bow",
@@ -399,7 +377,6 @@
           },
           {
             "name": "2F Big Chest",
-            "capture_item": true,
             "hosted_item": "ep_chest_09",
             "access_rules": [
               "$attack"
@@ -407,7 +384,6 @@
           },
           {
             "name": "3F Yuga",
-            "capture_item": true,
             "hosted_item": "ep_chest_10",
             "access_rules": [
               "$yuga1"
@@ -415,7 +391,7 @@
           },
           {
             "name": "3F Heart Container",
-            "capture_item": true,
+            //"capture_item": true,
             "hosted_item": "ep_chest_11",
             "access_rules": [
               "$yuga1"
@@ -423,7 +399,6 @@
           },
           {
             "name": "3F Escape Chest",
-            "capture_item": true,
             "hosted_item": "ep_chest_12",
             "access_rules": [
               "$yuga1, merge"
@@ -431,7 +406,6 @@
           },
           {
             "name": "1F Escape Chest",
-            "capture_item": true,
             "hosted_item": "ep_chest_13",
             "access_rules": [
               "$yuga1, merge"

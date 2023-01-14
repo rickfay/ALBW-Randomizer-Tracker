@@ -18,7 +18,6 @@
         "sections": [
           {
             "name": "B1 South Chest",
-            "capture_item": true,
             "hosted_item": "sw_chest_01",
             "access_rules": [
               "$lampless"
@@ -38,7 +37,6 @@
         "sections": [
           {
             "name": "B1 NE Room Lower",
-            "capture_item": true,
             "hosted_item": "sw_chest_03",
             "access_rules": [
               "$lampless"
@@ -58,7 +56,6 @@
         "sections": [
           {
             "name": "B1 NE Room Fall",
-            "capture_item": true,
             "hosted_item": "sw_chest_02",
             "access_rules": [
               "$lampless"
@@ -78,7 +75,6 @@
         "sections": [
           {
             "name": "B1 Grate Room",
-            "capture_item": true,
             "hosted_item": "sw_chest_04",
             "access_rules": [
               "$lampless"
@@ -98,7 +94,6 @@
         "sections": [
           {
             "name": "B2 Elevator Room",
-            "capture_item": true,
             "hosted_item": "sw_chest_05",
             "access_rules": [
               "$lampless, merge, $attack",
@@ -122,7 +117,6 @@
             "name": "B1 Big Chest (Eyes)",
             "chest_unopened_img": "images/chest_big_unopened.png",
             "chest_opened_img": "images/chest_big_opened.png",
-            "capture_item": true,
             "hosted_item": "sw_chest_08",
             "access_rules": [
               "$lampless, merge, $attack, $fire"
@@ -144,7 +138,6 @@
             "name": "B1 Big Chest (SW)",
             "chest_unopened_img": "images/chest_big_unopened.png",
             "chest_opened_img": "images/chest_big_opened.png",
-            "capture_item": true,
             "hosted_item": "sw_chest_07",
             "access_rules": [
               "$lampless, merge, $attack, $fire"
@@ -169,7 +162,6 @@
         "sections": [
           {
             "name": "Outdoor Chest",
-            "capture_item": true,
             "hosted_item": "sw_chest_06",
             "access_rules": [
               "$lampless, merge, $attack, $fire"
@@ -189,7 +181,7 @@
         "sections": [
           {
             "name": "B1 Not Mothula",
-            "capture_item": true,
+            //"capture_item": true,
             "hosted_item": "sw_chest_09",
             "access_rules": [
               "$lampless, merge, $knucklemaster"
@@ -231,16 +223,14 @@
         ],
         "sections": [
           {
-            "name": "B1 South Chest    ",
-            "capture_item": true,
+            "name": "B1 South Chest",
             "hosted_item": "sw_chest_01",
             "access_rules": [
               "$lampless"
             ]
           },
           {
-            "name": "B1 NE Room Fall    ",
-            "capture_item": true,
+            "name": "B1 NE Room Fall",
             "hosted_item": "sw_chest_02",
             "access_rules": [
               "$lampless"
@@ -248,23 +238,20 @@
           },
           {
             "name": "B1 NE Room Lower",
-            "capture_item": true,
             "hosted_item": "sw_chest_03",
             "access_rules": [
               "$lampless"
             ]
           },
           {
-            "name": "B1 Grate Room    ",
-            "capture_item": true,
+            "name": "B1 Grate Room",
             "hosted_item": "sw_chest_04",
             "access_rules": [
               "$lampless"
             ]
           },
           {
-            "name": "B1 Elevator Room  ",
-            "capture_item": true,
+            "name": "B1 Elevator Room",
             "hosted_item": "sw_chest_05",
             "access_rules": [
               "$lampless, merge, $attack",
@@ -274,7 +261,6 @@
           },
           {
             "name": "Outdoor Chest",
-            "capture_item": true,
             "hosted_item": "sw_chest_06",
             "access_rules": [
               "$lampless, merge, $attack, $fire"
@@ -282,7 +268,6 @@
           },
           {
             "name": "B1 Big Chest (SW)",
-            "capture_item": true,
             "hosted_item": "sw_chest_07",
             "access_rules": [
               "$lampless, merge, $attack, $fire"
@@ -290,7 +275,6 @@
           },
           {
             "name": "B1 Big Chest (Eyes)",
-            "capture_item": true,
             "hosted_item": "sw_chest_08",
             "access_rules": [
               "$lampless, merge, $attack, $fire"
@@ -298,7 +282,7 @@
           },
           {
             "name": "B1 Not Mothula",
-            "capture_item": true,
+            //"capture_item": true,
             "hosted_item": "sw_chest_09",
             "access_rules": [
               "$lampless, merge, $knucklemaster"

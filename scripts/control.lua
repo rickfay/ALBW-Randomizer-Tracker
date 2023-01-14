@@ -23,6 +23,11 @@ function hasAll(items)
     return true;
 end
 
+-- Returns the count of the given item or setting
+function count(item)
+    return Tracker:ProviderCountForCode(item)
+end
+
 -- Returns true if the player has at least a given amount of an item or setting
 function has_amount(item, amount)
     return Tracker:ProviderCountForCode(item) >= amount
@@ -163,14 +168,6 @@ function cutGrass()
     return hasAny({ "fsword", "boomerang", "bombs", "frod", "irod", "lamp", "boots" });
 end
 
-function has_all_sages()
-    return (Tracker:ProviderCountForCode("sage") >= Tracker:ProviderCountForCode("lc_requirement"));
-end
-
-function does_not_have_all_sages()
-    return not has_all_sages();
-end
-
 -- Can defeat Yuga 1 in Eastern Palace
 function yuga1()
     if hasAny({ "bow", "bombs" }) or hasAny({ "boomerang", "hookshot" }) then
@@ -277,7 +274,7 @@ function hc_barrier()
         return true
     elseif hasAll({ "merge", "boots", "trod", "bombs" })
             and hasAny({ "hookshot", "boomerang" })
-            and does_not_have_all_sages() then
+            and not lc_requirement() then
         return true, AccessibilityLevel.SequenceBreak -- barrier skip, not in any logic because it's missable
     else
         return false
@@ -286,6 +283,36 @@ end
 
 function yuga2()
     return hasAny({ "fsword", "bombs", "frod", "irod", "hammer" })
+end
+
+-- Map the Lorule Castle requirement from a progressive item to a number
+function lc_requirement()
+
+    local requirement
+    if has("lc_requirement_7") then
+        requirement = 7
+    elseif has("lc_requirement_6") then
+        requirement = 6
+    elseif has("lc_requirement_5") then
+        requirement = 5
+    elseif has("lc_requirement_4") then
+        requirement = 4
+    elseif has("lc_requirement_3") then
+        requirement = 3
+    elseif has("lc_requirement_2") then
+        requirement = 2
+    elseif has("lc_requirement_1") then
+        requirement = 1
+    else
+        requirement = 0
+    end
+
+    return count("sage") >= requirement
+end
+
+-- Return if we can enter Lorule Castle, either with Sages or via the Hyrule Castle Portal
+function canEnterLC()
+    return has("merge") and (lc_requirement() or (hc_barrier() and hasAll({ "yuga" })))
 end
 
 -- Return if we can reach Lorule Castle 2F
@@ -297,36 +324,72 @@ function lc2F()
     end
 end
 
--- Return if we can enter Lorule Castle, either with Sages or via the Hyrule Castle Portal
-function canEnterLC()
-    return has("merge") and (has_all_sages() or (hc_barrier() and hasAll({ "courage", "yuga" })))
+-- Map the Yuganon requirement from a progressive item to a number
+function yg_requirement()
+
+    local requirement
+    if has("yg_requirement_7") then
+        requirement = 7
+    elseif has("yg_requirement_6") then
+        requirement = 6
+    elseif has("yg_requirement_5") then
+        requirement = 5
+    elseif has("yg_requirement_4") then
+        requirement = 4
+    elseif has("yg_requirement_3") then
+        requirement = 3
+    elseif has("yg_requirement_2") then
+        requirement = 2
+    elseif has("yg_requirement_1") then
+        requirement = 1
+    else
+        requirement = 0
+    end
+
+    return count("sage") >= requirement
+end
+
+-- Returns only if we can reach the final boss, NOT if we can obtain Zelda's check or win the fight
+function can_reach_final_boss()
+    return has("merge") and yg_requirement() and (
+            has("yuga") or (
+                    lc_requirement() and (
+                            has("trials_skipped") or hasAll({ "merge", "hookshot" })
+                    )
+            )
+    )
+end
+
+-- Returns only if we can perform Trial's Skip to fight Yuganon, NOT if we can obtain Zelda's check or win the fight
+function can_skip_trials()
+    if lc_requirement() and yg_requirement() and hasAll({ "merge", "sword" }) then
+        if has("bombs") then
+            return true_for("advanced")
+        elseif has("niceirod") then
+            return true, AccessibilityLevel.SequenceBreak
+        end
+    end
+
+    return false
+end
+
+-- Returns if we can logically play tennis with Yuganon
+function can_play_tennis()
+    if has("sword") or hasAll({ "swordless", "net" }) then
+        return true
+    elseif has("net") then
+        return true_for("hard")
+    end
+
+    return false
 end
 
 -- Return if we can reach Zelda in Lorule Castle
 function zelda()
-
-    if Tracker:ProviderCountForCode("sage") < Tracker:ProviderCountForCode("yg_requirement") then
-        return false
-    end
-
-    local canPassTrials = has("trials_skipped") or hasAll({ "merge", "hookshot" }) or hasAll({"yuga", "merge"})
-    local canGlitchTrials = hasAll({ "sword", "bombs" }) and hasAny({ "merge", "bow" })
-    local logicalTennis = has("sword") or hasAll({ "swordless", "net" })
-
-    if canPassTrials then
-        if logicalTennis then
-            if fire() then
-                return true
-            else
-                return true_for("hard")
-            end
-        elseif has("net") then
-            return true_for("hard")
-        else
-            return false
-        end
-    elseif canGlitchTrials and hasAny({ "sword", "net" }) then
-        return true_for("advanced")
+    if can_reach_final_boss() then
+        return can_play_tennis()
+    elseif can_play_tennis() then
+        return can_skip_trials()
     else
         return false
     end

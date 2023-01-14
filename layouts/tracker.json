@@ -1,6 +1,6 @@
 {
   "tracker_default": {
-    "background": "#848AAD",
+    "background": "#737387",
     "type": "dock",
     "content": [
       {
@@ -34,12 +34,12 @@
           },
           {
             "type": "scroll",
+            "width": "292",
             "horizontal_scrollbar_visibility": "disabled",
             "content": [
               {
                 "type": "group",
                 "header": "Pinned Locations",
-                "width": "306",
                 "content": {
                   "type": "recentpins",
                   "orientation": "vertical"
@@ -65,7 +65,7 @@
                       "tabs": [
                         {
                           "title": "Side-by-Side",
-                          "icon": "images/sidebyside.png",
+                          "icon": "images/icons/side-by-side.png",
                           "content": {
                             "type": "scroll",
                             "horizontal_scrollbar_visibility": "disabled",
@@ -90,7 +90,7 @@
                         },
                         {
                           "title": "Zoomed",
-                          "icon": "images/double.png",
+                          "icon": "images/icons/zoomed.png",
                           "content": {
                             "type": "scroll",
                             "horizontal_scrollbar_visibility": "disabled",
@@ -145,6 +145,8 @@
                     {
                       "type": "array",
                       "orientation": "horizontal",
+                      "h_alignment": "center",
+                      "v_alignment": "center",
                       "style": "wrap",
                       "content": [
                         {
@@ -165,7 +167,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/3F_Boss.png",
+                                  "image": "images/floors/3F_Boss.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -192,7 +194,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/2F.png",
+                                  "image": "images/floors/2F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -219,7 +221,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/1F.png",
+                                  "image": "images/floors/1F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -243,6 +245,8 @@
                     {
                       "type": "array",
                       "orientation": "horizontal",
+                      "h_alignment": "center",
+                      "v_alignment": "center",
                       "style": "wrap",
                       "content": [
                         {
@@ -263,7 +267,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/3F_Boss.png",
+                                  "image": "images/floors/3F_Boss.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -290,7 +294,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/2F.png",
+                                  "image": "images/floors/2F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -317,7 +321,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/1F.png",
+                                  "image": "images/floors/1F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -341,6 +345,8 @@
                     {
                       "type": "array",
                       "orientation": "horizontal",
+                      "h_alignment": "center",
+                      "v_alignment": "center",
                       "style": "wrap",
                       "content": [
                         {
@@ -361,7 +367,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/13F_Boss.png",
+                                  "image": "images/floors/13F_Boss.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -388,7 +394,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/12F.png",
+                                  "image": "images/floors/12F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -415,7 +421,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/11F.png",
+                                  "image": "images/floors/11F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -442,7 +448,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/10F.png",
+                                  "image": "images/floors/10F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -469,7 +475,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/9F.png",
+                                  "image": "images/floors/9F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -496,7 +502,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/8F.png",
+                                  "image": "images/floors/8F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -523,7 +529,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/7F.png",
+                                  "image": "images/floors/7F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -550,7 +556,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/6F.png",
+                                  "image": "images/floors/6F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -577,7 +583,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/5F.png",
+                                  "image": "images/floors/5F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -604,7 +610,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/4F.png",
+                                  "image": "images/floors/4F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -631,7 +637,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/3F.png",
+                                  "image": "images/floors/3F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -658,7 +664,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/2F.png",
+                                  "image": "images/floors/2F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -685,7 +691,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/1F.png",
+                                  "image": "images/floors/1F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -709,6 +715,8 @@
                     {
                       "type": "array",
                       "orientation": "horizontal",
+                      "h_alignment": "center",
+                      "v_alignment": "center",
                       "style": "wrap",
                       "content": [
                         {
@@ -729,7 +737,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/8F_Boss.png",
+                                  "image": "images/floors/8F_Boss.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -756,7 +764,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/7F.png",
+                                  "image": "images/floors/7F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -783,7 +791,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/6F.png",
+                                  "image": "images/floors/6F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -810,7 +818,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/5F.png",
+                                  "image": "images/floors/5F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -837,7 +845,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/4F.png",
+                                  "image": "images/floors/4F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -864,7 +872,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/3F.png",
+                                  "image": "images/floors/3F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -891,7 +899,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/2F.png",
+                                  "image": "images/floors/2F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -915,6 +923,8 @@
                     {
                       "type": "array",
                       "orientation": "horizontal",
+                      "h_alignment": "center",
+                      "v_alignment": "center",
                       "style": "wrap",
                       "content": [
                         {
@@ -935,7 +945,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/2F.png",
+                                  "image": "images/floors/2F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -962,7 +972,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/1F.png",
+                                  "image": "images/floors/1F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -989,7 +999,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/B1_Boss.png",
+                                  "image": "images/floors/B1_Boss.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1013,6 +1023,8 @@
                     {
                       "type": "array",
                       "orientation": "horizontal",
+                      "h_alignment": "center",
+                      "v_alignment": "center",
                       "style": "wrap",
                       "content": [
                         {
@@ -1033,7 +1045,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/2F.png",
+                                  "image": "images/floors/2F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1060,7 +1072,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/1F_Boss.png",
+                                  "image": "images/floors/1F_Boss.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1087,7 +1099,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/B1.png",
+                                  "image": "images/floors/B1.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1111,6 +1123,8 @@
                     {
                       "type": "array",
                       "orientation": "horizontal",
+                      "h_alignment": "center",
+                      "v_alignment": "center",
                       "style": "wrap",
                       "content": [
                         {
@@ -1131,7 +1145,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/B1.png",
+                                  "image": "images/floors/B1.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1158,7 +1172,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/B2_Boss.png",
+                                  "image": "images/floors/B2_Boss.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1182,6 +1196,8 @@
                     {
                       "type": "array",
                       "orientation": "horizontal",
+                      "h_alignment": "center",
+                      "v_alignment": "center",
                       "style": "wrap",
                       "content": [
                         {
@@ -1202,7 +1218,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/B1_Boss.png",
+                                  "image": "images/floors/B1_Boss.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1229,7 +1245,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/B2.png",
+                                  "image": "images/floors/B2.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1256,7 +1272,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/B3.png",
+                                  "image": "images/floors/B3.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1280,6 +1296,8 @@
                     {
                       "type": "array",
                       "orientation": "horizontal",
+                      "h_alignment": "center",
+                      "v_alignment": "center",
                       "style": "wrap",
                       "content": [
                         {
@@ -1300,7 +1318,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/1F.png",
+                                  "image": "images/floors/1F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1327,7 +1345,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/B1.png",
+                                  "image": "images/floors/B1.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1354,7 +1372,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/B2_Boss.png",
+                                  "image": "images/floors/B2_Boss.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1378,6 +1396,8 @@
                     {
                       "type": "array",
                       "orientation": "horizontal",
+                      "h_alignment": "center",
+                      "v_alignment": "center",
                       "style": "wrap",
                       "content": [
                         {
@@ -1398,7 +1418,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/3F_Boss.png",
+                                  "image": "images/floors/3F_Boss.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1425,7 +1445,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/2F.png",
+                                  "image": "images/floors/2F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1452,7 +1472,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/1F.png",
+                                  "image": "images/floors/1F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1476,6 +1496,8 @@
                     {
                       "type": "array",
                       "orientation": "horizontal",
+                      "h_alignment": "center",
+                      "v_alignment": "center",
                       "style": "wrap",
                       "content": [
                         {
@@ -1496,7 +1518,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/1F.png",
+                                  "image": "images/floors/1F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1523,7 +1545,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/B1.png",
+                                  "image": "images/floors/B1.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1550,7 +1572,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/B2.png",
+                                  "image": "images/floors/B2.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1577,7 +1599,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/B3.png",
+                                  "image": "images/floors/B3.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1604,7 +1626,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/B4.png",
+                                  "image": "images/floors/B4.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1631,7 +1653,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/B5.png",
+                                  "image": "images/floors/B5.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1658,7 +1680,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/B6_Boss.png",
+                                  "image": "images/floors/B6_Boss.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1682,6 +1704,8 @@
                     {
                       "type": "array",
                       "orientation": "horizontal",
+                      "h_alignment": "center",
+                      "v_alignment": "center",
                       "style": "wrap",
                       "content": [
                         {
@@ -1702,7 +1726,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/1F_Boss.png",
+                                  "image": "images/floors/1F_Boss.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1729,7 +1753,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/5F.png",
+                                  "image": "images/floors/5F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1756,7 +1780,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/4F.png",
+                                  "image": "images/floors/4F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1783,7 +1807,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/3F.png",
+                                  "image": "images/floors/3F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1810,7 +1834,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/2F.png",
+                                  "image": "images/floors/2F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235
@@ -1837,7 +1861,7 @@
                               "content": [
                                 {
                                   "type": "image",
-                                  "image": "images/maps/floors/1F.png",
+                                  "image": "images/floors/1F.png",
                                   "width": 50,
                                   "canvas_top": 30,
                                   "canvas_left": 235

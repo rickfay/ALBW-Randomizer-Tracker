@@ -1,57 +1,36 @@
 [
   {
-    "name": "LC Required Portraits",
-    "type": "consumable",
-    "increment": -1,
-    "initial_quantity": 7,
-    "max_quantity": 7,
-    "min_quantity": 0,
-    "codes": "lc_requirement",
-    "img": "images/lorule_castle.png",
-    "img_mods": "overlay|images/sage_rainbow_small.png",
-    "disabled_img": "images/lorule_castle.png",
-    "disabled_img_mods": ""
-  },
-  {
-    "name": "Yuganon Required Portraits",
-    "type": "consumable",
-    "increment": -1,
-    "initial_quantity": 7,
-    "max_quantity": 7,
-    "min_quantity": 0,
-    "codes": "yg_requirement",
-    "img": "images/yuganon.png",
-    "img_mods": "overlay|images/sage_rainbow_small.png",
-    "disabled_img": "images/yuganon.png",
-    "disabled_img_mods": ""
-  },
-  {
     "name": "Eastern Palace",
     "type": "progressive_toggle",
     "stages": [
       {
-        "img": "images/sage_rainbow.png",
-        "img_mods": "overlay|images/label_EP.png",
+        "img": "images/prizes/unknown.png",
+        "img_mods": "overlay|images/labels/EP.png",
+        "codes": "eastern"
+      },
+      {
+        "img": "images/prizes/sage_rainbow.png",
+        "img_mods": "overlay|images/labels/EP.png",
         "codes": "eastern, sage"
       },
       {
-        "img": "images/sage_osfala.png",
-        "img_mods": "overlay|images/label_EP.png",
+        "img": "images/prizes/sage_osfala.png",
+        "img_mods": "overlay|images/labels/EP.png",
         "codes": "eastern, sage, osfala"
       },
       {
-        "img": "images/sage_gulley.png",
-        "img_mods": "overlay|images/label_EP.png",
+        "img": "images/prizes/sage_gulley.png",
+        "img_mods": "overlay|images/labels/EP.png",
         "codes": "eastern, sage, gulley"
       },
       {
         "img": "images/pendant.png",
-        "img_mods": "overlay|images/label_EP.png",
+        "img_mods": "overlay|images/labels/EP.png",
         "codes": "eastern, pendant"
       },
       {
-        "img": "images/pendant_courage.png",
-        "img_mods": "overlay|images/label_EP.png",
+        "img": "images/prizes/pendant_courage.png",
+        "img_mods": "overlay|images/labels/EP.png",
         "codes": "eastern, pendant, courage"
       }
     ]
@@ -61,28 +40,33 @@
     "type": "progressive_toggle",
     "stages": [
       {
-        "img": "images/sage_rainbow.png",
-        "img_mods": "overlay|images/label_HG.png",
+        "img": "images/prizes/unknown.png",
+        "img_mods": "overlay|images/labels/HG.png",
+        "codes": "gales"
+      },
+      {
+        "img": "images/prizes/sage_rainbow.png",
+        "img_mods": "overlay|images/labels/HG.png",
         "codes": "gales, sage"
       },
       {
-        "img": "images/sage_osfala.png",
-        "img_mods": "overlay|images/label_HG.png",
+        "img": "images/prizes/sage_osfala.png",
+        "img_mods": "overlay|images/labels/HG.png",
         "codes": "gales, sage, osfala"
       },
       {
-        "img": "images/sage_gulley.png",
-        "img_mods": "overlay|images/label_HG.png",
+        "img": "images/prizes/sage_gulley.png",
+        "img_mods": "overlay|images/labels/HG.png",
         "codes": "gales, sage, gulley"
       },
       {
         "img": "images/pendant.png",
-        "img_mods": "overlay|images/label_HG.png",
+        "img_mods": "overlay|images/labels/HG.png",
         "codes": "gales, pendant"
       },
       {
-        "img": "images/pendant_courage.png",
-        "img_mods": "overlay|images/label_HG.png",
+        "img": "images/prizes/pendant_courage.png",
+        "img_mods": "overlay|images/labels/HG.png",
         "codes": "gales, pendant, courage"
       }
     ]
@@ -92,28 +76,33 @@
     "type": "progressive_toggle",
     "stages": [
       {
-        "img": "images/sage_rainbow.png",
-        "img_mods": "overlay|images/label_TH.png",
+        "img": "images/prizes/unknown.png",
+        "img_mods": "overlay|images/labels/TH.png",
+        "codes": "hera"
+      },
+      {
+        "img": "images/prizes/sage_rainbow.png",
+        "img_mods": "overlay|images/labels/TH.png",
         "codes": "hera, sage"
       },
       {
-        "img": "images/sage_osfala.png",
-        "img_mods": "overlay|images/label_TH.png",
+        "img": "images/prizes/sage_osfala.png",
+        "img_mods": "overlay|images/labels/TH.png",
         "codes": "hera, sage, osfala"
       },
       {
-        "img": "images/sage_gulley.png",
-        "img_mods": "overlay|images/label_TH.png",
+        "img": "images/prizes/sage_gulley.png",
+        "img_mods": "overlay|images/labels/TH.png",
         "codes": "hera, sage, gulley"
       },
       {
         "img": "images/pendant.png",
-        "img_mods": "overlay|images/label_TH.png",
+        "img_mods": "overlay|images/labels/TH.png",
         "codes": "hera, pendant"
       },
       {
-        "img": "images/pendant_courage.png",
-        "img_mods": "overlay|images/label_TH.png",
+        "img": "images/prizes/pendant_courage.png",
+        "img_mods": "overlay|images/labels/TH.png",
         "codes": "hera, pendant, courage"
       }
     ]
@@ -123,28 +112,33 @@
     "type": "progressive_toggle",
     "stages": [
       {
-        "img": "images/sage_rainbow.png",
-        "img_mods": "overlay|images/label_PD.png",
+        "img": "images/prizes/unknown.png",
+        "img_mods": "overlay|images/labels/PD.png",
+        "codes": "dark"
+      },
+      {
+        "img": "images/prizes/sage_rainbow.png",
+        "img_mods": "overlay|images/labels/PD.png",
         "codes": "dark, sage"
       },
       {
-        "img": "images/sage_osfala.png",
-        "img_mods": "overlay|images/label_PD.png",
+        "img": "images/prizes/sage_osfala.png",
+        "img_mods": "overlay|images/labels/PD.png",
         "codes": "dark, sage, osfala"
       },
       {
-        "img": "images/sage_gulley.png",
-        "img_mods": "overlay|images/label_PD.png",
+        "img": "images/prizes/sage_gulley.png",
+        "img_mods": "overlay|images/labels/PD.png",
         "codes": "dark, sage, gulley"
       },
       {
         "img": "images/pendant.png",
-        "img_mods": "overlay|images/label_PD.png",
+        "img_mods": "overlay|images/labels/PD.png",
         "codes": "dark, pendant"
       },
       {
-        "img": "images/pendant_courage.png",
-        "img_mods": "overlay|images/label_PD.png",
+        "img": "images/prizes/pendant_courage.png",
+        "img_mods": "overlay|images/labels/PD.png",
         "codes": "dark, pendant, courage"
       }
     ]
@@ -154,28 +148,33 @@
     "type": "progressive_toggle",
     "stages": [
       {
-        "img": "images/sage_rainbow.png",
-        "img_mods": "overlay|images/label_SP.png",
+        "img": "images/prizes/unknown.png",
+        "img_mods": "overlay|images/labels/SP.png",
+        "codes": "swamp"
+      },
+      {
+        "img": "images/prizes/sage_rainbow.png",
+        "img_mods": "overlay|images/labels/SP.png",
         "codes": "swamp, sage"
       },
       {
-        "img": "images/sage_osfala.png",
-        "img_mods": "overlay|images/label_SP.png",
+        "img": "images/prizes/sage_osfala.png",
+        "img_mods": "overlay|images/labels/SP.png",
         "codes": "swamp, sage, osfala"
       },
       {
-        "img": "images/sage_gulley.png",
-        "img_mods": "overlay|images/label_SP.png",
+        "img": "images/prizes/sage_gulley.png",
+        "img_mods": "overlay|images/labels/SP.png",
         "codes": "swamp, sage, gulley"
       },
       {
         "img": "images/pendant.png",
-        "img_mods": "overlay|images/label_SP.png",
+        "img_mods": "overlay|images/labels/SP.png",
         "codes": "swamp, pendant"
       },
       {
-        "img": "images/pendant_courage.png",
-        "img_mods": "overlay|images/label_SP.png",
+        "img": "images/prizes/pendant_courage.png",
+        "img_mods": "overlay|images/labels/SP.png",
         "codes": "swamp, pendant, courage"
       }
     ]
@@ -185,28 +184,33 @@
     "type": "progressive_toggle",
     "stages": [
       {
-        "img": "images/sage_rainbow.png",
-        "img_mods": "overlay|images/label_SW.png",
+        "img": "images/prizes/unknown.png",
+        "img_mods": "overlay|images/labels/SW.png",
+        "codes": "skull"
+      },
+      {
+        "img": "images/prizes/sage_rainbow.png",
+        "img_mods": "overlay|images/labels/SW.png",
         "codes": "skull, sage"
       },
       {
-        "img": "images/sage_osfala.png",
-        "img_mods": "overlay|images/label_SW.png",
+        "img": "images/prizes/sage_osfala.png",
+        "img_mods": "overlay|images/labels/SW.png",
         "codes": "skull, sage, osfala"
       },
       {
-        "img": "images/sage_gulley.png",
-        "img_mods": "overlay|images/label_SW.png",
+        "img": "images/prizes/sage_gulley.png",
+        "img_mods": "overlay|images/labels/SW.png",
         "codes": "swamp, sage, gulley"
       },
       {
         "img": "images/pendant.png",
-        "img_mods": "overlay|images/label_SW.png",
+        "img_mods": "overlay|images/labels/SW.png",
         "codes": "skull, pendant"
       },
       {
-        "img": "images/pendant_courage.png",
-        "img_mods": "overlay|images/label_SW.png",
+        "img": "images/prizes/pendant_courage.png",
+        "img_mods": "overlay|images/labels/SW.png",
         "codes": "skull, pendant, courage"
       }
     ]
@@ -216,28 +220,33 @@
     "type": "progressive_toggle",
     "stages": [
       {
-        "img": "images/sage_rainbow.png",
-        "img_mods": "overlay|images/label_T'H.png",
+        "img": "images/prizes/unknown.png",
+        "img_mods": "overlay|images/labels/T'H.png",
+        "codes": "thieves"
+      },
+      {
+        "img": "images/prizes/sage_rainbow.png",
+        "img_mods": "overlay|images/labels/T'H.png",
         "codes": "thieves, sage"
       },
       {
-        "img": "images/sage_osfala.png",
-        "img_mods": "overlay|images/label_T'H.png",
+        "img": "images/prizes/sage_osfala.png",
+        "img_mods": "overlay|images/labels/T'H.png",
         "codes": "thieves, sage, osfala"
       },
       {
-        "img": "images/sage_gulley.png",
-        "img_mods": "overlay|images/label_T'H.png",
+        "img": "images/prizes/sage_gulley.png",
+        "img_mods": "overlay|images/labels/T'H.png",
         "codes": "thieves, sage, gulley"
       },
       {
         "img": "images/pendant.png",
-        "img_mods": "overlay|images/label_T'H.png",
+        "img_mods": "overlay|images/labels/T'H.png",
         "codes": "thieves, pendant"
       },
       {
-        "img": "images/pendant_courage.png",
-        "img_mods": "overlay|images/label_T'H.png",
+        "img": "images/prizes/pendant_courage.png",
+        "img_mods": "overlay|images/labels/T'H.png",
         "codes": "thieves, pendant, courage"
       }
     ]
@@ -247,28 +256,33 @@
     "type": "progressive_toggle",
     "stages": [
       {
-        "img": "images/sage_rainbow.png",
-        "img_mods": "overlay|images/label_TR.png",
+        "img": "images/prizes/unknown.png",
+        "img_mods": "overlay|images/labels/TR.png",
+        "codes": "turtle"
+      },
+      {
+        "img": "images/prizes/sage_rainbow.png",
+        "img_mods": "overlay|images/labels/TR.png",
         "codes": "turtle, sage"
       },
       {
-        "img": "images/sage_osfala.png",
-        "img_mods": "overlay|images/label_TR.png",
+        "img": "images/prizes/sage_osfala.png",
+        "img_mods": "overlay|images/labels/TR.png",
         "codes": "turtle, sage, osfala"
       },
       {
-        "img": "images/sage_gulley.png",
-        "img_mods": "overlay|images/label_TR.png",
+        "img": "images/prizes/sage_gulley.png",
+        "img_mods": "overlay|images/labels/TR.png",
         "codes": "turtle, sage, gulley"
       },
       {
         "img": "images/pendant.png",
-        "img_mods": "overlay|images/label_TR.png",
+        "img_mods": "overlay|images/labels/TR.png",
         "codes": "turtle, pendant"
       },
       {
-        "img": "images/pendant_courage.png",
-        "img_mods": "overlay|images/label_TR.png",
+        "img": "images/prizes/pendant_courage.png",
+        "img_mods": "overlay|images/labels/TR.png",
         "codes": "turtle, pendant, courage"
       }
     ]
@@ -278,28 +292,33 @@
     "type": "progressive_toggle",
     "stages": [
       {
-        "img": "images/sage_rainbow.png",
-        "img_mods": "overlay|images/label_DP.png",
+        "img": "images/prizes/unknown.png",
+        "img_mods": "overlay|images/labels/DP.png",
+        "codes": "desert"
+      },
+      {
+        "img": "images/prizes/sage_rainbow.png",
+        "img_mods": "overlay|images/labels/DP.png",
         "codes": "desert, sage"
       },
       {
-        "img": "images/sage_osfala.png",
-        "img_mods": "overlay|images/label_DP.png",
+        "img": "images/prizes/sage_osfala.png",
+        "img_mods": "overlay|images/labels/DP.png",
         "codes": "desert, sage, osfala"
       },
       {
-        "img": "images/sage_gulley.png",
-        "img_mods": "overlay|images/label_DP.png",
+        "img": "images/prizes/sage_gulley.png",
+        "img_mods": "overlay|images/labels/DP.png",
         "codes": "desert, sage, gulley"
       },
       {
         "img": "images/pendant.png",
-        "img_mods": "overlay|images/label_DP.png",
+        "img_mods": "overlay|images/labels/DP.png",
         "codes": "desert, pendant"
       },
       {
-        "img": "images/pendant_courage.png",
-        "img_mods": "overlay|images/label_DP.png",
+        "img": "images/prizes/pendant_courage.png",
+        "img_mods": "overlay|images/labels/DP.png",
         "codes": "desert, pendant, courage"
       }
     ]
@@ -309,28 +328,33 @@
     "type": "progressive_toggle",
     "stages": [
       {
-        "img": "images/sage_rainbow.png",
-        "img_mods": "overlay|images/label_IR.png",
+        "img": "images/prizes/unknown.png",
+        "img_mods": "overlay|images/labels/IR.png",
+        "codes": "ice"
+      },
+      {
+        "img": "images/prizes/sage_rainbow.png",
+        "img_mods": "overlay|images/labels/IR.png",
         "codes": "ice, sage"
       },
       {
-        "img": "images/sage_osfala.png",
-        "img_mods": "overlay|images/label_IR.png",
+        "img": "images/prizes/sage_osfala.png",
+        "img_mods": "overlay|images/labels/IR.png",
         "codes": "ice, sage, osfala"
       },
       {
-        "img": "images/sage_gulley.png",
-        "img_mods": "overlay|images/label_IR.png",
+        "img": "images/prizes/sage_gulley.png",
+        "img_mods": "overlay|images/labels/IR.png",
         "codes": "ice, sage, gulley"
       },
       {
         "img": "images/pendant.png",
-        "img_mods": "overlay|images/label_IR.png",
+        "img_mods": "overlay|images/labels/IR.png",
         "codes": "ice, pendant"
       },
       {
-        "img": "images/pendant_courage.png",
-        "img_mods": "overlay|images/label_IR.png",
+        "img": "images/prizes/pendant_courage.png",
+        "img_mods": "overlay|images/labels/IR.png",
         "codes": "ice, pendant, courage"
       }
     ]

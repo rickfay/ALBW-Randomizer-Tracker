@@ -16,6 +16,8 @@
             "name": "Big Rock Chest",
             "capture_item": true,
             "access_rules": [
+              "{hell, boomerang}",
+              "{hell, hookshot}",
               "titansmitt",
               "[hell], hookshot",
               "[hell], boomerang"
@@ -38,12 +40,14 @@
             "name": "Merge Alcove",
             "capture_item": true,
             "access_rules": [
-              "{}",
+              //"{}",
+              "{basic, boomerang}",
+              "{basic, hookshot}",
               "merge",
               "[basic], boomerang, $escape",
               "[basic], hookshot, $escape",
               "[hell], boomerang",
-              "[hell], hookshot",
+              "[hell], hookshot"
             ],
             "item_count": 1
           }
@@ -80,8 +84,8 @@
         "sections": [
           {
             "name": "Crooked Chest",
-            "chest_unopened_img": "images/chest_crooked_unopened.png",
-            "chest_opened_img": "images/chest_crooked_opened.png",
+            "chest_unopened_img": "images/checks/chest_crooked_unopened.png",
+            "chest_opened_img": "images/checks/chest_crooked_opened.png",
             "access_rules": [
               "courage",
               "merge"
@@ -336,12 +340,12 @@
           {
             "name": "Floating Island",
             "access_rules": [
-              "{merge, hookshot}",
-              "{advanced, bottle, hookshot}",
-              "{advanced, bluemail, hookshot}",
+              //"{merge, hookshot}",
+              //"{advanced, bottle, hookshot}",
+              //"{advanced, bluemail, hookshot}",
               "merge, hookshot, trod"
             ],
-            "capture_item": true,
+            //"capture_item": true,
             "item_count": 1
           }
         ]
@@ -377,7 +381,7 @@
         "sections": [
           {
             "name": "Fire Cave Pillar",
-            "capture_item": true,
+            //"capture_item": true,
             "access_rules": [
               "merge, hookshot, hammer"
             ],
@@ -447,10 +451,10 @@
           },
           {
             "name": "Ledge",
-            "capture_item": true,
+            //"capture_item": true,
             "access_rules": [
-              "{lamp}",
-              "{$lampless, frod}",
+              //"{lamp}",
+              //"{$lampless, frod}",
               "lamp, merge",
               "$lampless, frod, merge"
             ],
@@ -475,7 +479,7 @@
         "sections": [
           {
             "name": "Cave",
-            "capture_item": true,
+            //"capture_item": true,
             "access_rules": [
               "merge, lamp, bombs",
               "merge, frod, $lampless, bombs"
@@ -574,7 +578,7 @@
         "sections": [
           {
             "name": "Waterfall Cave",
-            "capture_item": true,
+            //"capture_item": true,
             "access_rules": [
               "flippers",
               "[basic], merge",
@@ -654,6 +658,25 @@
         ]
       },
       {
+        "name": "Woman's House",
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 444,
+            "y": 967
+          }
+        ],
+        "sections": [
+          {
+            "name": "Exterminate Roof Maiamai",
+            "access_rules": [
+              "glove"
+            ],
+            "item_count": 1
+          }
+        ]
+      },
+      {
         "name": "Bee Guy",
         "map_locations": [
           {
@@ -666,7 +689,7 @@
           {
             "name": "Have a Bottle",
             "access_rules": [
-              "bottle"
+              "bottle_1"
             ],
             "item_count": 1
           },
@@ -751,13 +774,13 @@
         "sections": [
           {
             "name": "Left (100)",
-            "chest_opened_img": "images/soldout.png",
+            "chest_opened_img": "images/checks/soldout.png",
             "capture_item": true,
             "item_count": 1
           },
           {
             "name": "Right (200)",
-            "chest_opened_img": "images/soldout.png",
+            "chest_opened_img": "images/checks/soldout.png",
             "capture_item": true,
             "access_rules": [
               "shadyguy"
@@ -798,7 +821,7 @@
         "sections": [
           {
             "name": "Jump into Well",
-            "capture_item": true,
+            //"capture_item": true,
             "access_rules": [
               "powerglove",
               "[hard]"
@@ -858,39 +881,39 @@
         ],
         "sections": [
           {
-            "name": "Ravio 1 (100)      ",
+            "name": "Ravio 1 (100)",
             "capture_item": true,
-            "chest_opened_img": "images/soldout.png",
+            "chest_opened_img": "images/checks/soldout.png",
             "item_count": 1
           },
           {
-            "name": "Ravio 2 (50)         ",
+            "name": "Ravio 2 (50)",
             "capture_item": true,
-            "chest_opened_img": "images/soldout.png",
+            "chest_opened_img": "images/checks/soldout.png",
             "item_count": 1
           },
           {
             "name": "Ravio 3 (20/50)",
             "capture_item": true,
-            "chest_opened_img": "images/soldout.png",
+            "chest_opened_img": "images/checks/soldout.png",
             "item_count": 1
           },
           {
-            "name": "Ravio 4 (50)        ",
+            "name": "Ravio 4 (50)",
             "capture_item": true,
-            "chest_opened_img": "images/soldout.png",
+            "chest_opened_img": "images/checks/soldout.png",
             "item_count": 1
           },
           {
-            "name": "Ravio 5 (10/50)    ",
+            "name": "Ravio 5 (10/50)",
             "capture_item": true,
-            "chest_opened_img": "images/soldout.png",
+            "chest_opened_img": "images/checks/soldout.png",
             "item_count": 1
           },
           {
             "name": "Ravio 6 (50)",
             "capture_item": true,
-            "chest_opened_img": "images/soldout.png",
+            "chest_opened_img": "images/checks/soldout.png",
             "access_rules": [
               "{}",
               "osfala"
@@ -898,21 +921,21 @@
             "item_count": 1
           },
           {
-            "name": "Ravio 7 (20/50)   ",
+            "name": "Ravio 7 (20/50)",
             "capture_item": true,
-            "chest_opened_img": "images/soldout.png",
+            "chest_opened_img": "images/checks/soldout.png",
             "item_count": 1
           },
           {
-            "name": "Ravio 8 (50)         ",
+            "name": "Ravio 8 (50)",
             "capture_item": true,
-            "chest_opened_img": "images/soldout.png",
+            "chest_opened_img": "images/checks/soldout.png",
             "item_count": 1
           },
           {
             "name": "Ravio 9 (100)",
             "capture_item": true,
-            "chest_opened_img": "images/soldout.png",
+            "chest_opened_img": "images/checks/soldout.png",
             "item_count": 1
           }
         ]
@@ -928,9 +951,14 @@
         ],
         "sections": [
           {
+            "name": "Table",
+            //"capture_item": true,
+            "item_count": 1
+          },
+          {
             "name": "Give 2 Master Ore",
             "access_rules": [
-              "masterore:2"
+              "ore_2"
             ],
             "hosted_item": "blacksmith"
             //"item_count": 1
@@ -949,9 +977,9 @@
         "sections": [
           {
             "name": "Behind House",
-            "capture_item": true,
+            //"capture_item": true,
             "access_rules": [
-              "{}",
+              //"{}",
               "merge",
               "[basic], $boost",
               "[hell], $beeBoost"
@@ -972,7 +1000,7 @@
         "sections": [
           {
             "name": "Big Rock Cave",
-            "capture_item": true,
+            //"capture_item": true,
             "access_rules": [
               "titansmitt",
               "[basic], $boost",
@@ -994,9 +1022,9 @@
         "sections": [
           {
             "name": "Rock Circle",
-            "capture_item": true,
+            //"capture_item": true,
             "access_rules": [
-              "{}",
+              //"{}",
               "powerglove"
             ],
             "item_count": 1
@@ -1018,6 +1046,26 @@
             "access_rules": [
               "courage"
             ],
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Cucco Dungeon",
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 564,
+            "y": 1654
+          }
+        ],
+        "sections": [
+          {
+            "name": "Silver Rupee (Ignore Model)",
+            "access_rules": [
+              "merge"
+            ],
+            //"capture_item": true,
             "item_count": 1
           }
         ]
@@ -1073,9 +1121,9 @@
         "sections": [
           {
             "name": "Bomb Cave",
-            "capture_item": true,
+            //"capture_item": true,
             "access_rules": [
-              "{}",
+              //"{}",
               "bombs, merge"
             ],
             "item_count": 1
@@ -1094,9 +1142,9 @@
         "sections": [
           {
             "name": "Peg Circle",
-            "capture_item": true,
+            //"capture_item": true,
             "access_rules": [
-              "{}",
+              //"{}",
               "hammer",
               "[basic], boomerang",
               "[basic], hookshot",
@@ -1273,9 +1321,9 @@
         "sections": [
           {
             "name": "Pillars Cave",
-            "capture_item": true,
+            //"capture_item": true,
             "access_rules": [
-              "{}",
+              //"{}",
               "bombs"
             ],
             "item_count": 1
@@ -1391,6 +1439,7 @@
             "name": "Letter in a Bottle",
             "hosted_item": "letter",
             "access_rules": [
+              "{}",
               "flippers",
               "[basic], frod",
               "[basic], nicebombs",

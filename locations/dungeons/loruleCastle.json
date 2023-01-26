@@ -2,6 +2,8 @@
   {
     "name": "Lorule Castle",
     "color": "#5e518d",
+    "chest_unopened_img": "images/checks/chest_small_unopened.png",
+    "chest_opened_img": "images/checks/chest_small_opened.png",
     "access_rules": [
       "$canEnterLC"
     ],
@@ -20,6 +22,7 @@
             "name": "1F Center",
             "hosted_item": "lc_chest_01",
             "access_rules": [
+              "{csmc}",
               "$lc2F"
             ]
           }
@@ -157,6 +160,7 @@
           {
             "name": "3F Bomb Trial 1",
             "access_rules": [
+              "{csmc}",
               "bombs",
               "[basic], irod"
             ],
@@ -177,6 +181,7 @@
           {
             "name": "3F Bomb Trial 2",
             "access_rules": [
+              "{csmc}",
               "bombs, merge",
               "[hard], bombs, bow",
               "[], niceirod"
@@ -374,6 +379,7 @@
             "name": "1F Center",
             "hosted_item": "lc_chest_01",
             "access_rules": [
+              "{csmc}",
               "$lc2F"
             ]
           },
@@ -433,6 +439,7 @@
             "name": "3F Bomb Trial 1",
             "hosted_item": "lc_chest_08",
             "access_rules": [
+              "{csmc}",
               "bombs",
               "[basic], irod"
             ]
@@ -441,11 +448,25 @@
             "name": "3F Bomb Trial 2",
             "hosted_item": "lc_chest_09",
             "access_rules": [
+              "{csmc}",
               "bombs, merge",
               "[hard], bombs, bow",
               "[], niceirod"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "name": "Throne Room",
+        "map_locations": [
+          {
+            "map": "lorule",
+            "x": 1024,
+            "y": 792,
+            "size": 105
+          }
+        ],
+        "sections": [
           {
             "name": "Final Zelda",
             "hosted_item": "lc_chest_15",

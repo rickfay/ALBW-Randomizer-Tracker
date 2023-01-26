@@ -14,7 +14,8 @@
               {
                 "type": "itemgrid",
                 "h_alignment": "center",
-                "item_margin": "1",
+                "item_size": "15",
+                "item_margin": "0,0,19,19",
                 "rows": [
                   [
                     "greatspin",
@@ -71,7 +72,7 @@
                     "letter",
                     "premiummilk",
                     "goldenbee",
-                    "yuga"
+                    "hyrule_castle"
                   ],
                   [
                     "dark",
@@ -83,74 +84,24 @@
                     "ice",
                     "bowoflight"
                   ]
-
-                  //                  [
-                  //                    "bow",
-                  //                    "boomerang",
-                  //                    "hookshot",
-                  //                    "bombs",
-                  //                    "pouch",
-                  //                    "boots",
-                  //                    "fsword",
-                  //                    "eastern"
-                  //                  ],
-                  //                  [
-                  //                    "frod",
-                  //                    "irod",
-                  //                    "trod",
-                  //                    "srod",
-                  //                    "beebadge",
-                  //                    "powerglove",
-                  //                    "shield",
-                  //                    "gales"
-                  //                  ],
-                  //                  [
-                  //                    "lamp",
-                  //                    "hammer",
-                  //                    "bell",
-                  //                    "net",
-                  //                    "smoothgem",
-                  //                    "flippers",
-                  //                    "greentunic",
-                  //                    "hera"
-                  //                  ],
-                  //                  [
-                  //                    "bottle",
-                  //                    "letter",
-                  //                    "milk",
-                  //                    "goldbee",
-                  //                    "bracelet",
-                  //                    "ore",
-                  //                    "maiamai",
-                  //                    "yuga"
-                  //                  ],
-                  //                  [
-                  //                    "dark",
-                  //                    "swamp",
-                  //                    "skull",
-                  //                    "thieves",
-                  //                    "turtle",
-                  //                    "desert",
-                  //                    "ice",
-                  //                    "bowoflight"
-                  //                  ]
                 ]
               }
             ]
           },
-          {
-            "type": "container",
-            "margin": "0,5,0,0",
-            "content": {
-              "type": "recentpins",
-              "h_alignment": "stretch",
-              "v_alignment": "center",
-              "orientation": "vertical",
-              "max_width": 330,
-              "compact": true,
-              "num_items": 2
-            }
-          }
+//          {
+//            "type": "container",
+//            "margin": "0,5,0,0",
+//            "content": {
+//              "type": "recentpins",
+//              "width": "278",
+//              "h_alignment": "stretch",
+//              "v_alignment": "center",
+//              "orientation": "vertical",
+//              "max_width": 330,
+//              "compact": true,
+//              "num_items": 0
+//            }
+//          }
         ]
       }
     ]

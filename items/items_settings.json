@@ -5,27 +5,27 @@
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/settings/logic_normal.png",
+        "img": "images/settings/Logic_Normal.png",
         "codes": "logic",
         "inherit_codes": false
       },
       {
-        "img": "images/settings/logic_hard.png",
+        "img": "images/settings/Logic_Hard.png",
         "codes": "hard",
         "inherit_codes": true
       },
       {
-        "img": "images/settings/logic_basic.png",
+        "img": "images/settings/Logic_Glitched_Basic.png",
         "codes": "basic",
         "inherit_codes": true
       },
       {
-        "img": "images/settings/logic_advanced.png",
+        "img": "images/settings/Logic_Glitched_Advanced.png",
         "codes": "advanced",
         "inherit_codes": true
       },
       {
-        "img": "images/settings/logic_hell.png",
+        "img": "images/settings/Logic_Glitched_Hell.png",
         "codes": "hell",
         "inherit_codes": true
       }
@@ -146,31 +146,75 @@
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/settings/minigames_enabled.png",
+        "img": "images/settings/minigames.png",
+        //"img_mods": "overlay|images/labels/Enabled.png",
         "codes": "minigames_enabled",
         "inherit_codes": false
       },
       {
-        "img": "images/settings/minigames_disabled.png",
+        "img": "images/settings/minigames.png",
+        "img_mods": "@disabled", //,overlay|images/labels/Disabled.png",
         "codes": "minigames_disabled",
         "inherit_codes": false
       }
     ]
   },
   {
-    "name": "Lorule Castle Trials",
+    "name": "Lorule Castle Trials Door",
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/settings/trials_normal.png",
+        "img": "images/settings/trials0.png",
+        //"img_mods": "overlay|images/labels/Normal.png",
         "codes": "trials_normal",
         "inherit_codes": false
       },
       {
-        "img": "images/settings/trials_skipped.png",
+        "img": "images/settings/trials4.png",
+        "img_mods": "overlay|images/labels/Skipped.png",
         "codes": "trials_skipped",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Backdoor Lorule Castle",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/settings/backdoor0.png",
+        //"img_mods": "overlay|images/labels/Normal.png",
+        "codes": "backdoor_closed",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/backdoor4.png",
+        //"img_mods": "overlay|images/labels/Skipped.png",
+        "codes": "backdoor_open",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Chest Size Matches Contents",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/settings/csmc_small.png",
+        "img_mods": "overlay|images/labels/Normal.png",
+        "codes": "csmc_off",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/csmc_large.png",
+        "img_mods": "overlay|images/labels/CSMC.png",
+        "codes": "csmc",
         "inherit_codes": false
       }
     ]
@@ -182,12 +226,14 @@
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/settings/lamp_required.png",
+        "img": "images/settings/lamp.png",
+        "img_mods": "overlay|images/labels/Required.png",
         "codes": "lampful",
         "inherit_codes": false
       },
       {
-        "img": "images/settings/lamp_not_required.png",
+        "img": "images/settings/lamp.png",
+        "img_mods": "@disabled", //overlay|images/labels/NotRequired.png",
         "codes": "lampless",
         "inherit_codes": false
       }
@@ -201,28 +247,33 @@
     "stages": [
       {
         "img": "images/settings/wv_hide.png",
+        //"img_mods": "@disabled,overlay|images/labels/Hide.png",
         "inherit_codes": false
       },
       {
         "img": "images/settings/wv_show.png",
+        //"img_mods": "overlay|images/labels/Show.png",
         "codes": "weathervania",
         "inherit_codes": false
       }
     ]
   },
   {
-    "name": "Display Bee Boost Glitches",
+    "name": "Show Bee Boost Glitches",
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/settings/bee_boost_hide.png",
+        "img": "images/settings/bee_badge.png",
+        //"img_mods": "overlay|images/labels/Hide.png",
         "codes": "beeBoost_hide",
         "inherit_codes": false
       },
       {
-        "img": "images/settings/bee_boost_show.png",
+        "img": "images/settings/bee_badge.png",
+        "img_mods": "@disabled",
+        //"img_mods": "overlay|images/labels/Show.png",
         "codes": "beeBoost_show",
         "inherit_codes": false
       }
@@ -235,11 +286,13 @@
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/settings/maiamai_map_hide.png",
+        "img": "images/settings/maiamai_map.png",
+        "img_mods": "@disabled,overlay|images/labels/Hide.png",
         "inherit_codes": false
       },
       {
-        "img": "images/settings/maiamai_map_show.png",
+        "img": "images/settings/maiamai_map.png",
+        "img_mods": "overlay|images/labels/Show.png",
         "codes": "maiamai_map",
         "inherit_codes": false
       }

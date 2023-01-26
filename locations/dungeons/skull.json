@@ -2,6 +2,8 @@
   {
     "name": "Skull Woods",
     "color": "#43c2be",
+    "chest_unopened_img": "images/checks/chest_small_unopened.png",
+    "chest_opened_img": "images/checks/chest_small_opened.png",
     "access_rules": [
       "merge"
     ],
@@ -164,6 +166,7 @@
             "name": "Outdoor Chest",
             "hosted_item": "sw_chest_06",
             "access_rules": [
+              "{csmc}",
               "$lampless, merge, $attack, $fire"
             ]
           }
@@ -263,6 +266,7 @@
             "name": "Outdoor Chest",
             "hosted_item": "sw_chest_06",
             "access_rules": [
+              "{csmc}",
               "$lampless, merge, $attack, $fire"
             ]
           },

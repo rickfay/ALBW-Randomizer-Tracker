@@ -183,6 +183,69 @@
       }
     ]
   },
+
+  {
+    "name": "Hyrule Castle",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/prizes/unknown.png",
+        "img_mods": "overlay|images/labels/HC.png",
+        "codes": "hyrule_castle"
+      },
+      {
+        "img": "images/prizes/sage_gulley.png",
+        "img_mods": "overlay|images/labels/HC.png",
+        "codes": "hyrule_castle, sage, gulley"
+      },
+      {
+        "img": "images/prizes/sage_oren.png",
+        "img_mods": "overlay|images/labels/HC.png",
+        "codes": "hyrule_castle, sage, oren"
+      },
+      {
+        "img": "images/prizes/sage_seres.png",
+        "img_mods": "overlay|images/labels/HC.png",
+        "codes": "hyrule_castle, sage, seres"
+      },
+      {
+        "img": "images/prizes/sage_osfala.png",
+        "img_mods": "overlay|images/labels/HC.png",
+        "codes": "hyrule_castle, sage, osfala"
+      },
+      {
+        "img": "images/prizes/sage_impa.png",
+        "img_mods": "overlay|images/labels/HC.png",
+        "codes": "hyrule_castle, sage, impa"
+      },
+      {
+        "img": "images/prizes/sage_irene.png",
+        "img_mods": "overlay|images/labels/HC.png",
+        "codes": "hyrule_castle, sage, irene"
+      },
+      {
+        "img": "images/prizes/sage_rosso.png",
+        "img_mods": "overlay|images/labels/HC.png",
+        "codes": "hyrule_castle, sage, rosso"
+      },
+      {
+        "img": "images/prizes/pendant_power.png",
+        "img_mods": "overlay|images/labels/HC.png",
+        "codes": "hyrule_castle, pendant, power"
+      },
+      {
+        "img": "images/prizes/pendant_wisdom.png",
+        "img_mods": "overlay|images/labels/HC.png",
+        "codes": "hyrule_castle, pendant, wisdom"
+      },
+      {
+        "img": "images/prizes/pendant_courage.png",
+        "img_mods": "overlay|images/labels/HC.png",
+        "codes": "hyrule_castle, pendant, courage"
+      }
+    ]
+  },
+
   {
     "name": "Dark Palace",
     "type": "progressive_toggle",

@@ -2,10 +2,10 @@
   {
     "name": "Dark Palace",
     "color": "#41c341",
+    "chest_unopened_img": "images/checks/chest_small_unopened.png",
+    "chest_opened_img": "images/checks/chest_small_opened.png",
     "access_rules": [
-      "merge, bombs, $lampless",
-      "[], merge, frod, niceirod",
-      "[], merge, frod, greatspin, msword"
+      "merge, bombs, $lampless"
     ],
     "children": [
       {

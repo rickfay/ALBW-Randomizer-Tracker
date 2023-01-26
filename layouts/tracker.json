@@ -15,7 +15,6 @@
             "content": [
               {
                 "type": "layout",
-                "v_alignment": "left",
                 "key": "item_grid"
               }
             ]
@@ -23,29 +22,30 @@
           {
             "type": "group",
             "header": "Settings",
-            "dock": "bottom",
+            "dock": "top",
             "content": [
               {
                 "type": "layout",
-                "v_alignment": "left",
+                "width": "292",
                 "key": "tracker_settings"
               }
             ]
           },
           {
-            "type": "scroll",
-            "width": "292",
-            "horizontal_scrollbar_visibility": "disabled",
-            "content": [
-              {
-                "type": "group",
-                "header": "Pinned Locations",
-                "content": {
+            "type": "group",
+            "header": "Pinned Locations",
+            "content": {
+              "type": "scroll",
+              "width": "292",
+              "horizontal_scrollbar_visibility": "disabled",
+              "content": [
+                {
                   "type": "recentpins",
+                  "width": "278",
                   "orientation": "vertical"
                 }
-              }
-            ]
+              ]
+            }
           }
         ]
       },
@@ -121,7 +121,7 @@
                         }
                       ]
                     }
-//                    {
+                    //                    {
                     //                      "type": "itemgrid",
                     //                      "item_size": 60,
                     //                      "margin": "0,60,0,0",
@@ -137,7 +137,7 @@
               },
               {
                 "title": "EP",
-                "icon": "images/bow.png",
+                "icon": "images/items/bow.png",
                 "content": {
                   "type": "scroll",
                   "horizontal_scrollbar_visibility": "disabled",
@@ -237,7 +237,7 @@
               },
               {
                 "title": "HG",
-                "icon": "images/trod.png",
+                "icon": "images/items/trod.png",
                 "content": {
                   "type": "scroll",
                   "horizontal_scrollbar_visibility": "disabled",
@@ -337,7 +337,7 @@
               },
               {
                 "title": "TH",
-                "icon": "images/hammer.png",
+                "icon": "images/items/hammer.png",
                 "content": {
                   "type": "scroll",
                   "horizontal_scrollbar_visibility": "disabled",
@@ -707,7 +707,7 @@
               },
               {
                 "title": "HC",
-                "icon": "images/msword.png",
+                "icon": "images/items/msword.png",
                 "content": {
                   "type": "scroll",
                   "horizontal_scrollbar_visibility": "disabled",
@@ -915,7 +915,7 @@
               },
               {
                 "title": "PD",
-                "icon": "images/bombs.png",
+                "icon": "images/items/bombs.png",
                 "content": {
                   "type": "scroll",
                   "horizontal_scrollbar_visibility": "disabled",
@@ -1015,7 +1015,7 @@
               },
               {
                 "title": "SP",
-                "icon": "images/hookshot.png",
+                "icon": "images/items/hookshot.png",
                 "content": {
                   "type": "scroll",
                   "horizontal_scrollbar_visibility": "disabled",
@@ -1115,7 +1115,7 @@
               },
               {
                 "title": "SW",
-                "icon": "images/lamp.png",
+                "icon": "images/items/lamp.png",
                 "content": {
                   "type": "scroll",
                   "horizontal_scrollbar_visibility": "disabled",
@@ -1188,7 +1188,7 @@
               },
               {
                 "title": "T'H",
-                "icon": "images/flippers.png",
+                "icon": "images/items/flippers.png",
                 "content": {
                   "type": "scroll",
                   "horizontal_scrollbar_visibility": "disabled",
@@ -1288,7 +1288,7 @@
               },
               {
                 "title": "TR",
-                "icon": "images/irod.png",
+                "icon": "images/items/irod.png",
                 "content": {
                   "type": "scroll",
                   "horizontal_scrollbar_visibility": "disabled",
@@ -1388,7 +1388,7 @@
               },
               {
                 "title": "DP",
-                "icon": "images/srod.png",
+                "icon": "images/items/srod.png",
                 "content": {
                   "type": "scroll",
                   "horizontal_scrollbar_visibility": "disabled",
@@ -1488,7 +1488,7 @@
               },
               {
                 "title": "IR",
-                "icon": "images/frod.png",
+                "icon": "images/items/frod.png",
                 "content": {
                   "type": "scroll",
                   "horizontal_scrollbar_visibility": "disabled",
@@ -1696,7 +1696,7 @@
               },
               {
                 "title": "LC",
-                "icon": "images/bow_light.png",
+                "icon": "images/items/bow_light.png",
                 "content": {
                   "type": "scroll",
                   "horizontal_scrollbar_visibility": "disabled",

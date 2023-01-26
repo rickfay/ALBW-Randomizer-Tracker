@@ -19,12 +19,7 @@
         "codes": "eastern, sage, osfala"
       },
       {
-        "img": "images/prizes/sage_gulley.png",
-        "img_mods": "overlay|images/labels/EP.png",
-        "codes": "eastern, sage, gulley"
-      },
-      {
-        "img": "images/pendant.png",
+        "img": "images/prizes/pendant.png",
         "img_mods": "overlay|images/labels/EP.png",
         "codes": "eastern, pendant"
       },
@@ -55,12 +50,7 @@
         "codes": "gales, sage, osfala"
       },
       {
-        "img": "images/prizes/sage_gulley.png",
-        "img_mods": "overlay|images/labels/HG.png",
-        "codes": "gales, sage, gulley"
-      },
-      {
-        "img": "images/pendant.png",
+        "img": "images/prizes/pendant.png",
         "img_mods": "overlay|images/labels/HG.png",
         "codes": "gales, pendant"
       },
@@ -91,12 +81,7 @@
         "codes": "hera, sage, osfala"
       },
       {
-        "img": "images/prizes/sage_gulley.png",
-        "img_mods": "overlay|images/labels/TH.png",
-        "codes": "hera, sage, gulley"
-      },
-      {
-        "img": "images/pendant.png",
+        "img": "images/prizes/pendant.png",
         "img_mods": "overlay|images/labels/TH.png",
         "codes": "hera, pendant"
       },
@@ -104,6 +89,37 @@
         "img": "images/prizes/pendant_courage.png",
         "img_mods": "overlay|images/labels/TH.png",
         "codes": "hera, pendant, courage"
+      }
+    ]
+  },
+  {
+    "name": "Hyrule Castle",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/prizes/unknown.png",
+        "img_mods": "overlay|images/labels/HC.png",
+        "codes": "hyrule_castle"
+      },
+      {
+        "img": "images/prizes/sage_rainbow.png",
+        "img_mods": "overlay|images/labels/HC.png",
+        "codes": "hyrule_castle, sage"
+      },
+      {
+        "img": "images/prizes/sage_osfala.png",
+        "img_mods": "overlay|images/labels/HC.png",
+        "codes": "hyrule_castle, sage, osfala"
+      },
+      {
+        "img": "images/prizes/pendant.png",
+        "img_mods": "overlay|images/labels/HC.png",
+        "codes": "hyrule_castle, pendant"
+      },
+      {
+        "img": "images/prizes/pendant_courage.png",
+        "img_mods": "overlay|images/labels/HC.png",
+        "codes": "hyrule_castle, pendant, courage"
       }
     ]
   },
@@ -127,12 +143,7 @@
         "codes": "dark, sage, osfala"
       },
       {
-        "img": "images/prizes/sage_gulley.png",
-        "img_mods": "overlay|images/labels/PD.png",
-        "codes": "dark, sage, gulley"
-      },
-      {
-        "img": "images/pendant.png",
+        "img": "images/prizes/pendant.png",
         "img_mods": "overlay|images/labels/PD.png",
         "codes": "dark, pendant"
       },
@@ -163,12 +174,7 @@
         "codes": "swamp, sage, osfala"
       },
       {
-        "img": "images/prizes/sage_gulley.png",
-        "img_mods": "overlay|images/labels/SP.png",
-        "codes": "swamp, sage, gulley"
-      },
-      {
-        "img": "images/pendant.png",
+        "img": "images/prizes/pendant.png",
         "img_mods": "overlay|images/labels/SP.png",
         "codes": "swamp, pendant"
       },
@@ -199,12 +205,7 @@
         "codes": "skull, sage, osfala"
       },
       {
-        "img": "images/prizes/sage_gulley.png",
-        "img_mods": "overlay|images/labels/SW.png",
-        "codes": "swamp, sage, gulley"
-      },
-      {
-        "img": "images/pendant.png",
+        "img": "images/prizes/pendant.png",
         "img_mods": "overlay|images/labels/SW.png",
         "codes": "skull, pendant"
       },
@@ -235,12 +236,7 @@
         "codes": "thieves, sage, osfala"
       },
       {
-        "img": "images/prizes/sage_gulley.png",
-        "img_mods": "overlay|images/labels/T'H.png",
-        "codes": "thieves, sage, gulley"
-      },
-      {
-        "img": "images/pendant.png",
+        "img": "images/prizes/pendant.png",
         "img_mods": "overlay|images/labels/T'H.png",
         "codes": "thieves, pendant"
       },
@@ -271,12 +267,7 @@
         "codes": "turtle, sage, osfala"
       },
       {
-        "img": "images/prizes/sage_gulley.png",
-        "img_mods": "overlay|images/labels/TR.png",
-        "codes": "turtle, sage, gulley"
-      },
-      {
-        "img": "images/pendant.png",
+        "img": "images/prizes/pendant.png",
         "img_mods": "overlay|images/labels/TR.png",
         "codes": "turtle, pendant"
       },
@@ -307,12 +298,7 @@
         "codes": "desert, sage, osfala"
       },
       {
-        "img": "images/prizes/sage_gulley.png",
-        "img_mods": "overlay|images/labels/DP.png",
-        "codes": "desert, sage, gulley"
-      },
-      {
-        "img": "images/pendant.png",
+        "img": "images/prizes/pendant.png",
         "img_mods": "overlay|images/labels/DP.png",
         "codes": "desert, pendant"
       },
@@ -343,12 +329,7 @@
         "codes": "ice, sage, osfala"
       },
       {
-        "img": "images/prizes/sage_gulley.png",
-        "img_mods": "overlay|images/labels/IR.png",
-        "codes": "ice, sage, gulley"
-      },
-      {
-        "img": "images/pendant.png",
+        "img": "images/prizes/pendant.png",
         "img_mods": "overlay|images/labels/IR.png",
         "codes": "ice, pendant"
       },

@@ -1,6 +1,100 @@
 [
   {
+    "name": "Mother Maiamai",
+    "map_locations": [
+      {
+        "map": "hyrule",
+        "x": 1467,
+        "y": 1542
+      }
+    ],
+    "sections": [
+      {
+        "name": "Nice Bow       ",
+        "access_rules": [
+          "bow, $canUpgradeItem",
+          "nicebow"
+        ],
+        "hosted_item": "nicebow"
+      },
+      {
+        "name": "Nice Boomerang  ",
+        "access_rules": [
+          "boomerang, $canUpgradeItem",
+          "niceboomerang"
+        ],
+        "hosted_item": "niceboomerang"
+      },
+      {
+        "name": "Nice Hookshot",
+        "access_rules": [
+          "hookshot, $canUpgradeItem",
+          "nicehookshot"
+        ],
+        "hosted_item": "nicehookshot"
+      },
+      {
+        "name": "Nice Hammer",
+        "access_rules": [
+          "hammer, $canUpgradeItem",
+          "nicehammer"
+        ],
+        "hosted_item": "nicehammer"
+      },
+      {
+        "name": "Nice Bombs         ",
+        "access_rules": [
+          "bombs, $canUpgradeItem",
+          "nicebombs"
+        ],
+        "hosted_item": "nicebombs"
+      },
+      {
+        "name": "Nice Fire Rod",
+        "access_rules": [
+          "frod, $canUpgradeItem",
+          "nicefrod"
+        ],
+        "hosted_item": "nicefrod"
+      },
+      {
+        "name": "Nice Ice Rod  ",
+        "access_rules": [
+          "irod, $canUpgradeItem",
+          "niceirod"
+        ],
+        "hosted_item": "niceirod"
+      },
+      {
+        "name": "Nice Tornado Rod",
+        "access_rules": [
+          "trod, $canUpgradeItem",
+          "nicetrod"
+        ],
+        "hosted_item": "nicetrod"
+      },
+      {
+        "name": "Nice Sand Rod",
+        "access_rules": [
+          "srod, $canUpgradeItem",
+          "nicesrod"
+        ],
+        "hosted_item": "nicesrod"
+      },
+      {
+        "name": "Great Spin",
+        "access_rules": [
+          "maiamai_100, nicebow, niceboomerang, nicehookshot, nicehammer, nicebombs, nicefrod, niceirod, nicetrod, nicesrod",
+          "greatspin"
+        ],
+        "hosted_item": "greatspin"
+      }
+    ]
+  },
+  {
     "name": "Hyrule Maiamai",
+    "chest_unopened_img": "images/checks/chest_small_unopened.png",
+    "chest_opened_img": "images/checks/chest_small_opened.png",
     "children": [
       // Lost Woods Area - 8
       {
@@ -1265,6 +1359,8 @@
   },
   {
     "name": "Lorule Maiamai",
+    "chest_unopened_img": "images/checks/chest_small_unopened.png",
+    "chest_opened_img": "images/checks/chest_small_opened.png",
     "children": [
       {
         // Skull Woods - 8

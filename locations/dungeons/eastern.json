@@ -2,6 +2,8 @@
   {
     "name": "Eastern Palace",
     "color": "#00FF00",
+    "chest_unopened_img": "images/checks/chest_small_unopened.png",
+    "chest_opened_img": "images/checks/chest_small_opened.png",
     "access_rules": [
       "merge",
       "bow",
@@ -47,6 +49,7 @@
             "name": "1F Left Door Chest",
             "hosted_item": "ep_chest_02",
             "access_rules": [
+              "{csmc}",
               "bow",
               "hookshot",
               "boomerang",
@@ -110,6 +113,7 @@
             "name": "1F Switch Room",
             "hosted_item": "ep_chest_05",
             "access_rules": [
+              "{csmc}",
               "bow",
               "boomerang",
               "hookshot",
@@ -313,6 +317,7 @@
             "name": "1F Left Door Chest",
             "hosted_item": "ep_chest_02",
             "access_rules": [
+              "{csmc}",
               "bow",
               "hookshot",
               "boomerang",
@@ -340,6 +345,7 @@
             "name": "1F Switch Room",
             "hosted_item": "ep_chest_05",
             "access_rules": [
+              "{csmc}",
               "bow",
               "boomerang",
               "hookshot",

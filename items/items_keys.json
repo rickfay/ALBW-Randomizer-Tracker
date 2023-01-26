@@ -1,0 +1,180 @@
+[
+  // Eastern Palace
+  {
+    "name": "Eastern Palace Big Key",
+    "type": "toggle",
+    "codes": "ep_big_key",
+    "img": "images/keys/big.png"
+  },
+  {
+    "name": "Eastern Palace Small Keys",
+    "type": "consumable",
+    "max_quantity": 2,
+    "codes": "ep_small_keys",
+    "img": "images/keys/small.png"
+  },
+
+  // House of Gales
+  {
+    "name": "House of Gales Big Key",
+    "type": "toggle",
+    "codes": "hg_big_key",
+    "img": "images/keys/big.png"
+  },
+  {
+    "name": "House of Gales Small Keys",
+    "type": "consumable",
+    "max_quantity": 4,
+    "codes": "hg_small_keys",
+    "img": "images/keys/small.png"
+  },
+
+  // Tower of Hera
+  {
+    "name": "Tower of Hera Big Key",
+    "type": "toggle",
+    "codes": "th_big_key",
+    "img": "images/keys/big.png"
+  },
+  {
+    "name": "Tower of Hera Small Keys",
+    "type": "consumable",
+    "max_quantity": 2,
+    "codes": "th_small_keys",
+    "img": "images/keys/small.png"
+  },
+
+  // Hyrule Sanctuary
+  {
+    "name": "Hyrule Sanctuary Key",
+    "type": "consumable",
+    "max_quantity": 1,
+    "codes": "hs_small_key",
+    "img": "images/keys/small.png",
+    "img_mods": "overlay|images/labels/HS.png"
+  },
+
+  // Lorule Sanctuary
+  {
+    "name": "Lorule Sanctuary Key",
+    "type": "consumable",
+    "max_quantity": 1,
+    "codes": "ls_small_key",
+    "img": "images/keys/small.png",
+    "img_mods": "overlay|images/labels/LS.png"
+  },
+
+  // Dark Palace
+  {
+    "name": "Dark Palace Big Key",
+    "type": "toggle",
+    "codes": "pd_big_key",
+    "img": "images/keys/big.png"
+  },
+  {
+    "name": "Dark Palace Small Keys",
+    "max_quantity": 4,
+    "type": "consumable",
+    "codes": "pd_small_keys",
+    "img": "images/keys/small.png"
+  },
+
+  // Swamp Palace
+  {
+    "name": "Swamp Palace Big Key",
+    "type": "toggle",
+    "codes": "sp_big_key",
+    "img": "images/keys/big.png"
+  },
+  {
+    "name": "Swamp Palace Small Keys",
+    "type": "consumable",
+    "max_quantity": 4,
+    "codes": "sp_small_keys",
+    "img": "images/keys/small.png"
+  },
+
+  // Skull Woods
+  {
+    "name": "Skull Woods Big Key",
+    "type": "toggle",
+    "codes": "sw_big_key",
+    "img": "images/keys/big.png"
+  },
+  {
+    "name": "Skull Woods Small Keys",
+    "max_quantity": 3,
+    "type": "consumable",
+    "codes": "sw_small_keys",
+    "img": "images/keys/small.png"
+  },
+
+  // Thieves' Hideout
+  {
+    "name": "Thieves' Hideout Big Key",
+    "type": "toggle",
+    "codes": "tt_big_key",
+    "img": "images/keys/big.png"
+  },
+  {
+    "name": "Thieves' Hideout Small Keys",
+    "type": "consumable",
+    "max_quantity": 1,
+    "codes": "tt_small_keys",
+    "img": "images/keys/small.png"
+  },
+
+  // Turtle Rock
+  {
+    "name": "Turtle Rock Big Key",
+    "type": "toggle",
+    "codes": "tr_big_key",
+    "img": "images/keys/big.png"
+  },
+  {
+    "name": "Turtle Rock Small Keys",
+    "type": "consumable",
+    "max_quantity": 3,
+    "codes": "tr_small_keys",
+    "img": "images/keys/small.png"
+  },
+
+  // Desert Palace
+  {
+    "name": "Desert Palace Big Key",
+    "type": "toggle",
+    "codes": "dp_big_key",
+    "img": "images/keys/big.png"
+  },
+  {
+    "name": "Desert Palace Small Keys",
+    "type": "consumable",
+    "max_quantity": 5,
+    "codes": "dp_small_keys",
+    "img": "images/keys/small.png"
+  },
+
+  // Ice Ruins
+  {
+    "name": "Ice Ruins Big Key",
+    "type": "toggle",
+    "codes": "ir_big_key",
+    "img": "images/keys/big.png"
+  },
+  {
+    "name": "Ice Ruins Small Keys",
+    "type": "consumable",
+    "max_quantity": 3,
+    "codes": "ir_small_keys",
+    "img": "images/keys/small.png"
+  },
+
+  // Lorule Castle
+  {
+    "name": "Lorule Castle Small Keys",
+    "type": "consumable",
+    "max_quantity": 5,
+    "codes": "lc_small_keys",
+    "img": "images/keys/small.png"
+  }
+]

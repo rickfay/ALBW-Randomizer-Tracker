@@ -1,29 +1,45 @@
 {
   "tracker_settings": {
-    "type": "container",
-    "orientation": "vertical",
-    "content": [
+    "type": "tabbed",
+    "tabs": [
       {
-        "type": "itemgrid",
-        "dropshadow": true,
-        "h_alignment": "center",
-        "v_alignment": "center",
-        "item_size": "40",
-        "item_margin": "5,5",
-        "rows": [
-          [
-            "logic",
-            "lc_requirement",
-            "yg_requirement",
-            "maiamai_map"
-          ],
-          [
-            "minigames_enabled",
-            "lampless",
-            "trials_normal",
-            "beeBoost_hide"
+        "title": "Main",
+        "content": {
+          "type": "itemgrid",
+          "dropshadow": true,
+          "item_size": "40",
+          "item_margin": "8,0",
+          "v_alignment": "center",
+          "rows": [
+            [
+              "logic",
+              "lc_requirement",
+              "yg_requirement",
+              "csmc",
+              "maiamai_map"
+            ]
           ]
-        ]
+        }
+      },
+      {
+        "title": "Extra",
+        "content": {
+          "type": "itemgrid",
+          "dropshadow": true,
+          "item_size": "40",
+          "item_margin": "8,0",
+          "h_alignment": "center",
+          "v_alignment": "center",
+          "rows": [
+            [
+              "minigames_enabled",
+              "lampless",
+//              "backdoor_closed",
+              "trials_normal",
+              "beeBoost_hide"
+            ]
+          ]
+        }
       }
     ]
   }

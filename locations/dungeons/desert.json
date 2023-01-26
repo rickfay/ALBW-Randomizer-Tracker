@@ -2,6 +2,8 @@
   {
     "name": "Desert Palace",
     "color": "#2d3bb7",
+    "chest_unopened_img": "images/checks/chest_small_unopened.png",
+    "chest_opened_img": "images/checks/chest_small_opened.png",
     "access_rules": [
       "merge"
     ],
@@ -99,6 +101,8 @@
             "name": "1F Miniboss Room",
             "hosted_item": "dp_chest_05",
             "access_rules": [
+              "{csmc, srod, $switch}",
+              "{csmc, $reverseDP}",
               "srod, $switch, $attack, titansmitt",
               "$reverseDP, titansmitt"
             ]
@@ -119,6 +123,7 @@
             "name": "1F Big Chest",
             "hosted_item": "dp_chest_06",
             "access_rules": [
+              "{csmc, srod}",
               "srod, $switch, $attack",
               "$reverseDP"
             ]
@@ -412,6 +417,7 @@
             "name": "1F Big Chest",
             "hosted_item": "dp_chest_06",
             "access_rules": [
+              "{csmc, srod}",
               "srod, $switch, $attack",
               "$reverseDP"
             ]
@@ -420,6 +426,7 @@
             "name": "1F Miniboss Room",
             "hosted_item": "dp_chest_05",
             "access_rules": [
+              "{csmc, srod, $switch}",
               "srod, $switch, $attack, titansmitt",
               "$reverseDP, titansmitt"
             ]

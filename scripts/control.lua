@@ -42,9 +42,14 @@ function true_for(logic)
     end
 end
 
+-- Can we attack according to normal logic
+function attack_normal()
+    return hasAny({ "fsword", "bow", "bombs", "frod", "irod", "hammer", "boots" })
+end
+
 -- Return if the player can deal damage
 function attack()
-    if hasAny({ "fsword", "bow", "bombs", "frod", "irod", "hammer", "boots" }) then
+    if attack_normal() then
         return true
     elseif hasAny({ "lamp", "net" }) then
         return true_for("hard")
@@ -170,8 +175,10 @@ end
 
 -- Can defeat Yuga 1 in Eastern Palace
 function yuga1()
-    if hasAny({ "bow", "bombs" }) or hasAny({ "boomerang", "hookshot" }) then
-        return attack()
+    if has("bow") then
+        return true
+    elseif has("bombs") or (hasAny({ "boomerang", "hookshot" }) and attack()) then
+        return true_for("hard")
     elseif hasAny({ "irod", "msword" }) then
         return true_for("hell")
     else
@@ -312,7 +319,7 @@ end
 
 -- Return if we can enter Lorule Castle, either with Sages or via the Hyrule Castle Portal
 function canEnterLC()
-    return has("merge") and (lc_requirement() or (hc_barrier() and hasAll({ "yuga" })))
+    return has("merge") and (lc_requirement() or (hc_barrier() and has("yuga")))
 end
 
 -- Return if we can reach Lorule Castle 2F
@@ -352,7 +359,7 @@ end
 -- Returns only if we can reach the final boss, NOT if we can obtain Zelda's check or win the fight
 function can_reach_final_boss()
     return has("merge") and yg_requirement() and (
-            has("yuga") or (
+            (has("yuga") and has_amount("courage", 2)) or (
                     lc_requirement() and (
                             has("trials_skipped") or hasAll({ "merge", "hookshot" })
                     )
@@ -393,4 +400,46 @@ function zelda()
     else
         return false
     end
+end
+
+function countNiceItems()
+    return count("nicebow") +
+            count("niceboomerang") +
+            count("nicehookshot") +
+            count("nicehammer") +
+            count("nicebombs") +
+            count("nicefrod") +
+            count("niceirod") +
+            count("nicetrod") +
+            count("nicesrod")
+end
+
+function maiamaiUpgradeAvailable()
+    if has("maiamai_100") then
+        return 10
+    elseif has("maiamai_90") then
+        return 9
+    elseif has("maiamai_80") then
+        return 8
+    elseif has("maiamai_70") then
+        return 7
+    elseif has("maiamai_60") then
+        return 6
+    elseif has("maiamai_50") then
+        return 5
+    elseif has("maiamai_40") then
+        return 4
+    elseif has("maiamai_30") then
+        return 3
+    elseif has("maiamai_20") then
+        return 2
+    elseif has("maiamai_10") then
+        return 1
+    else
+        return 0
+    end
+end
+
+function canUpgradeItem()
+    return maiamaiUpgradeAvailable() > countNiceItems()
 end

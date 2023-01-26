@@ -2,6 +2,8 @@
   {
     "name": "Thieves' Hideout",
     "color": "#dde44e",
+    "chest_unopened_img": "images/checks/chest_small_unopened.png",
+    "chest_opened_img": "images/checks/chest_small_opened.png",
     "access_rules": [
       "merge"
     ],
@@ -98,6 +100,7 @@
           {
             "name": "B2 Eyegores",
             "access_rules": [
+              "{csmc, $thB2, merge, $shielded_switch}",
               "$thB2, merge, $attack, $shielded_switch",
               "[advanced], $thB2, bombs, trod",
               "[advanced], $thB2, bombs, boots",
@@ -179,6 +182,7 @@
           {
             "name": "B1 Behind Wall",
             "access_rules": [
+              "{csmc}",
               "$thB2, $thEscape, merge",
               "[hell], trod, bombs, $dungeon_escape",
               "[hell], trod, irod, $dungeon_escape"
@@ -200,6 +204,7 @@
           {
             "name": "B1 Big Chest",
             "access_rules": [
+              "{csmc}",
               "$thB2, $thEscape, merge",
               "[hell], trod, bombs",
               "[hell], trod, irod"
@@ -299,6 +304,7 @@
             "name": "B2 Eyegores",
             "hosted_item": "th_chest_05",
             "access_rules": [
+              "{csmc, $thB2, merge, $shielded_switch}",
               "$thB2, merge, $attack, $shielded_switch",
               "[advanced], $thB2, bombs, trod",
               "[advanced], $thB2, bombs, boots",

@@ -2,6 +2,8 @@
   {
     "name": "Tower of Hera",
     "color": "#FF0000",
+    "chest_unopened_img": "images/checks/chest_small_unopened.png",
+    "chest_opened_img": "images/checks/chest_small_opened.png",
     "access_rules": [
       "hammer, powerglove, merge",
       "[basic], hammer, merge",

@@ -2,6 +2,8 @@
   {
     "name": "House of Gales",
     "color": "#0000FF",
+    "chest_unopened_img": "images/checks/chest_small_unopened.png",
+    "chest_opened_img": "images/checks/chest_small_opened.png",
     "access_rules": [
       "trod, flippers",
       "[advanced], trod, irod, hookshot",
@@ -101,6 +103,7 @@
             "name": "1F Block Room (SW)",
             "hosted_item": "hog_chest_05",
             "access_rules": [
+              "{csmc}",
               "merge"
             ]
           }
@@ -183,6 +186,7 @@
             "name": "3F Bubble Room",
             "hosted_item": "hog_chest_09",
             "access_rules": [
+              "{csmc, $hog3F}",
               "$hog3F, $fire"
             ]
           }
@@ -202,6 +206,7 @@
             "name": "3F Wind Chest",
             "hosted_item": "hog_chest_10",
             "access_rules": [
+              "{csmc, basic, $hog2F}",
               "$hog3F"
             ]
           }
@@ -292,6 +297,7 @@
             "name": "1F Block Room (SW)",
             "hosted_item": "hog_chest_05",
             "access_rules": [
+              "{csmc}",
               "merge"
             ]
           },
@@ -326,6 +332,7 @@
             "name": "3F Bubble Room",
             "hosted_item": "hog_chest_09",
             "access_rules": [
+              "{csmc, $hog3F}",
               "$hog3F, $fire"
             ]
           },
@@ -333,6 +340,7 @@
             "name": "3F Wind Chest",
             "hosted_item": "hog_chest_10",
             "access_rules": [
+              "{csmc, basic, $hog2F}",
               "$hog3F"
             ]
           },

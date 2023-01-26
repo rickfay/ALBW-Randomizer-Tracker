@@ -2,6 +2,8 @@
   {
     "name": "Ice Ruins",
     "color": "#ef3435",
+    "chest_unopened_img": "images/checks/chest_small_unopened.png",
+    "chest_opened_img": "images/checks/chest_small_opened.png",
     "access_rules": [
       "powerglove, merge, frod, hookshot",
       "[basic], merge, frod, hookshot"
@@ -103,6 +105,7 @@
             "name": "B2 Long Merge",
             "hosted_item": "ir_chest_06",
             "access_rules": [
+              "{csmc}",
               "scroll",
               "[advanced], boots"
             ]
@@ -328,6 +331,7 @@
             "name": "B2 Long Merge",
             "hosted_item": "ir_chest_06",
             "access_rules": [
+              "{csmc}",
               "scroll",
               "[advanced], boots"
             ]

@@ -1127,7 +1127,7 @@
   {
     "name": "Zelda",
     "type": "toggle",
-    "img": "images/checks/zelda.png",
+    "img": "images/prizes/sage_zelda.png",
     "codes": "lc_chest_15"
   }
 ]

@@ -2,6 +2,8 @@
   {
     "name": "Turtle Rock",
     "color": "#a332ce",
+    "chest_unopened_img": "images/checks/chest_small_unopened.png",
+    "chest_opened_img": "images/checks/chest_small_opened.png",
     "access_rules": [
       "merge"
     ],

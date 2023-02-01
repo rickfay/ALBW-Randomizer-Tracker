@@ -209,7 +209,7 @@
                 "name": "Trade Premium Milk",
                 "access_rules": [
                   "milk, hookshot, merge",
-                  "[advanced], bottle, milk, hookshot, trod, boots",
+                  "[advanced], bottle_1, milk, hookshot, trod, boots",
                   "[advanced], bluemail, milk, hookshot, trod, boots"
                   //"[hell], milk, hookshot, trod, boots"
                 ],
@@ -237,9 +237,9 @@
                   "{csmc, advanced, bluemail, hookshot}",
                   "{csmc, advanced, bluemail, boomerang}",
 
-                  "{csmc, advanced, bottle, $boost}",
-                  "{csmc, advanced, bottle, hookshot}",
-                  "{csmc, advanced, bottle, boomerang}",
+                  "{csmc, advanced, bottle_1, $boost}",
+                  "{csmc, advanced, bottle_1, hookshot}",
+                  "{csmc, advanced, bottle_1, boomerang}",
 
                   "merge, hammer",
                   "merge, bombs",
@@ -248,17 +248,17 @@
                   "[advanced], bluemail, boomerang, hammer",
                   "[advanced], bluemail, hookshot, hammer",
 
-                  "[advanced], bottle, $boost, hammer",
-                  "[advanced], bottle, boomerang, hammer",
-                  "[advanced], bottle, hookshot, hammer",
+                  "[advanced], bottle_1, $boost, hammer",
+                  "[advanced], bottle_1, boomerang, hammer",
+                  "[advanced], bottle_1, hookshot, hammer",
 
                   "[advanced], bluemail, $boost, bombs",
                   "[advanced], bluemail, boomerang, bombs",
                   "[advanced], bluemail, hookshot, bombs",
 
-                  "[advanced], bottle, $boost, bombs",
-                  "[advanced], bottle, boomerang, bombs",
-                  "[advanced], bottle, hookshot, bombs"
+                  "[advanced], bottle_1, $boost, bombs",
+                  "[advanced], bottle_1, boomerang, bombs",
+                  "[advanced], bottle_1, hookshot, bombs"
 
                   //"[hell], frod, hammer",
                   //"[hell], bombs"
@@ -281,7 +281,7 @@
                 "name": "Ledge Chest",
                 "access_rules": [
                   "merge",
-                  "[advanced], bottle",
+                  "[advanced], bottle_1",
                   "[advanced], bluemail"
                   //              "[hell], hammer",
                   //              "[hell], bombs",
@@ -307,7 +307,7 @@
                   "{csmc, powerglove}",
                   "{csmc, basic}",
                   "merge, hammer",
-                  "[advanced], bottle, hammer",
+                  "[advanced], bottle_1, hammer",
                   "[advanced], bluemail, hammer"
                 ],
                 "item_count": 1
@@ -328,7 +328,7 @@
                 "name": "Third Cave Chest",
                 "access_rules": [
                   "merge",
-                  "[advanced], bottle",
+                  "[advanced], bottle_1",
                   "[advanced], bluemail"
                 ],
                 "item_count": 1
@@ -349,7 +349,7 @@
                 "name": "Spectacle Rock",
                 "access_rules": [
                   "merge",
-                  "[advanced], bottle",
+                  "[advanced], bottle_1",
                   "[advanced], bluemail"
                 ],
                 "item_count": 1
@@ -375,7 +375,7 @@
                 "name": "Floating Island",
                 "access_rules": [
                   //"{merge, hookshot}",
-                  //"{advanced, bottle, hookshot}",
+                  //"{advanced, bottle_1, hookshot}",
                   //"{advanced, bluemail, hookshot}",
                   "merge, hookshot, trod"
                 ],

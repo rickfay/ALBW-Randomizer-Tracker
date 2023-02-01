@@ -70,7 +70,7 @@
         "name": "0 Bottles",
         "img": "images/items/bottle.png",
         "img_mods": "@disabled",
-        "codes": "bottle, bottles"
+        "codes": "bottles"
       },
       {
         "name": "1 Bottle",
@@ -103,9 +103,6 @@
         "codes": "bottle_5"
       }
     ]
-    //    "img": "images/items/bottle.png",
-    //    "codes": "bottle",
-    //    "max_quantity": 5
   },
   {
     "name": "Bow",

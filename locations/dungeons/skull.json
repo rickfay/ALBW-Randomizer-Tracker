@@ -79,7 +79,9 @@
             "name": "B1 Grate Room",
             "hosted_item": "sw_chest_04",
             "access_rules": [
-              "$lampless"
+              "$lampless, progression_enemies",
+              "$lampless, bombs",
+              "$lampless, hammer"
             ]
           }
         ]
@@ -98,9 +100,11 @@
             "name": "B2 Elevator Room",
             "hosted_item": "sw_chest_05",
             "access_rules": [
-              "$lampless, merge, $attack",
+              "$lampless, merge, bombs",
+              "$lampless, merge, hammer",
+              "$lampless, merge, $attack, progression_enemies",
               // Have hand kill everything
-              "[hell], $lampless, merge"
+              "[hell], $lampless, merge, progression_enemies"
             ]
           }
         ]
@@ -121,7 +125,9 @@
             "chest_opened_img": "images/chest_big_opened.png",
             "hosted_item": "sw_chest_08",
             "access_rules": [
-              "$lampless, merge, $attack, $fire"
+              "$lampless, merge, $attack, $fire, progression_enemies",
+              "$lampless, merge, $attack, $fire, bombs",
+              "$lampless, merge, $attack, $fire, hammer"
             ]
           }
         ]
@@ -142,7 +148,9 @@
             "chest_opened_img": "images/chest_big_opened.png",
             "hosted_item": "sw_chest_07",
             "access_rules": [
-              "$lampless, merge, $attack, $fire"
+              "$lampless, merge, $attack, $fire, progression_enemies",
+              "$lampless, merge, $attack, $fire, bombs",
+              "$lampless, merge, $attack, $fire, hammer"
             ]
           }
         ]
@@ -167,7 +175,9 @@
             "hosted_item": "sw_chest_06",
             "access_rules": [
               "{csmc}",
-              "$lampless, merge, $attack, $fire"
+              "$lampless, merge, $attack, $fire, progression_enemies",
+              "$lampless, merge, $attack, $fire, bombs",
+              "$lampless, merge, $attack, $fire, hammer"
             ]
           }
         ]
@@ -187,7 +197,9 @@
             //"capture_item": true,
             "hosted_item": "sw_chest_09",
             "access_rules": [
-              "$lampless, merge, $knucklemaster"
+              "$lampless, merge, progression_enemies, $knucklemaster",
+              "$lampless, merge, bombs, $knucklemaster",
+              "$lampless, merge, hammer, $knucklemaster"
             ]
           }
         ]
@@ -208,8 +220,12 @@
             "hosted_item": "skull",
             "access_rules": [
               "{merge}",
-              "$lampless, merge, $knucklemaster",
-              "[basic], $lampless, merge, bow, trod"
+              "$lampless, merge, progression_enemies, $knucklemaster",
+              "$lampless, merge, bombs, $knucklemaster",
+              "$lampless, merge, hammer, $knucklemaster",
+              "[glitched], $lampless, merge, bow, trod, progression_enemies",
+              "[glitched], $lampless, merge, bow, trod, bombs",
+              "[glitched], $lampless, merge, bow, trod, hammer"
             ]
           }
         ]
@@ -250,16 +266,20 @@
             "name": "B1 Grate Room",
             "hosted_item": "sw_chest_04",
             "access_rules": [
-              "$lampless"
+              "$lampless, progression_enemies",
+              "$lampless, bombs",
+              "$lampless, hammer"
             ]
           },
           {
             "name": "B1 Elevator Room",
             "hosted_item": "sw_chest_05",
             "access_rules": [
-              "$lampless, merge, $attack",
+              "$lampless, merge, bombs",
+              "$lampless, merge, hammer",
+              "$lampless, merge, $attack, progression_enemies",
               // Have hand kill everything
-              "[hell], $lampless, merge"
+              "[hell], $lampless, merge, progression_enemies"
             ]
           },
           {
@@ -267,21 +287,27 @@
             "hosted_item": "sw_chest_06",
             "access_rules": [
               "{csmc}",
-              "$lampless, merge, $attack, $fire"
+              "$lampless, merge, $attack, $fire, progression_enemies",
+              "$lampless, merge, $attack, $fire, bombs",
+              "$lampless, merge, $attack, $fire, hammer"
             ]
           },
           {
             "name": "B1 Big Chest (SW)",
             "hosted_item": "sw_chest_07",
             "access_rules": [
-              "$lampless, merge, $attack, $fire"
+              "$lampless, merge, $attack, $fire, progression_enemies",
+              "$lampless, merge, $attack, $fire, bombs",
+              "$lampless, merge, $attack, $fire, hammer"
             ]
           },
           {
             "name": "B1 Big Chest (Eyes)",
             "hosted_item": "sw_chest_08",
             "access_rules": [
-              "$lampless, merge, $attack, $fire"
+              "$lampless, merge, $attack, $fire, progression_enemies",
+              "$lampless, merge, $attack, $fire, bombs",
+              "$lampless, merge, $attack, $fire, hammer"
             ]
           },
           {
@@ -289,7 +315,9 @@
             //"capture_item": true,
             "hosted_item": "sw_chest_09",
             "access_rules": [
-              "$lampless, merge, $knucklemaster"
+              "$lampless, merge, progression_enemies, $knucklemaster",
+              "$lampless, merge, bombs, $knucklemaster",
+              "$lampless, merge, hammer, $knucklemaster"
             ]
           },
           {
@@ -297,8 +325,12 @@
             "hosted_item": "skull",
             "access_rules": [
               "{merge}",
-              "$lampless, merge, $knucklemaster",
-              "[basic], $lampless, merge, bow, trod"
+              "$lampless, merge, progression_enemies, $knucklemaster",
+              "$lampless, merge, bombs, $knucklemaster",
+              "$lampless, merge, hammer, $knucklemaster",
+              "[glitched], $lampless, merge, bow, trod, progression_enemies",
+              "[glitched], $lampless, merge, bow, trod, bombs",
+              "[glitched], $lampless, merge, bow, trod, hammer"
             ]
           }
         ]

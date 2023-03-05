@@ -3,41 +3,63 @@
     "type": "tabbed",
     "tabs": [
       {
-        "title": "Main",
+        "title": "Pinned Locations",
         "content": {
-          "type": "itemgrid",
-          "dropshadow": true,
-          "item_size": "40",
-          "item_margin": "8,0",
-          "v_alignment": "center",
-          "rows": [
-            [
-              "logic",
-              "lc_requirement",
-              "yg_requirement",
-              "csmc",
-              "maiamai_map"
-            ]
+          "type": "scroll",
+          "width": "292",
+          "horizontal_scrollbar_visibility": "disabled",
+          "content": [
+            {
+              "type": "recentpins",
+              "width": "278",
+              "orientation": "vertical"
+            }
           ]
         }
       },
       {
-        "title": "Extra",
+        "title": "Settings",
         "content": {
-          "type": "itemgrid",
-          "dropshadow": true,
-          "item_size": "40",
-          "item_margin": "8,0",
-          "h_alignment": "center",
-          "v_alignment": "center",
-          "rows": [
-            [
-              "minigames_enabled",
-              "lampless",
-//              "backdoor_closed",
-              "trials_normal",
-              "beeBoost_hide"
-            ]
+          "type": "scroll",
+          "width": "292",
+          "horizontal_scrollbar_visibility": "disabled",
+          "content": [
+            {
+              "type": "itemgrid",
+              "dropshadow": true,
+              "item_size": "256",
+              "item_margin": "0,0,0,-222",
+              "v_alignment": "top",
+              "rows": [
+                [
+                  "logic"
+                ],
+                [
+                  "lc_requirement"
+                ],
+                [
+                  "yg_requirement"
+                ],
+                [
+                  "ped_requirement_4"
+                ],
+                [
+                  "csmc"
+                ],
+                [
+                  "minigames_enabled"
+                ],
+                [
+                  "lampless"
+                ],
+                [
+                  "trials_normal"
+                ],
+                [
+                  "beeBoost_hide"
+                ]
+              ]
+            }
           ]
         }
       }

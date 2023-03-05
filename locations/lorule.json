@@ -73,7 +73,7 @@
         "name": "Lorule Death Mountain",
         "access_rules": [
           "powerglove, merge",
-          "[basic], merge"
+          "[glitched], merge"
         ],
         "children": [
           {
@@ -298,7 +298,11 @@
                 "access_rules": [
                   "bow",
                   "bombs",
-                  "[hard], $attack"
+                  "fsword, greatspin",
+                  "niceirod",
+                  "nicehookshot",
+                  "[hard], fsword, powerglove",
+                  "[hard], msword"
                 ],
                 "item_count": 1
               }
@@ -606,9 +610,9 @@
                   //"{}",
                   "srod, bombs",
                   "[hard], bombs, merge, scroll",
-                  "[basic], nicebombs",
-                  "[basic], bombs, frod",
-                  "[basic], frod, boots",
+                  "[glitched], nicebombs",
+                  "[glitched], bombs, frod",
+                  "[glitched], frod, boots",
                   "[advanced], bombs"
                 ],
                 "item_count": 1

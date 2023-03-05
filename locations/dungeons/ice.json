@@ -6,7 +6,7 @@
     "chest_opened_img": "images/checks/chest_small_opened.png",
     "access_rules": [
       "powerglove, merge, frod, hookshot",
-      "[basic], merge, frod, hookshot"
+      "[glitched], merge, frod, hookshot"
     ],
     "children": [
       {
@@ -172,7 +172,12 @@
         "sections": [
           {
             "name": "B4 Switches",
-            "hosted_item": "ir_chest_10"
+            "hosted_item": "ir_chest_10",
+            "access_rules": [
+              "progression_enemies",
+              "bombs",
+              "niceirod"
+            ]
           }
         ]
       },
@@ -321,7 +326,12 @@
           },
           {
             "name": "B4 Switches",
-            "hosted_item": "ir_chest_10"
+            "hosted_item": "ir_chest_10",
+            "access_rules": [
+              "progression_enemies",
+              "bombs",
+              "niceirod"
+            ]
           },
           {
             "name": "B4 SW Fall Chest",

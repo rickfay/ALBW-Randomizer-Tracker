@@ -6,7 +6,7 @@
     "chest_opened_img": "images/checks/chest_small_opened.png",
     "access_rules": [
       "hammer, powerglove, merge",
-      "[basic], hammer, merge",
+      "[glitched], hammer, merge",
       "[advanced], hammer, bottle",
       "[advanced], hammer, bluemail"
       //      "[hell], hammer"

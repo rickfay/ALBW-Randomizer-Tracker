@@ -121,10 +121,14 @@
             "chest_unopened_img": "images/chest_big_unopened.png",
             "chest_opened_img": "images/chest_big_opened.png",
             "access_rules": [
-              "merge",
-              "[hard], bow",
-              "[basic], boots",
-              "[advanced], irod"
+              "merge, progression_enemies",
+              "merge, bombs",
+              "merge, hammer",
+              "[hard], bow, progression_enemies",
+              "[hard], bow, bombs",
+              "[hard], bow, hammer",
+              "[glitched], boots",
+              "[advanced], not_nice_mode, irod"
             ],
             "hosted_item": "sp_chest_07"
           }
@@ -145,9 +149,11 @@
             "chest_unopened_img": "images/chest_big_unopened.png",
             "chest_opened_img": "images/chest_big_opened.png",
             "access_rules": [
-              "merge",
-              "[basic], boots",
-              "[advanced], irod"
+              "merge, progression_enemies",
+              "merge, bombs",
+              "merge, hammer",
+              "[glitched], boots",
+              "[advanced], not_nice_mode, irod"
             ],
             "hosted_item": "sp_chest_08"
           }
@@ -166,8 +172,10 @@
           {
             "name": "1F West Pillar",
             "access_rules": [
-              "merge",
-              "[advanced], irod"
+              "merge, progression_enemies",
+              "merge, bombs",
+              "merge, hammer",
+              "[advanced], not_nice_mode, irod"
             ],
             "hosted_item": "sp_chest_09"
           }
@@ -186,8 +194,10 @@
           {
             "name": "1F East Pillar",
             "access_rules": [
-              "merge",
-              "[advanced], irod"
+              "merge, progression_enemies",
+              "merge, bombs",
+              "merge, hammer",
+              "[advanced], not_nice_mode, irod"
             ],
             "hosted_item": "sp_chest_10"
           }
@@ -206,7 +216,10 @@
           {
             "name": "1F SW Room",
             "access_rules": [
-              "merge"
+              "merge, progression_enemies",
+              "merge, bombs",
+              "merge, hammer",
+              "[advanced], not_nice_mode, irod"
             ],
             "hosted_item": "sp_chest_11"
           }
@@ -226,8 +239,10 @@
             "name": "1F Arrgus",
             //"capture_item": true,
             "access_rules": [
-              "merge, $attack",
-              "[advanced], irod"
+              "merge, bombs",
+              "merge, hammer",
+              "merge, progression_enemies, $attack",
+              "[advanced], not_nice_mode, irod"
             ],
             "hosted_item": "sp_chest_12"
           }
@@ -248,8 +263,10 @@
             "name": "Prize",
             "hosted_item": "swamp",
             "access_rules": [
-              "merge, $attack",
-              "[advanced], irod"
+              "merge, bombs",
+              "merge, hammer",
+              "merge, progression_enemies, $attack",
+              "[advanced], not_nice_mode, irod"
             ]
           }
         ]
@@ -296,42 +313,55 @@
             "name": "B1 Big Chest",
             "hosted_item": "sp_chest_07",
             "access_rules": [
-              "merge",
-              "[hard], bow",
-              "[basic], boots",
-              "[advanced], irod"
+              "merge, progression_enemies",
+              "merge, bombs",
+              "merge, hammer",
+              "[hard], bow, progression_enemies",
+              "[hard], bow, bombs",
+              "[hard], bow, hammer",
+              "[glitched], boots",
+              "[advanced], not_nice_mode, irod"
             ]
           },
           {
             "name": "1F SW Room",
             "hosted_item": "sp_chest_11",
             "access_rules": [
-              "merge"
+              "merge, progression_enemies",
+              "merge, bombs",
+              "merge, hammer",
+              "[advanced], not_nice_mode, irod"
             ]
           },
           {
             "name": "1F Big Chest",
             "hosted_item": "sp_chest_08",
             "access_rules": [
-              "merge",
-              "[basic], boots",
-              "[advanced], irod"
+              "merge, progression_enemies",
+              "merge, bombs",
+              "merge, hammer",
+              "[glitched], boots",
+              "[advanced], not_nice_mode, irod"
             ]
           },
           {
             "name": "1F East Pillar",
             "hosted_item": "sp_chest_10",
             "access_rules": [
-              "merge",
-              "[advanced], irod"
+              "merge, progression_enemies",
+              "merge, bombs",
+              "merge, hammer",
+              "[advanced], not_nice_mode, irod"
             ]
           },
           {
             "name": "1F West Pillar",
             "hosted_item": "sp_chest_09",
             "access_rules": [
-              "merge",
-              "[advanced], irod"
+              "merge, progression_enemies",
+              "merge, bombs",
+              "merge, hammer",
+              "[advanced], not_nice_mode, irod"
             ]
           },
           {
@@ -339,16 +369,20 @@
             //"capture_item": true,
             "hosted_item": "sp_chest_12",
             "access_rules": [
-              "merge, $attack",
-              "[advanced], irod"
+              "merge, bombs",
+              "merge, hammer",
+              "merge, progression_enemies, $attack",
+              "[advanced], not_nice_mode, irod"
             ]
           },
           {
             "name": "Prize",
             "hosted_item": "swamp",
             "access_rules": [
-              "merge, $attack",
-              "[advanced], irod"
+              "merge, bombs",
+              "merge, hammer",
+              "merge, progression_enemies, $attack",
+              "[advanced], not_nice_mode, irod"
             ]
           }
         ]

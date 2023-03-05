@@ -263,8 +263,8 @@
             "access_rules": [
               "titansmitt",
               "powerglove, hammer",
-              "[basic], powerglove, hookshot",
-              "[basic], powerglove, boomerang, $escape"
+              "[glitched], powerglove, hookshot",
+              "[glitched], powerglove, boomerang, $escape"
             ]
           }
         ]
@@ -341,7 +341,7 @@
               //"{advanced, bottle_1}",
               //"{advanced, bluemail}",
               "powerglove, merge",
-              "[basic], merge"
+              "[glitched], merge"
             ]
           }
         ]
@@ -368,7 +368,7 @@
               //"{advanced, bottle_1, hookshot}",
               //"{advanced, bluemail, hookshot}",
               "powerglove, hookshot, merge",
-              "[basic], hookshot, merge"
+              "[glitched], hookshot, merge"
             ]
           }
         ]
@@ -1566,7 +1566,7 @@
         "name": "Lorule Death Mountain",
         "access_rules": [
           "powerglove, merge",
-          "[basic], merge"
+          "[glitched], merge"
         ],
         "children": [
           {
@@ -1621,7 +1621,7 @@
                 //"capture_item": true,
                 "access_rules": [
                   "hammer, titansmitt",
-                  "[basic], titansmitt, nicebombs",
+                  "[glitched], titansmitt, nicebombs",
                   "[hell], titansmitt, bombs"
                 ],
                 "visibility_rules": [

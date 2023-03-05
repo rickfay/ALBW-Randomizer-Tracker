@@ -101,7 +101,7 @@
             "hosted_item": "lc_chest_05",
             "access_rules": [
               "$lc2F, merge",
-              "[basic], $lc2F, boots",
+              "[glitched], $lc2F, boots",
               "[advanced], $lc2F"
             ]
           }
@@ -162,7 +162,7 @@
             "access_rules": [
               "{csmc}",
               "bombs",
-              "[basic], irod"
+              "[glitched], irod"
             ],
             "hosted_item": "lc_chest_08"
           }
@@ -348,7 +348,7 @@
             "hosted_item": "lc_chest_02",
             "access_rules": [
               "merge",
-              "[basic], $lc2F, trod"
+              "[glitched], $lc2F, trod"
             ]
           },
           {
@@ -371,7 +371,7 @@
             "hosted_item": "lc_chest_05",
             "access_rules": [
               "$lc2F, merge",
-              "[basic], $lc2F, boots",
+              "[glitched], $lc2F, boots",
               "[advanced], $lc2F"
             ]
           },
@@ -441,7 +441,7 @@
             "access_rules": [
               "{csmc}",
               "bombs",
-              "[basic], irod"
+              "[glitched], irod"
             ]
           },
           {

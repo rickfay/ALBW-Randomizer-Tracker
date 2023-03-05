@@ -23,28 +23,26 @@
             "type": "group",
             "header": "Settings",
             "dock": "top",
-            "content": [
-              {
-                "type": "layout",
-                "width": "292",
-                "key": "tracker_settings"
-              }
-            ]
-          },
-          {
-            "type": "group",
-            "header": "Pinned Locations",
             "content": {
               "type": "scroll",
               "width": "292",
               "horizontal_scrollbar_visibility": "disabled",
               "content": [
-                {
-                  "type": "recentpins",
-                  "width": "278",
-                  "orientation": "vertical"
-                }
+//                {
+//                  "type": "recentpins",
+//                  "width": "278",
+//                  "orientation": "vertical"
+//                }
               ]
+            }
+          },
+          {
+            "type": "group",
+            "header": "Pinned Locations",
+            "content": {
+              "type": "layout",
+              "width": "292",
+              "key": "tracker_settings"
             }
           }
         ]

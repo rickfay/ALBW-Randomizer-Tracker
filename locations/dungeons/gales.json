@@ -206,7 +206,7 @@
             "name": "3F Wind Chest",
             "hosted_item": "hog_chest_10",
             "access_rules": [
-              "{csmc, basic, $hog2F}",
+              "{csmc, glitched, $hog2F}",
               "$hog3F"
             ]
           }
@@ -340,7 +340,7 @@
             "name": "3F Wind Chest",
             "hosted_item": "hog_chest_10",
             "access_rules": [
-              "{csmc, basic, $hog2F}",
+              "{csmc, glitched, $hog2F}",
               "$hog3F"
             ]
           },

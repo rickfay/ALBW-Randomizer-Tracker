@@ -7,20 +7,20 @@ end
 function hasAny(items)
     for _, item in ipairs(items) do
         if has(item) then
-            return true;
+            return true
         end
     end
-    return false;
+    return false
 end
 
 -- Returns true if the player can use ALL of the given items
 function hasAll(items)
     for _, item in ipairs(items) do
         if not has(item) then
-            return false;
+            return false
         end
     end
-    return true;
+    return true
 end
 
 -- Returns the count of the given item or setting
@@ -203,26 +203,73 @@ function hog3F()
         if fire_enemy() then
             return fire_enemy()
         else
-            return true_for("basic")
+            return true_for("glitched")
         end
     else
         return false
     end
 end
 
--- Can reach Thieves' Hideout B2
-function thB2()
+-- Can open Thieves' Hideout B1 Door
+function thB1DoorOpen()
     if has("merge") and switch() then
         return true
-    elseif has("boots") and hasAny({ "boomerang", "irod" }) then
-        return true_for("basic")
-    elseif hasAny({ "boomerang", "irod" }) then
-        return true_for("advanced")
-    elseif has("bombs") then
-        return true_for("hell")
-    else
-        return false
+    elseif has("boots") then
+        if hasAny({ "boomerang", "irod" }) then
+            return has("glitched")
+        elseif has("bombs") then
+            return has("hell")
+        end
     end
+    return false
+end
+
+-- Can open Thieves' Hideout B2 Door
+function thB2DoorOpen()
+    if thB1DoorOpen() and has("merge") and hasAny({ "progression_enemies", "bombs" }) then
+        return true
+    elseif (has("merge") or dungeon_escape()) and adv_th_statue_clip() then
+        return has("advanced")
+    elseif has("bombs") then
+        return has("hell")
+    end
+    return false
+end
+
+function thB1B2DoorsOpen()
+    return thB1DoorOpen() and thB2DoorOpen()
+end
+
+-- Can drain the water in Thieves' Hideout B3
+function thDrainWaterB3()
+    if thB1B2DoorsOpen() and hasAll({ "merge", "flippers" }) then
+        return true
+    end
+
+    if has("trod") then
+        if adv_th_statue_clip() then
+            return has("advanced")
+        elseif hell_th_statue_clip() then
+            return has("hell")
+        end
+    end
+
+    return false
+end
+
+--
+function thEscapeEquipment()
+    return has("merge") and thB1B2DoorsOpen() and thDrainWaterB3()
+end
+
+-- Can statue clip OOB in Thieves' Hideout under Adv. Glitched Logic
+function adv_th_statue_clip()
+    return hasAny({ "boomerang", "irod" }) or (has("merge") and switch())
+end
+
+-- Can statue clip OOB in Thieves' Hideout under Hell Logic
+function hell_th_statue_clip()
+    return has("bombs") or adv_th_statue_clip()
 end
 
 -- Can reach the Thieves' Hideout Escape
@@ -333,27 +380,28 @@ end
 
 -- Map the Yuganon requirement from a progressive item to a number
 function yg_requirement()
+    return true -- Add this back when it's working
 
-    local requirement
-    if has("yg_requirement_7") then
-        requirement = 7
-    elseif has("yg_requirement_6") then
-        requirement = 6
-    elseif has("yg_requirement_5") then
-        requirement = 5
-    elseif has("yg_requirement_4") then
-        requirement = 4
-    elseif has("yg_requirement_3") then
-        requirement = 3
-    elseif has("yg_requirement_2") then
-        requirement = 2
-    elseif has("yg_requirement_1") then
-        requirement = 1
-    else
-        requirement = 0
-    end
-
-    return count("sage") >= requirement
+    --local requirement
+    --if has("yg_requirement_7") then
+    --    requirement = 7
+    --elseif has("yg_requirement_6") then
+    --    requirement = 6
+    --elseif has("yg_requirement_5") then
+    --    requirement = 5
+    --elseif has("yg_requirement_4") then
+    --    requirement = 4
+    --elseif has("yg_requirement_3") then
+    --    requirement = 3
+    --elseif has("yg_requirement_2") then
+    --    requirement = 2
+    --elseif has("yg_requirement_1") then
+    --    requirement = 1
+    --else
+    --    requirement = 0
+    --end
+    --
+    --return count("sage") >= requirement
 end
 
 -- Returns only if we can reach the final boss, NOT if we can obtain Zelda's check or win the fight

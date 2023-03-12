@@ -21,28 +21,37 @@
           },
           {
             "type": "group",
-            "header": "Settings",
+            "header": "Controls",
             "dock": "top",
-            "content": {
-              "type": "scroll",
-              "width": "292",
-              "horizontal_scrollbar_visibility": "disabled",
-              "content": [
-//                {
-//                  "type": "recentpins",
-//                  "width": "278",
-//                  "orientation": "vertical"
-//                }
-              ]
-            }
+            "content": [
+              {
+                "type": "scroll",
+                "width": "258",
+                "horizontal_scrollbar_visibility": "disabled",
+                "content": [
+                  {
+                    "type": "layout",
+                    "width": "236",
+                    "key": "tracker_settings"
+                  }
+                ]
+              }
+            ]
           },
           {
             "type": "group",
             "header": "Pinned Locations",
             "content": {
-              "type": "layout",
-              "width": "292",
-              "key": "tracker_settings"
+              "type": "scroll",
+              "width": "258",
+              "horizontal_scrollbar_visibility": "disabled",
+              "content": [
+                {
+                  "type": "recentpins",
+                  "width": "236",
+                  "orientation": "vertical",
+                }
+              ]
             }
           }
         ]

@@ -84,24 +84,38 @@
             "map_locations": [
               {
                 "map": "hyrule",
-                "x": 700,
+                "x": 680,
                 "y": 146
               }
             ],
             "sections": [
               {
-                "name": "Crooked Chest",
+                "name": "Crooked Chest (Rosso)",
                 "chest_unopened_img": "images/checks/chest_crooked_unopened.png",
                 "chest_opened_img": "images/checks/chest_crooked_opened.png",
                 "access_rules": [
-                  "courage:2"
+                  "ssl_off, courage:2",
+                  "ssl, rosso"
                 ],
                 "item_count": 1
-              },
+              }
+            ]
+          },
+          {
+            "name": "Rosso's House",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 720,
+                "y": 146
+              }
+            ],
+            "sections": [
               {
                 "name": "Smash Rosso's Pet Rocks",
                 "access_rules": [
-                  "courage:2, powerglove"
+                  "ssl_off, courage:2, powerglove",
+                  "ssl, rosso, powerglove"
                 ],
                 "item_count": 1
               }
@@ -449,7 +463,8 @@
               {
                 "map": "hyrule",
                 "x": 1147,
-                "y": 652
+                "y": 652,
+                "size": 70
               }
             ],
             "access_rules": [
@@ -595,8 +610,10 @@
               {
                 "name": "Bump into Shady Guy",
                 "access_rules": [
-                  "merge",
-                  "[hell], $beeBoost"
+                  "ssl_off, merge",
+                  "ssl, oren, merge",
+                  "[hell], ssl_off, $beeBoost",
+                  "[hell], ssl, oren, $beeBoost"
                 ],
                 "hosted_item": "shadyguy",
                 "item_count": 0
@@ -639,8 +656,10 @@
               {
                 "name": "Throw Smooth Gem",
                 "access_rules": [
-                  "merge, smoothgem",
-                  "[hell], smoothgem, $beeBoost"
+                  "ssl_off, merge, smoothgem",
+                  "ssl, oren, merge, smoothgem",
+                  "[hell], ssl_off, smoothgem, $beeBoost",
+                  "[hell], ssl, oren, smoothgem, $beeBoost"
                 ],
                 "item_count": 1
               }
@@ -718,18 +737,30 @@
             "map_locations": [
               {
                 "map": "hyrule",
-                "x": 351,
+                "x": 331,
                 "y": 1074
               }
             ],
             "sections": [
               {
-                "name": "Have a Bottle",
+                "name": "Have an Empty Bottle",
                 "access_rules": [
                   "bottle_1"
                 ],
                 "item_count": 1
-              },
+              }
+            ]
+          },
+          {
+            "name": "Bee Guy",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 371,
+                "y": 1074
+              }
+            ],
+            "sections": [
               {
                 "name": "Trade Golden Bee",
                 "access_rules": [
@@ -805,7 +836,7 @@
             "map_locations": [
               {
                 "map": "hyrule",
-                "x": 216,
+                "x": 196,
                 "y": 959
               }
             ],
@@ -815,7 +846,19 @@
                 "chest_opened_img": "images/checks/soldout.png",
                 "capture_item": true,
                 "item_count": 1
-              },
+              }
+            ]
+          },
+          {
+            "name": "Street Merchant",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 236,
+                "y": 959
+              }
+            ],
+            "sections": [
               {
                 "name": "Right (200)",
                 "chest_opened_img": "images/checks/soldout.png",
@@ -895,8 +938,19 @@
             ],
             "sections": [
               {
-                "name": "Score 100+",
+                "name": "Score 100+ (Buy Ravio Shop Item to Unlock)",
                 "item_count": 1,
+                "access_rules": [
+                  "ravio_01",
+                  "ravio_02",
+                  "ravio_03",
+                  "ravio_04",
+                  "ravio_05",
+                  "ravio_06",
+                  "ravio_07",
+                  "ravio_08",
+                  "ravio_09",
+                ],
                 "visibility_rules": [
                   "minigames_enabled"
                 ]
@@ -910,29 +964,93 @@
         "children": [
           {
             "name": "Ravio's Shop",
+            "color": "#a000ac",
             "map_locations": [
               {
                 "map": "hyrule",
                 "x": 1105,
+                "y": 1377,
+                "size": 70
+              }
+            ],
+            "sections": [
+              {
+                "name": "Ravio 1 (100)",
+                "capture_item": true,
+                "hosted_item": "ravio_01"
+              },
+              {
+                "name": "Ravio 2 (50)",
+                "capture_item": true,
+                "hosted_item": "ravio_02"
+              },
+              {
+                "name": "Ravio 3 (20)",
+                "capture_item": true,
+                "hosted_item": "ravio_03"
+              },
+              {
+                "name": "Ravio 4 (50)",
+                "capture_item": true,
+                "hosted_item": "ravio_04"
+              },
+              {
+                "name": "Ravio 5 (10)",
+                "capture_item": true,
+                "hosted_item": "ravio_05"
+              },
+              {
+                "name": "Ravio 7 (20)",
+                "capture_item": true,
+                "hosted_item": "ravio_07"
+              },
+              {
+                "name": "Ravio 8 (50)",
+                "capture_item": true,
+                "hosted_item": "ravio_08"
+              },
+              {
+                "name": "Ravio 9 (100)",
+                "capture_item": true,
+                "hosted_item": "ravio_09"
+              }
+            ]
+          },
+          {
+            "name": "Ravio's Shop",
+            "color": "#a000ac",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1125,
                 "y": 1377
               }
             ],
             "sections": [
               {
-                "name": "For Sale",
+                "name": "Ravio 6 (50)",
                 "capture_item": true,
-                "chest_opened_img": "images/checks/soldout.png",
-                "clear_as_group": false,
-                "item_count": 8
-              },
-              {
-                "name": "Rented by Osfala",
-                "capture_item": true,
-                "chest_opened_img": "images/checks/soldout.png",
+                "hosted_item": "ravio_06",
                 "access_rules": [
                   "{}",
                   "osfala"
-                ],
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Hyrule Blacksmith",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 624,
+                "y": 1056
+              }
+            ],
+            "sections": [
+              {
+                "name": "Table",
+                //"capture_item": true,
                 "item_count": 1
               }
             ]
@@ -942,16 +1060,11 @@
             "map_locations": [
               {
                 "map": "hyrule",
-                "x": 644,
+                "x": 664,
                 "y": 1056
               }
             ],
             "sections": [
-              {
-                "name": "Table",
-                //"capture_item": true,
-                "item_count": 1
-              },
               {
                 "name": "Give 2 Master Ore",
                 "access_rules": [
@@ -1073,7 +1186,7 @@
         "name": "Eastern Ruins",
         "children": [
           {
-            "name": "Irene",
+            "name": "Irene the Witch",
             "map_locations": [
               {
                 "map": "hyrule",
@@ -1100,7 +1213,8 @@
               {
                 "name": "",
                 "access_rules": [
-                  "courage:2"
+                  "ssl_off, courage:2",
+                  "ssl, irene"
                 ],
                 "item_count": 1
               }
@@ -1180,6 +1294,7 @@
               "boomerang",
               "bombs",
               "irod",
+              "greatspin, fsword",
               "bell, wv_eastern",
               "[hard], powerglove"
             ],
@@ -1352,11 +1467,12 @@
                   "[glitched], fsword, irod, flippers, hookshot",
                   "[glitched], fsword, irod, nicebombs",
                   "[glitched], titansmitt, nicebombs",
+                  "[glitched], greatspin, fsword, irod",
+                  "[glitched], greatspin, fsword, titansmitt",
+                  "[glitched], [nice_mode], fsword, niceirod",
                   "[advanced], irod, flippers, hookshot",
                   "[advanced], irod, nicebombs",
-                  "[], niceirod",
-                  "[], irod, msword, greatspin",
-                  "[], titansmitt, msword, greatspin"
+                  "[advanced], [nice_mode], niceirod"
                 ],
                 "item_count": 1
               }

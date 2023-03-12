@@ -156,19 +156,31 @@ Sage Portraits (sometimes called Paintings) are the primary major collectible of
 
 
 
-You can configure how many must be collected with the following options:
+You can configure how many must be collected with the following settings:
 
-| Name                      | Option                                                          | Default                                | Specifies Requirement For              |
-|---------------------------|-----------------------------------------------------------------|----------------------------------------|----------------------------------------|
-| Lorule Castle Requirement | ![Lorule Castle Requirement](images/settings/lorule_castle.png) | ![7](images/numbers/requirement_7.png) | Entering Lorule Castle's Front Door    |
-| Yuga Ganon Requirement    | ![Yuganon Requirement](images/settings/yuganon.png)             | ![7](images/numbers/requirement_7.png) | Spawning Final Boss in the Throne Room |
+| Setting                                                         | Range | Default | Specifies Requirement For              |
+|-----------------------------------------------------------------|-------|---------|----------------------------------------|
+| ![Lorule Castle Requirement](images/settings/Lorule_Castle.png) | 0-7   | 7       | Entering Lorule Castle's Front Door    |
+
+[//]: # (| Yuga Ganon Requirement    | 0-7   | 7       | Spawning Final Boss in the Throne Room |)
 
 Also, these Sages have an immediate effect on the game world when collected:
 
-| Portrait                                 | Effect                                                                                             |
+| Sage                                     | Effect                                                                                             |
 |------------------------------------------|----------------------------------------------------------------------------------------------------|
 | ![Osfala](images/prizes/sage_osfala.png) | Unlocks 3 checks:<br />- Chamber of Sages<br />- Thief Girl Cave<br />- Final item in Ravio's Shop | 
 | ![Gulley](images/prizes/sage_gulley.png) | Causes the Dark Maze guards to disappear                                                           | 
+
+If the `Reverse Sage Events` setting is enabled, these Sages will also have an effect when collected:
+
+
+| Sage                                   | Effect                                                          |
+|----------------------------------------|-----------------------------------------------------------------|
+| ![Oren](images/prizes/sage_oren.png)   | Unlocks the Shady Guy event and turning in the Smooth Gem.      | 
+| ![Impa](images/prizes/sage_impa.png)   | Unlocks the front door to Hyrule Castle.                        | 
+| ![Irene](images/prizes/sage_irene.png) | Unlocks the Irene check.                                        | 
+| ![Rosso](images/prizes/sage_rosso.png) | Unlocks the Rosso's House's front door and the 2 checks inside. | 
+
 
 
 #### Pendants of Virtue
@@ -181,22 +193,21 @@ The Pendants of Virtue are the secondary major collectible of the randomizer.
 
 The Pendants of Power, Wisdom and Courage are needed to reach the Master Sword Pedestal, which is a single randomized item check.
 
+You can configure the `Pedestal` option to configure which Pendants are needed as follows:
+
+| Name     | Pendants                                   | Description                                                                         |
+|----------|--------------------------------------------|-------------------------------------------------------------------------------------|
+| Standard | ![Standard](images/settings/Pendants4.png) | Require all Pendants of Virtue.                                                     |
+| Charmed  | ![Charmed](images/settings/Pendants3.png)  | Require all Pendants, but allow the Charm to substitute for the Pendant of Courage. |
+| Vanilla  | ![Vanilla](images/settings/Pendants2.png)  | As in the vanilla game, only require the Pendants of Power and Wisdom.              |
+
+
 The Pendant of Courage is more complicated than most Zelda dungeon rewards, acting as a Progressive Item that works as follows:
 
 | Name               | Pendant                                                  | Notes                                                                                                                                                                                                                                                                                                                                                                                                             |
 |--------------------|----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Charm              | ![Charm](images/prizes/pendant_charm.png)                | The first Green Pendant collected will be the Charm, a special item Link receives from Zelda that he does not realize is the Pendant of Courage.<br /><br />The Charm is *not* the Pendant of Courage, and does not unlock anything by itself.<br /><br />The Charm's vanilla location is considered a dungeon prize location, meaning any Sage Portrait or Pendant can spawn on Zelda's Throne in Hyrule Castle. |
-| Pendant of Courage | ![Pendant of Courage](images/prizes/pendant_courage.png) | The second Green Pendant collected will upgrade the Charm to the Pendant of Courage.<br /><br />Opens:<br />- The door to the Inside Hyrule Castle dungeon<br />- Rosso's House's front door<br /><br />Unlocks 4 checks:<br />- Stump<br />- Irene<br />- Rosso<br />- Rosso Rocks                                                                                                                               |
-
-<!--
-Pendants are required to reach the Master Sword Pedestal and be configured as follows:
-
-| Pendants                                                                                                                                                             | #   | Name     | Description                                                                                                                                                                                         |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![Pendant of Wisdom](images/prizes/pendant_wisdom.png) ![Pendant of Power](images/prizes/pendant_power.png)                                                          | 2   | Vanilla  | As in the original game, require only two Pendants (Power and Wisdom) to pull the Master Sword.                                                                                                     |
-| ![Pendant of Wisdom](images/prizes/pendant_wisdom.png) ![Pendant of Power](images/prizes/pendant_power.png) ![Charm](images/prizes/pendant_charm.png)                | 3   | Balanced | Require a Red, a Blue, and a Green Pendant to pull the Master Sword.<br /><br />This option allows the Charm to function as the Pendant of Courage, even though Link still doesn't know what it is. |
-| ![Pendant of Wisdom](images/prizes/pendant_wisdom.png) ![Pendant of Power](images/prizes/pendant_power.png) ![Charm](images/prizes/pendant_charm.png) ![Pendant of Courage](images/prizes/pendant_courage.png) | 4   | All      | Require all Pendants to pull the Master Sword.                                                                                                                                                      | 
--->
+| Pendant of Courage | ![Pendant of Courage](images/prizes/pendant_courage.png) | The second Green Pendant collected will upgrade the Charm to the Pendant of Courage.<br /><br />Opens:<br />- The door to the Inside Hyrule Castle dungeon<br />- Rosso's House's front door<br /><br />Unlocks 4 checks:<br />- Wildlife Clearing Stump<br />- Irene*<br />- Rosso*<br />- Rosso Rocks* <br /><br />*Unless the `Reverse Sage Events` setting is enabled.                                        |
 
 ### Location Color Codes
 
@@ -227,13 +238,13 @@ This tracker follows EmoTracker's standard color scheme for its locations:
 The randomizer supports five* Logic Modes, and so does this tracker. You can select the mode matching your seed in the
 settings panel in the bottom left of the tracker.
 
-| Mode                                                          | Description                                                                                                                                                                                             |
-|---------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![Normal Logic](images/settings/logic_normal.png)             | **Normal**<br /><br />Standard gameplay, no tricky item use or glitches.                                                                                                                                |
-| ![Hard Logic](images/settings/logic_hard.png)                 | **Hard**<br /><br />Adds tricks that aren't technically glitches. Lamp + Net considered as weapons. No glitches.                                                                                        |
-| ![Glitched Logic](images/settings/logic_glitched.png)         | **Glitched**<br /><br />Includes the above plus "basic", easy-to-learn glitches.                                                                                                                        |
-| ![Adv Glitched Logic](images/settings/logic_adv_glitched.png) | **Adv. Glitched**<br /><br />Includes the above plus "advanced" glitches that may be a challenge to master.                                                                                             |
-| ![Hell Logic](images/settings/logic_hell.png)                 | **Hell**<br /><br />Includes every known RTA-viable glitch, including the insane ones. Note that the Bee Badge is omitted from the item pool in this mode, to preserve the infamous Bee Boosting trick. |
+| Mode                                                    | Description                                                                                                                                                                         |
+|---------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![Normal Logic](images/settings/Normal.png)             | Standard gameplay, no tricky item use or glitches.                                                                                                                                  |
+| ![Hard Logic](images/settings/Hard.png)                 | Adds tricks that aren't technically glitches. Lamp + Net considered as weapons. No glitches.                                                                                        |
+| ![Glitched Logic](images/settings/Glitched.png)         | Includes the above plus "basic", easy-to-learn glitches.                                                                                                                            |
+| ![Adv Glitched Logic](images/settings/Adv_Glitched.png) | Includes the above plus "advanced" glitches that may be a challenge to master.                                                                                                      |
+| ![Hell Logic](images/settings/Hell.png)                 | Includes every known RTA-viable glitch, including the insane ones. Note that the Bee Badge is omitted from the item pool in this mode, to preserve the infamous Bee Boosting trick. |
 
 Raising the Logic Mode to higher difficulties will cause `🟨 Sequence Break` sections to become `🟩 Normal` as they
 enter logic.
@@ -247,7 +258,6 @@ available checks.
 ![Swordless](images/items/fsword.png)
 ![Swordless](images/items/x_small.png)
 
-
 Right-click the base Sword item to tell the tracker you're playing in Swordless Mode, which slightly changes the logic:
 
 - The Barrier around Hyrule Castle will be removed, allowing access without the Master Sword.
@@ -255,8 +265,7 @@ Right-click the base Sword item to tell the tracker you're playing in Swordless 
 
 ### Minigames
 
-![Minigames Enabled](images/settings/minigames_enabled.png)
-![Minigames Disabled](images/settings/minigames_disabled.png)
+![Minigames](images/display/minigames.png)
 
 You can tell the tracker whether you've Enabled or Disabled Minigames down in the Settings panel. Disabling Minigames
 will hide their checks on the tracker.
@@ -274,30 +283,24 @@ Note that the 2 Maiamai located inside the Rupee Rush minigames will not be hidd
 
 ### Lorule Castle Trials
 
-![Trials Normal](images/settings/trials_normal.png)
-![Trials Skipped](images/settings/trials_skipped.png)
 
 This setting tells the tracker whether the option to skip the Lorule Castle Trials was selected in the randomizer. This
 setting slightly alters the logic needed to reach the Final Boss fight, as the player won't need to complete the trials.
 
-### Lamp Requirement
-
-![Lamp Required](images/settings/lamp_required.png)
-![Lamp Not Required](images/settings/lamp_not_required.png)
+### Dark Room Lamp Requirement
 
 This setting determines whether the logic considers the Lamp as a necessary item to cross dark rooms.
 
-If the Lamp is `Required`, then checks the player would be able to obtain if they crossed a dark room with no light
-source will appear as `🟨 Sequence Breaks`. This is because the `Required` setting puts them out of logic, but they are
+If the Lamp is needed, then checks the player would be able to obtain if they crossed a dark room with no light
+source will appear as `🟨 Sequence Breaks`. This is because the setting puts them out of logic, but they are
 still technically obtainable as the Lamp is not a hard requirement.
 
-Similarly, if the Lamp is `Not Required`, then those same checks will appear `🟩 Normal`, as the `Not Required` setting
+Similarly, if the Lamp is not required, then those same checks will appear `🟩 Normal`, as the setting
 places them in logic, and the seed may require the player to cross a dark room with no light source.
 
 ### Display Bee Boost Glitches
 
-![Hide Bee Boost Glitches](images/settings/bee_boost_hide.png)
-![Show Bee Boost Glitches](images/settings/bee_boost_show.png)
+![Bee Boost Glitches](images/display/bottle_bee.png)
 
 Turn this setting on to show `🟨 Sequence Break` checks that require using the Bee Boost glitch.
 
@@ -308,8 +311,7 @@ logic.
 
 ### Maiamai Map
 
-![Maiamai Map Hide](images/settings/maiamai_map_hide.png)
-![Maiamai Map Show](images/settings/maiamai_map_show.png)
+![Maiamai Map](images/display/maiamai_map.png)
 
 This setting toggles the visibility of the Maiamai checks.
 

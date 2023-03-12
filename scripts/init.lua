@@ -8,15 +8,9 @@ Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/items_tfh.json")
 Tracker:AddItems("items/items_chests.json")
 Tracker:AddItems("items/items_keys.json")
+Tracker:AddItems("items/items_display.json")
 Tracker:AddItems("items/items_settings.json")
-
--------------------------------------- Dungeon Icon Choices (uncomment only one): --------------------------------------
-Tracker:AddItems("items/items_dungeons_all.json")     -- All icons
---Tracker:AddItems("items/items_dungeons_zelda.json")   -- Zelda Sage icon
---Tracker:AddItems("items/items_dungeons_hilda.json")   -- Hilda Sage icon
---Tracker:AddItems("items/items_dungeons_rainbow.json") -- Rainbow Sage icon
---Tracker:AddItems("items/items_dungeons_staff.json")   -- Staff Sage icon
-------------------------------------------------------------------------------------------------------------------------
+Tracker:AddItems("items/items_dungeons.json")
 
 --- Maps
 Tracker:AddMaps("maps.json")
@@ -24,7 +18,7 @@ Tracker:AddMaps("maps.json")
 --- Layouts
 Tracker:AddLayouts("layouts/itemgrid.json")
 Tracker:AddLayouts("layouts/dungeongrid.json")
-Tracker:AddLayouts("layouts/tracker_settings.json")
+Tracker:AddLayouts("layouts/tracker_controls.json")
 Tracker:AddLayouts("layouts/capturable.json")
 Tracker:AddLayouts("layouts/broadcast.json")
 Tracker:AddLayouts("layouts/tracker.json")

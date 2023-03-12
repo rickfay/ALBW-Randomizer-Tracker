@@ -177,10 +177,12 @@ end
 function yuga1()
     if has("bow") then
         return true
-    elseif has("bombs") or (hasAny({ "boomerang", "hookshot" }) and attack()) then
+    elseif has("bombs") or (hasAny({ "boomerang", "hookshot" }) and attack()) or hasAll({"nice_mode", "niceirod"}) then
         return true_for("hard")
     elseif hasAny({ "irod", "msword" }) then
         return true_for("hell")
+    elseif has("niceirod") then
+        return true, AccessibilityLevel.SequenceBreak
     else
         return false
     end
@@ -190,7 +192,7 @@ end
 function hog2F()
     if has("merge") and switch() then
         return true
-    elseif hasAny({ "bow", "boomerang", "hookshot", "bombs", "irod", "msword" }) then
+    elseif hasAny({ "bow", "boomerang", "hookshot", "bombs", "irod", "msword" }) or hasAll({"greatspin", "fsword"}) then
         return true_for("hard")
     else
         return false
@@ -326,9 +328,7 @@ end
 function hc_barrier()
     if has("msword") then
         return true
-    elseif hasAll({ "merge", "boots", "trod", "bombs" })
-            and hasAny({ "hookshot", "boomerang" })
-            and not lc_requirement() then
+    elseif hasAll({ "merge", "boots", "trod", "bombs" }) and hasAny({ "hookshot", "boomerang" }) then
         return true, AccessibilityLevel.SequenceBreak -- barrier skip, not in any logic because it's missable
     else
         return false

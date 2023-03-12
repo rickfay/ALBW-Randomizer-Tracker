@@ -5,87 +5,149 @@
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/settings/Logic.png",
-        "img_mods": "overlay|images/settings/Logic_Normal.png",
+        "img": "images/settings/Logic_Mode.png",
+        "img_mods": "overlay|images/settings/Normal.png",
         "codes": "logic",
         "inherit_codes": false
       },
       {
-        "img": "images/settings/Logic.png",
-        "img_mods": "overlay|images/settings/Logic_Hard.png",
+        "img": "images/settings/Logic_Mode.png",
+        "img_mods": "overlay|images/settings/Hard.png",
         "codes": "hard",
         "inherit_codes": true
       },
       {
-        "img": "images/settings/Logic.png",
-        "img_mods": "overlay|images/settings/Logic_Glitched.png",
+        "img": "images/settings/Logic_Mode.png",
+        "img_mods": "overlay|images/settings/Glitched.png",
         "codes": "glitched",
         "inherit_codes": true
       },
       {
-        "img": "images/settings/Logic.png",
-        "img_mods": "overlay|images/settings/Logic_Glitched_Advanced.png",
+        "img": "images/settings/Logic_Mode.png",
+        "img_mods": "overlay|images/settings/Adv_Glitched.png",
         "codes": "advanced",
         "inherit_codes": true
       },
       {
-        "img": "images/settings/Logic.png",
-        "img_mods": "overlay|images/settings/Logic_Glitched_Hell.png",
+        "img": "images/settings/Logic_Mode.png",
+        "img_mods": "overlay|images/settings/Hell.png",
         "codes": "hell",
         "inherit_codes": true
       }
+      //      {
+      //        "img": "images/settings/Logic_Mode.png",
+      //        "img_mods": "overlay|images/settings/No_Logic.png",
+      //        "codes": "no_logic",
+      //        "inherit_codes": true
+      //      }
     ]
   },
   {
-    "name": "LC Required Portraits",
+    "name": "Lorule Castle Portrait Requirement",
     "type": "progressive",
+    "loop": true,
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/numbers/requirement_7.png",
+        "img": "images/settings/Lorule_Castle.png",
+        "img_mods": "overlay|images/settings/7.png",
         "codes": "lc_requirement_7"
       },
       {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/numbers/requirement_6.png",
+        "img": "images/settings/Lorule_Castle.png",
+        "img_mods": "overlay|images/settings/6.png",
         "codes": "lc_requirement_6",
         "inherit_codes": false
       },
       {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/numbers/requirement_5.png",
+        "img": "images/settings/Lorule_Castle.png",
+        "img_mods": "overlay|images/settings/5.png",
         "codes": "lc_requirement_5",
         "inherit_codes": false
       },
       {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/numbers/requirement_4.png",
+        "img": "images/settings/Lorule_Castle.png",
+        "img_mods": "overlay|images/settings/4.png",
         "codes": "lc_requirement_4",
         "inherit_codes": false
       },
       {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/numbers/requirement_3.png",
+        "img": "images/settings/Lorule_Castle.png",
+        "img_mods": "overlay|images/settings/3.png",
         "codes": "lc_requirement_3",
         "inherit_codes": false
       },
       {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/numbers/requirement_2.png",
+        "img": "images/settings/Lorule_Castle.png",
+        "img_mods": "overlay|images/settings/2.png",
         "codes": "lc_requirement_2",
         "inherit_codes": false
       },
       {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/numbers/requirement_1.png",
+        "img": "images/settings/Lorule_Castle.png",
+        "img_mods": "overlay|images/settings/1.png",
         "codes": "lc_requirement_1",
         "inherit_codes": false
       },
       {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/numbers/requirement_0.png",
+        "img": "images/settings/Lorule_Castle.png",
+        "img_mods": "overlay|images/settings/0.png,@disabled",
         "codes": "lc_requirement",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Yuga Ganon Portrait Requirement",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/settings/Yuga_Ganon.png",
+        "img_mods": "overlay|images/settings/7.png",
+        "codes": "yg_requirement_7"
+      },
+      {
+        "img": "images/settings/Yuga_Ganon.png",
+        "img_mods": "overlay|images/settings/6.png",
+        "codes": "yg_requirement_6",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/Yuga_Ganon.png",
+        "img_mods": "overlay|images/settings/5.png",
+        "codes": "yg_requirement_5",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/Yuga_Ganon.png",
+        "img_mods": "overlay|images/settings/4.png",
+        "codes": "yg_requirement_4",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/Yuga_Ganon.png",
+        "img_mods": "overlay|images/settings/3.png",
+        "codes": "yg_requirement_3",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/Yuga_Ganon.png",
+        "img_mods": "overlay|images/settings/2.png",
+        "codes": "yg_requirement_2",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/Yuga_Ganon.png",
+        "img_mods": "overlay|images/settings/1.png",
+        "codes": "yg_requirement_1",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/Yuga_Ganon.png",
+        "img_mods": "overlay|images/settings/0.png,@disabled",
+        "codes": "yg_requirement",
         "inherit_codes": false
       }
     ]
@@ -97,95 +159,41 @@
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/settings/pendants4.png",
+        "img": "images/settings/Pedestal.png",
+        "img_mods": "overlay|images/settings/Pendants4.png",
         "codes": "ped_requirement_4",
         "inherit_codes": false
       },
       {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/settings/pendants3.png",
+        "img": "images/settings/Pedestal.png",
+        "img_mods": "overlay|images/settings/Pendants3.png",
         "codes": "ped_requirement_3",
         "inherit_codes": false
       },
       {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/settings/pendants2.png",
+        "img": "images/settings/Pedestal.png",
+        "img_mods": "overlay|images/settings/Pendants2.png",
         "codes": "ped_requirement_2",
         "inherit_codes": false
       }
     ]
   },
   {
-    "name": "Yuga Ganon Required Portraits",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/numbers/requirement_7.png",
-        "codes": "yg_requirement_7"
-      },
-      {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/numbers/requirement_6.png",
-        "codes": "yg_requirement_6",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/numbers/requirement_5.png",
-        "codes": "yg_requirement_5",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/numbers/requirement_4.png",
-        "codes": "yg_requirement_4",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/numbers/requirement_3.png",
-        "codes": "yg_requirement_3",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/numbers/requirement_2.png",
-        "codes": "yg_requirement_2",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/numbers/requirement_1.png",
-        "codes": "yg_requirement_1",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/numbers/requirement_0.png",
-        "codes": "yg_requirement",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Minigames",
+    "name": "Reverse Sage Events",
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/settings/minigames.png",
-        "codes": "minigames_enabled",
+        "img": "images/settings/Reverse_Sage_Events.png",
+        "img_mods": "overlay|images/settings/OFF.png,@disabled",
+        "codes": "ssl_off",
         "inherit_codes": false
       },
       {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/settings/minigames.png,@disabled",
-        "codes": "minigames_disabled",
+        "img": "images/settings/Reverse_Sage_Events.png",
+        "img_mods": "overlay|images/settings/ON.png",
+        "codes": "ssl",
         "inherit_codes": false
       }
     ]
@@ -197,13 +205,13 @@
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/settings/OFF.png",
+        "img": "images/settings/Nice_Mode.png",
+        "img_mods": "overlay|images/settings/OFF.png,@disabled",
         "codes": "not_nice_mode",
         "inherit_codes": false
       },
       {
-        "img": "images/settings/template.png",
+        "img": "images/settings/Nice_Mode.png",
         "img_mods": "overlay|images/settings/ON.png",
         "codes": "nice_mode",
         "inherit_codes": false
@@ -211,308 +219,83 @@
     ]
   },
   {
-    "name": "No Progression Enemies",
+    "name": "Progression Granting Enemies",
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/settings/OFF.png",
+        "img": "images/settings/PGE.png",
+        "img_mods": "@disabled,overlay|images/settings/PGE_Vanilla.png",
         "codes": "progression_enemies",
         "inherit_codes": false
       },
       {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/settings/ON.png",
+        "img": "images/settings/PGE.png",
+        "img_mods": "overlay|images/settings/PGE_Removed.png",
         "codes": "no_progression_enemies",
         "inherit_codes": false
       }
     ]
   },
+  //  {
+  //    "name": "Backdoor Lorule Castle",
+  //    "type": "progressive",
+  //    "loop": true,
+  //    "allow_disabled": false,
+  //    "stages": [
+  //      {
+  //        "img": "images/settings/template.png",
+  //        //"img_mods": "overlay|images/labels/Normal.png",
+  //        "codes": "backdoor_closed",
+  //        "inherit_codes": false
+  //      },
+  //      {
+  //        "img": "images/settings/template.png",
+  //        //"img_mods": "overlay|images/labels/Skipped.png",
+  //        "codes": "backdoor_open",
+  //        "inherit_codes": false
+  //      }
+  //    ]
+  //  },
   {
-    "name": "Lorule Castle Trials Door",
+    "name": "Lorule Castle Trials",
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/settings/template.png",
-        //"img_mods": "overlay|images/labels/Normal.png",
+        "img": "images/settings/Trials.png",
+        "img_mods": "overlay|images/settings/Vanilla.png,@disabled",
         "codes": "trials_normal",
         "inherit_codes": false
       },
       {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/labels/Skipped.png",
+        "img": "images/settings/Trials.png",
+        "img_mods": "overlay|images/settings/Skipped.png",
         "codes": "trials_skipped",
         "inherit_codes": false
       }
     ]
   },
   {
-    "name": "Backdoor Lorule Castle",
+    "name": "Dark Rooms Lamp Requirement",
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/settings/template.png",
-        //"img_mods": "overlay|images/labels/Normal.png",
-        "codes": "backdoor_closed",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/settings/template.png",
-        //"img_mods": "overlay|images/labels/Skipped.png",
-        "codes": "backdoor_open",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Chest Size Matches Contents",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/labels/csmc_off.png",
-        "codes": "csmc_off",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/labels/csmc_on.png",
-        "codes": "csmc",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Require Lamp",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/settings/template.png",
-        "img_mods": "overlay|images/labels/Required.png",
+        "img": "images/settings/Dark_Rooms.png",
+        "img_mods": "overlay|images/settings/Need_Lamp.png,@disabled",
         "codes": "lampful",
         "inherit_codes": false
       },
       {
-        "img": "images/settings/template.png",
-        "img_mods": "@disabled", //overlay|images/labels/NotRequired.png",
+        "img": "images/settings/Dark_Rooms.png",
+        "img_mods": "overlay|images/settings/Lampless.png",
         "codes": "lampless",
         "inherit_codes": false
       }
     ]
-  },
-  {
-    "name": "Weather Vanes",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/settings/template.png",
-        //"img_mods": "@disabled,overlay|images/labels/Hide.png",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/settings/template.png",
-        //"img_mods": "overlay|images/labels/Show.png",
-        "codes": "weathervania",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Show Bee Boost Glitches",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/settings/template.png",
-        //"img_mods": "overlay|images/labels/Hide.png",
-        "codes": "beeBoost_hide",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/settings/template.png",
-        "img_mods": "@disabled",
-        //"img_mods": "overlay|images/labels/Show.png",
-        "codes": "beeBoost_show",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Maiamai Map",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/settings/maiamai_map.png",
-        "img_mods": "@disabled,overlay|images/labels/Hide.png",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/settings/maiamai_map.png",
-        "img_mods": "overlay|images/labels/Show.png",
-        "codes": "maiamai_map",
-        "inherit_codes": false
-      }
-    ]
   }
-
-  // Old Options below:
-  //  {
-  //    "name": "Bee Boost",
-  //    "type": "progressive",
-  //    "loop": true,
-  //    "allow_disabled": false,
-  //    "stages": [
-  //      {
-  //        "img": "images/settings/no.png",
-  //        "codes": "beeBoost_false",
-  //        "inherit_codes": false
-  //      },
-  //      {
-  //        "img": "images/settings/yes.png",
-  //        "codes": "beeBoost",
-  //        "inherit_codes": false
-  //      }
-  //    ]
-  //  },
-  //  {
-  //    "name": "Bomb Boost to Ledges",
-  //    "type": "progressive",
-  //    "loop": true,
-  //    "allow_disabled": false,
-  //    "stages": [
-  //      {
-  //        "img": "images/settings/no.png",
-  //        "codes": "bombBoost_false",
-  //        "inherit_codes": false
-  //      },
-  //      {
-  //        "img": "images/settings/yes.png",
-  //        "codes": "bombBoost",
-  //        "inherit_codes": false
-  //      }
-  //    ]
-  //  },
-  //  {
-  //    "name": "Shield Rod Clipping",
-  //    "type": "progressive",
-  //    "loop": true,
-  //    "stages": [
-  //      {
-  //        "img": "images/settings/no.png",
-  //        "codes": "shieldRodClip_false",
-  //        "inherit_codes": false
-  //      },
-  //      {
-  //        "img": "images/settings/yes.png",
-  //        "codes": "shieldRodClip",
-  //        "inherit_codes": false
-  //      }
-  //    ],
-  //    "allow_disabled": false
-  //  },
-  //  {
-  //    "name": "Zaganaga with Bow",
-  //    "type": "progressive",
-  //    "loop": true,
-  //    "stages": [
-  //      {
-  //        "img": "images/settings/no.png",
-  //        "codes": "zagaBow_false",
-  //        "inherit_codes": false
-  //      },
-  //      {
-  //        "img": "images/settings/yes.png",
-  //        "codes": "zagaBow",
-  //        "inherit_codes": false
-  //      }
-  //    ],
-  //    "allow_disabled": false
-  //  },
-  //  {
-  //    "name": "Zaganaga with Sword Beams",
-  //    "type": "progressive",
-  //    "loop": true,
-  //    "stages": [
-  //      {
-  //        "img": "images/settings/no.png",
-  //        "codes": "zagaSwordBeams_false",
-  //        "inherit_codes": false
-  //      },
-  //      {
-  //        "img": "images/settings/yes.png",
-  //        "codes": "zagaSwordBeams",
-  //        "inherit_codes": false
-  //      }
-  //    ],
-  //    "allow_disabled": false
-  //  },
-  //  {
-  //    "name": "Portal Clipping",
-  //    "type": "progressive",
-  //    "loop": true,
-  //    "stages": [
-  //      {
-  //        "img": "images/settings/no.png",
-  //        "codes": "portalClipping_false",
-  //        "inherit_codes": false
-  //      },
-  //      {
-  //        "img": "images/settings/yes.png",
-  //        "codes": "portalClipping",
-  //        "inherit_codes": false
-  //      }
-  //    ],
-  //    "allow_disabled": false
-  //  },
-  //  {
-  //    "name": "Vulture Boosting",
-  //    "type": "progressive",
-  //    "loop": true,
-  //    "stages": [
-  //      {
-  //        "img": "images/settings/no.png",
-  //        "codes": "vulture_false",
-  //        "inherit_codes": false
-  //      },
-  //      {
-  //        "img": "images/settings/yes.png",
-  //        "codes": "vulture",
-  //        "inherit_codes": false
-  //      }
-  //    ],
-  //    "allow_disabled": false
-  //  },
-  //  {
-  //    "name": "Crow Escape",
-  //    "type": "progressive",
-  //    "loop": true,
-  //    "stages": [
-  //      {
-  //        "img": "images/settings/no.png",
-  //        "codes": "crowEscape_false",
-  //        "inherit_codes": false
-  //      },
-  //      {
-  //        "img": "images/settings/yes.png",
-  //        "codes": "crowEscape",
-  //        "inherit_codes": false
-  //      }
-  //    ],
-  //    "allow_disabled": false
-  //  }
 ]

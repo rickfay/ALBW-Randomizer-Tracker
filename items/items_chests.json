@@ -1,4 +1,77 @@
 [
+  // Ravio's Shop
+  {
+    "name": "Ice Rod Slot",
+    "type": "toggle",
+    "img": "images/checks/soldout.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "ravio_01"
+  },
+  {
+    "name": "Hookshot Slot",
+    "type": "toggle",
+    "img": "images/checks/soldout.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "ravio_02"
+  },
+  {
+    "name": "Tornado Rod Slot",
+    "type": "toggle",
+    "img": "images/checks/soldout.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "ravio_03"
+  },
+  {
+    "name": "Bombs Slot",
+    "type": "toggle",
+    "img": "images/checks/soldout.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "ravio_04"
+  },
+  {
+    "name": "Bow Slot",
+    "type": "toggle",
+    "img": "images/checks/soldout.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "ravio_05"
+  },
+  {
+    "name": "Sand Rod Slot",
+    "type": "toggle",
+    "img": "images/checks/soldout.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "ravio_06"
+  },
+  {
+    "name": "Hammer Slot",
+    "type": "toggle",
+    "img": "images/checks/soldout.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "ravio_07"
+  },
+  {
+    "name": "Boomerang Slot",
+    "type": "toggle",
+    "img": "images/checks/soldout.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "ravio_08"
+  },
+  {
+    "name": "Fire Rod Slot",
+    "type": "toggle",
+    "img": "images/checks/soldout.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "ravio_09"
+  },
   // Eastern Palace
   {
     "name": "1F Merge Chest",
@@ -49,7 +122,7 @@
     "codes": "ep_chest_06"
   },
   {
-    "name": "2F Kill Popos",
+    "name": "2F Defeat Popos",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -57,7 +130,7 @@
     "codes": "ep_chest_07"
   },
   {
-    "name": "2F Switches Room",
+    "name": "2F Switch Room",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -73,20 +146,12 @@
     "codes": "ep_chest_09"
   },
   {
-    "name": "3F Yuga",
+    "name": "Yuga",
     "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
+    "img": "images/checks/chest_small_opened_0.png",
+    "disabled_img": "images/checks/chest_small_unopened_2.png",
     "disabled_img_mods": "none",
-    "codes": "ep_chest_10"
-  },
-  {
-    "name": "3F Heart Container",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "ep_chest_11"
+    "codes": "ep_chest_10_11"
   },
   {
     "name": "3F Escape Chest",

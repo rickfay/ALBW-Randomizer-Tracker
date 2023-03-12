@@ -10,10 +10,11 @@
       "hookshot",
       "boomerang",
       "bombs",
+      "greatspin, fsword",
+      "[nice_mode], niceirod",
       "[hard], glove, msword",
       "[hard], irod, msword",
-      "[hard], bell, wv_eastern, msword",
-      "[], niceirod"
+      "[hard], bell, wv_eastern, msword"
     ],
     "children": [
       {
@@ -54,9 +55,9 @@
               "hookshot",
               "boomerang",
               "bombs",
-              // pots,
-              "[hard]",
-              "[], niceirod"
+              "greatspin, fsword",
+              "[nice_mode], niceirod",
+              "[hard]"
             ]
           }
         ]
@@ -118,6 +119,7 @@
               "boomerang",
               "hookshot",
               "bombs",
+              "greatspin, fsword",
               "[hard], irod",
               "[hard], msword"
             ]
@@ -154,7 +156,7 @@
         ],
         "sections": [
           {
-            "name": "2F Kill Popos",
+            "name": "2F Defeat Popos",
             "hosted_item": "ep_chest_07",
             "access_rules": [
               "$attack"
@@ -173,7 +175,7 @@
         ],
         "sections": [
           {
-            "name": "2F Switches Room",
+            "name": "2F Switch Room",
             "hosted_item": "ep_chest_08",
             "access_rules": [
               "bow",
@@ -181,6 +183,7 @@
               "irod",
               "$attack, boomerang",
               "$attack, hookshot",
+              "greatspin, fsword",
               // You can use 4 of the 6 pots
               "[hard], $attack"
             ]
@@ -211,34 +214,15 @@
         "map_locations": [
           {
             "map": "ep3F",
-            "x": 80,
-            "y": 77
-          }
-        ],
-        "sections": [
-          {
-            "name": "3F Yuga",
-            "hosted_item": "ep_chest_10",
-            "access_rules": [
-              "$yuga1"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Eastern Palace",
-        "map_locations": [
-          {
-            "map": "ep3F",
             "x": 88,
             "y": 69
           }
         ],
         "sections": [
           {
-            "name": "3F Heart Container",
+            "name": "Yuga",
             //"capture_item": true,
-            "hosted_item": "ep_chest_11",
+            "hosted_item": "ep_chest_10_11",
             "access_rules": [
               "$yuga1"
             ]
@@ -322,9 +306,9 @@
               "hookshot",
               "boomerang",
               "bombs",
-              // pots,
-              "[hard]",
-              "[], niceirod"
+              "greatspin, fsword",
+              "[nice_mode], niceirod",
+              "[hard]"
             ]
           },
           {
@@ -350,6 +334,7 @@
               "boomerang",
               "hookshot",
               "bombs",
+              "greatspin, fsword",
               "[hard], irod",
               "[hard], msword"
             ]
@@ -362,14 +347,14 @@
             ]
           },
           {
-            "name": "2F Kill Popos",
+            "name": "2F Defeat Popos",
             "hosted_item": "ep_chest_07",
             "access_rules": [
               "$attack"
             ]
           },
           {
-            "name": "2F Switches Room",
+            "name": "2F Switch Room",
             "hosted_item": "ep_chest_08",
             "access_rules": [
               "bow",
@@ -377,6 +362,7 @@
               "irod",
               "$attack, boomerang",
               "$attack, hookshot",
+              "greatspin, fsword",
               // You can use 4 of the 6 pots
               "[hard], $attack"
             ]
@@ -389,16 +375,9 @@
             ]
           },
           {
-            "name": "3F Yuga",
-            "hosted_item": "ep_chest_10",
-            "access_rules": [
-              "$yuga1"
-            ]
-          },
-          {
-            "name": "3F Heart Container",
+            "name": "Yuga",
             //"capture_item": true,
-            "hosted_item": "ep_chest_11",
+            "hosted_item": "ep_chest_10_11",
             "access_rules": [
               "$yuga1"
             ]

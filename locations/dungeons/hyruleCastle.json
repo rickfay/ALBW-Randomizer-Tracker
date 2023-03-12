@@ -18,8 +18,7 @@
             "name": "Left Room Chest",
             "item_count": 1,
             "access_rules": [
-              "$hc_barrier",
-              "[$lc_requirement], $canEnterLC, $lc2F, merge, yuga"
+              "$hc_barrier"
             ]
           }
         ]
@@ -39,8 +38,8 @@
             "item_count": 1,
             "access_rules": [
               "{csmc}",
-              "$hc_barrier",
-              "[$lc_requirement], $canEnterLC, $lc2F, merge, yuga"
+              "$hc_barrier, ssl_off",
+              "$hc_barrier, ssl, impa"
             ]
           }
         ]
@@ -60,8 +59,8 @@
             "name": "Zelda's Throne",
             "hosted_item": "hyrule_castle",
             "access_rules": [
-              "$hc_barrier",
-              "[$lc_requirement], $canEnterLC, $lc2F, merge, yuga"
+              "$hc_barrier, ssl_off",
+              "$hc_barrier, ssl, impa"
             ]
           }
         ]
@@ -69,8 +68,8 @@
       {
         "name": "Inside Hyrule Castle",
         "access_rules": [
-          "$hc_barrier, courage:2, merge, $yuga2",
-          "[$lc_requirement], $canEnterLC, $lc2F, merge, $yuga2"
+          "$hc_barrier, courage:2, ssl_off",
+          "$hc_barrier, courage:2, ssl, impa"
         ],
         "map_locations": [
           {

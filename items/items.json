@@ -26,7 +26,7 @@
   {
     "name": "Blue Rupee",
     "type": "toggle",
-    "img": "images/items/rupee_blue.png",
+    "img": "images/junk/rupee_blue.png",
     "codes": "rupee_blue"
   },
   {
@@ -174,7 +174,7 @@
   {
     "name": "Gold Rupee",
     "type": "toggle",
-    "img": "images/items/rupee_gold.png",
+    "img": "images/junk/rupee_gold.png",
     "codes": "rupee_gold"
   },
   {
@@ -186,7 +186,7 @@
   {
     "name": "Green Rupee",
     "type": "toggle",
-    "img": "images/items/rupee_green.png",
+    "img": "images/junk/rupee_green.png",
     "codes": "rupee_green"
   },
   {
@@ -227,13 +227,13 @@
   {
     "name": "Heart Container",
     "type": "toggle",
-    "img": "images/items/heart_container.png",
+    "img": "images/junk/heart_container.png",
     "codes": "hc"
   },
   {
     "name": "Heart Piece",
     "type": "toggle",
-    "img": "images/items/heart_piece.png",
+    "img": "images/junk/heart_piece.png",
     "codes": "hp"
   },
   {
@@ -409,19 +409,19 @@
   {
     "name": "Monster Guts",
     "type": "toggle",
-    "img": "images/items/monster_guts.png",
+    "img": "images/junk/monster_guts.png",
     "codes": "guts"
   },
   {
     "name": "Monster Horn",
     "type": "toggle",
-    "img": "images/items/monster_horn.png",
+    "img": "images/junk/monster_horn.png",
     "codes": "horn"
   },
   {
     "name": "Monster Tail",
     "type": "toggle",
-    "img": "images/items/monster_tail.png",
+    "img": "images/junk/monster_tail.png",
     "codes": "tail"
   },
   {
@@ -437,7 +437,7 @@
     "codes": "pouch"
   },
   {
-    "name": "Power Glove",
+    "name": "Power Glove / Titan's Mitt",
     "type": "progressive",
     "stages": [
       {
@@ -461,7 +461,7 @@
   {
     "name": "Purple Rupee",
     "type": "toggle",
-    "img": "images/items/rupee_purple.png",
+    "img": "images/junk/rupee_purple.png",
     "codes": "rupee_purple"
   },
   {
@@ -481,7 +481,7 @@
   {
     "name": "Red Rupee",
     "type": "toggle",
-    "img": "images/items/rupee_red.png",
+    "img": "images/junk/rupee_red.png",
     "codes": "rupee_red"
   },
   {
@@ -563,7 +563,7 @@
   {
     "name": "Silver Rupee",
     "type": "toggle",
-    "img": "images/items/rupee_silver.png",
+    "img": "images/junk/rupee_silver.png",
     "codes": "rupee_silver"
   },
   {

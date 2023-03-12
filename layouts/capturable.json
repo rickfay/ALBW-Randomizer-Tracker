@@ -1,74 +1,102 @@
 {
-  "tracker_capture_item": {
-    "type": "itemgrid",
-    "h_alignment": "center",
-    "item_size": "32",
-    "item_margin": "1,2",
-    "rows": [
-      [
-        "bow",
-        "boomerang",
-        "hookshot",
-        "bombs",
-        "pouch",
-        "fsword"
-      ],
-      [
-        "frod",
-        "irod",
-        "trod",
-        "srod",
-        "beebadge",
-        "shield"
-      ],
-      [
-        "lamp",
-        "hammer",
-        "bell",
-        "net",
-        "scroll",
-        "greentunic"
-      ],
-      [
-        "bottles",
-        "letter",
-        "milk",
-        "goldenbee",
-        "scoot",
-        "bracelet"
-      ],
-      [
-        "boots",
-        "glove",
-        "flippers",
-        "smoothgem",
-        "foul",
-        "bowoflight"
-      ],
-      [
-        "heart",
-        "hp",
-        "hc",
-        "hint_glasses",
-        "masterore",
-        "maiamai"
-      ],
-      [
-        "tail",
-        "horn",
-        "guts",
-        "compass",
-        "key",
-        "bigkey"
-      ],
-      [
-        "rupee_green",
-        "rupee_blue",
-        "rupee_red",
-        "rupee_purple",
-        "rupee_silver",
-        "rupee_gold"
-      ]
+  "tracker_capture_item":
+
+  {
+    "type": "container",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "itemgrid",
+        "dropshadow": true,
+        "h_alignment": "center",
+        "item_size": "15",
+        "item_margin": "0,-2,19,19",
+        "rows": [
+          // Making an override?
+          // Move the greatspin to the same grid location as the Sword.
+          [
+            "greatspin",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "itemgrid",
+        "dropshadow": true,
+        "h_alignment": "center",
+        "item_size": "32",
+        "item_margin": "1,1",
+        "margin": "1",
+        "rows": [
+          [
+            "fsword",
+            "greentunic",
+            "shield",
+            "lamp",
+            "bow",
+            "boomerang",
+            "hookshot"
+          ],
+          [
+            "merge",
+            "glove",
+            "boots",
+            "hammer",
+            "bombs",
+            "frod",
+            "irod"
+          ],
+          [
+            "flippers",
+            "smoothgem",
+            "scroll",
+            "trod",
+            "srod",
+            "net",
+            "hint_glasses"
+          ],
+          [
+            "bell",
+            "maiamai",
+            "ore",
+            "bottles",
+            "letter",
+            "premiummilk",
+            "goldenbee"
+          ],
+          [
+            "pouch",
+            "beebadge",
+            "hp",
+            "hc",
+            "foul",
+            "scoot",
+            "bowoflight"
+          ],
+          [
+            "tail",
+            "horn",
+            "guts",
+            "",
+            "compass",
+            "key",
+            "bigkey"
+          ],
+          [
+            "rupee_green",
+            "rupee_blue",
+            "rupee_red",
+            "rupee_purple",
+            "rupee_silver",
+            "rupee_gold"
+          ]
+        ]
+      }
     ]
   }
 }

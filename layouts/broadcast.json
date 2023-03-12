@@ -8,98 +8,21 @@
         "orientation": "vertical",
         "content": [
           {
-            "type": "container",
-            "orientation": "vertical",
-            "content": [
-              {
-                "type": "itemgrid",
-                "h_alignment": "center",
-                "item_size": "15",
-                "item_margin": "0,0,19,19",
-                "rows": [
-                  [
-                    "greatspin",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    ""
-                  ]
-                ]
-              },
-              {
-                "type": "itemgrid",
-                "h_alignment": "center",
-                "item_margin": "1",
-                "rows": [
-                  [
-                    "fsword",
-                    "greentunic",
-                    "shield",
-                    "lamp",
-                    "bow",
-                    "boomerang",
-                    "hookshot",
-                    "eastern"
-                  ],
-                  [
-                    "merge",
-                    "glove",
-                    "boots",
-                    "hammer",
-                    "bombs",
-                    "frod",
-                    "irod",
-                    "gales"
-                  ],
-                  [
-                    "flippers",
-                    "smoothgem",
-                    "scroll",
-                    "trod",
-                    "srod",
-                    "net",
-                    "fruit",
-                    "hera"
-                  ],
-                  [
-                    "bell",
-                    "maiamai",
-                    "ore",
-                    "bottles",
-                    "letter",
-                    "premiummilk",
-                    "goldenbee",
-                    "hyrule_castle"
-                  ],
-                  [
-                    "dark",
-                    "swamp",
-                    "skull",
-                    "thieves",
-                    "turtle",
-                    "desert",
-                    "ice",
-                    "bowoflight"
-                  ]
-                ]
-              }
-            ]
+            "type": "layout",
+            "key": "item_grid"
           },
 //          {
 //            "type": "container",
 //            "margin": "0,5,0,0",
 //            "content": {
 //              "type": "recentpins",
-//              "width": "278",
+//              "width": "236",
 //              "h_alignment": "stretch",
 //              "v_alignment": "center",
 //              "orientation": "vertical",
 //              "max_width": 330,
 //              "compact": true,
-//              "num_items": 0
+//              "num_items": 1
 //            }
 //          }
         ]

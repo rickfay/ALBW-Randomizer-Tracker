@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Chest Size Matches Contents",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/display/csmc_small.png",
+        "img_mods": "overlay|images/display/Normal.png",
+        "codes": "csmc_off",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/display/csmc_large.png",
+        "img_mods": "overlay|images/display/CSMC.png",
+        "codes": "csmc",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Minigames",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/display/minigames.png",
+        "img_mods": "overlay|images/display/Show.png",
+        "codes": "minigames_enabled",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/display/minigames.png",
+        "img_mods": "@disabled,overlay|images/display/Hide.png",
+        "codes": "minigames_disabled",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Weather Vanes",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/display/template.png",
+        //"img_mods": "@disabled,overlay|images/labels/Hide.png",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/display/template.png",
+        //"img_mods": "overlay|images/labels/Show.png",
+        "codes": "weathervania",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Show Bee Boost Glitches",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/display/bottle_bee.png",
+        "img_mods": "@disabled,overlay|images/display/Hide.png",
+        "codes": "beeBoost_hide",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/display/bottle_bee.png",
+        "img_mods": "overlay|images/display/Show.png",
+        "codes": "beeBoost_show",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Maiamai Map",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/display/maiamai_map.png",
+        "img_mods": "@disabled,overlay|images/display/Hide.png",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/display/maiamai_map.png",
+        "img_mods": "overlay|images/display/Show.png",
+        "codes": "maiamai_map",
+        "inherit_codes": false
+      }
+    ]
+  }
+]

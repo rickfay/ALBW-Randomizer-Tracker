@@ -24,8 +24,9 @@
         "content": {
           "type": "itemgrid",
           "dropshadow": true,
-          "item_size": "214",
-          "item_margin": "0,0,0,-186",
+          "item_size": "256",
+          "item_margin": "0,0,0,-224",
+          "margin": "0",
           "h_alignment": "center",
           "v_alignment": "top",
           "rows": [

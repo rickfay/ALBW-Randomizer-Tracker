@@ -26,12 +26,12 @@
             "content": [
               {
                 "type": "scroll",
-                "width": "258",
+                "width": "286",
                 "horizontal_scrollbar_visibility": "disabled",
                 "content": [
                   {
                     "type": "layout",
-                    "width": "236",
+                    "width": "264",
                     "key": "tracker_settings"
                   }
                 ]
@@ -43,12 +43,12 @@
             "header": "Pinned Locations",
             "content": {
               "type": "scroll",
-              "width": "258",
+              "width": "286",
               "horizontal_scrollbar_visibility": "disabled",
               "content": [
                 {
                   "type": "recentpins",
-                  "width": "236",
+                  "width": "264",
                   "orientation": "vertical",
                 }
               ]

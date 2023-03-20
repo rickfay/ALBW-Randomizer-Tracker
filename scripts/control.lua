@@ -177,7 +177,7 @@ end
 function yuga1()
     if has("bow") then
         return true
-    elseif has("bombs") or (hasAny({ "boomerang", "hookshot" }) and attack()) or hasAll({"nice_mode", "niceirod"}) then
+    elseif has("bombs") or (hasAny({ "boomerang", "hookshot" }) and attack()) or hasAll({ "nice_mode", "niceirod" }) then
         return true_for("hard")
     elseif hasAny({ "irod", "msword" }) then
         return true_for("hell")
@@ -192,7 +192,7 @@ end
 function hog2F()
     if has("merge") and switch() then
         return true
-    elseif hasAny({ "bow", "boomerang", "hookshot", "bombs", "irod", "msword" }) or hasAll({"greatspin", "fsword"}) then
+    elseif hasAny({ "bow", "boomerang", "hookshot", "bombs", "irod", "msword" }) or hasAll({ "greatspin", "fsword" }) then
         return true_for("hard")
     else
         return false
@@ -266,12 +266,14 @@ end
 
 -- Can statue clip OOB in Thieves' Hideout under Adv. Glitched Logic
 function adv_th_statue_clip()
-    return hasAny({ "boomerang", "irod" }) or (has("merge") and switch())
+    return has("merge") and hasAny({ "bow", "boomerang", "irod", "bombs" })
 end
 
 -- Can statue clip OOB in Thieves' Hideout under Hell Logic
 function hell_th_statue_clip()
-    return has("bombs") or adv_th_statue_clip()
+    return has("bombs")
+            or (has("msword") and (hasAny({ "merge", "boomerang", "irod", "greatspin" })))
+            or adv_th_statue_clip()
 end
 
 -- Can reach the Thieves' Hideout Escape
@@ -325,14 +327,8 @@ function enterTR()
     return false
 end
 
-function hc_barrier()
-    if has("msword") then
-        return true
-    elseif hasAll({ "merge", "boots", "trod", "bombs" }) and hasAny({ "hookshot", "boomerang" }) then
-        return true, AccessibilityLevel.SequenceBreak -- barrier skip, not in any logic because it's missable
-    else
-        return false
-    end
+function barrier_skip()
+    return hasAll({ "merge", "boots", "trod", "bombs" }) and hasAny({ "hookshot", "boomerang" })
 end
 
 function yuga2()

@@ -362,7 +362,7 @@ end
 
 -- Return if we can enter Lorule Castle, either with Sages or via the Hyrule Castle Portal
 function canEnterLC()
-    return has("merge") and (lc_requirement() or (hc_barrier() and has("yuga")))
+    return has("merge") and (lc_requirement() or has("yuga"))
 end
 
 -- Return if we can reach Lorule Castle 2F

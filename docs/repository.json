@@ -1,9 +1,9 @@
 {
-  "name": "LemonKong's Trackers",
+  "name": "RickWithAnH's Trackers",
   "packages": [
     {
       "name": "ALBW Randomizer Tracker",
-      "author": "LemonKong",
+      "author": "RickWithAnH",
       "game_name": "The Legend of Zelda: A Link Between Worlds",
       "version": "3.2.0",
       "required_app_version": "2.3.8.17",

@@ -7,15 +7,17 @@ Worlds Randomizer.
 
 ## Release Notes
 
-- Author: LemonKong
+- Author: RickWithAnH
 
 <details open="open">
 <summary>Version 3.2.0</summary>
 
+- Logic updated to match v0.3.0 of the randomizer
 - Added support for Randomized Dungeon Prizes
+- Update to handle changes to Bottle Trade Items
 - Swordless Mode support (right-click the Sword)
 - Bee Boost Glitches are now hidden by default
-- Logic updated to match v0.2.0 of the randomizer
+- Several misc. fixes to logic, typos
 - README has been expanded
 
 </details>

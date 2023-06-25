@@ -73,7 +73,9 @@
               {
                 "name": "Master Sword Pedestal",
                 "access_rules": [
-                  "pendant:4"
+                  "ped_requirement_4, power, wisdom, courage:2",
+                  "ped_requirement_3, power, wisdom, courage:1",
+                  "ped_requirement_2, power, wisdom",
                 ],
                 "item_count": 1
               }
@@ -221,11 +223,12 @@
               {
                 "name": "Trade Premium Milk",
                 "access_rules": [
-                  "milk, hookshot, merge",
-                  "[advanced], bottle_1, milk, hookshot, trod, boots",
-                  "[advanced], bluemail, milk, hookshot, trod, boots"
-                  //"[hell], milk, hookshot, trod, boots"
+                  "bottle_milk_premium, hookshot, merge",
+                  "[advanced], bottle_1, bottle_milk_premium, hookshot, trod, boots",
+                  "[advanced], bluemail, bottle_milk_premium, hookshot, trod, boots"
+                  //"[hell], bottle_milk_premium, hookshot, trod, boots"
                 ],
+                "hosted_item": "bottles",
                 "item_count": 1
               }
             ]
@@ -682,10 +685,11 @@
             "sections": [
               {
                 "name": "Trade Letter in a Bottle",
+                "hosted_item": "bottle_milk_premium",
                 "access_rules": [
-                  "letter"
+                  "bottle_letter"
                 ],
-                "item_count": 1
+                "item_count": 0
               }
             ]
           },
@@ -764,7 +768,7 @@
               {
                 "name": "Trade Golden Bee",
                 "access_rules": [
-                  "goldenbee",
+                  "bottle_bee_golden",
                   "[hell], bottle_1, net"
                 ],
                 "item_count": 1
@@ -1571,16 +1575,14 @@
             ],
             "sections": [
               {
-                "name": "Letter in a Bottle",
-                "hosted_item": "letter",
+                "name": "Southeastern Shore",
                 "access_rules": [
-                  "{}",
                   "flippers",
                   "[glitched], frod",
                   "[glitched], nicebombs",
                   "[hell], $beeBoost"
                 ],
-                "item_count": 0
+                "item_count": 1
               }
             ]
           },

@@ -301,7 +301,7 @@
         ],
         "sections": [
           {
-            "name": "Final Zelda",
+            "name": "Zelda",
             "chest_unopened_img": "images/zelda.png",
             "access_rules": [
               "$zelda"
@@ -468,7 +468,7 @@
         ],
         "sections": [
           {
-            "name": "Final Zelda",
+            "name": "Zelda",
             "hosted_item": "lc_chest_15",
             "access_rules": [
               "$zelda"

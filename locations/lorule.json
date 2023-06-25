@@ -59,7 +59,7 @@
             "sections": [
               {
                 "name": "Golden Bee (888)",
-                "hosted_item": "goldenbee",
+                "hosted_item": "bottle_bee_golden",
                 "access_rules": [
                   "bottle_1"
                 ],

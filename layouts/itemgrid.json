@@ -55,21 +55,21 @@
               ],
               [
                 "flippers",
-                "smoothgem",
+                "beebadge",
                 "scroll",
                 "trod",
                 "srod",
                 "net",
-                "fruit"
+                "hint_glasses"
               ],
               [
-                "bell",
+                "smoothgem",
                 "maiamai",
                 "ore",
                 "bottles",
-                "letter",
-                "premiummilk",
-                "goldenbee"
+                "bottle_trade_items",
+                "bottle_bee_golden",
+                "fruit"
               ],
             ]
           },
@@ -82,7 +82,7 @@
             "margin": "1,0",
             "rows": [
               [
-                "yuga",
+                "bell",
                 "hyrule_castle",
                 "gales",
                 "hera",

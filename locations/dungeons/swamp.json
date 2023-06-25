@@ -236,7 +236,7 @@
         ],
         "sections": [
           {
-            "name": "1F Arrgus",
+            "name": "1F Arrghus",
             //"capture_item": true,
             "access_rules": [
               "merge, bombs",
@@ -365,7 +365,7 @@
             ]
           },
           {
-            "name": "1F Arrgus",
+            "name": "1F Arrghus",
             //"capture_item": true,
             "hosted_item": "sp_chest_12",
             "access_rules": [

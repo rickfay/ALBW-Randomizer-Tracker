@@ -62,7 +62,7 @@
     ]
   },
   {
-    "name": "Bottle",
+    "name": "Bottles",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -104,6 +104,109 @@
       }
     ]
   },
+  {
+    "name": "Bottle Trade Item",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Trade Item",
+        "img": "images/items/bottle_trade.png",
+        "img_mods": "@disabled",
+        "codes": "bottle_trade_items"
+      },
+      {
+        "name": "Letter in a Bottle",
+        "img": "images/items/bottle_letter.png",
+        "codes": "bottle_letter"
+      },
+      {
+        "name": "Premium Milk",
+        "img": "images/items/bottle_milk_premium.png",
+        "codes": "bottle_milk_premium"
+      }
+    ]
+  },
+  {
+    "name": "Bee",
+    "type": "toggle",
+    "img": "images/items/bottle_bee.png",
+    "codes": "bottle_bee"
+  },
+  {
+    "name": "Golden Bee",
+    "type": "toggle",
+    "img": "images/items/bottle_bee_golden.png",
+    "codes": "bottle_bee_golden"
+  },
+  {
+    "name": "Apple",
+    "type": "toggle",
+    "img": "images/items/bottle_apple.png",
+    "codes": "bottle_apple"
+  },
+  {
+    "name": "Green Apple",
+    "type": "toggle",
+    "img": "images/items/bottle_apple_green.png",
+    "codes": "bottle_apple_green"
+  },
+
+  {
+    "name": "Fairy",
+    "type": "toggle",
+    "img": "images/items/bottle_fairy.png",
+    "codes": "bottle_fairy"
+  },
+  {
+    "name": "Heart",
+    "type": "toggle",
+    "img": "images/items/bottle_heart.png",
+    "codes": "bottle_heart"
+  },
+  {
+    "name": "Milk",
+    "type": "toggle",
+    "img": "images/items/bottle_milk.png",
+    "codes": "bottle_milk"
+  },
+
+  {
+    "name": "Red Potion",
+    "type": "toggle",
+    "img": "images/items/bottle_red.png",
+    "codes": "potion_red"
+  },
+  {
+    "name": "Blue Potion",
+    "type": "toggle",
+    "img": "images/items/bottle_blue.png",
+    "codes": "potion_blue"
+  },
+  {
+    "name": "Yellow Potion",
+    "type": "toggle",
+    "img": "images/items/bottle_yellow.png",
+    "codes": "potion_yellow"
+  },
+  {
+    "name": "Purple Potion",
+    "type": "toggle",
+    "img": "images/items/bottle_purple.png",
+    "codes": "potion_purple"
+  },
+  {
+    "name": "Lost Maiamai",
+    "type": "toggle",
+    "img": "images/items/maiamai.png",
+    "codes": "maiamai_single"
+  },
+
+
+
+
+
+
   {
     "name": "Bow",
     "type": "progressive",
@@ -178,12 +281,6 @@
     "codes": "rupee_gold"
   },
   {
-    "name": "Golden Bee",
-    "type": "toggle",
-    "img": "images/items/bottle_bee_golden.png",
-    "codes": "goldenbee, goldbee"
-  },
-  {
     "name": "Green Rupee",
     "type": "toggle",
     "img": "images/junk/rupee_green.png",
@@ -221,7 +318,7 @@
   {
     "name": "Heart",
     "type": "toggle",
-    "img": "images/items/heart.png",
+    "img": "images/junk/heart.png",
     "codes": "heart"
   },
   {
@@ -289,12 +386,6 @@
         "codes": "superlamp"
       }
     ]
-  },
-  {
-    "name": "Letter in a Bottle",
-    "type": "toggle",
-    "img": "images/items/bottle_letter.png",
-    "codes": "letter"
   },
   {
     "name": "Lost Maiamai",
@@ -451,12 +542,6 @@
         "codes": "titansmitt"
       }
     ]
-  },
-  {
-    "name": "Premium Milk",
-    "type": "toggle",
-    "img": "images/items/bottle_milk_premium.png",
-    "codes": "milk, premiummilk"
   },
   {
     "name": "Purple Rupee",

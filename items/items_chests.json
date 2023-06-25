@@ -546,7 +546,7 @@
     "codes": "sp_chest_11"
   },
   {
-    "name": "1F Arrgus",
+    "name": "1F Arrghus",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",

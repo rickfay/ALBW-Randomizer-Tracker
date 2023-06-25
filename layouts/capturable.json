@@ -53,7 +53,7 @@
           ],
           [
             "flippers",
-            "smoothgem",
+            "beebadge",
             "scroll",
             "trod",
             "srod",
@@ -61,31 +61,32 @@
             "hint_glasses"
           ],
           [
-            "bell",
-            "maiamai",
+            "smoothgem",
+            "maiamai_single",
             "ore",
+
             "bottles",
-            "letter",
-            "premiummilk",
-            "goldenbee"
+            "bottle_trade_items",
+            "bottle_bee_golden",
+            "scoot"
           ],
           [
-            "pouch",
-            "beebadge",
-            "hp",
-            "hc",
-            "foul",
-            "scoot",
-            "bowoflight"
-          ],
-          [
-            "tail",
-            "horn",
-            "guts",
+            "bell",
             "",
             "compass",
             "key",
-            "bigkey"
+            "bigkey",
+            "",
+            "bowoflight"
+          ],
+          [
+            "pouch",
+            "hp",
+            "hc",
+            "tail",
+            "horn",
+            "guts",
+            "foul"
           ],
           [
             "rupee_green",

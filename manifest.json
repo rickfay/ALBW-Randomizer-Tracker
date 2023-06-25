@@ -4,7 +4,7 @@
   "platform": "3DS",
   "package_version": "3.2.0",
   "package_uid": "lemonkong_albwr_tracker",
-  "author": "LemonKong",
+  "author": "RickWithAnH",
   "variants": {
     "standard": {
       "display_name": "Standard Map Tracker"

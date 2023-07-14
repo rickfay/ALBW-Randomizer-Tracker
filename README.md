@@ -10,7 +10,7 @@ Worlds Randomizer.
 - Author: RickWithAnH
 
 <details open="open">
-<summary>Version 3.2.0</summary>
+<summary>Version 3.2.1</summary>
 
 - Logic updated to match v0.3.0 of the randomizer
 - Added support for Randomized Dungeon Prizes

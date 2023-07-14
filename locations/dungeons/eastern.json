@@ -2,14 +2,19 @@
   {
     "name": "Eastern Palace",
     "color": "#00FF00",
+    "chest_unopened_img": "images/checks/chest_small_unopened.png",
+    "chest_opened_img": "images/checks/chest_small_opened.png",
     "access_rules": [
       "merge",
       "bow",
       "hookshot",
       "boomerang",
       "bombs",
-      "[hard], msword",
-      "[], niceirod"
+      "greatspin, fsword",
+      "[nice_mode], niceirod",
+      "[hard], glove, msword",
+      "[hard], irod, msword",
+      "[hard], bell, wv_eastern, msword"
     ],
     "children": [
       {
@@ -24,7 +29,6 @@
         "sections": [
           {
             "name": "1F Merge Chest",
-            "capture_item": true,
             "hosted_item": "ep_chest_01",
             "access_rules": [
               "merge"
@@ -44,16 +48,16 @@
         "sections": [
           {
             "name": "1F Left Door Chest",
-            "capture_item": true,
             "hosted_item": "ep_chest_02",
             "access_rules": [
+              "{csmc}",
               "bow",
               "hookshot",
               "boomerang",
               "bombs",
-              // pots,
-              "[hard]",
-              "[], niceirod"
+              "greatspin, fsword",
+              "[nice_mode], niceirod",
+              "[hard]"
             ]
           }
         ]
@@ -70,7 +74,6 @@
         "sections": [
           {
             "name": "1F Popo Room",
-            "capture_item": true,
             "hosted_item": "ep_chest_03",
             "access_rules": [
               "$attack"
@@ -90,7 +93,6 @@
         "sections": [
           {
             "name": "1F Secret Room",
-            "capture_item": true,
             "hosted_item": "ep_chest_04",
             "access_rules": [
               "$attack"
@@ -110,13 +112,14 @@
         "sections": [
           {
             "name": "1F Switch Room",
-            "capture_item": true,
             "hosted_item": "ep_chest_05",
             "access_rules": [
+              "{csmc}",
               "bow",
               "boomerang",
               "hookshot",
               "bombs",
+              "greatspin, fsword",
               "[hard], irod",
               "[hard], msword"
             ]
@@ -135,7 +138,6 @@
         "sections": [
           {
             "name": "2F Ball Room",
-            "capture_item": true,
             "hosted_item": "ep_chest_06",
             "access_rules": [
               "$attack"
@@ -154,8 +156,7 @@
         ],
         "sections": [
           {
-            "name": "2F Kill Popos",
-            "capture_item": true,
+            "name": "2F Defeat Popos",
             "hosted_item": "ep_chest_07",
             "access_rules": [
               "$attack"
@@ -174,8 +175,7 @@
         ],
         "sections": [
           {
-            "name": "2F Switches Room",
-            "capture_item": true,
+            "name": "2F Switch Room",
             "hosted_item": "ep_chest_08",
             "access_rules": [
               "bow",
@@ -183,6 +183,7 @@
               "irod",
               "$attack, boomerang",
               "$attack, hookshot",
+              "greatspin, fsword",
               // You can use 4 of the 6 pots
               "[hard], $attack"
             ]
@@ -201,32 +202,9 @@
         "sections": [
           {
             "name": "2F Big Chest",
-            "chest_unopened_img": "images/chest_big_unopened.png",
-            "chest_opened_img": "images/chest_big_opened.png",
-            "capture_item": true,
             "hosted_item": "ep_chest_09",
             "access_rules": [
               "$attack"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Eastern Palace",
-        "map_locations": [
-          {
-            "map": "ep3F",
-            "x": 80,
-            "y": 77
-          }
-        ],
-        "sections": [
-          {
-            "name": "3F Yuga",
-            "capture_item": true,
-            "hosted_item": "ep_chest_10",
-            "access_rules": [
-              "$yuga1"
             ]
           }
         ]
@@ -242,9 +220,9 @@
         ],
         "sections": [
           {
-            "name": "3F Heart Container",
-            "capture_item": true,
-            "hosted_item": "ep_chest_11",
+            "name": "Yuga",
+            //"capture_item": true,
+            "hosted_item": "ep_chest_10_11",
             "access_rules": [
               "$yuga1"
             ]
@@ -263,7 +241,6 @@
         "sections": [
           {
             "name": "3F Escape Chest",
-            "capture_item": true,
             "hosted_item": "ep_chest_12",
             "access_rules": [
               "$yuga1, merge"
@@ -283,7 +260,6 @@
         "sections": [
           {
             "name": "1F Escape Chest",
-            "capture_item": true,
             "hosted_item": "ep_chest_13",
             "access_rules": [
               "$yuga1, merge"
@@ -295,7 +271,7 @@
         "name": "Eastern Palace",
         "sections": [
           {
-            "name": "Pendant of Courage",
+            "name": "Prize",
             "access_rules": [
               "$yuga1"
             ],
@@ -316,7 +292,6 @@
         "sections": [
           {
             "name": "1F Merge Chest",
-            "capture_item": true,
             "hosted_item": "ep_chest_01",
             "access_rules": [
               "merge"
@@ -324,21 +299,20 @@
           },
           {
             "name": "1F Left Door Chest",
-            "capture_item": true,
             "hosted_item": "ep_chest_02",
             "access_rules": [
+              "{csmc}",
               "bow",
               "hookshot",
               "boomerang",
               "bombs",
-              // pots,
-              "[hard]",
-              "[], niceirod"
+              "greatspin, fsword",
+              "[nice_mode], niceirod",
+              "[hard]"
             ]
           },
           {
             "name": "1F Popo Room",
-            "capture_item": true,
             "hosted_item": "ep_chest_03",
             "access_rules": [
               "$attack"
@@ -346,44 +320,41 @@
           },
           {
             "name": "1F Secret Room",
-            "capture_item": true,
             "hosted_item": "ep_chest_04",
             "access_rules": [
               "$attack"
             ]
           },
           {
-            "name": "1F Switch Room    ",
-            "capture_item": true,
+            "name": "1F Switch Room",
             "hosted_item": "ep_chest_05",
             "access_rules": [
+              "{csmc}",
               "bow",
               "boomerang",
               "hookshot",
               "bombs",
+              "greatspin, fsword",
               "[hard], irod",
               "[hard], msword"
             ]
           },
           {
             "name": "2F Ball Room",
-            "capture_item": true,
             "hosted_item": "ep_chest_06",
             "access_rules": [
               "$attack"
             ]
           },
           {
-            "name": "2F Kill Popos",
-            "capture_item": true,
+            "name": "2F Defeat Popos",
             "hosted_item": "ep_chest_07",
             "access_rules": [
               "$attack"
             ]
           },
           {
-            "name": "2F Switches Room ",
-            "capture_item": true,
+            "name": "2F Switch Room",
             "hosted_item": "ep_chest_08",
             "access_rules": [
               "bow",
@@ -391,37 +362,28 @@
               "irod",
               "$attack, boomerang",
               "$attack, hookshot",
+              "greatspin, fsword",
               // You can use 4 of the 6 pots
               "[hard], $attack"
             ]
           },
           {
             "name": "2F Big Chest",
-            "capture_item": true,
             "hosted_item": "ep_chest_09",
             "access_rules": [
               "$attack"
             ]
           },
           {
-            "name": "3F Yuga",
-            "capture_item": true,
-            "hosted_item": "ep_chest_10",
-            "access_rules": [
-              "$yuga1"
-            ]
-          },
-          {
-            "name": "3F Heart Container",
-            "capture_item": true,
-            "hosted_item": "ep_chest_11",
+            "name": "Yuga",
+            //"capture_item": true,
+            "hosted_item": "ep_chest_10_11",
             "access_rules": [
               "$yuga1"
             ]
           },
           {
             "name": "3F Escape Chest",
-            "capture_item": true,
             "hosted_item": "ep_chest_12",
             "access_rules": [
               "$yuga1, merge"
@@ -429,14 +391,13 @@
           },
           {
             "name": "1F Escape Chest",
-            "capture_item": true,
             "hosted_item": "ep_chest_13",
             "access_rules": [
               "$yuga1, merge"
             ]
           },
           {
-            "name": "Pendant of Courage",
+            "name": "Prize",
             "hosted_item": "eastern",
             "access_rules": [
               "$yuga1"
@@ -448,7 +409,7 @@
             "map": "hyrule",
             "x": 1921,
             "y": 820,
-            "size": 60
+            "size": 70
           }
         ]
       }

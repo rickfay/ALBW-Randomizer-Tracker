@@ -2,9 +2,10 @@
   {
     "name": "Swamp Palace",
     "color": "#d25432",
+    "chest_unopened_img": "images/checks/chest_small_unopened.png",
+    "chest_opened_img": "images/checks/chest_small_opened.png",
     "access_rules": [
-      "merge, flippers, hookshot",
-      "yuga, flippers, hookshot"
+      "merge, flippers, hookshot"
     ],
     "children": [
       {
@@ -19,7 +20,7 @@
         "sections": [
           {
             "name": "B1 East Pillar",
-            "capture_item": true,
+            //"capture_item": true,
             "hosted_item": "sp_chest_01"
           }
         ]
@@ -36,7 +37,7 @@
         "sections": [
           {
             "name": "B1 West Pillar",
-            "capture_item": true,
+            //"capture_item": true,
             "hosted_item": "sp_chest_02"
           }
         ]
@@ -53,7 +54,6 @@
         "sections": [
           {
             "name": "B1 North Center",
-            "capture_item": true,
             "hosted_item": "sp_chest_03"
           }
         ]
@@ -70,7 +70,6 @@
         "sections": [
           {
             "name": "B1 Staircase",
-            "capture_item": true,
             "hosted_item": "sp_chest_04"
           }
         ]
@@ -87,7 +86,6 @@
         "sections": [
           {
             "name": "B1 Raft Chest",
-            "capture_item": true,
             "hosted_item": "sp_chest_05"
           }
         ]
@@ -104,7 +102,6 @@
         "sections": [
           {
             "name": "B1 Side Room",
-            "capture_item": true,
             "hosted_item": "sp_chest_06"
           }
         ]
@@ -123,12 +120,15 @@
             "name": "B1 Big Chest",
             "chest_unopened_img": "images/chest_big_unopened.png",
             "chest_opened_img": "images/chest_big_opened.png",
-            "capture_item": true,
             "access_rules": [
-              "merge",
-              "[hard], bow",
-              "[basic], boots",
-              "[advanced], irod"
+              "merge, progression_enemies",
+              "merge, bombs",
+              "merge, hammer",
+              "[hard], bow, progression_enemies",
+              "[hard], bow, bombs",
+              "[hard], bow, hammer",
+              "[glitched], boots",
+              "[advanced], not_nice_mode, irod"
             ],
             "hosted_item": "sp_chest_07"
           }
@@ -148,11 +148,12 @@
             "name": "1F Big Chest",
             "chest_unopened_img": "images/chest_big_unopened.png",
             "chest_opened_img": "images/chest_big_opened.png",
-            "capture_item": true,
             "access_rules": [
-              "merge",
-              "[basic], boots",
-              "[advanced], irod"
+              "merge, progression_enemies",
+              "merge, bombs",
+              "merge, hammer",
+              "[glitched], boots",
+              "[advanced], not_nice_mode, irod"
             ],
             "hosted_item": "sp_chest_08"
           }
@@ -170,10 +171,11 @@
         "sections": [
           {
             "name": "1F West Pillar",
-            "capture_item": true,
             "access_rules": [
-              "merge",
-              "[advanced], irod"
+              "merge, progression_enemies",
+              "merge, bombs",
+              "merge, hammer",
+              "[advanced], not_nice_mode, irod"
             ],
             "hosted_item": "sp_chest_09"
           }
@@ -191,10 +193,11 @@
         "sections": [
           {
             "name": "1F East Pillar",
-            "capture_item": true,
             "access_rules": [
-              "merge",
-              "[advanced], irod"
+              "merge, progression_enemies",
+              "merge, bombs",
+              "merge, hammer",
+              "[advanced], not_nice_mode, irod"
             ],
             "hosted_item": "sp_chest_10"
           }
@@ -212,9 +215,11 @@
         "sections": [
           {
             "name": "1F SW Room",
-            "capture_item": true,
             "access_rules": [
-              "merge"
+              "merge, progression_enemies",
+              "merge, bombs",
+              "merge, hammer",
+              "[advanced], not_nice_mode, irod"
             ],
             "hosted_item": "sp_chest_11"
           }
@@ -231,11 +236,13 @@
         ],
         "sections": [
           {
-            "name": "1F Arrgus",
-            "capture_item": true,
+            "name": "1F Arrghus",
+            //"capture_item": true,
             "access_rules": [
-              "merge, $attack",
-              "[advanced], irod"
+              "merge, bombs",
+              "merge, hammer",
+              "merge, progression_enemies, $attack",
+              "[advanced], not_nice_mode, irod"
             ],
             "hosted_item": "sp_chest_12"
           }
@@ -253,11 +260,13 @@
         ],
         "sections": [
           {
-            "name": "Sage Oren",
+            "name": "Prize",
             "hosted_item": "swamp",
             "access_rules": [
-              "merge, $attack",
-              "[advanced], irod"
+              "merge, bombs",
+              "merge, hammer",
+              "merge, progression_enemies, $attack",
+              "[advanced], not_nice_mode, irod"
             ]
           }
         ]
@@ -269,103 +278,111 @@
             "map": "lorule",
             "x": 962,
             "y": 1808,
-            "size": 60
+            "size": 70
           }
         ],
         "sections": [
           {
             "name": "B1 East Pillar",
-            "capture_item": true,
+            //"capture_item": true,
             "hosted_item": "sp_chest_01"
           },
           {
             "name": "B1 North Center",
-            "capture_item": true,
             "hosted_item": "sp_chest_03"
           },
           {
             "name": "B1 West Pillar",
-            "capture_item": true,
+            //"capture_item": true,
             "hosted_item": "sp_chest_02"
           },
           {
             "name": "B1 Raft Chest",
-            "capture_item": true,
             "hosted_item": "sp_chest_05",
             "access_rules": []
           },
           {
             "name": "B1 Staircase",
-            "capture_item": true,
             "hosted_item": "sp_chest_04"
           },
           {
             "name": "B1 Side Room",
-            "capture_item": true,
             "hosted_item": "sp_chest_06"
           },
           {
             "name": "B1 Big Chest",
-            "capture_item": true,
             "hosted_item": "sp_chest_07",
             "access_rules": [
-              "merge",
-              "[hard], bow",
-              "[basic], boots",
-              "[advanced], irod"
+              "merge, progression_enemies",
+              "merge, bombs",
+              "merge, hammer",
+              "[hard], bow, progression_enemies",
+              "[hard], bow, bombs",
+              "[hard], bow, hammer",
+              "[glitched], boots",
+              "[advanced], not_nice_mode, irod"
             ]
           },
           {
             "name": "1F SW Room",
-            "capture_item": true,
             "hosted_item": "sp_chest_11",
             "access_rules": [
-              "merge"
+              "merge, progression_enemies",
+              "merge, bombs",
+              "merge, hammer",
+              "[advanced], not_nice_mode, irod"
             ]
           },
           {
             "name": "1F Big Chest",
-            "capture_item": true,
             "hosted_item": "sp_chest_08",
             "access_rules": [
-              "merge",
-              "[basic], boots",
-              "[advanced], irod"
+              "merge, progression_enemies",
+              "merge, bombs",
+              "merge, hammer",
+              "[glitched], boots",
+              "[advanced], not_nice_mode, irod"
             ]
           },
           {
             "name": "1F East Pillar",
-            "capture_item": true,
             "hosted_item": "sp_chest_10",
             "access_rules": [
-              "merge",
-              "[advanced], irod"
+              "merge, progression_enemies",
+              "merge, bombs",
+              "merge, hammer",
+              "[advanced], not_nice_mode, irod"
             ]
           },
           {
             "name": "1F West Pillar",
-            "capture_item": true,
             "hosted_item": "sp_chest_09",
             "access_rules": [
-              "merge",
-              "[advanced], irod"
+              "merge, progression_enemies",
+              "merge, bombs",
+              "merge, hammer",
+              "[advanced], not_nice_mode, irod"
             ]
           },
           {
-            "name": "1F Arrgus",
-            "capture_item": true,
+            "name": "1F Arrghus",
+            //"capture_item": true,
             "hosted_item": "sp_chest_12",
             "access_rules": [
-              "merge, $attack",
-              "[advanced], irod"
+              "merge, bombs",
+              "merge, hammer",
+              "merge, progression_enemies, $attack",
+              "[advanced], not_nice_mode, irod"
             ]
           },
           {
-            "name": "Sage Oren",
+            "name": "Prize",
             "hosted_item": "swamp",
             "access_rules": [
-              "merge, $attack",
-              "[advanced], irod"
+              "merge, bombs",
+              "merge, hammer",
+              "merge, progression_enemies, $attack",
+              "[advanced], not_nice_mode, irod"
             ]
           }
         ]

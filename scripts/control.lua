@@ -7,24 +7,34 @@ end
 function hasAny(items)
     for _, item in ipairs(items) do
         if has(item) then
-            return true;
+            return true
         end
     end
-    return false;
+    return false
 end
 
 -- Returns true if the player can use ALL of the given items
 function hasAll(items)
     for _, item in ipairs(items) do
         if not has(item) then
-            return false;
+            return false
         end
     end
-    return true;
+    return true
 end
 
--- Returns true if we're using the specified logic, or (true, SequenceBreak) if not
-function logic(logic)
+-- Returns the count of the given item or setting
+function count(item)
+    return Tracker:ProviderCountForCode(item)
+end
+
+-- Returns true if the player has at least a given amount of an item or setting
+function has_amount(item, amount)
+    return Tracker:ProviderCountForCode(item) >= amount
+end
+
+-- Returns true if we're using the specified settings, or (true, SequenceBreak) if not
+function true_for(logic)
     if has(logic) then
         return true
     else
@@ -32,12 +42,17 @@ function logic(logic)
     end
 end
 
+-- Can we attack according to normal logic
+function attack_normal()
+    return hasAny({ "fsword", "bow", "bombs", "frod", "irod", "hammer", "boots" })
+end
+
 -- Return if the player can deal damage
 function attack()
-    if hasAny({ "fsword", "bow", "bombs", "frod", "irod", "hammer", "boots" }) then
+    if attack_normal() then
         return true
     elseif hasAny({ "lamp", "net" }) then
-        return logic("hard")
+        return true_for("hard")
     else
         return false
     end
@@ -48,7 +63,7 @@ function fire_enemy()
     if hasAny({ "fsword", "bow", "bombs", "irod", "hammer", "boots" }) then
         return true
     elseif has("net") then
-        return logic("hard")
+        return true_for("hard")
     else
         return false
     end
@@ -60,7 +75,7 @@ function margomill()
     if hasAny({ "fsword", "bow", "bombs", "frod", "hammer", "boots" }) then
         return true
     elseif hasAny({ "lamp", "net" }) then
-        return logic("hard")
+        return true_for("hard")
     end
 
     return false
@@ -72,7 +87,7 @@ function knucklemaster()
     if hasAny({ "fsword", "bombs", "frod", "irod", "hammer", "boots" }) then
         return true
     elseif hasAny({ "lamp", "net" }) then
-        return logic("hard")
+        return true_for("hard")
     end
 
     return false
@@ -121,6 +136,10 @@ function fire()
     return hasAny({ "lamp", "frod" })
 end
 
+function canExtinguishTorches()
+    return hasAny({ "sword", "bombs", "trod", "irod", "net" })
+end
+
 -- Return if Link can hit Crystal Switches
 -- Pots aren't accounted for here, but may make hitting some switches possible
 function switch()
@@ -140,34 +159,30 @@ function lampless()
     if has("lamp") then
         return true
     else
-        return logic("lampless") -- hacky but w/e
+        return true_for("lampless")
     end
 end
 
 -- Bee Boosting
 -- This is a hard opt-in trick, and it can't be done if the player has the Bee Badge
 function beeBoost()
-    return not has("beebadge")
+    return hasAny({ "beeBoost_show", "hell" }) and not has("beebadge");
 end
 
 function cutGrass()
     return hasAny({ "fsword", "boomerang", "bombs", "frod", "irod", "lamp", "boots" });
 end
 
-function has_all_sages()
-    return hasAll({ "dark", "swamp", "skull", "thieves", "turtle", "desert", "ice" });
-end
-
-function does_not_have_all_sages()
-    return not has_all_sages();
-end
-
 -- Can defeat Yuga 1 in Eastern Palace
 function yuga1()
-    if hasAny({ "bow", "bombs" }) or hasAny({ "boomerang", "hookshot" }) then
-        return attack()
+    if has("bow") then
+        return true
+    elseif has("bombs") or (hasAny({ "boomerang", "hookshot" }) and attack()) or hasAll({ "nice_mode", "niceirod" }) then
+        return true_for("hard")
     elseif hasAny({ "irod", "msword" }) then
-        return logic("hell")
+        return true_for("hell")
+    elseif has("niceirod") then
+        return true, AccessibilityLevel.SequenceBreak
     else
         return false
     end
@@ -177,8 +192,8 @@ end
 function hog2F()
     if has("merge") and switch() then
         return true
-    elseif hasAny({ "bow", "boomerang", "hookshot", "bombs", "irod", "msword" }) then
-        return logic("hard")
+    elseif hasAny({ "bow", "boomerang", "hookshot", "bombs", "irod", "msword" }) or hasAll({ "greatspin", "fsword" }) then
+        return true_for("hard")
     else
         return false
     end
@@ -190,24 +205,75 @@ function hog3F()
         if fire_enemy() then
             return fire_enemy()
         else
-            return logic("basic")
+            return true_for("glitched")
         end
     else
         return false
     end
 end
 
--- Can reach Thieves' Hideout B2
-function thB2()
+-- Can open Thieves' Hideout B1 Door
+function thB1DoorOpen()
     if has("merge") and switch() then
         return true
-    elseif hasAll({ "boots", "irod" }) then
-        return logic("basic")
-    elseif hasAny({ "bombs", "irod" }) then
-        return logic("advanced")
-    else
-        return false
+    elseif has("boots") then
+        if hasAny({ "boomerang", "irod" }) then
+            return has("glitched")
+        elseif has("bombs") then
+            return has("hell")
+        end
     end
+    return false
+end
+
+-- Can open Thieves' Hideout B2 Door
+function thB2DoorOpen()
+    if thB1DoorOpen() and has("merge") and hasAny({ "progression_enemies", "bombs" }) then
+        return true
+    elseif (has("merge") or dungeon_escape()) and adv_th_statue_clip() then
+        return has("advanced")
+    elseif has("bombs") then
+        return has("hell")
+    end
+    return false
+end
+
+function thB1B2DoorsOpen()
+    return thB1DoorOpen() and thB2DoorOpen()
+end
+
+-- Can drain the water in Thieves' Hideout B3
+function thDrainWaterB3()
+    if thB1B2DoorsOpen() and hasAll({ "merge", "flippers" }) then
+        return true
+    end
+
+    if has("trod") then
+        if adv_th_statue_clip() then
+            return has("advanced")
+        elseif hell_th_statue_clip() then
+            return has("hell")
+        end
+    end
+
+    return false
+end
+
+--
+function thEscapeEquipment()
+    return has("merge") and thB1B2DoorsOpen() and thDrainWaterB3()
+end
+
+-- Can statue clip OOB in Thieves' Hideout under Adv. Glitched Logic
+function adv_th_statue_clip()
+    return has("merge") and hasAny({ "bow", "boomerang", "irod", "bombs" })
+end
+
+-- Can statue clip OOB in Thieves' Hideout under Hell Logic
+function hell_th_statue_clip()
+    return has("bombs")
+            or (has("msword") and (hasAny({ "merge", "boomerang", "irod", "greatspin" })))
+            or adv_th_statue_clip()
 end
 
 -- Can reach the Thieves' Hideout Escape
@@ -215,7 +281,7 @@ function thEscape()
     if hasAll({ "merge", "flippers" }) and attack() then
         return true
     elseif has("trod") and hasAny({ "bombs", "irod" }) then
-        return logic("advanced")
+        return true_for("advanced")
     else
         return false
     end
@@ -229,9 +295,9 @@ end
 -- Return if we can get OoB on the south wall of Misery Mire
 function miseryMireOoB()
     if has("merge") and boost() then
-        return logic("advanced")
+        return true_for("advanced")
     elseif has("trod") and (hasAny({ "boomerang", "hookshot" }) or shieldRodClip()) then
-        return logic("hell")
+        return true_for("hell")
     else
         return false
     end
@@ -240,7 +306,7 @@ end
 -- Return if we can perform Reverse Desert Palace
 function reverseDP()
     if has("srod") and miseryMireOoB() then
-        return logic("advanced")
+        return true_for("advanced")
     else
         return false
     end
@@ -252,13 +318,51 @@ function enterTR()
         if has("flippers") then
             return true
         elseif fakeFlippers() then
-            return logic("advanced")
+            return true_for("advanced")
         elseif has("boots") then
-            return logic("hell")
+            return true_for("hell")
         end
     end
 
     return false
+end
+
+function barrier_skip()
+    return hasAll({ "merge", "boots", "trod", "bombs" }) and hasAny({ "hookshot", "boomerang" })
+end
+
+function yuga2()
+    return hasAny({ "fsword", "bombs", "frod", "irod", "hammer" })
+end
+
+-- Map the Lorule Castle requirement from a progressive item to a number
+function lc_requirement()
+
+    local requirement
+    if has("lc_requirement_7") then
+        requirement = 7
+    elseif has("lc_requirement_6") then
+        requirement = 6
+    elseif has("lc_requirement_5") then
+        requirement = 5
+    elseif has("lc_requirement_4") then
+        requirement = 4
+    elseif has("lc_requirement_3") then
+        requirement = 3
+    elseif has("lc_requirement_2") then
+        requirement = 2
+    elseif has("lc_requirement_1") then
+        requirement = 1
+    else
+        requirement = 0
+    end
+
+    return count("sage") >= requirement
+end
+
+-- Return if we can enter Lorule Castle, either with Sages or via the Hyrule Castle Portal
+function canEnterLC()
+    return has("merge") and (lc_requirement() or has("yuga"))
 end
 
 -- Return if we can reach Lorule Castle 2F
@@ -266,6 +370,120 @@ function lc2F()
     if attack() then
         return true
     else
-        return logic("hard")
+        return true_for("hard")
     end
+end
+
+-- Map the Yuganon requirement from a progressive item to a number
+function yg_requirement()
+    return true -- Add this back when it's working
+
+    --local requirement
+    --if has("yg_requirement_7") then
+    --    requirement = 7
+    --elseif has("yg_requirement_6") then
+    --    requirement = 6
+    --elseif has("yg_requirement_5") then
+    --    requirement = 5
+    --elseif has("yg_requirement_4") then
+    --    requirement = 4
+    --elseif has("yg_requirement_3") then
+    --    requirement = 3
+    --elseif has("yg_requirement_2") then
+    --    requirement = 2
+    --elseif has("yg_requirement_1") then
+    --    requirement = 1
+    --else
+    --    requirement = 0
+    --end
+    --
+    --return count("sage") >= requirement
+end
+
+-- Returns only if we can reach the final boss, NOT if we can obtain Zelda's check or win the fight
+function can_reach_final_boss()
+    return has("merge") and yg_requirement() and (
+            (has("yuga") and has_amount("courage", 2)) or (
+                    lc_requirement() and (
+                            has("trials_skipped") or hasAll({ "merge", "hookshot" })
+                    )
+            )
+    )
+end
+
+-- Returns only if we can perform Trial's Skip to fight Yuganon, NOT if we can obtain Zelda's check or win the fight
+function can_skip_trials()
+    if lc_requirement() and yg_requirement() and hasAll({ "merge", "sword" }) then
+        if has("bombs") then
+            return true_for("advanced")
+        elseif has("niceirod") then
+            return true, AccessibilityLevel.SequenceBreak
+        end
+    end
+
+    return false
+end
+
+-- Returns if we can logically play tennis with Yuganon
+function can_play_tennis()
+    if has("sword") or hasAll({ "swordless", "net" }) then
+        return true
+    elseif has("net") then
+        return true_for("hard")
+    end
+
+    return false
+end
+
+-- Return if we can reach Zelda in Lorule Castle
+function zelda()
+    if can_reach_final_boss() then
+        return can_play_tennis()
+    elseif can_play_tennis() then
+        return can_skip_trials()
+    else
+        return false
+    end
+end
+
+function countNiceItems()
+    return count("nicebow") +
+            count("niceboomerang") +
+            count("nicehookshot") +
+            count("nicehammer") +
+            count("nicebombs") +
+            count("nicefrod") +
+            count("niceirod") +
+            count("nicetrod") +
+            count("nicesrod")
+end
+
+function maiamaiUpgradeAvailable()
+    if has("maiamai_100") then
+        return 10
+    elseif has("maiamai_90") then
+        return 9
+    elseif has("maiamai_80") then
+        return 8
+    elseif has("maiamai_70") then
+        return 7
+    elseif has("maiamai_60") then
+        return 6
+    elseif has("maiamai_50") then
+        return 5
+    elseif has("maiamai_40") then
+        return 4
+    elseif has("maiamai_30") then
+        return 3
+    elseif has("maiamai_20") then
+        return 2
+    elseif has("maiamai_10") then
+        return 1
+    else
+        return 0
+    end
+end
+
+function canUpgradeItem()
+    return maiamaiUpgradeAvailable() > countNiceItems()
 end

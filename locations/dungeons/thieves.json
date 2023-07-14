@@ -2,9 +2,10 @@
   {
     "name": "Thieves' Hideout",
     "color": "#dde44e",
+    "chest_unopened_img": "images/checks/chest_small_unopened.png",
+    "chest_opened_img": "images/checks/chest_small_opened.png",
     "access_rules": [
-      "merge",
-      "yuga"
+      "merge"
     ],
     "children": [
       {
@@ -19,7 +20,6 @@
         "sections": [
           {
             "name": "B1 Grate Chest",
-            "capture_item": true,
             "hosted_item": "th_chest_01"
           }
         ]
@@ -36,11 +36,11 @@
         "sections": [
           {
             "name": "B1 Jail Cell",
-            "capture_item": true,
             "access_rules": [
+              "{csmc}",
               "merge",
-              "[basic], boots",
-              "[hell], trod, $dungeon_escape"
+              "[glitched], boots",
+              "[hell], $hell_th_statue_clip, trod"
             ],
             "hosted_item": "th_chest_02"
           }
@@ -58,10 +58,11 @@
         "sections": [
           {
             "name": "B2 NW Room",
-            "capture_item": true,
             "hosted_item": "th_chest_03",
             "access_rules": [
-              "$thB2"
+              "$thB1DoorOpen",
+              "[advanced], $adv_th_statue_clip",
+              "[hell], $hell_th_statue_clip"
             ]
           }
         ]
@@ -78,11 +79,10 @@
         "sections": [
           {
             "name": "B2 Jail Cell",
-            "capture_item": true,
             "access_rules": [
-              "$thB2, merge",
-              "[hell], trod, bombs",
-              "[hell], trod, irod"
+              "$thB1B2DoorsOpen, merge",
+              "[advanced], $switch",
+              "[hell], $hell_th_statue_clip, trod"
             ],
             "hosted_item": "th_chest_04"
           }
@@ -101,13 +101,18 @@
           {
             "name": "B2 Eyegores",
             "access_rules": [
-              "$thB2, merge, $attack, $shielded_switch",
-              "[advanced], bombs, trod",
-              "[advanced], bombs, boots",
-              "[advanced], irod, trod",
-              "[advanced], irod, boots"
+              "{csmc, $thB1B2DoorsOpen, merge, $shielded_switch, progression_enemies}",
+              "{csmc, $thB1B2DoorsOpen, merge, $shielded_switch, bombs}",
+              "{hard, csmc, $thB1B2DoorsOpen, merge, $shielded_switch, progression_enemies}",
+              "$thB1B2DoorsOpen, merge, $shielded_switch, progression_enemies, fsword",
+              "$thB1B2DoorsOpen, merge, $shielded_switch, progression_enemies, bow",
+              "$thB1B2DoorsOpen, merge, $shielded_switch, bombs, fsword",
+              "$thB1B2DoorsOpen, merge, $shielded_switch, bombs, bow",
+              "[hard], $thB1B2DoorsOpen, merge, $shielded_switch, progression_enemies, $attack",
+              "[hard], $thB1B2DoorsOpen, merge, $shielded_switch, bombs",
+              "[advanced], $adv_th_statue_clip, boots",
+              "[advanced], $adv_th_statue_clip, trod"
             ],
-            "capture_item": true,
             "hosted_item": "th_chest_05"
           }
         ]
@@ -124,10 +129,11 @@
         "sections": [
           {
             "name": "B2 SE Room",
-            "capture_item": true,
             "hosted_item": "th_chest_06",
             "access_rules": [
-              "$thB2"
+              "$thB1B2DoorsOpen",
+              "[advanced], $adv_th_statue_clip",
+              "[hell], $hell_th_statue_clip"
             ]
           }
         ]
@@ -144,9 +150,16 @@
         "sections": [
           {
             "name": "B3 Underwater",
-            "capture_item": true,
             "access_rules": [
-              "$thB2, $thEscape, merge"
+              "{csmc, merge, $thB1B2DoorsOpen, $attack_normal}",
+              "{hard, csmc, merge, $thB1B2DoorsOpen, $attack}",
+              "{advanced, csmc, boomerang}",
+              "{advanced, csmc, irod}",
+              "{hell, csmc, bombs}",
+              "$thEscapeEquipment, $attack_normal",
+              "[hard], $thEscapeEquipment, $attack",
+              "[advanced], $adv_th_statue_clip, trod",
+              "[hell], $hell_th_statue_clip, trod"
             ],
             "hosted_item": "th_chest_07"
           }
@@ -164,11 +177,12 @@
         "sections": [
           {
             "name": "B3 Big Chest",
-            "capture_item": true,
             "hosted_item": "th_chest_08",
             "access_rules": [
-              "$thB2, $thEscape, merge",
-              "[advanced], $thEscape"
+              "$thEscapeEquipment, $attack_normal",
+              "[hard], $thEscapeEquipment, $attack",
+              "[advanced], $adv_th_statue_clip, trod",
+              "[hell], $hell_th_statue_clip, trod"
             ]
           }
         ]
@@ -186,11 +200,13 @@
           {
             "name": "B1 Behind Wall",
             "access_rules": [
-              "$thB2, $thEscape, merge",
-              "[hell], trod, bombs, $dungeon_escape",
-              "[hell], trod, irod, $dungeon_escape"
+              "{csmc}",
+              "{hell, $hell_th_statue_clip, trod}",
+              "$thEscapeEquipment, $attack_normal",
+              "[hard], $thEscapeEquipment, $attack",
+              "[advanced], $adv_th_statue_clip, trod",
+              "[hell], $hell_th_statue_clip, trod"
             ],
-            "capture_item": true,
             "hosted_item": "th_chest_09"
           }
         ]
@@ -207,11 +223,12 @@
         "sections": [
           {
             "name": "B1 Big Chest",
-            "capture_item": true,
             "access_rules": [
-              "$thB2, $thEscape, merge",
-              "[hell], trod, bombs",
-              "[hell], trod, irod"
+              "{csmc}",
+              "$thEscapeEquipment, $attack_normal",
+              "[hard], $thEscapeEquipment, $attack",
+              "[advanced], $adv_th_statue_clip, trod",
+              "[hell], $hell_th_statue_clip, trod"
             ],
             "hosted_item": "th_chest_10"
           }
@@ -235,9 +252,12 @@
           {
             "name": "Stalblind",
             "access_rules": [
-              "$thB2, $thEscape, merge"
+              "$thEscapeEquipment, merge, $attack_normal",
+              "[hard], $thEscapeEquipment, merge, $attack",
+              "[advanced], $adv_th_statue_clip, trod, $attack",
+              "[hell], $hell_th_statue_clip, trod, $attack"
             ],
-            "capture_item": true,
+            //"capture_item": true,
             "hosted_item": "th_chest_11"
           }
         ]
@@ -254,9 +274,12 @@
         ],
         "sections": [
           {
-            "name": "Sage Osfala",
+            "name": "Prize",
             "access_rules": [
-              "$thB2, $thEscape, merge"
+              "$thEscapeEquipment, merge, $attack_normal",
+              "[hard], $thEscapeEquipment, merge, $attack",
+              "[advanced], $adv_th_statue_clip, trod, $attack",
+              "[hell], $hell_th_statue_clip, trod, $attack"
             ],
             "hosted_item": "thieves"
           }
@@ -268,115 +291,135 @@
           {
             "map": "lorule",
             "x": 324,
-            //442,
             "y": 962,
-            //982,
-            "size": 60
+            "size": 70
           }
         ],
         "sections": [
           {
             "name": "B1 Grate Chest",
-            "capture_item": true,
             "hosted_item": "th_chest_01"
           },
           {
             "name": "B1 Jail Cell",
-            "capture_item": true,
             "hosted_item": "th_chest_02",
             "access_rules": [
+              "{csmc}",
               "merge",
-              "[basic], boots",
-              "[hell], trod, $dungeon_escape"
+              "[glitched], boots",
+              "[hell], $hell_th_statue_clip, trod"
             ]
           },
           {
             "name": "B2 NW Room",
-            "capture_item": true,
             "hosted_item": "th_chest_03",
             "access_rules": [
-              "$thB2"
+              "$thB1DoorOpen",
+              "[advanced], $adv_th_statue_clip",
+              "[hell], $hell_th_statue_clip"
             ]
           },
           {
             "name": "B2 Jail Cell",
-            "capture_item": true,
             "hosted_item": "th_chest_04",
             "access_rules": [
-              "$thB2, merge",
-              "[hell], trod, bombs",
-              "[hell], trod, irod"
+              "$thB1B2DoorsOpen, merge",
+              "[advanced], $switch",
+              "[hell], $hell_th_statue_clip, trod"
             ]
           },
           {
             "name": "B2 Eyegores",
-            "capture_item": true,
             "hosted_item": "th_chest_05",
             "access_rules": [
-              "$thB2, merge, $attack, $shielded_switch",
-              "[advanced], bombs, trod",
-              "[advanced], bombs, boots",
-              "[advanced], irod, trod",
-              "[advanced], irod, boots"
+              "{csmc, $thB1B2DoorsOpen, merge, $shielded_switch, progression_enemies}",
+              "{csmc, $thB1B2DoorsOpen, merge, $shielded_switch, bombs}",
+              "{hard, csmc, $thB1B2DoorsOpen, merge, $shielded_switch, progression_enemies}",
+              "$thB1B2DoorsOpen, merge, $shielded_switch, progression_enemies, fsword",
+              "$thB1B2DoorsOpen, merge, $shielded_switch, progression_enemies, bow",
+              "$thB1B2DoorsOpen, merge, $shielded_switch, bombs, fsword",
+              "$thB1B2DoorsOpen, merge, $shielded_switch, bombs, bow",
+              "[hard], $thB1B2DoorsOpen, merge, $shielded_switch, progression_enemies, $attack",
+              "[hard], $thB1B2DoorsOpen, merge, $shielded_switch, bombs",
+              "[advanced], $adv_th_statue_clip, boots",
+              "[advanced], $adv_th_statue_clip, trod"
             ]
           },
           {
             "name": "B2 SE Room",
-            "capture_item": true,
             "hosted_item": "th_chest_06",
             "access_rules": [
-              "$thB2"
+              "$thB1B2DoorsOpen",
+              "[advanced], $adv_th_statue_clip",
+              "[hell], $hell_th_statue_clip"
             ]
           },
           {
             "name": "B3 Underwater",
-            "capture_item": true,
             "hosted_item": "th_chest_07",
             "access_rules": [
-              "$thB2, $thEscape, merge"
+              "{csmc, merge, $thB1B2DoorsOpen, $attack_normal}",
+              "{hard, csmc, merge, $thB1B2DoorsOpen, $attack}",
+              "{advanced, csmc, boomerang}",
+              "{advanced, csmc, irod}",
+              "{hell, csmc, bombs}",
+              "$thEscapeEquipment, $attack_normal",
+              "[hard], $thEscapeEquipment, $attack",
+              "[advanced], $adv_th_statue_clip, trod",
+              "[hell], $hell_th_statue_clip, trod"
             ]
           },
           {
             "name": "B3 Big Chest",
-            "capture_item": true,
             "hosted_item": "th_chest_08",
             "access_rules": [
-              "$thB2, $thEscape, merge",
-              "[advanced], $thEscape"
+              "$thEscapeEquipment, $attack_normal",
+              "[hard], $thEscapeEquipment, $attack",
+              "[advanced], $adv_th_statue_clip, trod",
+              "[hell], $hell_th_statue_clip, trod"
             ]
           },
           {
             "name": "B1 Behind Wall",
-            "capture_item": true,
             "hosted_item": "th_chest_09",
             "access_rules": [
-              "$thB2, $thEscape, merge",
-              "[hell], trod, bombs, $dungeon_escape",
-              "[hell], trod, irod, $dungeon_escape"
+              "{csmc}",
+              "{hell, $hell_th_statue_clip, trod}",
+              "$thEscapeEquipment, $attack_normal",
+              "[hard], $thEscapeEquipment, $attack",
+              "[advanced], $adv_th_statue_clip, trod",
+              "[hell], $hell_th_statue_clip, trod"
             ]
           },
           {
             "name": "B1 Big Chest",
-            "capture_item": true,
             "hosted_item": "th_chest_10",
             "access_rules": [
-              "$thB2, $thEscape, merge",
-              "[hell], trod, bombs",
-              "[hell], trod, irod"
+              "{csmc}",
+              "$thEscapeEquipment, $attack_normal",
+              "[hard], $thEscapeEquipment, $attack",
+              "[advanced], $adv_th_statue_clip, trod",
+              "[hell], $hell_th_statue_clip, trod"
             ]
           },
           {
             "name": "Stalblind",
-            "capture_item": true,
+            //"capture_item": true,
             "hosted_item": "th_chest_11",
             "access_rules": [
-              "$thB2, $thEscape, merge"
+              "$thEscapeEquipment, merge, $attack_normal",
+              "[hard], $thEscapeEquipment, merge, $attack",
+              "[advanced], $adv_th_statue_clip, trod, $attack",
+              "[hell], $hell_th_statue_clip, trod, $attack"
             ]
           },
           {
-            "name": "Sage Osfala",
+            "name": "Prize",
             "access_rules": [
-              "$thB2, $thEscape, merge"
+              "$thEscapeEquipment, merge, $attack_normal",
+              "[hard], $thEscapeEquipment, merge, $attack",
+              "[advanced], $adv_th_statue_clip, trod, $attack",
+              "[hell], $hell_th_statue_clip, trod, $attack"
             ],
             "hosted_item": "thieves"
           }

@@ -2,6 +2,8 @@
   {
     "name": "House of Gales",
     "color": "#0000FF",
+    "chest_unopened_img": "images/checks/chest_small_unopened.png",
+    "chest_opened_img": "images/checks/chest_small_opened.png",
     "access_rules": [
       "trod, flippers",
       "[advanced], trod, irod, hookshot",
@@ -21,7 +23,6 @@
         "sections": [
           {
             "name": "1F Bubble Room",
-            "capture_item": true,
             "hosted_item": "hog_chest_01",
             "access_rules": [
               "merge, $attack"
@@ -41,7 +42,6 @@
         "sections": [
           {
             "name": "1F NE Room",
-            "capture_item": true,
             "hosted_item": "hog_chest_02",
             "access_rules": [
               "merge",
@@ -62,7 +62,6 @@
         "sections": [
           {
             "name": "1F Torch Chest",
-            "capture_item": true,
             "hosted_item": "hog_chest_03",
             "access_rules": [
               "$fire"
@@ -82,7 +81,6 @@
         "sections": [
           {
             "name": "1F Block Room",
-            "capture_item": true,
             "hosted_item": "hog_chest_04",
             "access_rules": [
               "merge",
@@ -103,9 +101,9 @@
         "sections": [
           {
             "name": "1F Block Room (SW)",
-            "capture_item": true,
             "hosted_item": "hog_chest_05",
             "access_rules": [
+              "{csmc}",
               "merge"
             ]
           }
@@ -123,8 +121,9 @@
         "sections": [
           {
             "name": "2F Narrow Ledge",
-            "capture_item": true,
+            //"capture_item": true,
             "access_rules": [
+              //"{$hog2F}",
               "$hog2F, merge",
               "$hog2F, boomerang",
               "$hog2F, hookshot",
@@ -149,7 +148,7 @@
             "access_rules": [
               "$hog2F, merge"
             ],
-            "capture_item": true,
+            //"capture_item": true,
             "hosted_item": "hog_chest_07"
           }
         ]
@@ -166,7 +165,6 @@
         "sections": [
           {
             "name": "2F Big Chest",
-            "capture_item": true,
             "hosted_item": "hog_chest_08",
             "access_rules": [
               "$hog2F"
@@ -186,9 +184,9 @@
         "sections": [
           {
             "name": "3F Bubble Room",
-            "capture_item": true,
             "hosted_item": "hog_chest_09",
             "access_rules": [
+              "{csmc, $hog3F}",
               "$hog3F, $fire"
             ]
           }
@@ -206,9 +204,9 @@
         "sections": [
           {
             "name": "3F Wind Chest",
-            "capture_item": true,
             "hosted_item": "hog_chest_10",
             "access_rules": [
+              "{csmc, glitched, $hog2F}",
               "$hog3F"
             ]
           }
@@ -226,7 +224,7 @@
         "sections": [
           {
             "name": "3F Margomill",
-            "capture_item": true,
+            //"capture_item": true,
             "hosted_item": "hog_chest_11",
             "access_rules": [
               "$hog3F, $margomill"
@@ -246,7 +244,7 @@
         ],
         "sections": [
           {
-            "name": "Pendant of Wisdom",
+            "name": "Prize",
             "hosted_item": "gales",
             "access_rules": [
               "$hog3F, $margomill"
@@ -261,21 +259,19 @@
             "map": "hyrule",
             "x": 1620,
             "y": 1709,
-            "size": 60
+            "size": 70
           }
         ],
         "sections": [
           {
             "name": "1F Bubble Room",
-            "capture_item": true,
             "hosted_item": "hog_chest_01",
             "access_rules": [
               "merge, $attack"
             ]
           },
           {
-            "name": "1F Torch Chest         ",
-            "capture_item": true,
+            "name": "1F Torch Chest",
             "hosted_item": "hog_chest_03",
             "access_rules": [
               "$fire"
@@ -283,7 +279,6 @@
           },
           {
             "name": "1F NE Room",
-            "capture_item": true,
             "hosted_item": "hog_chest_02",
             "access_rules": [
               "merge",
@@ -292,7 +287,6 @@
           },
           {
             "name": "1F Block Room",
-            "capture_item": true,
             "hosted_item": "hog_chest_04",
             "access_rules": [
               "merge",
@@ -301,17 +295,18 @@
           },
           {
             "name": "1F Block Room (SW)",
-            "capture_item": true,
             "hosted_item": "hog_chest_05",
             "access_rules": [
+              "{csmc}",
               "merge"
             ]
           },
           {
             "name": "2F Narrow Ledge",
-            "capture_item": true,
+            //"capture_item": true,
             "hosted_item": "hog_chest_06",
             "access_rules": [
+              //"{$hog2F}",
               "$hog2F, merge",
               "$hog2F, boomerang",
               "$hog2F, hookshot",
@@ -320,15 +315,14 @@
           },
           {
             "name": "2F Big Chest",
-            "capture_item": true,
             "hosted_item": "hog_chest_08",
             "access_rules": [
               "$hog2F"
             ]
           },
           {
-            "name": "2F Fire Ring             ",
-            "capture_item": true,
+            "name": "2F Fire Ring",
+            //"capture_item": true,
             "hosted_item": "hog_chest_07",
             "access_rules": [
               "$hog2F, merge"
@@ -336,30 +330,30 @@
           },
           {
             "name": "3F Bubble Room",
-            "capture_item": true,
             "hosted_item": "hog_chest_09",
             "access_rules": [
+              "{csmc, $hog3F}",
               "$hog3F, $fire"
             ]
           },
           {
             "name": "3F Wind Chest",
-            "capture_item": true,
             "hosted_item": "hog_chest_10",
             "access_rules": [
+              "{csmc, glitched, $hog2F}",
               "$hog3F"
             ]
           },
           {
-            "name": "3F Margomill           ",
-            "capture_item": true,
+            "name": "3F Margomill",
+            //"capture_item": true,
             "hosted_item": "hog_chest_11",
             "access_rules": [
               "$hog3F, $margomill"
             ]
           },
           {
-            "name": "Pendant of Wisdom",
+            "name": "Prize",
             "hosted_item": "gales",
             "access_rules": [
               "$hog3F, $margomill"

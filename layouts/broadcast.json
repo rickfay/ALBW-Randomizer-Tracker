@@ -1,7 +1,32 @@
 {
   "tracker_broadcast": {
-    "type": "layout",
-    //"width": 355,
-    "key": "item_grid"
+    "type": "array",
+    "dropshadow": true,
+    "content": [
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "content": [
+          {
+            "type": "layout",
+            "key": "item_grid"
+          },
+//          {
+//            "type": "container",
+//            "margin": "0,5,0,0",
+//            "content": {
+//              "type": "recentpins",
+//              "width": "236",
+//              "h_alignment": "stretch",
+//              "v_alignment": "center",
+//              "orientation": "vertical",
+//              "max_width": 330,
+//              "compact": true,
+//              "num_items": 1
+//            }
+//          }
+        ]
+      }
+    ]
   }
 }

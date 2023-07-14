@@ -1,0 +1,65 @@
+{
+  "tracker_settings": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Display",
+        "content": {
+          "type": "itemgrid",
+          "dropshadow": true,
+          "item_size": "40",
+          "v_alignment": "top",
+          "rows": [
+            [
+              "csmc",
+              "minigames_enabled",
+              "beeBoost_hide",
+              "maiamai_map"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Seed Settings",
+        "content": {
+          "type": "itemgrid",
+          "dropshadow": true,
+          "item_size": "256",
+          "item_margin": "0,0,0,-224",
+          "margin": "0",
+          "h_alignment": "center",
+          "v_alignment": "top",
+          "rows": [
+            [
+              "logic"
+            ],
+            [
+              "lc_requirement"
+            ],
+//            [
+//              "yg_requirement"
+//            ],
+            [
+              "ped_requirement_4"
+            ],
+            [
+              "ssl"
+            ],
+            [
+              "nice_mode"
+            ],
+            [
+              "progression_enemies"
+            ],
+            [
+              "trials_normal"
+            ],
+            [
+              "lampless"
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

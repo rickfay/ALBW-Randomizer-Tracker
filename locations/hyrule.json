@@ -1,1385 +1,1609 @@
 [
   {
-    "name": "Lost Woods",
+    "name": "Hyrule Overworld",
+    "chest_unopened_img": "images/checks/chest_small_unopened.png",
+    "chest_opened_img": "images/checks/chest_small_opened.png",
+
     "children": [
       {
         "name": "Lost Woods",
-        "map_locations": [
+        "children": [
           {
-            "map": "hyrule",
-            "x": 354,
-            "y": 256
-          }
-        ],
-        "sections": [
-          {
-            "name": "Big Rock Chest",
-            "capture_item": true,
-            "access_rules": [
-              "titansmitt",
-              "[basic], boomerang, $escape",
-              "[basic], hookshot, $escape",
-              "[advanced], hookshot",
-              "[advanced], boomerang"
+            "name": "Lost Woods",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 354,
+                "y": 256
+              }
             ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Lost Woods",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 231,
-            "y": 227
-          }
-        ],
-        "sections": [
-          {
-            "name": "Merge Alcove",
-            "capture_item": true,
-            "access_rules": [
-              "{}",
-              "merge",
-              "[basic], boomerang, $escape",
-              "[basic], hookshot, $escape",
-              "[advanced], boomerang",
-              "[advanced], hookshot"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Lost Woods",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 142,
-            "y": 149
-          }
-        ],
-        "sections": [
-          {
-            "name": "Master Sword Pedestal",
-            "access_rules": [
-              "eastern, gales, hera"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Rosso's House",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 700,
-            "y": 146
-          }
-        ],
-        "sections": [
-          {
-            "name": "Crooked Chest",
-            "chest_unopened_img": "images/chest_crooked_unopened.png",
-            "chest_opened_img": "images/chest_crooked_opened.png",
-            "item_count": 1
+            "sections": [
+              {
+                "name": "Big Rock Chest",
+                "capture_item": true,
+                "access_rules": [
+                  "{csmc}",
+                  "{hell, boomerang}",
+                  "{hell, not_nice_mode, hookshot}",
+                  "titansmitt",
+                  "[hell], boomerang",
+                  "[hell], not_nice_mode, hookshot"
+                ],
+                "item_count": 1
+              }
+            ]
           },
           {
-            "name": "Smash Rosso's Pet Rocks",
-            "access_rules": [
-              "powerglove"
+            "name": "Lost Woods",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 231,
+                "y": 227
+              }
             ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Rosso Cave",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 696,
-            "y": 74
-          }
-        ],
-        "sections": [
-          {
-            "name": "",
-            "access_rules": [
-              "hammer",
-              "[basic], boomerang",
-              "[basic], hookshot",
-              "[advanced], shield, trod",
-              "[hell], srod"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Hyrule Fortune-Teller",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 438,
-            "y": 672
-          }
-        ],
-        "sections": [
-          {
-            "name": "",
-            "item_count": 1
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Death Mountain",
-    "access_rules": [
-      "powerglove",
-      "[basic]"
-    ],
-    "children": [
-      {
-        "name": "Death Mountain",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 888,
-            "y": 353
-          }
-        ],
-        "sections": [
-          {
-            "name": "Bomb Cave",
-            "access_rules": [
-              "merge, bombs"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Death Mountain",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 985,
-            "y": 353
-          }
-        ],
-        "sections": [
-          {
-            "name": "Cave Left of Weather Vane",
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Bouldering Guy",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1695,
-            "y": 227
-          }
-        ],
-        "sections": [
-          {
-            "name": "Trade Premium Milk",
-            "access_rules": [
-              "milk, hookshot, merge",
-              "[advanced], bottle, milk, hookshot, trod, boots",
-              "[advanced], bluemail, milk, hookshot, trod, boots"
-              //"[hell], milk, hookshot, trod, boots"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Death Mountain",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1193,
-            "y": 385
-          }
-        ],
-        "sections": [
-          {
-            "name": "Fairy Cave",
-            "access_rules": [
-              "merge, hammer",
-              "merge, bombs",
-              "[advanced], bluemail, $boost, hammer",
-              "[advanced], bottle, $boost, hammer",
-              "[advanced], bluemail, $boost, bombs",
-              "[advanced], bottle, $boost, bombs"
-              //"[hell], frod, hammer",
-              //"[hell], bombs"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Death Mountain",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1025,
-            "y": 251
-          }
-        ],
-        "sections": [
-          {
-            "name": "Ledge Chest",
-            "access_rules": [
-              "merge",
-              "[advanced], bottle",
-              "[advanced], bluemail"
-              //              "[hell], hammer",
-              //              "[hell], bombs",
-              //              "[hell], trod"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Death Mountain",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1043,
-            "y": 334
-          }
-        ],
-        "sections": [
-          {
-            "name": "First Cave Peg Chest",
-            "access_rules": [
-              "merge, hammer",
-              "[advanced], bottle, hammer",
-              "[advanced], bluemail, hammer"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Death Mountain",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 963,
-            "y": 173
-          }
-        ],
-        "sections": [
-          {
-            "name": "Third Cave Chest",
-            "access_rules": [
-              "merge",
-              "[advanced], bottle",
-              "[advanced], bluemail"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Death Mountain",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1025,
-            "y": 51
-          }
-        ],
-        "sections": [
-          {
-            "name": "Spectacle Rock",
-            "access_rules": [
-              "merge",
-              "[advanced], bottle",
-              "[advanced], bluemail"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Death Mountain",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1625,
-            "y": 79
+            "sections": [
+              {
+                "name": "Alcove",
+                "capture_item": true,
+                "access_rules": [
+                  //"{}",
+                  "{glitched, boomerang}",
+                  "{glitched, not_nice_mode, hookshot}",
+                  "merge",
+                  "[glitched], boomerang, $escape",
+                  "[glitched], not_nice_mode, hookshot, $escape",
+                  "[hell], boomerang",
+                  "[hell], not_nice_mode, hookshot"
+                ],
+                "item_count": 1
+              }
+            ]
           },
           {
-            "map": "lorule",
-            "x": 1625,
-            "y": 79
-          }
-        ],
-        "sections": [
-          {
-            "name": "Floating Island",
-            "access_rules": [
-              "{merge, hookshot}",
-              "{advanced, bottle, hookshot}",
-              "{advanced, bluemail, hookshot}",
-              "merge, hookshot, trod"
+            "name": "Lost Woods",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 142,
+                "y": 149
+              }
             ],
-            "capture_item": true,
-            "item_count": 1
+            "sections": [
+              {
+                "name": "Master Sword Pedestal",
+                "access_rules": [
+                  "ped_requirement_4, power, wisdom, courage:2",
+                  "ped_requirement_3, power, wisdom, courage:1",
+                  "ped_requirement_2, power, wisdom",
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Rosso's House",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 680,
+                "y": 146
+              }
+            ],
+            "sections": [
+              {
+                "name": "Crooked Chest (Rosso)",
+                "chest_unopened_img": "images/checks/chest_crooked_unopened.png",
+                "chest_opened_img": "images/checks/chest_crooked_opened.png",
+                "access_rules": [
+                  "ssl_off, courage:2",
+                  "ssl, rosso"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Rosso's House",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 720,
+                "y": 146
+              }
+            ],
+            "sections": [
+              {
+                "name": "Smash Rosso's Pet Rocks",
+                "access_rules": [
+                  "ssl_off, courage:2, powerglove",
+                  "ssl, rosso, powerglove"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Rosso Cave",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 696,
+                "y": 74
+              }
+            ],
+            "sections": [
+              {
+                "name": "",
+                "access_rules": [
+                  "hammer",
+                  "[glitched], boomerang",
+                  "[glitched], not_nice_mode, hookshot",
+                  "[advanced], not_nice_mode, shield, trod"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Hyrule Fortune-Teller",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 438,
+                "y": 672
+              }
+            ],
+            "sections": [
+              {
+                "name": "",
+                "item_count": 1
+              }
+            ]
           }
         ]
       },
       {
         "name": "Death Mountain",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1878,
-            "y": 168
-          }
-        ],
-        "sections": [
-          {
-            "name": "Treasure Dungeon",
-            "access_rules": [
-              "merge, hookshot"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Death Mountain",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1718,
-            "y": 176
-          }
-        ],
-        "sections": [
-          {
-            "name": "Fire Cave Pillar",
-            "capture_item": true,
-            "access_rules": [
-              "merge, hookshot, hammer"
-            ],
-            "item_count": 1
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Sanctuary + Zora's River",
-    "children": [
-      {
-        "name": "Sanctuary",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 948,
-            "y": 630
-          }
-        ],
-        "sections": [
-          {
-            "name": "Dampé",
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Sanctuary",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1147,
-            "y": 652
-          }
-        ],
         "access_rules": [
-          "fsword",
           "powerglove",
-          "lamp",
-          "frod",
-          "bombs",
-          "irod",
-          "boots"
-        ],
-        "sections": [
-          {
-            "name": "Entry Chest",
-            "item_count": 1
-          },
-          {
-            "name": "Lower Chest",
-            "access_rules": [
-              "lamp",
-              "$lampless, frod"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Upper Chest",
-            "access_rules": [
-              "lamp",
-              "$lampless, frod"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Ledge",
-            "capture_item": true,
-            "access_rules": [
-              "{lamp}",
-              "{$lampless, frod}",
-              "lamp, merge",
-              "$lampless, frod, merge"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Graveyard Ledge",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1162,
-            "y": 580
-          },
-          {
-            "map": "lorule",
-            "x": 1134,
-            "y": 578
-          }
-        ],
-        "sections": [
-          {
-            "name": "Cave",
-            "capture_item": true,
-            "access_rules": [
-              "merge, lamp, bombs",
-              "merge, frod, $lampless, bombs"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Sanctuary",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1350,
-            "y": 586
-          }
-        ],
-        "sections": [
-          {
-            "name": "Treasure Dungeon",
-            "access_rules": [
-              "bombs, merge"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Sanctuary",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 836,
-            "y": 660
-          }
-        ],
-        "sections": [
-          {
-            "name": "Peg Chest",
-            "access_rules": [
-              "hammer"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Zora's Domain",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1826,
-            "y": 668
-          }
-        ],
-        "sections": [
-          {
-            "name": "Ledge Chest",
-            "access_rules": [
-              "merge"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Zora's Domain",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1848,
-            "y": 551
-          }
-        ],
-        "sections": [
-          {
-            "name": "Waterfall Cave",
-            "capture_item": true,
-            "access_rules": [
-              "flippers",
-              "[basic], merge",
-              "[advanced], $fakeFlippers",
-              "[hell], $beeBoost"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Zora's Domain",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1804,
-            "y": 300
-          }
-        ],
-        "sections": [
-          {
-            "name": "Throw Smooth Gem",
-            "access_rules": [
-              "merge, smoothgem",
-              "[hell], smoothgem, $beeBoost"
-            ],
-            "item_count": 1
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Kakariko Village",
-    "children": [
-      {
-        "name": "Milk Bar",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 353,
-            "y": 1170
-          }
-        ],
-        "sections": [
-          {
-            "name": "Trade Letter in a Bottle",
-            "access_rules": [
-              "letter"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Stylish Woman",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 226,
-            "y": 1078
-          },
-          {
-            "map": "lorule",
-            "x": 236,
-            "y": 1084
-          }
-        ],
-        "sections": [
-          {
-            "name": "Enter from Lorule",
-            "access_rules": [
-              "merge"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Bee Guy",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 351,
-            "y": 1074
-          }
-        ],
-        "sections": [
-          {
-            "name": "Have a Bottle",
-            "access_rules": [
-              "bottle"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Trade Golden Bee",
-            "access_rules": [
-              "bottle, goldenbee",
-              "[hell], bottle, net"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Cucco Minigame",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 379,
-            "y": 1437
-          }
-        ],
-        "sections": [
-          {
-            "name": "Rooster Prize",
-            "item_count": 1,
-            "visibility_rules": [
-              "minigames_enabled"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Item Shop",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 142,
-            "y": 934
-          },
-          {
-            "map": "hyrule",
-            "x": 1318,
-            "y": 1592
-          }
-        ],
-        "sections": [
-          {
-            "name": "Scoot Fruit (50)",
-            "hosted_item": "scoot"
-          }
-        ]
-      },
-      {
-        "name": "Kakariko Village",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 300,
-            "y": 853
-          }
-        ],
-        "sections": [
-          {
-            "name": "Jail Cell",
-            "access_rules": [
-              "merge"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Street Merchant",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 216,
-            "y": 959
-          }
-        ],
-        "sections": [
-          {
-            "name": "Left (100)",
-            "chest_opened_img": "images/soldout.png",
-            "capture_item": true,
-            "item_count": 1
-          },
-          {
-            "name": "Right (200)",
-            "chest_opened_img": "images/soldout.png",
-            "capture_item": true,
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Shady Guy",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 377,
-            "y": 915
-          }
-        ],
-        "sections": [
-          {
-            "name": "",
-            "access_rules": [
-              "merge",
-              "boots"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Kakariko Well",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 91,
-            "y": 883
-          }
-        ],
-        "sections": [
-          {
-            "name": "Jump into Well",
-            "capture_item": true,
-            "access_rules": [
-              "powerglove",
-              "[hard]"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Kakariko Well",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 131,
-            "y": 883
-          }
-        ],
-        "sections": [
-          {
-            "name": "Cave Chest",
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Rupee Rush",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 221,
-            "y": 1473
-          }
-        ],
-        "sections": [
-          {
-            "name": "Score 100+",
-            "item_count": 1,
-            "visibility_rules": [
-              "minigames_enabled"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Hyrule Castle Area",
-    "children": [
-      {
-        "name": "Ravio's Shop",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1105,
-            "y": 1377
-          }
-        ],
-        "sections": [
-          {
-            "name": "Ravio 1 (100)      ",
-            "capture_item": true,
-            "chest_opened_img": "images/soldout.png",
-            "item_count": 1
-          },
-          {
-            "name": "Ravio 2 (50)         ",
-            "capture_item": true,
-            "chest_opened_img": "images/soldout.png",
-            "item_count": 1
-          },
-          {
-            "name": "Ravio 3 (20/50)",
-            "capture_item": true,
-            "chest_opened_img": "images/soldout.png",
-            "item_count": 1
-          },
-          {
-            "name": "Ravio 4 (50)        ",
-            "capture_item": true,
-            "chest_opened_img": "images/soldout.png",
-            "item_count": 1
-          },
-          {
-            "name": "Ravio 5 (10/50)    ",
-            "capture_item": true,
-            "chest_opened_img": "images/soldout.png",
-            "item_count": 1
-          },
-          {
-            "name": "Ravio 6 (50)",
-            "capture_item": true,
-            "chest_opened_img": "images/soldout.png",
-            "access_rules": [
-              "{}",
-              "thieves"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Ravio 7 (20/50)   ",
-            "capture_item": true,
-            "chest_opened_img": "images/soldout.png",
-            "item_count": 1
-          },
-          {
-            "name": "Ravio 8 (50)         ",
-            "capture_item": true,
-            "chest_opened_img": "images/soldout.png",
-            "item_count": 1
-          },
-          {
-            "name": "Ravio 9 (100)",
-            "capture_item": true,
-            "chest_opened_img": "images/soldout.png",
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Hyrule Blacksmith",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 644,
-            "y": 1056
-          }
-        ],
-        "sections": [
-          {
-            "name": "Give 2 Master Ore",
-            "access_rules": [
-              "masterore:2"
-            ],
-            "hosted_item": "blacksmith"
-            //"item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Hyrule Blacksmith",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 657,
-            "y": 985
-          }
-        ],
-        "sections": [
-          {
-            "name": "Behind House",
-            "capture_item": true,
-            "access_rules": [
-              "{}",
-              "merge",
-              "[basic], $boost",
-              "[hell], $beeBoost"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Hyrule Blacksmith",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 670,
-            "y": 1136
-          }
-        ],
-        "sections": [
-          {
-            "name": "Big Rock Cave",
-            "capture_item": true,
-            "access_rules": [
-              "titansmitt",
-              "[basic], $boost",
-              "[hell], $beeBoost"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Hyrule Castle",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1209,
-            "y": 860
-          }
-        ],
-        "sections": [
-          {
-            "name": "Rock Circle",
-            "capture_item": true,
-            "access_rules": [
-              "{}",
-              "powerglove"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Haunted Grove",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 660,
-            "y": 1396
-          }
-        ],
-        "sections": [
-          {
-            "name": "Tree Stump",
-            "access_rules": [
-              "eastern"
-            ],
-            "item_count": 1
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Eastern Ruins",
-    "children": [
-      //      {
-      //        "name": "Irene Trigger",
-      //        "map_locations": [
-      //          {
-      //            "map": "hyrule",
-      //            "x": 1403,
-      //            "y": 1403
-      //          },
-      //          {
-      //            "map": "hyrule",
-      //            "x": 718,
-      //            "y": 742
-      //          },
-      //          {
-      //            "map": "hyrule",
-      //            "x": 536,
-      //            "y": 671
-      //          }
-      //        ],
-      //        "sections": [
-      //          {
-      //            "access_rules": [
-      //              "eastern"
-      //            ],
-      //            "item_count": 1
-      //          }
-      //        ]
-      //      },
-      {
-        "name": "Eastern Ruins",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1918,
-            "y": 944
-          }
-        ],
-        "sections": [
-          {
-            "name": "Bomb Cave",
-            "capture_item": true,
-            "access_rules": [
-              "{}",
-              "bombs, merge"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Eastern Ruins",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1948,
-            "y": 1448
-          }
-        ],
-        "sections": [
-          {
-            "name": "Peg Circle",
-            "capture_item": true,
-            "access_rules": [
-              "{}",
-              "hammer",
-              "[basic], boomerang",
-              "[basic], hookshot",
-              "[advanced], trod",
-              "[hell], srod"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Under the Bridge",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1403,
-            "y": 1403
-          }
-        ],
-        "sections": [
-          {
-            "name": "Bird Lover",
-            "access_rules": [
-              "flippers"
-            ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Eastern Ruins Gated Area",
-        "access_rules": [
-          "merge",
-          "bow",
-          "hookshot",
-          "boomerang",
-          "bombs",
-          "irod",
-          "[hard], powerglove"
+          "bell, wv_death_hyrule",
+          // TODO
+          "bell, wv_hera",
+          "[glitched]"
         ],
         "children": [
           {
-            "name": "Eastern Ruins",
+            "name": "Death Mountain",
             "map_locations": [
               {
                 "map": "hyrule",
-                "x": 1729,
-                "y": 837
+                "x": 888,
+                "y": 353
               }
             ],
             "sections": [
               {
-                "name": "Armos Chest",
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Eastern Ruins",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 1729,
-                "y": 916
-              }
-            ],
-            "sections": [
-              {
-                "name": "Hookshot Chest",
+                "name": "Bomb Cave",
                 "access_rules": [
-                  "hookshot"
+                  "{csmc, powerglove}",
+                  "{csmc, glitched}",
+                  "merge, bombs"
                 ],
                 "item_count": 1
               }
             ]
           },
           {
-            "name": "Eastern Ruins",
+            "name": "Death Mountain",
             "map_locations": [
               {
                 "map": "hyrule",
-                "x": 1812,
-                "y": 811
+                "x": 985,
+                "y": 353
               }
             ],
             "sections": [
               {
-                "name": "Merge Chest",
+                "name": "Cave Left of Weather Vane",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Bouldering Guy",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1695,
+                "y": 227
+              }
+            ],
+            "sections": [
+              {
+                "name": "Trade Premium Milk",
+                "access_rules": [
+                  "bottle_milk_premium, hookshot, merge",
+                  "[advanced], bottle_1, bottle_milk_premium, hookshot, trod, boots",
+                  "[advanced], bluemail, bottle_milk_premium, hookshot, trod, boots"
+                  //"[hell], bottle_milk_premium, hookshot, trod, boots"
+                ],
+                "hosted_item": "bottles",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Death Mountain",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1193,
+                "y": 385
+              }
+            ],
+            "sections": [
+              {
+                "name": "Fairy Cave",
+                "access_rules": [
+                  "{csmc, powerglove, merge}",
+                  "{csmc, glitched, merge}",
+
+                  "{csmc, advanced, bluemail, $boost}",
+                  "{csmc, advanced, bluemail, hookshot}",
+                  "{csmc, advanced, bluemail, boomerang}",
+
+                  "{csmc, advanced, bottle_1, $boost}",
+                  "{csmc, advanced, bottle_1, hookshot}",
+                  "{csmc, advanced, bottle_1, boomerang}",
+
+                  "merge, hammer",
+                  "merge, bombs",
+
+                  "[advanced], bluemail, $boost, hammer",
+                  "[advanced], bluemail, boomerang, hammer",
+                  "[advanced], bluemail, hookshot, hammer",
+
+                  "[advanced], bottle_1, $boost, hammer",
+                  "[advanced], bottle_1, boomerang, hammer",
+                  "[advanced], bottle_1, hookshot, hammer",
+
+                  "[advanced], bluemail, $boost, bombs",
+                  "[advanced], bluemail, boomerang, bombs",
+                  "[advanced], bluemail, hookshot, bombs",
+
+                  "[advanced], bottle_1, $boost, bombs",
+                  "[advanced], bottle_1, boomerang, bombs",
+                  "[advanced], bottle_1, hookshot, bombs"
+
+                  //"[hell], frod, hammer",
+                  //"[hell], bombs"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Death Mountain",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1025,
+                "y": 251
+              }
+            ],
+            "sections": [
+              {
+                "name": "Ledge Chest",
                 "access_rules": [
                   "merge",
-                  "[basic], trod",
-                  "[basic], frod",
-                  "[basic], nicebombs",
-                  "[hell], bombs"
+                  "[advanced], bottle_1",
+                  "[advanced], bluemail"
+                  //              "[hell], hammer",
+                  //              "[hell], bombs",
+                  //              "[hell], trod"
                 ],
                 "item_count": 1
               }
             ]
           },
           {
-            "name": "Eastern Ruins",
+            "name": "Donkey Cave",
             "map_locations": [
               {
                 "map": "hyrule",
-                "x": 1632,
-                "y": 925
+                "x": 1043,
+                "y": 334
+              }
+            ],
+            "sections": [
+              {
+                "name": "Peg Chest",
+                "access_rules": [
+                  "{csmc, powerglove}",
+                  "{csmc, glitched}",
+                  "merge, hammer",
+                  "[advanced], bottle_1, hammer",
+                  "[advanced], bluemail, hammer"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Death Mountain",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 963,
+                "y": 173
+              }
+            ],
+            "sections": [
+              {
+                "name": "Third Cave Chest",
+                "access_rules": [
+                  "merge",
+                  "[advanced], bottle_1",
+                  "[advanced], bluemail"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Death Mountain",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1025,
+                "y": 51
+              }
+            ],
+            "sections": [
+              {
+                "name": "Spectacle Rock",
+                "access_rules": [
+                  "merge",
+                  "[advanced], bottle_1",
+                  "[advanced], bluemail"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Death Mountain",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1625,
+                "y": 79
+              },
+              {
+                "map": "lorule",
+                "x": 1625,
+                "y": 79
+              }
+            ],
+            "sections": [
+              {
+                "name": "Floating Island",
+                "access_rules": [
+                  //"{merge, hookshot}",
+                  //"{advanced, bottle_1, hookshot}",
+                  //"{advanced, bluemail, hookshot}",
+                  "merge, hookshot, trod"
+                ],
+                //"capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Death Mountain",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1878,
+                "y": 168
               }
             ],
             "sections": [
               {
                 "name": "Treasure Dungeon",
                 "access_rules": [
-                  "merge"
+                  "merge, hookshot"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Death Mountain",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1718,
+                "y": 176
+              }
+            ],
+            "sections": [
+              {
+                "name": "Fire Cave Pillar",
+                //"capture_item": true,
+                "access_rules": [
+                  "merge, hookshot, hammer"
                 ],
                 "item_count": 1
               }
             ]
           }
         ]
-      }
-    ]
-  },
-  {
-    "name": "Southern Ruins",
-    "children": [
+      },
       {
-        "name": "Southern Ruins",
-        "map_locations": [
+        "name": "Sanctuary + Zora's River",
+        "children": [
           {
-            "map": "hyrule",
-            "x": 835,
-            "y": 1770
-          }
-        ],
-        "sections": [
-          {
-            "name": "West Ledge Chest",
-            "access_rules": [
-              "merge"
+            "name": "Sanctuary",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 948,
+                "y": 630
+              }
             ],
-            "item_count": 1
+            "sections": [
+              {
+                "name": "Dampé",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Sanctuary",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1147,
+                "y": 652,
+                "size": 70
+              }
+            ],
+            "access_rules": [
+              "fsword",
+              "powerglove",
+              "lamp",
+              "frod",
+              "bombs",
+              "irod",
+              "boots"
+            ],
+            "sections": [
+              {
+                "name": "Entry Chest",
+                "item_count": 1
+              },
+              {
+                "name": "Lower Chest",
+                "access_rules": [
+                  "lamp",
+                  "$lampless, frod"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Upper Chest",
+                "access_rules": [
+                  "lamp",
+                  "$lampless, frod"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Ledge",
+                //"capture_item": true,
+                "access_rules": [
+                  //"{lamp}",
+                  //"{$lampless, frod}",
+                  "lamp, merge",
+                  "$lampless, frod, merge"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Graveyard Ledge",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1162,
+                "y": 580
+              },
+              {
+                "map": "lorule",
+                "x": 1134,
+                "y": 578
+              }
+            ],
+            "sections": [
+              {
+                "name": "Cave",
+                //"capture_item": true,
+                "access_rules": [
+                  "merge, lamp, bombs",
+                  "merge, frod, $lampless, bombs"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Sanctuary",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1350,
+                "y": 586
+              }
+            ],
+            "sections": [
+              {
+                "name": "Treasure Dungeon",
+                "access_rules": [
+                  "{csmc, bombs}",
+                  "bombs, merge"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Sanctuary",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 836,
+                "y": 660
+              }
+            ],
+            "sections": [
+              {
+                "name": "Peg Chest",
+                "access_rules": [
+                  "{csmc}",
+                  "hammer"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Zora's Domain",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1826,
+                "y": 668
+              }
+            ],
+            "sections": [
+              {
+                "name": "Ledge Chest",
+                "access_rules": [
+                  "{csmc, flippers}",
+                  "{csmc, hell, $beeBoost}",
+                  "merge"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Zora's Domain",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1804,
+                "y": 358
+              }
+            ],
+            "sections": [
+              {
+                "name": "Bump into Shady Guy",
+                "access_rules": [
+                  "ssl_off, merge",
+                  "ssl, oren, merge",
+                  "[hell], ssl_off, $beeBoost",
+                  "[hell], ssl, oren, $beeBoost"
+                ],
+                "hosted_item": "shadyguy",
+                "item_count": 0
+              }
+            ]
+          },
+          {
+            "name": "Zora's Domain",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1848,
+                "y": 551
+              }
+            ],
+            "sections": [
+              {
+                "name": "Waterfall Cave",
+                //"capture_item": true,
+                "access_rules": [
+                  "flippers",
+                  "[glitched], merge",
+                  "[advanced], $fakeFlippers",
+                  "[hell], $beeBoost"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Zora's Domain",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1804,
+                "y": 300
+              }
+            ],
+            "sections": [
+              {
+                "name": "Throw Smooth Gem",
+                "access_rules": [
+                  "ssl_off, merge, smoothgem",
+                  "ssl, oren, merge, smoothgem",
+                  "[hell], ssl_off, smoothgem, $beeBoost",
+                  "[hell], ssl, oren, smoothgem, $beeBoost"
+                ],
+                "item_count": 1
+              }
+            ]
           }
         ]
       },
       {
-        "name": "Runaway Item Seller",
-        "map_locations": [
+        "name": "Kakariko Village",
+        "children": [
           {
-            "map": "hyrule",
-            "x": 1070,
-            "y": 1573
-          }
-        ],
-        "sections": [
-          {
-            "name": "Give Scoot Fruit",
-            "access_rules": [
-              "bombs, scoot"
+            "name": "Milk Bar",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 353,
+                "y": 1170
+              }
             ],
-            "item_count": 1
+            "sections": [
+              {
+                "name": "Trade Letter in a Bottle",
+                "hosted_item": "bottle_milk_premium",
+                "access_rules": [
+                  "bottle_letter"
+                ],
+                "item_count": 0
+              }
+            ]
+          },
+          {
+            "name": "Stylish Woman",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 226,
+                "y": 1078
+              },
+              {
+                "map": "lorule",
+                "x": 236,
+                "y": 1084
+              }
+            ],
+            "sections": [
+              {
+                "name": "Enter from Lorule",
+                "access_rules": [
+                  "merge"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Woman's House",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 444,
+                "y": 967
+              }
+            ],
+            "sections": [
+              {
+                "name": "Exterminate Roof Maiamai",
+                "access_rules": [
+                  "glove"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Bee Guy",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 331,
+                "y": 1074
+              }
+            ],
+            "sections": [
+              {
+                "name": "Have an Empty Bottle",
+                "access_rules": [
+                  "bottle_1"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Bee Guy",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 371,
+                "y": 1074
+              }
+            ],
+            "sections": [
+              {
+                "name": "Trade Golden Bee",
+                "access_rules": [
+                  "bottle_bee_golden",
+                  "[hell], bottle_1, net"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Cucco Minigame",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 379,
+                "y": 1437
+              }
+            ],
+            "sections": [
+              {
+                "name": "Rooster Prize",
+                "item_count": 1,
+                "visibility_rules": [
+                  "minigames_enabled"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Item Shop",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 142,
+                "y": 934
+              },
+              {
+                "map": "hyrule",
+                "x": 1318,
+                "y": 1592
+              }
+            ],
+            "sections": [
+              {
+                "name": "Scoot Fruit (50)",
+                "hosted_item": "scoot"
+              }
+            ]
+          },
+          {
+            "name": "Kakariko Village",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 300,
+                "y": 853
+              }
+            ],
+            "sections": [
+              {
+                "name": "Jail Cell",
+                "access_rules": [
+                  "{csmc}",
+                  "merge"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Street Merchant",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 196,
+                "y": 959
+              }
+            ],
+            "sections": [
+              {
+                "name": "Left (100)",
+                "chest_opened_img": "images/checks/soldout.png",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Street Merchant",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 236,
+                "y": 959
+              }
+            ],
+            "sections": [
+              {
+                "name": "Right (200)",
+                "chest_opened_img": "images/checks/soldout.png",
+                "capture_item": true,
+                "access_rules": [
+                  "shadyguy"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Kakariko Village",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 377,
+                "y": 915
+              }
+            ],
+            "sections": [
+              {
+                "name": "Shady Guy",
+                "access_rules": [
+                  "shadyguy, merge",
+                  "shadyguy, boots"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Kakariko Well",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 91,
+                "y": 883
+              }
+            ],
+            "sections": [
+              {
+                "name": "Jump into Well",
+                //"capture_item": true,
+                "access_rules": [
+                  "powerglove",
+                  "[hard]"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Kakariko Well",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 131,
+                "y": 883
+              }
+            ],
+            "sections": [
+              {
+                "name": "Cave Chest",
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Rupee Rush",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 221,
+                "y": 1473
+              }
+            ],
+            "sections": [
+              {
+                "name": "Score 100+ (Buy Ravio Shop Item to Unlock)",
+                "item_count": 1,
+                "access_rules": [
+                  "ravio_01",
+                  "ravio_02",
+                  "ravio_03",
+                  "ravio_04",
+                  "ravio_05",
+                  "ravio_06",
+                  "ravio_07",
+                  "ravio_08",
+                  "ravio_09",
+                ],
+                "visibility_rules": [
+                  "minigames_enabled"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hyrule Castle Area",
+        "children": [
+          {
+            "name": "Ravio's Shop",
+            "color": "#a000ac",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1105,
+                "y": 1377,
+                "size": 70
+              }
+            ],
+            "sections": [
+              {
+                "name": "Ravio 1 (100)",
+                "capture_item": true,
+                "hosted_item": "ravio_01"
+              },
+              {
+                "name": "Ravio 2 (50)",
+                "capture_item": true,
+                "hosted_item": "ravio_02"
+              },
+              {
+                "name": "Ravio 3 (20)",
+                "capture_item": true,
+                "hosted_item": "ravio_03"
+              },
+              {
+                "name": "Ravio 4 (50)",
+                "capture_item": true,
+                "hosted_item": "ravio_04"
+              },
+              {
+                "name": "Ravio 5 (10)",
+                "capture_item": true,
+                "hosted_item": "ravio_05"
+              },
+              {
+                "name": "Ravio 7 (20)",
+                "capture_item": true,
+                "hosted_item": "ravio_07"
+              },
+              {
+                "name": "Ravio 8 (50)",
+                "capture_item": true,
+                "hosted_item": "ravio_08"
+              },
+              {
+                "name": "Ravio 9 (100)",
+                "capture_item": true,
+                "hosted_item": "ravio_09"
+              }
+            ]
+          },
+          {
+            "name": "Ravio's Shop",
+            "color": "#a000ac",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1125,
+                "y": 1377
+              }
+            ],
+            "sections": [
+              {
+                "name": "Ravio 6 (50)",
+                "capture_item": true,
+                "hosted_item": "ravio_06",
+                "access_rules": [
+                  "{}",
+                  "osfala"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Hyrule Blacksmith",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 624,
+                "y": 1056
+              }
+            ],
+            "sections": [
+              {
+                "name": "Table",
+                //"capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Hyrule Blacksmith",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 664,
+                "y": 1056
+              }
+            ],
+            "sections": [
+              {
+                "name": "Give 2 Master Ore",
+                "access_rules": [
+                  "ore_2"
+                ],
+                "hosted_item": "blacksmith"
+                //"item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Hyrule Blacksmith",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 657,
+                "y": 985
+              }
+            ],
+            "sections": [
+              {
+                "name": "Behind House",
+                //"capture_item": true,
+                "access_rules": [
+                  //"{}",
+                  "merge",
+                  "[glitched], $boost",
+                  "[hell], $beeBoost"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Hyrule Blacksmith",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 670,
+                "y": 1136
+              }
+            ],
+            "sections": [
+              {
+                "name": "Big Rock Cave",
+                //"capture_item": true,
+                "access_rules": [
+                  "titansmitt",
+                  "[glitched], $boost",
+                  "[hell], $beeBoost"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Hyrule Castle",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1209,
+                "y": 860
+              }
+            ],
+            "sections": [
+              {
+                "name": "Rock Circle",
+                //"capture_item": true,
+                "access_rules": [
+                  //"{}",
+                  "powerglove"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Haunted Grove",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 660,
+                "y": 1396
+              }
+            ],
+            "sections": [
+              {
+                "name": "Tree Stump",
+                "access_rules": [
+                  "courage:2"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Cucco Dungeon",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 564,
+                "y": 1654
+              }
+            ],
+            "sections": [
+              {
+                "name": "Silver Rupee (Ignore Model)",
+                "access_rules": [
+                  "merge"
+                ],
+                //"capture_item": true,
+                "item_count": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Eastern Ruins",
+        "children": [
+          {
+            "name": "Irene the Witch",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1403,
+                "y": 1403
+              },
+              {
+                "map": "hyrule",
+                "x": 577,
+                "y": 730
+              }
+              //          {
+              //            "map": "hyrule",
+              //            "x": 718,
+              //            "y": 742
+              //          },
+              //          {
+              //            "map": "hyrule",
+              //            "x": 536,
+              //            "y": 671
+              //          }
+            ],
+            "sections": [
+              {
+                "name": "",
+                "access_rules": [
+                  "ssl_off, courage:2",
+                  "ssl, irene"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Eastern Ruins",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1918,
+                "y": 944
+              }
+            ],
+            "sections": [
+              {
+                "name": "Bomb Cave",
+                //"capture_item": true,
+                "access_rules": [
+                  //"{}",
+                  "bombs, merge"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Eastern Ruins",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1948,
+                "y": 1448
+              }
+            ],
+            "sections": [
+              {
+                "name": "Peg Circle",
+                //"capture_item": true,
+                "access_rules": [
+                  //"{}",
+                  "hammer",
+                  "[glitched], boomerang",
+                  "[glitched], hookshot",
+                  "[advanced], trod",
+                  "[hell], srod"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Under the Bridge",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1453,
+                "y": 1413
+              }
+            ],
+            "sections": [
+              {
+                "name": "Bird Lover",
+                "access_rules": [
+                  "flippers"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Eastern Ruins Gated Area",
+            "access_rules": [
+              "merge",
+              "bow",
+              "hookshot",
+              "boomerang",
+              "bombs",
+              "irod",
+              "greatspin, fsword",
+              "bell, wv_eastern",
+              "[hard], powerglove"
+            ],
+            "children": [
+              {
+                "name": "Eastern Ruins",
+                "map_locations": [
+                  {
+                    "map": "hyrule",
+                    "x": 1729,
+                    "y": 837
+                  }
+                ],
+                "sections": [
+                  {
+                    "name": "Armos Chest",
+                    "item_count": 1
+                  }
+                ]
+              },
+              {
+                "name": "Eastern Ruins",
+                "map_locations": [
+                  {
+                    "map": "hyrule",
+                    "x": 1729,
+                    "y": 916
+                  }
+                ],
+                "sections": [
+                  {
+                    "name": "Hookshot Chest",
+                    "access_rules": [
+                      "{csmc}",
+                      "hookshot"
+                    ],
+                    "item_count": 1
+                  }
+                ]
+              },
+              {
+                "name": "Eastern Ruins",
+                "map_locations": [
+                  {
+                    "map": "hyrule",
+                    "x": 1812,
+                    "y": 811
+                  }
+                ],
+                "sections": [
+                  {
+                    "name": "Merge Chest",
+                    "access_rules": [
+                      "{csmc}",
+                      "merge",
+                      "[glitched], trod",
+                      "[glitched], frod",
+                      "[glitched], nicebombs",
+                      "[hell], bombs"
+                    ],
+                    "item_count": 1
+                  }
+                ]
+              },
+              {
+                "name": "Eastern Ruins",
+                "map_locations": [
+                  {
+                    "map": "hyrule",
+                    "x": 1632,
+                    "y": 925
+                  }
+                ],
+                "sections": [
+                  {
+                    "name": "Treasure Dungeon",
+                    "access_rules": [
+                      "merge"
+                    ],
+                    "item_count": 1
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
       {
         "name": "Southern Ruins",
-        "map_locations": [
+        "children": [
           {
-            "map": "hyrule",
-            "x": 1139,
-            "y": 1768
-          }
-        ],
-        "sections": [
-          {
-            "name": "Pillars Cave",
-            "capture_item": true,
-            "access_rules": [
-              "{}",
-              "bombs"
+            "name": "Southern Ruins",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 835,
+                "y": 1770
+              }
             ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Southern Ruins",
-        "map_locations": [
+            "sections": [
+              {
+                "name": "West Ledge Chest",
+                "access_rules": [
+                  "{csmc}",
+                  "merge"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
           {
-            "map": "hyrule",
-            "x": 967,
-            "y": 1866
-          }
-        ],
-        "sections": [
-          {
-            "name": "Treasure Dungeon",
-            "access_rules": [
-              "titansmitt, flippers, hookshot, boomerang",
-              "[hard], titansmitt, hookshot, flippers, msword",
-              "[hard], titansmitt, hookshot, flippers, bombs",
-              "[basic], fsword, irod, flippers, hookshot",
-              "[basic], fsword, irod, nicebombs",
-              "[basic], titansmitt, nicebombs",
-              "[advanced], irod, flippers, hookshot",
-              "[advanced], irod, nicebombs",
-              "[], niceirod",
-              "[], irod, msword, greatspin",
-              "[], titansmitt, msword, greatspin"
+            "name": "Runaway Item Seller",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1070,
+                "y": 1573
+              }
             ],
-            "item_count": 1
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Lake Hylia",
-    "children": [
-      {
-        "name": "Hyrule Hotfoot",
-        "map_locations": [
+            "sections": [
+              {
+                "name": "Give Scoot Fruit",
+                "access_rules": [
+                  "bombs, scoot"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
           {
-            "map": "hyrule",
-            "x": 1953,
-            "y": 1551
-          }
-        ],
-        "sections": [
-          {
-            "name": "Win 2 Races",
-            "access_rules": [
-              "boots",
-              "[hard], merge, bell"
+            "name": "Southern Ruins",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1139,
+                "y": 1768
+              }
             ],
-            "item_count": 1,
-            "visibility_rules": [
-              "minigames_enabled"
+            "sections": [
+              {
+                "name": "Pillars Cave",
+                //"capture_item": true,
+                "access_rules": [
+                  //"{}",
+                  "bombs"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Southern Ruins",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 967,
+                "y": 1866
+              }
+            ],
+            "sections": [
+              {
+                "name": "Treasure Dungeon",
+                "access_rules": [
+                  "{csmc, titansmitt}",
+                  "{csmc, glitched, fsword, irod}",
+                  "{csmc, advanced, irod}",
+                  "titansmitt, flippers, hookshot, boomerang",
+                  "[hard], titansmitt, hookshot, flippers, msword",
+                  "[hard], titansmitt, hookshot, flippers, bombs",
+                  "[glitched], fsword, irod, flippers, hookshot",
+                  "[glitched], fsword, irod, nicebombs",
+                  "[glitched], titansmitt, nicebombs",
+                  "[glitched], greatspin, fsword, irod",
+                  "[glitched], greatspin, fsword, titansmitt",
+                  "[glitched], [nice_mode], fsword, niceirod",
+                  "[advanced], irod, flippers, hookshot",
+                  "[advanced], irod, nicebombs",
+                  "[advanced], [nice_mode], niceirod"
+                ],
+                "item_count": 1
+              }
             ]
           }
         ]
       },
       {
         "name": "Lake Hylia",
-        "map_locations": [
+        "children": [
           {
-            "map": "hyrule",
-            "x": 1731,
-            "y": 1678
-          }
-        ],
-        "sections": [
-          {
-            "name": "Merge Cliff Chest",
-            "access_rules": [
-              "merge"
+            "name": "Hyrule Hotfoot",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1953,
+                "y": 1551
+              }
             ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Lake Hylia",
-        "map_locations": [
+            "sections": [
+              {
+                "name": "First Race",
+                "access_rules": [
+                  "boots",
+                  "[hard]"
+                ],
+                "item_count": 1,
+                "visibility_rules": [
+                  "minigames_enabled"
+                ]
+              }
+              //          {
+              //            "name": "Second Race",
+              //            "access_rules": [
+              //              "boots",
+              //              "[hard], merge, bell"
+              //              "[hell]"
+              //            ],
+              //            "item_count": 1,
+              //            "visibility_rules": [
+              //              "minigames_enabled"
+              //            ]
+              //          }
+            ]
+          },
           {
-            "map": "hyrule",
-            "x": 1800,
-            "y": 1548
-          }
-        ],
-        "sections": [
-          {
-            "name": "Hidden Bomb Cave",
-            "access_rules": [
-              "bombs"
+            "name": "Lake Hylia",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1731,
+                "y": 1678
+              }
             ],
-            "item_count": 1
-          }
-        ]
-      },
-      {
-        "name": "Lake Hylia",
-        "map_locations": [
+            "sections": [
+              {
+                "name": "Merge Cliff Chest",
+                "access_rules": [
+                  "{csmc, flippers}",
+                  "{csmc, wv_gales, bell}",
+                  "merge"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
           {
-            "map": "hyrule",
-            "x": 1887,
-            "y": 1695
-          }
-        ],
-        "sections": [
-          {
-            "name": "Letter in a Bottle",
-            "hosted_item": "letter",
-            "access_rules": [
-              "flippers",
-              "[basic], frod",
-              "[basic], nicebombs",
-              "[hell], $beeBoost"
+            "name": "Lake Hylia",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1800,
+                "y": 1548
+              }
             ],
-            "item_count": 0
-          }
-        ]
-      },
-      {
-        "name": "Lake Hylia",
-        "map_locations": [
+            "sections": [
+              {
+                "name": "Hidden Bomb Cave",
+                "access_rules": [
+                  "{csmc, trod}",
+                  "{csmc, irod}",
+                  "bombs"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
           {
-            "map": "hyrule",
-            "x": 1331,
-            "y": 1887
-          }
-        ],
-        "sections": [
-          {
-            "name": "Dark Cave",
-            "access_rules": [
-              "$fire"
+            "name": "Lake Hylia",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1887,
+                "y": 1695
+              }
             ],
-            "item_count": 1
+            "sections": [
+              {
+                "name": "Southeastern Shore",
+                "access_rules": [
+                  "flippers",
+                  "[glitched], frod",
+                  "[glitched], nicebombs",
+                  "[hell], $beeBoost"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Lake Hylia",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1331,
+                "y": 1887
+              }
+            ],
+            "sections": [
+              {
+                "name": "Dark Cave",
+                "access_rules": [
+                  "$fire"
+                ],
+                "item_count": 1
+              }
+            ]
           }
         ]
       }

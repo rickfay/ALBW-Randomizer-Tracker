@@ -1,12 +1,8 @@
 [
   {
     "name": "Hyrule Castle",
-    "access_rules": [
-      "msword",
-      // Barrier Skip, only works before getting all sages
-      "[], merge, boots, trod, bombs, $does_not_have_all_sages, boomerang",
-      "[], merge, boots, trod, bombs, $does_not_have_all_sages, hookshot"
-    ],
+    "chest_unopened_img": "images/checks/chest_small_unopened.png",
+    "chest_opened_img": "images/checks/chest_small_opened.png",
     "children": [
       {
         "name": "Hyrule Castle",
@@ -20,7 +16,11 @@
         "sections": [
           {
             "name": "Left Room Chest",
-            "item_count": 1
+            "item_count": 1,
+            "access_rules": [
+              "msword",
+              "[], $barrier_skip"
+            ]
           }
         ]
       },
@@ -35,26 +35,52 @@
         ],
         "sections": [
           {
-            "name": "Right Wall Chest",
-            "item_count": 1
+            "name": "Battlement Chest",
+            "item_count": 1,
+            "access_rules": [
+              "{csmc}",
+              "msword, ssl_off",
+              "msword, ssl, impa",
+              "[], $barrier_skip"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hyrule Castle",
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1024,
+            "y": 934,
+            "size": 70
+          }
+        ],
+        "sections": [
+          {
+            "name": "Zelda's Throne",
+            "hosted_item": "hyrule_castle",
+            "access_rules": [
+              "msword, ssl_off",
+              "msword, ssl, impa",
+              "[], $barrier_skip"
+            ]
           }
         ]
       },
       {
         "name": "Inside Hyrule Castle",
         "access_rules": [
-          "merge",
-          "bow",
-          "irod",
-          "[hard], nicebombs",
-          "[], nicetrod"
+          "msword, courage:2, ssl_off",
+          "msword, courage:2, ssl, impa",
+          "[], $barrier_skip, courage:2"
         ],
         "map_locations": [
           {
             "map": "hyrule",
-            "x": 1023,
-            "y": 870,
-            "size": 60
+            "x": 1024,
+            "y": 792,
+            "size": 70
           },
           {
             "map": "hyrule8F",

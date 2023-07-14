@@ -2,6 +2,8 @@
   {
     "name": "Skull Woods",
     "color": "#43c2be",
+    "chest_unopened_img": "images/checks/chest_small_unopened.png",
+    "chest_opened_img": "images/checks/chest_small_opened.png",
     "access_rules": [
       "merge"
     ],
@@ -18,7 +20,6 @@
         "sections": [
           {
             "name": "B1 South Chest",
-            "capture_item": true,
             "hosted_item": "sw_chest_01",
             "access_rules": [
               "$lampless"
@@ -38,7 +39,6 @@
         "sections": [
           {
             "name": "B1 NE Room Lower",
-            "capture_item": true,
             "hosted_item": "sw_chest_03",
             "access_rules": [
               "$lampless"
@@ -58,7 +58,6 @@
         "sections": [
           {
             "name": "B1 NE Room Fall",
-            "capture_item": true,
             "hosted_item": "sw_chest_02",
             "access_rules": [
               "$lampless"
@@ -78,10 +77,11 @@
         "sections": [
           {
             "name": "B1 Grate Room",
-            "capture_item": true,
             "hosted_item": "sw_chest_04",
             "access_rules": [
-              "$lampless"
+              "$lampless, progression_enemies",
+              "$lampless, bombs",
+              "$lampless, hammer"
             ]
           }
         ]
@@ -98,12 +98,13 @@
         "sections": [
           {
             "name": "B2 Elevator Room",
-            "capture_item": true,
             "hosted_item": "sw_chest_05",
             "access_rules": [
-              "$lampless, merge, $attack",
+              "$lampless, merge, bombs",
+              "$lampless, merge, hammer",
+              "$lampless, merge, $attack, progression_enemies",
               // Have hand kill everything
-              "[hell], $lampless, merge"
+              "[hell], $lampless, merge, progression_enemies"
             ]
           }
         ]
@@ -122,10 +123,11 @@
             "name": "B1 Big Chest (Eyes)",
             "chest_unopened_img": "images/chest_big_unopened.png",
             "chest_opened_img": "images/chest_big_opened.png",
-            "capture_item": true,
             "hosted_item": "sw_chest_08",
             "access_rules": [
-              "$lampless, merge, $attack, $fire"
+              "$lampless, merge, $attack, $fire, progression_enemies",
+              "$lampless, merge, $attack, $fire, bombs",
+              "$lampless, merge, $attack, $fire, hammer"
             ]
           }
         ]
@@ -144,10 +146,11 @@
             "name": "B1 Big Chest (SW)",
             "chest_unopened_img": "images/chest_big_unopened.png",
             "chest_opened_img": "images/chest_big_opened.png",
-            "capture_item": true,
             "hosted_item": "sw_chest_07",
             "access_rules": [
-              "$lampless, merge, $attack, $fire"
+              "$lampless, merge, $attack, $fire, progression_enemies",
+              "$lampless, merge, $attack, $fire, bombs",
+              "$lampless, merge, $attack, $fire, hammer"
             ]
           }
         ]
@@ -169,10 +172,12 @@
         "sections": [
           {
             "name": "Outdoor Chest",
-            "capture_item": true,
             "hosted_item": "sw_chest_06",
             "access_rules": [
-              "$lampless, merge, $attack, $fire"
+              "{csmc}",
+              "$lampless, merge, $attack, $fire, progression_enemies",
+              "$lampless, merge, $attack, $fire, bombs",
+              "$lampless, merge, $attack, $fire, hammer"
             ]
           }
         ]
@@ -189,10 +194,12 @@
         "sections": [
           {
             "name": "B1 Not Mothula",
-            "capture_item": true,
+            //"capture_item": true,
             "hosted_item": "sw_chest_09",
             "access_rules": [
-              "$lampless, merge, $knucklemaster"
+              "$lampless, merge, progression_enemies, $knucklemaster",
+              "$lampless, merge, bombs, $knucklemaster",
+              "$lampless, merge, hammer, $knucklemaster"
             ]
           }
         ]
@@ -209,12 +216,16 @@
         ],
         "sections": [
           {
-            "name": "Sage Seres",
+            "name": "Prize",
             "hosted_item": "skull",
             "access_rules": [
               "{merge}",
-              "$lampless, merge, $knucklemaster",
-              "[basic], $lampless, merge, bow, trod"
+              "$lampless, merge, progression_enemies, $knucklemaster",
+              "$lampless, merge, bombs, $knucklemaster",
+              "$lampless, merge, hammer, $knucklemaster",
+              "[glitched], $lampless, merge, bow, trod, progression_enemies",
+              "[glitched], $lampless, merge, bow, trod, bombs",
+              "[glitched], $lampless, merge, bow, trod, hammer"
             ]
           }
         ]
@@ -226,21 +237,19 @@
             "map": "lorule",
             "x": 245,
             "y": 166,
-            "size": 60
+            "size": 70
           }
         ],
         "sections": [
           {
-            "name": "B1 South Chest    ",
-            "capture_item": true,
+            "name": "B1 South Chest",
             "hosted_item": "sw_chest_01",
             "access_rules": [
               "$lampless"
             ]
           },
           {
-            "name": "B1 NE Room Fall    ",
-            "capture_item": true,
+            "name": "B1 NE Room Fall",
             "hosted_item": "sw_chest_02",
             "access_rules": [
               "$lampless"
@@ -248,69 +257,80 @@
           },
           {
             "name": "B1 NE Room Lower",
-            "capture_item": true,
             "hosted_item": "sw_chest_03",
             "access_rules": [
               "$lampless"
             ]
           },
           {
-            "name": "B1 Grate Room    ",
-            "capture_item": true,
+            "name": "B1 Grate Room",
             "hosted_item": "sw_chest_04",
             "access_rules": [
-              "$lampless"
+              "$lampless, progression_enemies",
+              "$lampless, bombs",
+              "$lampless, hammer"
             ]
           },
           {
-            "name": "B1 Elevator Room  ",
-            "capture_item": true,
+            "name": "B1 Elevator Room",
             "hosted_item": "sw_chest_05",
             "access_rules": [
-              "$lampless, merge, $attack",
+              "$lampless, merge, bombs",
+              "$lampless, merge, hammer",
+              "$lampless, merge, $attack, progression_enemies",
               // Have hand kill everything
-              "[hell], $lampless, merge"
+              "[hell], $lampless, merge, progression_enemies"
             ]
           },
           {
             "name": "Outdoor Chest",
-            "capture_item": true,
             "hosted_item": "sw_chest_06",
             "access_rules": [
-              "$lampless, merge, $attack, $fire"
+              "{csmc}",
+              "$lampless, merge, $attack, $fire, progression_enemies",
+              "$lampless, merge, $attack, $fire, bombs",
+              "$lampless, merge, $attack, $fire, hammer"
             ]
           },
           {
             "name": "B1 Big Chest (SW)",
-            "capture_item": true,
             "hosted_item": "sw_chest_07",
             "access_rules": [
-              "$lampless, merge, $attack, $fire"
+              "$lampless, merge, $attack, $fire, progression_enemies",
+              "$lampless, merge, $attack, $fire, bombs",
+              "$lampless, merge, $attack, $fire, hammer"
             ]
           },
           {
             "name": "B1 Big Chest (Eyes)",
-            "capture_item": true,
             "hosted_item": "sw_chest_08",
             "access_rules": [
-              "$lampless, merge, $attack, $fire"
+              "$lampless, merge, $attack, $fire, progression_enemies",
+              "$lampless, merge, $attack, $fire, bombs",
+              "$lampless, merge, $attack, $fire, hammer"
             ]
           },
           {
             "name": "B1 Not Mothula",
-            "capture_item": true,
+            //"capture_item": true,
             "hosted_item": "sw_chest_09",
             "access_rules": [
-              "$lampless, merge, $knucklemaster"
+              "$lampless, merge, progression_enemies, $knucklemaster",
+              "$lampless, merge, bombs, $knucklemaster",
+              "$lampless, merge, hammer, $knucklemaster"
             ]
           },
           {
-            "name": "Sage Seres",
+            "name": "Prize",
             "hosted_item": "skull",
             "access_rules": [
               "{merge}",
-              "$lampless, merge, $knucklemaster",
-              "[basic], $lampless, merge, bow, trod"
+              "$lampless, merge, progression_enemies, $knucklemaster",
+              "$lampless, merge, bombs, $knucklemaster",
+              "$lampless, merge, hammer, $knucklemaster",
+              "[glitched], $lampless, merge, bow, trod, progression_enemies",
+              "[glitched], $lampless, merge, bow, trod, bombs",
+              "[glitched], $lampless, merge, bow, trod, hammer"
             ]
           }
         ]

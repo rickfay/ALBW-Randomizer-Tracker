@@ -256,7 +256,7 @@
         ],
         "sections": [
           {
-            "name": "B6 Dharkstare",
+            "name": "Dharkstare",
             //"capture_item": true,
             "hosted_item": "ir_chest_15"
           }
@@ -286,7 +286,7 @@
             "map": "lorule",
             "x": 1880,
             "y": 156,
-            "size": 70
+            "size": 80
           }
         ],
         "sections": [
@@ -359,7 +359,7 @@
             "hosted_item": "ir_chest_13"
           },
           {
-            "name": "B6 Dharkstare",
+            "name": "Dharkstare",
             //"capture_item": true,
             "hosted_item": "ir_chest_15"
           },

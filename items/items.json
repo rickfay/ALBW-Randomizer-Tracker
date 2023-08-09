@@ -70,7 +70,7 @@
         "name": "0 Bottles",
         "img": "images/items/bottle.png",
         "img_mods": "@disabled",
-        "codes": "bottles"
+        "codes": "bottle, bottles"
       },
       {
         "name": "1 Bottle",
@@ -79,25 +79,25 @@
         "codes": "bottle_1"
       },
       {
-        "name": "2 Bottle",
+        "name": "2 Bottles",
         "img": "images/items/bottle_shifted.png",
         "img_mods": "overlay|images/numbers/bottle_2.png",
         "codes": "bottle_2"
       },
       {
-        "name": "3 Bottle",
+        "name": "3 Bottles",
         "img": "images/items/bottle_shifted.png",
         "img_mods": "overlay|images/numbers/bottle_3.png",
         "codes": "bottle_3"
       },
       {
-        "name": "4 Bottle",
+        "name": "4 Bottles",
         "img": "images/items/bottle_shifted.png",
         "img_mods": "overlay|images/numbers/bottle_4.png",
         "codes": "bottle_4"
       },
       {
-        "name": "5 Bottle",
+        "name": "5 Bottles",
         "img": "images/items/bottle_shifted.png",
         "img_mods": "overlay|images/numbers/bottle_5.png",
         "codes": "bottle_5"
@@ -118,12 +118,12 @@
       {
         "name": "Letter in a Bottle",
         "img": "images/items/bottle_letter.png",
-        "codes": "bottle_letter"
+        "codes": "bottle_letter, letter, letter_in_a_bottle"
       },
       {
         "name": "Premium Milk",
         "img": "images/items/bottle_milk_premium.png",
-        "codes": "bottle_milk_premium"
+        "codes": "bottle_milk_premium, milk, premium_milk, premiummilk"
       }
     ]
   },
@@ -137,7 +137,7 @@
     "name": "Golden Bee",
     "type": "toggle",
     "img": "images/items/bottle_bee_golden.png",
-    "codes": "bottle_bee_golden"
+    "codes": "bottle_bee_golden, gold_bee, golden_bee, goldbee, goldenbee"
   },
   {
     "name": "Apple",

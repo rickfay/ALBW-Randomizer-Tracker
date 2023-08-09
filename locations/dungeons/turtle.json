@@ -259,7 +259,7 @@
         ],
         "sections": [
           {
-            "name": "B3 Grinexx",
+            "name": "Grinexx",
             //"capture_item": true,
             "hosted_item": "tr_chest_13",
             "access_rules": [
@@ -295,7 +295,7 @@
             "map": "lorule",
             "x": 1572,
             "y": 1710,
-            "size": 70
+            "size": 80
           }
         ],
         "sections": [
@@ -391,7 +391,7 @@
             ]
           },
           {
-            "name": "B3 Grinexx",
+            "name": "Grinexx",
             //"capture_item": true,
             "hosted_item": "tr_chest_13",
             "access_rules": [

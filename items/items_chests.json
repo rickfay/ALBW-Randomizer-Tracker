@@ -252,7 +252,7 @@
     "codes": "hog_chest_10"
   },
   {
-    "name": "3F Margomill",
+    "name": "Margomill",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -334,7 +334,7 @@
     "codes": "toh_chest_09"
   },
   {
-    "name": "13F Moldorm",
+    "name": "Moldorm",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -448,7 +448,7 @@
     "codes": "pod_chest_13"
   },
   {
-    "name": "B1 Gemesaur King",
+    "name": "Gemesaur King",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -546,7 +546,7 @@
     "codes": "sp_chest_11"
   },
   {
-    "name": "1F Arrghus",
+    "name": "Arrghus",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -620,7 +620,7 @@
     "codes": "sw_chest_08"
   },
   {
-    "name": "B1 Not Mothula",
+    "name": "Knucklemaster",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -832,7 +832,7 @@
     "codes": "ir_chest_14"
   },
   {
-    "name": "B6 Dharkstare",
+    "name": "Dharkstare",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -1068,7 +1068,7 @@
     "codes": "tr_chest_12"
   },
   {
-    "name": "B3 Grinexx",
+    "name": "Grinexx",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",

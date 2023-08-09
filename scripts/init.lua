@@ -18,7 +18,7 @@ Tracker:AddMaps("maps.json")
 --- Layouts
 Tracker:AddLayouts("layouts/itemgrid.json")
 Tracker:AddLayouts("layouts/dungeongrid.json")
-Tracker:AddLayouts("layouts/tracker_controls.json")
+Tracker:AddLayouts("layouts/tracker_settings.json")
 Tracker:AddLayouts("layouts/capturable.json")
 Tracker:AddLayouts("layouts/broadcast.json")
 Tracker:AddLayouts("layouts/tracker.json")

@@ -160,6 +160,46 @@
                 "item_count": 1
               }
             ]
+          },
+          {
+            "name": "Lost Woods Region",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1953,
+                "y": 1551
+              },
+              {
+                "map": "hyrule",
+                "x": 654,
+                "y": 91
+              }
+            ],
+            "sections": [
+              {
+                "name": "Hyrule Hotfoot 75s",
+                "access_rules": [
+                  "boots",
+                  "[hard]"
+                ],
+                "item_count": 1,
+                "visibility_rules": [
+                  "minigames_enabled"
+                ]
+              }
+              //          {
+              //            "name": "Second Race",
+              //            "access_rules": [
+              //              "boots",
+              //              "[hard], merge, bell"
+              //              "[hell]"
+              //            ],
+              //            "item_count": 1,
+              //            "visibility_rules": [
+              //              "minigames_enabled"
+              //            ]
+              //          }
+            ]
           }
         ]
       },
@@ -467,7 +507,7 @@
                 "map": "hyrule",
                 "x": 1147,
                 "y": 652,
-                "size": 70
+                "size": 80
               }
             ],
             "access_rules": [
@@ -974,7 +1014,7 @@
                 "map": "hyrule",
                 "x": 1105,
                 "y": 1377,
-                "size": 70
+                "size": 80
               }
             ],
             "sections": [
@@ -1027,7 +1067,7 @@
               {
                 "map": "hyrule",
                 "x": 1125,
-                "y": 1377
+                "y": 1357
               }
             ],
             "sections": [
@@ -1487,41 +1527,6 @@
       {
         "name": "Lake Hylia",
         "children": [
-          {
-            "name": "Hyrule Hotfoot",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 1953,
-                "y": 1551
-              }
-            ],
-            "sections": [
-              {
-                "name": "First Race",
-                "access_rules": [
-                  "boots",
-                  "[hard]"
-                ],
-                "item_count": 1,
-                "visibility_rules": [
-                  "minigames_enabled"
-                ]
-              }
-              //          {
-              //            "name": "Second Race",
-              //            "access_rules": [
-              //              "boots",
-              //              "[hard], merge, bell"
-              //              "[hell]"
-              //            ],
-              //            "item_count": 1,
-              //            "visibility_rules": [
-              //              "minigames_enabled"
-              //            ]
-              //          }
-            ]
-          },
           {
             "name": "Lake Hylia",
             "map_locations": [

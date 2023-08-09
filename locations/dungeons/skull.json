@@ -193,7 +193,7 @@
         ],
         "sections": [
           {
-            "name": "B1 Not Mothula",
+            "name": "Knucklemaster",
             //"capture_item": true,
             "hosted_item": "sw_chest_09",
             "access_rules": [
@@ -237,7 +237,7 @@
             "map": "lorule",
             "x": 245,
             "y": 166,
-            "size": 70
+            "size": 80
           }
         ],
         "sections": [
@@ -311,7 +311,7 @@
             ]
           },
           {
-            "name": "B1 Not Mothula",
+            "name": "Knucklemaster",
             //"capture_item": true,
             "hosted_item": "sw_chest_09",
             "access_rules": [

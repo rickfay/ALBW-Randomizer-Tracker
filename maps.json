@@ -3,13 +3,29 @@
     "name": "hyrule",
     "location_size": 40,
     "location_border_thickness": 4,
-    "img": "images/maps/hyrule.png"
+    "img": "images/maps/map_blank.png"
   },
   {
     "name": "lorule",
     "location_size": 40,
     "location_border_thickness": 4,
+    "img": "images/maps/map_blank.png"
+  },
+  {
+    "name": "hyrule_image",
+    "img": "images/maps/hyrule.png"
+  },
+  {
+    "name": "lorule_image",
     "img": "images/maps/lorule.png"
+  },
+  {
+    "name": "region_hyrule",
+    "img": "images/maps/regions-hyrule.png"
+  },
+  {
+    "name": "region_lorule",
+    "img": "images/maps/regions-lorule.png"
   },
   {
     "name": "ep1F",

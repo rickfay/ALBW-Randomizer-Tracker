@@ -19,6 +19,7 @@
             "",
             "",
             "",
+            "",
             ""
           ]
         ]
@@ -42,7 +43,8 @@
                 "lamp",
                 "bow",
                 "boomerang",
-                "hookshot"
+                "hookshot",
+                "eastern"
               ],
               [
                 "merge",
@@ -51,62 +53,38 @@
                 "hammer",
                 "bombs",
                 "frod",
-                "irod"
+                "irod",
+                "gales"
               ],
               [
                 "flippers",
-                "beebadge",
+                "smoothgem",
                 "scroll",
                 "trod",
                 "srod",
                 "net",
-                "hint_glasses"
+                "hint_glasses",
+                "hera"
               ],
               [
-                "smoothgem",
+                "bell",
                 "maiamai",
                 "ore",
                 "bottles",
                 "bottle_trade_items",
-                "bottle_bee_golden",
-                "fruit"
+                "foul",
+                "scoot",
+                "hyrule_castle"
               ],
-            ]
-          },
-          {
-            "type": "itemgrid",
-            "dropshadow": true,
-            "h_alignment": "center",
-            "item_size": "32",
-            "item_margin": "6.4,3",
-            "margin": "1,0",
-            "rows": [
               [
-                "bell",
-                "hyrule_castle",
-                "gales",
-                "hera",
-                "eastern",
-                "bowoflight"
-              ]
-            ]
-          },
-          {
-            "type": "itemgrid",
-            "dropshadow": true,
-            "h_alignment": "center",
-            "item_size": "32",
-            "item_margin": "3",
-            "margin": "1,0,1,1",
-            "rows": [
-              [
-                "desert",
-                "turtle",
-                "swamp",
                 "dark",
+                "swamp",
                 "skull",
                 "thieves",
-                "ice"
+                "turtle",
+                "desert",
+                "ice",
+                "bowoflight"
               ]
             ]
           }

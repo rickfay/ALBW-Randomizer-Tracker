@@ -53,7 +53,7 @@
             "map": "hyrule",
             "x": 1024,
             "y": 934,
-            "size": 70
+            "size": 80
           }
         ],
         "sections": [
@@ -80,7 +80,7 @@
             "map": "hyrule",
             "x": 1024,
             "y": 792,
-            "size": 70
+            "size": 80
           },
           {
             "map": "hyrule8F",

@@ -314,38 +314,6 @@
         "name": "Desert Palace",
         "map_locations": [
           {
-            "map": "lorule",
-            "x": 140,
-            //165
-            "y": 1602
-          },
-          {
-            "map": "desert3F",
-            "x": 121,
-            // 126
-            "y": 127
-          }
-        ],
-        "sections": [
-          {
-            "name": "Zaganaga",
-            //"capture_item": true,
-            "hosted_item": "dp_chest_16",
-            "access_rules": [
-              "$dp2F, progression_enemies",
-              "$dp2F, bombs",
-              "$miseryMireOoB, boots",
-              "$miseryMireOoB, srod, $attack",
-              "[hell], $miseryMireOoB, bow",
-              "[hell], $miseryMireOoB, msword"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Desert Palace",
-        "map_locations": [
-          {
             "map": "desert3F",
             "x": 134,
             "y": 127,
@@ -374,13 +342,13 @@
             "map": "hyrule",
             "x": 185,
             "y": 1605,
-            "size": 70
+            "size": 80
           },
           {
             "map": "lorule",
             "x": 192,
             "y": 1602,
-            "size": 70
+            "size": 80
           }
         ],
         "sections": [
@@ -521,6 +489,38 @@
           {
             "name": "Prize",
             "hosted_item": "desert",
+            "access_rules": [
+              "$dp2F, progression_enemies",
+              "$dp2F, bombs",
+              "$miseryMireOoB, boots",
+              "$miseryMireOoB, srod, $attack",
+              "[hell], $miseryMireOoB, bow",
+              "[hell], $miseryMireOoB, msword"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Desert Palace",
+        "map_locations": [
+          {
+            "map": "lorule",
+            "x": 140,
+            //165
+            "y": 1602
+          },
+          {
+            "map": "desert3F",
+            "x": 121,
+            // 126
+            "y": 127
+          }
+        ],
+        "sections": [
+          {
+            "name": "Zaganaga",
+            //"capture_item": true,
+            "hosted_item": "dp_chest_16",
             "access_rules": [
               "$dp2F, progression_enemies",
               "$dp2F, bombs",

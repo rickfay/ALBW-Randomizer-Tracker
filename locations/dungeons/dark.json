@@ -265,7 +265,7 @@
         ],
         "sections": [
           {
-            "name": "B1 Gemesaur King",
+            "name": "Gemesaur King",
             "access_rules": [
               "bombs, $fire"
             ],
@@ -301,7 +301,7 @@
             "map": "lorule",
             "x": 1921,
             "y": 852,
-            "size": 70
+            "size": 80
           }
         ],
         "sections": [
@@ -392,7 +392,7 @@
             ]
           },
           {
-            "name": "B1 Gemesaur King",
+            "name": "Gemesaur King",
             //"capture_item": true,
             "hosted_item": "pod_chest_14",
             "access_rules": [

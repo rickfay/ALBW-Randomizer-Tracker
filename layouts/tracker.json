@@ -21,7 +21,7 @@
           },
           {
             "type": "group",
-            "header": "Controls",
+            "header": "Settings",
             "dock": "top",
             "content": [
               {
@@ -49,7 +49,7 @@
                 {
                   "type": "recentpins",
                   "width": "264",
-                  "orientation": "vertical",
+                  "orientation": "vertical"
                 }
               ]
             }
@@ -74,23 +74,97 @@
                           "title": "Side-by-Side",
                           "icon": "images/icons/side-by-side.png",
                           "content": {
-                            "type": "scroll",
-                            "horizontal_scrollbar_visibility": "disabled",
-                            "content": [
+                            "type": "tabbed",
+                            "tabs": [
                               {
-                                "type": "array",
-                                "orientation": "horizontal",
-                                "style": "wrap",
-                                "content": [
-                                  {
-                                    "type": "map",
-                                    "min_width": 600,
-                                    "maps": [
-                                      "hyrule",
-                                      "lorule"
-                                    ]
-                                  }
-                                ]
+                                "title": "Hide Regions",
+                                "icon": "images/icons/regions_hide.png",
+                                "content": {
+                                  "type": "scroll",
+                                  "horizontal_scrollbar_visibility": "disabled",
+                                  "content": [
+                                    {
+                                      "type": "container",
+                                      "content": [
+                                        {
+                                          "type": "array",
+                                          "orientation": "horizontal",
+                                          "style": "wrap",
+                                          "content": [
+                                            {
+                                              "type": "map",
+                                              "min_width": 600,
+                                              "maps": [
+                                                "hyrule_image",
+                                                "lorule_image"
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "array",
+                                          "orientation": "horizontal",
+                                          "style": "wrap",
+                                          "content": [
+                                            {
+                                              "type": "map",
+                                              "min_width": 600,
+                                              "maps": [
+                                                "hyrule",
+                                                "lorule"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "title": "Show Regions",
+                                "icon": "images/icons/regions_show.png",
+                                "content": {
+                                  "type": "scroll",
+                                  "horizontal_scrollbar_visibility": "disabled",
+                                  "content": [
+                                    {
+                                      "type": "container",
+                                      "content": [
+                                        {
+                                          "type": "array",
+                                          "orientation": "horizontal",
+                                          "style": "wrap",
+                                          "content": [
+                                            {
+                                              "type": "map",
+                                              "min_width": 600,
+                                              "maps": [
+                                                "region_hyrule",
+                                                "region_lorule"
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "array",
+                                          "orientation": "horizontal",
+                                          "style": "wrap",
+                                          "content": [
+                                            {
+                                              "type": "map",
+                                              "min_width": 600,
+                                              "maps": [
+                                                "hyrule",
+                                                "lorule"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
                               }
                             ]
                           }
@@ -99,29 +173,121 @@
                           "title": "Zoomed",
                           "icon": "images/icons/zoomed.png",
                           "content": {
-                            "type": "scroll",
-                            "horizontal_scrollbar_visibility": "disabled",
-                            "content": [
+                            "type": "tabbed",
+                            "tabs": [
                               {
-                                "type": "array",
-                                "orientation": "horizontal",
-                                "style": "wrap",
-                                "content": [
-                                  {
-                                    "type": "map",
-                                    "min_width": 325,
-                                    "maps": [
-                                      "hyrule"
-                                    ]
-                                  },
-                                  {
-                                    "type": "map",
-                                    "min_width": 325,
-                                    "maps": [
-                                      "lorule"
-                                    ]
-                                  }
-                                ]
+                                "title": "Hide Regions",
+                                "icon": "images/icons/regions_hide.png",
+                                "content": {
+                                  "type": "scroll",
+                                  "horizontal_scrollbar_visibility": "disabled",
+                                  "content": [
+                                    {
+                                      "type": "container",
+                                      "content": [
+                                        {
+                                          "type": "array",
+                                          "orientation": "horizontal",
+                                          "style": "wrap",
+                                          "content": [
+                                            {
+                                              "type": "map",
+                                              "min_width": 325,
+                                              "maps": [
+                                                "hyrule_image"
+                                              ]
+                                            },
+                                            {
+                                              "type": "map",
+                                              "min_width": 325,
+                                              "maps": [
+                                                "lorule_image"
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "array",
+                                          "orientation": "horizontal",
+                                          "style": "wrap",
+                                          "content": [
+                                            {
+                                              "type": "map",
+                                              "min_width": 325,
+                                              "maps": [
+                                                "hyrule"
+                                              ]
+                                            },
+                                            {
+                                              "type": "map",
+                                              "min_width": 325,
+                                              "maps": [
+                                                "lorule"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "title": "Show Regions",
+                                "icon": "images/icons/regions_show.png",
+                                "content": {
+                                  "type": "scroll",
+                                  "horizontal_scrollbar_visibility": "disabled",
+                                  "content": [
+                                    {
+                                      "type": "container",
+                                      "content": [
+                                        {
+                                          "type": "array",
+                                          "orientation": "horizontal",
+                                          "style": "wrap",
+                                          "content": [
+                                            {
+                                              "type": "map",
+                                              "min_width": 325,
+                                              "maps": [
+                                                "region_hyrule"
+                                              ]
+                                            },
+                                            {
+                                              "type": "map",
+                                              "min_width": 325,
+                                              "maps": [
+                                                "region_lorule"
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "array",
+                                          "orientation": "horizontal",
+                                          "style": "wrap",
+                                          "content": [
+                                            {
+                                              "type": "map",
+                                              "min_width": 325,
+                                              "maps": [
+                                                "hyrule"
+                                              ]
+                                            },
+                                            {
+                                              "type": "map",
+                                              "min_width": 325,
+                                              "maps": [
+                                                "lorule"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
                               }
                             ]
                           }
@@ -146,14 +312,14 @@
                 "title": "EP",
                 "icon": "images/items/bow.png",
                 "content": {
-                  "type": "scroll",
-                  "horizontal_scrollbar_visibility": "disabled",
+                  "type": "viewbox",
                   "content": [
                     {
                       "type": "array",
                       "orientation": "horizontal",
                       "h_alignment": "center",
                       "v_alignment": "center",
+                      "max_width": 750,
                       "style": "wrap",
                       "content": [
                         {
@@ -246,14 +412,14 @@
                 "title": "HG",
                 "icon": "images/items/trod.png",
                 "content": {
-                  "type": "scroll",
-                  "horizontal_scrollbar_visibility": "disabled",
+                  "type": "viewbox",
                   "content": [
                     {
                       "type": "array",
                       "orientation": "horizontal",
                       "h_alignment": "center",
                       "v_alignment": "center",
+                      "max_width": 750,
                       "style": "wrap",
                       "content": [
                         {
@@ -346,14 +512,14 @@
                 "title": "TH",
                 "icon": "images/items/hammer.png",
                 "content": {
-                  "type": "scroll",
-                  "horizontal_scrollbar_visibility": "disabled",
+                  "type": "viewbox",
                   "content": [
                     {
                       "type": "array",
                       "orientation": "horizontal",
                       "h_alignment": "center",
                       "v_alignment": "center",
+                      "max_width": 1875,
                       "style": "wrap",
                       "content": [
                         {
@@ -716,14 +882,14 @@
                 "title": "HC",
                 "icon": "images/items/msword.png",
                 "content": {
-                  "type": "scroll",
-                  "horizontal_scrollbar_visibility": "disabled",
+                  "type": "viewbox",
                   "content": [
                     {
                       "type": "array",
                       "orientation": "horizontal",
                       "h_alignment": "center",
                       "v_alignment": "center",
+                      "max_width": 1500,
                       "style": "wrap",
                       "content": [
                         {
@@ -924,7 +1090,7 @@
                 "title": "PD",
                 "icon": "images/items/bombs.png",
                 "content": {
-                  "type": "scroll",
+                  "type": "viewbox",
                   "horizontal_scrollbar_visibility": "disabled",
                   "content": [
                     {
@@ -932,6 +1098,7 @@
                       "orientation": "horizontal",
                       "h_alignment": "center",
                       "v_alignment": "center",
+                      "max_width": 750,
                       "style": "wrap",
                       "content": [
                         {
@@ -1024,7 +1191,7 @@
                 "title": "SP",
                 "icon": "images/items/hookshot.png",
                 "content": {
-                  "type": "scroll",
+                  "type": "viewbox",
                   "horizontal_scrollbar_visibility": "disabled",
                   "content": [
                     {
@@ -1032,6 +1199,7 @@
                       "orientation": "horizontal",
                       "h_alignment": "center",
                       "v_alignment": "center",
+                      "max_width": 750,
                       "style": "wrap",
                       "content": [
                         {
@@ -1128,61 +1296,67 @@
                   "horizontal_scrollbar_visibility": "disabled",
                   "content": [
                     {
-                      "type": "array",
-                      "orientation": "horizontal",
-                      "h_alignment": "center",
-                      "v_alignment": "center",
-                      "style": "wrap",
+                      "type": "viewbox",
                       "content": [
                         {
-                          "type": "container",
+                          "type": "array",
+                          "orientation": "horizontal",
+                          "h_alignment": "center",
+                          "v_alignment": "center",
+                          "max_width": 750,
+                          "style": "wrap",
                           "content": [
                             {
-                              "type": "map",
-                              "width": 250,
-                              "scale": 1.5,
-                              "margin": "-25,0,-25,-50",
-                              "maps": [
-                                "skullB1"
-                              ]
-                            },
-                            {
-                              "type": "canvas",
-                              "dropshadow": true,
+                              "type": "container",
                               "content": [
                                 {
-                                  "type": "image",
-                                  "image": "images/floors/B1.png",
-                                  "width": 50,
-                                  "canvas_top": 30,
-                                  "canvas_left": 235
+                                  "type": "map",
+                                  "width": 250,
+                                  "scale": 1.5,
+                                  "margin": "-25,0,-25,-50",
+                                  "maps": [
+                                    "skullB1"
+                                  ]
+                                },
+                                {
+                                  "type": "canvas",
+                                  "dropshadow": true,
+                                  "content": [
+                                    {
+                                      "type": "image",
+                                      "image": "images/floors/B1.png",
+                                      "width": 50,
+                                      "canvas_top": 30,
+                                      "canvas_left": 235
+                                    }
+                                  ]
                                 }
                               ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "container",
-                          "content": [
-                            {
-                              "type": "map",
-                              "width": 250,
-                              "scale": 1.5,
-                              "margin": "-25,0,-25,-25",
-                              "maps": [
-                                "skullB2"
-                              ]
                             },
                             {
-                              "type": "canvas",
-                              "dropshadow": true,
+                              "type": "container",
                               "content": [
                                 {
-                                  "type": "image",
-                                  "image": "images/floors/B2_Boss.png",
-                                  "width": 50,
-                                  "canvas_top": 30,
-                                  "canvas_left": 235
+                                  "type": "map",
+                                  "width": 250,
+                                  "scale": 1.5,
+                                  "margin": "-25,0,-25,-25",
+                                  "maps": [
+                                    "skullB2"
+                                  ]
+                                },
+                                {
+                                  "type": "canvas",
+                                  "dropshadow": true,
+                                  "content": [
+                                    {
+                                      "type": "image",
+                                      "image": "images/floors/B2_Boss.png",
+                                      "width": 50,
+                                      "canvas_top": 30,
+                                      "canvas_left": 235
+                                    }
+                                  ]
                                 }
                               ]
                             }
@@ -1197,7 +1371,7 @@
                 "title": "T'H",
                 "icon": "images/items/flippers.png",
                 "content": {
-                  "type": "scroll",
+                  "type": "viewbox",
                   "horizontal_scrollbar_visibility": "disabled",
                   "content": [
                     {
@@ -1205,6 +1379,7 @@
                       "orientation": "horizontal",
                       "h_alignment": "center",
                       "v_alignment": "center",
+                      "max_width": 750,
                       "style": "wrap",
                       "content": [
                         {
@@ -1297,7 +1472,7 @@
                 "title": "TR",
                 "icon": "images/items/irod.png",
                 "content": {
-                  "type": "scroll",
+                  "type": "viewbox",
                   "horizontal_scrollbar_visibility": "disabled",
                   "content": [
                     {
@@ -1305,6 +1480,7 @@
                       "orientation": "horizontal",
                       "h_alignment": "center",
                       "v_alignment": "center",
+                      "max_width": 750,
                       "style": "wrap",
                       "content": [
                         {
@@ -1397,7 +1573,7 @@
                 "title": "DP",
                 "icon": "images/items/srod.png",
                 "content": {
-                  "type": "scroll",
+                  "type": "viewbox",
                   "horizontal_scrollbar_visibility": "disabled",
                   "content": [
                     {
@@ -1405,6 +1581,7 @@
                       "orientation": "horizontal",
                       "h_alignment": "center",
                       "v_alignment": "center",
+                      "max_width": 750,
                       "style": "wrap",
                       "content": [
                         {
@@ -1497,7 +1674,7 @@
                 "title": "IR",
                 "icon": "images/items/frod.png",
                 "content": {
-                  "type": "scroll",
+                  "type": "viewbox",
                   "horizontal_scrollbar_visibility": "disabled",
                   "content": [
                     {
@@ -1505,6 +1682,7 @@
                       "orientation": "horizontal",
                       "h_alignment": "center",
                       "v_alignment": "center",
+                      "max_width": 1500,
                       "style": "wrap",
                       "content": [
                         {
@@ -1705,7 +1883,7 @@
                 "title": "LC",
                 "icon": "images/items/bow_light.png",
                 "content": {
-                  "type": "scroll",
+                  "type": "viewbox",
                   "horizontal_scrollbar_visibility": "disabled",
                   "content": [
                     {
@@ -1713,6 +1891,7 @@
                       "orientation": "horizontal",
                       "h_alignment": "center",
                       "v_alignment": "center",
+                      "max_width": 1125,
                       "style": "wrap",
                       "content": [
                         {

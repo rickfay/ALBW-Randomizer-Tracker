@@ -223,7 +223,7 @@
         ],
         "sections": [
           {
-            "name": "3F Margomill",
+            "name": "Margomill",
             //"capture_item": true,
             "hosted_item": "hog_chest_11",
             "access_rules": [
@@ -259,7 +259,7 @@
             "map": "hyrule",
             "x": 1620,
             "y": 1709,
-            "size": 70
+            "size": 80
           }
         ],
         "sections": [
@@ -345,7 +345,7 @@
             ]
           },
           {
-            "name": "3F Margomill",
+            "name": "Margomill",
             //"capture_item": true,
             "hosted_item": "hog_chest_11",
             "access_rules": [

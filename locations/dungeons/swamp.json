@@ -236,7 +236,7 @@
         ],
         "sections": [
           {
-            "name": "1F Arrghus",
+            "name": "Arrghus",
             //"capture_item": true,
             "access_rules": [
               "merge, bombs",
@@ -278,7 +278,7 @@
             "map": "lorule",
             "x": 962,
             "y": 1808,
-            "size": 70
+            "size": 80
           }
         ],
         "sections": [
@@ -365,7 +365,7 @@
             ]
           },
           {
-            "name": "1F Arrghus",
+            "name": "Arrghus",
             //"capture_item": true,
             "hosted_item": "sp_chest_12",
             "access_rules": [

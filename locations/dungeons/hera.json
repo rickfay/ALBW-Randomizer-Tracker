@@ -7,9 +7,9 @@
     "access_rules": [
       "hammer, powerglove, merge",
       "[glitched], hammer, merge",
-      "[advanced], hammer, bottle",
-      "[advanced], hammer, bluemail"
-      //      "[hell], hammer"
+      "[advanced], hammer, bottle_1",
+      "[advanced], hammer, bluemail",
+      "[hell], hammer"
     ],
     "children": [
       {
@@ -207,7 +207,7 @@
         ],
         "sections": [
           {
-            "name": "13F Moldorm",
+            "name": "Moldorm",
             //"capture_item": true,
             "hosted_item": "toh_chest_10",
             "access_rules": [
@@ -245,7 +245,7 @@
             "map": "hyrule",
             "x": 1211,
             "y": 39,
-            "size": 70
+            "size": 80
           }
         ],
         "sections": [
@@ -324,7 +324,7 @@
             ]
           },
           {
-            "name": "13F Moldorm",
+            "name": "Moldorm",
             //"capture_item": true,
             "hosted_item": "toh_chest_10",
             "access_rules": [

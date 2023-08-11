@@ -23,6 +23,10 @@ function hasAll(items)
     return true
 end
 
+function weather_vane(vane)
+    return hasAll({ "bell", vane })
+end
+
 -- Returns the count of the given item or setting
 function count(item)
     return Tracker:ProviderCountForCode(item)
@@ -315,7 +319,7 @@ end
 -- Return if we can enter Turtle Rock
 function enterTR()
     if hasAll({ "merge", "irod" }) then
-        if has("flippers") then
+        if has("flippers") or weather_vane("wv_turtle") then
             return true
         elseif fakeFlippers() then
             return true_for("advanced")
@@ -402,13 +406,7 @@ end
 
 -- Returns only if we can reach the final boss, NOT if we can obtain Zelda's check or win the fight
 function can_reach_final_boss()
-    return has("merge") and yg_requirement() and (
-            (has("yuga") and has_amount("courage", 2)) or (
-                    lc_requirement() and (
-                            has("trials_skipped") or hasAll({ "merge", "hookshot" })
-                    )
-            )
-    )
+    return has("merge") and yg_requirement() and ((has("yuga") and has_amount("courage", 2)) or (lc_requirement() and (has("trials_skipped") or hasAll({ "merge", "hookshot" }))))
 end
 
 -- Returns only if we can perform Trial's Skip to fight Yuganon, NOT if we can obtain Zelda's check or win the fight
@@ -447,15 +445,7 @@ function zelda()
 end
 
 function countNiceItems()
-    return count("nicebow") +
-            count("niceboomerang") +
-            count("nicehookshot") +
-            count("nicehammer") +
-            count("nicebombs") +
-            count("nicefrod") +
-            count("niceirod") +
-            count("nicetrod") +
-            count("nicesrod")
+    return count("nicebow") + count("niceboomerang") + count("nicehookshot") + count("nicehammer") + count("nicebombs") + count("nicefrod") + count("niceirod") + count("nicetrod") + count("nicesrod")
 end
 
 function maiamaiUpgradeAvailable()

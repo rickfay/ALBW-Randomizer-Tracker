@@ -27,6 +27,7 @@ Tracker:AddLayouts("layouts/tracker.json")
 if Tracker.ActiveVariantUID == "standard" then
     Tracker:AddLocations("locations/hyrule.json")
     Tracker:AddLocations("locations/lorule.json")
+    Tracker:AddLocations("locations/death_mountain.json")
     Tracker:AddLocations("locations/dungeons/eastern.json")
     Tracker:AddLocations("locations/dungeons/gales.json")
     Tracker:AddLocations("locations/dungeons/hera.json")

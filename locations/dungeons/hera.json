@@ -6,9 +6,14 @@
     "chest_opened_img": "images/checks/chest_small_opened.png",
     "access_rules": [
       "hammer, powerglove, merge",
+      "hammer, bell, wv_hera",
+      "hammer, bell, merge, wv_death_hyrule",
+      "hammer, bell, merge, wv_treacherous_tower",
+      "hammer, bell, merge, hookshot, wv_death_lorule",
+      "hammer, bell, merge, hookshot, wv_ice",
       "[glitched], hammer, merge",
-      "[advanced], hammer, bottle_1",
       "[advanced], hammer, bluemail",
+      "[advanced], hammer, bottle_1",
       "[hell], hammer"
     ],
     "children": [

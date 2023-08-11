@@ -70,114 +70,6 @@
         ]
       },
       {
-        "name": "Lorule Death Mountain",
-        "access_rules": [
-          "powerglove, merge",
-          "[glitched], merge"
-        ],
-        "children": [
-          {
-            "name": "Lorule Death Mountain",
-            "map_locations": [
-              {
-                "map": "lorule",
-                "x": 1147,
-                "y": 248
-              }
-            ],
-            "sections": [
-              {
-                "name": "Ice Gimos Fight",
-                "access_rules": [
-                  "$margomill"
-                ],
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Treacherous Tower",
-            "map_locations": [
-              {
-                "map": "lorule",
-                "x": 1149,
-                "y": 83
-              }
-            ],
-            "sections": [
-              {
-                "name": "Intermediate",
-                "access_rules": [
-                  "$attack, bombs",
-                  "$attack, hammer",
-                  "$attack, trod"
-                ],
-                "item_count": 1,
-                "visibility_rules": [
-                  "minigames_enabled"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Lorule Death Mountain",
-            "map_locations": [
-              {
-                "map": "lorule",
-                "x": 1061,
-                "y": 348
-              }
-            ],
-            "sections": [
-              {
-                "name": "West Ledge Chest",
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Lorule Death Mountain",
-            "map_locations": [
-              {
-                "map": "lorule",
-                "x": 1319,
-                "y": 140
-              }
-            ],
-            "sections": [
-              {
-                "name": "Behind Ice Gimos Trio",
-                "access_rules": [
-                  "{csmc, hookshot}",
-                  "hookshot, frod"
-                ],
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Lorule Death Mountain",
-            "map_locations": [
-              {
-                "map": "lorule",
-                "x": 1693,
-                "y": 222
-              }
-            ],
-            "sections": [
-              {
-                "name": "East Cliff Chest",
-                "access_rules": [
-                  "{csmc, hookshot}",
-                  "hookshot, trod"
-                ],
-                "item_count": 1
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "Graveyard",
         "children": [
           {
@@ -185,6 +77,7 @@
             "access_rules": [
               "titansmitt, merge, lamp, $attack",
               "titansmitt, merge, frod, $lampless",
+              "titansmitt, merge, bell, wv_graveyard, $lampless"
             ],
             "map_locations": [
               {
@@ -232,8 +125,10 @@
                   "{csmc, merge, lamp, $attack_normal}",
                   "{csmc, merge, lamp, hard}",
                   "{csmc, merge, frod, lampless}",
+                  "{csmc, merge, bell, wv_graveyard}",
                   "titansmitt, merge, lamp, $attack",
-                  "titansmitt, merge, frod, $lampless"
+                  "titansmitt, merge, frod, $lampless",
+                  "titansmitt, merge, bell, wv_graveyard, $lampless"
                 ],
                 "item_count": 1
               }
@@ -254,7 +149,8 @@
                 "access_rules": [
                   "{csmc, merge}",
                   "merge, lamp, $attack",
-                  "merge, frod, $lampless"
+                  "merge, frod, $lampless",
+                  "merge, bell, wv_graveyard"
                 ],
                 "item_count": 1
               }
@@ -345,7 +241,7 @@
         ]
       },
       {
-        "name": "Lorule Castle Area",
+        "name": "Central Lorule",
         "access_rules": [
           "merge"
         ],

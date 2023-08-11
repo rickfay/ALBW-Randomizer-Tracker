@@ -204,284 +204,6 @@
         ]
       },
       {
-        "name": "Death Mountain",
-        "access_rules": [
-          "powerglove",
-          "bell, wv_death_hyrule",
-          // TODO
-          "bell, wv_hera",
-          "[glitched]"
-        ],
-        "children": [
-          {
-            "name": "Death Mountain",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 888,
-                "y": 353
-              }
-            ],
-            "sections": [
-              {
-                "name": "Bomb Cave",
-                "access_rules": [
-                  "{csmc, powerglove}",
-                  "{csmc, glitched}",
-                  "merge, bombs"
-                ],
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Death Mountain",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 985,
-                "y": 353
-              }
-            ],
-            "sections": [
-              {
-                "name": "Cave Left of Weather Vane",
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Bouldering Guy",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 1695,
-                "y": 227
-              }
-            ],
-            "sections": [
-              {
-                "name": "Trade Premium Milk",
-                "access_rules": [
-                  "bottle_milk_premium, hookshot, merge",
-                  "[advanced], bottle_1, bottle_milk_premium, hookshot, trod, boots",
-                  "[advanced], bluemail, bottle_milk_premium, hookshot, trod, boots"
-                  //"[hell], bottle_milk_premium, hookshot, trod, boots"
-                ],
-                "hosted_item": "bottles",
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Death Mountain",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 1193,
-                "y": 385
-              }
-            ],
-            "sections": [
-              {
-                "name": "Fairy Cave",
-                "access_rules": [
-                  "{csmc, powerglove, merge}",
-                  "{csmc, glitched, merge}",
-
-                  "{csmc, advanced, bluemail, $boost}",
-                  "{csmc, advanced, bluemail, hookshot}",
-                  "{csmc, advanced, bluemail, boomerang}",
-
-                  "{csmc, advanced, bottle_1, $boost}",
-                  "{csmc, advanced, bottle_1, hookshot}",
-                  "{csmc, advanced, bottle_1, boomerang}",
-
-                  "merge, hammer",
-                  "merge, bombs",
-
-                  "[advanced], bluemail, $boost, hammer",
-                  "[advanced], bluemail, boomerang, hammer",
-                  "[advanced], bluemail, hookshot, hammer",
-
-                  "[advanced], bottle_1, $boost, hammer",
-                  "[advanced], bottle_1, boomerang, hammer",
-                  "[advanced], bottle_1, hookshot, hammer",
-
-                  "[advanced], bluemail, $boost, bombs",
-                  "[advanced], bluemail, boomerang, bombs",
-                  "[advanced], bluemail, hookshot, bombs",
-
-                  "[advanced], bottle_1, $boost, bombs",
-                  "[advanced], bottle_1, boomerang, bombs",
-                  "[advanced], bottle_1, hookshot, bombs"
-
-                  //"[hell], frod, hammer",
-                  //"[hell], bombs"
-                ],
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Death Mountain",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 1025,
-                "y": 251
-              }
-            ],
-            "sections": [
-              {
-                "name": "Ledge Chest",
-                "access_rules": [
-                  "merge",
-                  "[advanced], bottle_1",
-                  "[advanced], bluemail"
-                  //              "[hell], hammer",
-                  //              "[hell], bombs",
-                  //              "[hell], trod"
-                ],
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Donkey Cave",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 1043,
-                "y": 334
-              }
-            ],
-            "sections": [
-              {
-                "name": "Peg Chest",
-                "access_rules": [
-                  "{csmc, powerglove}",
-                  "{csmc, glitched}",
-                  "merge, hammer",
-                  "[advanced], bottle_1, hammer",
-                  "[advanced], bluemail, hammer"
-                ],
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Death Mountain",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 963,
-                "y": 173
-              }
-            ],
-            "sections": [
-              {
-                "name": "Third Cave Chest",
-                "access_rules": [
-                  "merge",
-                  "[advanced], bottle_1",
-                  "[advanced], bluemail"
-                ],
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Death Mountain",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 1025,
-                "y": 51
-              }
-            ],
-            "sections": [
-              {
-                "name": "Spectacle Rock",
-                "access_rules": [
-                  "merge",
-                  "[advanced], bottle_1",
-                  "[advanced], bluemail"
-                ],
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Death Mountain",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 1625,
-                "y": 79
-              },
-              {
-                "map": "lorule",
-                "x": 1625,
-                "y": 79
-              }
-            ],
-            "sections": [
-              {
-                "name": "Floating Island",
-                "access_rules": [
-                  //"{merge, hookshot}",
-                  //"{advanced, bottle_1, hookshot}",
-                  //"{advanced, bluemail, hookshot}",
-                  "merge, hookshot, trod"
-                ],
-                //"capture_item": true,
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Death Mountain",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 1878,
-                "y": 168
-              }
-            ],
-            "sections": [
-              {
-                "name": "Treasure Dungeon",
-                "access_rules": [
-                  "merge, hookshot"
-                ],
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Death Mountain",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 1718,
-                "y": 176
-              }
-            ],
-            "sections": [
-              {
-                "name": "Fire Cave Pillar",
-                //"capture_item": true,
-                "access_rules": [
-                  "merge, hookshot, hammer"
-                ],
-                "item_count": 1
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "Sanctuary + Zora's River",
         "children": [
           {
@@ -573,7 +295,8 @@
                 //"capture_item": true,
                 "access_rules": [
                   "merge, lamp, bombs",
-                  "merge, frod, $lampless, bombs"
+                  "merge, frod, $lampless, bombs",
+                  "merge, bombs, wv_graveyard"
                 ],
                 "item_count": 1
               }
@@ -1004,7 +727,7 @@
         ]
       },
       {
-        "name": "Hyrule Castle Area",
+        "name": "Central Hyrule",
         "children": [
           {
             "name": "Ravio's Shop",
@@ -1186,7 +909,7 @@
             ]
           },
           {
-            "name": "Haunted Grove",
+            "name": "Wildlife Clearing",
             "map_locations": [
               {
                 "map": "hyrule",
@@ -1196,7 +919,7 @@
             ],
             "sections": [
               {
-                "name": "Tree Stump",
+                "name": "Stump",
                 "access_rules": [
                   "courage:2"
                 ],
@@ -1559,7 +1282,7 @@
             ],
             "sections": [
               {
-                "name": "Hidden Bomb Cave",
+                "name": "Ice Rod Cave (Hidden)",
                 "access_rules": [
                   "{csmc, trod}",
                   "{csmc, irod}",

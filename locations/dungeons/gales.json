@@ -6,9 +6,11 @@
     "chest_opened_img": "images/checks/chest_small_opened.png",
     "access_rules": [
       "trod, flippers",
+      "trod, wv_gales, bell",
       "[advanced], trod, irod, hookshot",
       "[advanced], trod, $fakeFlippers",
-      "[hell], trod, boots"
+      "[hell], trod, boots, bombs",
+      "[hell], trod, boots, $beeBoost"
     ],
     "children": [
       {
@@ -25,7 +27,7 @@
             "name": "1F Bubble Room",
             "hosted_item": "hog_chest_01",
             "access_rules": [
-              "merge, $attack"
+              "merge, $fire_enemy"
             ]
           }
         ]
@@ -267,7 +269,7 @@
             "name": "1F Bubble Room",
             "hosted_item": "hog_chest_01",
             "access_rules": [
-              "merge, $attack"
+              "merge, $fire_enemy"
             ]
           },
           {

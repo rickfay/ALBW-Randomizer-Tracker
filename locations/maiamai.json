@@ -294,139 +294,6 @@
           }
         ]
       },
-      // Death Mountain - 5
-      {
-        "name": "Death Mountain",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1142,
-            "y": 468,
-            "size": 32
-          }
-        ],
-        "sections": [
-          {
-            "name": "Under West Rock",
-            "item_count": 1,
-            //"capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
-            ],
-            "access_rules": [
-              "powerglove"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Death Mountain",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1045,
-            "y": 245,
-            "size": 32
-          }
-        ],
-        "sections": [
-          {
-            "name": "Near Ledge Chest",
-            "item_count": 1,
-            //"capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
-            ],
-            "access_rules": [
-              //"{advanced, bottle_1}",
-              //"{advanced, bluemail}",
-              "powerglove, merge",
-              "[glitched], merge"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Death Mountain",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1910,
-            "y": 168,
-            "size": 32
-          }
-        ],
-        "sections": [
-          {
-            "name": "Stuck to Treasure Dungeon",
-            "item_count": 1,
-            //"capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
-            ],
-            "access_rules": [
-              //"{advanced, bottle_1, hookshot}",
-              //"{advanced, bluemail, hookshot}",
-              "powerglove, hookshot, merge",
-              "[glitched], hookshot, merge"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Death Mountain",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1639,
-            "y": 254,
-            "size": 32
-          }
-        ],
-        "sections": [
-          {
-            "name": "Under Ledge Rock",
-            "item_count": 1,
-            //"capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
-            ],
-            "access_rules": [
-              "merge, powerglove, hookshot",
-              "[advanced], bottle_1, powerglove, hookshot, boots, trod",
-              "[advanced], bluemail, powerglove, hookshot, boots, trod"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Rosso's Ore Mine",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1324,
-            "y": 390,
-            "size": 32
-          }
-        ],
-        "sections": [
-          {
-            "name": "Under Rock",
-            "item_count": 1,
-            //"capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
-            ],
-            "access_rules": [
-              "merge, powerglove, hookshot",
-              "[advanced], bottle_1, powerglove, hookshot, boots, trod",
-              "[advanced], bluemail, powerglove, hookshot, boots, trod",
-              "[advanced], bottle_1, powerglove, hookshot, nicebombs",
-              "[advanced], bluemail, powerglove, hookshot, nicebombs"
-            ]
-          }
-        ]
-      },
       // Sanctuary Area - 7
       {
         "name": "Sanctuary",
@@ -1122,7 +989,8 @@
               "maiamai_map"
             ],
             "access_rules": [
-              "merge, srod"
+              "srod, merge",
+              "srod, wv_desert, bell"
             ]
           }
         ]
@@ -1146,7 +1014,8 @@
               "maiamai_map"
             ],
             "access_rules": [
-              "merge, srod"
+              "srod, merge",
+              "srod, wv_desert, bell"
             ]
           }
         ]
@@ -1273,6 +1142,7 @@
             ],
             "access_rules": [
               "trod, flippers",
+              "trod, wv_gales, bell",
               "[advanced], trod, $fakeFlippers",
               "[advanced], trod, irod, hookshot"
             ]
@@ -1561,177 +1431,12 @@
           }
         ]
       },
-      // Lorule Death Mountain - 6
-      {
-        "name": "Lorule Death Mountain",
-        "access_rules": [
-          "powerglove, merge",
-          "[glitched], merge"
-        ],
-        "children": [
-          {
-            "name": "Lorule Death Mountain",
-            "map_locations": [
-              {
-                "map": "lorule",
-                "x": 864,
-                "y": 303,
-                "size": 32
-              }
-            ],
-            "sections": [
-              {
-                "name": "West Skull",
-                "item_count": 1,
-                //"capture_item": true,
-                "visibility_rules": [
-                  "maiamai_map"
-                ],
-                "access_rules": [
-                  "fsword",
-                  "bow",
-                  "boomerang",
-                  "hookshot",
-                  "bombs",
-                  "frod",
-                  "irod",
-                  "hammer",
-                  "srod",
-                  "boots",
-                  "powerglove",
-                  "[hard], merge"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Lorule Death Mountain",
-            "map_locations": [
-              {
-                "map": "lorule",
-                "x": 843,
-                "y": 111,
-                "size": 32
-              }
-            ],
-            "sections": [
-              {
-                "name": "Under NW Big Rock",
-                "item_count": 1,
-                //"capture_item": true,
-                "access_rules": [
-                  "hammer, titansmitt",
-                  "[glitched], titansmitt, nicebombs",
-                  "[hell], titansmitt, bombs"
-                ],
-                "visibility_rules": [
-                  "maiamai_map"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Lorule Death Mountain",
-            "map_locations": [
-              {
-                "map": "lorule",
-                "x": 1309,
-                "y": 429,
-                "size": 32
-              }
-            ],
-            "sections": [
-              {
-                "name": "Under Bridge Big Rock",
-                "item_count": 1,
-                //"capture_item": true,
-                "access_rules": [
-                  "titansmitt"
-                ],
-                "visibility_rules": [
-                  "maiamai_map"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Lorule Death Mountain East Side",
-            "access_rules": [
-              "hookshot"
-            ],
-            "children": [
-              {
-                "name": "Lorule Death Mountain",
-                "map_locations": [
-                  {
-                    "map": "lorule",
-                    "x": 1723,
-                    "y": 475,
-                    "size": 32
-                  }
-                ],
-                "sections": [
-                  {
-                    "name": "Stuck to SE Wall",
-                    "item_count": 1,
-                    //"capture_item": true,
-                    "visibility_rules": [
-                      "maiamai_map"
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Lorule Death Mountain",
-                "map_locations": [
-                  {
-                    "map": "lorule",
-                    "x": 1634,
-                    "y": 256,
-                    "size": 32
-                  }
-                ],
-                "sections": [
-                  {
-                    "name": "East Cliff Skull",
-                    "item_count": 1,
-                    //"capture_item": true,
-                    "visibility_rules": [
-                      "maiamai_map"
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Lorule Death Mountain",
-                "map_locations": [
-                  {
-                    "map": "lorule",
-                    "x": 1880,
-                    "y": 106,
-                    "size": 32
-                  }
-                ],
-                "sections": [
-                  {
-                    "name": "Stuck to Ice Ruins",
-                    "item_count": 1,
-                    //"capture_item": true,
-                    "visibility_rules": [
-                      "maiamai_map"
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
       // Graveyard - 3
       {
         "name": "Lorule Graveyard",
         "access_rules": [
-          "merge, lamp, $attack"
+          "merge, lamp, $attack",
+          "merge, bell, wv_graveyard"
         ],
         "children": [
           {

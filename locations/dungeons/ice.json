@@ -5,8 +5,13 @@
     "chest_unopened_img": "images/checks/chest_small_unopened.png",
     "chest_opened_img": "images/checks/chest_small_opened.png",
     "access_rules": [
-      "powerglove, merge, frod, hookshot",
-      "[glitched], merge, frod, hookshot"
+      "frod, merge, hookshot, powerglove",
+      "frod, merge, hookshot, bell, wv_hera",
+      "frod, merge, hookshot, bell, wv_death_hyrule",
+      "frod, merge, hookshot, bell, wv_treacherous_tower",
+      "frod, merge, bell, wv_death_lorule",
+      "frod, merge, bell, wv_ice",
+      "[glitched], frod, merge, hookshot"
     ],
     "children": [
       {

@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Hyrule",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/maps/hyrule.png",
+        "codes": "map_hyrule"
+      },
+      {
+        "img": "images/maps/regions-hyrule.png"
+      }
+    ]
+  },
+  {
+    "name": "Lorule",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/maps/lorule.png",
+        "codes": "map_lorule"
+      },
+      {
+        "img": "images/maps/regions-lorule.png"
+      }
+    ]
+  },
+  // "Wrap" the map items in toggle_badged items to consume the right-click input.
+  // This helps prevent accidental region toggling when normally clearing a location.
+  {
+    "type": "toggle_badged",
+    "base_item": "map_hyrule",
+    "codes": "map_hyrule_badged",
+    "img": ""
+  },
+  {
+    "type": "toggle_badged",
+    "base_item": "map_lorule",
+    "codes": "map_lorule_badged",
+    "img": ""
+  }
+]

@@ -1,0 +1,368 @@
+{
+  "hera": {
+    "type": "viewbox",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "max_width": 1875,
+        "style": "wrap",
+        "content": [
+          {
+            "type": "container",
+            "content": [
+              {
+                "type": "map",
+                "width": 250,
+                "scale": 1.5,
+                "margin": "-25,0,-25,-50",
+                "maps": [
+                  "hera13F"
+                ]
+              },
+              {
+                "type": "canvas",
+                "dropshadow": true,
+                "content": [
+                  {
+                    "type": "image",
+                    "image": "images/floors/13F_Boss.png",
+                    "width": 50,
+                    "canvas_top": 30,
+                    "canvas_left": 235
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "content": [
+              {
+                "type": "map",
+                "width": 250,
+                "scale": 1.5,
+                "margin": "-25,0,-25,-50",
+                "maps": [
+                  "hera12F"
+                ]
+              },
+              {
+                "type": "canvas",
+                "dropshadow": true,
+                "content": [
+                  {
+                    "type": "image",
+                    "image": "images/floors/12F.png",
+                    "width": 50,
+                    "canvas_top": 30,
+                    "canvas_left": 235
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "content": [
+              {
+                "type": "map",
+                "width": 250,
+                "scale": 1.5,
+                "margin": "-25,0,-25,-50",
+                "maps": [
+                  "hera11F"
+                ]
+              },
+              {
+                "type": "canvas",
+                "dropshadow": true,
+                "content": [
+                  {
+                    "type": "image",
+                    "image": "images/floors/11F.png",
+                    "width": 50,
+                    "canvas_top": 30,
+                    "canvas_left": 235
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "content": [
+              {
+                "type": "map",
+                "width": 250,
+                "scale": 1.5,
+                "margin": "-25,0,-25,-50",
+                "maps": [
+                  "hera10F"
+                ]
+              },
+              {
+                "type": "canvas",
+                "dropshadow": true,
+                "content": [
+                  {
+                    "type": "image",
+                    "image": "images/floors/10F.png",
+                    "width": 50,
+                    "canvas_top": 30,
+                    "canvas_left": 235
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "content": [
+              {
+                "type": "map",
+                "width": 250,
+                "scale": 1.5,
+                "margin": "-25,0,-25,-50",
+                "maps": [
+                  "hera9F"
+                ]
+              },
+              {
+                "type": "canvas",
+                "dropshadow": true,
+                "content": [
+                  {
+                    "type": "image",
+                    "image": "images/floors/9F.png",
+                    "width": 50,
+                    "canvas_top": 30,
+                    "canvas_left": 235
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "content": [
+              {
+                "type": "map",
+                "width": 250,
+                "scale": 1.5,
+                "margin": "-25,0,-25,-50",
+                "maps": [
+                  "hera8F"
+                ]
+              },
+              {
+                "type": "canvas",
+                "dropshadow": true,
+                "content": [
+                  {
+                    "type": "image",
+                    "image": "images/floors/8F.png",
+                    "width": 50,
+                    "canvas_top": 30,
+                    "canvas_left": 235
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "content": [
+              {
+                "type": "map",
+                "width": 250,
+                "scale": 1.5,
+                "margin": "-25,0,-25,-50",
+                "maps": [
+                  "hera7F"
+                ]
+              },
+              {
+                "type": "canvas",
+                "dropshadow": true,
+                "content": [
+                  {
+                    "type": "image",
+                    "image": "images/floors/7F.png",
+                    "width": 50,
+                    "canvas_top": 30,
+                    "canvas_left": 235
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "content": [
+              {
+                "type": "map",
+                "width": 250,
+                "scale": 1.5,
+                "margin": "-25,0,-25,-50",
+                "maps": [
+                  "hera6F"
+                ]
+              },
+              {
+                "type": "canvas",
+                "dropshadow": true,
+                "content": [
+                  {
+                    "type": "image",
+                    "image": "images/floors/6F.png",
+                    "width": 50,
+                    "canvas_top": 30,
+                    "canvas_left": 235
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "content": [
+              {
+                "type": "map",
+                "width": 250,
+                "scale": 1.5,
+                "margin": "-25,0,-25,-50",
+                "maps": [
+                  "hera5F"
+                ]
+              },
+              {
+                "type": "canvas",
+                "dropshadow": true,
+                "content": [
+                  {
+                    "type": "image",
+                    "image": "images/floors/5F.png",
+                    "width": 50,
+                    "canvas_top": 30,
+                    "canvas_left": 235
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "content": [
+              {
+                "type": "map",
+                "width": 250,
+                "scale": 1.5,
+                "margin": "-25,0,-25,-50",
+                "maps": [
+                  "hera4F"
+                ]
+              },
+              {
+                "type": "canvas",
+                "dropshadow": true,
+                "content": [
+                  {
+                    "type": "image",
+                    "image": "images/floors/4F.png",
+                    "width": 50,
+                    "canvas_top": 30,
+                    "canvas_left": 235
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "content": [
+              {
+                "type": "map",
+                "width": 250,
+                "scale": 1.5,
+                "margin": "-25,0,-25,-50",
+                "maps": [
+                  "hera3F"
+                ]
+              },
+              {
+                "type": "canvas",
+                "dropshadow": true,
+                "content": [
+                  {
+                    "type": "image",
+                    "image": "images/floors/3F.png",
+                    "width": 50,
+                    "canvas_top": 30,
+                    "canvas_left": 235
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "content": [
+              {
+                "type": "map",
+                "width": 250,
+                "scale": 1.5,
+                "margin": "-25,0,-25,-50",
+                "maps": [
+                  "hera2F"
+                ]
+              },
+              {
+                "type": "canvas",
+                "dropshadow": true,
+                "content": [
+                  {
+                    "type": "image",
+                    "image": "images/floors/2F.png",
+                    "width": 50,
+                    "canvas_top": 30,
+                    "canvas_left": 235
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "content": [
+              {
+                "type": "map",
+                "width": 250,
+                "scale": 1.5,
+                "margin": "-25,0,-25,-25",
+                "maps": [
+                  "hera1F"
+                ]
+              },
+              {
+                "type": "canvas",
+                "dropshadow": true,
+                "content": [
+                  {
+                    "type": "image",
+                    "image": "images/floors/1F.png",
+                    "width": 50,
+                    "canvas_top": 30,
+                    "canvas_left": 235
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

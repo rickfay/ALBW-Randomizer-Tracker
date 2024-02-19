@@ -1,100 +1,122 @@
 [
-//  {
-//    "name": "Mother Maiamai",
-//    "map_locations": [
-//      {
-//        "map": "hyrule",
-//        "x": 1467,
-//        "y": 1542
-//      }
-//    ],
-//    "sections": [
-//      {
-//        "name": "Nice Bow       ",
-//        "access_rules": [
-//          "bow, $canUpgradeItem",
-//          "nicebow"
-//        ],
-//        "hosted_item": "nicebow"
-//      },
-//      {
-//        "name": "Nice Boomerang  ",
-//        "access_rules": [
-//          "boomerang, $canUpgradeItem",
-//          "niceboomerang"
-//        ],
-//        "hosted_item": "niceboomerang"
-//      },
-//      {
-//        "name": "Nice Hookshot",
-//        "access_rules": [
-//          "hookshot, $canUpgradeItem",
-//          "nicehookshot"
-//        ],
-//        "hosted_item": "nicehookshot"
-//      },
-//      {
-//        "name": "Nice Hammer",
-//        "access_rules": [
-//          "hammer, $canUpgradeItem",
-//          "nicehammer"
-//        ],
-//        "hosted_item": "nicehammer"
-//      },
-//      {
-//        "name": "Nice Bombs         ",
-//        "access_rules": [
-//          "bombs, $canUpgradeItem",
-//          "nicebombs"
-//        ],
-//        "hosted_item": "nicebombs"
-//      },
-//      {
-//        "name": "Nice Fire Rod",
-//        "access_rules": [
-//          "frod, $canUpgradeItem",
-//          "nicefrod"
-//        ],
-//        "hosted_item": "nicefrod"
-//      },
-//      {
-//        "name": "Nice Ice Rod  ",
-//        "access_rules": [
-//          "irod, $canUpgradeItem",
-//          "niceirod"
-//        ],
-//        "hosted_item": "niceirod"
-//      },
-//      {
-//        "name": "Nice Tornado Rod",
-//        "access_rules": [
-//          "trod, $canUpgradeItem",
-//          "nicetrod"
-//        ],
-//        "hosted_item": "nicetrod"
-//      },
-//      {
-//        "name": "Nice Sand Rod",
-//        "access_rules": [
-//          "srod, $canUpgradeItem",
-//          "nicesrod"
-//        ],
-//        "hosted_item": "nicesrod"
-//      },
-//      {
-//        "name": "Great Spin",
-//        "access_rules": [
-//          "maiamai_100, nicebow, niceboomerang, nicehookshot, nicehammer, nicebombs, nicefrod, niceirod, nicetrod, nicesrod",
-//          "greatspin"
-//        ],
-//        "hosted_item": "greatspin"
-//      }
-//    ]
-//  },
+  {
+    "name": "Mother Maiamai",
+    "map_locations": [
+      {
+        "map": "hyrule",
+        "x": 1467,
+        "y": 1542,
+        "size": 64
+      }
+    ],
+    "always_allow_chest_manipulation": false,
+    "sections": [
+      {
+        "name": "Bow",
+        "clear_as_group": false,
+        "access_rules": [
+          "{bow}",
+          "bow, $canUpgradeItem",
+          "maiamai_bow"
+        ],
+        "hosted_item": "maiamai_bow",
+        "capture_item": true
+      },
+      {
+        "name": "Boomerang",
+        "access_rules": [
+          "{boomerang}",
+          "boomerang, $canUpgradeItem",
+          "maiamai_boomerang"
+        ],
+        "hosted_item": "maiamai_boomerang",
+        "capture_item": true
+      },
+      {
+        "name": "Hookshot",
+        "access_rules": [
+          "{hookshot}",
+          "hookshot, $canUpgradeItem",
+          "maiamai_hookshot"
+        ],
+        "hosted_item": "maiamai_hookshot",
+        "capture_item": true
+      },
+      {
+        "name": "Hammer",
+        "access_rules": [
+          "{hammer}",
+          "hammer, $canUpgradeItem",
+          "maiamai_hammer"
+        ],
+        "hosted_item": "maiamai_hammer",
+        "capture_item": true
+      },
+      {
+        "name": "Bombs",
+        "access_rules": [
+          "{bombs}",
+          "bombs, $canUpgradeItem",
+          "maiamai_bombs"
+        ],
+        "hosted_item": "maiamai_bombs",
+        "capture_item": true
+      },
+      {
+        "name": "Fire Rod",
+        "access_rules": [
+          "{frod}",
+          "frod, $canUpgradeItem",
+          "maiamai_fire_rod"
+        ],
+        "hosted_item": "maiamai_fire_rod",
+        "capture_item": true
+      },
+      {
+        "name": "Ice Rod",
+        "access_rules": [
+          "{irod}",
+          "irod, $canUpgradeItem",
+          "maiamai_ice_rod"
+        ],
+        "hosted_item": "maiamai_ice_rod",
+        "capture_item": true
+      },
+      {
+        "name": "Tornado Rod",
+        "access_rules": [
+          "{trod}",
+          "trod, $canUpgradeItem",
+          "maiamai_tornado_rod"
+        ],
+        "hosted_item": "maiamai_tornado_rod",
+        "capture_item": true
+      },
+      {
+        "name": "Sand Rod",
+        "access_rules": [
+          "{srod}",
+          "srod, $canUpgradeItem",
+          "maiamai_sand_rod"
+        ],
+        "hosted_item": "maiamai_sand_rod",
+        "capture_item": true
+      },
+      {
+        "name": "100 Maiamai",
+        "chest_unopened_img": "images/checks/chest_small_unopened.png",
+        "chest_opened_img": "images/checks/chest_small_opened.png",
+        "access_rules": [
+          "maiamai_100, maiamai_bow, maiamai_boomerang, maiamai_hookshot, maiamai_hammer, maiamai_bombs, maiamai_fire_rod, maiamai_ice_rod, maiamai_tornado_rod, maiamai_sand_rod"
+        ],
+        "item_count": 1
+      }
+    ]
+  },
   {
     "name": "Hyrule Maiamai",
-    "chest_unopened_img": "images/checks/chest_small_unopened.png",
-    "chest_opened_img": "images/checks/chest_small_opened.png",
+    "chest_unopened_img": "images/items/maiamai.png",
+    "chest_opened_img": "images/items/maiamai_opened.png",
     "children": [
       // Lost Woods Area - 8
       {
@@ -103,8 +125,8 @@
           {
             "map": "hyrule",
             "x": 410,
-            "y": 674,
-            "size": 32
+            "y": 672,
+            "size": 48
           }
         ],
         "sections": [
@@ -129,7 +151,7 @@
             "map": "hyrule",
             "x": 625,
             "y": 704,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -154,7 +176,7 @@
             "map": "hyrule",
             "x": 711,
             "y": 255,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -179,7 +201,7 @@
             "map": "hyrule",
             "x": 350,
             "y": 183,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -191,7 +213,7 @@
               "maiamai_map"
             ],
             "access_rules": [
-              "powerglove"
+              "power_glove"
             ]
           }
         ]
@@ -203,7 +225,7 @@
             "map": "hyrule",
             "x": 320,
             "y": 352,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -228,7 +250,7 @@
             "map": "hyrule",
             "x": 98,
             "y": 189,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -249,7 +271,7 @@
             "map": "hyrule",
             "x": 226,
             "y": 710,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -262,9 +284,9 @@
             ],
             "access_rules": [
               "titansmitt",
-              "powerglove, hammer",
-              "[glitched], powerglove, hookshot",
-              "[glitched], powerglove, boomerang, $escape"
+              "power_glove, hammer",
+              "[glitched], power_glove, hookshot",
+              "[glitched], power_glove, boomerang, $escape"
             ]
           }
         ]
@@ -276,7 +298,7 @@
             "map": "hyrule",
             "x": 730,
             "y": 333,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -302,7 +324,7 @@
             "map": "hyrule",
             "x": 859,
             "y": 696,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -327,7 +349,7 @@
             "map": "hyrule",
             "x": 1600,
             "y": 677,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -352,7 +374,7 @@
             "map": "hyrule",
             "x": 1789,
             "y": 396,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -379,7 +401,7 @@
             "map": "hyrule",
             "x": 1889,
             "y": 764,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -405,7 +427,7 @@
             "map": "hyrule",
             "x": 1475,
             "y": 559,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -434,7 +456,7 @@
             "map": "hyrule",
             "x": 1407,
             "y": 910,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -454,32 +476,6 @@
           }
         ]
       },
-      {
-        "name": "Sanctuary",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 1112,
-            "y": 579,
-            "size": 32
-          }
-        ],
-        "sections": [
-          {
-            "name": "Graveyard Ledge Wall",
-            "item_count": 1,
-            //"capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
-            ],
-            "access_rules": [
-              //"{}",
-              "lamp, merge, bombs",
-              "$lampless, frod, merge, bombs"
-            ]
-          }
-        ]
-      },
       // Kakariko Village - 5
       {
         "name": "Kakariko Village",
@@ -488,7 +484,7 @@
             "map": "hyrule",
             "x": 514,
             "y": 949,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -507,33 +503,9 @@
         "map_locations": [
           {
             "map": "hyrule",
-            "x": 423,
-            "y": 984,
-            "size": 32
-          }
-        ],
-        "sections": [
-          {
-            "name": "Under Rooftop Rock",
-            "item_count": 1,
-            //"capture_item": true,
-            "visibility_rules": [
-              "maiamai_map"
-            ],
-            "access_rules": [
-              "powerglove"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Kakariko Village",
-        "map_locations": [
-          {
-            "map": "hyrule",
             "x": 210,
             "y": 1186,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -557,7 +529,7 @@
             "map": "hyrule",
             "x": 450,
             "y": 1362,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -581,7 +553,7 @@
             "map": "hyrule",
             "x": 135,
             "y": 1480,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -607,7 +579,7 @@
             "map": "hyrule",
             "x": 845,
             "y": 839,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -631,7 +603,7 @@
             "map": "hyrule",
             "x": 849,
             "y": 1236,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -655,7 +627,7 @@
             "map": "hyrule",
             "x": 907,
             "y": 1335,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -679,7 +651,7 @@
             "map": "hyrule",
             "x": 660,
             "y": 1285,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -704,7 +676,7 @@
             "map": "hyrule",
             "x": 590,
             "y": 1690,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -726,9 +698,9 @@
         "map_locations": [
           {
             "map": "hyrule",
-            "x": 1087,
-            "y": 1344,
-            "size": 32
+            "x": 1081,
+            "y": 1353,
+            "size": 48
           }
         ],
         "sections": [
@@ -753,7 +725,7 @@
             "map": "hyrule",
             "x": 589,
             "y": 1082,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -777,7 +749,7 @@
             "map": "hyrule",
             "x": 640,
             "y": 919,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -802,7 +774,7 @@
             "map": "hyrule",
             "x": 1471,
             "y": 1174,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -827,7 +799,7 @@
             "map": "hyrule",
             "x": 1473,
             "y": 1421,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -854,7 +826,7 @@
             "map": "hyrule",
             "x": 1702,
             "y": 1368,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -878,7 +850,7 @@
             "map": "hyrule",
             "x": 1782,
             "y": 1201,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -903,7 +875,7 @@
             "map": "hyrule",
             "x": 1708,
             "y": 1001,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -928,7 +900,7 @@
             "map": "hyrule",
             "x": 1908,
             "y": 1478,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -953,7 +925,7 @@
             "map": "hyrule",
             "x": 660,
             "y": 1915,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -977,7 +949,7 @@
             "map": "hyrule",
             "x": 323,
             "y": 1679,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -989,8 +961,7 @@
               "maiamai_map"
             ],
             "access_rules": [
-              "srod, merge",
-              "srod, wv_desert, bell"
+              "$access_desert, srod"
             ]
           }
         ]
@@ -1002,7 +973,7 @@
             "map": "hyrule",
             "x": 186,
             "y": 1802,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -1014,8 +985,8 @@
               "maiamai_map"
             ],
             "access_rules": [
-              "srod, merge",
-              "srod, wv_desert, bell"
+              "$access_desert_palace, srod",
+              "[glitched], $glitched_access_desert_palace, srod"
             ]
           }
         ]
@@ -1028,7 +999,7 @@
             "map": "hyrule",
             "x": 1132,
             "y": 1665,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -1053,7 +1024,7 @@
             "map": "hyrule",
             "x": 1200,
             "y": 1844,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -1078,7 +1049,7 @@
             "map": "hyrule",
             "x": 994,
             "y": 1881,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -1102,9 +1073,9 @@
         "map_locations": [
           {
             "map": "hyrule",
-            "x": 1448,
-            "y": 1535,
-            "size": 32
+            "x": 1451,
+            "y": 1526,
+            "size": 48
           }
         ],
         "sections": [
@@ -1127,9 +1098,9 @@
         "map_locations": [
           {
             "map": "hyrule",
-            "x": 1648,
-            "y": 1670,
-            "size": 32
+            "x": 1644,
+            "y": 1685,
+            "size": 48
           }
         ],
         "sections": [
@@ -1156,7 +1127,7 @@
             "map": "hyrule",
             "x": 1591,
             "y": 1844,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -1181,7 +1152,7 @@
             "map": "hyrule",
             "x": 1824,
             "y": 1837,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -1208,7 +1179,7 @@
             "map": "hyrule",
             "x": 1963,
             "y": 1687,
-            "size": 32
+            "size": 48
           }
         ],
         "sections": [
@@ -1236,7 +1207,7 @@
         // Skull Woods - 8
         "name": "Skull Woods Region",
         "access_rules": [
-          "merge"
+          "$access_skull_woods_area"
         ],
         "children": [
           {
@@ -1246,13 +1217,17 @@
                 "map": "lorule",
                 "x": 289,
                 "y": 856,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
               {
-                "name": "Stuck to Cliff House",
+                "name": "n-Shaped House Wall",
                 "item_count": 1,
+                "access_rules": [
+                  "merge"
+
+                ],
                 //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
@@ -1267,13 +1242,16 @@
                 "map": "lorule",
                 "x": 353,
                 "y": 752,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
               {
                 "name": "Wall Near Entrance Sign",
                 "item_count": 1,
+                "access_rules": [
+                  "merge"
+                ],
                 //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
@@ -1288,13 +1266,16 @@
                 "map": "lorule",
                 "x": 679,
                 "y": 702,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
               {
                 "name": "Dry Pond",
                 "item_count": 1,
+                "access_rules": [
+                  "merge"
+                ],
                 //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
@@ -1309,7 +1290,7 @@
                 "map": "lorule",
                 "x": 650,
                 "y": 472,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -1330,7 +1311,7 @@
                 "map": "lorule",
                 "x": 657,
                 "y": 231,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -1354,7 +1335,7 @@
                 "map": "lorule",
                 "x": 117,
                 "y": 111,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -1376,7 +1357,7 @@
                   "hammer",
                   "srod",
                   "boots",
-                  "powerglove"
+                  "power_glove"
                 ]
               }
             ]
@@ -1388,7 +1369,7 @@
                 "map": "lorule",
                 "x": 204,
                 "y": 395,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -1412,7 +1393,7 @@
                 "map": "lorule",
                 "x": 203,
                 "y": 733,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -1435,8 +1416,8 @@
       {
         "name": "Lorule Graveyard",
         "access_rules": [
-          "merge, lamp, $attack",
-          "merge, bell, wv_graveyard"
+          "$access_lorule_graveyard",
+          "[lampless], $lampless_access_lorule_graveyard"
         ],
         "children": [
           {
@@ -1446,7 +1427,7 @@
                 "map": "lorule",
                 "x": 895,
                 "y": 614,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -1470,13 +1451,16 @@
                 "map": "lorule",
                 "x": 1100,
                 "y": 589,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
               {
                 "name": "Stuck to Portal Wall",
                 "item_count": 1,
+                "access_rules": [
+                  "merge"
+                ],
                 //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
@@ -1491,7 +1475,7 @@
                 "map": "lorule",
                 "x": 1356,
                 "y": 836,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -1514,7 +1498,10 @@
       {
         "name": "Dark Ruins",
         "access_rules": [
-          "merge"
+          "$access_dark_ruins",
+          "[glitched], $glitched_access_dark_ruins",
+          "[advanced], $advanced_access_dark_ruins",
+          "[hell], $hell_access_dark_ruins"
         ],
         "children": [
           {
@@ -1524,7 +1511,7 @@
                 "map": "lorule",
                 "x": 1438,
                 "y": 1142,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -1549,7 +1536,7 @@
                 "map": "lorule",
                 "x": 1426,
                 "y": 575,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -1576,7 +1563,7 @@
                 "map": "lorule",
                 "x": 1720,
                 "y": 588,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -1589,8 +1576,8 @@
                 ],
                 "access_rules": [
                   //"{}",
-                  "flippers",
-                  "[advanced], boots"
+                  "merge, flippers",
+                  "[advanced], merge, boots"
                 ]
               }
             ]
@@ -1602,7 +1589,7 @@
                 "map": "lorule",
                 "x": 1860,
                 "y": 749,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -1614,7 +1601,7 @@
                   "maiamai_map"
                 ],
                 "access_rules": [
-                  "$cutGrass"
+                  "merge, $cutGrass"
                 ]
               }
             ]
@@ -1626,7 +1613,7 @@
                 "map": "lorule",
                 "x": 1785,
                 "y": 444,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -1639,7 +1626,7 @@
                 ],
                 "access_rules": [
                   //"{}",
-                  "flippers"
+                  "merge, flippers"
                 ]
               }
             ]
@@ -1651,7 +1638,7 @@
                 "map": "lorule",
                 "x": 1353,
                 "y": 1333,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -1675,7 +1662,7 @@
                 "map": "lorule",
                 "x": 1581,
                 "y": 1335,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -1699,13 +1686,16 @@
                 "map": "lorule",
                 "x": 1575,
                 "y": 1185,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
               {
                 "name": "Entrance Wall",
                 "item_count": 1,
+                "access_rules": [
+                  "merge"
+                ],
                 //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
@@ -1720,13 +1710,16 @@
                 "map": "lorule",
                 "x": 1927,
                 "y": 1487,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
               {
                 "name": "South Area Wall",
                 "item_count": 1,
+                "access_rules": [
+                  "merge"
+                ],
                 //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
@@ -1741,13 +1734,16 @@
                 "map": "lorule",
                 "x": 1834,
                 "y": 914,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
               {
                 "name": "Guarded Wall",
                 "item_count": 1,
+                "access_rules": [
+                  "merge"
+                ],
                 //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
@@ -1759,9 +1755,11 @@
       },
       // Lorule Castle Area - 15
       {
-        "name": "Lorule Castle Field",
+        "name": "Central Lorule",
         "access_rules": [
-          "merge"
+          "$access_central_lorule",
+          "[advanced], advanced_access_central_lorule",
+          "[hell], hell_access_central_lorule"
         ],
         "children": [
           {
@@ -1771,7 +1769,7 @@
                 "map": "lorule",
                 "x": 614,
                 "y": 1065,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -1796,7 +1794,7 @@
                 "map": "lorule",
                 "x": 600,
                 "y": 946,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -1820,7 +1818,7 @@
                 "map": "lorule",
                 "x": 466,
                 "y": 1172,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -1844,7 +1842,7 @@
                 "map": "lorule",
                 "x": 120,
                 "y": 1205,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -1869,7 +1867,7 @@
                 "map": "lorule",
                 "x": 455,
                 "y": 1345,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -1890,7 +1888,7 @@
                 "map": "lorule",
                 "x": 114,
                 "y": 1288,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -1915,7 +1913,7 @@
                 "map": "lorule",
                 "x": 603,
                 "y": 1456,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -1939,7 +1937,7 @@
                   "hammer",
                   "srod",
                   "boots",
-                  "powerglove"
+                  "power_glove"
                 ]
               }
             ]
@@ -1951,7 +1949,7 @@
                 "map": "lorule",
                 "x": 543,
                 "y": 1695,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -1961,7 +1959,7 @@
                 //"capture_item": true,
                 "access_rules": [
                   //"{}",
-                  "merge"
+                  "quake, merge"
                 ],
                 "visibility_rules": [
                   "maiamai_map"
@@ -1976,7 +1974,7 @@
                 "map": "lorule",
                 "x": 903,
                 "y": 1411,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -1998,9 +1996,9 @@
             "map_locations": [
               {
                 "map": "lorule",
-                "x": 1071,
-                "y": 1336,
-                "size": 32
+                "x": 1065,
+                "y": 1326,
+                "size": 48
               }
             ],
             "sections": [
@@ -2025,7 +2023,7 @@
                 "map": "lorule",
                 "x": 1098,
                 "y": 1092,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -2050,7 +2048,7 @@
                 "map": "lorule",
                 "x": 1208,
                 "y": 1214,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -2074,7 +2072,7 @@
                 "map": "lorule",
                 "x": 1215,
                 "y": 1573,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -2099,7 +2097,7 @@
                 "map": "lorule",
                 "x": 952,
                 "y": 1650,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -2124,7 +2122,7 @@
                 "map": "lorule",
                 "x": 1139,
                 "y": 1789,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -2148,7 +2146,7 @@
       {
         "name": "Misery Mire",
         "access_rules": [
-          "merge"
+          "$access_misery_mire"
         ],
         "children": [
           {
@@ -2158,13 +2156,16 @@
                 "map": "lorule",
                 "x": 460,
                 "y": 1800,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
               {
                 "name": "Behind Weather Vane",
                 "item_count": 1,
+                "access_rules": [
+                  "merge"
+                ],
                 //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
@@ -2179,7 +2180,7 @@
                 "map": "lorule",
                 "x": 134,
                 "y": 1902,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -2204,7 +2205,7 @@
                 "map": "lorule",
                 "x": 658,
                 "y": 1923,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -2237,13 +2238,25 @@
                 "map": "lorule",
                 "x": 1344,
                 "y": 1790,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
               {
                 "name": "Near Lake Shop",
                 "item_count": 1,
+                "access_rules": [
+                  "not_portal_shuffle, quake",
+                  "portal_shuffle, portal_lake_lorule",
+                  "portal_shuffle, portal_river_lorule, flippers",
+                  "portal_shuffle, portal_lorule_hotfoot, flippers",
+                  "$warpLorule, bell, wv_turtle, flippers",
+                  "[glitched], $glitched_access_dark_ruins, $boost, flippers",
+                  "[advanced], $advanced_access_dark_ruins, $fakeFlippers",
+                  "[hell], $hell_access_dark_ruins, $beeFakeFlippers",
+                  "[advanced], portal_shuffle, portal_lorule_hotfoot, $fakeFlippers",
+                  "[hell], portal_shuffle, portal_lorule_hotfoot, $beeFakeFlippers"
+                ],
                 //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
@@ -2258,7 +2271,7 @@
                 "map": "lorule",
                 "x": 1351,
                 "y": 1950,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -2270,7 +2283,17 @@
                   "maiamai_map"
                 ],
                 "access_rules": [
-                  "titansmitt"
+                  "titansmitt, not_portal_shuffle, quake",
+                  "titansmitt, portal_shuffle, portal_lake_lorule",
+                  "titansmitt, portal_shuffle, portal_river_lorule, flippers",
+                  "titansmitt, portal_shuffle, portal_lorule_hotfoot, flippers",
+                  "titansmitt, $warpLorule, bell, wv_turtle, flippers",
+                  "titansmitt, [glitched], $glitched_access_dark_ruins, $boost, flippers",
+                  "titansmitt, [advanced], $advanced_access_dark_ruins, $fakeFlippers",
+                  "titansmitt, [hell], $hell_access_dark_ruins, $beeFakeFlippers",
+                  "titansmitt, [advanced], portal_shuffle, portal_lorule_hotfoot, $fakeFlippers",
+                  "titansmitt, [hell], $hell_access_dark_ruins, $beeBoost, scroll",
+                  "titansmitt, [hell], portal_shuffle, portal_lorule_hotfoot"
                 ]
               }
             ]
@@ -2282,13 +2305,25 @@
                 "map": "lorule",
                 "x": 1906,
                 "y": 1971,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
               {
                 "name": "Stuck to SE Wall",
                 "item_count": 1,
+                "access_rules": [
+                  "not_portal_shuffle, quake",
+                  "portal_shuffle, portal_lake_lorule, flippers",
+                  "portal_shuffle, portal_river_lorule, flippers",
+                  "portal_shuffle, portal_lorule_hotfoot",
+                  "$warpLorule, bell, wv_turtle, flippers",
+                  "[glitched], $glitched_access_dark_ruins, $boost, flippers",
+                  "[glitched], $glitched_access_dark_ruins, $boost, scroll",
+                  "[advanced], $advanced_access_dark_ruins, $fakeFlippers",
+                  "[hell], $hell_access_dark_ruins, $beeBoost, scroll",
+                  "[hell], $hell_access_dark_ruins, $beeFakeFlippers"
+                ],
                 //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
@@ -2303,13 +2338,25 @@
                 "map": "lorule",
                 "x": 1773,
                 "y": 1616,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
               {
                 "name": "East Ledge Skull",
                 "item_count": 1,
+                "access_rules": [
+                  "not_portal_shuffle, quake",
+                  "portal_shuffle, portal_lake_lorule, flippers",
+                  "portal_shuffle, portal_river_lorule, flippers",
+                  "portal_shuffle, portal_lorule_hotfoot",
+                  "$warpLorule, bell, wv_turtle, flippers",
+                  "[glitched], $glitched_access_dark_ruins, $boost, flippers",
+                  "[glitched], $glitched_access_dark_ruins, $boost, scroll",
+                  "[advanced], $advanced_access_dark_ruins, $fakeFlippers",
+                  "[hell], $hell_access_dark_ruins, $beeBoost, scroll",
+                  "[hell], $hell_access_dark_ruins, $beeFakeFlippers"
+                ],
                 //"capture_item": true,
                 "visibility_rules": [
                   "maiamai_map"
@@ -2324,7 +2371,7 @@
                 "map": "lorule",
                 "x": 1675,
                 "y": 1698,
-                "size": 32
+                "size": 48
               }
             ],
             "sections": [
@@ -2337,9 +2384,16 @@
                 ],
                 "access_rules": [
                   //"{}",
-                  "flippers",
-                  "[advanced], $fakeFlippers",
-                  "[hell], boots"
+                  "not_portal_shuffle, quake, flippers",
+                  "portal_shuffle, portal_lake_lorule, flippers",
+                  "portal_shuffle, portal_river_lorule, flippers",
+                  "portal_shuffle, portal_lorule_hotfoot, flippers",
+                  "[advanced], portal_shuffle, portal_lorule_hotfoot, $fakeFlippers",
+                  "[hell], portal_shuffle, portal_lorule_hotfoot, $beeFakeFlippers",
+                  "$warpLorule, bell, wv_turtle, flippers",
+                  "[glitched], $glitched_access_dark_ruins, $boost, flippers",
+                  "[advanced], $advanced_access_dark_ruins, $fakeFlippers",
+                  "[hell], $hell_access_dark_ruins, $beeFakeFlippers"
                 ]
               }
             ]

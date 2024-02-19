@@ -1,0 +1,142 @@
+{
+  "item_grid": {
+    "type": "container",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "itemgrid",
+        "dropshadow": true,
+        "h_alignment": "center",
+        "item_size": "20",
+        "item_margin": "0,0,22,22",
+        "margin": "1",
+        "rows": [
+          // Making an override?
+          // Move the great_spin to the same grid location as the Sword.
+          [
+            "great_spin",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "type": "container",
+        "content": [
+          {
+            "type": "itemgrid",
+            "dropshadow": true,
+            "h_alignment": "center",
+            "item_size": "40",
+            "item_margin": "1",
+            "margin": "1,1,1,0",
+            "rows": [
+              [
+                "fsword",
+                "green_tunic",
+                "shield",
+                "lamp",
+                "bow",
+                "boomerang",
+                "hookshot"
+              ],
+              [
+                "merge",
+                "glove",
+                "boots",
+                "hammer",
+                "bombs",
+                "frod",
+                "irod"
+              ],
+              [
+                "smooth_gem",
+                "bee_badge",
+                "scroll",
+                "trod",
+                "srod",
+                "net",
+                "hint_glasses"
+              ],
+              [
+                "bell", // pouch
+                "maiamai",
+                "ore",
+                "bottle",
+                "bottle_trade",
+                "foul",
+                "scoot"
+              ],
+              [
+                "quake", // bell
+                "", // quake
+                "wisdom",
+                "power",
+                "courage",
+                "", // triforce_courage
+                "bow_of_light"
+              ]
+            ]
+          },
+          {
+            "type": "itemgrid",
+            "dropshadow": true,
+            "h_alignment": "center",
+            "item_size": "40",
+            "item_margin": "1",
+            "margin": "1,100,1,-12",
+            "rows": [
+              [
+                "label_wisdom",
+                "label_power",
+                "label_courage"
+              ]
+            ]
+          },
+          {
+            "type": "itemgrid",
+            "dropshadow": true,
+            "h_alignment": "center",
+            "item_size": "40",
+            "item_margin": "1",
+            "margin": "1,106,1,1",
+            "rows": [
+              [
+                "gulley",
+                "oren",
+                "seres",
+                "osfala",
+                "impa",
+                "irene",
+                "rosso"
+              ]
+            ]
+          },
+          {
+            "type": "itemgrid",
+            "dropshadow": true,
+            "h_alignment": "center",
+            "item_size": "40",
+            "item_margin": "1",
+            "margin": "1,122,1,-12",
+            "rows": [
+              [
+                "label_gulley",
+                "label_oren",
+                "label_seres",
+                "label_osfala",
+                "label_impa",
+                "label_irene",
+                "label_rosso"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -5,7 +5,9 @@
     "chest_unopened_img": "images/checks/chest_small_unopened.png",
     "chest_opened_img": "images/checks/chest_small_opened.png",
     "access_rules": [
-      "merge"
+      "$access_central_lorule",
+      "[advanced], $advanced_access_central_lorule",
+      "[hell], $hell_access_central_lorule"
     ],
     "children": [
       {
@@ -20,7 +22,7 @@
         "sections": [
           {
             "name": "B1 Grate Chest",
-            "hosted_item": "th_chest_01"
+            "item_count": 1
           }
         ]
       },
@@ -42,7 +44,7 @@
               "[glitched], boots",
               "[hell], $hell_th_statue_clip, trod"
             ],
-            "hosted_item": "th_chest_02"
+            "item_count": 1
           }
         ]
       },
@@ -58,7 +60,7 @@
         "sections": [
           {
             "name": "B2 NW Room",
-            "hosted_item": "th_chest_03",
+            "item_count": 1,
             "access_rules": [
               "$thB1DoorOpen",
               "[advanced], $adv_th_statue_clip",
@@ -84,7 +86,7 @@
               "[advanced], $switch",
               "[hell], $hell_th_statue_clip, trod"
             ],
-            "hosted_item": "th_chest_04"
+            "item_count": 1
           }
         ]
       },
@@ -113,7 +115,7 @@
               "[advanced], $adv_th_statue_clip, boots",
               "[advanced], $adv_th_statue_clip, trod"
             ],
-            "hosted_item": "th_chest_05"
+            "item_count": 1
           }
         ]
       },
@@ -129,7 +131,7 @@
         "sections": [
           {
             "name": "B2 SE Room",
-            "hosted_item": "th_chest_06",
+            "item_count": 1,
             "access_rules": [
               "$thB1B2DoorsOpen",
               "[advanced], $adv_th_statue_clip",
@@ -161,7 +163,7 @@
               "[advanced], $adv_th_statue_clip, trod",
               "[hell], $hell_th_statue_clip, trod"
             ],
-            "hosted_item": "th_chest_07"
+            "item_count": 1
           }
         ]
       },
@@ -177,7 +179,7 @@
         "sections": [
           {
             "name": "B3 Big Chest",
-            "hosted_item": "th_chest_08",
+            "item_count": 1,
             "access_rules": [
               "$thEscapeEquipment, $attack_normal",
               "[hard], $thEscapeEquipment, $attack",
@@ -207,7 +209,7 @@
               "[advanced], $adv_th_statue_clip, trod",
               "[hell], $hell_th_statue_clip, trod"
             ],
-            "hosted_item": "th_chest_09"
+            "item_count": 1
           }
         ]
       },
@@ -230,7 +232,7 @@
               "[advanced], $adv_th_statue_clip, trod",
               "[hell], $hell_th_statue_clip, trod"
             ],
-            "hosted_item": "th_chest_10"
+            "item_count": 1
           }
         ]
       },
@@ -238,13 +240,8 @@
         "name": "Thieves' Hideout",
         "map_locations": [
           {
-            "map": "lorule",
-            "x": 442,
-            "y": 982
-          },
-          {
             "map": "thievesB1",
-            "x": 149,
+            "x": 150,
             "y": 167
           }
         ],
@@ -258,7 +255,7 @@
               "[hell], $hell_th_statue_clip, trod, $attack"
             ],
             //"capture_item": true,
-            "hosted_item": "th_chest_11"
+            "item_count": 1
           }
         ]
       },
@@ -269,20 +266,20 @@
             "map": "thievesB1",
             "x": 136,
             "y": 167,
-            "size": 15
+            "size": 20
           }
         ],
         "sections": [
-          {
-            "name": "Prize",
-            "access_rules": [
-              "$thEscapeEquipment, merge, $attack_normal",
-              "[hard], $thEscapeEquipment, merge, $attack",
-              "[advanced], $adv_th_statue_clip, trod, $attack",
-              "[hell], $hell_th_statue_clip, trod, $attack"
-            ],
-            "hosted_item": "thieves"
-          }
+          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["$thEscapeEquipment, merge, $attack_normal", "[hard], $thEscapeEquipment, merge, $attack", "[advanced], $adv_th_statue_clip, trod, $attack", "[hell], $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_power_tt"]},
+          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["$thEscapeEquipment, merge, $attack_normal", "[hard], $thEscapeEquipment, merge, $attack", "[advanced], $adv_th_statue_clip, trod, $attack", "[hell], $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_wisdom_tt"]},
+          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["$thEscapeEquipment, merge, $attack_normal", "[hard], $thEscapeEquipment, merge, $attack", "[advanced], $adv_th_statue_clip, trod, $attack", "[hell], $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_courage_tt"]},
+          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["$thEscapeEquipment, merge, $attack_normal", "[hard], $thEscapeEquipment, merge, $attack", "[advanced], $adv_th_statue_clip, trod, $attack", "[hell], $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_gulley_tt"]},
+          {"name": "Oren", "hosted_item": "oren", "access_rules": ["$thEscapeEquipment, merge, $attack_normal", "[hard], $thEscapeEquipment, merge, $attack", "[advanced], $adv_th_statue_clip, trod, $attack", "[hell], $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_oren_tt"]},
+          {"name": "Seres", "hosted_item": "seres", "access_rules": ["$thEscapeEquipment, merge, $attack_normal", "[hard], $thEscapeEquipment, merge, $attack", "[advanced], $adv_th_statue_clip, trod, $attack", "[hell], $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_seres_tt"]},
+          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["$thEscapeEquipment, merge, $attack_normal", "[hard], $thEscapeEquipment, merge, $attack", "[advanced], $adv_th_statue_clip, trod, $attack", "[hell], $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_osfala_tt"]},
+          {"name": "Impa", "hosted_item": "impa", "access_rules": ["$thEscapeEquipment, merge, $attack_normal", "[hard], $thEscapeEquipment, merge, $attack", "[advanced], $adv_th_statue_clip, trod, $attack", "[hell], $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_impa_tt"]},
+          {"name": "Irene", "hosted_item": "irene", "access_rules": ["$thEscapeEquipment, merge, $attack_normal", "[hard], $thEscapeEquipment, merge, $attack", "[advanced], $adv_th_statue_clip, trod, $attack", "[hell], $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_irene_tt"]},
+          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["$thEscapeEquipment, merge, $attack_normal", "[hard], $thEscapeEquipment, merge, $attack", "[advanced], $adv_th_statue_clip, trod, $attack", "[hell], $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_rosso_tt"]}
         ]
       },
       {
@@ -291,138 +288,30 @@
           {
             "map": "lorule",
             "x": 324,
-            "y": 962,
-            "size": 80
+            "y": 962
           }
         ],
         "sections": [
           {
-            "name": "B1 Grate Chest",
-            "hosted_item": "th_chest_01"
-          },
-          {
-            "name": "B1 Jail Cell",
-            "hosted_item": "th_chest_02",
+            "name": "Dungeon",
+            "item_count": 8,
+            "clear_as_group": false,
             "access_rules": [
-              "{csmc}",
-              "merge",
-              "[glitched], boots",
-              "[hell], $hell_th_statue_clip, trod"
+              "[merge], [$switch], [flippers], [sword]",
+              "[merge], [$switch], [flippers], [bow]",
+              "advanced, [$switch], [trod], [flippers], [$attack]"
             ]
           },
-          {
-            "name": "B2 NW Room",
-            "hosted_item": "th_chest_03",
-            "access_rules": [
-              "$thB1DoorOpen",
-              "[advanced], $adv_th_statue_clip",
-              "[hell], $hell_th_statue_clip"
-            ]
-          },
-          {
-            "name": "B2 Jail Cell",
-            "hosted_item": "th_chest_04",
-            "access_rules": [
-              "$thB1B2DoorsOpen, merge",
-              "[advanced], $switch",
-              "[hell], $hell_th_statue_clip, trod"
-            ]
-          },
-          {
-            "name": "B2 Eyegores",
-            "hosted_item": "th_chest_05",
-            "access_rules": [
-              "{csmc, $thB1B2DoorsOpen, merge, $shielded_switch, progression_enemies}",
-              "{csmc, $thB1B2DoorsOpen, merge, $shielded_switch, bombs}",
-              "{hard, csmc, $thB1B2DoorsOpen, merge, $shielded_switch, progression_enemies}",
-              "$thB1B2DoorsOpen, merge, $shielded_switch, progression_enemies, fsword",
-              "$thB1B2DoorsOpen, merge, $shielded_switch, progression_enemies, bow",
-              "$thB1B2DoorsOpen, merge, $shielded_switch, bombs, fsword",
-              "$thB1B2DoorsOpen, merge, $shielded_switch, bombs, bow",
-              "[hard], $thB1B2DoorsOpen, merge, $shielded_switch, progression_enemies, $attack",
-              "[hard], $thB1B2DoorsOpen, merge, $shielded_switch, bombs",
-              "[advanced], $adv_th_statue_clip, boots",
-              "[advanced], $adv_th_statue_clip, trod"
-            ]
-          },
-          {
-            "name": "B2 SE Room",
-            "hosted_item": "th_chest_06",
-            "access_rules": [
-              "$thB1B2DoorsOpen",
-              "[advanced], $adv_th_statue_clip",
-              "[hell], $hell_th_statue_clip"
-            ]
-          },
-          {
-            "name": "B3 Underwater",
-            "hosted_item": "th_chest_07",
-            "access_rules": [
-              "{csmc, merge, $thB1B2DoorsOpen, $attack_normal}",
-              "{hard, csmc, merge, $thB1B2DoorsOpen, $attack}",
-              "{advanced, csmc, boomerang}",
-              "{advanced, csmc, irod}",
-              "{hell, csmc, bombs}",
-              "$thEscapeEquipment, $attack_normal",
-              "[hard], $thEscapeEquipment, $attack",
-              "[advanced], $adv_th_statue_clip, trod",
-              "[hell], $hell_th_statue_clip, trod"
-            ]
-          },
-          {
-            "name": "B3 Big Chest",
-            "hosted_item": "th_chest_08",
-            "access_rules": [
-              "$thEscapeEquipment, $attack_normal",
-              "[hard], $thEscapeEquipment, $attack",
-              "[advanced], $adv_th_statue_clip, trod",
-              "[hell], $hell_th_statue_clip, trod"
-            ]
-          },
-          {
-            "name": "B1 Behind Wall",
-            "hosted_item": "th_chest_09",
-            "access_rules": [
-              "{csmc}",
-              "{hell, $hell_th_statue_clip, trod}",
-              "$thEscapeEquipment, $attack_normal",
-              "[hard], $thEscapeEquipment, $attack",
-              "[advanced], $adv_th_statue_clip, trod",
-              "[hell], $hell_th_statue_clip, trod"
-            ]
-          },
-          {
-            "name": "B1 Big Chest",
-            "hosted_item": "th_chest_10",
-            "access_rules": [
-              "{csmc}",
-              "$thEscapeEquipment, $attack_normal",
-              "[hard], $thEscapeEquipment, $attack",
-              "[advanced], $adv_th_statue_clip, trod",
-              "[hell], $hell_th_statue_clip, trod"
-            ]
-          },
-          {
-            "name": "Stalblind",
-            //"capture_item": true,
-            "hosted_item": "th_chest_11",
-            "access_rules": [
-              "$thEscapeEquipment, merge, $attack_normal",
-              "[hard], $thEscapeEquipment, merge, $attack",
-              "[advanced], $adv_th_statue_clip, trod, $attack",
-              "[hell], $hell_th_statue_clip, trod, $attack"
-            ]
-          },
-          {
-            "name": "Prize",
-            "access_rules": [
-              "$thEscapeEquipment, merge, $attack_normal",
-              "[hard], $thEscapeEquipment, merge, $attack",
-              "[advanced], $adv_th_statue_clip, trod, $attack",
-              "[hell], $hell_th_statue_clip, trod, $attack"
-            ],
-            "hosted_item": "thieves"
-          }
+          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["$thEscapeEquipment, merge, $attack_normal", "[hard], $thEscapeEquipment, merge, $attack", "[advanced], $adv_th_statue_clip, trod, $attack", "[hell], $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_power_tt"]},
+          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["$thEscapeEquipment, merge, $attack_normal", "[hard], $thEscapeEquipment, merge, $attack", "[advanced], $adv_th_statue_clip, trod, $attack", "[hell], $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_wisdom_tt"]},
+          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["$thEscapeEquipment, merge, $attack_normal", "[hard], $thEscapeEquipment, merge, $attack", "[advanced], $adv_th_statue_clip, trod, $attack", "[hell], $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_courage_tt"]},
+          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["$thEscapeEquipment, merge, $attack_normal", "[hard], $thEscapeEquipment, merge, $attack", "[advanced], $adv_th_statue_clip, trod, $attack", "[hell], $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_gulley_tt"]},
+          {"name": "Oren", "hosted_item": "oren", "access_rules": ["$thEscapeEquipment, merge, $attack_normal", "[hard], $thEscapeEquipment, merge, $attack", "[advanced], $adv_th_statue_clip, trod, $attack", "[hell], $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_oren_tt"]},
+          {"name": "Seres", "hosted_item": "seres", "access_rules": ["$thEscapeEquipment, merge, $attack_normal", "[hard], $thEscapeEquipment, merge, $attack", "[advanced], $adv_th_statue_clip, trod, $attack", "[hell], $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_seres_tt"]},
+          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["$thEscapeEquipment, merge, $attack_normal", "[hard], $thEscapeEquipment, merge, $attack", "[advanced], $adv_th_statue_clip, trod, $attack", "[hell], $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_osfala_tt"]},
+          {"name": "Impa", "hosted_item": "impa", "access_rules": ["$thEscapeEquipment, merge, $attack_normal", "[hard], $thEscapeEquipment, merge, $attack", "[advanced], $adv_th_statue_clip, trod, $attack", "[hell], $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_impa_tt"]},
+          {"name": "Irene", "hosted_item": "irene", "access_rules": ["$thEscapeEquipment, merge, $attack_normal", "[hard], $thEscapeEquipment, merge, $attack", "[advanced], $adv_th_statue_clip, trod, $attack", "[hell], $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_irene_tt"]},
+          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["$thEscapeEquipment, merge, $attack_normal", "[hard], $thEscapeEquipment, merge, $attack", "[advanced], $adv_th_statue_clip, trod, $attack", "[hell], $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_rosso_tt"]}
         ]
       }
     ]

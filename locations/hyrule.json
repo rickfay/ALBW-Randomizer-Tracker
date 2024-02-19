@@ -3,7 +3,6 @@
     "name": "Hyrule Overworld",
     "chest_unopened_img": "images/checks/chest_small_unopened.png",
     "chest_opened_img": "images/checks/chest_small_opened.png",
-
     "children": [
       {
         "name": "Lost Woods",
@@ -73,9 +72,8 @@
               {
                 "name": "Master Sword Pedestal",
                 "access_rules": [
-                  "ped_requirement_4, power, wisdom, courage:2",
-                  "ped_requirement_3, power, wisdom, courage:1",
-                  "ped_requirement_2, power, wisdom",
+                  "ped_requirement_3, power, wisdom, courage",
+                  "ped_requirement_2, power, wisdom"
                 ],
                 "item_count": 1
               }
@@ -86,40 +84,35 @@
             "map_locations": [
               {
                 "map": "hyrule",
-                "x": 680,
+                "x": 700,
                 "y": 146
               }
             ],
             "sections": [
               {
-                "name": "Crooked Chest (Rosso)",
-                "chest_unopened_img": "images/checks/chest_crooked_unopened.png",
-                "chest_opened_img": "images/checks/chest_crooked_opened.png",
+                "name": "Rosso",
                 "access_rules": [
-                  "ssl_off, courage:2",
-                  "ssl, rosso"
+                  "rosso"
                 ],
                 "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Rosso's House",
-            "map_locations": [
+              },
               {
-                "map": "hyrule",
-                "x": 720,
-                "y": 146
-              }
-            ],
-            "sections": [
-              {
-                "name": "Smash Rosso's Pet Rocks",
+                "name": "Rosso Rocks",
                 "access_rules": [
-                  "ssl_off, courage:2, powerglove",
-                  "ssl, rosso, powerglove"
+                  "rosso, power_glove"
                 ],
                 "item_count": 1
+              },
+              {
+                "hosted_item":"portal_rossos_house",
+                "name": "Rosso's House Portal",
+                "access_rules": [
+                  "{}",
+                  "rosso"
+                ],
+                "visibility_rules": [
+                  "portal_shuffle"
+                ]
               }
             ]
           },
@@ -204,7 +197,7 @@
         ]
       },
       {
-        "name": "Sanctuary + Zora's River",
+        "name": "River Area",
         "children": [
           {
             "name": "Sanctuary",
@@ -229,12 +222,12 @@
                 "map": "hyrule",
                 "x": 1147,
                 "y": 652,
-                "size": 80
+                "size": 64
               }
             ],
             "access_rules": [
               "fsword",
-              "powerglove",
+              "power_glove",
               "lamp",
               "frod",
               "bombs",
@@ -281,24 +274,66 @@
               {
                 "map": "hyrule",
                 "x": 1162,
-                "y": 580
-              },
-              {
-                "map": "lorule",
-                "x": 1134,
-                "y": 578
+                "y": 580,
+                "badge_size": 40
               }
             ],
             "sections": [
               {
+                "hosted_item": "portal_graveyard",
+                "name": "Graveyard Portal",
+                "access_rules": [
+                  "portal_graveyard",
+                  "{}"
+                ],
+                "visibility_rules": [
+                  "portal_shuffle"
+                ]
+              },
+              {
                 "name": "Cave",
                 //"capture_item": true,
                 "access_rules": [
-                  "merge, lamp, bombs",
-                  "merge, frod, $lampless, bombs",
-                  "merge, bombs, wv_graveyard"
+                  "merge, portal_graveyard",
+                  "not_portal_shuffle, merge, quake, portal_graveyard_lorule"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Graveyard Ledge Wall",
+                "item_count": 1,
+                //"capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ],
+                "access_rules": [
+                  //"{}",
+                  "merge, portal_graveyard",
+                  "not_portal_shuffle, merge, quake, portal_graveyard_lorule"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Lorule Graveyard",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 1134,
+                "y": 578,
+                "badge_size": 40
+              }
+            ],
+            "sections": [
+              {
+                "name": "Lorule Graveyard Portal",
+                "hosted_item": "portal_graveyard_lorule",
+                "access_rules": [
+                  "portal_graveyard_lorule",
+                  "{portal_shuffle}",
+                  "$access_lorule_graveyard, bombs, merge",
+                  "$lampless_access_lorule_graveyard, bombs, merge"
+                ]
               }
             ]
           },
@@ -369,17 +404,15 @@
               {
                 "map": "hyrule",
                 "x": 1804,
-                "y": 358
+                "y": 370
               }
             ],
             "sections": [
               {
                 "name": "Bump into Shady Guy",
                 "access_rules": [
-                  "ssl_off, merge",
-                  "ssl, oren, merge",
-                  "[hell], ssl_off, $beeBoost",
-                  "[hell], ssl, oren, $beeBoost"
+                  "merge, oren",
+                  "[hell], oren, $beeBoost"
                 ],
                 "hosted_item": "shadyguy",
                 "item_count": 0
@@ -415,17 +448,15 @@
               {
                 "map": "hyrule",
                 "x": 1804,
-                "y": 300
+                "y": 290
               }
             ],
             "sections": [
               {
-                "name": "Throw Smooth Gem",
+                "name": "Queen Oren",
                 "access_rules": [
-                  "ssl_off, merge, smoothgem",
-                  "ssl, oren, merge, smoothgem",
-                  "[hell], ssl_off, smoothgem, $beeBoost",
-                  "[hell], ssl, oren, smoothgem, $beeBoost"
+                  "merge, oren, smooth_gem",
+                  "[hell], oren, smooth_gem, $beeBoost"
                 ],
                 "item_count": 1
               }
@@ -457,26 +488,34 @@
             ]
           },
           {
-            "name": "Stylish Woman",
+            "name": "Stylish Woman's House",
             "map_locations": [
               {
                 "map": "hyrule",
                 "x": 226,
-                "y": 1078
-              },
-              {
-                "map": "lorule",
-                "x": 236,
-                "y": 1084
+                "y": 1078,
+                "badge_size": 40
               }
             ],
             "sections": [
               {
-                "name": "Enter from Lorule",
+                "name": "Stylish Woman",
+                "item_count": 1,
                 "access_rules": [
-                  "merge"
+                  "not_portal_shuffle, merge, quake, portal_thieves_town",
+                  "merge, portal_stylish_woman"
+                ]
+              },
+              {
+                "name": "Stylish Woman Portal",
+                "hosted_item": "portal_stylish_woman",
+                "access_rules": [
+                  "{}",
+                  "portal_stylish_woman"
                 ],
-                "item_count": 1
+                "visibility_rules": [
+                  "portal_shuffle"
+                ]
               }
             ]
           },
@@ -491,9 +530,20 @@
             ],
             "sections": [
               {
+                "name": "Under Rooftop Rock",
+                "item_count": 1,
+                //"capture_item": true,
+                "visibility_rules": [
+                  "maiamai_map"
+                ],
+                "access_rules": [
+                  "power_glove"
+                ]
+              },
+              {
                 "name": "Exterminate Roof Maiamai",
                 "access_rules": [
-                  "glove"
+                  "power_glove"
                 ],
                 "item_count": 1
               }
@@ -504,7 +554,7 @@
             "map_locations": [
               {
                 "map": "hyrule",
-                "x": 331,
+                "x": 353,
                 "y": 1074
               }
             ],
@@ -512,27 +562,15 @@
               {
                 "name": "Have an Empty Bottle",
                 "access_rules": [
-                  "bottle_1"
+                  "bottle"
                 ],
                 "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Bee Guy",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 371,
-                "y": 1074
-              }
-            ],
-            "sections": [
+              },
               {
                 "name": "Trade Golden Bee",
                 "access_rules": [
-                  "bottle_bee_golden",
-                  "[hell], bottle_1, net"
+                  "golden_bee",
+                  "[hell], bottle, net"
                 ],
                 "item_count": 1
               }
@@ -563,7 +601,7 @@
               {
                 "map": "hyrule",
                 "x": 142,
-                "y": 934
+                "y": 944
               },
               {
                 "map": "hyrule",
@@ -603,7 +641,7 @@
             "map_locations": [
               {
                 "map": "hyrule",
-                "x": 196,
+                "x": 216,
                 "y": 959
               }
             ],
@@ -613,19 +651,7 @@
                 "chest_opened_img": "images/checks/soldout.png",
                 "capture_item": true,
                 "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Street Merchant",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 236,
-                "y": 959
-              }
-            ],
-            "sections": [
+              },
               {
                 "name": "Right (200)",
                 "chest_opened_img": "images/checks/soldout.png",
@@ -662,8 +688,8 @@
             "map_locations": [
               {
                 "map": "hyrule",
-                "x": 91,
-                "y": 883
+                "x": 111,
+                "y": 863
               }
             ],
             "sections": [
@@ -671,23 +697,11 @@
                 "name": "Jump into Well",
                 //"capture_item": true,
                 "access_rules": [
-                  "powerglove",
+                  "power_glove",
                   "[hard]"
                 ],
                 "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Kakariko Well",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 131,
-                "y": 883
-              }
-            ],
-            "sections": [
+              },
               {
                 "name": "Cave Chest",
                 "item_count": 1
@@ -707,17 +721,6 @@
               {
                 "name": "Score 100+ (Buy Ravio Shop Item to Unlock)",
                 "item_count": 1,
-                "access_rules": [
-                  "ravio_01",
-                  "ravio_02",
-                  "ravio_03",
-                  "ravio_04",
-                  "ravio_05",
-                  "ravio_06",
-                  "ravio_07",
-                  "ravio_08",
-                  "ravio_09",
-                ],
                 "visibility_rules": [
                   "minigames_enabled"
                 ]
@@ -736,68 +739,24 @@
               {
                 "map": "hyrule",
                 "x": 1105,
-                "y": 1377,
-                "size": 80
+                "y": 1377
               }
             ],
             "sections": [
               {
-                "name": "Ravio 1 (100)",
-                "capture_item": true,
-                "hosted_item": "ravio_01"
+                "name": "Ravio's Rent",
+                "item_count": 1
               },
               {
-                "name": "Ravio 2 (50)",
+                "name": "For Sale",
                 "capture_item": true,
-                "hosted_item": "ravio_02"
+                "clear_as_group": false,
+                "item_count": 8
               },
               {
-                "name": "Ravio 3 (20)",
+                "name": "Rented by Osfala",
                 "capture_item": true,
-                "hosted_item": "ravio_03"
-              },
-              {
-                "name": "Ravio 4 (50)",
-                "capture_item": true,
-                "hosted_item": "ravio_04"
-              },
-              {
-                "name": "Ravio 5 (10)",
-                "capture_item": true,
-                "hosted_item": "ravio_05"
-              },
-              {
-                "name": "Ravio 7 (20)",
-                "capture_item": true,
-                "hosted_item": "ravio_07"
-              },
-              {
-                "name": "Ravio 8 (50)",
-                "capture_item": true,
-                "hosted_item": "ravio_08"
-              },
-              {
-                "name": "Ravio 9 (100)",
-                "capture_item": true,
-                "hosted_item": "ravio_09"
-              }
-            ]
-          },
-          {
-            "name": "Ravio's Shop",
-            "color": "#a000ac",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 1125,
-                "y": 1357
-              }
-            ],
-            "sections": [
-              {
-                "name": "Ravio 6 (50)",
-                "capture_item": true,
-                "hosted_item": "ravio_06",
+                "item_count": 1,
                 "access_rules": [
                   "{}",
                   "osfala"
@@ -810,7 +769,7 @@
             "map_locations": [
               {
                 "map": "hyrule",
-                "x": 624,
+                "x": 644,
                 "y": 1056
               }
             ],
@@ -819,19 +778,7 @@
                 "name": "Table",
                 //"capture_item": true,
                 "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Hyrule Blacksmith",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 664,
-                "y": 1056
-              }
-            ],
-            "sections": [
+              },
               {
                 "name": "Give 2 Master Ore",
                 "access_rules": [
@@ -902,7 +849,7 @@
                 //"capture_item": true,
                 "access_rules": [
                   //"{}",
-                  "powerglove"
+                  "power_glove"
                 ],
                 "item_count": 1
               }
@@ -921,7 +868,7 @@
               {
                 "name": "Stump",
                 "access_rules": [
-                  "courage:2"
+                  "courage"
                 ],
                 "item_count": 1
               }
@@ -952,6 +899,26 @@
       {
         "name": "Eastern Ruins",
         "children": [
+
+          {
+            "name": "Under the Bridge",
+            "map_locations": [
+              {
+                "map": "hyrule",
+                "x": 1438,
+                "y": 1403
+              }
+            ],
+            "sections": [
+              {
+                "name": "Bird Lover",
+                "access_rules": [
+                  "flippers"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
           {
             "name": "Irene the Witch",
             "map_locations": [
@@ -959,29 +926,14 @@
                 "map": "hyrule",
                 "x": 1403,
                 "y": 1403
-              },
-              {
-                "map": "hyrule",
-                "x": 577,
-                "y": 730
               }
-              //          {
-              //            "map": "hyrule",
-              //            "x": 718,
-              //            "y": 742
-              //          },
-              //          {
-              //            "map": "hyrule",
-              //            "x": 536,
-              //            "y": 671
-              //          }
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Encounter",
+                "capture_item": true,
                 "access_rules": [
-                  "ssl_off, courage:2",
-                  "ssl, irene"
+                  "irene"
                 ],
                 "item_count": 1
               }
@@ -1034,25 +986,6 @@
             ]
           },
           {
-            "name": "Under the Bridge",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 1453,
-                "y": 1413
-              }
-            ],
-            "sections": [
-              {
-                "name": "Bird Lover",
-                "access_rules": [
-                  "flippers"
-                ],
-                "item_count": 1
-              }
-            ]
-          },
-          {
             "name": "Eastern Ruins Gated Area",
             "access_rules": [
               "merge",
@@ -1061,9 +994,9 @@
               "boomerang",
               "bombs",
               "irod",
-              "greatspin, fsword",
+              "great_spin, fsword",
               "bell, wv_eastern",
-              "[hard], powerglove"
+              "[hard], power_glove"
             ],
             "children": [
               {
@@ -1234,8 +1167,8 @@
                   "[glitched], fsword, irod, flippers, hookshot",
                   "[glitched], fsword, irod, nicebombs",
                   "[glitched], titansmitt, nicebombs",
-                  "[glitched], greatspin, fsword, irod",
-                  "[glitched], greatspin, fsword, titansmitt",
+                  "[glitched], great_spin, fsword, irod",
+                  "[glitched], great_spin, fsword, titansmitt",
                   "[glitched], [nice_mode], fsword, niceirod",
                   "[advanced], irod, flippers, hookshot",
                   "[advanced], irod, nicebombs",
@@ -1320,7 +1253,7 @@
               {
                 "map": "hyrule",
                 "x": 1331,
-                "y": 1887
+                "y": 1917
               }
             ],
             "sections": [

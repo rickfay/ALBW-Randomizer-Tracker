@@ -1,0 +1,99 @@
+{
+  "swamp": {
+    "type": "viewbox",
+    "horizontal_scrollbar_visibility": "disabled",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "max_width": 750,
+        "style": "wrap",
+        "content": [
+          {
+            "type": "container",
+            "content": [
+              {
+                "type": "map",
+                "width": 250,
+                "scale": 1.5,
+                "margin": "-25,0,-25,-50",
+                "maps": [
+                  "swamp2F"
+                ]
+              },
+              {
+                "type": "canvas",
+                "dropshadow": true,
+                "content": [
+                  {
+                    "type": "image",
+                    "image": "images/floors/2F.png",
+                    "width": 50,
+                    "canvas_top": 30,
+                    "canvas_left": 235
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "content": [
+              {
+                "type": "map",
+                "width": 250,
+                "scale": 1.5,
+                "margin": "-25,0,-25,-50",
+                "maps": [
+                  "swamp1F"
+                ]
+              },
+              {
+                "type": "canvas",
+                "dropshadow": true,
+                "content": [
+                  {
+                    "type": "image",
+                    "image": "images/floors/1F_Boss.png",
+                    "width": 50,
+                    "canvas_top": 30,
+                    "canvas_left": 235
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "content": [
+              {
+                "type": "map",
+                "width": 250,
+                "scale": 1.5,
+                "margin": "-25,0,-25,-25",
+                "maps": [
+                  "swampB1"
+                ]
+              },
+              {
+                "type": "canvas",
+                "dropshadow": true,
+                "content": [
+                  {
+                    "type": "image",
+                    "image": "images/floors/B1.png",
+                    "width": 50,
+                    "canvas_top": 30,
+                    "canvas_left": 235
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

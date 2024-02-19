@@ -5,13 +5,9 @@
     "chest_unopened_img": "images/checks/chest_small_unopened.png",
     "chest_opened_img": "images/checks/chest_small_opened.png",
     "access_rules": [
-      "frod, merge, hookshot, powerglove",
-      "frod, merge, hookshot, bell, wv_hera",
-      "frod, merge, hookshot, bell, wv_death_hyrule",
-      "frod, merge, hookshot, bell, wv_treacherous_tower",
-      "frod, merge, bell, wv_death_lorule",
-      "frod, merge, bell, wv_ice",
-      "[glitched], frod, merge, hookshot"
+      "frod, $access_ldm_east_top",
+      "[glitched], frod, $glitched_access_ldm_east_top",
+      "[hell], frod, $hell_access_ldm_east_top"
     ],
     "children": [
       {
@@ -26,7 +22,7 @@
         "sections": [
           {
             "name": "1F Hidden",
-            "hosted_item": "ir_chest_01"
+            "item_count": 1
           }
         ]
       },
@@ -43,7 +39,7 @@
           {
             "name": "B1 Torches",
             //"capture_item": true,
-            "hosted_item": "ir_chest_02"
+            "item_count": 1
           }
         ]
       },
@@ -59,7 +55,7 @@
         "sections": [
           {
             "name": "B1 East Chest",
-            "hosted_item": "ir_chest_03"
+            "item_count": 1
           }
         ]
       },
@@ -75,7 +71,7 @@
         "sections": [
           {
             "name": "B1 Center Chest",
-            "hosted_item": "ir_chest_04"
+            "item_count": 1
           }
         ]
       },
@@ -92,7 +88,7 @@
           {
             "name": "B2 Icicle",
             //"capture_item": true,
-            "hosted_item": "ir_chest_05"
+            "item_count": 1
           }
         ]
       },
@@ -108,10 +104,10 @@
         "sections": [
           {
             "name": "B2 Long Merge",
-            "hosted_item": "ir_chest_06",
+            "item_count": 1,
             "access_rules": [
               "{csmc}",
-              "scroll",
+              "$switch, scroll",
               "[advanced], boots"
             ]
           }
@@ -129,7 +125,7 @@
         "sections": [
           {
             "name": "B3 Elevator Left",
-            "hosted_item": "ir_chest_07"
+            "item_count": 1
           }
         ]
       },
@@ -145,7 +141,7 @@
         "sections": [
           {
             "name": "B3 Elevator Right",
-            "hosted_item": "ir_chest_08"
+            "item_count": 1
           }
         ]
       },
@@ -161,7 +157,10 @@
         "sections": [
           {
             "name": "B3 Big Chest",
-            "hosted_item": "ir_chest_09"
+            "item_count": 1,
+            "access_rules": [
+              "$switch"
+            ]
           }
         ]
       },
@@ -177,7 +176,7 @@
         "sections": [
           {
             "name": "B4 Switches",
-            "hosted_item": "ir_chest_10",
+            "item_count": 1,
             "access_rules": [
               "progression_enemies",
               "bombs",
@@ -198,7 +197,7 @@
         "sections": [
           {
             "name": "B4 SW Fall Chest",
-            "hosted_item": "ir_chest_11"
+            "item_count": 1
           }
         ]
       },
@@ -214,7 +213,7 @@
         "sections": [
           {
             "name": "B4 SE Fall Chest",
-            "hosted_item": "ir_chest_12"
+            "item_count": 1
           }
         ]
       },
@@ -230,7 +229,7 @@
         "sections": [
           {
             "name": "B4 Shortcut",
-            "hosted_item": "ir_chest_13"
+            "item_count": 1
           }
         ]
       },
@@ -246,7 +245,7 @@
         "sections": [
           {
             "name": "B5 Big Chest",
-            "hosted_item": "ir_chest_14"
+            "item_count": 1
           }
         ]
       },
@@ -263,7 +262,7 @@
           {
             "name": "Dharkstare",
             //"capture_item": true,
-            "hosted_item": "ir_chest_15"
+            "item_count": 1
           }
         ]
       },
@@ -274,14 +273,20 @@
             "map": "iceB6",
             "x": 90,
             "y": 53,
-            "size": 15
+            "size": 24
           }
         ],
         "sections": [
-          {
-            "name": "Prize",
-            "hosted_item": "ice"
-          }
+          {"name": "Pendant of Power", "hosted_item": "power", "visibility_rules": ["label_power_ir"]},
+          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "visibility_rules": ["label_wisdom_ir"]},
+          {"name": "Pendant of Courage", "hosted_item": "courage", "visibility_rules": ["label_courage_ir"]},
+          {"name": "Gulley", "hosted_item": "gulley", "visibility_rules": ["label_gulley_ir"]},
+          {"name": "Oren", "hosted_item": "oren", "visibility_rules": ["label_oren_ir"]},
+          {"name": "Seres", "hosted_item": "seres", "visibility_rules": ["label_seres_ir"]},
+          {"name": "Osfala", "hosted_item": "osfala", "visibility_rules": ["label_osfala_ir"]},
+          {"name": "Impa", "hosted_item": "impa", "visibility_rules": ["label_impa_ir"]},
+          {"name": "Irene", "hosted_item": "irene", "visibility_rules": ["label_irene_ir"]},
+          {"name": "Rosso", "hosted_item": "rosso", "visibility_rules": ["label_rosso_ir"]}
         ]
       },
       {
@@ -290,88 +295,29 @@
           {
             "map": "lorule",
             "x": 1880,
-            "y": 156,
-            "size": 80
+            "y": 156
           }
         ],
         "sections": [
           {
-            "name": "1F Hidden Chest",
-            "hosted_item": "ir_chest_01"
-          },
-          {
-            "name": "B2 Icicle",
-            //"capture_item": true,
-            "hosted_item": "ir_chest_05"
-          },
-          {
-            "name": "B3 Elevator Right",
-            "hosted_item": "ir_chest_08"
-          },
-          {
-            "name": "B3 Elevator Left",
-            "hosted_item": "ir_chest_07"
-          },
-          {
-            "name": "B5 Big Chest",
-            "hosted_item": "ir_chest_14"
-          },
-          {
-            "name": "B1 Torches",
-            //"capture_item": true,
-            "hosted_item": "ir_chest_02"
-          },
-          {
-            "name": "B1 East Chest",
-            "hosted_item": "ir_chest_03"
-          },
-          {
-            "name": "B1 Center Chest",
-            "hosted_item": "ir_chest_04"
-          },
-          {
-            "name": "B4 Switches",
-            "hosted_item": "ir_chest_10",
+            "name": "Dungeon",
+            "clear_as_group": false,
+            "item_count": 10,
             "access_rules": [
-              "progression_enemies",
-              "bombs",
-              "niceirod"
+              "[frod], [scroll], [$switch]",
+              "[advanced], [frod], [boots]"
             ]
           },
-          {
-            "name": "B4 SW Fall Chest",
-            "hosted_item": "ir_chest_11"
-          },
-          {
-            "name": "B2 Long Merge",
-            "hosted_item": "ir_chest_06",
-            "access_rules": [
-              "{csmc}",
-              "scroll",
-              "[advanced], boots"
-            ]
-          },
-          {
-            "name": "B3 Big Chest",
-            "hosted_item": "ir_chest_09"
-          },
-          {
-            "name": "B4 SE Fall Chest",
-            "hosted_item": "ir_chest_12"
-          },
-          {
-            "name": "B4 Shortcut",
-            "hosted_item": "ir_chest_13"
-          },
-          {
-            "name": "Dharkstare",
-            //"capture_item": true,
-            "hosted_item": "ir_chest_15"
-          },
-          {
-            "name": "Prize",
-            "hosted_item": "ice"
-          }
+          {"name": "Pendant of Power", "hosted_item": "power", "visibility_rules": ["label_power_ir"]},
+          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "visibility_rules": ["label_wisdom_ir"]},
+          {"name": "Pendant of Courage", "hosted_item": "courage", "visibility_rules": ["label_courage_ir"]},
+          {"name": "Gulley", "hosted_item": "gulley", "visibility_rules": ["label_gulley_ir"]},
+          {"name": "Oren", "hosted_item": "oren", "visibility_rules": ["label_oren_ir"]},
+          {"name": "Seres", "hosted_item": "seres", "visibility_rules": ["label_seres_ir"]},
+          {"name": "Osfala", "hosted_item": "osfala", "visibility_rules": ["label_osfala_ir"]},
+          {"name": "Impa", "hosted_item": "impa", "visibility_rules": ["label_impa_ir"]},
+          {"name": "Irene", "hosted_item": "irene", "visibility_rules": ["label_irene_ir"]},
+          {"name": "Rosso", "hosted_item": "rosso", "visibility_rules": ["label_rosso_ir"]}
         ]
       }
     ]

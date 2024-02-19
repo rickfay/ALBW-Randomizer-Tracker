@@ -1,36 +1,20 @@
 ﻿[
   {
     "name": "hyrule",
-    "location_size": 40,
-    "location_border_thickness": 4,
+//    "location_size": 70,
+//    "location_border_thickness": 10,
     "img": "images/maps/map_blank.png"
   },
   {
     "name": "lorule",
-    "location_size": 40,
-    "location_border_thickness": 4,
+//    "location_size": 70,
+//    "location_border_thickness": 10,
     "img": "images/maps/map_blank.png"
-  },
-  {
-    "name": "hyrule_image",
-    "img": "images/maps/hyrule.png"
-  },
-  {
-    "name": "lorule_image",
-    "img": "images/maps/lorule.png"
-  },
-  {
-    "name": "region_hyrule",
-    "img": "images/maps/regions-hyrule.png"
-  },
-  {
-    "name": "region_lorule",
-    "img": "images/maps/regions-lorule.png"
   },
   {
     "name": "ep1F",
     "location_size": 10,
-    "location_border_thickness": 1,
+    "location_border_thickness": 2,
     "img": "images/maps/ep1F.png"
   },
   {
@@ -65,79 +49,79 @@
   },
   {
     "name": "hera1F",
-    "location_size": 10,
+    "location_size": 12,
     "location_border_thickness": 1,
     "img": "images/maps/hera1F.png"
   },
   {
     "name": "hera2F",
-    "location_size": 10,
+    "location_size": 12,
     "location_border_thickness": 1,
     "img": "images/maps/hera2F.png"
   },
   {
     "name": "hera3F",
-    "location_size": 10,
+    "location_size": 12,
     "location_border_thickness": 1,
     "img": "images/maps/hera3F.png"
   },
   {
     "name": "hera4F",
-    "location_size": 10,
+    "location_size": 12,
     "location_border_thickness": 1,
     "img": "images/maps/hera4F.png"
   },
   {
     "name": "hera5F",
-    "location_size": 10,
+    "location_size": 12,
     "location_border_thickness": 1,
     "img": "images/maps/hera5F.png"
   },
   {
     "name": "hera6F",
-    "location_size": 10,
+    "location_size": 12,
     "location_border_thickness": 1,
     "img": "images/maps/hera6F.png"
   },
   {
     "name": "hera7F",
-    "location_size": 10,
+    "location_size": 12,
     "location_border_thickness": 1,
     "img": "images/maps/hera7F.png"
   },
   {
     "name": "hera8F",
-    "location_size": 10,
+    "location_size": 12,
     "location_border_thickness": 1,
     "img": "images/maps/hera8F.png"
   },
   {
     "name": "hera9F",
-    "location_size": 10,
+    "location_size": 12,
     "location_border_thickness": 1,
     "img": "images/maps/hera9F.png"
   },
   {
     "name": "hera10F",
-    "location_size": 10,
+    "location_size": 12,
     "location_border_thickness": 1,
     "img": "images/maps/hera10F.png"
   },
   {
     "name": "hera11F",
-    "location_size": 10,
+    "location_size": 12,
     "location_border_thickness": 1,
     "img": "images/maps/hera11F.png"
   },
   {
     "name": "hera12F",
-    "location_size": 10,
+    "location_size": 12,
     "location_border_thickness": 1,
     "img": "images/maps/hera12F.png"
   },
   {
     "name": "hera13F",
-    "location_size": 10,
+    "location_size": 12,
     "location_border_thickness": 1,
     "img": "images/maps/hera13F.png"
   },
@@ -287,79 +271,79 @@
   },
   {
     "name": "ice1F",
-    "location_size": 10,
+    "location_size": 12,
     "location_border_thickness": 1,
     "img": "images/maps/ice1F.png"
   },
   {
     "name": "iceB1",
-    "location_size": 10,
+    "location_size": 12,
     "location_border_thickness": 1,
     "img": "images/maps/iceB1.png"
   },
   {
     "name": "iceB2",
-    "location_size": 10,
+    "location_size": 12,
     "location_border_thickness": 1,
     "img": "images/maps/iceB2.png"
   },
   {
     "name": "iceB3",
-    "location_size": 10,
+    "location_size": 12,
     "location_border_thickness": 1,
     "img": "images/maps/iceB3.png"
   },
   {
     "name": "iceB4",
-    "location_size": 10,
+    "location_size": 12,
     "location_border_thickness": 1,
     "img": "images/maps/iceB4.png"
   },
   {
     "name": "iceB5",
-    "location_size": 10,
+    "location_size": 12,
     "location_border_thickness": 1,
     "img": "images/maps/iceB5.png"
   },
   {
     "name": "iceB6",
-    "location_size": 10,
+    "location_size": 12,
     "location_border_thickness": 1,
     "img": "images/maps/iceB6.png"
   },
   {
     "name": "lorule1F",
-    "location_size": 10,
+    "location_size": 12,
     "location_border_thickness": 1,
     "img": "images/maps/lorule1F.png"
   },
   {
     "name": "lorule2F",
-    "location_size": 10,
+    "location_size": 12,
     "location_border_thickness": 1,
     "img": "images/maps/lorule2F.png"
   },
   {
     "name": "lorule3F",
-    "location_size": 10,
+    "location_size": 12,
     "location_border_thickness": 1,
     "img": "images/maps/lorule3F.png"
   },
   {
     "name": "lorule4F",
-    "location_size": 10,
+    "location_size": 12,
     "location_border_thickness": 1,
     "img": "images/maps/lorule4F.png"
   },
   {
     "name": "lorule5F",
-    "location_size": 10,
+    "location_size": 12,
     "location_border_thickness": 1,
     "img": "images/maps/lorule5F.png"
   },
   {
     "name": "throneRoom",
-    "location_size": 10,
+    "location_size": 12,
     "location_border_thickness": 1,
     "img": "images/maps/throneRoom.png"
   }

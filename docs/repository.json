@@ -7,9 +7,9 @@
       "game_name": "The Legend of Zelda: A Link Between Worlds",
       "version": "3.2.2",
       "required_app_version": "2.3.8.18",
-      "uid": "lemonkong_albwr_tracker",
+      "uid": "rickwithanh_albwr_tracker",
       "flags": [ "map", "pins", "chathud" ],
-      "link": "https://rickfay.github.io/ALBW-Randomizer-Tracker/lemonkong_albwr_tracker.zip",
+      "link": "https://rickfay.github.io/ALBW-Randomizer-Tracker/rickwithanh_albwr_tracker.zip",
       "documentation_url": "https://github.com/rickfay/ALBW-Randomizer-Tracker#readme",
       "variants": [
         {

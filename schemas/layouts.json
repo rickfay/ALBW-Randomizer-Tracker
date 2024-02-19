@@ -9,7 +9,7 @@
                 "type" : {
                     "type": "string",
                     "description": "The type of the layout element being created",
-                    "enum": [ "array", "button_popup", "canvas", "container", "dock", "group", "image", "item", "itemgrid", "layout", "map", "recentpins", "tabbed", "scroll" ]
+                    "enum": [ "array", "button_popup", "canvas", "container", "dock", "group", "image", "item", "itemgrid", "layout", "map", "recentpins", "tabbed", "scroll", "viewbox" ]
                 },
                 "background" : {
                     "type": "string",
@@ -445,6 +445,27 @@
                 }
             }
         },
+        "viewbox": {
+            "description": "A container that fills the available space.",
+            "allOf": [ { "$ref": "#/definitions/layout_element_base" } ],
+            "properties": {
+                "type" : {
+                    "type": "string",
+                    "enum": [ "viewbox" ]
+                },
+                "content": {
+                    "oneOf": [
+                        {
+                            "type": "array",
+                            "items": { "$ref": "#/definitions/layout_element" }
+                        },
+                        {
+                            "$ref": "#/definitions/layout_element"
+                        }
+                    ]
+                }
+            }
+        },
         "layout_element": {
             "type": "object",
             "oneOf": [
@@ -461,7 +482,8 @@
                 { "$ref": "#/definitions/map" },
                 { "$ref": "#/definitions/recentpins" },
                 { "$ref": "#/definitions/scroll" },
-                { "$ref": "#/definitions/tabbed" }
+                { "$ref": "#/definitions/tabbed" },
+                { "$ref": "#/definitions/viewbox" }
             ]
         }
     },

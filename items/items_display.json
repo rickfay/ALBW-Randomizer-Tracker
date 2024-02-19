@@ -46,13 +46,13 @@
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/display/template.png",
-        //"img_mods": "@disabled,overlay|images/labels/Hide.png",
+        "img": "images/display/wv_all.png",
+        "img_mods": "@disabled,overlay|images/display/Hide.png",
         "inherit_codes": false
       },
       {
-        "img": "images/display/template.png",
-        //"img_mods": "overlay|images/labels/Show.png",
+        "img": "images/display/wv_all.png",
+        "img_mods": "overlay|images/display/Show.png",
         "codes": "weathervania",
         "inherit_codes": false
       }

@@ -5,7 +5,10 @@
     "chest_unopened_img": "images/checks/chest_small_unopened.png",
     "chest_opened_img": "images/checks/chest_small_opened.png",
     "access_rules": [
-      "merge, bombs, $lampless"
+      "$access_dark_ruins, bombs",
+      "[glitched], $glitched_access_dark_ruins, bombs",
+      "[advanced], $advanced_access_dark_ruins, bombs",
+      "[hell], $hell_access_dark_ruins, bombs"
     ],
     "children": [
       {
@@ -20,7 +23,7 @@
         "sections": [
           {
             "name": "1F Right Pit",
-            "hosted_item": "pod_chest_01",
+            "item_count": 1,
             "access_rules": [
               "bombs"
             ]
@@ -28,269 +31,280 @@
         ]
       },
       {
-        "name": "Dark Palace",
-        "map_locations": [
-          {
-            "map": "dark1F",
-            "x": 71,
-            "y": 103
-          }
+        "name": "Dark Palace Dark Rooms",
+        "access_rules": [
+          "$lampless"
         ],
-        "sections": [
+        "children": [
           {
-            "name": "1F Left Pit",
-            //"capture_item": true,
-            "hosted_item": "pod_chest_02"
-          }
-        ]
-      },
-      {
-        "name": "Dark Palace",
-        "map_locations": [
-          {
-            "map": "dark1F",
-            "x": 36,
-            "y": 59
-          }
-        ],
-        "sections": [
-          {
-            "name": "1F Switches Chest",
-            "hosted_item": "pod_chest_03"
-          }
-        ]
-      },
-      {
-        "name": "Dark Palace",
-        "map_locations": [
-          {
-            "map": "dark1F",
-            "x": 141,
-            "y": 91
-          }
-        ],
-        "sections": [
-          {
-            "name": "1F Hidden Upper",
-            "access_rules": [
-              "bombs"
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "dark1F",
+                "x": 71,
+                "y": 103
+              }
             ],
-            "hosted_item": "pod_chest_04"
-          }
-        ]
-      },
-      {
-        "name": "Dark Palace",
-        "map_locations": [
+            "sections": [
+              {
+                "name": "1F Left Pit",
+                //"capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
           {
-            "map": "dark1F",
-            "x": 124,
-            "y": 82
-          }
-        ],
-        "sections": [
-          {
-            "name": "1F Hidden Lower",
-            "hosted_item": "pod_chest_05"
-          }
-        ]
-      },
-      {
-        "name": "Dark Palace",
-        "map_locations": [
-          {
-            "map": "dark1F",
-            "x": 109,
-            "y": 47
-          }
-        ],
-        "sections": [
-          {
-            "name": "1F Fall Chest",
-            "access_rules": [
-              "bombs",
-              "hammer"
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "dark1F",
+                "x": 36,
+                "y": 59
+              }
             ],
-            "hosted_item": "pod_chest_06"
-          }
-        ]
-      },
-      {
-        "name": "Dark Palace",
-        "map_locations": [
+            "sections": [
+              {
+                "name": "1F Switches Chest",
+                "item_count": 1
+              }
+            ]
+          },
           {
-            "map": "dark2F",
-            "x": 88,
-            "y": 65
-          }
-        ],
-        "sections": [
-          {
-            "name": "2F Big Chest",
-            "chest_unopened_img": "images/chest_big_unopened.png",
-            "chest_opened_img": "images/chest_big_opened.png",
-            "access_rules": [
-              "bombs"
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "dark1F",
+                "x": 141,
+                "y": 91
+              }
             ],
-            "hosted_item": "pod_chest_07"
-          }
-        ]
-      },
-      {
-        "name": "Dark Palace",
-        "map_locations": [
+            "sections": [
+              {
+                "name": "1F Hidden Upper",
+                "access_rules": [
+                  "bombs"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
           {
-            "map": "dark2F",
-            "x": 119,
-            "y": 98
-          }
-        ],
-        "sections": [
-          {
-            "name": "2F East Chest",
-            "access_rules": [
-              "merge"
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "dark1F",
+                "x": 124,
+                "y": 82
+              }
             ],
-            "hosted_item": "pod_chest_08"
-          }
-        ]
-      },
-      {
-        "name": "Dark Palace",
-        "map_locations": [
+            "sections": [
+              {
+                "name": "1F Hidden Lower",
+                "item_count": 1
+              }
+            ]
+          },
           {
-            "map": "darkB1",
-            "x": 98,
-            "y": 44
-          }
-        ],
-        "sections": [
-          {
-            "name": "B1 Center Fall",
-            //"capture_item": true,
-            "access_rules": [
-              //"{}",
-              "bombs",
-              "hammer"
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "dark1F",
+                "x": 109,
+                "y": 47
+              }
             ],
-            "hosted_item": "pod_chest_09"
-          }
-        ]
-      },
-      {
-        "name": "Dark Palace",
-        "map_locations": [
+            "sections": [
+              {
+                "name": "1F Fall Chest",
+                "access_rules": [
+                  "bombs",
+                  "hammer"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
           {
-            "map": "darkB1",
-            "x": 149,
-            "y": 70
-          }
-        ],
-        "sections": [
-          {
-            "name": "B1 East Fall",
-            "access_rules": [
-              "bombs",
-              "hammer"
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "dark2F",
+                "x": 88,
+                "y": 65
+              }
             ],
-            "hosted_item": "pod_chest_10"
-          }
-        ]
-      },
-      {
-        "name": "Dark Palace",
-        "map_locations": [
+            "sections": [
+              {
+                "name": "2F Big Chest",
+                "chest_unopened_img": "images/chest_big_unopened.png",
+                "chest_opened_img": "images/chest_big_opened.png",
+                "access_rules": [
+                  "bombs"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
           {
-            "map": "darkB1",
-            "x": 149,
-            "y": 31
-          }
-        ],
-        "sections": [
-          {
-            "name": "B1 North East",
-            //"capture_item": true,
-            "hosted_item": "pod_chest_11"
-          }
-        ]
-      },
-      {
-        "name": "Dark Palace",
-        "map_locations": [
-          {
-            "map": "darkB1",
-            "x": 32,
-            "y": 71
-          }
-        ],
-        "sections": [
-          {
-            "name": "B1 Maze Room",
-            "access_rules": [
-              "merge"
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "dark2F",
+                "x": 119,
+                "y": 98
+              }
             ],
-            "hosted_item": "pod_chest_12"
-          }
-        ]
-      },
-      {
-        "name": "Dark Palace",
-        "map_locations": [
+            "sections": [
+              {
+                "name": "2F East Chest",
+                "access_rules": [
+                  "merge"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
           {
-            "map": "darkB1",
-            "x": 44,
-            "y": 89
-          }
-        ],
-        "sections": [
-          {
-            "name": "B1 Big Chest",
-            "chest_unopened_img": "images/chest_big_unopened.png",
-            "chest_opened_img": "images/chest_big_opened.png",
-            "access_rules": [
-              "bombs"
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "darkB1",
+                "x": 98,
+                "y": 42
+              }
             ],
-            "hosted_item": "pod_chest_13"
-          }
-        ]
-      },
-      {
-        "name": "Dark Palace",
-        "map_locations": [
+            "sections": [
+              {
+                "name": "B1 Center Fall",
+                //"capture_item": true,
+                "access_rules": [
+                  //"{}",
+                  "bombs",
+                  "hammer"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
           {
-            "map": "darkB1",
-            "x": 88,
-            "y": 70
-          }
-        ],
-        "sections": [
-          {
-            "name": "Gemesaur King",
-            "access_rules": [
-              "bombs, $fire"
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "darkB1",
+                "x": 149,
+                "y": 70
+              }
             ],
-            //"capture_item": true,
-            "hosted_item": "pod_chest_14"
-          }
-        ]
-      },
-      {
-        "name": "Dark Palace",
-        "map_locations": [
+            "sections": [
+              {
+                "name": "B1 East Fall",
+                "access_rules": [
+                  "bombs",
+                  "hammer"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
           {
-            "map": "darkB1",
-            "x": 88,
-            "y": 58,
-            "size": 15
-          }
-        ],
-        "sections": [
-          {
-            "name": "Prize",
-            "access_rules": [
-              "bombs, $fire"
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "darkB1",
+                "x": 149,
+                "y": 31
+              }
             ],
-            "hosted_item": "dark"
+            "sections": [
+              {
+                "name": "B1 North East",
+                //"capture_item": true,
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "darkB1",
+                "x": 32,
+                "y": 71
+              }
+            ],
+            "sections": [
+              {
+                "name": "B1 Maze Room",
+                "access_rules": [
+                  "merge"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "darkB1",
+                "x": 44,
+                "y": 89
+              }
+            ],
+            "sections": [
+              {
+                "name": "B1 Big Chest",
+                "chest_unopened_img": "images/chest_big_unopened.png",
+                "chest_opened_img": "images/chest_big_opened.png",
+                "access_rules": [
+                  "bombs"
+                ],
+                "item_count": 1
+              }
+            ]
+          },
+          {
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "darkB1",
+                "x": 88,
+                "y": 58,
+                "size": 20
+              }
+            ],
+            "sections": [
+              {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["bombs, $fire"], "visibility_rules": ["label_power_pd"]},
+              {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["bombs, $fire"], "visibility_rules": ["label_wisdom_pd"]},
+              {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["bombs, $fire"], "visibility_rules": ["label_courage_pd"]},
+              {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["bombs, $fire"], "visibility_rules": ["label_gulley_pd"]},
+              {"name": "Oren", "hosted_item": "oren", "access_rules": ["bombs, $fire"], "visibility_rules": ["label_oren_pd"]},
+              {"name": "Seres", "hosted_item": "seres", "access_rules": ["bombs, $fire"], "visibility_rules": ["label_seres_pd"]},
+              {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["bombs, $fire"], "visibility_rules": ["label_osfala_pd"]},
+              {"name": "Impa", "hosted_item": "impa", "access_rules": ["bombs, $fire"], "visibility_rules": ["label_impa_pd"]},
+              {"name": "Irene", "hosted_item": "irene", "access_rules": ["bombs, $fire"], "visibility_rules": ["label_irene_pd"]},
+              {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["bombs, $fire"], "visibility_rules": ["label_rosso_pd"]}
+            ]
+          },
+          {
+            "name": "Dark Palace",
+            "map_locations": [
+              {
+                "map": "darkB1",
+                "x": 88,
+                "y": 68
+              }
+            ],
+            "sections": [
+              {
+                "name": "Gemesaur King",
+                "access_rules": [
+                  "bombs, $fire"
+                ],
+                //"capture_item": true,
+                "item_count": 1
+              }
+            ]
           }
         ]
       },
@@ -300,112 +314,29 @@
           {
             "map": "lorule",
             "x": 1921,
-            "y": 852,
-            "size": 80
+            "y": 852
           }
         ],
         "sections": [
           {
-            "name": "1F Right Pit",
-            "hosted_item": "pod_chest_01",
+            "name": "Dungeon",
+            "item_count": 8,
+            "clear_as_group": false,
             "access_rules": [
-              "bombs"
+              "[bombs], [lamp]",
+              "[bombs], [frod], [lampless]"
             ]
           },
-          {
-            "name": "1F Left Pit",
-            //"capture_item": true,
-            "hosted_item": "pod_chest_02"
-          },
-          {
-            "name": "1F Switches Chest",
-            "hosted_item": "pod_chest_03"
-          },
-          {
-            "name": "1F Hidden Upper",
-            "hosted_item": "pod_chest_04",
-            "access_rules": [
-              "bombs"
-            ]
-          },
-          {
-            "name": "1F Hidden Lower",
-            "hosted_item": "pod_chest_05"
-          },
-          {
-            "name": "B1 East Fall",
-            "hosted_item": "pod_chest_10",
-            "access_rules": [
-              "bombs",
-              "hammer"
-            ]
-          },
-          {
-            "name": "B1 North East",
-            //"capture_item": true,
-            "hosted_item": "pod_chest_11"
-          },
-          {
-            "name": "2F Big Chest",
-            "hosted_item": "pod_chest_07",
-            "access_rules": [
-              "bombs"
-            ]
-          },
-          {
-            "name": "2F East Chest",
-            "hosted_item": "pod_chest_08",
-            "access_rules": [
-              "merge"
-            ]
-          },
-          {
-            "name": "1F Fall Chest",
-            "hosted_item": "pod_chest_06",
-            "access_rules": [
-              "bombs",
-              "hammer"
-            ]
-          },
-          {
-            "name": "B1 Center Fall",
-            //"capture_item": true,
-            "hosted_item": "pod_chest_09",
-            "access_rules": [
-              //"{}",
-              "bombs",
-              "hammer"
-            ]
-          },
-          {
-            "name": "B1 Maze Room",
-            "hosted_item": "pod_chest_12",
-            "access_rules": [
-              "merge"
-            ]
-          },
-          {
-            "name": "B1 Big Chest",
-            "hosted_item": "pod_chest_13",
-            "access_rules": [
-              "bombs"
-            ]
-          },
-          {
-            "name": "Gemesaur King",
-            //"capture_item": true,
-            "hosted_item": "pod_chest_14",
-            "access_rules": [
-              "bombs, $fire"
-            ]
-          },
-          {
-            "name": "Prize",
-            "access_rules": [
-              "bombs, $fire"
-            ],
-            "hosted_item": "dark"
-          }
+          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["bombs, $fire, $lampless"], "visibility_rules": ["label_power_pd"]},
+          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["bombs, $fire, $lampless"], "visibility_rules": ["label_wisdom_pd"]},
+          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["bombs, $fire, $lampless"], "visibility_rules": ["label_courage_pd"]},
+          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["bombs, $fire, $lampless"], "visibility_rules": ["label_gulley_pd"]},
+          {"name": "Oren", "hosted_item": "oren", "access_rules": ["bombs, $fire, $lampless"], "visibility_rules": ["label_oren_pd"]},
+          {"name": "Seres", "hosted_item": "seres", "access_rules": ["bombs, $fire, $lampless"], "visibility_rules": ["label_seres_pd"]},
+          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["bombs, $fire, $lampless"], "visibility_rules": ["label_osfala_pd"]},
+          {"name": "Impa", "hosted_item": "impa", "access_rules": ["bombs, $fire, $lampless"], "visibility_rules": ["label_impa_pd"]},
+          {"name": "Irene", "hosted_item": "irene", "access_rules": ["bombs, $fire, $lampless"], "visibility_rules": ["label_irene_pd"]},
+          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["bombs, $fire, $lampless"], "visibility_rules": ["label_rosso_pd"]}
         ]
       }
     ]

@@ -1,138 +1,1020 @@
 [
-  // Hyrule Weather Vanes ----------------------------------------------------------------------------------------------
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  // Hyrule Weather Vanes //////////////////////////////////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  // Your House
   {
     "name": "Your House Weather Vane",
     "type": "toggle",
-    "img": "images/settings/wv_hyrule.png",
-    "codes": "wv_your_house"
+    "img": "images/display/wv_hyrule.png",
+    "codes": "wv_your_house",
+    "loop": true
   },
+  {
+    "type": "toggle",
+    "img": "",
+    "codes": "wv_your_house_visited"
+  },
+  {
+    "name": "Your House Weather Vane",
+    "type": "composite_toggle",
+    "codes": "wv_your_house_badged",
+    "item_left": "wv_your_house",
+    "item_right": "wv_your_house_visited",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "overlay|images/labels/HOUSE.png,@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "overlay|images/labels/HOUSE.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "@disabled,overlay|images/labels/HOUSE_green.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "overlay|images/labels/HOUSE_green.png"
+      }
+    ]
+  },
+  // Kakariko Village
   {
     "name": "Kakariko Weather Vane",
     "type": "toggle",
-    "img": "images/settings/wv_hyrule.png",
-    "codes": "wv_kakariko"
+    "img": "images/display/wv_hyrule.png",
+    "codes": "wv_kakariko",
+    "loop": true
   },
+  {
+    "type": "toggle",
+    "img": "",
+    "codes": "wv_kakariko_visited"
+  },
+  {
+    "name": "Kakariko Weather Vane",
+    "type": "composite_toggle",
+    "codes": "wv_kakariko_badged",
+    "item_left": "wv_kakariko",
+    "item_right": "wv_kakariko_visited",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "overlay|images/labels/KAK.png,@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "overlay|images/labels/KAK.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "@disabled,overlay|images/labels/KAK_green.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "overlay|images/labels/KAK_green.png"
+      }
+    ]
+  },
+  // Eastern Palace
   {
     "name": "Eastern Palace Weather Vane",
     "type": "toggle",
-    "img": "images/settings/wv_hyrule.png",
-    "codes": "wv_eastern"
+    "img": "images/display/wv_hyrule.png",
+    "codes": "wv_eastern",
+    "loop": true
   },
+  {
+    "type": "toggle",
+    "img": "",
+    "codes": "wv_eastern_visited"
+  },
+  {
+    "name": "Eastern Palace Weather Vane",
+    "type": "composite_toggle",
+    "codes": "wv_eastern_badged",
+    "item_left": "wv_eastern",
+    "item_right": "wv_eastern_visited",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "overlay|images/labels/EAST.png,@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "overlay|images/labels/EAST.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "@disabled,overlay|images/labels/EAST_green.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "overlay|images/labels/EAST_green.png"
+      }
+    ]
+  },
+  // House of Gales
   {
     "name": "House of Gales Weather Vane",
     "type": "toggle",
-    "img": "images/settings/wv_hyrule.png",
-    "codes": "wv_gales"
+    "img": "images/display/wv_hyrule.png",
+    "codes": "wv_gales",
+    "loop": true
   },
+  {
+    "type": "toggle",
+    "img": "",
+    "codes": "wv_gales_visited"
+  },
+  {
+    "name": "House of Gales Weather Vane",
+    "type": "composite_toggle",
+    "codes": "wv_gales_badged",
+    "item_left": "wv_gales",
+    "item_right": "wv_gales_visited",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "overlay|images/labels/GALES.png,@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "overlay|images/labels/GALES.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "@disabled,overlay|images/labels/GALES_green.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "overlay|images/labels/GALES_green.png"
+      }
+    ]
+  },
+  // Tower of Hera
   {
     "name": "Tower of Hera Weather Vane",
     "type": "toggle",
-    "img": "images/settings/wv_hyrule.png",
-    "codes": "wv_hera"
+    "img": "images/display/wv_hyrule.png",
+    "codes": "wv_hera",
+    "loop": true
   },
+  {
+    "type": "toggle",
+    "img": "",
+    "codes": "wv_hera_visited"
+  },
+  {
+    "name": "Tower of Hera Weather Vane",
+    "type": "composite_toggle",
+    "codes": "wv_hera_badged",
+    "item_left": "wv_hera",
+    "item_right": "wv_hera_visited",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "overlay|images/labels/HERA.png,@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "overlay|images/labels/HERA.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "@disabled,overlay|images/labels/HERA_green.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "overlay|images/labels/HERA_green.png"
+      }
+    ]
+  },
+  // Witch's House
   {
     "name": "Witch's House Weather Vane",
     "type": "toggle",
-    "img": "images/settings/wv_hyrule.png",
-    "codes": "wv_witch"
+    "img": "images/display/wv_hyrule.png",
+    "codes": "wv_witch",
+    "loop": true
   },
+  {
+    "type": "toggle",
+    "img": "",
+    "codes": "wv_witch_visited"
+  },
+  {
+    "name": "Witch's House Weather Vane",
+    "type": "composite_toggle",
+    "codes": "wv_witch_badged",
+    "item_left": "wv_witch",
+    "item_right": "wv_witch_visited",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "overlay|images/labels/WITCH.png,@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "overlay|images/labels/WITCH.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "@disabled,overlay|images/labels/WITCH_green.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "overlay|images/labels/WITCH_green.png"
+      }
+    ]
+  },
+  // Death Mountain (Hyrule)
   {
     "name": "Death Mountain (Hyrule) Weather Vane",
     "type": "toggle",
-    "img": "images/settings/wv_hyrule.png",
-    "codes": "wv_death_hyrule"
+    "img": "images/display/wv_hyrule.png",
+    "codes": "wv_death_hyrule",
+    "loop": true
   },
+  {
+    "type": "toggle",
+    "img": "",
+    "codes": "wv_death_hyrule_visited"
+  },
+  {
+    "name": "Death Mountain (Hyrule) Weather Vane",
+    "type": "composite_toggle",
+    "codes": "wv_death_hyrule_badged",
+    "item_left": "wv_death_hyrule",
+    "item_right": "wv_death_hyrule_visited",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "overlay|images/labels/DEATH.png,@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "overlay|images/labels/DEATH.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "@disabled,overlay|images/labels/DEATH_green.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "overlay|images/labels/DEATH_green.png"
+      }
+    ]
+  },
+  // Desert Palace
   {
     "name": "Desert Palace Weather Vane",
     "type": "toggle",
-    "img": "images/settings/wv_hyrule.png",
-    "codes": "wv_desert"
+    "img": "images/display/wv_hyrule.png",
+    "codes": "wv_desert",
+    "loop": true
   },
+  {
+    "type": "toggle",
+    "img": "",
+    "codes": "wv_desert_visited"
+  },
+  {
+    "name": "Desert Palace Weather Vane",
+    "type": "composite_toggle",
+    "codes": "wv_desert_badged",
+    "item_left": "wv_desert",
+    "item_right": "wv_desert_visited",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "overlay|images/labels/DESERT.png,@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "overlay|images/labels/DESERT.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "@disabled,overlay|images/labels/DESERT_green.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "overlay|images/labels/DESERT_green.png"
+      }
+    ]
+  },
+  // Sanctuary
   {
     "name": "Sanctuary Weather Vane",
     "type": "toggle",
-    "img": "images/settings/wv_hyrule.png",
-    "codes": "wv_sanctuary"
+    "img": "images/display/wv_hyrule.png",
+    "codes": "wv_sanctuary",
+    "loop": true
   },
-
-  // Lorule Weather Vanes ----------------------------------------------------------------------------------------------
-
+  {
+    "type": "toggle",
+    "img": "",
+    "codes": "wv_sanctuary_visited"
+  },
+  {
+    "name": "Sanctuary Weather Vane",
+    "type": "composite_toggle",
+    "codes": "wv_sanctuary_badged",
+    "item_left": "wv_sanctuary",
+    "item_right": "wv_sanctuary_visited",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "overlay|images/labels/SANC.png,@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "overlay|images/labels/SANC.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "@disabled,overlay|images/labels/SANC_green.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/display/wv_hyrule.png",
+        "img_mods": "overlay|images/labels/SANC_green.png"
+      }
+    ]
+  },
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  // Lorule Weather Vanes //////////////////////////////////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  // Skull Woods
   {
     "name": "Skull Woods Weather Vane",
     "type": "toggle",
-    "img": "images/settings/wv_lorule.png",
-    "codes": "wv_skull"
+    "img": "images/display/wv_lorule.png",
+    "codes": "wv_skull",
+    "loop": true
   },
+  {
+    "type": "toggle",
+    "img": "",
+    "codes": "wv_skull_visited"
+  },
+  {
+    "name": "Skull Woods Weather Vane",
+    "type": "composite_toggle",
+    "codes": "wv_skull_badged",
+    "item_left": "wv_skull",
+    "item_right": "wv_skull_visited",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/SKULL.png,@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/SKULL.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "@disabled,overlay|images/labels/SKULL_green.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/SKULL_green.png"
+      }
+    ]
+  },
+  // Treacherous Tower
   {
     "name": "Treacherous Tower Weather Vane",
     "type": "toggle",
-    "img": "images/settings/wv_lorule.png",
-    "codes": "wv_treacherous_tower"
+    "img": "images/display/wv_lorule.png",
+    "codes": "wv_treacherous_tower",
+    "loop": true
   },
+  {
+    "type": "toggle",
+    "img": "",
+    "codes": "wv_treacherous_tower_visited"
+  },
+  {
+    "name": "Treacherous Tower Weather Vane",
+    "type": "composite_toggle",
+    "codes": "wv_treacherous_tower_badged",
+    "item_left": "wv_treacherous_tower",
+    "item_right": "wv_treacherous_tower_visited",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/TOWER.png,@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/TOWER.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "@disabled,overlay|images/labels/TOWER_green.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/TOWER_green.png"
+      }
+    ]
+  },
+  // Ice Ruins
   {
     "name": "Ice Ruins Weather Vane",
     "type": "toggle",
-    "img": "images/settings/wv_lorule.png",
-    "codes": "wv_ice"
+    "img": "images/display/wv_lorule.png",
+    "codes": "wv_ice",
+    "loop": true
   },
+  {
+    "type": "toggle",
+    "img": "",
+    "codes": "wv_ice_visited"
+  },
+  {
+    "name": "Ice Ruins Weather Vane",
+    "type": "composite_toggle",
+    "codes": "wv_ice_badged",
+    "item_left": "wv_ice",
+    "item_right": "wv_ice_visited",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/ICE.png,@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/ICE.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "@disabled,overlay|images/labels/ICE_green.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/ICE_green.png"
+      }
+    ]
+  },
+  // Lorule Castle
   {
     "name": "Lorule Castle Weather Vane",
     "type": "toggle",
-    "img": "images/settings/wv_lorule.png",
-    "codes": "wv_lorule_castle"
+    "img": "images/display/wv_lorule.png",
+    "codes": "wv_lorule_castle",
+    "loop": true
   },
+  {
+    "type": "toggle",
+    "img": "",
+    "codes": "wv_lorule_castle_visited"
+  },
+  {
+    "name": "Lorule Castle Weather Vane",
+    "type": "composite_toggle",
+    "codes": "wv_lorule_castle_badged",
+    "item_left": "wv_lorule_castle",
+    "item_right": "wv_lorule_castle_visited",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/LC.png,@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/LC.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "@disabled,overlay|images/labels/LC_green.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/LC_green.png"
+      }
+    ]
+  },
+  // Graveyard
   {
     "name": "Graveyard Weather Vane",
     "type": "toggle",
-    "img": "images/settings/wv_lorule.png",
-    "codes": "wv_graveyard"
+    "img": "images/display/wv_lorule.png",
+    "codes": "wv_graveyard",
+    "loop": true
   },
+  {
+    "type": "toggle",
+    "img": "",
+    "codes": "wv_graveyard_visited"
+  },
+  {
+    "name": "Graveyard Weather Vane",
+    "type": "composite_toggle",
+    "codes": "wv_graveyard_badged",
+    "item_left": "wv_graveyard",
+    "item_right": "wv_graveyard_visited",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/GRAVE.png,@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/GRAVE.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "@disabled,overlay|images/labels/GRAVE_green.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/GRAVE_green.png"
+      }
+    ]
+  },
+  // Thieves' Town
   {
     "name": "Thieves' Town Weather Vane",
     "type": "toggle",
-    "img": "images/settings/wv_lorule.png",
-    "codes": "wv_thieves"
+    "img": "images/display/wv_lorule.png",
+    "codes": "wv_thieves",
+    "loop": true
   },
+  {
+    "type": "toggle",
+    "img": "",
+    "codes": "wv_thieves_visited"
+  },
+  {
+    "name": "Thieves' Town Weather Vane",
+    "type": "composite_toggle",
+    "codes": "wv_thieves_badged",
+    "item_left": "wv_thieves",
+    "item_right": "wv_thieves_visited",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/THIEVES'.png,@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/THIEVES'.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "@disabled,overlay|images/labels/THIEVES'_green.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/THIEVES'_green.png"
+      }
+    ]
+  },
+  // Dark Palace
   {
     "name": "Dark Palace Weather Vane",
     "type": "toggle",
-    "img": "images/settings/wv_lorule.png",
-    "codes": "wv_dark"
+    "img": "images/display/wv_lorule.png",
+    "codes": "wv_dark",
+    "loop": true
   },
+  {
+    "type": "toggle",
+    "img": "",
+    "codes": "wv_dark_visited"
+  },
+  {
+    "name": "Dark Palace Weather Vane",
+    "type": "composite_toggle",
+    "codes": "wv_dark_badged",
+    "item_left": "wv_dark",
+    "item_right": "wv_dark_visited",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/DARK.png,@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/DARK.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "@disabled,overlay|images/labels/DARK_green.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/DARK_green.png"
+      }
+    ]
+  },
+  // Blacksmith
   {
     "name": "Blacksmith Weather Vane",
     "type": "toggle",
-    "img": "images/settings/wv_lorule.png",
-    "codes": "wv_blacksmith"
+    "img": "images/display/wv_lorule.png",
+    "codes": "wv_blacksmith",
+    "loop": true
   },
+  {
+    "type": "toggle",
+    "img": "",
+    "codes": "wv_blacksmith_visited"
+  },
+  {
+    "name": "Blacksmith Weather Vane",
+    "type": "composite_toggle",
+    "codes": "wv_blacksmith_badged",
+    "item_left": "wv_blacksmith",
+    "item_right": "wv_blacksmith_visited",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/BSMITH.png,@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/BSMITH.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "@disabled,overlay|images/labels/BSMITH_green.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/BSMITH_green.png"
+      }
+    ]
+  },
+  // Vacant House
   {
     "name": "Vacant House Weather Vane",
     "type": "toggle",
-    "img": "images/settings/wv_lorule.png",
-    "codes": "wv_vacant_house"
+    "img": "images/display/wv_lorule.png",
+    "codes": "wv_vacant_house",
+    "loop": true
   },
+  {
+    "type": "toggle",
+    "img": "",
+    "codes": "wv_vacant_house_visited"
+  },
+  {
+    "name": "Vacant House Weather Vane",
+    "type": "composite_toggle",
+    "codes": "wv_vacant_house_badged",
+    "item_left": "wv_vacant_house",
+    "item_right": "wv_vacant_house_visited",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/HOUSE.png,@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/HOUSE.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "@disabled,overlay|images/labels/HOUSE_green.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/HOUSE_green.png"
+      }
+    ]
+  },
+  // Misery Mire
   {
     "name": "Misery Mire Weather Vane",
     "type": "toggle",
-    "img": "images/settings/wv_lorule.png",
-    "codes": "wv_mire"
+    "img": "images/display/wv_lorule.png",
+    "codes": "wv_mire",
+    "loop": true
   },
+  {
+    "type": "toggle",
+    "img": "",
+    "codes": "wv_mire_visited"
+  },
+  {
+    "name": "Misery Mire Weather Vane",
+    "type": "composite_toggle",
+    "codes": "wv_mire_badged",
+    "item_left": "wv_mire",
+    "item_right": "wv_mire_visited",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/MIRE.png,@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/MIRE.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "@disabled,overlay|images/labels/MIRE_green.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/MIRE_green.png"
+      }
+    ]
+  },
+  // Swamp Palace
   {
     "name": "Swamp Palace Weather Vane",
     "type": "toggle",
-    "img": "images/settings/wv_lorule.png",
-    "codes": "wv_swamp"
+    "img": "images/display/wv_lorule.png",
+    "codes": "wv_swamp",
+    "loop": true
   },
+  {
+    "type": "toggle",
+    "img": "",
+    "codes": "wv_swamp_visited"
+  },
+  {
+    "name": "Swamp Palace Weather Vane",
+    "type": "composite_toggle",
+    "codes": "wv_swamp_badged",
+    "item_left": "wv_swamp",
+    "item_right": "wv_swamp_visited",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/SWAMP.png,@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/SWAMP.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "@disabled,overlay|images/labels/SWAMP_green.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/SWAMP_green.png"
+      }
+    ]
+  },
+  // Turtle Rock
   {
     "name": "Turtle Rock Weather Vane",
     "type": "toggle",
-    "img": "images/settings/wv_lorule.png",
-    "codes": "wv_turtle"
+    "img": "images/display/wv_lorule.png",
+    "codes": "wv_turtle",
+    "loop": true
   },
+  {
+    "type": "toggle",
+    "img": "",
+    "codes": "wv_turtle_visited"
+  },
+  {
+    "name": "Turtle Rock Weather Vane",
+    "type": "composite_toggle",
+    "codes": "wv_turtle_badged",
+    "item_left": "wv_turtle",
+    "item_right": "wv_turtle_visited",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/TROCK.png,@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/TROCK.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "@disabled,overlay|images/labels/TROCK_green.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/TROCK_green.png"
+      }
+    ]
+  },
+  // Death Mountain (Lorule)
   {
     "name": "Death Mountain (Lorule) Weather Vane",
     "type": "toggle",
-    "img": "images/settings/wv_lorule.png",
-    "codes": "wv_death_lorule"
+    "img": "images/display/wv_lorule.png",
+    "codes": "wv_death_lorule",
+    "loop": true
+  },
+  {
+    "type": "toggle",
+    "img": "",
+    "codes": "wv_death_lorule_visited"
+  },
+  {
+    "name": "Death Mountain (Lorule) Weather Vane",
+    "type": "composite_toggle",
+    "codes": "wv_death_lorule_badged",
+    "item_left": "wv_death_lorule",
+    "item_right": "wv_death_lorule_visited",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/DEATH.png,@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/DEATH.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "@disabled,overlay|images/labels/DEATH_green.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/display/wv_lorule.png",
+        "img_mods": "overlay|images/labels/DEATH_green.png"
+      }
+    ]
   }
 ]

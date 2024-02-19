@@ -4,9 +4,6 @@
     "color": "#a332ce",
     "chest_unopened_img": "images/checks/chest_small_unopened.png",
     "chest_opened_img": "images/checks/chest_small_opened.png",
-    "access_rules": [
-      "merge"
-    ],
     "children": [
       {
         "name": "Turtle Rock",
@@ -20,9 +17,11 @@
         "sections": [
           {
             "name": "1F Center Switches",
-            "hosted_item": "tr_chest_01",
+            "item_count": 1,
             "access_rules": [
-              "$enterTR"
+              "$enterTR",
+              "[advanced], $advanced_enterTR",
+              "[hell], $hell_enterTR"
             ]
           }
         ]
@@ -39,9 +38,11 @@
         "sections": [
           {
             "name": "1F Kill Flamolas",
-            "hosted_item": "tr_chest_02",
+            "item_count": 1,
             "access_rules": [
-              "$enterTR"
+              "$enterTR",
+              "[advanced], $advanced_enterTR",
+              "[hell], $hell_enterTR"
             ]
           }
         ]
@@ -59,9 +60,11 @@
           {
             "name": "1F NE Ledge",
             //"capture_item": true,
-            "hosted_item": "tr_chest_03",
+            "item_count": 1,
             "access_rules": [
-              "$enterTR"
+              "$enterTR",
+              "[advanced], $advanced_enterTR",
+              "[hell], $hell_enterTR"
             ]
           }
         ]
@@ -78,9 +81,11 @@
         "sections": [
           {
             "name": "1F Miniboss Room",
-            "hosted_item": "tr_chest_04",
+            "item_count": 1,
             "access_rules": [
-              "$enterTR"
+              "$enterTR",
+              "[advanced], $advanced_enterTR",
+              "[hell], $hell_enterTR"
             ]
           }
         ]
@@ -97,9 +102,11 @@
         "sections": [
           {
             "name": "1F SE Room",
-            "hosted_item": "tr_chest_05",
+            "item_count": 1,
             "access_rules": [
-              "$enterTR"
+              "$enterTR",
+              "[advanced], $advanced_enterTR",
+              "[hell], $hell_enterTR"
             ]
           }
         ]
@@ -117,9 +124,11 @@
           {
             "name": "1F NW Room",
             //"capture_item": true,
-            "hosted_item": "tr_chest_06",
+            "item_count": 1,
             "access_rules": [
-              "$enterTR"
+              "$enterTR",
+              "[advanced], $advanced_enterTR",
+              "[hell], $hell_enterTR"
             ]
           }
         ]
@@ -142,11 +151,13 @@
           {
             "name": "Left Balcony",
             "access_rules": [
-              //"{merge}",
-              "$enterTR"
+              //"{merge, quake}",
+              "$enterTR",
+              "[advanced], $advanced_enterTR",
+              "[hell], $hell_enterTR"
             ],
             //"capture_item": true,
-            "hosted_item": "tr_chest_07"
+            "item_count": 1
           }
         ]
       },
@@ -162,9 +173,11 @@
         "sections": [
           {
             "name": "B1 Near Big Chest",
-            "hosted_item": "tr_chest_08",
+            "item_count": 1,
             "access_rules": [
-              "$enterTR"
+              "$enterTR",
+              "[advanced], $advanced_enterTR",
+              "[hell], $hell_enterTR"
             ]
           }
         ]
@@ -181,10 +194,12 @@
         "sections": [
           {
             "name": "B1 North Big Chest",
-            "hosted_item": "tr_chest_09",
+            "item_count": 1,
             "access_rules": [
               "$enterTR, $shielded_switch",
-              "[hard], $enterTR"
+              "[hard], $enterTR",
+              "[advanced], $advanced_enterTR",
+              "[hell], $hell_enterTR"
             ]
           }
         ]
@@ -201,10 +216,12 @@
         "sections": [
           {
             "name": "B1 Center Big Chest",
-            "hosted_item": "tr_chest_10",
+            "item_count": 1,
             "access_rules": [
               "$enterTR, $shielded_switch",
-              "[hard], $enterTR"
+              "[hard], $enterTR",
+              "[advanced], $advanced_enterTR",
+              "[hell], $hell_enterTR"
             ]
           }
         ]
@@ -222,9 +239,11 @@
           {
             "name": "B1 NE Room",
             //"capture_item": true,
-            "hosted_item": "tr_chest_11",
+            "item_count": 1,
             "access_rules": [
-              "$enterTR"
+              "$enterTR",
+              "[advanced], $advanced_enterTR",
+              "[hell], $hell_enterTR"
             ]
           }
         ]
@@ -241,9 +260,11 @@
         "sections": [
           {
             "name": "B1 Kill Wizrobes",
-            "hosted_item": "tr_chest_12",
+            "item_count": 1,
             "access_rules": [
-              "$enterTR"
+              "$enterTR",
+              "[advanced], $advanced_enterTR",
+              "[hell], $hell_enterTR"
             ]
           }
         ]
@@ -261,9 +282,11 @@
           {
             "name": "Grinexx",
             //"capture_item": true,
-            "hosted_item": "tr_chest_13",
+            "item_count": 1,
             "access_rules": [
-              "$enterTR"
+              "$enterTR",
+              "[advanced], $advanced_enterTR",
+              "[hell], $hell_enterTR"
             ]
           }
         ]
@@ -275,17 +298,20 @@
             "map": "turtleB2",
             "x": 89,
             "y": 75,
-            "size": 15
+            "size": 20
           }
         ],
         "sections": [
-          {
-            "name": "Prize",
-            "hosted_item": "turtle",
-            "access_rules": [
-              "$enterTR"
-            ]
-          }
+          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["$enterTR"], "visibility_rules": ["label_power_tr"]},
+          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["$enterTR"], "visibility_rules": ["label_wisdom_tr"]},
+          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["$enterTR"], "visibility_rules": ["label_courage_tr"]},
+          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["$enterTR"], "visibility_rules": ["label_gulley_tr"]},
+          {"name": "Oren", "hosted_item": "oren", "access_rules": ["$enterTR"], "visibility_rules": ["label_oren_tr"]},
+          {"name": "Seres", "hosted_item": "seres", "access_rules": ["$enterTR"], "visibility_rules": ["label_seres_tr"]},
+          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["$enterTR"], "visibility_rules": ["label_osfala_tr"]},
+          {"name": "Impa", "hosted_item": "impa", "access_rules": ["$enterTR"], "visibility_rules": ["label_impa_tr"]},
+          {"name": "Irene", "hosted_item": "irene", "access_rules": ["$enterTR"], "visibility_rules": ["label_irene_tr"]},
+          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["$enterTR"], "visibility_rules": ["label_rosso_tr"]}
         ]
       },
       {
@@ -294,117 +320,30 @@
           {
             "map": "lorule",
             "x": 1572,
-            "y": 1710,
-            "size": 80
+            "y": 1710
           }
         ],
         "sections": [
           {
-            "name": "1F Center Switches",
-            "hosted_item": "tr_chest_01",
+            "name": "Dungeon",
+            "item_count": 8,
+            "clear_as_group": false,
             "access_rules": [
-              "$enterTR"
+              "$enterTR, [$shielded_switch]",
+              "advanced, [$advanced_enterTR], [$shielded_switch]",
+              "hell, [$hell_enterTR], [$shielded_switch]"
             ]
           },
-          {
-            "name": "1F SE Room",
-            "hosted_item": "tr_chest_05",
-            "access_rules": [
-              "$enterTR"
-            ]
-          },
-          {
-            "name": "1F Kill Flamolas",
-            "hosted_item": "tr_chest_02",
-            "access_rules": [
-              "$enterTR"
-            ]
-          },
-          {
-            "name": "Left Balcony",
-            //"capture_item": true,
-            "hosted_item": "tr_chest_07",
-            "access_rules": [
-              //"{merge}",
-              "$enterTR"
-            ]
-          },
-          {
-            "name": "1F NW Room",
-            //"capture_item": true,
-            "hosted_item": "tr_chest_06",
-            "access_rules": [
-              "$enterTR"
-            ]
-          },
-          {
-            "name": "1F NE Ledge",
-            //"capture_item": true,
-            "hosted_item": "tr_chest_03",
-            "access_rules": [
-              "$enterTR"
-            ]
-          },
-          {
-            "name": "1F Miniboss Room",
-            "hosted_item": "tr_chest_04",
-            "access_rules": [
-              "$enterTR"
-            ]
-          },
-          {
-            "name": "B1 NE Room",
-            //"capture_item": true,
-            "hosted_item": "tr_chest_11",
-            "access_rules": [
-              "$enterTR"
-            ]
-          },
-          {
-            "name": "B1 Near Big Chest",
-            "hosted_item": "tr_chest_08",
-            "access_rules": [
-              "$enterTR"
-            ]
-          },
-          {
-            "name": "B1 North Big Chest",
-            "hosted_item": "tr_chest_09",
-            "access_rules": [
-              "$enterTR, $shielded_switch",
-              "[hard], $enterTR"
-            ]
-          },
-          {
-            "name": "B1 Center Big Chest",
-            "hosted_item": "tr_chest_10",
-            "access_rules": [
-              "$enterTR, $shielded_switch",
-              "[hard], $enterTR"
-            ]
-          },
-          {
-            "name": "B1 Kill Wizrobes",
-            "hosted_item": "tr_chest_12",
-            "access_rules": [
-              "$enterTR"
-            ]
-          },
-          {
-            "name": "Grinexx",
-            //"capture_item": true,
-            "hosted_item": "tr_chest_13",
-            "access_rules": [
-              "$enterTR"
-            ]
-          },
-          {
-            "name": "Prize",
-            "hosted_item": "turtle",
-            "access_rules": [
-              "$enterTR"
-            ]
-          }
+          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["$enterTR", "[advanced], $advanced_enterTR", "[hell], $hell_enterTR"], "visibility_rules": ["label_power_tr"]},
+          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["$enterTR", "[advanced], $advanced_enterTR", "[hell], $hell_enterTR"], "visibility_rules": ["label_wisdom_tr"]},
+          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["$enterTR", "[advanced], $advanced_enterTR", "[hell], $hell_enterTR"], "visibility_rules": ["label_courage_tr"]},
+          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["$enterTR", "[advanced], $advanced_enterTR", "[hell], $hell_enterTR"], "visibility_rules": ["label_gulley_tr"]},
+          {"name": "Oren", "hosted_item": "oren", "access_rules": ["$enterTR", "[advanced], $advanced_enterTR", "[hell], $hell_enterTR"], "visibility_rules": ["label_oren_tr"]},
+          {"name": "Seres", "hosted_item": "seres", "access_rules": ["$enterTR", "[advanced], $advanced_enterTR", "[hell], $hell_enterTR"], "visibility_rules": ["label_seres_tr"]},
+          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["$enterTR", "[advanced], $advanced_enterTR", "[hell], $hell_enterTR"], "visibility_rules": ["label_osfala_tr"]},
+          {"name": "Impa", "hosted_item": "impa", "access_rules": ["$enterTR", "[advanced], $advanced_enterTR", "[hell], $hell_enterTR"], "visibility_rules": ["label_impa_tr"]},
+          {"name": "Irene", "hosted_item": "irene", "access_rules": ["$enterTR", "[advanced], $advanced_enterTR", "[hell], $hell_enterTR"], "visibility_rules": ["label_irene_tr"]},
+          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["$enterTR", "[advanced], $advanced_enterTR", "[hell], $hell_enterTR"], "visibility_rules": ["label_rosso_tr"]}
         ]
       }
     ]

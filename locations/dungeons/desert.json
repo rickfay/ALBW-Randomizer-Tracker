@@ -5,7 +5,8 @@
     "chest_unopened_img": "images/checks/chest_small_unopened.png",
     "chest_opened_img": "images/checks/chest_small_opened.png",
     "access_rules": [
-      "merge"
+      "$access_desert_palace, merge",
+      "[glitched], $glitched_access_desert_palace, merge"
     ],
     "children": [
       {
@@ -20,7 +21,7 @@
         "sections": [
           {
             "name": "1F Entrance",
-            "hosted_item": "dp_chest_01",
+            "item_count": 1,
             "access_rules": [
               "srod"
             ]
@@ -39,10 +40,10 @@
         "sections": [
           {
             "name": "1F Sand Island",
-            "hosted_item": "dp_chest_02",
+            "item_count": 1,
             "access_rules": [
               "srod, $switch, $attack",
-              "$reverseDP"
+              "[advanced], $reverseDP"
             ]
           }
         ]
@@ -59,10 +60,10 @@
         "sections": [
           {
             "name": "1F West Middle",
-            "hosted_item": "dp_chest_03",
+            "item_count": 1,
             "access_rules": [
               "srod, $switch, $attack",
-              "$reverseDP"
+              "[advanced], $reverseDP"
             ]
           }
         ]
@@ -79,10 +80,10 @@
         "sections": [
           {
             "name": "1F Sand Controls",
-            "hosted_item": "dp_chest_04",
+            "item_count": 1,
             "access_rules": [
               "srod, $switch, $attack",
-              "$reverseDP"
+              "[advanced], $reverseDP"
             ]
           }
         ]
@@ -99,12 +100,12 @@
         "sections": [
           {
             "name": "1F Miniboss Room",
-            "hosted_item": "dp_chest_05",
+            "item_count": 1,
             "access_rules": [
               "{csmc, srod, $switch}",
-              "{csmc, $reverseDP}",
+              "{csmc, advanced, $reverseDP}",
               "srod, $switch, $attack, titansmitt",
-              "$reverseDP, titansmitt"
+              "[advanced], $reverseDP, titansmitt"
             ]
           }
         ]
@@ -121,11 +122,11 @@
         "sections": [
           {
             "name": "1F Big Chest",
-            "hosted_item": "dp_chest_06",
+            "item_count": 1,
             "access_rules": [
               "{csmc, srod}",
               "srod, $switch, $attack",
-              "$reverseDP"
+              "[advanced], $reverseDP"
             ]
           }
         ]
@@ -142,10 +143,10 @@
         "sections": [
           {
             "name": "2F Center Room",
-            "hosted_item": "dp_chest_07",
+            "item_count": 1,
             "access_rules": [
               "$dp2F",
-              "$reverseDP"
+              "[advanced], $reverseDP"
             ]
           }
         ]
@@ -162,10 +163,10 @@
         "sections": [
           {
             "name": "2F W Big Rock",
-            "hosted_item": "dp_chest_08",
+            "item_count": 1,
             "access_rules": [
               "$dp2F",
-              "$reverseDP, titansmitt"
+              "[advanced], $reverseDP, titansmitt"
             ]
           }
         ]
@@ -182,10 +183,10 @@
         "sections": [
           {
             "name": "2F E Big Rock",
-            "hosted_item": "dp_chest_09",
+            "item_count": 1,
             "access_rules": [
               "$dp2F",
-              "$reverseDP, titansmitt"
+              "[advanced], $reverseDP, titansmitt"
             ]
           }
         ]
@@ -202,10 +203,10 @@
         "sections": [
           {
             "name": "2F Big Chest",
-            "hosted_item": "dp_chest_10",
+            "item_count": 1,
             "access_rules": [
               "$dp2F",
-              "$reverseDP"
+              "[advanced], $reverseDP"
             ]
           }
         ]
@@ -222,10 +223,10 @@
         "sections": [
           {
             "name": "2F Below Big Chest",
-            "hosted_item": "dp_chest_11",
+            "item_count": 1,
             "access_rules": [
               "$dp2F",
-              "$reverseDP"
+              "[advanced], $reverseDP"
             ]
           }
         ]
@@ -242,10 +243,10 @@
         "sections": [
           {
             "name": "2F NE Big Rock",
-            "hosted_item": "dp_chest_12",
+            "item_count": 1,
             "access_rules": [
               "$dp2F",
-              "$reverseDP, titansmitt"
+              "[advanced], $reverseDP, titansmitt"
             ]
           }
         ]
@@ -262,10 +263,10 @@
         "sections": [
           {
             "name": "2F Leever Room",
-            "hosted_item": "dp_chest_13",
+            "item_count": 1,
             "access_rules": [
               "$dp2F",
-              "$reverseDP, $attack"
+              "[advanced], $reverseDP, $attack"
             ]
           }
         ]
@@ -282,10 +283,10 @@
         "sections": [
           {
             "name": "3F Behind Sand",
-            "hosted_item": "dp_chest_14",
+            "item_count": 1,
             "access_rules": [
               "$dp2F",
-              "$reverseDP"
+              "[advanced], $reverseDP"
             ]
           }
         ]
@@ -302,35 +303,10 @@
         "sections": [
           {
             "name": "3F Gimos Chest",
-            "hosted_item": "dp_chest_15",
+            "item_count": 1,
             "access_rules": [
               "$dp2F",
-              "$reverseDP"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Desert Palace",
-        "map_locations": [
-          {
-            "map": "desert3F",
-            "x": 134,
-            "y": 127,
-            "size": 15
-          }
-        ],
-        "sections": [
-          {
-            "name": "Prize",
-            "hosted_item": "desert",
-            "access_rules": [
-              "$dp2F, progression_enemies",
-              "$dp2F, bombs",
-              "$miseryMireOoB, boots",
-              "$miseryMireOoB, srod, $attack",
-              "[hell], $miseryMireOoB, bow",
-              "[hell], $miseryMireOoB, msword"
+              "[advanced], $reverseDP"
             ]
           }
         ]
@@ -341,178 +317,38 @@
           {
             "map": "hyrule",
             "x": 185,
-            "y": 1605,
-            "size": 80
-          },
-          {
-            "map": "lorule",
-            "x": 192,
-            "y": 1602,
-            "size": 80
+            "y": 1605
           }
         ],
         "sections": [
           {
-            "name": "1F Entrance",
-            "hosted_item": "dp_chest_01",
+            "name": "Dungeon",
+            "item_count": 8,
+            "clear_as_group": false,
             "access_rules": [
-              "srod"
-            ]
-          },
-          {
-            "name": "1F West Middle",
-            "hosted_item": "dp_chest_03",
-            "access_rules": [
-              "srod, $switch, $attack",
-              "$reverseDP"
-            ]
-          },
-          {
-            "name": "1F Sand Controls",
-            "hosted_item": "dp_chest_04",
-            "access_rules": [
-              "srod, $switch, $attack",
-              "$reverseDP"
-            ]
-          },
-          {
-            "name": "1F Sand Island",
-            "hosted_item": "dp_chest_02",
-            "access_rules": [
-              "srod, $switch, $attack",
-              "$reverseDP"
-            ]
-          },
-          {
-            "name": "1F Big Chest",
-            "hosted_item": "dp_chest_06",
-            "access_rules": [
-              "{csmc, srod}",
-              "srod, $switch, $attack",
-              "$reverseDP"
-            ]
-          },
-          {
-            "name": "1F Miniboss Room",
-            "hosted_item": "dp_chest_05",
-            "access_rules": [
-              "{csmc, srod, $switch}",
-              "srod, $switch, $attack, titansmitt",
-              "$reverseDP, titansmitt"
-            ]
-          },
-          {
-            "name": "2F W Big Rock",
-            "hosted_item": "dp_chest_08",
-            "access_rules": [
-              "$dp2F",
-              "$reverseDP, titansmitt"
-            ]
-          },
-          {
-            "name": "2F Center Room",
-            "hosted_item": "dp_chest_07",
-            "access_rules": [
-              "$dp2F",
-              "$reverseDP"
-            ]
-          },
-          {
-            "name": "2F Below Big Chest",
-            "hosted_item": "dp_chest_11",
-            "access_rules": [
-              "$dp2F",
-              "$reverseDP"
-            ]
-          },
-          {
-            "name": "2F NE Big Rock",
-            "hosted_item": "dp_chest_12",
-            "access_rules": [
-              "$dp2F",
-              "$reverseDP, titansmitt"
-            ]
-          },
-          {
-            "name": "2F E Big Rock",
-            "hosted_item": "dp_chest_09",
-            "access_rules": [
-              "$dp2F",
-              "$reverseDP, titansmitt"
-            ]
-          },
-          {
-            "name": "2F Big Chest",
-            "hosted_item": "dp_chest_10",
-            "access_rules": [
-              "$dp2F",
-              "$reverseDP"
-            ]
-          },
-          {
-            "name": "2F Leever Room",
-            "hosted_item": "dp_chest_13",
-            "access_rules": [
-              "$dp2F",
-              "$reverseDP, $attack"
-            ]
-          },
-          {
-            "name": "3F Behind Sand",
-            "hosted_item": "dp_chest_14",
-            "access_rules": [
-              "$dp2F",
-              "$reverseDP"
-            ]
-          },
-          {
-            "name": "3F Gimos Chest",
-            "hosted_item": "dp_chest_15",
-            "access_rules": [
-              "$dp2F",
-              "$reverseDP"
-            ]
-          },
-          {
-            "name": "Zaganaga",
-            //"capture_item": true,
-            "hosted_item": "dp_chest_16",
-            "access_rules": [
-              "$dp2F, progression_enemies",
-              "$dp2F, bombs",
-              "$miseryMireOoB, boots",
-              "$miseryMireOoB, srod, $attack",
-              "[hell], $miseryMireOoB, bow",
-              "[hell], $miseryMireOoB, msword"
-            ]
-          },
-          {
-            "name": "Prize",
-            "hosted_item": "desert",
-            "access_rules": [
-              "$dp2F, progression_enemies",
-              "$dp2F, bombs",
-              "$miseryMireOoB, boots",
-              "$miseryMireOoB, srod, $attack",
-              "[hell], $miseryMireOoB, bow",
-              "[hell], $miseryMireOoB, msword"
+              "$access_desert_palace, [srod], [merge], [titansmitt], [$switch], [$attack]",
+              "[glitched], $glitched_access_desert_palace, [srod], [merge], [titansmitt], [$switch], [$attack]"
             ]
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "name": "Misery Mire",
+    "color": "#2d3bb7",
+    "chest_unopened_img": "images/checks/chest_small_unopened.png",
+    "chest_opened_img": "images/checks/chest_small_opened.png",
+    "access_rules": [
+      "merge"
+    ],
+    "children": [
       {
-        "name": "Desert Palace",
+        "name": "Misery Mire",
         "map_locations": [
           {
-            "map": "lorule",
-            "x": 140,
-            //165
-            "y": 1602
-          },
-          {
             "map": "desert3F",
-            "x": 121,
-            // 126
+            "x": 120,
             "y": 127
           }
         ],
@@ -520,16 +356,85 @@
           {
             "name": "Zaganaga",
             //"capture_item": true,
-            "hosted_item": "dp_chest_16",
+            "item_count": 1,
             "access_rules": [
-              "$dp2F, progression_enemies",
-              "$dp2F, bombs",
-              "$miseryMireOoB, boots",
-              "$miseryMireOoB, srod, $attack",
-              "[hell], $miseryMireOoB, bow",
-              "[hell], $miseryMireOoB, msword"
+              "msword, portal_shuffle, portal_zaganaga, srod",
+              "msword, $dp2F, progression_enemies",
+              "msword, $dp2F, bombs",
+              "[hard], portal_shuffle, portal_zaganaga, srod, $attack",
+              "[hard], $dp2F, progression_enemies",
+              "[hard], $dp2F, bombs",
+              "[advanced], $advanced_misery_mire_oob, boots",
+              "[advanced], $advanced_misery_mire_oob, srod, $attack",
+              "[hell], $hell_misery_mire_oob, boots",
+              "[hell], $hell_misery_mire_oob, srod, $attack",
+              "[hell], $hell_misery_mire_oob, bow",
+              "[hell], $hell_misery_mire_oob, msword"
             ]
           }
+        ]
+      },
+      {
+        "name": "Misery Mire",
+        "map_locations": [
+          {
+            "map": "desert3F",
+            "x": 134,
+            "y": 127,
+            "size": 20
+          }
+        ],
+        "sections": [
+          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_power_dp"]},
+          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_wisdom_dp"]},
+          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_courage_dp"]},
+          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_gulley_dp"]},
+          {"name": "Oren", "hosted_item": "oren", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_oren_dp"]},
+          {"name": "Seres", "hosted_item": "seres", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_seres_dp"]},
+          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_osfala_dp"]},
+          {"name": "Impa", "hosted_item": "impa", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_impa_dp"]},
+          {"name": "Irene", "hosted_item": "irene", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_irene_dp"]},
+          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_rosso_dp"]}
+        ]
+      },
+      {
+        "name": "Misery Mire",
+        "map_locations": [
+          {
+            "map": "lorule",
+            "x": 192,
+            "y": 1602
+          }
+        ],
+        "sections": [
+          {
+            "name": "Zaganaga",
+            "item_count": 1,
+            "access_rules": [
+              "msword, portal_shuffle, portal_zaganaga, srod",
+              "msword, $dp2F, progression_enemies",
+              "msword, $dp2F, bombs",
+              "[hard], portal_shuffle, portal_zaganaga, srod, $attack",
+              "[hard], $dp2F, progression_enemies",
+              "[hard], $dp2F, bombs",
+              "[advanced], $advanced_misery_mire_oob, boots",
+              "[advanced], $advanced_misery_mire_oob, srod, $attack",
+              "[hell], $hell_misery_mire_oob, boots",
+              "[hell], $hell_misery_mire_oob, srod, $attack",
+              "[hell], $hell_misery_mire_oob, bow",
+              "[hell], $hell_misery_mire_oob, msword"
+            ]
+          },
+          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_power_dp"]},
+          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_wisdom_dp"]},
+          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_courage_dp"]},
+          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_gulley_dp"]},
+          {"name": "Oren", "hosted_item": "oren", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_oren_dp"]},
+          {"name": "Seres", "hosted_item": "seres", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_seres_dp"]},
+          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_osfala_dp"]},
+          {"name": "Impa", "hosted_item": "impa", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_impa_dp"]},
+          {"name": "Irene", "hosted_item": "irene", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_irene_dp"]},
+          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_rosso_dp"]}
         ]
       }
     ]

@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Hyrule Castle",
+    "chest_unopened_img": "images/checks/chest_small_unopened.png",
+    "chest_opened_img": "images/checks/chest_small_opened.png",
+    "children": [
+      {
+        "name": "Hyrule Castle",
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 928,
+            "y": 926
+          }
+        ],
+        "sections": [
+          {
+            "name": "West Wing",
+            "item_count": 1,
+            "access_rules": [
+              "msword",
+              "swordless",
+              "[], $barrier_skip"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hyrule Castle",
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1070,
+            "y": 1048
+          }
+        ],
+        "sections": [
+          {
+            "name": "Battlement",
+            "item_count": 1,
+            "access_rules": [
+              "{csmc}",
+              "msword",
+              "swordless",
+              "[], $barrier_skip"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hyrule Castle",
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1024,
+            "y": 934
+          }
+        ],
+        "sections": [
+          {
+            "name": "Zelda's Throne",
+            "item_count": 1,
+            "access_rules": [
+              "msword, impa",
+              "swordless, impa",
+              "[], impa, $barrier_skip"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

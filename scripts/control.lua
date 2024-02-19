@@ -23,8 +23,16 @@ function hasAll(items)
     return true
 end
 
+function break_skull()
+    return hasAny({ "sword", "bow", "boomerang", "hookshot", "power_glove", "boots", "hammer", "bombs", "frod", "irod", "srod" })
+end
+
 function weather_vane(vane)
     return hasAll({ "bell", vane })
+end
+
+function weather_vane_lorule(vane)
+    return has(vane) and warpLorule()
 end
 
 -- Returns the count of the given item or setting
@@ -100,7 +108,11 @@ end
 -- Return if the player can stun enemies
 -- Foul Fruit is not considered here as its single-use nature makes it rarely useful
 function stun()
-    return hasAny({ "boomerang", "hookshot", "srod" })
+    return hasAny({ "boomerang", "hookshot" })
+end
+
+function boulder()
+    return hasAny({ "bombs", "hammer" })
 end
 
 -- Return if the player can Fire Rod Boost or Lemon Boost to small ledges
@@ -111,9 +123,17 @@ function boost()
 end
 
 -- Return if the player can perform Fake Flippers
--- Regular Bomb Boosting is not considered unless the player enables the option
 function fakeFlippers()
     return has("boots") and boost()
+end
+
+-- Fake Flippers using either a Bee or regular Bomb to boost
+function beeFakeFlippers()
+    return has("boots") and (hasAny({ "bombs", "frod" }) or beeBoost())
+end
+
+function notPortalShuffle()
+    return not has("portal_shuffle")
 end
 
 -- Return if the player can perform a Shield Rod Clip
@@ -167,10 +187,14 @@ function lampless()
     end
 end
 
+function hellBoost()
+    return hasAny({ "frod", "bombs" }) or beeBoost()
+end
+
 -- Bee Boosting
 -- This is a hard opt-in trick, and it can't be done if the player has the Bee Badge
 function beeBoost()
-    return hasAny({ "beeBoost_show", "hell" }) and not has("beebadge");
+    return cutGrass() and hasAny({ "beeBoost_show", "hell" }) and not has("bee_badge");
 end
 
 function cutGrass()
@@ -178,7 +202,7 @@ function cutGrass()
 end
 
 -- Can defeat Yuga 1 in Eastern Palace
-function yuga1()
+function yuga_eastern()
     if has("bow") then
         return true
     elseif has("bombs") or (hasAny({ "boomerang", "hookshot" }) and attack()) or hasAll({ "nice_mode", "niceirod" }) then
@@ -192,11 +216,76 @@ function yuga1()
     end
 end
 
+function notNiceMode()
+    return not has("nice_mode")
+end
+
+-- Can use Portals
+-- Not for Hyrule Castle portal (doesn't need Quake)
+function portal()
+    return hasAll({ "quake", "merge" })
+end
+
+
+-- Can reach top part of East Lorule Death Mountain, where the Ice Ruins entrance is.
+function loruleDeathEastTop()
+    if hasAll({ "power_glove", "merge", "hookshot", "quake" }) then
+        return true
+    end
+
+    if has("bell") then
+        if hasAny({ "wv_death_hyrule", "wv_hera" }) and hasAll({ "merge", "quake", "hookshot" }) then
+            return true
+        end
+
+        if hasAll({ "merge", "quake" }) or has("yuga") then
+            if has("wv_ice") or hasAll({ "wv_death_lorule", "merge" }) then
+                return true
+            end
+        end
+    end
+
+
+end
+
+-- Can access the Dark Ruins main area (outside the maze)
+-- Merge or Gulley is needed to go from the Weather Vane to the main area
+-- Graveyard -> Dark access is possible with glitches
+function darkRuins()
+    if portal() or (hasAll({ "yuga", "bell", "wv_dark" }) and hasAny({ "merge", "gulley" })) then
+        return true
+    elseif hasAll({ "yuga", "bell", "wv_graveyard" }) then
+        if boost() and hasAny({ "flippers", "hookshot" }) then
+            return true_for("glitched")
+        elseif fakeFlippers() then
+            return true_for("advanced")
+        elseif beeFakeFlippers() then
+            return true_for("hell")
+        end
+    end
+
+    return false
+end
+
+function turtleLake()
+    if portal() or hasAll({ "yuga", "bell", "wv_turtle", "flippers" }) then
+        return true
+    elseif darkRuins() then
+        if has("flippers") then
+            return true_for("glitched")
+        elseif fakeFlippers() then
+            return true_for("advanced")
+        elseif beeFakeFlippers() then
+            return true_for("hell")
+        end
+    end
+end
+
 -- Can reach House of Gales 2F (assume TRod)
 function hog2F()
     if has("merge") and switch() then
         return true
-    elseif hasAny({ "bow", "boomerang", "hookshot", "bombs", "irod", "msword" }) or hasAll({ "greatspin", "fsword" }) then
+    elseif hasAny({ "bow", "boomerang", "hookshot", "bombs", "irod", "msword" }) or hasAll({ "great_spin", "fsword" }) then
         return true_for("hard")
     else
         return false
@@ -276,7 +365,7 @@ end
 -- Can statue clip OOB in Thieves' Hideout under Hell Logic
 function hell_th_statue_clip()
     return has("bombs")
-            or (has("msword") and (hasAny({ "merge", "boomerang", "irod", "greatspin" })))
+            or (has("msword") and (hasAny({ "merge", "boomerang", "irod", "great_spin" })))
             or adv_th_statue_clip()
 end
 
@@ -291,49 +380,101 @@ function thEscape()
     end
 end
 
--- Return if we can reach Desert Palace 2F
-function dp2F()
-    return hasAll({ "merge", "srod", "titansmitt" }) and switch() and attack()
+function portal_clip()
+    return has("boomerang") or hasAll({ "not_nice_mode", "hookshot" }) or shieldRodClip()
 end
 
 -- Return if we can get OoB on the south wall of Misery Mire
-function miseryMireOoB()
-    if has("merge") and boost() then
-        return true_for("advanced")
-    elseif has("trod") and (hasAny({ "boomerang", "hookshot" }) or shieldRodClip()) then
-        return true_for("hell")
-    else
-        return false
-    end
-end
+function advanced_misery_mire_oob()
+    if has("nicebombs") then return true end
 
--- Return if we can perform Reverse Desert Palace
-function reverseDP()
-    if has("srod") and miseryMireOoB() then
-        return true_for("advanced")
-    else
-        return false
-    end
-end
-
--- Return if we can enter Turtle Rock
-function enterTR()
-    if hasAll({ "merge", "irod" }) then
-        if has("flippers") or weather_vane("wv_turtle") then
-            return true
-        elseif fakeFlippers() then
-            return true_for("advanced")
-        elseif has("boots") then
-            return true_for("hell")
-        end
-    end
+    if (
+            access_misery_mire() and hasAll({ "irod", "trod" }) or (
+                    has("merge") and (
+                            (has("portal_shuffle") and hasAny({ "portal_mire_sw", "portal_mire_middle" })) or
+                            (hasAll({ "not_portal_shuffle", "quake" }) and (hasAny({ "srod", "scroll" }) or boost()))
+                    )
+            )
+    ) and (boost() or (has("trod") and portal_clip()))
+    then
+        return true end
 
     return false
 end
 
-function barrier_skip()
-    return hasAll({ "merge", "boots", "trod", "bombs" }) and hasAny({ "hookshot", "boomerang" })
+-- Return if we can get OoB on the south wall of Misery Mire
+function hell_misery_mire_oob()
+    if advanced_misery_mire_oob() then return true end
+
+    if has("bombs") then return true end
+
+    if (access_misery_mire() and hasAll({ "irod", "trod" }) or (
+            has("merge") and (
+                    hasAll({ "not_portal_shuffle", "quake" }) or (has("portal_shuffle") and hasAny({ "portal_mire_sw", "portal_mire_middle" }))
+            )
+    )) and (
+            has("frod") or (has("trod") and portal_clip())
+    ) then return true end
+
+    return false
 end
+
+-- Return if we have any portals in Central Lorule, including the Lorule Castle Portal
+function access_central_lorule()
+    return has("merge") and (
+            hasAny({ "portal_lc", "portal_vacant_house", "portal_thieves_town", "portal_swamp_pillar_lorule", "portal_left_lorule_paradox", "portal_right_lorule_paradox" }) or (
+                    warpLorule() and (
+                            hasAny({ "wv_vacant_house", "wv_blacksmith", "wv_thieves", "wv_lorule_castle" }) or (
+                                    has("wv_swamp") and hasAny({ "hookshot", "flippers" })
+                            )
+                    )
+            )
+    )
+end
+
+function warpLorule()
+    return hasAll({ "bell", "merge" }) and ((notPortalShuffle() and has("quake")) or hasAny({ "portal_vacant_house", "portal_skull_woods_pillar", "portal_destroyed_house", "portal_lorule_dm_west", "portal_lofi", "portal_rom_lorule", "portal_philosopher", "portal_graveyard_lorule", "portal_waterfall_lorule", "portal_kus_domain", "portal_n-shaped_house", "portal_thieves_town", "portal_dark_ruins_pillar", "portal_dark_ruins_se", "portal_river_lorule", "portal_swamp_pillar_lorule", "portal_lake_lorule", "portal_lorule_hotfoot", "portal_left_lorule_paradox", "portal_right_lorule_paradox", "portal_mire_exit", "portal_mire_north", "portal_mire_pillar_left", "portal_mire_pillar_right", "portal_mire_middle", "portal_mire_sw", "portal_zaganaga", "portal_lc" }))
+end
+
+function claimDesertPrize()
+    return hasAll({ "label_power_dp", "power" })
+            or hasAll({ "label_wisdom_dp", "wisdom" })
+            or hasAll({ "label_courage_dp", "courage" })
+            or hasAll({ "label_gulley_dp", "gulley" })
+            or hasAll({ "label_oren_dp", "oren" })
+            or hasAll({ "label_seres_dp", "seres" })
+            or hasAll({ "label_osfala_dp", "osfala" })
+            or hasAll({ "label_impa_dp", "impa" })
+            or hasAll({ "label_irene_dp", "irene" })
+            or hasAll({ "label_rosso_dp", "rosso" })
+end
+
+-- Return if we can perform Reverse Desert Palace
+function reverseDP()
+    return hasAll({ "not_portal_shuffle", "merge", "portal_desert_palace", "quake" })
+            or hasAll({ "portal_shuffle", "merge", "portal_desert_palace" })
+end
+
+-- Can players complete Sanctuary
+function sanctuary()
+    return (has("lamp") and attack_normal()) or hasAll({ "lampless", "frod" })
+end
+
+-- [Hard] Can players complete Sanctuary
+function hard_sanctuary()
+    return (has("lamp") and attack()) or hasAll({ "lampless", "frod" })
+end
+
+-- [Lampless] Can players complete Sanctuary
+function lampless_sanctuary()
+    return has("frod") or sanctuary()
+end
+
+-- Never in logic
+function barrier_skip()
+    return hell_access_central_lorule() and hasAll({ "boots", "trod", "bombs" }) and hasAny({ "hookshot", "boomerang" }) and not lc_requirement()
+end
+
 
 function yuga2()
     return hasAny({ "fsword", "bombs", "frod", "irod", "hammer" })
@@ -366,7 +507,9 @@ end
 
 -- Return if we can enter Lorule Castle, either with Sages or via the Hyrule Castle Portal
 function canEnterLC()
-    return has("merge") and (lc_requirement() or has("yuga"))
+    if notPortalShuffle() and hasAll({ "merge", "quake" }) and lc_requirement() then return true end
+    if hasAll({ "portal_lc", "trials_door_open", "merge" }) then return true end
+    return false
 end
 
 -- Return if we can reach Lorule Castle 2F
@@ -404,9 +547,15 @@ function yg_requirement()
     --return count("sage") >= requirement
 end
 
+-- Returns if we can complete the Lorule Castle Trials normally, without glitches or portals.
+function lc_trials()
+    return has("merge") and lc_requirement() and (has("trials_skipped") or hasAll({ "merge", "hookshot", "bombs", "$fire" }))
+
+end
+
 -- Returns only if we can reach the final boss, NOT if we can obtain Zelda's check or win the fight
 function can_reach_final_boss()
-    return has("merge") and yg_requirement() and ((has("yuga") and has_amount("courage", 2)) or (lc_requirement() and (has("trials_skipped") or hasAll({ "merge", "hookshot" }))))
+    return has("merge") and yg_requirement() and ((has("portal_lc")) or (lc_requirement() and (has("trials_skipped") or hasAll({ "merge", "hookshot" }))))
 end
 
 -- Returns only if we can perform Trial's Skip to fight Yuganon, NOT if we can obtain Zelda's check or win the fight
@@ -445,7 +594,7 @@ function zelda()
 end
 
 function countNiceItems()
-    return count("nicebow") + count("niceboomerang") + count("nicehookshot") + count("nicehammer") + count("nicebombs") + count("nicefrod") + count("niceirod") + count("nicetrod") + count("nicesrod")
+    return count("maiamai_bow") + count("maiamai_boomerang") + count("maiamai_hookshot") + count("maiamai_hammer") + count("maiamai_bombs") + count("maiamai_fire_rod") + count("maiamai_ice_rod") + count("maiamai_tornado_rod") + count("maiamai_sand_rod")
 end
 
 function maiamaiUpgradeAvailable()

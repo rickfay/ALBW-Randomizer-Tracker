@@ -1,0 +1,62 @@
+{
+  "weather_vane_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "itemgrid",
+        "dropshadow": true,
+        "h_alignment": "center",
+        "item_size": "32",
+        "item_margin": "3",
+        "margin": "1",
+        "rows": [
+          [
+            "",
+            "wv_death_hyrule_badged",
+            "wv_hera_badged",
+            "",
+
+            "wv_skull_badged",
+            "wv_treacherous_tower_badged",
+            "wv_death_lorule_badged",
+            "wv_ice_badged"
+          ],
+          [
+            "wv_kakariko_badged",
+            "wv_sanctuary_badged",
+            "wv_witch_badged",
+            "wv_eastern_badged",
+
+            "",
+            "wv_lorule_castle_badged",
+            "wv_graveyard_badged",
+            "wv_dark_badged"
+          ],
+          [
+            "",
+            "",
+            "wv_your_house_badged",
+            "",
+
+            "wv_thieves_badged",
+            "wv_blacksmith_badged",
+            "wv_vacant_house_badged",
+            ""
+          ],
+          [
+            "wv_desert_badged",
+            "",
+            "",
+            "wv_gales_badged",
+
+            "wv_mire_badged",
+            "wv_swamp_badged",
+            "",
+            "wv_turtle_badged"
+          ]
+        ]
+      }
+    ]
+  }
+}

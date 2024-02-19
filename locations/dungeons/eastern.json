@@ -10,7 +10,7 @@
       "hookshot",
       "boomerang",
       "bombs",
-      "greatspin, fsword",
+      "great_spin, fsword",
       "[nice_mode], niceirod",
       "[hard], glove, msword",
       "[hard], irod, msword",
@@ -22,14 +22,14 @@
         "map_locations": [
           {
             "map": "ep1F",
-            "x": 119,
-            "y": 125
+            "x": 114,
+            "y": 121
           }
         ],
         "sections": [
           {
             "name": "1F Merge Chest",
-            "hosted_item": "ep_chest_01",
+            "item_count": 1,
             "access_rules": [
               "merge"
             ]
@@ -42,20 +42,20 @@
           {
             "map": "ep1F",
             "x": 73,
-            "y": 102
+            "y": 101
           }
         ],
         "sections": [
           {
             "name": "1F Left Door Chest",
-            "hosted_item": "ep_chest_02",
+            "item_count": 1,
             "access_rules": [
               "{csmc}",
               "bow",
               "hookshot",
               "boomerang",
               "bombs",
-              "greatspin, fsword",
+              "great_spin, fsword",
               "[nice_mode], niceirod",
               "[hard]"
             ]
@@ -67,14 +67,14 @@
         "map_locations": [
           {
             "map": "ep1F",
-            "x": 44,
-            "y": 46
+            "x": 45,
+            "y": 48
           }
         ],
         "sections": [
           {
             "name": "1F Popo Room",
-            "hosted_item": "ep_chest_03",
+            "item_count": 1,
             "access_rules": [
               "$attack"
             ]
@@ -86,14 +86,14 @@
         "map_locations": [
           {
             "map": "ep1F",
-            "x": 44,
-            "y": 77
+            "x": 45,
+            "y": 76
           }
         ],
         "sections": [
           {
             "name": "1F Secret Room",
-            "hosted_item": "ep_chest_04",
+            "item_count": 1,
             "access_rules": [
               "$attack"
             ]
@@ -106,20 +106,20 @@
           {
             "map": "ep1F",
             "x": 141,
-            "y": 42
+            "y": 47
           }
         ],
         "sections": [
           {
             "name": "1F Switch Room",
-            "hosted_item": "ep_chest_05",
+            "item_count": 1,
             "access_rules": [
               "{csmc}",
               "bow",
               "boomerang",
               "hookshot",
               "bombs",
-              "greatspin, fsword",
+              "great_spin, fsword",
               "[hard], irod",
               "[hard], msword"
             ]
@@ -132,13 +132,13 @@
           {
             "map": "ep2F",
             "x": 48,
-            "y": 69
+            "y": 65
           }
         ],
         "sections": [
           {
             "name": "2F Ball Room",
-            "hosted_item": "ep_chest_06",
+            "item_count": 1,
             "access_rules": [
               "$attack"
             ]
@@ -150,14 +150,14 @@
         "map_locations": [
           {
             "map": "ep2F",
-            "x": 130,
-            "y": 41
+            "x": 128,
+            "y": 45
           }
         ],
         "sections": [
           {
             "name": "2F Defeat Popos",
-            "hosted_item": "ep_chest_07",
+            "item_count": 1,
             "access_rules": [
               "$attack"
             ]
@@ -169,21 +169,21 @@
         "map_locations": [
           {
             "map": "ep2F",
-            "x": 165,
-            "y": 110
+            "x": 164,
+            "y": 109
           }
         ],
         "sections": [
           {
             "name": "2F Switch Room",
-            "hosted_item": "ep_chest_08",
+            "item_count": 1,
             "access_rules": [
               "bow",
               "bombs",
               "irod",
               "$attack, boomerang",
               "$attack, hookshot",
-              "greatspin, fsword",
+              "great_spin, fsword",
               // You can use 4 of the 6 pots
               "[hard], $attack"
             ]
@@ -195,14 +195,14 @@
         "map_locations": [
           {
             "map": "ep2F",
-            "x": 40,
-            "y": 100
+            "x": 42,
+            "y": 97.5
           }
         ],
         "sections": [
           {
             "name": "2F Big Chest",
-            "hosted_item": "ep_chest_09",
+            "item_count": 1,
             "access_rules": [
               "$attack"
             ]
@@ -214,17 +214,18 @@
         "map_locations": [
           {
             "map": "ep3F",
+            "size": 10,
             "x": 88,
-            "y": 69
+            "y": 76
           }
         ],
         "sections": [
           {
             "name": "Yuga",
             //"capture_item": true,
-            "hosted_item": "ep_chest_10_11",
+            "item_count": 1,
             "access_rules": [
-              "$yuga1"
+              "$yuga_eastern"
             ]
           }
         ]
@@ -234,16 +235,16 @@
         "map_locations": [
           {
             "map": "ep3F",
-            "x": 132,
-            "y": 77
+            "x": 135,
+            "y": 76
           }
         ],
         "sections": [
           {
             "name": "3F Escape Chest",
-            "hosted_item": "ep_chest_12",
+            "item_count": 1,
             "access_rules": [
-              "$yuga1, merge"
+              "$yuga_eastern, merge"
             ]
           }
         ]
@@ -253,16 +254,16 @@
         "map_locations": [
           {
             "map": "ep1F",
-            "x": 50,
-            "y": 100
+            "x": 41,
+            "y": 97.5
           }
         ],
         "sections": [
           {
             "name": "1F Escape Chest",
-            "hosted_item": "ep_chest_13",
+            "item_count": 1,
             "access_rules": [
-              "$yuga1, merge"
+              "$yuga_eastern, merge"
             ]
           }
         ]
@@ -270,20 +271,23 @@
       {
         "name": "Eastern Palace",
         "sections": [
-          {
-            "name": "Prize",
-            "access_rules": [
-              "$yuga1"
-            ],
-            "hosted_item": "eastern"
-          }
+          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["$yuga_eastern"], "visibility_rules": ["label_power_ep"]},
+          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["$yuga_eastern"], "visibility_rules": ["label_wisdom_ep"]},
+          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["$yuga_eastern"], "visibility_rules": ["label_courage_ep"]},
+          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["$yuga_eastern"], "visibility_rules": ["label_gulley_ep"]},
+          {"name": "Oren", "hosted_item": "oren", "access_rules": ["$yuga_eastern"], "visibility_rules": ["label_oren_ep"]},
+          {"name": "Seres", "hosted_item": "seres", "access_rules": ["$yuga_eastern"], "visibility_rules": ["label_seres_ep"]},
+          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["$yuga_eastern"], "visibility_rules": ["label_osfala_ep"]},
+          {"name": "Impa", "hosted_item": "impa", "access_rules": ["$yuga_eastern"], "visibility_rules": ["label_impa_ep"]},
+          {"name": "Irene", "hosted_item": "irene", "access_rules": ["$yuga_eastern"], "visibility_rules": ["label_irene_ep"]},
+          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["$yuga_eastern"], "visibility_rules": ["label_rosso_ep"]}
         ],
         "map_locations": [
           {
             "map": "ep1F",
             "x": 89,
-            "y": 135,
-            "size": 15
+            "y": 130.5,
+            "size": 20
           }
         ]
       },
@@ -291,125 +295,30 @@
         "name": "Eastern Palace",
         "sections": [
           {
-            "name": "1F Merge Chest",
-            "hosted_item": "ep_chest_01",
+            "name": "Dungeon",
+            "item_count": 9,
+            "clear_as_group": false,
             "access_rules": [
-              "merge"
+              "[merge], [bow], [bombs]",
+              "[merge], [bow], [irod]"
             ]
           },
-          {
-            "name": "1F Left Door Chest",
-            "hosted_item": "ep_chest_02",
-            "access_rules": [
-              "{csmc}",
-              "bow",
-              "hookshot",
-              "boomerang",
-              "bombs",
-              "greatspin, fsword",
-              "[nice_mode], niceirod",
-              "[hard]"
-            ]
-          },
-          {
-            "name": "1F Popo Room",
-            "hosted_item": "ep_chest_03",
-            "access_rules": [
-              "$attack"
-            ]
-          },
-          {
-            "name": "1F Secret Room",
-            "hosted_item": "ep_chest_04",
-            "access_rules": [
-              "$attack"
-            ]
-          },
-          {
-            "name": "1F Switch Room",
-            "hosted_item": "ep_chest_05",
-            "access_rules": [
-              "{csmc}",
-              "bow",
-              "boomerang",
-              "hookshot",
-              "bombs",
-              "greatspin, fsword",
-              "[hard], irod",
-              "[hard], msword"
-            ]
-          },
-          {
-            "name": "2F Ball Room",
-            "hosted_item": "ep_chest_06",
-            "access_rules": [
-              "$attack"
-            ]
-          },
-          {
-            "name": "2F Defeat Popos",
-            "hosted_item": "ep_chest_07",
-            "access_rules": [
-              "$attack"
-            ]
-          },
-          {
-            "name": "2F Switch Room",
-            "hosted_item": "ep_chest_08",
-            "access_rules": [
-              "bow",
-              "bombs",
-              "irod",
-              "$attack, boomerang",
-              "$attack, hookshot",
-              "greatspin, fsword",
-              // You can use 4 of the 6 pots
-              "[hard], $attack"
-            ]
-          },
-          {
-            "name": "2F Big Chest",
-            "hosted_item": "ep_chest_09",
-            "access_rules": [
-              "$attack"
-            ]
-          },
-          {
-            "name": "Yuga",
-            //"capture_item": true,
-            "hosted_item": "ep_chest_10_11",
-            "access_rules": [
-              "$yuga1"
-            ]
-          },
-          {
-            "name": "3F Escape Chest",
-            "hosted_item": "ep_chest_12",
-            "access_rules": [
-              "$yuga1, merge"
-            ]
-          },
-          {
-            "name": "1F Escape Chest",
-            "hosted_item": "ep_chest_13",
-            "access_rules": [
-              "$yuga1, merge"
-            ]
-          },
-          {
-            "name": "Prize",
-            "hosted_item": "eastern",
-            "access_rules": [
-              "$yuga1"
-            ]
-          }
+          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["$yuga_eastern"], "visibility_rules": ["label_power_ep"]},
+          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["$yuga_eastern"], "visibility_rules": ["label_wisdom_ep"]},
+          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["$yuga_eastern"], "visibility_rules": ["label_courage_ep"]},
+          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["$yuga_eastern"], "visibility_rules": ["label_gulley_ep"]},
+          {"name": "Oren", "hosted_item": "oren", "access_rules": ["$yuga_eastern"], "visibility_rules": ["label_oren_ep"]},
+          {"name": "Seres", "hosted_item": "seres", "access_rules": ["$yuga_eastern"], "visibility_rules": ["label_seres_ep"]},
+          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["$yuga_eastern"], "visibility_rules": ["label_osfala_ep"]},
+          {"name": "Impa", "hosted_item": "impa", "access_rules": ["$yuga_eastern"], "visibility_rules": ["label_impa_ep"]},
+          {"name": "Irene", "hosted_item": "irene", "access_rules": ["$yuga_eastern"], "visibility_rules": ["label_irene_ep"]},
+          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["$yuga_eastern"], "visibility_rules": ["label_rosso_ep"]}
         ],
         "map_locations": [
           {
             "map": "hyrule",
             "x": 1921,
-            "y": 820,
-            "size": 80
+            "y": 820
           }
         ]
       }

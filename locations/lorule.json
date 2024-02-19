@@ -5,9 +5,9 @@
     "chest_opened_img": "images/checks/chest_small_opened.png",
     "children": [
       {
-        "name": "Skull Woods Region",
+        "name": "Skull Woods Area",
         "access_rules": [
-          "merge"
+          "$access_skull_woods_area"
         ],
         "children": [
           {
@@ -24,7 +24,9 @@
                 "name": "Canyon Heart Piece",
                 //"capture_item": true,
                 "access_rules": [
-                  "merge"
+                  "merge",
+                  "[advanced], quake, boomerang",
+                  "[advanced], quake, $notNiceMode, hookshot"
                 ],
                 "item_count": 1
               }
@@ -59,9 +61,9 @@
             "sections": [
               {
                 "name": "Golden Bee (888)",
-                "hosted_item": "bottle_bee_golden",
+                "hosted_item": "golden_bee",
                 "access_rules": [
-                  "bottle_1"
+                  "bottle"
                 ],
                 "item_count": 0
               }
@@ -71,20 +73,26 @@
       },
       {
         "name": "Graveyard",
+        "access_rules": [
+          "{csmc}",
+          "$access_lorule_graveyard",
+          "[lampless], $lampless_access_lorule_graveyard"
+        ],
         "children": [
           {
             "name": "Lorule Sanctuary",
             "access_rules": [
-              "titansmitt, merge, lamp, $attack",
-              "titansmitt, merge, frod, $lampless",
-              "titansmitt, merge, bell, wv_graveyard, $lampless"
+              "titansmitt"
+//              "titansmitt, quake, merge, lamp, $attack",
+//              "titansmitt, quake, merge, frod, $lampless",
+//              "titansmitt, quake, merge, bell, wv_graveyard, $lampless",
+//              "titansmitt, yuga, bell, wv_graveyard, $lampless"
             ],
             "map_locations": [
               {
                 "map": "lorule",
                 "x": 1221,
-                "y": 620,
-                "size": 80
+                "y": 620
               }
             ],
             "sections": [
@@ -94,14 +102,26 @@
               },
               {
                 "name": "Lower Chest",
+                "access_rules": [
+                  "[lamp]",
+                  "[lampless]"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Upper Chest",
+                "access_rules": [
+                  "[lamp]",
+                  "[lampless]"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Ledge Key",
+                "access_rules": [
+                  "[lamp], merge",
+                  "[lampless], merge"
+                ],
                 //"capture_item": true,
                 "item_count": 1
               }
@@ -112,8 +132,8 @@
             "map_locations": [
               {
                 "map": "lorule",
-                "x": 954,
-                "y": 584
+                "x": 945,
+                "y": 595
               }
             ],
             "sections": [
@@ -122,35 +142,10 @@
                 "chest_unopened_img": "images/checks/chest_big_unopened.png",
                 "chest_opened_img": "images/checks/chest_big_opened.png",
                 "access_rules": [
-                  "{csmc, merge, lamp, $attack_normal}",
-                  "{csmc, merge, lamp, hard}",
-                  "{csmc, merge, frod, lampless}",
-                  "{csmc, merge, bell, wv_graveyard}",
-                  "titansmitt, merge, lamp, $attack",
-                  "titansmitt, merge, frod, $lampless",
-                  "titansmitt, merge, bell, wv_graveyard, $lampless"
-                ],
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Graveyard",
-            "map_locations": [
-              {
-                "map": "lorule",
-                "x": 1337,
-                "y": 892
-              }
-            ],
-            "sections": [
-              {
-                "name": "Peninsula Chest",
-                "access_rules": [
-                  "{csmc, merge}",
-                  "merge, lamp, $attack",
-                  "merge, frod, $lampless",
-                  "merge, bell, wv_graveyard"
+                  "{$access_lorule_graveyard}",
+                  "$access_lorule_graveyard, titansmitt, [lamp], $attack",
+                  "$access_lorule_graveyard, titansmitt, [lampless], $attack",
+                  "$lampless_access_lorule_graveyard, titansmitt, [lampless], $attack"
                 ],
                 "item_count": 1
               }
@@ -159,9 +154,33 @@
         ]
       },
       {
+        "name": "Graveyard",
+        "map_locations": [
+          {
+            "map": "lorule",
+            "x": 1337,
+            "y": 892
+          }
+        ],
+        "sections": [
+          {
+            "name": "Peninsula Chest",
+            "access_rules": [
+              "{csmc, $access_dark_ruins}",
+              "$access_lorule_graveyard",
+              "[lampless], $lampless_access_lorule_graveyard"
+            ],
+            "item_count": 1
+          }
+        ]
+      },
+      {
         "name": "Dark Ruins",
         "access_rules": [
-          "merge"
+          "$access_dark_ruins",
+          "[glitched], $glitched_access_dark_ruins",
+          "[advanced], $advanced_access_dark_ruins",
+          "[hell], $hell_access_dark_ruins"
         ],
         "children": [
           {
@@ -175,8 +194,11 @@
             ],
             "sections": [
               {
-                "name": "Scared Hinox Cave",
-                "item_count": 6
+                "name": "Hinox Cave",
+                "item_count": 6,
+                "access_rules": [
+                  "merge"
+                ]
               }
             ]
           },
@@ -193,13 +215,14 @@
               {
                 "name": "Fight",
                 "access_rules": [
-                  "bow",
-                  "bombs",
-                  "fsword, greatspin",
-                  "niceirod",
-                  "nicehookshot",
-                  "[hard], fsword, powerglove",
-                  "[hard], msword"
+                  "merge, bow",
+                  "merge, bombs",
+                  "merge, fsword, flippers",
+                  "merge, fsword, great_spin",
+                  "merge, niceirod",
+                  "merge, nicehookshot",
+                  "[hard], merge, fsword, power_glove",
+                  "[hard], merge, msword"
                 ],
                 "item_count": 1
               }
@@ -217,7 +240,11 @@
             "sections": [
               {
                 "name": "Chest",
-                "item_count": 1
+                "item_count": 1,
+                "access_rules": [
+                  "merge",
+                  "gulley"
+                ]
               }
             ]
           },
@@ -234,6 +261,26 @@
               {
                 "name": "Ledge",
                 "capture_item": true,
+                "item_count": 1,
+                "access_rules": [
+                  "merge",
+                  "gulley"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Dark Ruins",
+            "map_locations": [
+              {
+                "map": "lorule",
+                "x": 1695,
+                "y": 1595
+              }
+            ],
+            "sections": [
+              {
+                "name": "Lakeview Chest",
                 "item_count": 1
               }
             ]
@@ -241,9 +288,11 @@
         ]
       },
       {
-        "name": "Central Lorule",
+        "name": "Lorule Castle Area",
         "access_rules": [
-          "merge"
+          "$access_central_lorule",
+          "[advanced], $advanced_access_central_lorule",
+          "[hell], $hell_access_central_lorule"
         ],
         "children": [
           {
@@ -282,7 +331,7 @@
           //        ]
           //      },
           {
-            "name": "Vacant House",
+            "name": "Pegasus Boots Pyramid",
             "map_locations": [
               {
                 "map": "lorule",
@@ -292,7 +341,7 @@
             ],
             "sections": [
               {
-                "name": "Treasure Dungeon",
+                "name": "Lorule Castle Area",
                 "chest_unopened_img": "images/checks/chest_big_unopened.png",
                 "chest_opened_img": "images/checks/chest_big_opened.png",
                 "access_rules": [
@@ -359,7 +408,7 @@
             ],
             "sections": [
               {
-                "name": "Big Bomb Cave",
+                "name": "Hype Cave",
                 //"capture_item": true,
                 "item_count": 3
               }
@@ -379,7 +428,8 @@
                 "name": "Hookshot Chest",
                 "access_rules": [
                   "{csmc}",
-                  "merge, hookshot"
+                  "not_portal_shuffle, quake, merge, hookshot",
+                  "portal_shuffle, portal_right_lorule_paradox, merge, hookshot"
                 ],
                 "item_count": 1
               }
@@ -442,7 +492,7 @@
             ]
           },
           {
-            "name": "Rupee Fairy",
+            "name": "Great Rupee Fairy",
             "map_locations": [
               {
                 "map": "lorule",
@@ -452,7 +502,7 @@
             ],
             "sections": [
               {
-                "name": "Give 3000 Rupees",
+                "name": "Throw 3000 Rupees",
                 "item_count": 1
               }
             ]
@@ -462,7 +512,7 @@
       {
         "name": "Misery Mire",
         "access_rules": [
-          "merge"
+          "$access_misery_mire"
         ],
         "children": [
           {
@@ -479,38 +529,8 @@
                 "name": "Treasure Dungeon",
                 "access_rules": [
                   "{csmc}",
-                  "srod, trod"
-                ],
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Misery Mire",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 292,
-                "y": 1543
-              },
-              {
-                "map": "lorule",
-                "x": 340,
-                "y": 1590
-              }
-            ],
-            "sections": [
-              {
-                "name": "Ledge",
-                //"capture_item": true,
-                "access_rules": [
-                  //"{}",
-                  "srod, bombs",
-                  "[hard], bombs, merge, scroll",
-                  "[glitched], nicebombs",
-                  "[glitched], bombs, frod",
-                  "[glitched], frod, boots",
-                  "[advanced], bombs"
+                  "merge, srod, trod",
+                  "[glitched], srod"
                 ],
                 "item_count": 1
               }
@@ -519,10 +539,67 @@
         ]
       },
       {
-        "name": "Lorule Lake",
-        "access_rules": [
-          "merge"
+        "name": "Desert",
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 292,
+            "y": 1560,
+            "badge_size": 40
+          }
         ],
+        "sections": [
+          {
+            "name": "Desert North Portal",
+            "hosted_item": "portal_desert_north",
+            "access_rules": [
+              "portal_desert_north",
+              "{portal_shuffle}",
+              "$access_desert, merge, bombs, srod",
+              "$access_desert, merge, bombs, scroll",
+              "[advanced], $access_desert, merge, bombs, $boost",
+              "[hell], $access_desert, merge, bombs"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Misery Mire North",
+        "map_locations": [
+          {
+            "map": "lorule",
+            "x": 340,
+            "y": 1560,
+            "badge_size": 40
+          }
+        ],
+        "sections": [
+          {
+            "name": "Misery Mire North Portal",
+            "hosted_item": "portal_mire_north",
+            "access_rules": [
+              "portal_mire_north",
+              "{}"
+            ],
+            "visibility_rules": [
+              "portal_shuffle"
+            ]
+          },
+          {
+            "name": "Ledge",
+            //"capture_item": true,
+            "access_rules": [
+              //"{}",
+              "merge, portal_mire_north",
+              "not_portal_shuffle, merge, quake, portal_desert_north",
+              "[advanced], $access_misery_mire, frod, boots"
+            ],
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Lorule Lake",
         "children": [
           {
             "name": "Lorule Lake",
@@ -536,22 +613,17 @@
             "sections": [
               {
                 "name": "Canyon Overlook Chest",
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Lorule Lake",
-            "map_locations": [
-              {
-                "map": "lorule",
-                "x": 1695,
-                "y": 1595
-              }
-            ],
-            "sections": [
-              {
-                "name": "Lakeview Chest",
+                "access_rules": [
+                  "not_portal_shuffle, merge, quake",
+                  "portal_shuffle, portal_lake_lorule, merge",
+                  "portal_shuffle, portal_river_lorule, flippers",
+                  "portal_shuffle, portal_lorule_hotfoot, flippers",
+                  "[glitched], $glitched_access_dark_ruins, $boost, flippers",
+                  "[advanced], $advanced_access_dark_ruins, $boost, flippers",
+                  "[hell], $hell_access_dark_ruins, $beeFakeFlippers",
+                  "[advanced], portal_shuffle, portal_lorule_hotfoot, $fakeFlippers",
+                  "[hell], portal_shuffle, portal_lorule_hotfoot, $beeFakeFlippers"
+                ],
                 "item_count": 1
               }
             ]

@@ -1,0 +1,153 @@
+[
+  {
+    "name": "Hyrule Portals",
+    "access_rules": [
+      "{}",
+      "merge, quake"
+    ],
+    "children": [
+      {
+        "name": "Your House",
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1120,
+            "y": 1440, "badge_size": 40
+          }
+        ],
+        "sections": [
+          {
+            "name": "Portal",
+            "hosted_item": "portal_your_house",
+            "visibility_rules": [
+              "portal_shuffle"
+            ]
+          }
+        ]
+      },
+      {"name":"Lost Woods Pillar Portal","sections":[{"hosted_item": "portal_lost_woods_pillar", "name": "", "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "hyrule", "x": 102, "y": 342, "badge_size": 40}]},
+      {"name":"Death Mountain West Portal","sections":[{"hosted_item": "portal_dm_west", "name": "", "access_rules": [ "$access_dm_west_base", "[glitched]" ], "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "hyrule", "x": 935, "y": 310, "badge_size": 40}]},
+      {
+        "name":"Rosso's Ore Mine Portal",
+        "sections":[
+          {
+            "hosted_item": "portal_rom",
+            "name": "",
+            "access_rules": [
+              "{}",
+              "$access_dm_east_bottom",
+              "[advanced], $adv_glitched_access_dm_east_bottom"
+            ],
+            "visibility_rules": [
+              "portal_shuffle"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1478,
+            "y": 360,
+            "badge_size": 40
+          }
+        ]
+      },
+      {
+        "name":"Sanctuary ",
+        "sections": [
+          {
+            "hosted_item": "portal_sanctuary",
+            "name": "Sanctuary Portal",
+            "access_rules": [
+              "{portal_shuffle}",
+              "$sanctuary",
+              "[hard], $hard_sanctuary",
+              "[lampless], $lampless_sanctuary"
+            ],
+            "visibility_rules": ["portal_shuffle"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 948,
+            "y": 555,
+            "badge_size": 40
+          }
+        ]
+      },
+      {"name":"Waterfall Portal","sections":[{"hosted_item": "portal_waterfall", "name": "", "access_rules": [ "{}", "portal_waterfall", "flippers", "[advanced], $fakeFlippers", "[hell], $beeFakeFlippers", "[hell], hookshot, $hellBoost", "[hell], boots, $hellBoost" ], "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "hyrule", "x": 1425, "y": 545, "badge_size": 40}]},
+      {"name":"Zora's Domain Portal","sections":[{"hosted_item": "portal_zoras_domain", "name": "", "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "hyrule", "x": 1851, "y": 765, "badge_size": 40}]},
+      {"name":"Sahasrahla's House Portal","sections":[{"hosted_item": "portal_sahasrahlas_house", "name": "", "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "hyrule", "x": 362, "y": 834, "badge_size": 40}]},
+      {"name":"Eastern Pillar Portal","sections":[{"hosted_item": "portal_eastern_ruins_pillar", "name": "", "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "hyrule", "x": 1401, "y": 1099, "badge_size": 40}]},
+      {"name":"Eastern Ruins SE Portal","sections":[{"hosted_item": "portal_eastern_ruins_se", "name": "", "access_rules": [ "{}", "bombs" ], "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "hyrule", "x": 1803, "y": 1313, "badge_size": 40}]},
+      {"name":"River Portal","sections":[{"hosted_item": "portal_river", "name": "", "access_rules": [ "{}", "flippers", "[glitched], $boost", "[hell], $hellBoost" ], "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "hyrule", "x": 1611, "y": 1410, "badge_size": 40}]},
+      {"name":"Swamp Pillar Portal","sections":[{"hosted_item": "portal_swamp_pillar", "name": "", "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "hyrule", "x": 952, "y": 1561, "badge_size": 40}]},
+      {"name":"Lake Hylia Portal","sections":[{"hosted_item": "portal_lake_hylia", "name": "", "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "hyrule", "x": 1331, "y": 1845, "badge_size": 40}]},
+      {"name":"Hyrule Hotfoot Portal","sections":[{"hosted_item": "portal_hyrule_hotfoot", "name": "", "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "hyrule", "x": 1895, "y": 1535, "badge_size": 40}]},
+      {"name":"Paradox Hyrule Left Portal","sections":[{"hosted_item": "portal_left_hyrule_paradox", "name": "", "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "hyrule", "x": 590, "y": 1727, "badge_size": 40}]},
+      {"name":"Paradox Hyrule Right Portal","sections":[{"hosted_item": "portal_right_hyrule_paradox", "name": "", "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "hyrule", "x": 677, "y": 1709, "badge_size": 40}]},
+      {"name":"Misery Mire Entrance Portal","sections":[{"hosted_item": "portal_mire_entrance", "name": "", "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "hyrule", "x": 653, "y": 1845, "badge_size": 40}]},
+      {"name":"Desert Pillar Right Portal","sections":[{"hosted_item": "portal_desert_pillar_right", "name": "", "access_rules": [ "{}", "$access_desert" ], "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "hyrule", "x": 422, "y": 1751, "badge_size": 40}]},
+      {"name":"Desert Pillar Left Portal","sections":[{"hosted_item": "portal_desert_pillar_left", "name": "", "access_rules": [ "{}", "$access_desert" ], "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "hyrule", "x": 351, "y": 1751, "badge_size": 40}]},
+      {"name":"Desert Middle Portal","sections":[{"hosted_item": "portal_desert_middle", "name": "", "access_rules": [ "{}", "srod, $access_desert" ], "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "hyrule", "x": 242, "y": 1855, "badge_size": 40}]},
+      {"name":"Desert SW Portal","sections":[{"hosted_item": "portal_desert_sw", "name": "", "access_rules": [ "{}", "scroll, $access_desert", "[advanced], $boost, $access_desert", "[hell], $access_desert" ], "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "hyrule", "x": 74, "y": 1964, "badge_size": 40}]},
+      {
+        "name":"Desert Palace Ledge",
+        "sections": [
+          {
+            "hosted_item": "portal_desert_palace",
+            "name": "Desert Palace Portal",
+            "access_rules": [
+              "{}",
+              "$access_desert_palace, [progression_enemies], [srod], [titansmitt], [$switch], [$attack]",
+              "$access_desert_palace, [no_progression_enemies, bombs], [srod], [titansmitt], [$switch], [$attack]",
+              "[glitched], $glitched_access_desert_palace, [progression_enemies], [srod], [titansmitt], [$switch], [$attack]",
+              "[glitched], $glitched_access_desert_palace, [no_progression_enemies, bombs], [srod], [titansmitt], [$switch], [$attack]"
+            ],
+            "visibility_rules": [
+              "portal_shuffle"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 192,
+            "y": 1530,
+            "badge_size": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Inside Hyrule Castle",
+    "map_locations": [
+      {
+        "map": "hyrule",
+        "x": 1024,
+        "y": 792,
+        "badge_size": 40
+      },
+      {
+        "map": "hyrule8F",
+        "x": 83,
+        "y": 59,
+        "size": 24,
+        "badge_size": 16
+      }
+    ],
+    "sections": [
+      {
+        "name": "Hyrule Castle Portal",
+        "hosted_item": "portal_hc",
+        "access_rules": [
+          "{portal_shuffle}",
+          "msword, merge",
+          "[], merge, $barrier_skip"
+        ]
+      }
+    ]
+  }
+]

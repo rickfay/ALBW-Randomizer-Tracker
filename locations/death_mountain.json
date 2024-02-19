@@ -9,36 +9,20 @@
         "map_locations": [
           {
             "map": "hyrule",
-            "x": 888,
-            "y": 353
+            "x": 885,
+            "y": 373
           }
         ],
         "sections": [
           {
             "name": "Bomb Cave",
             "access_rules": [
-              "{csmc, powerglove}",
-              "{csmc, bell, wv_death_hyrule}",
-              "{csmc, bell, wv_hera}",
-              "{csmc, merge, bell, wv_treacherous_tower}",
-              "{csmc, merge, hookshot, bell, wv_death_lorule}",
-              "{csmc, merge, hookshot, bell, wv_ice}",
-              "{csmc, glitched}",
-              "bombs, merge, powerglove",
-              "bombs, merge, bell, wv_death_hyrule",
-              "bombs, merge, bell, wv_hera",
-              "bombs, merge, bell, wv_treacherous_tower",
-              "bombs, merge, bell, hookshot, wv_death_lorule",
-              "bombs, merge, bell, hookshot, wv_ice",
-              "[glitched], bombs, merge",
-              "[glitched], bombs, bell, wv_hera, boomerang",
-              "[glitched], bombs, bell, wv_hera, hookshot",
-              "[advanced], bombs, bottle_1, boomerang",
-              "[advanced], bombs, bottle_1, hookshot",
-              "[advanced], bombs, bluemail, boomerang",
-              "[advanced], bombs, bluemail, hookshot",
-              "[hell], bombs, boomerang",
-              "[hell], bombs, hookshot"
+              "{csmc, $access_dm_west_base}",
+              "$access_dm_west_base, merge, bombs",
+              "[glitched], merge, bombs",
+              "[glitched], $access_dm_west_top, $stun, bombs",
+              "[advanced], $adv_glitched_access_dm_west_top, $stun, bombs",
+              "[hell], $hell_access_dm_west_top, $stun, bombs"
             ],
             "item_count": 1
           }
@@ -57,52 +41,12 @@
           {
             "name": "Fairy Cave",
             "access_rules": [
-              "{csmc, merge, powerglove}",
-              "{csmc, merge, bell, wv_death_hyrule}",
-              "{csmc, merge, bell, wv_hera}",
-              "{csmc, merge, bell, wv_treacherous_tower}",
-              "{csmc, merge, bell, wv_death_lorule, hookshot}",
-              "{csmc, merge, bell, wv_ice, hookshot}",
-              "{csmc, glitched, merge}",
-              "{csmc, glitched, bell, wv_hera, boomerang}",
-              "{csmc, glitched, bell, wv_hera, hookshot}",
-              "{csmc, glitched, bell, wv_hera, frod}",
-              "{csmc, advanced, bluemail, $boost}",
-              "{csmc, advanced, bluemail, hookshot}",
-              "{csmc, advanced, bluemail, boomerang}",
-              "{csmc, advanced, bottle_1, $boost}",
-              "{csmc, advanced, bottle_1, hookshot}",
-              "{csmc, advanced, bottle_1, boomerang}",
-              "{csmc, hell, hookshot}",
-              "{csmc, hell, boomerang}",
-              "{csmc, hell, frod}",
-              "{csmc, hell, bombs}",
-              "merge, hammer, powerglove",
-              "merge, bombs, powerglove",
-              "merge, hammer, bell, wv_death_hyrule",
-              "merge, bombs, bell, wv_death_hyrule",
-              "merge, hammer, bell, wv_hera",
-              "merge, bombs, bell, wv_hera",
-              "merge, hammer, bell, wv_treacherous_tower",
-              "merge, bombs, bell, wv_treacherous_tower",
-              "merge, hammer, bell, wv_death_lorule, hookshot",
-              "merge, bombs, bell, wv_death_lorule, hookshot",
-              "merge, hammer, bell, wv_ice, hookshot",
-              "merge, bombs, bell, wv_ice, hookshot",
-              "[advanced], bluemail, $boost, hammer",
-              "[advanced], bluemail, boomerang, hammer",
-              "[advanced], bluemail, hookshot, hammer",
-              "[advanced], bottle_1, $boost, hammer",
-              "[advanced], bottle_1, boomerang, hammer",
-              "[advanced], bottle_1, hookshot, hammer",
-              "[advanced], bluemail, $boost, bombs",
-              "[advanced], bluemail, boomerang, bombs",
-              "[advanced], bluemail, hookshot, bombs",
-              "[advanced], bottle_1, $boost, bombs",
-              "[advanced], bottle_1, boomerang, bombs",
-              "[advanced], bottle_1, hookshot, bombs",
-              "[hell], frod, hammer",
-              "[hell], bombs"
+              "{csmc, $access_dm_west_base, merge}",
+              "$access_dm_west_base, merge, $boulder",
+              "[glitched], merge, $boulder",
+              "[glitched], $access_dm_west_top, $stun, $boulder",
+              "[advanced], $adv_glitched_access_dm_west_top, $stun, $boulder",
+              "[hell], $hell_access_dm_west_top, $stun, $boulder"
             ],
             "item_count": 1
           }
@@ -113,327 +57,119 @@
         "map_locations": [
           {
             "map": "hyrule",
-            "x": 1043,
-            "y": 334
+            "x": 1095,
+            "y": 221
           }
         ],
         "sections": [
           {
             "name": "Peg Chest",
             "access_rules": [
-              "{csmc, powerglove}",
-              "{csmc, glitched}",
-              "{csmc, bell, wv_death_hyrule}",
-              "{csmc, bell, wv_hera}",
-              "{csmc, merge, bell, wv_treacherous_tower}",
-              "{csmc, merge, bell, wv_death_lorule, hookshot}",
-              "{csmc, merge, bell, wv_ice, hookshot}",
-              "hammer, powerglove, merge",
-              "hammer, bell, wv_hera",
-              "hammer, bell, merge, wv_death_hyrule",
-              "hammer, bell, merge, wv_treacherous_tower",
-              "hammer, bell, merge, hookshot, wv_death_lorule",
-              "hammer, bell, merge, hookshot, wv_ice",
-              "[glitched], hammer, merge",
-              "[advanced], hammer, bluemail",
-              "[advanced], hammer, bottle_1",
-              "[hell], hammer"
+              "{csmc, power_glove}",
+              "$access_dm_west_base, merge, hammer",
+              "[glitched], $access_dm_west_top, $stun, hammer",
+              "[advanced], $adv_glitched_access_dm_west_top, $stun, hammer",
+              "[hell], $hell_access_dm_west_top, $stun, hammer"
+            ],
+            "item_count": 1
+          }
+        ]
+      },
+
+      {
+        "name": "Death Mountain",
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 985,
+            "y": 373
+          }
+        ],
+        "sections": [
+          {
+            "name": "Cave Left of Weather Vane",
+            "access_rules": [
+              "$access_dm_west_base",
+              "[glitched]"
             ],
             "item_count": 1
           }
         ]
       },
       {
-        "name": "Death Mountain West Base",
-        "access_rules": [
-          "powerglove",
-          "bell, wv_death_hyrule",
-          "bell, wv_hera",
-          "bell, merge, wv_treacherous_tower",
-          "bell, merge, hookshot, wv_death_lorule",
-          "bell, merge, hookshot, wv_ice",
-          "[glitched]"
+        "name": "Death Mountain",
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1142,
+            "y": 468,
+            "size": 48
+          }
         ],
-        "children": [
+        "sections": [
           {
-            "name": "Death Mountain",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 985,
-                "y": 353
-              }
+            "name": "Under West Rock",
+            "chest_unopened_img": "images/items/maiamai.png",
+            "chest_opened_img": "images/items/maiamai_opened.png",
+            "item_count": 1,
+            //"capture_item": true,
+            "visibility_rules": [
+              "maiamai_map"
             ],
-            "sections": [
-              {
-                "name": "Cave Left of Weather Vane",
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Death Mountain",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 1142,
-                "y": 468,
-                "size": 32
-              }
-            ],
-            "sections": [
-              {
-                "name": "Under West Rock",
-                "item_count": 1,
-                //"capture_item": true,
-                "visibility_rules": [
-                  "maiamai_map"
-                ],
-                "access_rules": [
-                  "powerglove"
-                ]
-              }
+            "access_rules": [
+              "$access_dm_west_base, power_glove",
+              "[glitched], power_glove"
             ]
           }
         ]
       },
+
+
       {
-        "name": "Death Mountain West Top",
-        "access_rules": [
-          "powerglove, merge",
-          "bell, wv_hera",
-          "bell, merge, wv_death_hyrule",
-          "bell, merge, wv_treacherous_tower",
-          "bell, merge, hookshot, wv_death_lorule",
-          "bell, merge, hookshot, wv_ice",
-          "[glitched], merge",
-          "[advanced], bluemail",
-          "[advanced], bottle_1",
-          "[hell]"
+        "name": "Death Mountain",
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1025,
+            "y": 251
+          }
         ],
-        "children": [
+        "sections": [
           {
-            "name": "Death Mountain",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 1025,
-                "y": 251
-              }
+            "name": "Ledge Chest",
+            "access_rules": [
+              "$access_dm_west_top",
+              "[advanced], $adv_glitched_access_dm_west_top",
+              "[hell], $hell_access_dm_west_top"
             ],
-            "sections": [
-              {
-                "name": "Ledge Chest",
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Death Mountain",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 1045,
-                "y": 245,
-                "size": 32
-              }
-            ],
-            "sections": [
-              {
-                "name": "Near Ledge Chest",
-                "item_count": 1,
-                //"capture_item": true,
-                "visibility_rules": [
-                  "maiamai_map"
-                ],
-                "access_rules": [
-                  "merge"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Death Mountain",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 963,
-                "y": 173
-              }
-            ],
-            "sections": [
-              {
-                "name": "Third Cave Chest",
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Death Mountain",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 1025,
-                "y": 51
-              }
-            ],
-            "sections": [
-              {
-                "name": "Spectacle Rock",
-                "item_count": 1
-              }
-            ]
+            "item_count": 1
           }
         ]
       },
       {
-        "name": "Death Mountain East",
-        "access_rules": [
-          "hookshot, powerglove, merge",
-          "hookshot, bell, wv_hera",
-          "hookshot, bell, merge, wv_death_hyrule",
-          "hookshot, bell, merge, wv_treacherous_tower",
-          "bell, merge, wv_death_lorule",
-          "bell, merge, wv_ice",
-          "[glitched], hookshot, merge",
-          "[advanced], hookshot, bluemail",
-          "[advanced], hookshot, bottle_1",
-          "[hell], hookshot"
+        "name": "Death Mountain",
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1045,
+            "y": 245,
+            "size": 48
+          }
         ],
-        "children": [
+        "sections": [
           {
-            "name": "Death Mountain",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 1878,
-                "y": 168
-              }
+            "name": "Near Ledge Chest",
+            "chest_unopened_img": "images/items/maiamai.png",
+            "chest_opened_img": "images/items/maiamai_opened.png",
+            "item_count": 1,
+            //"capture_item": true,
+            "visibility_rules": [
+              "maiamai_map"
             ],
-            "sections": [
-              {
-                "name": "Treasure Dungeon",
-                "access_rules": [
-                  "merge, hookshot"
-                ],
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Death Mountain",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 1910,
-                "y": 168,
-                "size": 32
-              }
-            ],
-            "sections": [
-              {
-                "name": "Stuck to Treasure Dungeon",
-                "item_count": 1,
-                //"capture_item": true,
-                "visibility_rules": [
-                  "maiamai_map"
-                ],
-                "access_rules": [
-                  //"{}",
-                  "merge"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Death Mountain",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 1718,
-                "y": 176
-              }
-            ],
-            "sections": [
-              {
-                "name": "Fire Cave Pillar",
-                //"capture_item": true,
-                "access_rules": [
-                  "merge, hammer"
-                ],
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Bouldering Guy",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 1695,
-                "y": 227
-              }
-            ],
-            "sections": [
-              {
-                "name": "Trade Premium Milk",
-                "access_rules": [
-                  "bottle_milk_premium, merge",
-                  "[glitched], bottle_milk_premium, trod, boots"
-                ],
-                "hosted_item": "bottles",
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Death Mountain",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 1639,
-                "y": 254,
-                "size": 32
-              }
-            ],
-            "sections": [
-              {
-                "name": "Bouldering Maiamai",
-                "item_count": 1,
-                //"capture_item": true,
-                "visibility_rules": [
-                  "maiamai_map"
-                ],
-                "access_rules": [
-                  "powerglove, merge",
-                  "[glitched], powerglove, boots, trod"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Rosso's Ore Mine",
-            "map_locations": [
-              {
-                "map": "hyrule",
-                "x": 1324,
-                "y": 390,
-                "size": 32
-              }
-            ],
-            "sections": [
-              {
-                "name": "Under Rock",
-                "item_count": 1,
-                //"capture_item": true,
-                "visibility_rules": [
-                  "maiamai_map"
-                ],
-                "access_rules": [
-                  "powerglove, merge",
-                  "[glitched], powerglove, boots, trod"
-                ]
-              }
+            "access_rules": [
+              "merge, $access_dm_west_top",
+              "[advanced], merge, $adv_glitched_access_dm_west_top",
+              "[hell], merge, $hell_access_dm_west_top"
             ]
           }
         ]
@@ -443,314 +179,508 @@
         "map_locations": [
           {
             "map": "hyrule",
-            "x": 1625,
-            "y": 79
-          },
+            "x": 963,
+            "y": 173
+          }
+        ],
+        "sections": [
           {
-            "map": "lorule",
+            "name": "Third Cave Chest",
+            "access_rules": [
+              "$access_dm_west_top",
+              "[advanced], $adv_glitched_access_dm_west_top",
+              "[hell], $hell_access_dm_west_top"
+            ],
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Death Mountain",
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1025,
+            "y": 51
+          }
+        ],
+        "sections": [
+          {
+            "name": "Spectacle Rock",
+            "access_rules": [
+              "$access_dm_west_top",
+              "[advanced], $adv_glitched_access_dm_west_top",
+              "[hell], $hell_access_dm_west_top"
+            ],
+            "item_count": 1
+          }
+        ]
+      },
+
+
+      {
+        "name": "Death Mountain",
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1878,
+            "y": 168
+          }
+        ],
+        "sections": [
+          {
+            "name": "Treasure Dungeon",
+            "access_rules": [
+              "$access_dm_east_top, merge, hookshot",
+              "[advanced], $adv_glitched_access_dm_east_top, merge, hookshot"
+            ],
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Death Mountain",
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1910,
+            "y": 168,
+            "size": 48
+          }
+        ],
+        "sections": [
+          {
+            "name": "Stuck to Treasure Dungeon",
+            "chest_unopened_img": "images/items/maiamai.png",
+            "chest_opened_img": "images/items/maiamai_opened.png",
+            "item_count": 1,
+            //"capture_item": true,
+            "visibility_rules": [
+              "maiamai_map"
+            ],
+            "access_rules": [
+              //"{}",
+              "$access_dm_east_top, merge",
+              "[advanced], $adv_glitched_access_dm_east_top, merge"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Death Mountain",
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1718,
+            "y": 176
+          }
+        ],
+        "sections": [
+          {
+            "name": "Fire Cave Pillar",
+            //"capture_item": true,
+            "access_rules": [
+              "$access_dm_east_top, merge, hammer",
+              "[advanced], $adv_glitched_access_dm_east_top, merge, hammer"
+            ],
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Bouldering Guy",
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1695,
+            "y": 227
+          }
+        ],
+        "sections": [
+          {
+            "name": "Trade Premium Milk",
+            "access_rules": [
+              "$access_dm_east_top, merge, premium_milk",
+              "[advanced], $adv_glitched_access_dm_east_top, premium_milk, merge",
+              "[advanced], $adv_glitched_access_dm_east_top, premium_milk, trod, boots"
+            ],
+            "hosted_item": "bottle",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Death Mountain",
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1639,
+            "y": 254,
+            "size": 48
+          }
+        ],
+        "sections": [
+          {
+            "name": "Bouldering Maiamai",
+            "chest_unopened_img": "images/items/maiamai.png",
+            "chest_opened_img": "images/items/maiamai_opened.png",
+            "item_count": 1,
+            //"capture_item": true,
+            "visibility_rules": [
+              "maiamai_map"
+            ],
+            "access_rules": [
+              "$access_dm_east_top, merge, power_glove",
+              "[advanced], $adv_glitched_access_dm_east_top, merge, power_glove",
+              "[advanced], $adv_glitched_access_dm_east_top, power_glove, trod, boots"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rosso's Ore Mine",
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1324,
+            "y": 390,
+            "size": 48
+          }
+        ],
+        "sections": [
+          {
+            "name": "Under Rock",
+            "chest_unopened_img": "images/items/maiamai.png",
+            "chest_opened_img": "images/items/maiamai_opened.png",
+            "item_count": 1,
+            //"capture_item": true,
+            "visibility_rules": [
+              "maiamai_map"
+            ],
+            "access_rules": [
+              "power_glove, $access_dm_east_bottom",
+              "[advanced], power_glove, $adv_glitched_access_dm_east_bottom"
+            ]
+          }
+        ]
+      },
+
+
+
+
+      {
+        "name": "Floating Island",
+        "map_locations": [
+          {
+            "map": "hyrule",
             "x": 1625,
             "y": 79
           }
         ],
         "sections": [
           {
+            "name": "Floating Island Portal",
+            "hosted_item": "portal_hyfi",
+            "access_rules": [
+              "portal_hyfi",
+              "{}"
+            ],
+            "visibility_rules": [
+              "portal_shuffle"
+            ]
+          },
+          {
             "name": "Floating Island",
             "access_rules": [
-              //"{powerglove, merge, hookshot}",
-              //"{merge, hookshot, bell, wv_death_hyrule}",
-              //"{hookshot, bell, wv_hera}",
-              //"{merge, hookshot, bell, wv_treacherous_tower}",
-              //"{merge, bell, wv_death_lorule}",
-              //"{merge, bell, wv_ice}",
-              //"{advanced, bottle_1, hookshot}",
-              //"{advanced, bluemail, hookshot}",
-              "trod, hookshot, powerglove, merge",
-              "trod, hookshot, bell, merge, wv_hera",
-              "trod, hookshot, bell, merge, wv_death_hyrule",
-              "trod, hookshot, bell, merge, wv_treacherous_tower",
-              "trod, bell, merge, wv_death_lorule",
-              "trod, bell, merge, wv_ice",
-              "[glitched], trod, hookshot, merge",
-              "[advanced], trod, hookshot, bluemail, merge",
-              "[advanced], trod, hookshot, bottle_1, merge",
-              "[hell], trod, hookshot, merge"
+              "portal_hyfi, merge",
+              "not_portal_shuffle, portal_lofi, merge, quake"
             ],
             //"capture_item": true,
             "item_count": 1
           }
         ]
       },
+
       {
-        "name": "Lorule Death Mountain West",
-        "access_rules": [
-          "merge, powerglove",
-          "merge, bell, wv_death_hyrule",
-          "merge, bell, wv_hera",
-          "merge, bell, wv_treacherous_tower",
-          "merge, bell, hookshot, wv_death_lorule",
-          "merge, bell, hookshot, wv_ice",
-          "[glitched], merge"
+        "name": "Lorule Death Mountain",
+        "map_locations": [
+          {
+            "map": "lorule",
+            "x": 1147,
+            "y": 248
+          }
         ],
-        "children": [
+        "sections": [
           {
-            "name": "Lorule Death Mountain",
-            "map_locations": [
-              {
-                "map": "lorule",
-                "x": 1147,
-                "y": 248
-              }
+            "name": "Ice Gimos Fight",
+            "access_rules": [
+              "$access_ldm_west, $margomill",
+              "[glitched], $glitched_access_ldm_west, $margomill"
             ],
-            "sections": [
-              {
-                "name": "Ice Gimos Fight",
-                "access_rules": [
-                  "$margomill"
-                ],
-                "item_count": 1
-              }
-            ]
-          },
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Lorule Death Mountain",
+        "map_locations": [
           {
-            "name": "Lorule Death Mountain",
-            "map_locations": [
-              {
-                "map": "lorule",
-                "x": 1061,
-                "y": 348
-              }
-            ],
-            "sections": [
-              {
-                "name": "West Ledge Chest",
-                "item_count": 1
-              }
-            ]
-          },
+            "map": "lorule",
+            "x": 1061,
+            "y": 348
+          }
+        ],
+        "sections": [
           {
-            "name": "Treacherous Tower",
-            "map_locations": [
-              {
-                "map": "lorule",
-                "x": 1149,
-                "y": 83
-              }
-            ],
-            "sections": [
-              {
-                "name": "Intermediate",
-                "access_rules": [
-                  "$attack, bombs",
-                  "$attack, hammer",
-                  "$attack, trod"
-                ],
-                "item_count": 1,
-                "visibility_rules": [
-                  "minigames_enabled"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Lorule Death Mountain",
-            "map_locations": [
-              {
-                "map": "lorule",
-                "x": 864,
-                "y": 303,
-                "size": 32
-              }
-            ],
-            "sections": [
-              {
-                "name": "West Skull",
-                "item_count": 1,
-                //"capture_item": true,
-                "visibility_rules": [
-                  "maiamai_map"
-                ],
-                "access_rules": [
-                  "fsword",
-                  "bow",
-                  "boomerang",
-                  "hookshot",
-                  "bombs",
-                  "frod",
-                  "irod",
-                  "hammer",
-                  "srod",
-                  "boots",
-                  "powerglove",
-                  "[hard], merge"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Lorule Death Mountain",
-            "map_locations": [
-              {
-                "map": "lorule",
-                "x": 843,
-                "y": 111,
-                "size": 32
-              }
-            ],
-            "sections": [
-              {
-                "name": "Under NW Big Rock",
-                "item_count": 1,
-                //"capture_item": true,
-                "access_rules": [
-                  "hammer, titansmitt",
-                  "[glitched], titansmitt, nicebombs",
-                  "[hell], titansmitt, bombs"
-                ],
-                "visibility_rules": [
-                  "maiamai_map"
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Lorule Death Mountain",
-            "map_locations": [
-              {
-                "map": "lorule",
-                "x": 1309,
-                "y": 429,
-                "size": 32
-              }
-            ],
-            "sections": [
-              {
-                "name": "Under Bridge Big Rock",
-                "item_count": 1,
-                //"capture_item": true,
-                "access_rules": [
-                  "titansmitt"
-                ],
-                "visibility_rules": [
-                  "maiamai_map"
-                ]
-              }
+            "name": "West Ledge Chest",
+            "item_count": 1,
+            "access_rules": [
+              "$access_ldm_west, merge",
+              "[glitched], $glitched_access_ldm_west, merge",
+              "[glitched], $glitched_access_ldm_west, nicebombs",
+              "[hell], $glitched_access_ldm_west, bombs"
             ]
           }
         ]
       },
       {
-        "name": "Lorule Death Mountain East",
-        "access_rules": [
-          "merge, hookshot, powerglove",
-          "merge, hookshot, bell, wv_hera",
-          "merge, hookshot, bell, wv_death_hyrule",
-          "merge, hookshot, bell, wv_treacherous_tower",
-          "merge, bell, wv_death_lorule",
-          "merge, bell, wv_ice",
-          "[glitched], merge, hookshot"
+        "name": "Lorule Death Mountain",
+        "map_locations": [
+          {
+            "map": "lorule",
+            "x": 1149,
+            "y": 65
+          }
         ],
-        "children": [
+        "sections": [
           {
-            "name": "Lorule Death Mountain",
-            "map_locations": [
-              {
-                "map": "lorule",
-                "x": 1319,
-                "y": 140
-              }
+            "name": "Treacherous Tower",
+            "access_rules": [
+              "$access_ldm_west, $attack, bombs",
+              "$access_ldm_west, $attack, hammer",
+              "$access_ldm_west, $attack, trod",
+              "[glitched], $glitched_access_ldm_west, $attack, bombs",
+              "[glitched], $glitched_access_ldm_west, $attack, hammer",
+              "[glitched], $glitched_access_ldm_west, $attack, trod"
             ],
-            "sections": [
-              {
-                "name": "Behind Ice Gimos Trio",
-                "access_rules": [
-                  "{csmc}",
-                  "frod"
-                ],
-                "item_count": 1
-              }
+            "item_count": 1,
+            "visibility_rules": [
+              "minigames_enabled"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "name": "Lorule Death Mountain",
+        "map_locations": [
           {
-            "name": "Lorule Death Mountain",
-            "map_locations": [
-              {
-                "map": "lorule",
-                "x": 1693,
-                "y": 222
-              }
+            "map": "lorule",
+            "x": 864,
+            "y": 303,
+            "size": 48
+          }
+        ],
+        "sections": [
+          {
+            "name": "West Skull",
+            "chest_unopened_img": "images/items/maiamai.png",
+            "chest_opened_img": "images/items/maiamai_opened.png",
+            "item_count": 1,
+            //"capture_item": true,
+            "visibility_rules": [
+              "maiamai_map"
             ],
-            "sections": [
-              {
-                "name": "East Cliff Chest",
-                "access_rules": [
-                  "{csmc}",
-                  "trod"
-                ],
-                "item_count": 1
-              }
+            "access_rules": [
+              "$access_ldm_west",
+              "[glitched], $glitched_access_ldm_west"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "name": "Lorule Death Mountain",
+        "map_locations": [
           {
-            "name": "Lorule Death Mountain",
-            "map_locations": [
-              {
-                "map": "lorule",
-                "x": 1723,
-                "y": 475,
-                "size": 32
-              }
+            "map": "lorule",
+            "x": 843,
+            "y": 111,
+            "size": 48
+          }
+        ],
+        "sections": [
+          {
+            "name": "Under NW Big Rock",
+            "chest_unopened_img": "images/items/maiamai.png",
+            "chest_opened_img": "images/items/maiamai_opened.png",
+            "item_count": 1,
+            //"capture_item": true,
+            "access_rules": [
+              "$access_ldm_west, hammer, titansmitt",
+              "[glitched], $glitched_access_ldm_west, titansmitt, hammer",
+              "[glitched], $glitched_access_ldm_west, titansmitt, nicebombs",
+              "[hell], $glitched_access_ldm_west, titansmitt, bombs"
             ],
-            "sections": [
-              {
-                "name": "Stuck to SE Wall",
-                "item_count": 1,
-                //"capture_item": true,
-                "visibility_rules": [
-                  "maiamai_map"
-                ]
-              }
+            "visibility_rules": [
+              "maiamai_map"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "name": "Lorule Death Mountain",
+        "map_locations": [
           {
-            "name": "Lorule Death Mountain",
-            "map_locations": [
-              {
-                "map": "lorule",
-                "x": 1634,
-                "y": 256,
-                "size": 32
-              }
+            "map": "lorule",
+            "x": 1309,
+            "y": 429,
+            "size": 48
+          }
+        ],
+        "sections": [
+          {
+            "name": "Under Bridge Big Rock",
+            "chest_unopened_img": "images/items/maiamai.png",
+            "chest_opened_img": "images/items/maiamai_opened.png",
+            "item_count": 1,
+            //"capture_item": true,
+            "access_rules": [
+              "$access_ldm_west, titansmitt",
+              "[glitched], $glitched_access_ldm_west, titansmitt",
+              "[hell], $glitched_access_ldm_west, titansmitt"
             ],
-            "sections": [
-              {
-                "name": "East Cliff Skull",
-                "item_count": 1,
-                //"capture_item": true,
-                "visibility_rules": [
-                  "maiamai_map"
-                ]
-              }
+            "visibility_rules": [
+              "maiamai_map"
             ]
-          },
+          }
+        ]
+      },
+
+
+      {
+        "name": "Lorule Death Mountain",
+        "map_locations": [
           {
-            "name": "Lorule Death Mountain",
-            "map_locations": [
-              {
-                "map": "lorule",
-                "x": 1880,
-                "y": 106,
-                "size": 32
-              }
+            "map": "lorule",
+            "x": 1319,
+            "y": 140
+          }
+        ],
+        "sections": [
+          {
+            "name": "Behind Ice Gimos Trio",
+            "access_rules": [
+              "frod, $access_ldm_east_top",
+              "[glitched], frod, $glitched_access_ldm_east_top",
+              "[hell], frod, $hell_access_ldm_east_top"
             ],
-            "sections": [
-              {
-                "name": "Stuck to Ice Ruins",
-                "item_count": 1,
-                //"capture_item": true,
-                "visibility_rules": [
-                  "maiamai_map"
-                ]
-              }
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Lorule Death Mountain",
+        "map_locations": [
+          {
+            "map": "lorule",
+            "x": 1693,
+            "y": 222
+          }
+        ],
+        "sections": [
+          {
+            "name": "East Cliff Chest",
+            "access_rules": [
+              "{$access_ldm_east_top}",
+              "trod, merge, $access_ldm_east_top",
+              "[glitched], trod, merge, $glitched_access_ldm_east_top",
+              "[hell], trod, merge, $hell_access_ldm_east_top"
+            ],
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Lorule Death Mountain",
+        "map_locations": [
+          {
+            "map": "lorule",
+            "x": 1723,
+            "y": 475,
+            "size": 48
+          }
+        ],
+        "sections": [
+          {
+            "name": "Stuck to SE Wall",
+            "chest_unopened_img": "images/items/maiamai.png",
+            "chest_opened_img": "images/items/maiamai_opened.png",
+            "access_rules": [
+              "$access_ldm_east_base, merge",
+              "[glitched], $glitched_access_ldm_east_base, merge",
+              "[hell], $hell_access_ldm_east_base, merge"
+            ],
+            "item_count": 1,
+            //"capture_item": true,
+            "visibility_rules": [
+              "maiamai_map"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lorule Death Mountain",
+        "map_locations": [
+          {
+            "map": "lorule",
+            "x": 1634,
+            "y": 256,
+            "size": 48
+          }
+        ],
+        "sections": [
+          {
+            "name": "East Cliff Skull",
+            "chest_unopened_img": "images/items/maiamai.png",
+            "chest_opened_img": "images/items/maiamai_opened.png",
+            "access_rules": [
+              "merge, $break_skull, $access_ldm_east_top",
+              "[glitched], merge, $break_skull, $glitched_access_ldm_east_top",
+              "[glitched], trod, $break_skull, $glitched_access_ldm_east_top",
+              "[hell], merge, $break_skull, $hell_access_ldm_east_top",
+              "[hell], trod, $break_skull, $hell_access_ldm_east_top"
+            ],
+            "item_count": 1,
+            //"capture_item": true,
+            "visibility_rules": [
+              "maiamai_map"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lorule Death Mountain",
+        "map_locations": [
+          {
+            "map": "lorule",
+            "x": 1880,
+            "y": 106,
+            "size": 48
+          }
+        ],
+        "sections": [
+          {
+            "name": "Stuck to Ice Ruins",
+            "chest_unopened_img": "images/items/maiamai.png",
+            "chest_opened_img": "images/items/maiamai_opened.png",
+            "item_count": 1,
+            "access_rules": [
+              "merge, $access_ldm_east_top",
+              "[glitched], merge, $glitched_access_ldm_east_top",
+              "[hell], merge, $hell_access_ldm_east_top"
+            ],
+            //"capture_item": true,
+            "visibility_rules": [
+              "maiamai_map"
             ]
           }
         ]

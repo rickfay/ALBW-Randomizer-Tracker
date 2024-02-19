@@ -25,7 +25,7 @@
         "sections": [
           {
             "name": "1F Bubble Room",
-            "hosted_item": "hog_chest_01",
+            "item_count": 1,
             "access_rules": [
               "merge, $fire_enemy"
             ]
@@ -44,7 +44,7 @@
         "sections": [
           {
             "name": "1F NE Room",
-            "hosted_item": "hog_chest_02",
+            "item_count": 1,
             "access_rules": [
               "merge",
               "[hard]"
@@ -64,7 +64,7 @@
         "sections": [
           {
             "name": "1F Torch Chest",
-            "hosted_item": "hog_chest_03",
+            "item_count": 1,
             "access_rules": [
               "$fire"
             ]
@@ -83,7 +83,7 @@
         "sections": [
           {
             "name": "1F Block Room",
-            "hosted_item": "hog_chest_04",
+            "item_count": 1,
             "access_rules": [
               "merge",
               "[hard]"
@@ -103,7 +103,7 @@
         "sections": [
           {
             "name": "1F Block Room (SW)",
-            "hosted_item": "hog_chest_05",
+            "item_count": 1,
             "access_rules": [
               "{csmc}",
               "merge"
@@ -131,7 +131,7 @@
               "$hog2F, hookshot",
               "[hard], $hog2F"
             ],
-            "hosted_item": "hog_chest_06"
+            "item_count": 1
           }
         ]
       },
@@ -151,7 +151,7 @@
               "$hog2F, merge"
             ],
             //"capture_item": true,
-            "hosted_item": "hog_chest_07"
+            "item_count": 1
           }
         ]
       },
@@ -167,7 +167,7 @@
         "sections": [
           {
             "name": "2F Big Chest",
-            "hosted_item": "hog_chest_08",
+            "item_count": 1,
             "access_rules": [
               "$hog2F"
             ]
@@ -186,7 +186,7 @@
         "sections": [
           {
             "name": "3F Bubble Room",
-            "hosted_item": "hog_chest_09",
+            "item_count": 1,
             "access_rules": [
               "{csmc, $hog3F}",
               "$hog3F, $fire"
@@ -206,7 +206,7 @@
         "sections": [
           {
             "name": "3F Wind Chest",
-            "hosted_item": "hog_chest_10",
+            "item_count": 1,
             "access_rules": [
               "{csmc, glitched, $hog2F}",
               "$hog3F"
@@ -227,7 +227,7 @@
           {
             "name": "Margomill",
             //"capture_item": true,
-            "hosted_item": "hog_chest_11",
+            "item_count": 1,
             "access_rules": [
               "$hog3F, $margomill"
             ]
@@ -240,18 +240,21 @@
           {
             "map": "hog3F",
             "x": 92,
-            "y": 30,
-            "size": 15
+            "y": 28,
+            "size": 20
           }
         ],
         "sections": [
-          {
-            "name": "Prize",
-            "hosted_item": "gales",
-            "access_rules": [
-              "$hog3F, $margomill"
-            ]
-          }
+          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["$hog3F, $margomill"], "visibility_rules": ["label_power_hg"]},
+          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["$hog3F, $margomill"], "visibility_rules": ["label_wisdom_hg"]},
+          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["$hog3F, $margomill"], "visibility_rules": ["label_courage_hg"]},
+          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["$hog3F, $margomill"], "visibility_rules": ["label_gulley_hg"]},
+          {"name": "Oren", "hosted_item": "oren", "access_rules": ["$hog3F, $margomill"], "visibility_rules": ["label_oren_hg"]},
+          {"name": "Seres", "hosted_item": "seres", "access_rules": ["$hog3F, $margomill"], "visibility_rules": ["label_seres_hg"]},
+          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["$hog3F, $margomill"], "visibility_rules": ["label_osfala_hg"]},
+          {"name": "Impa", "hosted_item": "impa", "access_rules": ["$hog3F, $margomill"], "visibility_rules": ["label_impa_hg"]},
+          {"name": "Irene", "hosted_item": "irene", "access_rules": ["$hog3F, $margomill"], "visibility_rules": ["label_irene_hg"]},
+          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["$hog3F, $margomill"], "visibility_rules": ["label_rosso_hg"]}
         ]
       },
       {
@@ -260,107 +263,28 @@
           {
             "map": "hyrule",
             "x": 1620,
-            "y": 1709,
-            "size": 80
+            "y": 1709
           }
         ],
         "sections": [
           {
-            "name": "1F Bubble Room",
-            "hosted_item": "hog_chest_01",
+            "name": "Dungeon",
+            "item_count": 5,
+            "clear_as_group": false,
             "access_rules": [
-              "merge, $fire_enemy"
+              "[trod], [$fire], [merge], [$attack]"
             ]
           },
-          {
-            "name": "1F Torch Chest",
-            "hosted_item": "hog_chest_03",
-            "access_rules": [
-              "$fire"
-            ]
-          },
-          {
-            "name": "1F NE Room",
-            "hosted_item": "hog_chest_02",
-            "access_rules": [
-              "merge",
-              "[hard]"
-            ]
-          },
-          {
-            "name": "1F Block Room",
-            "hosted_item": "hog_chest_04",
-            "access_rules": [
-              "merge",
-              "[hard]"
-            ]
-          },
-          {
-            "name": "1F Block Room (SW)",
-            "hosted_item": "hog_chest_05",
-            "access_rules": [
-              "{csmc}",
-              "merge"
-            ]
-          },
-          {
-            "name": "2F Narrow Ledge",
-            //"capture_item": true,
-            "hosted_item": "hog_chest_06",
-            "access_rules": [
-              //"{$hog2F}",
-              "$hog2F, merge",
-              "$hog2F, boomerang",
-              "$hog2F, hookshot",
-              "[hard], $hog2F"
-            ]
-          },
-          {
-            "name": "2F Big Chest",
-            "hosted_item": "hog_chest_08",
-            "access_rules": [
-              "$hog2F"
-            ]
-          },
-          {
-            "name": "2F Fire Ring",
-            //"capture_item": true,
-            "hosted_item": "hog_chest_07",
-            "access_rules": [
-              "$hog2F, merge"
-            ]
-          },
-          {
-            "name": "3F Bubble Room",
-            "hosted_item": "hog_chest_09",
-            "access_rules": [
-              "{csmc, $hog3F}",
-              "$hog3F, $fire"
-            ]
-          },
-          {
-            "name": "3F Wind Chest",
-            "hosted_item": "hog_chest_10",
-            "access_rules": [
-              "{csmc, glitched, $hog2F}",
-              "$hog3F"
-            ]
-          },
-          {
-            "name": "Margomill",
-            //"capture_item": true,
-            "hosted_item": "hog_chest_11",
-            "access_rules": [
-              "$hog3F, $margomill"
-            ]
-          },
-          {
-            "name": "Prize",
-            "hosted_item": "gales",
-            "access_rules": [
-              "$hog3F, $margomill"
-            ]
-          }
+          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["$hog3F, $margomill"], "visibility_rules": ["label_power_hg"]},
+          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["$hog3F, $margomill"], "visibility_rules": ["label_wisdom_hg"]},
+          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["$hog3F, $margomill"], "visibility_rules": ["label_courage_hg"]},
+          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["$hog3F, $margomill"], "visibility_rules": ["label_gulley_hg"]},
+          {"name": "Oren", "hosted_item": "oren", "access_rules": ["$hog3F, $margomill"], "visibility_rules": ["label_oren_hg"]},
+          {"name": "Seres", "hosted_item": "seres", "access_rules": ["$hog3F, $margomill"], "visibility_rules": ["label_seres_hg"]},
+          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["$hog3F, $margomill"], "visibility_rules": ["label_osfala_hg"]},
+          {"name": "Impa", "hosted_item": "impa", "access_rules": ["$hog3F, $margomill"], "visibility_rules": ["label_impa_hg"]},
+          {"name": "Irene", "hosted_item": "irene", "access_rules": ["$hog3F, $margomill"], "visibility_rules": ["label_irene_hg"]},
+          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["$hog3F, $margomill"], "visibility_rules": ["label_rosso_hg"]}
         ]
       }
     ]

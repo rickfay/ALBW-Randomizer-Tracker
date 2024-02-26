@@ -411,8 +411,8 @@
               {
                 "name": "Bump into Shady Guy",
                 "access_rules": [
-                  "merge, oren",
-                  "[hell], oren, $beeBoost"
+                  "merge",
+                  "[hell], $beeBoost"
                 ],
                 "hosted_item": "shadyguy",
                 "item_count": 0
@@ -926,6 +926,16 @@
                 "map": "hyrule",
                 "x": 1403,
                 "y": 1403
+              },
+              {
+                "map": "hyrule",
+                "x": 536,
+                "y": 672
+              },
+              {
+                "map": "hyrule",
+                "x": 716,
+                "y": 739
               }
             ],
             "sections": [

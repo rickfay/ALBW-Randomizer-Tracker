@@ -252,7 +252,7 @@ end
 -- Merge or Gulley is needed to go from the Weather Vane to the main area
 -- Graveyard -> Dark access is possible with glitches
 function darkRuins()
-    if portal() or (hasAll({ "yuga", "bell", "wv_dark" }) and hasAny({ "merge", "gulley" })) then
+    if portal() or (hasAll({ "yuga", "bell", "wv_dark" }) and (has("merge") or dark_palace())) then
         return true
     elseif hasAll({ "yuga", "bell", "wv_graveyard" }) then
         if boost() and hasAny({ "flippers", "hookshot" }) then
@@ -265,6 +265,19 @@ function darkRuins()
     end
 
     return false
+end
+
+function dark_palace()
+    return hasAll({ "label_power_pd", "power" })
+        or hasAll({ "label_wisdom_pd", "wisdom" })
+        or hasAll({ "label_courage_pd", "courage" })
+        or hasAll({ "label_gulley_pd", "gulley" })
+        or hasAll({ "label_oren_pd", "oren" })
+        or hasAll({ "label_seres_pd", "seres" })
+        or hasAll({ "label_osfala_pd", "osfala" })
+        or hasAll({ "label_impa_pd", "impa" })
+        or hasAll({ "label_irene_pd", "irene" })
+        or hasAll({ "label_rosso_pd", "rosso" })
 end
 
 function turtleLake()
@@ -507,10 +520,26 @@ end
 
 -- Return if we can enter Lorule Castle, either with Sages or via the Hyrule Castle Portal
 function canEnterLC()
-    if notPortalShuffle() and hasAll({ "merge", "quake" }) and lc_requirement() then return true end
+    if lc_requirement() and access_central_lorule() then return true end
     if hasAll({ "portal_lc", "trials_door_open", "merge" }) then return true end
     return false
 end
+
+-- [Advanced] Return if we can enter Lorule Castle, either with Sages or via the Hyrule Castle Portal
+function advanced_canEnterLC()
+    if canEnterLC() then return true end
+    if lc_requirement() and advanced_access_central_lorule() then return true end
+    return false
+end
+
+-- [Hell] Return if we can enter Lorule Castle, either with Sages or via the Hyrule Castle Portal
+function hell_canEnterLC()
+    if advanced_canEnterLC() then return true end
+    if lc_requirement() and hell_access_central_lorule() then return true end
+    return false
+end
+
+
 
 -- Return if we can reach Lorule Castle 2F
 function lc2F()

@@ -143,6 +143,7 @@
         "name": "Hyrule Castle Portal",
         "hosted_item": "portal_hc",
         "access_rules": [
+          "portal_hc",
           "{portal_shuffle}",
           "msword, merge",
           "[], merge, $barrier_skip"

@@ -65,7 +65,6 @@
             "hosted_item": "wv_eastern",
             "access_rules": [
               "wv_eastern",
-              "{}",
               "merge",
               "fsword, great_spin",
               "bow",
@@ -100,7 +99,6 @@
             "hosted_item": "wv_gales",
             "access_rules": [
               "wv_gales",
-              "{}",
               "flippers",
               "[advanced], irod, hookshot",
               "[advanced], $fakeFlippers",
@@ -130,7 +128,6 @@
             "hosted_item": "wv_hera",
             "access_rules": [
               "wv_hera",
-              "{}",
               "$access_dm_west_top",
               "[advanced], $adv_glitched_access_dm_west_top",
               "[hell], $hell_access_dm_west_top"
@@ -181,7 +178,6 @@
             "hosted_item": "wv_death_hyrule",
             "access_rules": [
               "wv_death_hyrule",
-              "{}",
               "$access_dm_west_base",
               "[glitched]"
             ],
@@ -209,7 +205,6 @@
             "hosted_item": "wv_desert",
             "access_rules": [
               "wv_desert",
-              "{}",
               "$access_desert, srod, scroll",
               "not_portal_shuffle, merge, quake, srod",
               "portal_shuffle, merge, portal_desert_sw, srod",
@@ -261,7 +256,7 @@
             "name": "Skull Woods",
             "hosted_item": "wv_skull",
             "access_rules": [
-              "{}"
+              "$access_skull_woods_area"
             ],
             "visibility_rules": [
               "weathervania"
@@ -286,7 +281,8 @@
             "name": "Treacherous Tower",
             "hosted_item": "wv_treacherous_tower",
             "access_rules": [
-              "{}"
+              "$access_ldm_west",
+              "[glitched], $glitched_access_ldm_west"
             ],
             "visibility_rules": [
               "weathervania"
@@ -311,7 +307,9 @@
             "name": "Ice Ruins",
             "hosted_item": "wv_ice",
             "access_rules": [
-              "{}"
+              "$access_ldm_east_top",
+              "[glitched], $glitched_access_ldm_east_top",
+              "[hell], $hell_access_ldm_east_top"
             ],
             "visibility_rules": [
               "weathervania"
@@ -336,7 +334,9 @@
             "name": "Lorule Castle",
             "hosted_item": "wv_lorule_castle",
             "access_rules": [
-              "{}"
+              "$access_central_lorule",
+              "[advanced], $advanced_access_central_lorule",
+              "[hell], $hell_access_central_lorule"
             ],
             "visibility_rules": [
               "weathervania"
@@ -361,7 +361,8 @@
             "name": "Graveyard",
             "hosted_item": "wv_graveyard",
             "access_rules": [
-              "{}"
+              "$access_lorule_graveyard",
+              "[lampless], $lampless_access_lorule_graveyard"
             ],
             "visibility_rules": [
               "weathervania"
@@ -386,7 +387,9 @@
             "name": "Thieves' Town",
             "hosted_item": "wv_thieves",
             "access_rules": [
-              "{}"
+              "$access_central_lorule",
+              "[advanced], $advanced_access_central_lorule",
+              "[hell], $hell_access_central_lorule"
             ],
             "visibility_rules": [
               "weathervania"
@@ -411,7 +414,10 @@
             "name": "Dark Palace",
             "hosted_item": "wv_dark",
             "access_rules": [
-              "{}"
+              "$access_dark_ruins",
+              "[glitched], $glitched_access_dark_ruins",
+              "[advanced], $advanced_access_dark_ruins",
+              "[hell], $hell_access_dark_ruins"
             ],
             "visibility_rules": [
               "weathervania"
@@ -436,7 +442,9 @@
             "name": "Blacksmith",
             "hosted_item": "wv_blacksmith",
             "access_rules": [
-              "{}"
+              "$access_central_lorule",
+              "[advanced], $advanced_access_central_lorule",
+              "[hell], $hell_access_central_lorule"
             ],
             "visibility_rules": [
               "weathervania"
@@ -461,7 +469,9 @@
             "name": "Vacant House",
             "hosted_item": "wv_vacant_house",
             "access_rules": [
-              "{}"
+              "$access_central_lorule",
+              "[advanced], $advanced_access_central_lorule",
+              "[hell], $hell_access_central_lorule"
             ],
             "visibility_rules": [
               "weathervania"
@@ -486,7 +496,7 @@
             "name": "Misery Mire",
             "hosted_item": "wv_mire",
             "access_rules": [
-              "{}"
+              "$access_misery_mire"
             ],
             "visibility_rules": [
               "weathervania"
@@ -511,7 +521,9 @@
             "name": "Swamp Palace",
             "hosted_item": "wv_swamp",
             "access_rules": [
-              "{}"
+              "hookshot, $access_central_lorule",
+              "hookshot, [advanced], $advanced_access_central_lorule",
+              "hookshot, [hell], $hell_access_central_lorule"
             ],
             "visibility_rules": [
               "weathervania"
@@ -536,7 +548,9 @@
             "name": "Turtle Rock",
             "hosted_item": "wv_turtle",
             "access_rules": [
-              "{}"
+              "$access_turtleWV",
+              "[advanced], $advanced_access_turtleWV",
+              "[hell], $hell_access_turtleWV"
             ],
             "visibility_rules": [
               "weathervania"
@@ -561,7 +575,9 @@
             "name": "Death Mountain (Lorule)",
             "hosted_item": "wv_death_lorule",
             "access_rules": [
-              "{}"
+              "$access_ldm_east_base",
+              "[glitched], $glitched_access_ldm_east_base",
+              "[hell], $hell_access_ldm_east_base"
             ],
             "visibility_rules": [
               "weathervania"

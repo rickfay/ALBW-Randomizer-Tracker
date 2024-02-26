@@ -10,6 +10,13 @@ Worlds Randomizer.
 - Author: RickWithAnH
 
 <details open="open">
+<summary>Version 4.0.0</summary>
+
+- TODO: Write this
+
+</details>
+
+<details>
 <summary>Version 3.2.2</summary>
 
 - Add Region Names overlay feature
@@ -17,7 +24,7 @@ Worlds Randomizer.
 
 </details>
 
-<details open="open">
+<details>
 <summary>Version 3.2.1</summary>
 
 - Logic updated to match v0.3.0 of the randomizer
@@ -31,25 +38,26 @@ Worlds Randomizer.
 </details>
 
 <details>
+<summary>Version 3.1.0</summary>
+
+- Dungeon checks on the World map are now linked to checks in the Dungeon tabs
+- Layout tweaks based on feedback
+- Lamp Required/Not Required setting
+
+</details>
+<details>
+<summary>Version 3.0.0</summary>
+
+- Changes to support Z17 Randomizer v0.1.0
+- Support for Yuga Seeds
+- Support for new logic modes
+- New Layout
+- Simplified game Settings/Options
+
+</details>
+
+<details>
 <summary>Previous Versions</summary>
-  <details>
-  <summary>Version 3.1.0</summary>
-  
-  - Dungeon checks on the World map are now linked to checks in the Dungeon tabs
-    - Layout tweaks based on feedback
-    - Lamp Required/Not Required setting
-  
-  </details>
-  <details>
-  <summary>Version 3.0.0</summary>
-  
-  - Changes to support Z17 Randomizer v0.1.0
-    - Support for Yuga Seeds
-    - Support for new logic modes
-    - New Layout
-    - Simplified game Settings/Options
-  
-  </details>
   <details>
   <summary>Version 2.0.0</summary>
   
@@ -160,68 +168,56 @@ Worlds Randomizer.
 
 ### Dungeon Prize Explanation
 
+
+
+
+
+
+| Name               | Prize                                                    | Effect / Unlocks                                                                                 |
+|--------------------|----------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| Gulley             | ![Gulley](images/prizes/sage_gulley.png)                 |                                                                                                  |
+| Oren               | ![Oren](images/prizes/sage_oren.png)                     | - Queen Oren                                                                                     | 
+| Seres              | ![Seres](images/prizes/sage_seres.png)                   |                                                                                                  | 
+| Osfala             | ![Osfala](images/prizes/sage_osfala.png)                 | - Ravio's Sand Rod Slot Item                                                                     | 
+| Impa               | ![Impa](images/prizes/sage_impa.png)                     | - Hyrule Castle Throne Room                                                                      | 
+| Irene              | ![Irene](images/prizes/sage_irene.png)                   | - Irene                                                                                          | 
+| Rosso              | ![Rosso](images/prizes/sage_rosso.png)                   | - Unlocks Rosso's House's front door<br />- Rosso<br />- Rosso Rocks<br />- Rosso's House Portal | 
+| Pendant of Power   | ![Pendant of Power](images/prizes/pendant_power.png)     |                                                                                                  |
+| Pendant of Wisdom  | ![Pendant of Wisdom](images/prizes/pendant_wisdom.png)   |                                                                                                  |
+| Pendant of Courage | ![Pendant of Courage](images/prizes/pendant_courage.png) | - Wildlife Clearing Stump                                                                        |
+
+
 #### Sage Portraits
 
 Sage Portraits (sometimes called Paintings) are the primary major collectible of the randomizer.
 
-| Irene                                   | Impa                                 | Oren                                 | Gulley                                   | Seres                                  | Osfala                                   | Rosso                                  |
-|-----------------------------------------|--------------------------------------|--------------------------------------|------------------------------------------|----------------------------------------|------------------------------------------|----------------------------------------|
-|  ![Irene](images/prizes/sage_irene.png) | ![Impa](images/prizes/sage_impa.png) | ![Oren](images/prizes/sage_oren.png) | ![Gulley](images/prizes/sage_gulley.png) | ![Seres](images/prizes/sage_seres.png) | ![Osfala](images/prizes/sage_osfala.png) | ![Rosso](images/prizes/sage_rosso.png) |
-
-
+| Gulley                                   | Oren                                 | Seres                                  | Osfala                                   | Impa                                 | Irene                                   | Rosso                                  |
+|------------------------------------------|--------------------------------------|----------------------------------------|------------------------------------------|--------------------------------------|-----------------------------------------|----------------------------------------|
+| ![Gulley](images/prizes/sage_gulley.png) | ![Oren](images/prizes/sage_oren.png) | ![Seres](images/prizes/sage_seres.png) | ![Osfala](images/prizes/sage_osfala.png) | ![Impa](images/prizes/sage_impa.png) |  ![Irene](images/prizes/sage_irene.png) | ![Rosso](images/prizes/sage_rosso.png) |
 
 You can configure how many must be collected with the following settings:
 
-| Setting                                                         | Range | Default | Specifies Requirement For              |
-|-----------------------------------------------------------------|-------|---------|----------------------------------------|
-| ![Lorule Castle Requirement](images/settings/Lorule_Castle.png) | 0-7   | 7       | Entering Lorule Castle's Front Door    |
-
-[//]: # (| Yuga Ganon Requirement    | 0-7   | 7       | Spawning Final Boss in the Throne Room |)
-
-Also, these Sages have an immediate effect on the game world when collected:
-
-| Sage                                     | Effect                                                                                             |
-|------------------------------------------|----------------------------------------------------------------------------------------------------|
-| ![Osfala](images/prizes/sage_osfala.png) | Unlocks 3 checks:<br />- Chamber of Sages<br />- Thief Girl Cave<br />- Final item in Ravio's Shop | 
-| ![Gulley](images/prizes/sage_gulley.png) | Causes the Dark Maze guards to disappear                                                           | 
-
-If the `Reverse Sage Events` setting is enabled, these Sages will also have an effect when collected:
-
-
-| Sage                                   | Effect                                                          |
-|----------------------------------------|-----------------------------------------------------------------|
-| ![Oren](images/prizes/sage_oren.png)   | Unlocks the Shady Guy event and turning in the Smooth Gem.      | 
-| ![Impa](images/prizes/sage_impa.png)   | Unlocks the front door to Hyrule Castle.                        | 
-| ![Irene](images/prizes/sage_irene.png) | Unlocks the Irene check.                                        | 
-| ![Rosso](images/prizes/sage_rosso.png) | Unlocks the Rosso's House's front door and the 2 checks inside. | 
-
-
+| Setting                                                    | Range | Default | Specifies Requirement For                                                           |
+|------------------------------------------------------------|-------|---------|-------------------------------------------------------------------------------------|
+| ![Lorule Castle Requirement](images/prizes/sage_zelda.png) | 0-7   | 7       | - Entering Lorule Castle's Front Door<br />- Spawning Final Boss in the Throne Room |
 
 #### Pendants of Virtue
 
 The Pendants of Virtue are the secondary major collectible of the randomizer.
 
-| Pendant of Wisdom                                                       | Pendant of Power                                                      | Pendant of Courage                                                                                                  |
-|-------------------------------------------------------------------------|-----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| <center>![Pendant of Wisdom](images/prizes/pendant_wisdom.png)</center> | <center>![Pendant of Power](images/prizes/pendant_power.png)</center> | <center>![Charm](images/prizes/pendant_charm.png) ![Pendant of Courage](images/prizes/pendant_courage.png)</center> |
-
 The Pendants of Power, Wisdom and Courage are needed to reach the Master Sword Pedestal, which is a single randomized item check.
 
 You can configure the `Pedestal` option to configure which Pendants are needed as follows:
 
-| Name     | Pendants                                   | Description                                                                         |
-|----------|--------------------------------------------|-------------------------------------------------------------------------------------|
-| Standard | ![Standard](images/settings/Pendants4.png) | Require all Pendants of Virtue.                                                     |
-| Charmed  | ![Charmed](images/settings/Pendants3.png)  | Require all Pendants, but allow the Charm to substitute for the Pendant of Courage. |
-| Vanilla  | ![Vanilla](images/settings/Pendants2.png)  | As in the vanilla game, only require the Pendants of Power and Wisdom.              |
+| Pendants                                                                                                                                                           | Name    | Description                                                            |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|------------------------------------------------------------------------|
+| ![Pendant of Wisdom](images/prizes/pendant_wisdom.png)![Pendant of Power](images/prizes/pendant_power.png)![Pendant of Courage](images/prizes/pendant_courage.png) | Normal  | Require all Pendants of Virtue.                                        |
+| ![Pendant of Wisdom](images/prizes/pendant_wisdom.png)![Pendant of Power](images/prizes/pendant_power.png)                                                         | Vanilla | As in the vanilla game, only require the Pendants of Power and Wisdom. |
 
 
-The Pendant of Courage is more complicated than most Zelda dungeon rewards, acting as a Progressive Item that works as follows:
+The Pendant of Courage has one extra feature:
 
-| Name               | Pendant                                                  | Notes                                                                                                                                                                                                                                                                                                                                                                                                             |
-|--------------------|----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Charm              | ![Charm](images/prizes/pendant_charm.png)                | The first Green Pendant collected will be the Charm, a special item Link receives from Zelda that he does not realize is the Pendant of Courage.<br /><br />The Charm is *not* the Pendant of Courage, and does not unlock anything by itself.<br /><br />The Charm's vanilla location is considered a dungeon prize location, meaning any Sage Portrait or Pendant can spawn on Zelda's Throne in Hyrule Castle. |
-| Pendant of Courage | ![Pendant of Courage](images/prizes/pendant_courage.png) | The second Green Pendant collected will upgrade the Charm to the Pendant of Courage.<br /><br />Opens:<br />- The door to the Inside Hyrule Castle dungeon<br />- Rosso's House's front door<br /><br />Unlocks 4 checks:<br />- Wildlife Clearing Stump<br />- Irene*<br />- Rosso*<br />- Rosso Rocks* <br /><br />*Unless the `Reverse Sage Events` setting is enabled.                                        |
+
 
 ### Location Color Codes
 

@@ -5,7 +5,9 @@
     "chest_unopened_img": "images/checks/chest_small_unopened.png",
     "chest_opened_img": "images/checks/chest_small_opened.png",
     "access_rules": [
-      "$canEnterLC"
+      "$canEnterLC",
+      "[advanced], $advanced_canEnterLC",
+      "[hell], $hell_canEnterLC"
     ],
     "children": [
       {
@@ -373,20 +375,19 @@
         "chest_unopened_img": "images/checks/chest_small_unopened.png",
         "chest_opened_img": "images/checks/chest_small_opened.png",
         "access_rules": [
-          "$canEnterLC, $zelda"
+          "$zelda"
         ]
       },
       {
         "name": "Triforce",
         "access_rules": [
-          "$canEnterLC, $zelda, merge, bow_of_light"
+          "$zelda, merge, bow_of_light"
         ],
         "hosted_item": "triforce_full"
       }
     ]
   },
   {
-    // Don't remove extra space, dumb trick to get EmoTracker to recognize the name as unique (for adding badges).
     "name": "Throne Room ",
     "map_locations": [
       {
@@ -401,9 +402,9 @@
         "name": "Lorule Castle Portal",
         "hosted_item": "portal_lc",
         "access_rules": [
+          "portal_lc",
           "{}",
-          "merge, portal_lc",
-          "$canEnterLC, $lc_trials"
+          "merge, quake, $lc_trials"
         ],
         "visibility_rules": [
           "portal_shuffle"

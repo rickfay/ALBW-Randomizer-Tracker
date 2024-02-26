@@ -243,7 +243,7 @@
                 "item_count": 1,
                 "access_rules": [
                   "merge",
-                  "gulley"
+                  "$dark_palace"
                 ]
               }
             ]
@@ -264,7 +264,7 @@
                 "item_count": 1,
                 "access_rules": [
                   "merge",
-                  "gulley"
+                  "$dark_palace"
                 ]
               }
             ]
@@ -391,7 +391,16 @@
               {
                 "name": "Thief Girl Cave",
                 "access_rules": [
-                  "osfala"
+                  "label_power_tt, power",
+                  "label_wisdom_tt, wisdom",
+                  "label_courage_tt, courage",
+                  "label_gulley_tt, gulley",
+                  "label_oren_tt, oren",
+                  "label_seres_tt, seres",
+                  "label_osfala_tt, osfala",
+                  "label_impa_tt, impa",
+                  "label_irene_tt, irene",
+                  "label_rosso_tt, rosso"
                 ],
                 "item_count": 1
               }

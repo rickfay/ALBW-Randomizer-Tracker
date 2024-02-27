@@ -21,6 +21,27 @@
           "flags": [ "chathud" ]
         }
       ]
+    },
+    {
+      "name": "[BETA v0.4.0] ALBW Randomizer Tracker",
+      "author": "RickWithAnH",
+      "game_name": "The Legend of Zelda: A Link Between Worlds",
+      "version": "4.0.0",
+      "required_app_version": "2.3.8.19",
+      "uid": "rickwithanh_albwr_tracker_beta",
+      "flags": [ "map", "pins", "chathud" ],
+      "link": "https://rickfay.github.io/ALBW-Randomizer-Tracker/rickwithanh_albwr_tracker_beta.zip",
+      "documentation_url": "https://github.com/rickfay/ALBW-Randomizer-Tracker/blob/master/README.md",
+      "variants": [
+        {
+          "name": "Standard Map Tracker",
+          "flags": [ "map", "pins", "chathud" ]
+        },
+        {
+          "name": "Item Tracker",
+          "flags": [ "chathud" ]
+        }
+      ]
     }
   ]
 }

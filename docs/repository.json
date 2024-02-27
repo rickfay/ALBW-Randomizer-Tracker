@@ -2,7 +2,7 @@
   "name": "RickWithAnH's Trackers",
   "packages": [
     {
-      "name": "ALBW Randomizer Tracker",
+      "name": "ALBW Randomizer (v0.3.1) Tracker",
       "author": "RickWithAnH",
       "game_name": "The Legend of Zelda: A Link Between Worlds",
       "version": "3.2.1",
@@ -23,7 +23,7 @@
       ]
     },
     {
-      "name": "[BETA v0.4.0] ALBW Randomizer Tracker",
+      "name": "[BETA] ALBW Randomizer (v0.4.0) Tracker",
       "author": "RickWithAnH",
       "game_name": "The Legend of Zelda: A Link Between Worlds",
       "version": "4.0.0",

@@ -146,6 +146,7 @@
           "portal_hc",
           "{portal_shuffle}",
           "msword, merge",
+          "swordless, merge, $knucklemaster", // Twoga is immune to Bow
           "[], merge, $barrier_skip"
         ]
       }

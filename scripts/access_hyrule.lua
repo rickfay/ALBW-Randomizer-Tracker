@@ -28,5 +28,10 @@ end
 
 -- Return if we can reach Desert Palace 2F
 function dp2F()
+    return hasAll({ "merge", "srod", "titansmitt" }) and switch() and attack_normal()
+end
+
+-- [HARD] Return if we can reach Desert Palace 2F
+function hard_dp2F()
     return hasAll({ "merge", "srod", "titansmitt" }) and switch() and attack()
 end

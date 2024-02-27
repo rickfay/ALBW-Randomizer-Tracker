@@ -476,6 +476,32 @@
           }
         ]
       },
+      {
+        "name": "Graveyard Ledge",
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1112,
+            "y": 579,
+            "size": 48
+          }
+        ],
+        "sections": [
+          {
+            "name": "High Wall",
+            "item_count": 1,
+            //"capture_item": true,
+            "access_rules": [
+              //"{}",
+              "merge, portal_graveyard",
+              "not_portal_shuffle, merge, quake, portal_graveyard_lorule"
+            ],
+            "visibility_rules": [
+              "maiamai_map"
+            ]
+          }
+        ]
+      },
       // Kakariko Village - 5
       {
         "name": "Kakariko Village",

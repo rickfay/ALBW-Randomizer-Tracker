@@ -96,10 +96,8 @@ end
 -- Return if the player can attack Knucklemaster
 -- This is the same as attack(), minus the bow
 function knucklemaster()
-    if hasAny({ "fsword", "bombs", "frod", "irod", "hammer", "boots" }) then
+    if has("msword") or (has("swordless") and hasAny({ "fsword", "bombs", "frod", "irod", "hammer", "boots" })) then
         return true
-    elseif hasAny({ "lamp", "net" }) then
-        return true_for("hard")
     end
 
     return false
@@ -162,6 +160,10 @@ end
 
 function canExtinguishTorches()
     return hasAny({ "sword", "bombs", "trod", "irod", "net" })
+end
+
+function bawbs()
+    return hasAny({ "progression_enemies", "bombs"})
 end
 
 -- Return if Link can hit Crystal Switches

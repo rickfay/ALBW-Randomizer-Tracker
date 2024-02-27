@@ -146,6 +146,7 @@
             "item_count": 1,
             "access_rules": [
               "$dp2F",
+              "[hard], $hard_dp2F",
               "[advanced], $reverseDP"
             ]
           }
@@ -166,6 +167,7 @@
             "item_count": 1,
             "access_rules": [
               "$dp2F",
+              "[hard], $hard_dp2F",
               "[advanced], $reverseDP, titansmitt"
             ]
           }
@@ -186,6 +188,7 @@
             "item_count": 1,
             "access_rules": [
               "$dp2F",
+              "[hard], $hard_dp2F",
               "[advanced], $reverseDP, titansmitt"
             ]
           }
@@ -206,6 +209,7 @@
             "item_count": 1,
             "access_rules": [
               "$dp2F",
+              "[hard], $hard_dp2F",
               "[advanced], $reverseDP"
             ]
           }
@@ -226,6 +230,7 @@
             "item_count": 1,
             "access_rules": [
               "$dp2F",
+              "[hard], $hard_dp2F",
               "[advanced], $reverseDP"
             ]
           }
@@ -246,6 +251,7 @@
             "item_count": 1,
             "access_rules": [
               "$dp2F",
+              "[hard], $hard_dp2F",
               "[advanced], $reverseDP, titansmitt"
             ]
           }
@@ -266,6 +272,7 @@
             "item_count": 1,
             "access_rules": [
               "$dp2F",
+              "[hard], $hard_dp2F",
               "[advanced], $reverseDP, $attack"
             ]
           }
@@ -286,6 +293,7 @@
             "item_count": 1,
             "access_rules": [
               "$dp2F",
+              "[hard], $hard_dp2F",
               "[advanced], $reverseDP"
             ]
           }
@@ -306,6 +314,7 @@
             "item_count": 1,
             "access_rules": [
               "$dp2F",
+              "[hard], $hard_dp2F",
               "[advanced], $reverseDP"
             ]
           }
@@ -347,60 +356,6 @@
         "name": "Misery Mire",
         "map_locations": [
           {
-            "map": "desert3F",
-            "x": 120,
-            "y": 127
-          }
-        ],
-        "sections": [
-          {
-            "name": "Zaganaga",
-            //"capture_item": true,
-            "item_count": 1,
-            "access_rules": [
-              "msword, portal_shuffle, portal_zaganaga, srod",
-              "msword, $dp2F, progression_enemies",
-              "msword, $dp2F, bombs",
-              "[hard], portal_shuffle, portal_zaganaga, srod, $attack",
-              "[hard], $dp2F, progression_enemies",
-              "[hard], $dp2F, bombs",
-              "[advanced], $advanced_misery_mire_oob, boots",
-              "[advanced], $advanced_misery_mire_oob, srod, $attack",
-              "[hell], $hell_misery_mire_oob, boots",
-              "[hell], $hell_misery_mire_oob, srod, $attack",
-              "[hell], $hell_misery_mire_oob, bow",
-              "[hell], $hell_misery_mire_oob, msword"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Misery Mire",
-        "map_locations": [
-          {
-            "map": "desert3F",
-            "x": 134,
-            "y": 127,
-            "size": 20
-          }
-        ],
-        "sections": [
-          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_power_dp"]},
-          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_wisdom_dp"]},
-          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_courage_dp"]},
-          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_gulley_dp"]},
-          {"name": "Oren", "hosted_item": "oren", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_oren_dp"]},
-          {"name": "Seres", "hosted_item": "seres", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_seres_dp"]},
-          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_osfala_dp"]},
-          {"name": "Impa", "hosted_item": "impa", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_impa_dp"]},
-          {"name": "Irene", "hosted_item": "irene", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_irene_dp"]},
-          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_rosso_dp"]}
-        ]
-      },
-      {
-        "name": "Misery Mire",
-        "map_locations": [
-          {
             "map": "lorule",
             "x": 192,
             "y": 1602
@@ -411,12 +366,12 @@
             "name": "Zaganaga",
             "item_count": 1,
             "access_rules": [
-              "msword, portal_shuffle, portal_zaganaga, srod",
-              "msword, $dp2F, progression_enemies",
-              "msword, $dp2F, bombs",
-              "[hard], portal_shuffle, portal_zaganaga, srod, $attack",
-              "[hard], $dp2F, progression_enemies",
-              "[hard], $dp2F, bombs",
+              "not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, msword",
+              "not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch",
+
+              "portal_shuffle, merge, portal_zaganaga, srod, msword",
+              "portal_shuffle, merge, portal_zaganaga, srod, [hard], $attack",
+
               "[advanced], $advanced_misery_mire_oob, boots",
               "[advanced], $advanced_misery_mire_oob, srod, $attack",
               "[hell], $hell_misery_mire_oob, boots",
@@ -425,16 +380,16 @@
               "[hell], $hell_misery_mire_oob, msword"
             ]
           },
-          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_power_dp"]},
-          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_wisdom_dp"]},
-          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_courage_dp"]},
-          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_gulley_dp"]},
-          {"name": "Oren", "hosted_item": "oren", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_oren_dp"]},
-          {"name": "Seres", "hosted_item": "seres", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_seres_dp"]},
-          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_osfala_dp"]},
-          {"name": "Impa", "hosted_item": "impa", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_impa_dp"]},
-          {"name": "Irene", "hosted_item": "irene", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_irene_dp"]},
-          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["$dp2F, progression_enemies", "$dp2F, bombs", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_rosso_dp"]}
+          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": [ "not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, msword", "not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "portal_shuffle, merge, portal_zaganaga, srod, msword", "portal_shuffle, merge, portal_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword" ], "visibility_rules": [ "label_power_dp" ]},
+          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, msword", "not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "portal_shuffle, merge, portal_zaganaga, srod, msword", "portal_shuffle, merge, portal_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_wisdom_dp"]},
+          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, msword", "not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "portal_shuffle, merge, portal_zaganaga, srod, msword", "portal_shuffle, merge, portal_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_courage_dp"]},
+          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, msword", "not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "portal_shuffle, merge, portal_zaganaga, srod, msword", "portal_shuffle, merge, portal_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_gulley_dp"]},
+          {"name": "Oren", "hosted_item": "oren", "access_rules": ["not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, msword", "not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "portal_shuffle, merge, portal_zaganaga, srod, msword", "portal_shuffle, merge, portal_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_oren_dp"]},
+          {"name": "Seres", "hosted_item": "seres", "access_rules": ["not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, msword", "not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "portal_shuffle, merge, portal_zaganaga, srod, msword", "portal_shuffle, merge, portal_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_seres_dp"]},
+          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, msword", "not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "portal_shuffle, merge, portal_zaganaga, srod, msword", "portal_shuffle, merge, portal_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_osfala_dp"]},
+          {"name": "Impa", "hosted_item": "impa", "access_rules": ["not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, msword", "not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "portal_shuffle, merge, portal_zaganaga, srod, msword", "portal_shuffle, merge, portal_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_impa_dp"]},
+          {"name": "Irene", "hosted_item": "irene", "access_rules": ["not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, msword", "not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "portal_shuffle, merge, portal_zaganaga, srod, msword", "portal_shuffle, merge, portal_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_irene_dp"]},
+          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, msword", "not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "portal_shuffle, merge, portal_zaganaga, srod, msword", "portal_shuffle, merge, portal_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_rosso_dp"]}
         ]
       }
     ]

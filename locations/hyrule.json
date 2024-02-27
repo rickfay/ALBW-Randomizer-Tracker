@@ -298,19 +298,6 @@
                   "not_portal_shuffle, merge, quake, portal_graveyard_lorule"
                 ],
                 "item_count": 1
-              },
-              {
-                "name": "Graveyard Ledge Wall",
-                "item_count": 1,
-                //"capture_item": true,
-                "visibility_rules": [
-                  "maiamai_map"
-                ],
-                "access_rules": [
-                  //"{}",
-                  "merge, portal_graveyard",
-                  "not_portal_shuffle, merge, quake, portal_graveyard_lorule"
-                ]
               }
             ]
           },

@@ -243,7 +243,7 @@ function access_ldm_east_base()
         if has("portal_rom_lorule") then return true end
 
         -- LoFI Portal
-        if has("portal_lofi") and hasAll({ "trod", "hookshot" }) then return true end
+        if has("portal_lofi") and hasAll({ "trod" }) then return true end
     end
 
     return false
@@ -253,7 +253,7 @@ end
 function glitched_access_ldm_east_base()
     if access_ldm_east_base() then return true end
     if has("hookshot") and weather_vane_lorule("wv_treacherous_tower") and (boost() or has("trod")) then return true end
-    if hasAll({ "portal_shuffle", "portal_lorule_dm_west", "hookshot" }) and (boost() or has("trod")) then return true end
+    if hasAll({ "portal_shuffle", "portal_lorule_dm_west", "hookshot", "merge" }) and (boost() or has("trod")) then return true end
     if hasAll({ "portal_shuffle", "portal_lofi", "boots", "merge" }) then return true end
     return false
 end
@@ -262,7 +262,7 @@ end
 function hell_access_ldm_east_base()
     if glitched_access_ldm_east_base() then return true end
     if hasAll({ "bombs", "hookshot" }) and weather_vane_lorule("wv_treacherous_tower") then return true end
-    if hasAll({ "bombs", "portal_shuffle", "portal_lorule_dm_west", "hookshot" }) then return true end
+    if hasAll({ "bombs", "portal_shuffle", "portal_lorule_dm_west", "hookshot", "merge" }) then return true end
     return false
 end
 

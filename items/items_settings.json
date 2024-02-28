@@ -174,13 +174,13 @@
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/settings/nice_mode.png",
+        "img": "images/settings/Nice_Mode.png",
         "img_mods": "@disabled,overlay|images/settings/OFF.png",
         "codes": "not_nice_mode",
         "inherit_codes": false
       },
       {
-        "img": "images/settings/nice_mode.png",
+        "img": "images/settings/Nice_Mode.png",
         "img_mods": "overlay|images/settings/ON.png",
         "codes": "nice_mode",
         "inherit_codes": false

@@ -590,7 +590,7 @@
           {
             "name": "East Cliff Chest",
             "access_rules": [
-              "{$access_ldm_east_top}",
+              "{csmc, $access_ldm_east_top}",
               "trod, merge, $access_ldm_east_top",
               "[glitched], trod, merge, $glitched_access_ldm_east_top",
               "[hell], trod, merge, $hell_access_ldm_east_top"

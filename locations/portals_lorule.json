@@ -101,19 +101,19 @@
   {"name":"Misery Mire ","sections":[{"hosted_item": "portal_zaganaga", "name": "Zaganaga Portal", "access_rules": [ "{}", "[advanced], $advanced_misery_mire_oob, portal_mire_north","[advanced], $advanced_misery_mire_oob, portal_mire_pillar_left, flippers","[advanced], $advanced_misery_mire_oob, portal_mire_pillar_right","[advanced], $advanced_misery_mire_oob, portal_mire_middle","[advanced], $advanced_misery_mire_oob, portal_mire_sw","[advanced], $advanced_misery_mire_oob, portal_mire_exit"], "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "lorule", "x": 192, "y": 1545, "badge_size": 40}]},
 
   // Graveyard (Lorule)
-  {"name":"Philosopher's Portal","sections":[{"hosted_item": "portal_philosopher", "name": "", "access_rules": [ "{}", "merge, portal_graveyard_lorule", "$warpLorule, wv_graveyard" ], "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "lorule", "x": 945, "y": 555, "badge_size": 40}]},
+  {"name":"Philosopher's Portal","sections":[{"hosted_item": "portal_philosopher", "name": "Graveyard", "access_rules": [ "{}", "merge, portal_graveyard_lorule", "$warpLorule, wv_graveyard" ], "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "lorule", "x": 945, "y": 555, "badge_size": 40}]},
 //  {"name":"Lorule Graveyard Portal","sections":[], "map_locations": [{"map": "lorule", "x": 1132, "y": 580, "badge_size": 40}]},
 
   // Dark Ruins
-  {"name":"Ku's Domain Portal","sections":[{"hosted_item": "portal_kus_domain", "name": "", "access_rules": [ "{}", "merge, portal_dark_ruins_pillar", "merge, portal_dark_ruins_se", "merge, portal_waterfall_lorule, flippers", "$warpLorule, wv_dark" ], "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "lorule", "x": 1850, "y": 687, "badge_size": 40}]},
-  {"name":"Dark Pillar Portal","sections":[{"hosted_item": "portal_dark_ruins_pillar", "name": "", "access_rules": [ "{}", "merge, portal_kus_domain", "merge, portal_dark_ruins_se", "merge, portal_waterfall_lorule, flippers", "$warpLorule, wv_dark" ], "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "lorule", "x": 1401, "y": 1099, "badge_size": 40}]},
-  {"name":"Dark Ruins SE Portal","sections":[{"hosted_item": "portal_dark_ruins_se", "name": "", "access_rules": [ "{}", "merge, portal_dark_ruins_pillar, bombs", "merge, portal_kus_domain, bombs", "merge, portal_waterfall_lorule, flippers, bombs", "$warpLorule, wv_dark, bombs" ], "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "lorule", "x": 1803, "y": 1313, "badge_size": 40}]},
-  {"name":"Lorule Waterfall Portal","sections":[{"hosted_item": "portal_waterfall_lorule", "name": "", "access_rules": [ "{}", "merge, portal_dark_ruins_pillar", "merge, portal_dark_ruins_se", "merge, portal_kus_domain", "$warpLorule, wv_dark" ], "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "lorule", "x": 1425, "y": 545, "badge_size": 40}]},
+  {"name":"Ku's Domain Portal","sections":[{"hosted_item": "portal_kus_domain", "name": "Dark Ruins", "access_rules": [ "{}", "merge, portal_dark_ruins_pillar", "merge, portal_dark_ruins_se", "merge, portal_waterfall_lorule, flippers", "$warpLorule, wv_dark" ], "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "lorule", "x": 1850, "y": 687, "badge_size": 40}]},
+  {"name":"Dark Pillar Portal","sections":[{"hosted_item": "portal_dark_ruins_pillar", "name": "Dark Ruins", "access_rules": [ "{}", "merge, portal_kus_domain", "merge, portal_dark_ruins_se", "merge, portal_waterfall_lorule, flippers", "$warpLorule, wv_dark" ], "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "lorule", "x": 1401, "y": 1099, "badge_size": 40}]},
+  {"name":"Dark Ruins SE Portal","sections":[{"hosted_item": "portal_dark_ruins_se", "name": "Dark Ruins", "access_rules": [ "{}", "merge, portal_dark_ruins_pillar, bombs", "merge, portal_kus_domain, bombs", "merge, portal_waterfall_lorule, flippers, bombs", "$warpLorule, wv_dark, bombs" ], "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "lorule", "x": 1803, "y": 1313, "badge_size": 40}]},
+  {"name":"Lorule Waterfall Portal","sections":[{"hosted_item": "portal_waterfall_lorule", "name": "Dark Ruins", "access_rules": [ "{}", "merge, portal_dark_ruins_pillar", "merge, portal_dark_ruins_se", "merge, portal_kus_domain", "$warpLorule, wv_dark" ], "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "lorule", "x": 1425, "y": 545, "badge_size": 40}]},
 
   // Turtle Rock
-  {"name":"Lorule Lake Portal","sections":[{"hosted_item": "portal_lake_lorule", "name": "", "access_rules": [ "{}", "[glitched], merge, $glitched_access_dark_ruins, $boost", "[advanced], merge, $advanced_access_dark_ruins, $boost", "[hell], merge, $hell_access_dark_ruins, $boost", "merge, portal_river_lorule, flippers", "merge, portal_lorule_hotfoot, flippers", "[advanced], merge, portal_lorule_hotfoot, $fakeFlippers", "[hell], merge, portal_lorule_hotfoot, $beeFakeFlippers", "$warpLorule, wv_turtle, flippers" ], "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "lorule", "x": 1327, "y": 1845, "badge_size": 40}]},
-  {"name":"Lorule River Portal","sections":[{"hosted_item": "portal_river_lorule", "name": "", "access_rules": [ "{}", "merge, portal_lake_lorule, flippers", "merge, portal_lorule_hotfoot, flippers", "[advanced], merge, portal_lorule_hotfoot, $fakeFlippers", "[hell], merge, portal_lorule_hotfoot, $beeFakeFlippers", "$warpLorule, wv_turtle, flippers" ], "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "lorule", "x": 1611, "y": 1410, "badge_size": 40}]},
-  {"name":"Lorule Hotfoot Portal","sections":[{"hosted_item": "portal_lorule_hotfoot", "name": "", "access_rules": [ "{}", "merge, portal_lake_lorule, flippers", "merge, portal_river_lorule, flippers", "[advanced], merge, portal_lorule_hotfoot, $fakeFlippers", "[hell], merge, portal_lorule_hotfoot, $beeFakeFlippers", "$warpLorule, wv_turtle, flippers" ], "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "lorule", "x": 1895, "y": 1535, "badge_size": 40}]},
+  {"name":"Lorule Lake Portal","sections":[{"hosted_item": "portal_lake_lorule", "name": "Turtle Rock Area", "access_rules": [ "{}", "[glitched], merge, $glitched_access_dark_ruins, $boost", "[advanced], merge, $advanced_access_dark_ruins, $boost", "[hell], merge, $hell_access_dark_ruins, $boost", "merge, portal_river_lorule, flippers", "merge, portal_lorule_hotfoot, flippers", "[advanced], merge, portal_lorule_hotfoot, $fakeFlippers", "[hell], merge, portal_lorule_hotfoot, $beeFakeFlippers", "$warpLorule, wv_turtle, flippers" ], "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "lorule", "x": 1327, "y": 1845, "badge_size": 40}]},
+  {"name":"Lorule River Portal","sections":[{"hosted_item": "portal_river_lorule", "name": "Turtle Rock Area", "access_rules": [ "{}", "merge, portal_lake_lorule, flippers", "merge, portal_lorule_hotfoot, flippers", "[advanced], merge, portal_lorule_hotfoot, $fakeFlippers", "[hell], merge, portal_lorule_hotfoot, $beeFakeFlippers", "$warpLorule, wv_turtle, flippers" ], "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "lorule", "x": 1611, "y": 1410, "badge_size": 40}]},
+  {"name":"Lorule Hotfoot Portal","sections":[{"hosted_item": "portal_lorule_hotfoot", "name": "Turtle Rock Area", "access_rules": [ "{}", "merge, portal_lake_lorule, flippers", "merge, portal_river_lorule, flippers", "[advanced], merge, portal_lorule_hotfoot, $fakeFlippers", "[hell], merge, portal_lorule_hotfoot, $beeFakeFlippers", "$warpLorule, wv_turtle, flippers" ], "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "lorule", "x": 1895, "y": 1535, "badge_size": 40}]},
 
 
 
@@ -135,7 +135,14 @@
         ]
       }
     ],
-    "map_locations": [{ "map": "lorule", "x": 1625, "y": 83, "badge_size": 40 }]
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 1625,
+        "y": 83,
+        "badge_size": 40
+      }
+    ]
   },
   {"name":"Lorule Rosso's Ore Mine Portal","sections":[{"hosted_item": "portal_rom_lorule", "name": "", "access_rules": [ "{}" ], "visibility_rules": ["portal_shuffle"]}], "map_locations": [{"map": "lorule", "x": 1478, "y": 360, "badge_size": 40}]}
 ]

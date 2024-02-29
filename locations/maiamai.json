@@ -2258,7 +2258,7 @@
         ],
         "children": [
           {
-            "name": "Lorule Lake",
+            "name": "Near Lake Shop",
             "map_locations": [
               {
                 "map": "lorule",
@@ -2269,7 +2269,7 @@
             ],
             "sections": [
               {
-                "name": "Near Lake Shop",
+                "name": "Turtle Rock Area",
                 "item_count": 1,
                 "access_rules": [
                   "not_portal_shuffle, quake",
@@ -2291,7 +2291,7 @@
             ]
           },
           {
-            "name": "Lorule Lake",
+            "name": "Under SW Big Rock",
             "map_locations": [
               {
                 "map": "lorule",
@@ -2302,7 +2302,7 @@
             ],
             "sections": [
               {
-                "name": "Under SW Big Rock",
+                "name": "Turtle Rock Area",
                 "item_count": 1,
                 //"capture_item": true,
                 "visibility_rules": [
@@ -2325,7 +2325,7 @@
             ]
           },
           {
-            "name": "Lorule Lake",
+            "name": "Stuck to SE Wall",
             "map_locations": [
               {
                 "map": "lorule",
@@ -2336,7 +2336,7 @@
             ],
             "sections": [
               {
-                "name": "Stuck to SE Wall",
+                "name": "Turtle Rock Area",
                 "item_count": 1,
                 "access_rules": [
                   "not_portal_shuffle, quake",
@@ -2358,7 +2358,7 @@
             ]
           },
           {
-            "name": "Lorule Lake",
+            "name": "East Ledge Skull",
             "map_locations": [
               {
                 "map": "lorule",
@@ -2369,7 +2369,7 @@
             ],
             "sections": [
               {
-                "name": "East Ledge Skull",
+                "name": "Turtle Rock Area",
                 "item_count": 1,
                 "access_rules": [
                   "not_portal_shuffle, quake",
@@ -2391,7 +2391,7 @@
             ]
           },
           {
-            "name": "Lorule Lake",
+            "name": "Lake Rupee Ring",
             "map_locations": [
               {
                 "map": "lorule",
@@ -2402,7 +2402,7 @@
             ],
             "sections": [
               {
-                "name": "Lake Rupee Ring",
+                "name": "Turtle Rock Area",
                 "item_count": 1,
                 //"capture_item": true,
                 "visibility_rules": [

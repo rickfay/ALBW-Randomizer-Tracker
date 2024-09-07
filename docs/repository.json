@@ -5,7 +5,7 @@
       "name": "[BETA] ALBW Randomizer (v0.4) Tracker",
       "author": "RickWithAnH",
       "game_name": "The Legend of Zelda: A Link Between Worlds",
-      "version": "4.0.1",
+      "version": "4.0.2",
       "required_app_version": "2.3.8.19",
       "uid": "rickwithanh_albwr_tracker_beta",
       "flags": [ "map", "pins", "chathud" ],

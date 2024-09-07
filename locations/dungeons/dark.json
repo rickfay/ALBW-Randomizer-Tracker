@@ -22,7 +22,7 @@
         ],
         "sections": [
           {
-            "name": "1F Right Pit",
+            "name": "(1F) Right Pit",
             "item_count": 1,
             "access_rules": [
               "bombs"
@@ -47,7 +47,7 @@
             ],
             "sections": [
               {
-                "name": "1F Left Pit",
+                "name": "(1F) Left Pit",
                 //"capture_item": true,
                 "item_count": 1
               }
@@ -64,7 +64,7 @@
             ],
             "sections": [
               {
-                "name": "1F Switches Chest",
+                "name": "(1F) Switch Puzzle",
                 "item_count": 1
               }
             ]
@@ -80,7 +80,7 @@
             ],
             "sections": [
               {
-                "name": "1F Hidden Upper",
+                "name": "(1F) Hidden Room (Upper)",
                 "access_rules": [
                   "bombs"
                 ],
@@ -99,7 +99,7 @@
             ],
             "sections": [
               {
-                "name": "1F Hidden Lower",
+                "name": "(1F) Hidden Room (Lower)",
                 "item_count": 1
               }
             ]
@@ -115,7 +115,7 @@
             ],
             "sections": [
               {
-                "name": "1F Fall Chest",
+                "name": "(1F) Fall From 2F",
                 "access_rules": [
                   "bombs",
                   "hammer"
@@ -135,7 +135,7 @@
             ],
             "sections": [
               {
-                "name": "2F Big Chest",
+                "name": "(2F) Big Chest (Hidden)",
                 "chest_unopened_img": "images/chest_big_unopened.png",
                 "chest_opened_img": "images/chest_big_opened.png",
                 "access_rules": [
@@ -156,7 +156,7 @@
             ],
             "sections": [
               {
-                "name": "2F East Chest",
+                "name": "(2F) Alcove",
                 "access_rules": [
                   "merge"
                 ],
@@ -175,7 +175,7 @@
             ],
             "sections": [
               {
-                "name": "B1 Center Fall",
+                "name": "(B1) Fall From 1F",
                 //"capture_item": true,
                 "access_rules": [
                   //"{}",
@@ -197,7 +197,7 @@
             ],
             "sections": [
               {
-                "name": "B1 East Fall",
+                "name": "(B1) Helmasaur Room (Fall)",
                 "access_rules": [
                   "bombs",
                   "hammer"
@@ -217,7 +217,7 @@
             ],
             "sections": [
               {
-                "name": "B1 North East",
+                "name": "(B1) Helmasaur Room",
                 //"capture_item": true,
                 "item_count": 1
               }
@@ -234,7 +234,7 @@
             ],
             "sections": [
               {
-                "name": "B1 Maze Room",
+                "name": "(B1) Glow-in-the-Dark Maze",
                 "access_rules": [
                   "merge"
                 ],
@@ -253,7 +253,7 @@
             ],
             "sections": [
               {
-                "name": "B1 Big Chest",
+                "name": "(B1) Bomb Bowling",
                 "chest_unopened_img": "images/chest_big_unopened.png",
                 "chest_opened_img": "images/chest_big_opened.png",
                 "access_rules": [

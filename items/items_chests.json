@@ -1,75 +1,68 @@
 [
   // Mother Maiamai
+//  "chest_unopened_img": "images/checks/chest_small_unopened.png",
+//  "chest_opened_img": "images/checks/chest_small_opened.png",
   {
-    "name": "Maiamai Ice Rod",
+    "name": "Maiamai Bow Upgrade",
     "type": "toggle",
-    "img": "images/items/irod.png",
-    "disabled_img": "images/items/irod.png",
-    "disabled_img_mods": "@disabled",
-    "codes": "maiamai_ice_rod"
-  },
-  {
-    "name": "Maiamai Hookshot",
-    "type": "toggle",
-    "img": "images/items/hookshot.png",
-    "disabled_img": "images/items/hookshot.png",
-    "disabled_img_mods": "@disabled",
-    "codes": "maiamai_hookshot"
-  },
-  {
-    "name": "Maiamai Tornado Rod",
-    "type": "toggle",
-    "img": "images/items/trod.png",
-    "disabled_img": "images/items/trod.png",
-    "disabled_img_mods": "@disabled",
-    "codes": "maiamai_tornado_rod"
-  },
-  {
-    "name": "Maiamai Bombs",
-    "type": "toggle",
-    "img": "images/items/bombs.png",
-    "disabled_img": "images/items/bombs.png",
-    "disabled_img_mods": "@disabled",
-    "codes": "maiamai_bombs"
-  },
-  {
-    "name": "Maiamai Bow",
-    "type": "toggle",
-    "img": "images/items/bow.png",
-    "disabled_img": "images/items/bow.png",
-    "disabled_img_mods": "@disabled",
+    "img": "images/items/framed_bow.png",
+    "loop": true,
     "codes": "maiamai_bow"
   },
   {
-    "name": "Maiamai Sand Rod",
+    "name": "Maiamai Boomerang Upgrade",
     "type": "toggle",
-    "img": "images/items/srod.png",
-    "disabled_img": "images/items/srod.png",
-    "disabled_img_mods": "@disabled",
-    "codes": "maiamai_sand_rod"
-  },
-  {
-    "name": "Maiamai Hammer",
-    "type": "toggle",
-    "img": "images/items/hammer.png",
-    "disabled_img": "images/items/hammer.png",
-    "disabled_img_mods": "@disabled",
-    "codes": "maiamai_hammer"
-  },
-  {
-    "name": "Maiamai Boomerang",
-    "type": "toggle",
-    "img": "images/items/boomerang.png",
-    "disabled_img": "images/items/boomerang.png",
-    "disabled_img_mods": "@disabled",
+    "img": "images/items/framed_boomerang.png",
+    "loop": true,
     "codes": "maiamai_boomerang"
   },
   {
-    "name": "Maiamai Fire Rod",
+    "name": "Maiamai Hookshot Upgrade",
     "type": "toggle",
-    "img": "images/items/frod.png",
-    "disabled_img": "images/items/frod.png",
-    "disabled_img_mods": "@disabled",
+    "img": "images/items/framed_hookshot.png",
+    "loop": true,
+    "codes": "maiamai_hookshot"
+  },
+  {
+    "name": "Maiamai Hammer Upgrade",
+    "type": "toggle",
+    "img": "images/items/framed_hammer.png",
+    "loop": true,
+    "codes": "maiamai_hammer"
+  },
+  {
+    "name": "Maiamai Bombs Upgrade",
+    "type": "toggle",
+    "img": "images/items/framed_bombs.png",
+    "loop": true,
+    "codes": "maiamai_bombs"
+  },
+  {
+    "name": "Maiamai Fire Rod Upgrade",
+    "type": "toggle",
+    "img": "images/items/framed_frod.png",
+    "loop": true,
     "codes": "maiamai_fire_rod"
+  },
+  {
+    "name": "Maiamai Ice Rod Upgrade",
+    "type": "toggle",
+    "img": "images/items/framed_irod.png",
+    "loop": true,
+    "codes": "maiamai_ice_rod"
+  },
+  {
+    "name": "Maiamai Tornado Rod Upgrade",
+    "type": "toggle",
+    "img": "images/items/framed_trod.png",
+    "loop": true,
+    "codes": "maiamai_tornado_rod"
+  },
+  {
+    "name": "Maiamai Sand Rod Upgrade",
+    "type": "toggle",
+    "img": "images/items/framed_srod.png",
+    "loop": true,
+    "codes": "maiamai_sand_rod"
   }
 ]

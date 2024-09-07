@@ -58,7 +58,7 @@
         ],
         "sections": [
           {
-            "name": "Zelda's Throne",
+            "name": "Throne",
             "item_count": 1,
             "access_rules": [
               "msword, impa",

@@ -24,7 +24,7 @@
         ],
         "sections": [
           {
-            "name": "1F Bubble Room",
+            "name": "(1F) Fire Bubbles",
             "item_count": 1,
             "access_rules": [
               "merge, $fire_enemy"
@@ -43,12 +43,8 @@
         ],
         "sections": [
           {
-            "name": "1F NE Room",
-            "item_count": 1,
-            "access_rules": [
-              "merge",
-              "[hard]"
-            ]
+            "name": "(1F) Switch Room\n(may need to die to escape)",
+            "item_count": 1
           }
         ]
       },
@@ -63,7 +59,7 @@
         ],
         "sections": [
           {
-            "name": "1F Torch Chest",
+            "name": "(1F) Torches",
             "item_count": 1,
             "access_rules": [
               "$fire"
@@ -82,7 +78,7 @@
         ],
         "sections": [
           {
-            "name": "1F Block Room",
+            "name": "(1F) West Room",
             "item_count": 1,
             "access_rules": [
               "merge",
@@ -102,7 +98,7 @@
         ],
         "sections": [
           {
-            "name": "1F Block Room (SW)",
+            "name": "(1F) West Room Secret",
             "item_count": 1,
             "access_rules": [
               "{csmc}",
@@ -122,7 +118,7 @@
         ],
         "sections": [
           {
-            "name": "2F Narrow Ledge",
+            "name": "(2F) Narrow Ledge",
             //"capture_item": true,
             "access_rules": [
               //"{$hog2F}",
@@ -146,7 +142,7 @@
         ],
         "sections": [
           {
-            "name": "2F Fire Ring",
+            "name": "(2F) Fire Ring",
             "access_rules": [
               "$hog2F, merge"
             ],
@@ -166,7 +162,7 @@
         ],
         "sections": [
           {
-            "name": "2F Big Chest",
+            "name": "(2F) Big Chest",
             "item_count": 1,
             "access_rules": [
               "$hog2F"
@@ -185,7 +181,7 @@
         ],
         "sections": [
           {
-            "name": "3F Bubble Room",
+            "name": "(3F) Fire Bubbles",
             "item_count": 1,
             "access_rules": [
               "{csmc, $hog3F}",
@@ -205,7 +201,7 @@
         ],
         "sections": [
           {
-            "name": "3F Wind Chest",
+            "name": "(3F) Rat Room",
             "item_count": 1,
             "access_rules": [
               "{csmc, glitched, $hog2F}",

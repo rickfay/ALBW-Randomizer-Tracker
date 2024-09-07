@@ -20,7 +20,7 @@
         ],
         "sections": [
           {
-            "name": "1F Entrance",
+            "name": "(1F) Entrance",
             "item_count": 1,
             "access_rules": [
               "srod"
@@ -39,7 +39,7 @@
         ],
         "sections": [
           {
-            "name": "1F Sand Island",
+            "name": "(1F) Sand Room (North)",
             "item_count": 1,
             "access_rules": [
               "srod, $switch, $attack",
@@ -59,7 +59,7 @@
         ],
         "sections": [
           {
-            "name": "1F West Middle",
+            "name": "(1F) Sand Room (South)",
             "item_count": 1,
             "access_rules": [
               "srod, $switch, $attack",
@@ -79,7 +79,7 @@
         ],
         "sections": [
           {
-            "name": "1F Sand Controls",
+            "name": "(1F) Sand Switch Room",
             "item_count": 1,
             "access_rules": [
               "srod, $switch, $attack",
@@ -99,7 +99,7 @@
         ],
         "sections": [
           {
-            "name": "1F Miniboss Room",
+            "name": "(1F) Behind Rocks",
             "item_count": 1,
             "access_rules": [
               "{csmc, srod, $switch}",
@@ -121,7 +121,7 @@
         ],
         "sections": [
           {
-            "name": "1F Big Chest",
+            "name": "(1F) Big Chest (Behind Wall)",
             "item_count": 1,
             "access_rules": [
               "{csmc, srod}",
@@ -142,7 +142,7 @@
         ],
         "sections": [
           {
-            "name": "2F Center Room",
+            "name": "(2F) Beamos Room",
             "item_count": 1,
             "access_rules": [
               "$dp2F",
@@ -163,7 +163,7 @@
         ],
         "sections": [
           {
-            "name": "2F W Big Rock",
+            "name": "(2F) Under Rock (Left)",
             "item_count": 1,
             "access_rules": [
               "$dp2F",
@@ -184,7 +184,7 @@
         ],
         "sections": [
           {
-            "name": "2F E Big Rock",
+            "name": "(2F) Under Rock (Right)",
             "item_count": 1,
             "access_rules": [
               "$dp2F",
@@ -205,7 +205,7 @@
         ],
         "sections": [
           {
-            "name": "2F Big Chest",
+            "name": "(2F) Big Chest (Puzzle)",
             "item_count": 1,
             "access_rules": [
               "$dp2F",
@@ -226,7 +226,7 @@
         ],
         "sections": [
           {
-            "name": "2F Below Big Chest",
+            "name": "(2F) Red/Blue Switches",
             "item_count": 1,
             "access_rules": [
               "$dp2F",
@@ -247,7 +247,7 @@
         ],
         "sections": [
           {
-            "name": "2F NE Big Rock",
+            "name": "(2F) Under Rock (Ball Room)",
             "item_count": 1,
             "access_rules": [
               "$dp2F",
@@ -268,7 +268,7 @@
         ],
         "sections": [
           {
-            "name": "2F Leever Room",
+            "name": "(2F) Leever Room",
             "item_count": 1,
             "access_rules": [
               "$dp2F",
@@ -289,7 +289,7 @@
         ],
         "sections": [
           {
-            "name": "3F Behind Sand",
+            "name": "(3F) Behind Falling Sand",
             "item_count": 1,
             "access_rules": [
               "$dp2F",
@@ -310,7 +310,7 @@
         ],
         "sections": [
           {
-            "name": "3F Gimos Chest",
+            "name": "(3F) Armos Room",
             "item_count": 1,
             "access_rules": [
               "$dp2F",
@@ -366,11 +366,11 @@
             "name": "Zaganaga",
             "item_count": 1,
             "access_rules": [
-              "not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, msword",
-              "not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch",
+              "not_cracksanity, merge, quake, srod, titansmitt, $bawbs, msword",
+              "not_cracksanity, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch",
 
-              "portal_shuffle, merge, portal_zaganaga, srod, msword",
-              "portal_shuffle, merge, portal_zaganaga, srod, [hard], $attack",
+              "cracksanity, merge, crack_zaganaga, srod, msword",
+              "cracksanity, merge, crack_zaganaga, srod, [hard], $attack",
 
               "[advanced], $advanced_misery_mire_oob, boots",
               "[advanced], $advanced_misery_mire_oob, srod, $attack",
@@ -380,16 +380,16 @@
               "[hell], $hell_misery_mire_oob, msword"
             ]
           },
-          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": [ "not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, msword", "not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "portal_shuffle, merge, portal_zaganaga, srod, msword", "portal_shuffle, merge, portal_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword" ], "visibility_rules": [ "label_power_dp" ]},
-          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, msword", "not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "portal_shuffle, merge, portal_zaganaga, srod, msword", "portal_shuffle, merge, portal_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_wisdom_dp"]},
-          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, msword", "not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "portal_shuffle, merge, portal_zaganaga, srod, msword", "portal_shuffle, merge, portal_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_courage_dp"]},
-          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, msword", "not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "portal_shuffle, merge, portal_zaganaga, srod, msword", "portal_shuffle, merge, portal_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_gulley_dp"]},
-          {"name": "Oren", "hosted_item": "oren", "access_rules": ["not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, msword", "not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "portal_shuffle, merge, portal_zaganaga, srod, msword", "portal_shuffle, merge, portal_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_oren_dp"]},
-          {"name": "Seres", "hosted_item": "seres", "access_rules": ["not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, msword", "not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "portal_shuffle, merge, portal_zaganaga, srod, msword", "portal_shuffle, merge, portal_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_seres_dp"]},
-          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, msword", "not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "portal_shuffle, merge, portal_zaganaga, srod, msword", "portal_shuffle, merge, portal_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_osfala_dp"]},
-          {"name": "Impa", "hosted_item": "impa", "access_rules": ["not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, msword", "not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "portal_shuffle, merge, portal_zaganaga, srod, msword", "portal_shuffle, merge, portal_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_impa_dp"]},
-          {"name": "Irene", "hosted_item": "irene", "access_rules": ["not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, msword", "not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "portal_shuffle, merge, portal_zaganaga, srod, msword", "portal_shuffle, merge, portal_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_irene_dp"]},
-          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, msword", "not_portal_shuffle, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "portal_shuffle, merge, portal_zaganaga, srod, msword", "portal_shuffle, merge, portal_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_rosso_dp"]}
+          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": [ "not_cracksanity, merge, quake, srod, titansmitt, $bawbs, msword", "not_cracksanity, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "cracksanity, merge, crack_zaganaga, srod, msword", "cracksanity, merge, crack_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword" ], "visibility_rules": [ "label_power_dp" ]},
+          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["not_cracksanity, merge, quake, srod, titansmitt, $bawbs, msword", "not_cracksanity, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "cracksanity, merge, crack_zaganaga, srod, msword", "cracksanity, merge, crack_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_wisdom_dp"]},
+          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["not_cracksanity, merge, quake, srod, titansmitt, $bawbs, msword", "not_cracksanity, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "cracksanity, merge, crack_zaganaga, srod, msword", "cracksanity, merge, crack_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_courage_dp"]},
+          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["not_cracksanity, merge, quake, srod, titansmitt, $bawbs, msword", "not_cracksanity, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "cracksanity, merge, crack_zaganaga, srod, msword", "cracksanity, merge, crack_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_gulley_dp"]},
+          {"name": "Oren", "hosted_item": "oren", "access_rules": ["not_cracksanity, merge, quake, srod, titansmitt, $bawbs, msword", "not_cracksanity, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "cracksanity, merge, crack_zaganaga, srod, msword", "cracksanity, merge, crack_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_oren_dp"]},
+          {"name": "Seres", "hosted_item": "seres", "access_rules": ["not_cracksanity, merge, quake, srod, titansmitt, $bawbs, msword", "not_cracksanity, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "cracksanity, merge, crack_zaganaga, srod, msword", "cracksanity, merge, crack_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_seres_dp"]},
+          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["not_cracksanity, merge, quake, srod, titansmitt, $bawbs, msword", "not_cracksanity, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "cracksanity, merge, crack_zaganaga, srod, msword", "cracksanity, merge, crack_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_osfala_dp"]},
+          {"name": "Impa", "hosted_item": "impa", "access_rules": ["not_cracksanity, merge, quake, srod, titansmitt, $bawbs, msword", "not_cracksanity, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "cracksanity, merge, crack_zaganaga, srod, msword", "cracksanity, merge, crack_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_impa_dp"]},
+          {"name": "Irene", "hosted_item": "irene", "access_rules": ["not_cracksanity, merge, quake, srod, titansmitt, $bawbs, msword", "not_cracksanity, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "cracksanity, merge, crack_zaganaga, srod, msword", "cracksanity, merge, crack_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_irene_dp"]},
+          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["not_cracksanity, merge, quake, srod, titansmitt, $bawbs, msword", "not_cracksanity, merge, quake, srod, titansmitt, $bawbs, [hard], $attack, $switch", "cracksanity, merge, crack_zaganaga, srod, msword", "cracksanity, merge, crack_zaganaga, srod, [hard], $attack", "[advanced], $advanced_misery_mire_oob, boots", "[advanced], $advanced_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, boots", "[hell], $hell_misery_mire_oob, srod, $attack", "[hell], $hell_misery_mire_oob, bow", "[hell], $hell_misery_mire_oob, msword"], "visibility_rules": ["label_rosso_dp"]}
         ]
       }
     ]

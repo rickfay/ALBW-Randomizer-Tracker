@@ -28,7 +28,7 @@
         ],
         "sections": [
           {
-            "name": "1F Merge Chest",
+            "name": "(1F) Merge Chest",
             "item_count": 1,
             "access_rules": [
               "merge"
@@ -47,7 +47,7 @@
         ],
         "sections": [
           {
-            "name": "1F Left Door Chest",
+            "name": "(1F) Left Door Chest",
             "item_count": 1,
             "access_rules": [
               "{csmc}",
@@ -73,7 +73,7 @@
         ],
         "sections": [
           {
-            "name": "1F Popo Room",
+            "name": "(1F) Popo Room",
             "item_count": 1,
             "access_rules": [
               "$attack"
@@ -92,7 +92,7 @@
         ],
         "sections": [
           {
-            "name": "1F Secret Room",
+            "name": "(1F) Secret Room",
             "item_count": 1,
             "access_rules": [
               "$attack"
@@ -111,7 +111,7 @@
         ],
         "sections": [
           {
-            "name": "1F Switch Room",
+            "name": "(1F) Switch Room",
             "item_count": 1,
             "access_rules": [
               "{csmc}",
@@ -137,7 +137,7 @@
         ],
         "sections": [
           {
-            "name": "2F Ball Room",
+            "name": "(2F) Ball Room",
             "item_count": 1,
             "access_rules": [
               "$attack"
@@ -156,7 +156,7 @@
         ],
         "sections": [
           {
-            "name": "2F Defeat Popos",
+            "name": "(2F) Defeat Popos",
             "item_count": 1,
             "access_rules": [
               "$attack"
@@ -175,7 +175,7 @@
         ],
         "sections": [
           {
-            "name": "2F Switch Room",
+            "name": "(2F) Switch Room",
             "item_count": 1,
             "access_rules": [
               "bow",
@@ -201,7 +201,7 @@
         ],
         "sections": [
           {
-            "name": "2F Big Chest",
+            "name": "(2F) Big Chest",
             "item_count": 1,
             "access_rules": [
               "$attack"
@@ -214,7 +214,6 @@
         "map_locations": [
           {
             "map": "ep3F",
-            "size": 10,
             "x": 88,
             "y": 76
           }
@@ -222,8 +221,7 @@
         "sections": [
           {
             "name": "Yuga",
-            //"capture_item": true,
-            "item_count": 1,
+            "item_count": 2,
             "access_rules": [
               "$yuga_eastern"
             ]
@@ -241,7 +239,7 @@
         ],
         "sections": [
           {
-            "name": "3F Escape Chest",
+            "name": "(3F) Escape Chest",
             "item_count": 1,
             "access_rules": [
               "$yuga_eastern, merge"
@@ -260,7 +258,7 @@
         ],
         "sections": [
           {
-            "name": "1F Escape Chest",
+            "name": "(1F) Escape Chest",
             "item_count": 1,
             "access_rules": [
               "$yuga_eastern, merge"

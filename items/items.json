@@ -480,69 +480,408 @@
     "allow_disabled": false,
     "stages": [
       {
-        "name": "0 Maiamai",
         "img": "images/items/maiamai.png",
         "img_mods": "@disabled",
         "codes": "maiamai"
       },
       {
-        "name": "10 Maiamai",
-        "img": "images/items/maiamai.png",
-        "img_mods": "overlay|images/numbers/maiamai_10.png",
+        "img": "images/numbers/maiamai__1.png"
+      },
+      {
+        "img": "images/numbers/maiamai__2.png"
+      },
+      {
+        "img": "images/numbers/maiamai__3.png"
+      },
+      {
+        "img": "images/numbers/maiamai__4.png"
+      },
+      {
+        "img": "images/numbers/maiamai__5.png"
+      },
+      {
+        "img": "images/numbers/maiamai__6.png"
+      },
+      {
+        "img": "images/numbers/maiamai__7.png"
+      },
+      {
+        "img": "images/numbers/maiamai__8.png"
+      },
+      {
+        "img": "images/numbers/maiamai__9.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_1_.png",
+        "img": "images/numbers/maiamai__0.png",
         "codes": "maiamai_10"
       },
       {
-        "name": "20 Maiamai",
-        "img": "images/items/maiamai.png",
-        "img_mods": "overlay|images/numbers/maiamai_20.png",
+        "img_mods": "overlay|images/numbers/maiamai_1_.png",
+        "img": "images/numbers/maiamai__1.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_1_.png",
+        "img": "images/numbers/maiamai__2.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_1_.png",
+        "img": "images/numbers/maiamai__3.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_1_.png",
+        "img": "images/numbers/maiamai__4.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_1_.png",
+        "img": "images/numbers/maiamai__5.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_1_.png",
+        "img": "images/numbers/maiamai__6.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_1_.png",
+        "img": "images/numbers/maiamai__7.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_1_.png",
+        "img": "images/numbers/maiamai__8.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_1_.png",
+        "img": "images/numbers/maiamai__9.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_2_.png",
+        "img": "images/numbers/maiamai__0.png",
         "codes": "maiamai_20"
       },
       {
-        "name": "30 Maiamai",
-        "img": "images/items/maiamai.png",
-        "img_mods": "overlay|images/numbers/maiamai_30.png",
+        "img_mods": "overlay|images/numbers/maiamai_2_.png",
+        "img": "images/numbers/maiamai__1.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_2_.png",
+        "img": "images/numbers/maiamai__2.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_2_.png",
+        "img": "images/numbers/maiamai__3.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_2_.png",
+        "img": "images/numbers/maiamai__4.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_2_.png",
+        "img": "images/numbers/maiamai__5.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_2_.png",
+        "img": "images/numbers/maiamai__6.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_2_.png",
+        "img": "images/numbers/maiamai__7.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_2_.png",
+        "img": "images/numbers/maiamai__8.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_2_.png",
+        "img": "images/numbers/maiamai__9.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_3_.png",
+        "img": "images/numbers/maiamai__0.png",
         "codes": "maiamai_30"
       },
       {
-        "name": "40 Maiamai",
-        "img": "images/items/maiamai.png",
-        "img_mods": "overlay|images/numbers/maiamai_40.png",
+        "img_mods": "overlay|images/numbers/maiamai_3_.png",
+        "img": "images/numbers/maiamai__1.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_3_.png",
+        "img": "images/numbers/maiamai__2.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_3_.png",
+        "img": "images/numbers/maiamai__3.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_3_.png",
+        "img": "images/numbers/maiamai__4.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_3_.png",
+        "img": "images/numbers/maiamai__5.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_3_.png",
+        "img": "images/numbers/maiamai__6.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_3_.png",
+        "img": "images/numbers/maiamai__7.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_3_.png",
+        "img": "images/numbers/maiamai__8.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_3_.png",
+        "img": "images/numbers/maiamai__9.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_4_.png",
+        "img": "images/numbers/maiamai__0.png",
         "codes": "maiamai_40"
       },
       {
-        "name": "50 Maiamai",
-        "img": "images/items/maiamai.png",
-        "img_mods": "overlay|images/numbers/maiamai_50.png",
+        "img_mods": "overlay|images/numbers/maiamai_4_.png",
+        "img": "images/numbers/maiamai__1.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_4_.png",
+        "img": "images/numbers/maiamai__2.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_4_.png",
+        "img": "images/numbers/maiamai__3.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_4_.png",
+        "img": "images/numbers/maiamai__4.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_4_.png",
+        "img": "images/numbers/maiamai__5.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_4_.png",
+        "img": "images/numbers/maiamai__6.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_4_.png",
+        "img": "images/numbers/maiamai__7.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_4_.png",
+        "img": "images/numbers/maiamai__8.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_4_.png",
+        "img": "images/numbers/maiamai__9.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_5_.png",
+        "img": "images/numbers/maiamai__0.png",
         "codes": "maiamai_50"
       },
       {
-        "name": "60 Maiamai",
-        "img": "images/items/maiamai.png",
-        "img_mods": "overlay|images/numbers/maiamai_60.png",
+        "img_mods": "overlay|images/numbers/maiamai_5_.png",
+        "img": "images/numbers/maiamai__1.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_5_.png",
+        "img": "images/numbers/maiamai__2.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_5_.png",
+        "img": "images/numbers/maiamai__3.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_5_.png",
+        "img": "images/numbers/maiamai__4.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_5_.png",
+        "img": "images/numbers/maiamai__5.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_5_.png",
+        "img": "images/numbers/maiamai__6.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_5_.png",
+        "img": "images/numbers/maiamai__7.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_5_.png",
+        "img": "images/numbers/maiamai__8.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_5_.png",
+        "img": "images/numbers/maiamai__9.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_6_.png",
+        "img": "images/numbers/maiamai__0.png",
         "codes": "maiamai_60"
       },
       {
-        "name": "70 Maiamai",
-        "img": "images/items/maiamai.png",
-        "img_mods": "overlay|images/numbers/maiamai_70.png",
+        "img_mods": "overlay|images/numbers/maiamai_6_.png",
+        "img": "images/numbers/maiamai__1.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_6_.png",
+        "img": "images/numbers/maiamai__2.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_6_.png",
+        "img": "images/numbers/maiamai__3.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_6_.png",
+        "img": "images/numbers/maiamai__4.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_6_.png",
+        "img": "images/numbers/maiamai__5.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_6_.png",
+        "img": "images/numbers/maiamai__6.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_6_.png",
+        "img": "images/numbers/maiamai__7.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_6_.png",
+        "img": "images/numbers/maiamai__8.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_6_.png",
+        "img": "images/numbers/maiamai__9.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_7_.png",
+        "img": "images/numbers/maiamai__0.png",
         "codes": "maiamai_70"
       },
       {
-        "name": "80 Maiamai",
-        "img": "images/items/maiamai.png",
-        "img_mods": "overlay|images/numbers/maiamai_80.png",
+        "img_mods": "overlay|images/numbers/maiamai_7_.png",
+        "img": "images/numbers/maiamai__1.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_7_.png",
+        "img": "images/numbers/maiamai__2.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_7_.png",
+        "img": "images/numbers/maiamai__3.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_7_.png",
+        "img": "images/numbers/maiamai__4.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_7_.png",
+        "img": "images/numbers/maiamai__5.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_7_.png",
+        "img": "images/numbers/maiamai__6.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_7_.png",
+        "img": "images/numbers/maiamai__7.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_7_.png",
+        "img": "images/numbers/maiamai__8.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_7_.png",
+        "img": "images/numbers/maiamai__9.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_8_.png",
+        "img": "images/numbers/maiamai__0.png",
         "codes": "maiamai_80"
       },
       {
-        "name": "90 Maiamai",
-        "img": "images/items/maiamai.png",
-        "img_mods": "overlay|images/numbers/maiamai_90.png",
+        "img_mods": "overlay|images/numbers/maiamai_8_.png",
+        "img": "images/numbers/maiamai__1.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_8_.png",
+        "img": "images/numbers/maiamai__2.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_8_.png",
+        "img": "images/numbers/maiamai__3.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_8_.png",
+        "img": "images/numbers/maiamai__4.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_8_.png",
+        "img": "images/numbers/maiamai__5.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_8_.png",
+        "img": "images/numbers/maiamai__6.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_8_.png",
+        "img": "images/numbers/maiamai__7.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_8_.png",
+        "img": "images/numbers/maiamai__8.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_8_.png",
+        "img": "images/numbers/maiamai__9.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_9_.png",
+        "img": "images/numbers/maiamai__0.png",
         "codes": "maiamai_90"
       },
       {
-        "name": "100 Maiamai",
-        "img": "images/items/maiamai.png",
-        "img_mods": "overlay|images/numbers/maiamai_100.png",
+        "img_mods": "overlay|images/numbers/maiamai_9_.png",
+        "img": "images/numbers/maiamai__1.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_9_.png",
+        "img": "images/numbers/maiamai__2.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_9_.png",
+        "img": "images/numbers/maiamai__3.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_9_.png",
+        "img": "images/numbers/maiamai__4.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_9_.png",
+        "img": "images/numbers/maiamai__5.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_9_.png",
+        "img": "images/numbers/maiamai__6.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_9_.png",
+        "img": "images/numbers/maiamai__7.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_9_.png",
+        "img": "images/numbers/maiamai__8.png"
+      },
+      {
+        "img_mods": "overlay|images/numbers/maiamai_9_.png",
+        "img": "images/numbers/maiamai__9.png"
+      },
+      {
+        "img": "images/numbers/maiamai_100.png",
         "codes": "maiamai_100"
       }
     ]
@@ -642,7 +981,7 @@
     "name": "Quake",
     "type": "toggle",
     "img": "images/items/quake.png",
-    "codes": "quake, quake_medallion, earthquake, portal, portals, fissure, fissures",
+    "codes": "quake, quake_medallion, earthquake, crack, cracks, fissure, fissures",
     "loop": true,
     "initial_active_state": false
   },
@@ -747,6 +1086,70 @@
     "img": "images/checks/shady_guy.png",
     "loop": true,
     "codes": "shadyguy"
+  },
+  {
+    "name": "Lamp Trial",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/events/trial_lamp_off.png",
+        "codes": "trial_lamp_off"
+      },
+      {
+        "img": "images/events/trial_lamp_on.png",
+        "codes": "trial_lamp"
+      }
+    ]
+  },
+  {
+    "name": "Hookshot Trial",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/events/trial_hook_off.png",
+        "codes": "trial_hook_off"
+      },
+      {
+        "img": "images/events/trial_hook_on.png",
+        "codes": "trial_hook"
+      }
+    ]
+  },
+  {
+    "name": "Bomb Trial",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/events/trial_bomb_off.png",
+        "codes": "trial_bomb_off"
+      },
+      {
+        "img": "images/events/trial_bomb_on.png",
+        "codes": "trial_bomb"
+      }
+    ]
+  },
+  {
+    "name": "Tile Trial",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/events/trial_tile_off.png",
+        "codes": "trial_tile_off"
+      },
+      {
+        "img": "images/events/trial_tile_on.png",
+        "codes": "trial_tile"
+      }
+    ]
   },
   {
     "name": "Shield",

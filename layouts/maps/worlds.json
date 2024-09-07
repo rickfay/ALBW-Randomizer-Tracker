@@ -16,6 +16,7 @@
                   "type": "container",
                   "h_alignment": "center",
                   "v_alignment": "top",
+                  "margin": "0,0,0,165",
                   "content": [
                     // Item Maps
                     {
@@ -28,8 +29,8 @@
                         "item_margin": 25,
                         "rows": [
                           [
-                            "map_hyrule_badged",
-                            "map_lorule_badged"
+                            "map_hyrule",
+                            "map_lorule"
                           ]
                         ]
                       }
@@ -62,7 +63,7 @@
                 {
                   "type": "container",
                   "v_alignment": "top",
-                  "margin": "0,0,0,75",
+                  "margin": "0,0,0,165",
                   "content": [
                     // Item Maps
                     {
@@ -75,10 +76,10 @@
                         "item_margin": 25,
                         "rows": [
                           [
-                            "map_hyrule_badged"
+                            "map_hyrule"
                           ],
                           [
-                            "map_lorule_badged"
+                            "map_lorule"
                           ]
                         ]
                       }

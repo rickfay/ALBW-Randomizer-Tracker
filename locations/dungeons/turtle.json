@@ -16,7 +16,7 @@
         ],
         "sections": [
           {
-            "name": "1F Center Switches",
+            "name": "(1F) Center",
             "item_count": 1,
             "access_rules": [
               "$enterTR",
@@ -37,7 +37,7 @@
         ],
         "sections": [
           {
-            "name": "1F Kill Flamolas",
+            "name": "(1F) Defeat Flamolas",
             "item_count": 1,
             "access_rules": [
               "$enterTR",
@@ -58,7 +58,7 @@
         ],
         "sections": [
           {
-            "name": "1F NE Ledge",
+            "name": "(1F) Northeast Ledge",
             //"capture_item": true,
             "item_count": 1,
             "access_rules": [
@@ -80,7 +80,7 @@
         ],
         "sections": [
           {
-            "name": "1F Miniboss Room",
+            "name": "(1F) Grate Chest",
             "item_count": 1,
             "access_rules": [
               "$enterTR",
@@ -101,7 +101,7 @@
         ],
         "sections": [
           {
-            "name": "1F SE Room",
+            "name": "(1F) Southeast Chest",
             "item_count": 1,
             "access_rules": [
               "$enterTR",
@@ -122,7 +122,7 @@
         ],
         "sections": [
           {
-            "name": "1F NW Room",
+            "name": "(1F) Northwest Room",
             //"capture_item": true,
             "item_count": 1,
             "access_rules": [
@@ -172,7 +172,7 @@
         ],
         "sections": [
           {
-            "name": "B1 Near Big Chest",
+            "name": "(B1) Grate Chest (Small)",
             "item_count": 1,
             "access_rules": [
               "$enterTR",
@@ -193,7 +193,7 @@
         ],
         "sections": [
           {
-            "name": "B1 North Big Chest",
+            "name": "(B1) Big Chest (Top)",
             "item_count": 1,
             "access_rules": [
               "$enterTR, $shielded_switch",
@@ -215,7 +215,7 @@
         ],
         "sections": [
           {
-            "name": "B1 Center Big Chest",
+            "name": "(B1) Big Chest (Center)",
             "item_count": 1,
             "access_rules": [
               "$enterTR, $shielded_switch",
@@ -237,7 +237,7 @@
         ],
         "sections": [
           {
-            "name": "B1 NE Room",
+            "name": "(B1) Northeast Room",
             //"capture_item": true,
             "item_count": 1,
             "access_rules": [
@@ -259,7 +259,7 @@
         ],
         "sections": [
           {
-            "name": "B1 Kill Wizrobes",
+            "name": "(B1) Platform",
             "item_count": 1,
             "access_rules": [
               "$enterTR",

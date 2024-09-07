@@ -1,12 +1,12 @@
--- Central Lorule
+-- Lorule Castle Area
 function access_central_lorule()
 
-    if notPortalShuffle() and has("merge") and hasAny({ "quake", "portal_hc" }) then
+    if notCracksanity() and has("merge") and hasAny({ "quake", "crack_hc" }) then
         return true
     end
 
-    if hasAll({ "portal_shuffle", "merge" }) then
-        if hasAny({ "portal_lc", "portal_vacant_house", "portal_left_lorule_paradox", "portal_right_lorule_paradox", "portal_swamp_pillar_lorule", "portal_thieves_town" }) then
+    if hasAll({ "cracksanity", "merge" }) then
+        if hasAny({ "crack_lc", "crack_vacant_house", "crack_left_lorule_paradox", "crack_right_lorule_paradox", "crack_swamp_pillar_lorule", "crack_thieves_town" }) then
             return true
         end
     end
@@ -22,7 +22,7 @@ function access_central_lorule()
     return false
 end
 
--- [Adv Glitched] Central Lorule
+-- [Adv Glitched] Lorule Castle Area
 function advanced_access_central_lorule()
     -- Mire SLZ to Swamp Area
     if access_misery_mire() and advanced_misery_mire_oob() then
@@ -31,7 +31,7 @@ function advanced_access_central_lorule()
     return false
 end
 
--- [Hell] Central Lorule
+-- [Hell] Lorule Castle Area
 function hell_access_central_lorule()
     if advanced_access_central_lorule() then
         return true
@@ -45,12 +45,12 @@ end
 
 -- Dark Ruins
 function access_dark_ruins()
-    if notPortalShuffle() and hasAll({ "merge", "quake" }) then
+    if notCracksanity() and hasAll({ "merge", "quake" }) then
         return true
     end
 
-    if hasAll({ "portal_shuffle", "merge" }) then
-        if hasAny({ "portal_dark_ruins_pillar", "portal_kus_domain", "portal_dark_ruins_se" }) or (hasAll({ "portal_waterfall_lorule", "flippers" })) then
+    if hasAll({ "cracksanity", "merge" }) then
+        if hasAny({ "crack_dark_ruins_pillar", "crack_kus_domain", "crack_dark_ruins_se" }) or (hasAll({ "crack_waterfall_lorule", "flippers" })) then
             return true
         end
     end
@@ -74,13 +74,13 @@ function glitched_access_dark_ruins()
     end
 
     -- From Turtle Rock
-    if hasAll({ "portal_shuffle", "portal_lorule_hotfoot", "scroll", "nicebombs" }) then
+    if hasAll({ "cracksanity", "crack_lorule_hotfoot", "scroll", "nicebombs" }) then
         return true
     end
-    if hasAll({ "portal_shuffle", "portal_lake_lorule", "flippers", "scroll", "nicebombs" }) then
+    if hasAll({ "cracksanity", "crack_lake_lorule", "flippers", "scroll", "nicebombs" }) then
         return true
     end
-    if hasAll({ "portal_shuffle", "portal_river_lorule", "flippers", "scroll", "nicebombs" }) then
+    if hasAll({ "cracksanity", "crack_river_lorule", "flippers", "scroll", "nicebombs" }) then
         return true
     end
     if weather_vane_lorule("wv_turtle") and hasAll({ "flippers", "scroll", "nicebombs" }) then
@@ -115,7 +115,7 @@ function hell_access_dark_ruins()
     end
 
     -- From Turtle Rock
-    if hasAll({ "portal_shuffle", "portal_lorule_hotfoot", "scroll", "bombs" }) then
+    if hasAll({ "cracksanity", "crack_lorule_hotfoot", "scroll", "bombs" }) then
         return true
     end
 
@@ -124,11 +124,11 @@ end
 
 -- Lorule Graveyard
 function access_lorule_graveyard()
-    if notPortalShuffle() and hasAll({ "merge", "quake" }) and attack() and has("lamp") then
+    if notCracksanity() and hasAll({ "merge", "quake" }) and attack() and has("lamp") then
         return true
     end
 
-    if hasAll({ "portal_shuffle", "merge" }) and hasAny({ "portal_philosopher", "portal_graveyard_lorule" }) then
+    if hasAll({ "cracksanity", "merge" }) and hasAny({ "crack_philosopher", "crack_graveyard_lorule" }) then
         return true
     end
 
@@ -141,7 +141,7 @@ end
 
 -- [Lampless] Lorule Graveyard
 function lampless_access_lorule_graveyard()
-    if notPortalShuffle() and hasAll({ "merge", "quake", "frod" }) then
+    if notCracksanity() and hasAll({ "merge", "quake", "frod" }) then
         return true
     end
     return false
@@ -149,11 +149,11 @@ end
 
 -- Skull Woods Area
 function access_skull_woods_area()
-    if notPortalShuffle() and hasAll({ "merge", "quake" }) then
+    if notCracksanity() and hasAll({ "merge", "quake" }) then
         return true
     end
 
-    if hasAll({ "portal_shuffle", "merge" }) and hasAny({ "portal_n-shaped_house", "portal_skull_woods_pillar", "portal_destroyed_house" }) then
+    if hasAll({ "cracksanity", "merge" }) and hasAny({ "crack_n-shaped_house", "crack_skull_woods_pillar", "crack_destroyed_house" }) then
         return true
     end
 
@@ -169,10 +169,10 @@ function access_turtleWV()
     if weather_vane_lorule("wv_turtle") then
         return true
     end
-    if hasAll({ "not_portal_shuffle", "flippers", "quake", "merge", }) then
+    if hasAll({ "not_cracksanity", "flippers", "quake", "merge", }) then
         return true
     end
-    if hasAll({ "portal_shuffle", "flippers", "irod", "merge" }) and hasAny({ "portal_lake_lorule", "portal_river_lorule", "portal_lorule_hotfoot" }) then
+    if hasAll({ "cracksanity", "flippers", "irod", "merge" }) and hasAny({ "crack_lake_lorule", "crack_river_lorule", "crack_lorule_hotfoot" }) then
         return true
     end
     return false
@@ -183,10 +183,10 @@ function advanced_access_turtleWV()
     if access_turtleWV() then
         return true
     end
-    if hasAll({ "not_portal_shuffle", "merge", "quake" }) and fakeFlippers() then
+    if hasAll({ "not_cracksanity", "merge", "quake" }) and fakeFlippers() then
         return true
     end
-    if hasAll({ "portal_shuffle", "merge" }) and has("portal_lorule_hotfoot") and fakeFlippers() then
+    if hasAll({ "cracksanity", "merge" }) and has("crack_lorule_hotfoot") and fakeFlippers() then
         return true
     end
     if advanced_access_dark_ruins() and fakeFlippers() then
@@ -200,10 +200,10 @@ function hell_access_turtleWV()
     if advanced_access_turtleWV() then
         return true
     end
-    if notPortalShuffle() and hasAll({ "merge", "quake" }) and beeFakeFlippers() then
+    if notCracksanity() and hasAll({ "merge", "quake" }) and beeFakeFlippers() then
         return true
     end
-    if hasAll({ "portal_shuffle" }) and has("portal_lorule_hotfoot") and beeFakeFlippers() then
+    if hasAll({ "cracksanity" }) and has("crack_lorule_hotfoot") and beeFakeFlippers() then
         return true
     end
     if hell_access_dark_ruins() and beeFakeFlippers() then
@@ -246,14 +246,14 @@ end
 
 -- Misery Mire
 function access_misery_mire()
-    if notPortalShuffle() and hasAll({ "merge", "quake" }) then
+    if notCracksanity() and hasAll({ "merge", "quake" }) then
         return true
     end
 
-    if hasAll({ "portal_shuffle", "merge" }) and
-            (hasAny({ "portal_mire_exit", "portal_mire_pillar_right", "portal_mire_north", "portal_mire_middle", "portal_mire_sw" }) or
-                    (hasAll({ "portal_mire_pillar_left", "flippers" })))
-            or has_mire_prize() then
+    if hasAll({ "cracksanity", "merge" }) and
+            (hasAny({ "crack_mire_exit", "crack_mire_pillar_right", "crack_mire_north", "crack_mire_middle", "crack_mire_sw" }) or
+                    (hasAll({ "crack_mire_pillar_left", "flippers" })))
+            or (has("crack_zaganaga") and has_mire_prize()) then
         return true
     end
 

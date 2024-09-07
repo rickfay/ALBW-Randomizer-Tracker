@@ -17,6 +17,15 @@
               "key": "item_grid"
             }
           },
+//          {
+//            "type": "group",
+//            "header": "Events",
+//            "dock": "top",
+//            "content": {
+//              "type": "layout",
+//              "key": "event_grid"
+//            }
+//          },
           {
             "type": "group",
             "header": "Settings",
@@ -50,11 +59,12 @@
               {
                 "type": "scroll",
                 "dock": "bottom",
-                "height": 85,
+                "height": 170,
                 "horizontal_scrollbar_visibility": "disabled",
                 "content": [
                   {
                     "type": "container",
+                    "margin": "0,85,0,0",
                     "h_alignment": "left",
                     "content": {
                       "type": "recentpins",

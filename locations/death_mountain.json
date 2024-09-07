@@ -15,7 +15,7 @@
         ],
         "sections": [
           {
-            "name": "Bomb Cave",
+            "name": "Blocked Cave",
             "access_rules": [
               "{csmc, $access_dm_west_base}",
               "$access_dm_west_base, merge, bombs",
@@ -42,10 +42,21 @@
             "name": "Fairy Cave",
             "access_rules": [
               "{csmc, $access_dm_west_base, merge}",
+              "{csmc, glitched, merge}",
+              "{csmc, glitched, $access_dm_west_top, $boom_hook_fire}",
+              "{csmc, advanced, $adv_glitched_access_dm_west_top, $boom_hook_fire}",
+              "{csmc, hell, $hell_glitched_access_dm_west_top, $boom_hook_fire}",
+
               "$access_dm_west_base, merge, $boulder",
               "[glitched], merge, $boulder",
+              "[glitched], $access_dm_west_top, nicebombs",
+              "[glitched], $access_dm_west_top, frod, hammer",
               "[glitched], $access_dm_west_top, $stun, $boulder",
+              "[advanced], $adv_glitched_access_dm_west_top, nicebombs",
+              "[advanced], $adv_glitched_access_dm_west_top, frod, hammer",
               "[advanced], $adv_glitched_access_dm_west_top, $stun, $boulder",
+              "[hell], $hell_access_dm_west_top, bombs",
+              "[hell], $hell_access_dm_west_top, frod, hammer",
               "[hell], $hell_access_dm_west_top, $stun, $boulder"
             ],
             "item_count": 1
@@ -53,7 +64,7 @@
         ]
       },
       {
-        "name": "Donkey Cave",
+        "name": "Death Mountain",
         "map_locations": [
           {
             "map": "hyrule",
@@ -63,19 +74,23 @@
         ],
         "sections": [
           {
-            "name": "Peg Chest",
+            "name": "Donkey Cave",
             "access_rules": [
               "{csmc, power_glove}",
-              "$access_dm_west_base, merge, hammer",
-              "[glitched], $access_dm_west_top, $stun, hammer",
-              "[advanced], $adv_glitched_access_dm_west_top, $stun, hammer",
-              "[hell], $hell_access_dm_west_top, $stun, hammer"
+              "{csmc, glitched, merge}",
+              "{csmc, $access_dm_west_top}",
+              "{csmc, advanced, $adv_glitched_access_dm_west_top}",
+              "{csmc, hell, $hell_glitched_access_dm_west_top}",
+
+              "$access_dm_west_top, hammer",
+              "[glitched], merge, hammer",
+              "[advanced], $adv_glitched_access_dm_west_top, hammer",
+              "[hell], $hell_access_dm_west_top, hammer"
             ],
             "item_count": 1
           }
         ]
       },
-
       {
         "name": "Death Mountain",
         "map_locations": [
@@ -87,7 +102,7 @@
         ],
         "sections": [
           {
-            "name": "Cave Left of Weather Vane",
+            "name": "Open Cave",
             "access_rules": [
               "$access_dm_west_base",
               "[glitched]"
@@ -108,7 +123,7 @@
         ],
         "sections": [
           {
-            "name": "Under West Rock",
+            "name": "Base Rock",
             "chest_unopened_img": "images/items/maiamai.png",
             "chest_opened_img": "images/items/maiamai_opened.png",
             "item_count": 1,
@@ -123,8 +138,6 @@
           }
         ]
       },
-
-
       {
         "name": "Death Mountain",
         "map_locations": [
@@ -136,7 +149,7 @@
         ],
         "sections": [
           {
-            "name": "Ledge Chest",
+            "name": "Donkey Cave Ledge",
             "access_rules": [
               "$access_dm_west_top",
               "[advanced], $adv_glitched_access_dm_west_top",
@@ -158,7 +171,7 @@
         ],
         "sections": [
           {
-            "name": "Near Ledge Chest",
+            "name": "West Ledge",
             "chest_unopened_img": "images/items/maiamai.png",
             "chest_opened_img": "images/items/maiamai_opened.png",
             "item_count": 1,
@@ -185,7 +198,7 @@
         ],
         "sections": [
           {
-            "name": "Third Cave Chest",
+            "name": "West Highest Cave",
             "access_rules": [
               "$access_dm_west_top",
               "[advanced], $adv_glitched_access_dm_west_top",
@@ -216,8 +229,6 @@
           }
         ]
       },
-
-
       {
         "name": "Death Mountain",
         "map_locations": [
@@ -229,7 +240,7 @@
         ],
         "sections": [
           {
-            "name": "Treasure Dungeon",
+            "name": "Hookshot Mini-Dungeon",
             "access_rules": [
               "$access_dm_east_top, merge, hookshot",
               "[advanced], $adv_glitched_access_dm_east_top, merge, hookshot"
@@ -250,7 +261,7 @@
         ],
         "sections": [
           {
-            "name": "Stuck to Treasure Dungeon",
+            "name": "Outside Hookshot Mini-Dungeon",
             "chest_unopened_img": "images/items/maiamai.png",
             "chest_opened_img": "images/items/maiamai_opened.png",
             "item_count": 1,
@@ -288,7 +299,7 @@
         ]
       },
       {
-        "name": "Bouldering Guy",
+        "name": "Death Mountain",
         "map_locations": [
           {
             "map": "hyrule",
@@ -298,7 +309,7 @@
         ],
         "sections": [
           {
-            "name": "Trade Premium Milk",
+            "name": "Bouldering Guy",
             "access_rules": [
               "$access_dm_east_top, merge, premium_milk",
               "[advanced], $adv_glitched_access_dm_east_top, premium_milk, merge",
@@ -321,7 +332,7 @@
         ],
         "sections": [
           {
-            "name": "Bouldering Maiamai",
+            "name": "Fire Cave Ledge",
             "chest_unopened_img": "images/items/maiamai.png",
             "chest_opened_img": "images/items/maiamai_opened.png",
             "item_count": 1,
@@ -338,7 +349,7 @@
         ]
       },
       {
-        "name": "Rosso's Ore Mine",
+        "name": "Death Mountain",
         "map_locations": [
           {
             "map": "hyrule",
@@ -349,7 +360,7 @@
         ],
         "sections": [
           {
-            "name": "Under Rock",
+            "name": "Rosso's Ore Mine",
             "chest_unopened_img": "images/items/maiamai.png",
             "chest_opened_img": "images/items/maiamai_opened.png",
             "item_count": 1,
@@ -364,12 +375,8 @@
           }
         ]
       },
-
-
-
-
       {
-        "name": "Floating Island",
+        "name": "Death Mountain",
         "map_locations": [
           {
             "map": "hyrule",
@@ -379,28 +386,26 @@
         ],
         "sections": [
           {
-            "name": "Floating Island Portal",
-            "hosted_item": "portal_hyfi",
+            "name": "Floating Island Crack",
+            "hosted_item": "crack_hyfi",
             "access_rules": [
-              "portal_hyfi",
-              "{}"
+              "crack_hyfi"
             ],
             "visibility_rules": [
-              "portal_shuffle"
+              "cracksanity"
             ]
           },
           {
             "name": "Floating Island",
             "access_rules": [
-              "portal_hyfi, merge",
-              "not_portal_shuffle, portal_lofi, merge, quake"
+              "crack_hyfi, merge",
+              "not_cracksanity, crack_lofi, merge, quake"
             ],
             //"capture_item": true,
             "item_count": 1
           }
         ]
       },
-
       {
         "name": "Lorule Death Mountain",
         "map_locations": [
@@ -432,7 +437,7 @@
         ],
         "sections": [
           {
-            "name": "West Ledge Chest",
+            "name": "Lorule Mountain W Ledge",
             "item_count": 1,
             "access_rules": [
               "$access_ldm_west, merge",
@@ -463,10 +468,7 @@
               "[glitched], $glitched_access_ldm_west, $attack, hammer",
               "[glitched], $glitched_access_ldm_west, $attack, trod"
             ],
-            "item_count": 1,
-            "visibility_rules": [
-              "minigames_enabled"
-            ]
+            "item_count": 1
           }
         ]
       },
@@ -482,7 +484,7 @@
         ],
         "sections": [
           {
-            "name": "West Skull",
+            "name": "Lorule Mountain W Skull",
             "chest_unopened_img": "images/items/maiamai.png",
             "chest_opened_img": "images/items/maiamai_opened.png",
             "item_count": 1,
@@ -509,7 +511,7 @@
         ],
         "sections": [
           {
-            "name": "Under NW Big Rock",
+            "name": "Lorule Mountain W Big Rock",
             "chest_unopened_img": "images/items/maiamai.png",
             "chest_opened_img": "images/items/maiamai_opened.png",
             "item_count": 1,
@@ -538,7 +540,7 @@
         ],
         "sections": [
           {
-            "name": "Under Bridge Big Rock",
+            "name": "Lorule Mountain E Big Rock",
             "chest_unopened_img": "images/items/maiamai.png",
             "chest_opened_img": "images/items/maiamai_opened.png",
             "item_count": 1,
@@ -554,8 +556,6 @@
           }
         ]
       },
-
-
       {
         "name": "Lorule Death Mountain",
         "map_locations": [
@@ -567,7 +567,7 @@
         ],
         "sections": [
           {
-            "name": "Behind Ice Gimos Trio",
+            "name": "Behind Ice Gimos",
             "access_rules": [
               "frod, $access_ldm_east_top",
               "[glitched], frod, $glitched_access_ldm_east_top",
@@ -588,7 +588,7 @@
         ],
         "sections": [
           {
-            "name": "East Cliff Chest",
+            "name": "Ice Cave Ledge",
             "access_rules": [
               "{csmc, $access_ldm_east_top}",
               "trod, merge, $access_ldm_east_top",
@@ -611,7 +611,7 @@
         ],
         "sections": [
           {
-            "name": "Stuck to SE Wall",
+            "name": "Lorule Mountain E Wall",
             "chest_unopened_img": "images/items/maiamai.png",
             "chest_opened_img": "images/items/maiamai_opened.png",
             "access_rules": [
@@ -639,7 +639,7 @@
         ],
         "sections": [
           {
-            "name": "East Cliff Skull",
+            "name": "Ice Cave Ledge",
             "chest_unopened_img": "images/items/maiamai.png",
             "chest_opened_img": "images/items/maiamai_opened.png",
             "access_rules": [
@@ -669,7 +669,7 @@
         ],
         "sections": [
           {
-            "name": "Stuck to Ice Ruins",
+            "name": "Outside Ice Ruins",
             "chest_unopened_img": "images/items/maiamai.png",
             "chest_opened_img": "images/items/maiamai_opened.png",
             "item_count": 1,

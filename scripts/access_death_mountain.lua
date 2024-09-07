@@ -1,5 +1,5 @@
 -- Death Mountain is such a convoluted mess that it gets its own file to lay out all its logic.
--- Every function should take into account the many entry points into the Death Mountain Area (vanilla, 5x WVs, 6x Portals)
+-- Every function should take into account the many entry points into the Death Mountain Area (vanilla, 5x WVs, 6x Cracks)
 
 -- Hyrule Death Mountain West Base
 function access_dm_west_base()
@@ -13,7 +13,7 @@ function access_dm_west_base()
     if weather_vane("wv_hera") then return true end
 
 
-    if notPortalShuffle() and hasAll({ "merge", "quake" }) then
+    if notCracksanity() and hasAll({ "merge", "quake" }) then
         -- Treacherous Tower Weather Vane
         if weather_vane_lorule("wv_treacherous_tower") then return true end
 
@@ -22,12 +22,12 @@ function access_dm_west_base()
         if has("hookshot") and (weather_vane_lorule("wv_death_lorule") or weather_vane_lorule("wv_ice")) then return true end
     end
 
-    if hasAll({ "portal_shuffle", "merge" }) then
+    if hasAll({ "cracksanity", "merge" }) then
         -- HyDeath West
-        if has("portal_dm_west") then return true end
+        if has("crack_dm_west") then return true end
 
         -- HyROM
-        if has("portal_rom") and has("hookshot") then return true end
+        if has("crack_rom") and has("hookshot") then return true end
     end
 
     return false
@@ -44,7 +44,7 @@ function access_dm_west_top()
     -- Hera Weather Vane
     if weather_vane("wv_hera") then return true end
 
-    if notPortalShuffle() and hasAll({ "merge", "quake" }) then
+    if notCracksanity() and hasAll({ "merge", "quake" }) then
         -- Treacherous Tower Weather Vane
         if weather_vane_lorule("wv_treacherous_tower") then return true end
 
@@ -53,12 +53,12 @@ function access_dm_west_top()
         if has("hookshot") and (weather_vane_lorule("wv_death_lorule") or weather_vane_lorule("wv_ice")) then return true end
     end
 
-    if hasAll({ "portal_shuffle", "merge" }) then
+    if hasAll({ "cracksanity", "merge" }) then
         -- HyDeath West
-        if has("portal_dm_west") then return true end
+        if has("crack_dm_west") then return true end
 
         -- HyROM
-        if hasAll({ "portal_rom", "hookshot" }) then return true end
+        if hasAll({ "crack_rom", "hookshot" }) then return true end
     end
 
     return false
@@ -70,7 +70,7 @@ function adv_glitched_access_dm_west_top()
     -- Vanilla
     if hasAny({ "bottle", "bluemail" }) then return true end
 
-    if notPortalShuffle() and hasAll({ "merge", "quake" }) then
+    if notCracksanity() and hasAll({ "merge", "quake" }) then
         -- Treacherous Tower Weather Vane
         if weather_vane_lorule("wv_treacherous_tower") and has("hookshot") and boost() then return true end
     end
@@ -81,7 +81,7 @@ end
 -- [Hell] Hyrule Death Mountain West Top
 function hell_access_dm_west_top()
     if adv_glitched_access_dm_west_top() then return true end
-    if notPortalShuffle() and weather_vane_lorule("wv_treacherous_tower") and hasAll({ "merge", "quake", "hookshot", "bombs" }) then return true end
+    if notCracksanity() and weather_vane_lorule("wv_treacherous_tower") and hasAll({ "merge", "quake", "hookshot", "bombs" }) then return true end
     return false
 end
 
@@ -96,7 +96,7 @@ function access_dm_east_top()
     -- Hera Weather Vane
     if weather_vane("wv_death_hyrule") and has("hookshot") then return true end
 
-    if notPortalShuffle() and hasAll({ "merge", "quake", "hookshot" }) then
+    if notCracksanity() and hasAll({ "merge", "quake", "hookshot" }) then
 
         -- Treacherous Tower Weather Vane
         if weather_vane_lorule("wv_treacherous_tower") then return true end
@@ -108,12 +108,12 @@ function access_dm_east_top()
         if weather_vane_lorule("wv_ice") then return true end
     end
 
-    if hasAll({ "portal_shuffle", "merge" }) then
+    if hasAll({ "cracksanity", "merge" }) then
         -- HyDeath West
-        if hasAll({ "portal_dm_west", "hookshot" }) then return true end
+        if hasAll({ "crack_dm_west", "hookshot" }) then return true end
 
         -- HyROM
-        if has("portal_rom") then return true end
+        if has("crack_rom") then return true end
     end
 
     return false
@@ -139,7 +139,7 @@ function access_dm_east_bottom()
     -- Hera Weather Vane
     if weather_vane("wv_hera") and hasAll({ "merge", "hookshot" }) then return true end
     
-    if notPortalShuffle() and hasAll({ "merge", "quake", "hookshot" }) then
+    if notCracksanity() and hasAll({ "merge", "quake", "hookshot" }) then
 
         -- Treacherous Tower Weather Vane
         if weather_vane_lorule("wv_treacherous_tower") then return true end
@@ -151,12 +151,12 @@ function access_dm_east_bottom()
         if weather_vane_lorule("wv_ice") then return true end
     end
 
-    if hasAll({ "portal_shuffle", "merge" }) then
+    if hasAll({ "cracksanity", "merge" }) then
         -- HyDeath West
-        if hasAll({ "portal_dm_west", "hookshot" }) then return true end
+        if hasAll({ "crack_dm_west", "hookshot" }) then return true end
 
         -- HyROM
-        if has("portal_rom") then return true end
+        if has("crack_rom") then return true end
     end
 
     return false
@@ -175,7 +175,7 @@ end
 -- Lorule Death Mountain West
 function access_ldm_west()
 
-    if notPortalShuffle() and hasAll({ "merge", "quake" }) then
+    if notCracksanity() and hasAll({ "merge", "quake" }) then
         -- Vanilla
         if has("power_glove") then return true end
 
@@ -195,15 +195,15 @@ function access_ldm_west()
     -- IR Weather Vane
     if weather_vane_lorule("wv_ice") and hasAll({ "merge", "hookshot" }) then return true end
 
-    if hasAll({ "portal_shuffle", "merge" }) then
-        -- DML West Portal
-        if has("portal_lorule_dm_west") then return true end
+    if hasAll({ "cracksanity", "merge" }) then
+        -- DML West Crack
+        if has("crack_lorule_dm_west") then return true end
 
-        -- ROML Portal
-        if has("portal_rom_lorule") and has("hookshot") then return true end
+        -- ROML Crack
+        if has("crack_rom_lorule") and has("hookshot") then return true end
 
-        -- LoFI Portal
-        if has("portal_lofi") and hasAll({ "trod", "hookshot" }) then return true end
+        -- LoFI Crack
+        if has("crack_lofi") and hasAll({ "trod", "hookshot" }) then return true end
     end
 
     return false
@@ -212,15 +212,15 @@ end
 -- [Glitched] Lorule Death Mountain West
 function glitched_access_ldm_west()
     if access_ldm_west() then return true end
-    -- LoFI Portal
-    if has("portal_lofi") and hasAll({ "boots", "hookshot" }) then return true end
+    -- LoFI Crack
+    if has("crack_lofi") and hasAll({ "boots", "hookshot" }) then return true end
     return false
 end
 
 -- Lorule Death Mountain East Base
 function access_ldm_east_base()
 
-    if notPortalShuffle() and hasAll({ "merge", "hookshot", "quake" }) then
+    if notCracksanity() and hasAll({ "merge", "hookshot", "quake" }) then
         -- Vanilla
         if hasAll({ "power_glove" }) then return true  end
 
@@ -237,13 +237,13 @@ function access_ldm_east_base()
     -- IR Weather Vane
     if weather_vane_lorule("wv_ice") and has("merge") then return true end
 
-    if hasAll({ "portal_shuffle", "merge" }) then
+    if hasAll({ "cracksanity", "merge" }) then
 
-        -- ROML Portal
-        if has("portal_rom_lorule") then return true end
+        -- ROML Crack
+        if has("crack_rom_lorule") then return true end
 
-        -- LoFI Portal
-        if has("portal_lofi") and hasAll({ "trod" }) then return true end
+        -- LoFI Crack
+        if hasAll({ "crack_lofi", "trod" }) then return true end
     end
 
     return false
@@ -253,8 +253,8 @@ end
 function glitched_access_ldm_east_base()
     if access_ldm_east_base() then return true end
     if has("hookshot") and weather_vane_lorule("wv_treacherous_tower") and (boost() or has("trod")) then return true end
-    if hasAll({ "portal_shuffle", "portal_lorule_dm_west", "hookshot", "merge" }) and (boost() or has("trod")) then return true end
-    if hasAll({ "portal_shuffle", "portal_lofi", "boots", "merge" }) then return true end
+    if hasAll({ "cracksanity", "crack_lorule_dm_west", "hookshot", "merge" }) and (boost() or has("trod")) then return true end
+    if hasAll({ "cracksanity", "crack_lofi", "boots", "merge" }) then return true end
     return false
 end
 
@@ -262,14 +262,14 @@ end
 function hell_access_ldm_east_base()
     if glitched_access_ldm_east_base() then return true end
     if hasAll({ "bombs", "hookshot" }) and weather_vane_lorule("wv_treacherous_tower") then return true end
-    if hasAll({ "bombs", "portal_shuffle", "portal_lorule_dm_west", "hookshot", "merge" }) then return true end
+    if hasAll({ "bombs", "cracksanity", "crack_lorule_dm_west", "hookshot", "merge" }) then return true end
     return false
 end
 
 -- Lorule Death Mountain East Top
 function access_ldm_east_top()
 
-    if notPortalShuffle() then
+    if notCracksanity() then
         -- Vanilla
         if hasAll({ "power_glove", "merge", "hookshot", "quake" }) then return true end
 
@@ -286,12 +286,12 @@ function access_ldm_east_top()
     -- IR Weather Vane
     if weather_vane_lorule("wv_ice") then return true end
 
-    if hasAll({ "portal_shuffle", "merge" }) then
-        -- ROML Portal
-        if has("portal_rom_lorule") then return true end
+    if hasAll({ "cracksanity", "merge" }) then
+        -- ROML Crack
+        if has("crack_rom_lorule") then return true end
 
-        -- LoFI Portal
-        if has("portal_lofi") and has("trod") then return true end
+        -- LoFI Crack
+        if has("crack_lofi") and has("trod") then return true end
     end
 
     return false
@@ -301,9 +301,9 @@ end
 function glitched_access_ldm_east_top()
     if access_ldm_east_top() then return true end
     if has("hookshot") and weather_vane_lorule("wv_treacherous_tower") and (boost() or has("trod")) then return true end
-    if hasAll({ "portal_shuffle", "portal_lorule_dm_west", "hookshot" }) and (boost() or has("trod")) then return true end
-    -- LoFI Portal
-    if hasAll({ "portal_shuffle", "portal_lofi", "boots" }) then return true end
+    if hasAll({ "cracksanity", "crack_lorule_dm_west", "hookshot" }) and (boost() or has("trod")) then return true end
+    -- LoFI Crack
+    if hasAll({ "cracksanity", "crack_lofi", "boots" }) then return true end
     return false
 end
 
@@ -311,6 +311,6 @@ end
 function hell_access_ldm_east_top()
     if glitched_access_ldm_east_top() then return true end
     if hasAll({ "bombs", "hookshot" }) and weather_vane_lorule("wv_treacherous_tower") then return true end
-    if hasAll({ "bombs", "portal_shuffle", "portal_lorule_dm_west", "hookshot" }) then return true end
+    if hasAll({ "bombs", "cracksanity", "crack_lorule_dm_west", "hookshot" }) then return true end
     return false
 end

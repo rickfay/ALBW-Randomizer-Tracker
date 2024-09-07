@@ -13,10 +13,20 @@ function hasAny(items)
     return false
 end
 
--- Returns true if the player can use ALL of the given items
+-- Returns true if the player has ALL of the given items
 function hasAll(items)
     for _, item in ipairs(items) do
         if not has(item) then
+            return false
+        end
+    end
+    return true
+end
+
+-- Returns true if the player has NONE of the given items
+function hasNone(items)
+    for _, item in ipairs(items) do
+        if has(item) then
             return false
         end
     end
@@ -109,6 +119,11 @@ function stun()
     return hasAny({ "boomerang", "hookshot" })
 end
 
+-- Has Boomerang, Hookshot, or Fire Rod (used for Hyrule West DM middle level clips/boosts)
+function boom_hook_fire()
+    return hasAny({ "boomerang", "hookshot", "frod" })
+end
+
 function boulder()
     return hasAny({ "bombs", "hammer" })
 end
@@ -130,8 +145,8 @@ function beeFakeFlippers()
     return has("boots") and (hasAny({ "bombs", "frod" }) or beeBoost())
 end
 
-function notPortalShuffle()
-    return not has("portal_shuffle")
+function notCracksanity()
+    return not has("cracksanity")
 end
 
 -- Return if the player can perform a Shield Rod Clip
@@ -163,7 +178,7 @@ function canExtinguishTorches()
 end
 
 function bawbs()
-    return hasAny({ "progression_enemies", "bombs"})
+    return hasAny({ "progression_enemies", "bombs" })
 end
 
 -- Return if Link can hit Crystal Switches
@@ -222,9 +237,9 @@ function notNiceMode()
     return not has("nice_mode")
 end
 
--- Can use Portals
--- Not for Hyrule Castle portal (doesn't need Quake)
-function portal()
+-- Can use Cracks
+-- Not for Hyrule Castle crack (doesn't need Quake)
+function crack()
     return hasAll({ "quake", "merge" })
 end
 
@@ -254,7 +269,7 @@ end
 -- Merge or Gulley is needed to go from the Weather Vane to the main area
 -- Graveyard -> Dark access is possible with glitches
 function darkRuins()
-    if portal() or (hasAll({ "yuga", "bell", "wv_dark" }) and (has("merge") or dark_palace())) then
+    if crack() or (hasAll({ "yuga", "bell", "wv_dark" }) and (has("merge") or dark_palace())) then
         return true
     elseif hasAll({ "yuga", "bell", "wv_graveyard" }) then
         if boost() and hasAny({ "flippers", "hookshot" }) then
@@ -271,19 +286,19 @@ end
 
 function dark_palace()
     return hasAll({ "label_power_pd", "power" })
-        or hasAll({ "label_wisdom_pd", "wisdom" })
-        or hasAll({ "label_courage_pd", "courage" })
-        or hasAll({ "label_gulley_pd", "gulley" })
-        or hasAll({ "label_oren_pd", "oren" })
-        or hasAll({ "label_seres_pd", "seres" })
-        or hasAll({ "label_osfala_pd", "osfala" })
-        or hasAll({ "label_impa_pd", "impa" })
-        or hasAll({ "label_irene_pd", "irene" })
-        or hasAll({ "label_rosso_pd", "rosso" })
+            or hasAll({ "label_wisdom_pd", "wisdom" })
+            or hasAll({ "label_courage_pd", "courage" })
+            or hasAll({ "label_gulley_pd", "gulley" })
+            or hasAll({ "label_oren_pd", "oren" })
+            or hasAll({ "label_seres_pd", "seres" })
+            or hasAll({ "label_osfala_pd", "osfala" })
+            or hasAll({ "label_impa_pd", "impa" })
+            or hasAll({ "label_irene_pd", "irene" })
+            or hasAll({ "label_rosso_pd", "rosso" })
 end
 
 function turtleLake()
-    if portal() or hasAll({ "yuga", "bell", "wv_turtle", "flippers" }) then
+    if crack() or hasAll({ "yuga", "bell", "wv_turtle", "flippers" }) then
         return true
     elseif darkRuins() then
         if has("flippers") then
@@ -395,60 +410,75 @@ function thEscape()
     end
 end
 
-function portal_clip()
+function crack_clip()
     return has("boomerang") or hasAll({ "not_nice_mode", "hookshot" }) or shieldRodClip()
 end
 
 -- Return if we can get OoB on the south wall of Misery Mire
 function advanced_misery_mire_oob()
-    if has("nicebombs") then return true end
+    if access_misery_mire() then
+        if has("nicebombs") then
+            return true
+        end
+        if hasAll({ "irod", "trod", "frod" }) then
+            return true
+        end
+        if hasAll({ "irod", "trod" }) and crack_clip() then
+            return true
+        end
+    end
 
-    if (
-            access_misery_mire() and hasAll({ "irod", "trod" }) or (
-                    has("merge") and (
-                            (has("portal_shuffle") and hasAny({ "portal_mire_sw", "portal_mire_middle" })) or
-                            (hasAll({ "not_portal_shuffle", "quake" }) and (hasAny({ "srod", "scroll" }) or boost()))
-                    )
-            )
-    ) and (boost() or (has("trod") and portal_clip()))
-    then
-        return true end
+    if hasAll({ "cracksanity", "frod" }) and hasAny({ "crack_mire_sw", "crack_mire_middle" }) then
+        return true
+    end
+    if hasAll({ "cracksanity" }) and hasAny({ "crack_mire_sw", "crack_mire_middle" }) and crack_clip() then
+        return true
+    end
+
+
+
+    --if (access_misery_mire()
+    --        and hasAll({ "irod", "trod" })
+    --        or (
+    --            has("merge")
+    --                    and ((has("cracksanity")
+    --                    and hasAny({ "crack_mire_sw", "crack_mire_middle" }))
+    --                    or (hasAll({ "not_cracksanity", "quake" })
+    --                    and (hasAny({ "srod", "scroll" })
+    --                    or boost())))))
+    --        and (boost()
+    --        or (has("trod")
+    --        and crack_clip())) then
+    --    return true
+    --end
 
     return false
 end
 
 -- Return if we can get OoB on the south wall of Misery Mire
 function hell_misery_mire_oob()
-    if advanced_misery_mire_oob() then return true end
+    if advanced_misery_mire_oob() then
+        return true
+    end
 
-    if has("bombs") then return true end
+    if access_misery_mire() and has("bombs") then
+        return true
+    end
 
-    if (access_misery_mire() and hasAll({ "irod", "trod" }) or (
-            has("merge") and (
-                    hasAll({ "not_portal_shuffle", "quake" }) or (has("portal_shuffle") and hasAny({ "portal_mire_sw", "portal_mire_middle" }))
-            )
-    )) and (
-            has("frod") or (has("trod") and portal_clip())
-    ) then return true end
+    if (access_misery_mire() and hasAll({ "irod", "trod" }) or (has("merge") and (hasAll({ "not_cracksanity", "quake" }) or (has("cracksanity") and hasAny({ "crack_mire_sw", "crack_mire_middle" }))))) and (has("frod") or (has("trod") and crack_clip())) then
+        return true
+    end
 
     return false
 end
 
--- Return if we have any portals in Central Lorule, including the Lorule Castle Portal
+-- Return if we have any cracks in Lorule Castle Area, including the Lorule Castle Crack
 function access_central_lorule()
-    return has("merge") and (
-            hasAny({ "portal_lc", "portal_vacant_house", "portal_thieves_town", "portal_swamp_pillar_lorule", "portal_left_lorule_paradox", "portal_right_lorule_paradox" }) or (
-                    warpLorule() and (
-                            hasAny({ "wv_vacant_house", "wv_blacksmith", "wv_thieves", "wv_lorule_castle" }) or (
-                                    has("wv_swamp") and hasAny({ "hookshot", "flippers" })
-                            )
-                    )
-            )
-    )
+    return has("merge") and (hasAny({ "crack_lc", "crack_vacant_house", "crack_thieves_town", "crack_swamp_pillar_lorule", "crack_left_lorule_paradox", "crack_right_lorule_paradox" }) or (warpLorule() and (hasAny({ "wv_vacant_house", "wv_blacksmith", "wv_thieves", "wv_lorule_castle" }) or (has("wv_swamp") and hasAny({ "hookshot", "flippers" })))))
 end
 
 function warpLorule()
-    return hasAll({ "bell", "merge" }) and ((notPortalShuffle() and has("quake")) or hasAny({ "portal_vacant_house", "portal_skull_woods_pillar", "portal_destroyed_house", "portal_lorule_dm_west", "portal_lofi", "portal_rom_lorule", "portal_philosopher", "portal_graveyard_lorule", "portal_waterfall_lorule", "portal_kus_domain", "portal_n-shaped_house", "portal_thieves_town", "portal_dark_ruins_pillar", "portal_dark_ruins_se", "portal_river_lorule", "portal_swamp_pillar_lorule", "portal_lake_lorule", "portal_lorule_hotfoot", "portal_left_lorule_paradox", "portal_right_lorule_paradox", "portal_mire_exit", "portal_mire_north", "portal_mire_pillar_left", "portal_mire_pillar_right", "portal_mire_middle", "portal_mire_sw", "portal_zaganaga", "portal_lc" }))
+    return hasAll({ "bell", "merge" }) and ((notCracksanity() and has("quake")) or hasAny({ "crack_hc", "crack_vacant_house", "crack_skull_woods_pillar", "crack_destroyed_house", "crack_lorule_dm_west", "crack_lofi", "crack_rom_lorule", "crack_philosopher", "crack_graveyard_lorule", "crack_waterfall_lorule", "crack_kus_domain", "crack_n-shaped_house", "crack_thieves_town", "crack_dark_ruins_pillar", "crack_dark_ruins_se", "crack_river_lorule", "crack_swamp_pillar_lorule", "crack_lake_lorule", "crack_lorule_hotfoot", "crack_left_lorule_paradox", "crack_right_lorule_paradox", "crack_mire_exit", "crack_mire_north", "crack_mire_pillar_left", "crack_mire_pillar_right", "crack_mire_middle", "crack_mire_sw", "crack_zaganaga", "crack_lc" }))
 end
 
 function claimDesertPrize()
@@ -466,8 +496,8 @@ end
 
 -- Return if we can perform Reverse Desert Palace
 function reverseDP()
-    return hasAll({ "not_portal_shuffle", "merge", "portal_desert_palace", "quake" })
-            or hasAll({ "portal_shuffle", "merge", "portal_desert_palace" })
+    return hasAll({ "not_cracksanity", "merge", "crack_desert_palace", "quake" })
+            or hasAll({ "cracksanity", "merge", "crack_desert_palace" })
 end
 
 -- Can players complete Sanctuary
@@ -489,7 +519,6 @@ end
 function barrier_skip()
     return hell_access_central_lorule() and hasAll({ "boots", "trod", "bombs" }) and hasAny({ "hookshot", "boomerang" }) and not lc_requirement()
 end
-
 
 function yuga2()
     return hasAny({ "fsword", "bombs", "frod", "irod", "hammer" })
@@ -520,24 +549,36 @@ function lc_requirement()
     return count("sage") >= requirement
 end
 
--- Return if we can enter Lorule Castle, either with Sages or via the Hyrule Castle Portal
+-- Return if we can enter Lorule Castle, either with Sages or via the Hyrule Castle Crack
 function canEnterLC()
-    if lc_requirement() and access_central_lorule() then return true end
-    if hasAll({ "portal_lc", "trials_door_open", "merge" }) then return true end
+    if lc_requirement() and access_central_lorule() then
+        return true
+    end
+    if hasAll({ "crack_lc", "trials_door_open", "merge" }) then
+        return true
+    end
     return false
 end
 
--- [Advanced] Return if we can enter Lorule Castle, either with Sages or via the Hyrule Castle Portal
+-- [Advanced] Return if we can enter Lorule Castle, either with Sages or via the Hyrule Castle Crack
 function advanced_canEnterLC()
-    if canEnterLC() then return true end
-    if lc_requirement() and advanced_access_central_lorule() then return true end
+    if canEnterLC() then
+        return true
+    end
+    if lc_requirement() and advanced_access_central_lorule() then
+        return true
+    end
     return false
 end
 
--- [Hell] Return if we can enter Lorule Castle, either with Sages or via the Hyrule Castle Portal
+-- [Hell] Return if we can enter Lorule Castle, either with Sages or via the Hyrule Castle Crack
 function hell_canEnterLC()
-    if advanced_canEnterLC() then return true end
-    if lc_requirement() and hell_access_central_lorule() then return true end
+    if advanced_canEnterLC() then
+        return true
+    end
+    if lc_requirement() and hell_access_central_lorule() then
+        return true
+    end
     return false
 end
 
@@ -578,7 +619,7 @@ function yg_requirement()
     --return count("sage") >= requirement
 end
 
--- Returns if we can complete the Lorule Castle Trials normally, without glitches or portals.
+-- Returns if we can complete the Lorule Castle Trials normally, without glitches or cracks.
 function lc_trials()
     return has("merge") and lc_requirement() and (has("trials_skipped") or hasAll({ "merge", "hookshot", "bombs", "$fire" }))
 
@@ -586,7 +627,7 @@ end
 
 -- Returns only if we can reach the final boss, NOT if we can obtain Zelda's check or win the fight
 function can_reach_final_boss()
-    return has("merge") and yg_requirement() and ((has("portal_lc")) or (lc_requirement() and (has("trials_skipped") or hasAll({ "merge", "hookshot" }))))
+    return has("merge") and lc_requirement() and (has("crack_lc") or (notCracksanity() and attack_normal() and (has("trials_skipped") or hasAll({"hookshot", "bombs", "lamp"}))))
 end
 
 -- Returns only if we can perform Trial's Skip to fight Yuganon, NOT if we can obtain Zelda's check or win the fight
@@ -656,4 +697,13 @@ end
 
 function canUpgradeItem()
     return maiamaiUpgradeAvailable() > countNiceItems()
+end
+
+function inspect_crack_lorule()
+    return has("merge") and (hasAll({ "quake", "not_cracksanity" }) or (hasAll({ "cracksanity", "quake" }))
+            or (hasAll({ "crack_hc", "cracksanity" }) and hasNone({ "crack_vacant_house", "crack_skull_woods_pillar", "crack_destroyed_house", "crack_lorule_dm_west", "crack_lofi", "crack_rom_lorule", "crack_philosopher", "crack_graveyard_lorule", "crack_waterfall_lorule", "crack_kus_domain", "crack_n-shaped_house", "crack_thieves_town", "crack_dark_ruins_pillar", "crack_dark_ruins_se", "crack_river_lorule", "crack_swamp_pillar_lorule", "crack_lake_lorule", "crack_lorule_hotfoot", "crack_left_lorule_paradox", "crack_right_lorule_paradox", "crack_mire_exit", "crack_mire_north", "crack_mire_pillar_left", "crack_mire_pillar_right", "crack_mire_middle", "crack_mire_sw", "crack_zaganaga", "crack_lc" })))
+end
+
+function inspect_down_crack_lorule()
+    return hasAll({ "merge", "quake" })
 end

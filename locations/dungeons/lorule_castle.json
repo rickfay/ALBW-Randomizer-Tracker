@@ -21,7 +21,7 @@
         ],
         "sections": [
           {
-            "name": "1F Center",
+            "name": "(1F) Center",
             "item_count": 1,
             "access_rules": [
               "{csmc}",
@@ -41,7 +41,7 @@
         ],
         "sections": [
           {
-            "name": "1F Right Wall",
+            "name": "(1F) Ledge",
             "item_count": 1,
             "access_rules": [
               "merge"
@@ -49,6 +49,7 @@
           }
         ]
       },
+
       {
         "name": "Lorule Castle",
         "map_locations": [
@@ -60,7 +61,7 @@
         ],
         "sections": [
           {
-            "name": "2F East Room",
+            "name": "(2F) Near Torches",
             "item_count": 1,
             "access_rules": [
               "$lc2F"
@@ -79,7 +80,7 @@
         ],
         "sections": [
           {
-            "name": "2F Dark Bridge",
+            "name": "(2F) Hidden Path",
             "access_rules": [
               "$lc2F, $canExtinguishTorches",
               "$lc2F, [hard]"
@@ -99,7 +100,7 @@
         ],
         "sections": [
           {
-            "name": "2F West Wall",
+            "name": "(2F) Ledge",
             "item_count": 1,
             "access_rules": [
               "$lc2F, merge",
@@ -109,6 +110,7 @@
           }
         ]
       },
+
       {
         "name": "Lorule Castle",
         "map_locations": [
@@ -120,7 +122,7 @@
         ],
         "sections": [
           {
-            "name": "4F Torches",
+            "name": "(4F) Center",
             "item_count": 1,
             "access_rules": [
               "$lc2F"
@@ -139,7 +141,7 @@
         ],
         "sections": [
           {
-            "name": "4F Big Chest",
+            "name": "(4F) Hidden Path",
             "access_rules": [
               "$lc2F, $canExtinguishTorches",
               "$lc2F, [hard]"
@@ -148,6 +150,7 @@
           }
         ]
       },
+
       // Bomb Trial
       {
         "name": "Lorule Castle",
@@ -160,7 +163,7 @@
         ],
         "sections": [
           {
-            "name": "3F Bomb Trial 1",
+            "name": "(3F) Bomb Trial (1)",
             "access_rules": [
               "{csmc}",
               "bombs",
@@ -181,7 +184,7 @@
         ],
         "sections": [
           {
-            "name": "3F Bomb Trial 2",
+            "name": "(3F) Bomb Trial (2)",
             "access_rules": [
               "{csmc}",
               "bombs, merge",
@@ -192,7 +195,8 @@
           }
         ]
       },
-      // Ball Trial
+
+      // Tile Trial
       {
         "name": "Lorule Castle",
         "map_locations": [
@@ -204,7 +208,7 @@
         ],
         "sections": [
           {
-            "name": "3F Ball Trial 1",
+            "name": "(3F) Tile Trial (1)",
             "item_count": 1,
             "access_rules": [
               "$lc2F"
@@ -223,7 +227,7 @@
         ],
         "sections": [
           {
-            "name": "3F Ball Trial 2",
+            "name": "(3F) Tile Trial (2)",
             "item_count": 1,
             "access_rules": [
               "$lc2F, merge"
@@ -231,6 +235,7 @@
           }
         ]
       },
+
       // Lamp Trial
       {
         "name": "Lorule Castle",
@@ -243,7 +248,7 @@
         ],
         "sections": [
           {
-            "name": "4F Lamp Trial",
+            "name": "(4F) Lamp Trial",
             "access_rules": [
               "$lc2F, $fire",
               "[hard], $lc2F"
@@ -258,16 +263,15 @@
         "map_locations": [
           {
             "map": "lorule4F",
-            "x": 110,
-            "y": 58
+            "x": 140,
+            "y": 47
           }
         ],
         "sections": [
           {
-            "name": "4F Hookshot Trial 2",
+            "name": "(4F) Hookshot Trial (1)",
             "access_rules": [
-              "$lc2F, hookshot, merge",
-              "$lc2F, hookshot, irod"
+              "$lc2F, hookshot"
             ],
             "item_count": 1
           }
@@ -278,22 +282,24 @@
         "map_locations": [
           {
             "map": "lorule4F",
-            "x": 140,
-            "y": 47
+            "x": 110,
+            "y": 58
           }
         ],
         "sections": [
           {
-            "name": "4F Hookshot Trial 1",
+            "name": "(4F) Hookshot Trial (2)",
             "access_rules": [
-              "$lc2F, hookshot"
+              "$lc2F, hookshot, merge",
+              "$lc2F, hookshot, irod"
             ],
             "item_count": 1
           }
         ]
       },
+
       {
-        "name": "Throne Room",
+        "name": "Lorule Castle",
         "map_locations": [
           {
             "map": "throneRoom",
@@ -314,7 +320,7 @@
         ]
       },
       {
-        "name": "Sacred Realm",
+        "name": "Lorule Castle",
         "color": "#ffdf4f",
         "map_locations": [
           {
@@ -358,7 +364,7 @@
     ]
   },
   {
-    "name": "Throne Room",
+    "name": "Lorule Castle",
     "map_locations": [
       {
         "map": "lorule",
@@ -388,7 +394,7 @@
     ]
   },
   {
-    "name": "Throne Room ",
+    "name": "Lorule Castle",
     "map_locations": [
       {
         "map": "lorule",
@@ -399,15 +405,15 @@
     ],
     "sections": [
       {
-        "name": "Lorule Castle Portal",
-        "hosted_item": "portal_lc",
+        "name": "Lorule Castle Crack",
+        "hosted_item": "crack_lc",
         "access_rules": [
-          "portal_lc",
-          "{}",
+          "crack_lc",
+          "{$inspect_crack_lorule}",
           "merge, quake, $lc_trials"
         ],
         "visibility_rules": [
-          "portal_shuffle"
+          "cracksanity"
         ]
       }
     ]

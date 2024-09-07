@@ -21,7 +21,7 @@
         ],
         "sections": [
           {
-            "name": "1F Window Chest",
+            "name": "(1F) Outside",
             "item_count": 1,
             "access_rules": [
               "merge",
@@ -41,7 +41,7 @@
         ],
         "sections": [
           {
-            "name": "1F Center Chest",
+            "name": "(1F) Center",
             "item_count": 1,
             "access_rules": [
               "merge",
@@ -61,7 +61,7 @@
         ],
         "sections": [
           {
-            "name": "3F Center",
+            "name": "(3F) Platform",
             //"capture_item": true,
             "item_count": 1,
             "access_rules": [
@@ -82,7 +82,7 @@
         ],
         "sections": [
           {
-            "name": "5F Red/Blue Chest",
+            "name": "(5F) Red/Blue Switches",
             "item_count": 1,
             "access_rules": [
               "merge",
@@ -102,7 +102,7 @@
         ],
         "sections": [
           {
-            "name": "6F Left Tiles",
+            "name": "(6F) Left Mole",
             //"capture_item": true,
             "item_count": 1,
             "access_rules": [
@@ -123,7 +123,7 @@
         ],
         "sections": [
           {
-            "name": "6F Right Tiles",
+            "name": "(6F) Right Mole",
             "item_count": 1,
             "access_rules": [
               "merge",
@@ -143,7 +143,7 @@
         ],
         "sections": [
           {
-            "name": "7F Ledge Chest",
+            "name": "(7F) Outside (Ledge)",
             "item_count": 1,
             "access_rules": [
               "merge",
@@ -163,7 +163,7 @@
         ],
         "sections": [
           {
-            "name": "8F Fairy Room",
+            "name": "(8F) Fairy Room",
             "item_count": 1,
             "access_rules": [
               "merge",
@@ -183,7 +183,7 @@
         ],
         "sections": [
           {
-            "name": "11F Big Chest",
+            "name": "(11F) Big Chest",
             "chest_unopened_img": "images/chest_big_unopened.png",
             "chest_opened_img": "images/chest_big_opened.png",
             "item_count": 1,
@@ -257,8 +257,8 @@
             "item_count": 6,
             "clear_as_group": false,
             "access_rules": [
-              "[hammer], [merge]",
-              "advanced, [hammer], [merge], [bombs], [trod]"
+              "merge",
+              "[advanced], sword, bombs, [trod]"
             ]
           },
           {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["merge", "[advanced], fsword, bombs, trod"], "visibility_rules": ["label_power_th"]},

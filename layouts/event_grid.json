@@ -12,9 +12,22 @@
         "margin": "1,1,1,0",
         "rows": [
           [
-            "shop",
+            "ravio_shop",
             "shadyguy",
-            "blacksmith"
+            "blacksmith",
+            "",
+            "",
+            "trial_lamp",
+            "trial_hook"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "trial_bomb",
+            "trial_tile"
           ]
         ]
       }

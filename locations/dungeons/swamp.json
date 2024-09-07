@@ -21,7 +21,7 @@
         ],
         "sections": [
           {
-            "name": "B1 East Pillar",
+            "name": "(B1) Waterfall Room",
             //"capture_item": true,
             "item_count": 1
           }
@@ -38,7 +38,7 @@
         ],
         "sections": [
           {
-            "name": "B1 West Pillar",
+            "name": "(B1) Raft Room (Pillar)",
             //"capture_item": true,
             "item_count": 1
           }
@@ -55,7 +55,7 @@
         ],
         "sections": [
           {
-            "name": "B1 North Center",
+            "name": "(B1) Center",
             "item_count": 1
           }
         ]
@@ -71,7 +71,7 @@
         ],
         "sections": [
           {
-            "name": "B1 Staircase",
+            "name": "(B1) Raft Room (Right)",
             "item_count": 1
           }
         ]
@@ -87,7 +87,7 @@
         ],
         "sections": [
           {
-            "name": "B1 Raft Chest",
+            "name": "(B1) Raft Room (Left)",
             "item_count": 1
           }
         ]
@@ -103,7 +103,7 @@
         ],
         "sections": [
           {
-            "name": "B1 Side Room",
+            "name": "(B1) Gyorm",
             "item_count": 1
           }
         ]
@@ -119,7 +119,7 @@
         ],
         "sections": [
           {
-            "name": "B1 Big Chest",
+            "name": "(B1) Big Chest (Secret)",
             "chest_unopened_img": "images/chest_big_unopened.png",
             "chest_opened_img": "images/chest_big_opened.png",
             "access_rules": [
@@ -147,7 +147,7 @@
         ],
         "sections": [
           {
-            "name": "1F Big Chest",
+            "name": "(1F) Big Chest (Fire)",
             "chest_unopened_img": "images/chest_big_unopened.png",
             "chest_opened_img": "images/chest_big_opened.png",
             "access_rules": [
@@ -172,7 +172,7 @@
         ],
         "sections": [
           {
-            "name": "1F West Pillar",
+            "name": "(1F) West Room",
             "access_rules": [
               "merge, progression_enemies",
               "merge, bombs",
@@ -194,7 +194,7 @@
         ],
         "sections": [
           {
-            "name": "1F East Pillar",
+            "name": "(1F) East Room",
             "access_rules": [
               "merge, progression_enemies",
               "merge, bombs",
@@ -216,7 +216,7 @@
         ],
         "sections": [
           {
-            "name": "1F SW Room",
+            "name": "(1F) Water Puzzle",
             "access_rules": [
               "merge, progression_enemies",
               "merge, bombs",

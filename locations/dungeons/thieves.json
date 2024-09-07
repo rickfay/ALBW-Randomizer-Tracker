@@ -21,7 +21,7 @@
         ],
         "sections": [
           {
-            "name": "B1 Grate Chest",
+            "name": "(B1) Grate Chest",
             "item_count": 1
           }
         ]
@@ -37,7 +37,7 @@
         ],
         "sections": [
           {
-            "name": "B1 Jail Cell",
+            "name": "(B1) Jail Cell",
             "access_rules": [
               "{csmc}",
               "merge",
@@ -59,7 +59,7 @@
         ],
         "sections": [
           {
-            "name": "B2 NW Room",
+            "name": "(B2) Grate Chest (Fall)",
             "item_count": 1,
             "access_rules": [
               "$thB1DoorOpen",
@@ -80,7 +80,7 @@
         ],
         "sections": [
           {
-            "name": "B2 Jail Cell",
+            "name": "(B2) Jail Cell",
             "access_rules": [
               "$thB1B2DoorsOpen, merge",
               "[advanced], $switch",
@@ -101,7 +101,7 @@
         ],
         "sections": [
           {
-            "name": "B2 Eyegores",
+            "name": "(B2) Eyegores",
             "access_rules": [
               "{csmc, $thB1B2DoorsOpen, merge, $shielded_switch, progression_enemies}",
               "{csmc, $thB1B2DoorsOpen, merge, $shielded_switch, bombs}",
@@ -130,7 +130,7 @@
         ],
         "sections": [
           {
-            "name": "B2 SE Room",
+            "name": "(B2) Switch Puzzle Room",
             "item_count": 1,
             "access_rules": [
               "$thB1B2DoorsOpen",
@@ -151,7 +151,7 @@
         ],
         "sections": [
           {
-            "name": "B3 Underwater",
+            "name": "(B3) Underwater",
             "access_rules": [
               "{csmc, merge, $thB1B2DoorsOpen, $attack_normal}",
               "{hard, csmc, merge, $thB1B2DoorsOpen, $attack}",
@@ -178,7 +178,7 @@
         ],
         "sections": [
           {
-            "name": "B3 Big Chest",
+            "name": "(B3) Big Chest (Hidden)",
             "item_count": 1,
             "access_rules": [
               "$thEscapeEquipment, $attack_normal",
@@ -200,7 +200,7 @@
         ],
         "sections": [
           {
-            "name": "B1 Behind Wall",
+            "name": "(B1) Behind Wall",
             "access_rules": [
               "{csmc}",
               "{hell, $hell_th_statue_clip, trod}",
@@ -224,7 +224,7 @@
         ],
         "sections": [
           {
-            "name": "B1 Big Chest",
+            "name": "(B1) Big Chest (Entrance)",
             "access_rules": [
               "{csmc}",
               "$thEscapeEquipment, $attack_normal",

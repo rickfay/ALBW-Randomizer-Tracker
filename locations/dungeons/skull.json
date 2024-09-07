@@ -19,7 +19,7 @@
         ],
         "sections": [
           {
-            "name": "B1 South Chest",
+            "name": "(B1) South Chest",
             "item_count": 1,
             "access_rules": [
               "$lampless"
@@ -38,7 +38,7 @@
         ],
         "sections": [
           {
-            "name": "B1 NE Room Lower",
+            "name": "(B1) Gibdo Room (Lower)",
             "item_count": 1,
             "access_rules": [
               "$lampless"
@@ -57,7 +57,7 @@
         ],
         "sections": [
           {
-            "name": "B1 NE Room Fall",
+            "name": "(B1) Gibdo Room (Hole)",
             "item_count": 1,
             "access_rules": [
               "$lampless"
@@ -76,7 +76,7 @@
         ],
         "sections": [
           {
-            "name": "B1 Grate Room",
+            "name": "(B1) Grate Room",
             "item_count": 1,
             "access_rules": [
               "$lampless, progression_enemies",
@@ -97,7 +97,7 @@
         ],
         "sections": [
           {
-            "name": "B2 Elevator Room",
+            "name": "(B2) Moving Platform Room",
             "item_count": 1,
             "access_rules": [
               "$lampless, merge, bombs",
@@ -120,7 +120,7 @@
         ],
         "sections": [
           {
-            "name": "B1 Big Chest (Eyes)",
+            "name": "(B1) Big Chest (Eyes)",
             "chest_unopened_img": "images/chest_big_unopened.png",
             "chest_opened_img": "images/chest_big_opened.png",
             "item_count": 1,
@@ -143,7 +143,7 @@
         ],
         "sections": [
           {
-            "name": "B1 Big Chest (SW)",
+            "name": "(B1) Big Chest (Upper)",
             "chest_unopened_img": "images/chest_big_unopened.png",
             "chest_opened_img": "images/chest_big_opened.png",
             "item_count": 1,
@@ -249,7 +249,7 @@
         "sections": [
           {
             "name": "Dungeon",
-            "item_count": 6,
+            "item_count": 3,
             "clear_as_group": false,
             "access_rules": [
               "progression_enemies, [lamp], [merge], [$knucklemaster]",

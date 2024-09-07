@@ -15,7 +15,7 @@ Tracker:AddItems("items/items_maps.json")
 Tracker:AddItems("items/items_display.json")
 Tracker:AddItems("items/items_dungeons.json")
 Tracker:AddItems("items/items_labels.json")
-Tracker:AddItems("items/items_portals.json")
+Tracker:AddItems("items/items_cracks.json")
 --Tracker:AddItems("items/items_prizes.json")
 Tracker:AddItems("items/items_settings.json")
 Tracker:AddItems("items/items_weather_vanes.json")
@@ -71,9 +71,7 @@ if Tracker.ActiveVariantUID == "standard" then
     Tracker:AddLocations("locations/dungeons/lorule_castle.json")
 
     Tracker:AddLocations("locations/weather_vanes.json")
-    Tracker:AddLocations("locations/portals_hyrule.json")
-    Tracker:AddLocations("locations/portals_lorule.json")
+    Tracker:AddLocations("locations/cracks_hyrule.json")
+    Tracker:AddLocations("locations/cracks_lorule.json")
     Tracker:AddLocations("locations/maiamai.json")
 end
-
-ScriptHost:LoadScript("scripts/badges.lua")

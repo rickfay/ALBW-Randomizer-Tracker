@@ -69,7 +69,7 @@ Worlds Randomizer.
     - Logic Updates:
       - Ravio's Shop is open by default
       - Shady Guy Trigger is triggered by default
-      - Portals to Lorule are open by default
+      - Cracks to Lorule are open by default
       - Bombs are no longer required to collect Maiamai
         - New Logic added for cases when you do not have Bombs
       - Lorule Blacksmith now requires Hyrule Blacksmith check cleared first
@@ -181,7 +181,7 @@ Worlds Randomizer.
 | Osfala             | ![Osfala](images/prizes/sage_osfala.png)                 | - Ravio's Sand Rod Slot Item                                                                     | 
 | Impa               | ![Impa](images/prizes/sage_impa.png)                     | - Hyrule Castle Throne Room                                                                      | 
 | Irene              | ![Irene](images/prizes/sage_irene.png)                   | - Irene                                                                                          | 
-| Rosso              | ![Rosso](images/prizes/sage_rosso.png)                   | - Unlocks Rosso's House's front door<br />- Rosso<br />- Rosso Rocks<br />- Rosso's House Portal | 
+| Rosso              | ![Rosso](images/prizes/sage_rosso.png)                   | - Unlocks Rosso's House's front door<br />- Rosso<br />- Rosso Rocks<br />- Rosso's House Crack | 
 | Pendant of Power   | ![Pendant of Power](images/prizes/pendant_power.png)     |                                                                                                  |
 | Pendant of Wisdom  | ![Pendant of Wisdom](images/prizes/pendant_wisdom.png)   |                                                                                                  |
 | Pendant of Courage | ![Pendant of Courage](images/prizes/pendant_courage.png) | - Wildlife Clearing Stump                                                                        |

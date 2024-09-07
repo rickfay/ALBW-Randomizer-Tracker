@@ -148,6 +148,67 @@
     ]
   },
   {
+    "name": "Maiamai Limit",
+    "type": "progressive",
+    "initial_stage_idx": 5,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/numbers/maiamai__0.png",
+        "codes": "maiamai_limit"
+      },
+      {
+        "img": "images/numbers/maiamai__0.png",
+        "img_mods": "overlay|images/numbers/maiamai_1_.png",
+        "codes": "maiamai_limit_10"
+      },
+      {
+        "img": "images/numbers/maiamai__0.png",
+        "img_mods": "overlay|images/numbers/maiamai_2_.png",
+        "codes": "maiamai_limit_20"
+      },
+      {
+        "img": "images/numbers/maiamai__0.png",
+        "img_mods": "overlay|images/numbers/maiamai_3_.png",
+        "codes": "maiamai_limit_30"
+      },
+      {
+        "img": "images/numbers/maiamai__0.png",
+        "img_mods": "overlay|images/numbers/maiamai_4_.png",
+        "codes": "maiamai_limit_40"
+      },
+      {
+        "img": "images/numbers/maiamai__0.png",
+        "img_mods": "overlay|images/numbers/maiamai_5_.png",
+        "codes": "maiamai_limit_50"
+      },
+      {
+        "img": "images/numbers/maiamai__0.png",
+        "img_mods": "overlay|images/numbers/maiamai_6_.png",
+        "codes": "maiamai_limit_60"
+      },
+      {
+        "img": "images/numbers/maiamai__0.png",
+        "img_mods": "overlay|images/numbers/maiamai_7_.png",
+        "codes": "maiamai_limit_70"
+      },
+      {
+        "img": "images/numbers/maiamai__0.png",
+        "img_mods": "overlay|images/numbers/maiamai_8_.png",
+        "codes": "maiamai_limit_80"
+      },
+      {
+        "img": "images/numbers/maiamai__0.png",
+        "img_mods": "overlay|images/numbers/maiamai_9_.png",
+        "codes": "maiamai_limit_90"
+      },
+      {
+        "img": "images/numbers/maiamai_100.png",
+        "codes": "maiamai_limit_100"
+      }
+    ]
+  },
+  {
     "name": "Master Sword Pedestal Requirement",
     "type": "progressive",
     "loop": true,
@@ -265,21 +326,21 @@
     ]
   },
   {
-    "name": "Portal Shuffle",
+    "name": "Cracksanity",
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/settings/portals.png",
+        "img": "images/settings/cracksanity.png",
         "img_mods": "@disabled,overlay|images/settings/OFF.png",
-        "codes": "not_portal_shuffle",
+        "codes": "not_cracksanity",
         "inherit_codes": false
       },
       {
-        "img": "images/settings/portals.png",
+        "img": "images/settings/cracksanity.png",
         "img_mods": "overlay|images/settings/ON.png",
-        "codes": "portal_shuffle",
+        "codes": "cracksanity",
         "inherit_codes": false
       }
     ]

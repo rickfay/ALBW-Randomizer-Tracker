@@ -11,7 +11,7 @@
         ],
         "children": [
           {
-            "name": "Skull Woods Region",
+            "name": "Skull Woods Area",
             "map_locations": [
               {
                 "map": "lorule",
@@ -21,7 +21,7 @@
             ],
             "sections": [
               {
-                "name": "Canyon Heart Piece",
+                "name": "n-Shaped House",
                 //"capture_item": true,
                 "access_rules": [
                   "merge",
@@ -33,7 +33,7 @@
             ]
           },
           {
-            "name": "Skull Woods Region",
+            "name": "Skull Woods Area",
             "map_locations": [
               {
                 "map": "lorule",
@@ -43,14 +43,14 @@
             ],
             "sections": [
               {
-                "name": "Dark Cucco Shack",
+                "name": "Destroyed House",
                 //"capture_item": true,
                 "item_count": 1
               }
             ]
           },
           {
-            "name": "Mysterious Man",
+            "name": "Skull Woods Area",
             "map_locations": [
               {
                 "map": "lorule",
@@ -60,7 +60,7 @@
             ],
             "sections": [
               {
-                "name": "Golden Bee (888)",
+                "name": "Mysterious Man",
                 "hosted_item": "golden_bee",
                 "access_rules": [
                   "bottle"
@@ -80,7 +80,7 @@
         ],
         "children": [
           {
-            "name": "Lorule Sanctuary",
+            "name": "Graveyard\nLorule Sanctuary",
             "access_rules": [
               "titansmitt"
 //              "titansmitt, quake, merge, lamp, $attack",
@@ -117,7 +117,7 @@
                 "item_count": 1
               },
               {
-                "name": "Ledge Key",
+                "name": "Ledge",
                 "access_rules": [
                   "[lamp], merge",
                   "[lampless], merge"
@@ -128,7 +128,7 @@
             ]
           },
           {
-            "name": "Philosopher's Cave",
+            "name": "Graveyard",
             "map_locations": [
               {
                 "map": "lorule",
@@ -138,11 +138,11 @@
             ],
             "sections": [
               {
-                "name": "Big Chest",
+                "name": "Philosopher's Cave",
                 "chest_unopened_img": "images/checks/chest_big_unopened.png",
                 "chest_opened_img": "images/checks/chest_big_opened.png",
                 "access_rules": [
-                  "{$access_lorule_graveyard}",
+                  "{csmc, $access_lorule_graveyard}",
                   "$access_lorule_graveyard, titansmitt, [lamp], $attack",
                   "$access_lorule_graveyard, titansmitt, [lampless], $attack",
                   "$lampless_access_lorule_graveyard, titansmitt, [lampless], $attack"
@@ -164,7 +164,7 @@
         ],
         "sections": [
           {
-            "name": "Peninsula Chest",
+            "name": "Peninsula",
             "access_rules": [
               "{csmc, $access_dark_ruins}",
               "$access_lorule_graveyard",
@@ -175,7 +175,7 @@
         ]
       },
       {
-        "name": "Ku's Domain",
+        "name": "Dark Ruins",
         "map_locations": [
           {
             "map": "lorule",
@@ -185,11 +185,11 @@
         ],
         "sections": [
           {
-            "name": "Hinox Cave",
+            "name": "Hinox",
             "item_count": 6,
             "access_rules": [
               "merge, $access_dark_ruins",
-              "merge, portal_shuffle, portal_waterfall_lorule",
+              "merge, cracksanity, crack_waterfall_lorule",
               "[glitched], merge, $glitched_access_dark_ruins",
               "[advanced], merge, $advanced_access_dark_ruins",
               "[hell], merge, $hell_access_dark_ruins"
@@ -207,7 +207,7 @@
         ],
         "children": [
           {
-            "name": "Ku's Domain",
+            "name": "Dark Ruins",
             "map_locations": [
               {
                 "map": "lorule",
@@ -217,23 +217,23 @@
             ],
             "sections": [
               {
-                "name": "Fight",
+                "name": "Ku's Domain Fight",
                 "access_rules": [
                   "merge, bow",
                   "merge, bombs",
-                  "merge, fsword, flippers",
-                  "merge, fsword, great_spin",
+                  "merge, fsword",
                   "merge, niceirod",
+                  "merge, nicetrod",
                   "merge, nicehookshot",
-                  "[hard], merge, fsword, power_glove",
-                  "[hard], merge, msword"
+                  "[hard], merge, power_glove, lamp",
+                  "[hard], merge, power_glove, net"
                 ],
                 "item_count": 1
               }
             ]
           },
           {
-            "name": "Dark Maze",
+            "name": "Dark Ruins",
             "map_locations": [
               {
                 "map": "lorule",
@@ -243,7 +243,7 @@
             ],
             "sections": [
               {
-                "name": "Chest",
+                "name": "Dark Maze Chest",
                 "item_count": 1,
                 "access_rules": [
                   "merge",
@@ -253,7 +253,7 @@
             ]
           },
           {
-            "name": "Dark Maze",
+            "name": "Dark Ruins",
             "map_locations": [
               {
                 "map": "lorule",
@@ -263,7 +263,7 @@
             ],
             "sections": [
               {
-                "name": "Ledge",
+                "name": "Dark Maze Ledge",
                 "capture_item": true,
                 "item_count": 1,
                 "access_rules": [
@@ -274,7 +274,7 @@
             ]
           },
           {
-            "name": "Dark/Turtle Chest",
+            "name": "Turtle Rock Area",
             "map_locations": [
               {
                 "map": "lorule",
@@ -284,7 +284,7 @@
             ],
             "sections": [
               {
-                "name": "Turtle Rock Area",
+                "name": "Dark/Turtle Chest",
                 "item_count": 1
               }
             ]
@@ -300,7 +300,7 @@
         ],
         "children": [
           {
-            "name": "Lorule Blacksmith",
+            "name": "Lorule Castle Area",
             "map_locations": [
               {
                 "map": "lorule",
@@ -310,7 +310,7 @@
             ],
             "sections": [
               {
-                "name": "Give 2 more Master Ore",
+                "name": "Blacksmith (Lorule)",
                 "access_rules": [
                   "blacksmith, ore_4"
                 ],
@@ -335,7 +335,7 @@
           //        ]
           //      },
           {
-            "name": "Pegasus Boots Pyramid",
+            "name": "Lorule Castle Area",
             "map_locations": [
               {
                 "map": "lorule",
@@ -345,7 +345,7 @@
             ],
             "sections": [
               {
-                "name": "Lorule Castle Area",
+                "name": "Pegasus Boots Pyramid",
                 "chest_unopened_img": "images/checks/chest_big_unopened.png",
                 "chest_opened_img": "images/checks/chest_big_opened.png",
                 "access_rules": [
@@ -362,7 +362,7 @@
             ]
           },
           {
-            "name": "Vacant House",
+            "name": "Lorule Castle Area",
             "map_locations": [
               {
                 "map": "lorule",
@@ -372,7 +372,7 @@
             ],
             "sections": [
               {
-                "name": "",
+                "name": "Vacant House",
                 "access_rules": [
                   "{csmc}",
                   "bombs",
@@ -383,7 +383,7 @@
             ]
           },
           {
-            "name": "Lorule Southern Ruins",
+            "name": "Lorule Castle Area",
             "map_locations": [
               {
                 "map": "lorule",
@@ -393,7 +393,7 @@
             ],
             "sections": [
               {
-                "name": "Thief Girl Cave",
+                "name": "Thief Girl",
                 "access_rules": [
                   "label_power_tt, power",
                   "label_wisdom_tt, wisdom",
@@ -411,7 +411,7 @@
             ]
           },
           {
-            "name": "Lorule Southern Ruins",
+            "name": "Lorule Castle Area",
             "map_locations": [
               {
                 "map": "lorule",
@@ -421,14 +421,14 @@
             ],
             "sections": [
               {
-                "name": "Hype Cave",
+                "name": "Swamp Cave",
                 //"capture_item": true,
                 "item_count": 3
               }
             ]
           },
           {
-            "name": "Lorule Haunted Grove",
+            "name": "Lorule Castle Area",
             "map_locations": [
               {
                 "map": "lorule",
@@ -438,18 +438,18 @@
             ],
             "sections": [
               {
-                "name": "Hookshot Chest",
+                "name": "Lorule Field Hookshot Chest",
                 "access_rules": [
                   "{csmc}",
-                  "not_portal_shuffle, quake, merge, hookshot",
-                  "portal_shuffle, portal_right_lorule_paradox, merge, hookshot"
+                  "not_cracksanity, quake, merge, hookshot",
+                  "cracksanity, crack_right_lorule_paradox, merge, hookshot"
                 ],
                 "item_count": 1
               }
             ]
           },
           {
-            "name": "Lorule Haunted Grove",
+            "name": "Lorule Castle Area",
             "map_locations": [
               {
                 "map": "lorule",
@@ -459,13 +459,13 @@
             ],
             "sections": [
               {
-                "name": "Big Bomb Cave",
+                "name": "Big Bomb Flower Cave",
                 "item_count": 1
               }
             ]
           },
           {
-            "name": "Octoball Derby",
+            "name": "Lorule Castle Area",
             "map_locations": [
               {
                 "map": "lorule",
@@ -475,16 +475,13 @@
             ],
             "sections": [
               {
-                "name": "Score 100+",
-                "item_count": 1,
-                "visibility_rules": [
-                  "minigames_enabled"
-                ]
+                "name": "Octoball Derby\nScore 100+",
+                "item_count": 1
               }
             ]
           },
           {
-            "name": "Lorule Rupee Rush",
+            "name": "Lorule Castle Area",
             "map_locations": [
               {
                 "map": "lorule",
@@ -494,18 +491,15 @@
             ],
             "sections": [
               {
-                "name": "Score 150+",
+                "name": "Rupee Rush (Lorule)\nScore 150+",
                 "access_rules": [
                 ],
-                "item_count": 1,
-                "visibility_rules": [
-                  "minigames_enabled"
-                ]
+                "item_count": 1
               }
             ]
           },
           {
-            "name": "Great Rupee Fairy",
+            "name": "Lorule Castle Area",
             "map_locations": [
               {
                 "map": "lorule",
@@ -515,7 +509,7 @@
             ],
             "sections": [
               {
-                "name": "Throw 3000 Rupees",
+                "name": "Great Rupee Fairy",
                 "item_count": 1
               }
             ]
@@ -539,7 +533,7 @@
             ],
             "sections": [
               {
-                "name": "Treasure Dungeon",
+                "name": "Sand Mini-Dungeon",
                 "access_rules": [
                   "{csmc}",
                   "merge, srod, trod",
@@ -552,32 +546,7 @@
         ]
       },
       {
-        "name": "Desert",
-        "map_locations": [
-          {
-            "map": "hyrule",
-            "x": 292,
-            "y": 1560,
-            "badge_size": 40
-          }
-        ],
-        "sections": [
-          {
-            "name": "Desert North Portal",
-            "hosted_item": "portal_desert_north",
-            "access_rules": [
-              "portal_desert_north",
-              "{portal_shuffle}",
-              "$access_desert, merge, bombs, srod",
-              "$access_desert, merge, bombs, scroll",
-              "[advanced], $access_desert, merge, bombs, $boost",
-              "[hell], $access_desert, merge, bombs"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Misery Mire North",
+        "name": "Misery Mire",
         "map_locations": [
           {
             "map": "lorule",
@@ -588,14 +557,14 @@
         ],
         "sections": [
           {
-            "name": "Misery Mire North Portal",
-            "hosted_item": "portal_mire_north",
+            "name": "North Crack",
+            "hosted_item": "crack_mire_north",
             "access_rules": [
-              "portal_mire_north",
-              "{}"
+              "crack_mire_north",
+              "{$inspect_crack_lorule}"
             ],
             "visibility_rules": [
-              "portal_shuffle"
+              "cracksanity"
             ]
           },
           {
@@ -603,8 +572,8 @@
             //"capture_item": true,
             "access_rules": [
               //"{}",
-              "merge, portal_mire_north",
-              "not_portal_shuffle, merge, quake, portal_desert_north",
+              "merge, crack_mire_north",
+              "not_cracksanity, merge, quake, crack_desert_north",
               "[advanced], $access_misery_mire, frod, boots"
             ],
             "item_count": 1
@@ -612,10 +581,10 @@
         ]
       },
       {
-        "name": "Lorule Lake",
+        "name": "Turtle Rock Area",
         "children": [
           {
-            "name": "Canyon Overlook Chest",
+            "name": "Lorule Lake Chest",
             "map_locations": [
               {
                 "map": "lorule",
@@ -627,15 +596,15 @@
               {
                 "name": "Turtle Rock Area",
                 "access_rules": [
-                  "not_portal_shuffle, merge, quake",
-                  "portal_shuffle, portal_lake_lorule, merge",
-                  "portal_shuffle, portal_river_lorule, flippers",
-                  "portal_shuffle, portal_lorule_hotfoot, flippers",
+                  "not_cracksanity, merge, quake",
+                  "cracksanity, crack_lake_lorule, merge",
+                  "cracksanity, crack_river_lorule, flippers",
+                  "cracksanity, crack_lorule_hotfoot, flippers",
                   "[glitched], $glitched_access_dark_ruins, $boost, flippers",
                   "[advanced], $advanced_access_dark_ruins, $boost, flippers",
                   "[hell], $hell_access_dark_ruins, $beeFakeFlippers",
-                  "[advanced], portal_shuffle, portal_lorule_hotfoot, $fakeFlippers",
-                  "[hell], portal_shuffle, portal_lorule_hotfoot, $beeFakeFlippers"
+                  "[advanced], cracksanity, crack_lorule_hotfoot, $fakeFlippers",
+                  "[hell], cracksanity, crack_lorule_hotfoot, $beeFakeFlippers"
                 ],
                 "item_count": 1
               }

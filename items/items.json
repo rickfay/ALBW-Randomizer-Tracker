@@ -331,12 +331,6 @@
     ]
   },
   {
-    "name": "Compass",
-    "type": "toggle",
-    "img": "images/items/compass.png",
-    "codes": "compass"
-  },
-  {
     "name": "Fire Rod",
     "type": "progressive",
     "stages": [

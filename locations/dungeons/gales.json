@@ -25,7 +25,7 @@
         "sections": [
           {
             "name": "(1F) Fire Bubbles",
-            "item_count": 1,
+            "hosted_item": "hog_chest_01",
             "access_rules": [
               "merge, $fire_enemy"
             ]
@@ -43,8 +43,8 @@
         ],
         "sections": [
           {
-            "name": "(1F) Switch Room\n(may need to die to escape)",
-            "item_count": 1
+            "name": "(1F) Switch Room (may need to die to escape)",
+            "hosted_item": "hog_chest_02"
           }
         ]
       },
@@ -60,7 +60,7 @@
         "sections": [
           {
             "name": "(1F) Torches",
-            "item_count": 1,
+            "hosted_item": "hog_chest_03",
             "access_rules": [
               "$fire"
             ]
@@ -79,10 +79,10 @@
         "sections": [
           {
             "name": "(1F) West Room",
-            "item_count": 1,
+            "hosted_item": "hog_chest_04",
             "access_rules": [
-              "merge",
-              "[hard]"
+              "hg_small_keys:1, merge",
+              "[hard], hg_small_keys:1"
             ]
           }
         ]
@@ -99,10 +99,10 @@
         "sections": [
           {
             "name": "(1F) West Room Secret",
-            "item_count": 1,
+            "hosted_item": "hog_chest_05",
             "access_rules": [
-              "{csmc}",
-              "merge"
+              "{csmc, hg_small_keys:1}",
+              "hg_small_keys:1, merge"
             ]
           }
         ]
@@ -127,7 +127,7 @@
               "$hog2F, hookshot",
               "[hard], $hog2F"
             ],
-            "item_count": 1
+            "hosted_item": "hog_chest_06"
           }
         ]
       },
@@ -144,10 +144,12 @@
           {
             "name": "(2F) Fire Ring",
             "access_rules": [
-              "$hog2F, merge"
+              "$hog2F, merge, hg_small_keys:3", // should really be 2, but we're defending against bad key use
+              "[glitched], $hog2F, merge, boots", // HoG Skip Skip, boots can reverse defeat mini-boss
+              "[hell], $hog2F, merge" // Awful Armos Boost
             ],
             //"capture_item": true,
-            "item_count": 1
+            "hosted_item": "hog_chest_07"
           }
         ]
       },
@@ -163,7 +165,7 @@
         "sections": [
           {
             "name": "(2F) Big Chest",
-            "item_count": 1,
+            "hosted_item": "hog_chest_08",
             "access_rules": [
               "$hog2F"
             ]
@@ -182,9 +184,10 @@
         "sections": [
           {
             "name": "(3F) Fire Bubbles",
-            "item_count": 1,
+            "hosted_item": "hog_chest_09",
             "access_rules": [
-              "{csmc, $hog3F}",
+              "{csmc, $hog3F, hg_small_keys:4}",
+              "{glitched, csmc, $hog3F, hg_small_keys:2}",
               "$hog3F, $fire"
             ]
           }
@@ -202,10 +205,14 @@
         "sections": [
           {
             "name": "(3F) Rat Room",
-            "item_count": 1,
+            "hosted_item": "hog_chest_10",
             "access_rules": [
               "{csmc, glitched, $hog2F}",
-              "$hog3F"
+              "$hog3F, hg_small_keys:4",
+              "$hog3F, hg_small_keys:3, $fire",
+              "[glitched], $hog3F, $fire",
+              "[], $hog3F, merge, hg_small_keys:2",
+              "[], $hog3F, merge, $fire"
             ]
           }
         ]
@@ -223,7 +230,7 @@
           {
             "name": "Margomill",
             //"capture_item": true,
-            "item_count": 1,
+            "hosted_item": "hog_chest_11",
             "access_rules": [
               "$hog3F, $margomill"
             ]
@@ -264,11 +271,95 @@
         ],
         "sections": [
           {
-            "name": "Dungeon",
-            "item_count": 5,
-            "clear_as_group": false,
+            "name": "(1F) Fire Bubbles",
+            "hosted_item": "hog_chest_01",
             "access_rules": [
-              "[trod], [$fire], [merge], [$attack]"
+              "merge, $fire_enemy"
+            ]
+          },
+          {
+            "name": "(1F) Switch Room",
+            "hosted_item": "hog_chest_02"
+          },
+          {
+            "name": "(1F) Torches",
+            "hosted_item": "hog_chest_03",
+            "access_rules": [
+              "$fire"
+            ]
+          },
+          {
+            "name": "(1F) West Room",
+            "hosted_item": "hog_chest_04",
+            "access_rules": [
+              "hg_small_keys:1, merge",
+              "[hard], hg_small_keys:1"
+            ]
+          },
+          {
+            "name": "(1F) West Room Secret",
+            "hosted_item": "hog_chest_05",
+            "access_rules": [
+              "{csmc, hg_small_keys:1}",
+              "hg_small_keys:1, merge"
+            ]
+          },
+          {
+            "name": "(2F) Narrow Ledge",
+            //"capture_item": true,
+            "access_rules": [
+              //"{$hog2F}",
+              "$hog2F, merge",
+              "$hog2F, boomerang",
+              "$hog2F, hookshot",
+              "[hard], $hog2F"
+            ],
+            "hosted_item": "hog_chest_06"
+          },
+          {
+            "name": "(2F) Fire Ring",
+            "access_rules": [
+              "$hog2F, merge, hg_small_keys:3", // should really be 2, but we're defending against bad key use
+              "[glitched], $hog2F, merge, boots", // HoG Skip Skip, boots can reverse defeat mini-boss
+              "[hell], $hog2F, merge" // Awful Armos Boost
+            ],
+            //"capture_item": true,
+            "hosted_item": "hog_chest_07"
+          },
+          {
+            "name": "(2F) Big Chest",
+            "hosted_item": "hog_chest_08",
+            "access_rules": [
+              "$hog2F"
+            ]
+          },
+          {
+            "name": "(3F) Fire Bubbles",
+            "hosted_item": "hog_chest_09",
+            "access_rules": [
+              "{csmc, $hog3F, hg_small_keys:4}",
+              "{glitched, csmc, $hog3F, hg_small_keys:2}",
+              "$hog3F, $fire"
+            ]
+          },
+          {
+            "name": "(3F) Rat Room",
+            "hosted_item": "hog_chest_10",
+            "access_rules": [
+              "{csmc, glitched, $hog2F}",
+              "$hog3F, hg_small_keys:4",
+              "$hog3F, hg_small_keys:3, $fire",
+              "[glitched], $hog3F, $fire",
+              "[], $hog3F, merge, hg_small_keys:2",
+              "[], $hog3F, merge, $fire"
+            ]
+          },
+          {
+            "name": "Margomill",
+            //"capture_item": true,
+            "hosted_item": "hog_chest_11",
+            "access_rules": [
+              "$hog3F, $margomill"
             ]
           },
           {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["$hog3F, $margomill"], "visibility_rules": ["label_power_hg"]},

@@ -22,7 +22,7 @@
         "sections": [
           {
             "name": "(1F) Hidden Chest",
-            "item_count": 1
+            "hosted_item": "ir_chest_01"
           }
         ]
       },
@@ -38,8 +38,12 @@
         "sections": [
           {
             "name": "(B1) Narrow Ledge",
+            "access_rules": [
+              "ir_small_keys:1",
+              "[advanced], boots, trod"
+            ],
             //"capture_item": true,
-            "item_count": 1
+            "hosted_item": "ir_chest_02"
           }
         ]
       },
@@ -55,7 +59,11 @@
         "sections": [
           {
             "name": "(B1) East Chest",
-            "item_count": 1
+            "access_rules": [
+              "ir_small_keys:1",
+              "[advanced], boots, trod"
+            ],
+            "hosted_item": "ir_chest_03"
           }
         ]
       },
@@ -71,7 +79,11 @@
         "sections": [
           {
             "name": "(B1) Upper Chest",
-            "item_count": 1
+            "access_rules": [
+              "ir_small_keys:2",
+              "[advanced], boots, trod"
+            ],
+            "hosted_item": "ir_chest_04"
           }
         ]
       },
@@ -88,7 +100,7 @@
           {
             "name": "(B2) Ice Pillar",
             //"capture_item": true,
-            "item_count": 1
+            "hosted_item": "ir_chest_05"
           }
         ]
       },
@@ -104,10 +116,10 @@
         "sections": [
           {
             "name": "(B2) Long Merge Chest",
-            "item_count": 1,
+            "hosted_item": "ir_chest_06",
             "access_rules": [
-              "{csmc}",
-              "$switch, scroll",
+              "{csmc, ir_small_keys:1}",
+              "ir_small_keys:2, $switch, scroll",
               "[advanced], boots"
             ]
           }
@@ -125,7 +137,7 @@
         "sections": [
           {
             "name": "(B3) Grate Chest (Left)",
-            "item_count": 1
+            "hosted_item": "ir_chest_07"
           }
         ]
       },
@@ -141,7 +153,7 @@
         "sections": [
           {
             "name": "(B3) Grate Chest (Right)",
-            "item_count": 1
+            "hosted_item": "ir_chest_08"
           }
         ]
       },
@@ -157,9 +169,10 @@
         "sections": [
           {
             "name": "(B3) Big Chest (Puzzle)",
-            "item_count": 1,
+            "hosted_item": "ir_chest_09",
             "access_rules": [
-              "$switch"
+              "ir_small_keys:2, $switch",
+              "[advanced], boots"
             ]
           }
         ]
@@ -176,11 +189,16 @@
         "sections": [
           {
             "name": "(B4) Switches",
-            "item_count": 1,
+            "hosted_item": "ir_chest_10",
             "access_rules": [
-              "progression_enemies",
-              "bombs",
-              "niceirod"
+              "ir_small_keys:2, progression_enemies",
+              "ir_small_keys:2, bombs",
+              "ir_small_keys:2, fsword, greatspin",
+              "ir_small_keys:2, niceirod",
+              "[advanced], boots, progression_enemies",
+              "[advanced], boots, bombs",
+              "[advanced], boots, fsword, greatspin",
+              "[advanced], boots, niceirod"
             ]
           }
         ]
@@ -197,7 +215,11 @@
         "sections": [
           {
             "name": "(B4) Southwest Chest (Fall)",
-            "item_count": 1
+            "access_rules": [
+              "ir_small_keys:2",
+              "[advanced], boots"
+            ],
+            "hosted_item": "ir_chest_11"
           }
         ]
       },
@@ -213,7 +235,12 @@
         "sections": [
           {
             "name": "(B4) Southeast Chest (Fall)",
-            "item_count": 1
+            "access_rules": [
+              "ir_small_keys:3",
+              "ir_small_keys:2, $switch",
+              "[advanced], boots"
+            ],
+            "hosted_item": "ir_chest_12"
           }
         ]
       },
@@ -229,7 +256,11 @@
         "sections": [
           {
             "name": "(B4) Narrow Platform",
-            "item_count": 1
+            "access_rules": [
+              "ir_small_keys:2",
+              "[advanced], boots"
+            ],
+            "hosted_item": "ir_chest_13"
           }
         ]
       },
@@ -245,7 +276,7 @@
         "sections": [
           {
             "name": "(B5) Big Chest",
-            "item_count": 1
+            "hosted_item": "ir_chest_14"
           }
         ]
       },
@@ -262,7 +293,11 @@
           {
             "name": "Dharkstare",
             //"capture_item": true,
-            "item_count": 1
+            "access_rules": [
+              "ir_small_keys:3, ir_big_key",
+              "[advanced], boots"
+            ],
+            "hosted_item": "ir_chest_15"
           }
         ]
       },
@@ -277,16 +312,16 @@
           }
         ],
         "sections": [
-          {"name": "Pendant of Power", "hosted_item": "power", "visibility_rules": ["label_power_ir"]},
-          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "visibility_rules": ["label_wisdom_ir"]},
-          {"name": "Pendant of Courage", "hosted_item": "courage", "visibility_rules": ["label_courage_ir"]},
-          {"name": "Gulley", "hosted_item": "gulley", "visibility_rules": ["label_gulley_ir"]},
-          {"name": "Oren", "hosted_item": "oren", "visibility_rules": ["label_oren_ir"]},
-          {"name": "Seres", "hosted_item": "seres", "visibility_rules": ["label_seres_ir"]},
-          {"name": "Osfala", "hosted_item": "osfala", "visibility_rules": ["label_osfala_ir"]},
-          {"name": "Impa", "hosted_item": "impa", "visibility_rules": ["label_impa_ir"]},
-          {"name": "Irene", "hosted_item": "irene", "visibility_rules": ["label_irene_ir"]},
-          {"name": "Rosso", "hosted_item": "rosso", "visibility_rules": ["label_rosso_ir"]}
+          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["ir_small_keys:3, ir_big_key", "[advanced], boots"], "visibility_rules": ["label_power_ir"]},
+          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["ir_small_keys:3, ir_big_key", "[advanced], boots"], "visibility_rules": ["label_wisdom_ir"]},
+          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["ir_small_keys:3, ir_big_key", "[advanced], boots"], "visibility_rules": ["label_courage_ir"]},
+          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["ir_small_keys:3, ir_big_key", "[advanced], boots"], "visibility_rules": ["label_gulley_ir"]},
+          {"name": "Oren", "hosted_item": "oren", "access_rules": ["ir_small_keys:3, ir_big_key", "[advanced], boots"], "visibility_rules": ["label_oren_ir"]},
+          {"name": "Seres", "hosted_item": "seres", "access_rules": ["ir_small_keys:3, ir_big_key", "[advanced], boots"], "visibility_rules": ["label_seres_ir"]},
+          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["ir_small_keys:3, ir_big_key", "[advanced], boots"], "visibility_rules": ["label_osfala_ir"]},
+          {"name": "Impa", "hosted_item": "impa", "access_rules": ["ir_small_keys:3, ir_big_key", "[advanced], boots"], "visibility_rules": ["label_impa_ir"]},
+          {"name": "Irene", "hosted_item": "irene", "access_rules": ["ir_small_keys:3, ir_big_key", "[advanced], boots"], "visibility_rules": ["label_irene_ir"]},
+          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["ir_small_keys:3, ir_big_key", "[advanced], boots"], "visibility_rules": ["label_rosso_ir"]}
         ]
       },
       {
@@ -300,24 +335,126 @@
         ],
         "sections": [
           {
-            "name": "Dungeon",
-            "clear_as_group": false,
-            "item_count": 10,
+            "name": "(1F) Hidden Chest",
+            "hosted_item": "ir_chest_01"
+          },
+          {
+            "name": "(B2) Ice Pillar",
+            //"capture_item": true,
+            "hosted_item": "ir_chest_05"
+          },
+          {
+            "name": "(B3) Grate Chest (Left)",
+            "hosted_item": "ir_chest_07"
+          },
+          {
+            "name": "(B3) Grate Chest (Right)",
+            "hosted_item": "ir_chest_08"
+          },
+          {
+            "name": "(B5) Big Chest",
+            "hosted_item": "ir_chest_14"
+          },
+          {
+            "name": "(B1) East Chest",
             "access_rules": [
-              "[frod], [scroll], [$switch]",
-              "[advanced], [frod], [boots]"
+              "ir_small_keys:1",
+              "[advanced], boots, trod"
+            ],
+            "hosted_item": "ir_chest_03"
+          },
+          {
+            "name": "(B1) Narrow Ledge",
+            "access_rules": [
+              "ir_small_keys:1",
+              "[advanced], boots, trod"
+            ],
+            //"capture_item": true,
+            "hosted_item": "ir_chest_02"
+          },
+          {
+            "name": "(B1) Upper Chest",
+            "access_rules": [
+              "ir_small_keys:2",
+              "[advanced], boots, trod"
+            ],
+            "hosted_item": "ir_chest_04"
+          },
+          {
+            "name": "(B4) Switches",
+            "hosted_item": "ir_chest_10",
+            "access_rules": [
+              "ir_small_keys:2, progression_enemies",
+              "ir_small_keys:2, bombs",
+              "ir_small_keys:2, fsword, greatspin",
+              "ir_small_keys:2, niceirod",
+              "[advanced], boots, progression_enemies",
+              "[advanced], boots, bombs",
+              "[advanced], boots, fsword, greatspin",
+              "[advanced], boots, niceirod"
             ]
           },
-          {"name": "Pendant of Power", "hosted_item": "power", "visibility_rules": ["label_power_ir"]},
-          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "visibility_rules": ["label_wisdom_ir"]},
-          {"name": "Pendant of Courage", "hosted_item": "courage", "visibility_rules": ["label_courage_ir"]},
-          {"name": "Gulley", "hosted_item": "gulley", "visibility_rules": ["label_gulley_ir"]},
-          {"name": "Oren", "hosted_item": "oren", "visibility_rules": ["label_oren_ir"]},
-          {"name": "Seres", "hosted_item": "seres", "visibility_rules": ["label_seres_ir"]},
-          {"name": "Osfala", "hosted_item": "osfala", "visibility_rules": ["label_osfala_ir"]},
-          {"name": "Impa", "hosted_item": "impa", "visibility_rules": ["label_impa_ir"]},
-          {"name": "Irene", "hosted_item": "irene", "visibility_rules": ["label_irene_ir"]},
-          {"name": "Rosso", "hosted_item": "rosso", "visibility_rules": ["label_rosso_ir"]}
+          {
+            "name": "(B4) Southwest Chest (Fall)",
+            "access_rules": [
+              "ir_small_keys:2",
+              "[advanced], boots"
+            ],
+            "hosted_item": "ir_chest_11"
+          },
+          {
+            "name": "(B4) Narrow Platform",
+            "access_rules": [
+              "ir_small_keys:2",
+              "[advanced], boots"
+            ],
+            "hosted_item": "ir_chest_13"
+          },
+          {
+            "name": "(B2) Long Merge Chest",
+            "hosted_item": "ir_chest_06",
+            "access_rules": [
+              "{csmc, ir_small_keys:1}",
+              "ir_small_keys:2, $switch, scroll",
+              "[advanced], boots"
+            ]
+          },
+          {
+            "name": "(B3) Big Chest (Puzzle)",
+            "hosted_item": "ir_chest_09",
+            "access_rules": [
+              "ir_small_keys:2, $switch",
+              "[advanced], boots"
+            ]
+          },
+          {
+            "name": "(B4) Southeast Chest (Fall)",
+            "access_rules": [
+              "ir_small_keys:3",
+              "ir_small_keys:2, $switch",
+              "[advanced], boots"
+            ],
+            "hosted_item": "ir_chest_12"
+          },
+          {
+            "name": "Dharkstare",
+            //"capture_item": true,
+            "access_rules": [
+              "ir_small_keys:3, ir_big_key",
+              "[advanced], boots"
+            ],
+            "hosted_item": "ir_chest_15"
+          },
+          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["ir_small_keys:3, ir_big_key", "[advanced], boots"], "visibility_rules": ["label_power_ir"]},
+          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["ir_small_keys:3, ir_big_key", "[advanced], boots"], "visibility_rules": ["label_wisdom_ir"]},
+          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["ir_small_keys:3, ir_big_key", "[advanced], boots"], "visibility_rules": ["label_courage_ir"]},
+          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["ir_small_keys:3, ir_big_key", "[advanced], boots"], "visibility_rules": ["label_gulley_ir"]},
+          {"name": "Oren", "hosted_item": "oren", "access_rules": ["ir_small_keys:3, ir_big_key", "[advanced], boots"], "visibility_rules": ["label_oren_ir"]},
+          {"name": "Seres", "hosted_item": "seres", "access_rules": ["ir_small_keys:3, ir_big_key", "[advanced], boots"], "visibility_rules": ["label_seres_ir"]},
+          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["ir_small_keys:3, ir_big_key", "[advanced], boots"], "visibility_rules": ["label_osfala_ir"]},
+          {"name": "Impa", "hosted_item": "impa", "access_rules": ["ir_small_keys:3, ir_big_key", "[advanced], boots"], "visibility_rules": ["label_impa_ir"]},
+          {"name": "Irene", "hosted_item": "irene", "access_rules": ["ir_small_keys:3, ir_big_key", "[advanced], boots"], "visibility_rules": ["label_irene_ir"]},
+          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["ir_small_keys:3, ir_big_key", "[advanced], boots"], "visibility_rules": ["label_rosso_ir"]}
         ]
       }
     ]

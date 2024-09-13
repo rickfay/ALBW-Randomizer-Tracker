@@ -104,7 +104,6 @@
             "access_rules": [
               "{cracksanity}",
               "$sanctuary",
-              "[hard], $hard_sanctuary",
               "[lampless], $lampless_sanctuary"
             ],
             "visibility_rules": [
@@ -546,7 +545,7 @@
       {
         "map": "hyrule8F",
         "x": 83,
-        "y": 59,
+        "y": 33,
         "size": 24,
         "badge_size": 16
       }

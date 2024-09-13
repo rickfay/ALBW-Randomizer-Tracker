@@ -16,7 +16,6 @@
                   "type": "container",
                   "h_alignment": "center",
                   "v_alignment": "top",
-                  "margin": "0,0,0,165",
                   "content": [
                     // Item Maps
                     {
@@ -63,7 +62,7 @@
                 {
                   "type": "container",
                   "v_alignment": "top",
-                  "margin": "0,0,0,165",
+                  "margin": "0,0,0,97",
                   "content": [
                     // Item Maps
                     {

@@ -11,7 +11,7 @@
       "boomerang",
       "bombs",
       "great_spin, fsword",
-      "[nice_mode], niceirod",
+      "niceirod",
       "[hard], glove, msword",
       "[hard], irod, msword",
       "[hard], bell, wv_eastern, msword"
@@ -29,7 +29,7 @@
         "sections": [
           {
             "name": "(1F) Merge Chest",
-            "item_count": 1,
+            "hosted_item": "ep_chest_01",
             "access_rules": [
               "merge"
             ]
@@ -48,7 +48,7 @@
         "sections": [
           {
             "name": "(1F) Left Door Chest",
-            "item_count": 1,
+            "hosted_item": "ep_chest_02",
             "access_rules": [
               "{csmc}",
               "bow",
@@ -56,7 +56,7 @@
               "boomerang",
               "bombs",
               "great_spin, fsword",
-              "[nice_mode], niceirod",
+              "niceirod",
               "[hard]"
             ]
           }
@@ -74,7 +74,7 @@
         "sections": [
           {
             "name": "(1F) Popo Room",
-            "item_count": 1,
+            "hosted_item": "ep_chest_03",
             "access_rules": [
               "$attack"
             ]
@@ -93,7 +93,7 @@
         "sections": [
           {
             "name": "(1F) Secret Room",
-            "item_count": 1,
+            "hosted_item": "ep_chest_04",
             "access_rules": [
               "$attack"
             ]
@@ -112,7 +112,7 @@
         "sections": [
           {
             "name": "(1F) Switch Room",
-            "item_count": 1,
+            "hosted_item": "ep_chest_05",
             "access_rules": [
               "{csmc}",
               "bow",
@@ -138,9 +138,9 @@
         "sections": [
           {
             "name": "(2F) Ball Room",
-            "item_count": 1,
+            "hosted_item": "ep_chest_06",
             "access_rules": [
-              "$attack"
+              "ep_small_keys:1, $attack"
             ]
           }
         ]
@@ -157,9 +157,9 @@
         "sections": [
           {
             "name": "(2F) Defeat Popos",
-            "item_count": 1,
+            "hosted_item": "ep_chest_07",
             "access_rules": [
-              "$attack"
+              "ep_small_keys:1, $attack"
             ]
           }
         ]
@@ -176,16 +176,16 @@
         "sections": [
           {
             "name": "(2F) Switch Room",
-            "item_count": 1,
+            "hosted_item": "ep_chest_08",
             "access_rules": [
-              "bow",
-              "bombs",
-              "irod",
-              "$attack, boomerang",
-              "$attack, hookshot",
-              "great_spin, fsword",
+              "ep_small_keys:1, bow",
+              "ep_small_keys:1, bombs",
+              "ep_small_keys:1, irod",
+              "ep_small_keys:1, $attack, boomerang",
+              "ep_small_keys:1, $attack, hookshot",
+              "ep_small_keys:1, great_spin, fsword",
               // You can use 4 of the 6 pots
-              "[hard], $attack"
+              "[hard], ep_small_keys:1, $attack"
             ]
           }
         ]
@@ -202,9 +202,10 @@
         "sections": [
           {
             "name": "(2F) Big Chest",
-            "item_count": 1,
+            "hosted_item": "ep_chest_09",
             "access_rules": [
-              "$attack"
+              "ep_small_keys:2, $attack",
+              "[advanced], ep_small_keys:1, trod"
             ]
           }
         ]
@@ -221,7 +222,7 @@
         "sections": [
           {
             "name": "Yuga",
-            "item_count": 2,
+            "hosted_item": "ep_chest_10_11",
             "access_rules": [
               "$yuga_eastern"
             ]
@@ -240,7 +241,7 @@
         "sections": [
           {
             "name": "(3F) Escape Chest",
-            "item_count": 1,
+            "hosted_item": "ep_chest_12",
             "access_rules": [
               "$yuga_eastern, merge"
             ]
@@ -259,7 +260,7 @@
         "sections": [
           {
             "name": "(1F) Escape Chest",
-            "item_count": 1,
+            "hosted_item": "ep_chest_13",
             "access_rules": [
               "$yuga_eastern, merge"
             ]
@@ -292,15 +293,122 @@
       {
         "name": "Eastern Palace",
         "sections": [
+//          {
+//            "name": "Dungeon",
+//            "item_count": 9,
+//            "clear_as_group": false,
+//            "access_rules": [
+//              "[merge], [bow], [bombs]",
+//              "[merge], [bow], [irod]"
+//            ]
+//          },
           {
-            "name": "Dungeon",
-            "item_count": 9,
-            "clear_as_group": false,
+            "name": "(1F) Merge Chest",
+            "hosted_item": "ep_chest_01",
             "access_rules": [
-              "[merge], [bow], [bombs]",
-              "[merge], [bow], [irod]"
+              "merge"
             ]
           },
+          {
+            "name": "(1F) Left Door Chest",
+            "hosted_item": "ep_chest_02",
+            "access_rules": [
+              "{csmc}",
+              "bow",
+              "hookshot",
+              "boomerang",
+              "bombs",
+              "great_spin, fsword",
+              "niceirod",
+              "[hard]"
+            ]
+          },
+          {
+            "name": "(1F) Popo Room",
+            "hosted_item": "ep_chest_03",
+            "access_rules": [
+              "$attack"
+            ]
+          },
+          {
+            "name": "(1F) Secret Room",
+            "hosted_item": "ep_chest_04",
+            "access_rules": [
+              "$attack"
+            ]
+          },
+          {
+            "name": "(1F) Switch Room",
+            "hosted_item": "ep_chest_05",
+            "access_rules": [
+              "{csmc}",
+              "bow",
+              "boomerang",
+              "hookshot",
+              "bombs",
+              "great_spin, fsword",
+              "[hard], irod",
+              "[hard], msword"
+            ]
+          },
+          {
+            "name": "(2F) Ball Room",
+            "hosted_item": "ep_chest_06",
+            "access_rules": [
+              "ep_small_keys:1, $attack"
+            ]
+          },
+          {
+            "name": "(2F) Defeat Popos",
+            "hosted_item": "ep_chest_07",
+            "access_rules": [
+              "ep_small_keys:1, $attack"
+            ]
+          },
+          {
+            "name": "(2F) Switch Room",
+            "hosted_item": "ep_chest_08",
+            "access_rules": [
+              "ep_small_keys:1, bow",
+              "ep_small_keys:1, bombs",
+              "ep_small_keys:1, irod",
+              "ep_small_keys:1, $attack, boomerang",
+              "ep_small_keys:1, $attack, hookshot",
+              "ep_small_keys:1, great_spin, fsword",
+              // You can use 4 of the 6 pots
+              "[hard], ep_small_keys:1, $attack"
+            ]
+          },
+          {
+            "name": "(2F) Big Chest",
+            "hosted_item": "ep_chest_09",
+            "access_rules": [
+              "ep_small_keys:2, $attack",
+              "[advanced], ep_small_keys:1, trod"
+            ]
+          },
+          {
+            "name": "Yuga",
+            "hosted_item": "ep_chest_10_11",
+            "access_rules": [
+              "$yuga_eastern"
+            ]
+          },
+          {
+            "name": "(3F) Escape Chest",
+            "hosted_item": "ep_chest_12",
+            "access_rules": [
+              "$yuga_eastern, merge"
+            ]
+          },
+          {
+            "name": "(1F) Escape Chest",
+            "hosted_item": "ep_chest_13",
+            "access_rules": [
+              "$yuga_eastern, merge"
+            ]
+          },
+
           {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["$yuga_eastern"], "visibility_rules": ["label_power_ep"]},
           {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["$yuga_eastern"], "visibility_rules": ["label_wisdom_ep"]},
           {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["$yuga_eastern"], "visibility_rules": ["label_courage_ep"]},

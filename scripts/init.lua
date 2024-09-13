@@ -30,6 +30,7 @@ Tracker:AddLayouts("layouts/capturable.json")
 Tracker:AddLayouts("layouts/event_grid.json")
 Tracker:AddLayouts("layouts/key_grid.json")
 Tracker:AddLayouts("layouts/label_grid.json")
+Tracker:AddLayouts("layouts/dungeon_grid.json")
 Tracker:AddLayouts("layouts/weather_vane_grid.json")
 
 Tracker:AddLayouts("layouts/maps/worlds.json")

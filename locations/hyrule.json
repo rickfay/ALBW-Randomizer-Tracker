@@ -97,7 +97,7 @@
                 "item_count": 1
               },
               {
-                "name": "Rosso (2)\nSmash Rocks",
+                "name": "Rosso (2) (Smash Rocks)",
                 "access_rules": [
                   "rosso, power_glove"
                 ],
@@ -209,7 +209,7 @@
             ]
           },
           {
-            "name": "River Area\nHyrule Sanctuary",
+            "name": "River Area - Hyrule Sanctuary",
             "map_locations": [
               {
                 "map": "hyrule",
@@ -310,8 +310,8 @@
                 "access_rules": [
                   "crack_graveyard_lorule",
                   "{cracksanity, $inspect_crack_lorule}",
-                  "$access_lorule_graveyard, bombs, merge",
-                  "$lampless_access_lorule_graveyard, bombs, merge"
+                  "bombs, merge, [lamp], $access_lorule_graveyard",
+                  "bombs, merge, [lampless], $lampless_access_lorule_graveyard"
                 ]
               }
             ]
@@ -457,7 +457,7 @@
             ],
             "sections": [
               {
-                "name": "Milk Bar\nTrade Letter in a Bottle",
+                "name": "Milk Bar (Trade Letter in a Bottle)",
                 "hosted_item": "bottle_milk_premium",
                 "access_rules": [
                   "bottle_letter"
@@ -538,14 +538,14 @@
             ],
             "sections": [
               {
-                "name": "Bee Guy (1)\nHave Empty Bottle",
+                "name": "Bee Guy (1) (Have Empty Bottle)",
                 "access_rules": [
                   "bottle"
                 ],
                 "item_count": 1
               },
               {
-                "name": "Bee Guy (2)\nTrade Golden Bee",
+                "name": "Bee Guy (2) (Trade Golden Bee)",
                 "access_rules": [
                   "golden_bee",
                   "[hell], bottle, net"
@@ -565,7 +565,7 @@
             ],
             "sections": [
               {
-                "name": "Dodge the Cuccos\nRooster Mode",
+                "name": "Dodge the Cuccos (Rooster Mode)",
                 "item_count": 1
               }
             ]
@@ -689,7 +689,7 @@
             ],
             "sections": [
               {
-                "name": "Rupee Rush\nScore 100+\n(Buy any item from Ravio to unlock)",
+                "name": "Rupee Rush (Score 100+) (Buy any item from Ravio to unlock)",
                 "item_count": 1
               }
             ]
@@ -852,7 +852,7 @@
             ],
             "sections": [
               {
-                "name": "Cucco Mini-Dungeon\n(Silver Rupee)",
+                "name": "Cucco Mini-Dungeon (Silver Rupee)",
                 "access_rules": [
                   "merge"
                 ],
@@ -1146,10 +1146,18 @@
                   "[glitched], titansmitt, nicebombs",
                   "[glitched], great_spin, fsword, irod",
                   "[glitched], great_spin, fsword, titansmitt",
-                  "[glitched], [nice_mode], fsword, niceirod",
+                  "[glitched], fsword, niceirod, boomerang",
+                  "[glitched], fsword, niceirod, hookshot",
+                  "[glitched], fsword, niceirod, flippers",
                   "[advanced], irod, flippers, hookshot",
                   "[advanced], irod, nicebombs",
-                  "[advanced], [nice_mode], niceirod"
+                  "[advanced], niceirod, boomerang",
+                  "[advanced], niceirod, hookshot",
+                  "[advanced], niceirod, flippers, fsword",
+                  "[advanced], niceirod, flippers, bow",
+                  "[advanced], niceirod, flippers, boots",
+                  "[advanced], niceirod, flippers, hammer",
+                  "[hell], niceirod"
                 ],
                 "item_count": 1
               }

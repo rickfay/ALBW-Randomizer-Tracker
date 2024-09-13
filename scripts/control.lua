@@ -64,40 +64,34 @@ function true_for(logic)
     end
 end
 
--- Can we attack according to normal logic
-function attack_normal()
-    return hasAny({ "fsword", "bow", "bombs", "frod", "irod", "hammer", "boots" })
+-- Can the player attack
+function attack()
+    return hasAny({ "fsword", "bow", "bombs", "frod", "irod", "hammer", "boots", "nicetrod", "nicehookshot", "superlamp", "supernet" }) or (has("lamp_net_weapons") and hasAny({"lamp", "net"}))
 end
 
--- Return if the player can deal damage
-function attack()
-    if attack_normal() then
-        return true
-    elseif hasAny({ "lamp", "net" }) then
-        return true_for("hard")
-    else
-        return false
-    end
+-- Same as attack(), minus the bow
+function attack_bowproof()
+    return hasAny({ "fsword", "bombs", "frod", "irod", "hammer", "boots", "nicetrod", "nicehookshot", "superlamp", "supernet" }) or (has("lamp_net_weapons") and hasAny({"lamp", "net"}))
 end
 
 -- Return if the player can deal damage to enemies that are immune to fire
 function fire_enemy()
-    if hasAny({ "fsword", "bow", "bombs", "irod", "hammer", "boots" }) then
-        return true
-    elseif has("net") then
-        return true_for("hard")
-    else
-        return false
-    end
+    return hasAny({ "fsword", "bow", "bombs", "irod", "hammer", "boots", "nicetrod", "nicehookshot", "supernet" })  or hasAll({ "lamp_net_weapons", "net" })
+end
+
+function progression_enemies_floor()
+    return hasAny({"bombs", "hammer", "progression_enemies"})
 end
 
 -- Return if the player can attack Margomill
 -- This is the same as attack(), minus the ice rod
 function margomill()
-    if hasAny({ "fsword", "bow", "bombs", "frod", "hammer", "boots" }) then
-        return true
-    elseif hasAny({ "lamp", "net" }) then
-        return true_for("hard")
+    if has("hg_big_key") and attack() then
+        if has_amount("hg_small_keys", 4) then
+            return true
+        elseif has_amount("hg_small_keys", 2) then
+            return true, AccessibilityLevel.SequenceBreak
+        end
     end
 
     return false
@@ -106,8 +100,10 @@ end
 -- Return if the player can attack Knucklemaster
 -- This is the same as attack(), minus the bow
 function knucklemaster()
-    if has("msword") or (has("swordless") and hasAny({ "fsword", "bombs", "frod", "irod", "hammer", "boots" })) then
+    if has("msword") or (has("swordless") and attack_bowproof()) then
         return true
+    elseif attack_bowproof() then
+        return true, AccessibilityLevel.SequenceBreak
     end
 
     return false
@@ -218,19 +214,61 @@ function cutGrass()
     return hasAny({ "fsword", "boomerang", "bombs", "frod", "irod", "lamp", "boots" });
 end
 
+function access_ep_boss()
+    return attack() and has("ep_big_key") and (has_amount("ep_small_keys", 2) or (has_amount("ep_small_keys", 1) and hasAny({ "bombs", "irod" })))
+end
+
+function access_ep_boss_glitched()
+    if access_ep_boss() then
+        return true
+    end
+    return has_amount("ep_small_keys", 1) and (has("msword") or (hasAll({ "fsword", "great_spin" })))
+end
+
+function access_ep_boss_advanced()
+    if access_ep_boss_glitched() then
+        return true
+    end
+    return attack() and has_amount("ep_small_keys", 1) and has("trod")
+end
+
 -- Can defeat Yuga 1 in Eastern Palace
 function yuga_eastern()
-    if has("bow") then
-        return true
-    elseif has("bombs") or (hasAny({ "boomerang", "hookshot" }) and attack()) or hasAll({ "nice_mode", "niceirod" }) then
-        return true_for("hard")
-    elseif hasAny({ "irod", "msword" }) then
-        return true_for("hell")
-    elseif has("niceirod") then
-        return true, AccessibilityLevel.SequenceBreak
-    else
-        return false
+
+    -- Normal
+    if access_ep_boss() then
+        if has("bow") then
+            return true
+        end
     end
+
+    -- Hard
+    if access_ep_boss() then
+        if has("bombs") or hasAny({ "msword", "niceirod" }) or (hasAny({ "boomerang", "hookshot" }) and attack()) then
+            return true_for("hard")
+        end
+    end
+
+    -- Glitched
+    if access_ep_boss_glitched() then
+        if hasAny({ "bow", "bombs" }) or hasAny({ "msword", "niceirod" }) or (hasAny({ "boomerang", "hookshot" }) and attack()) then
+            return true_for("glitched")
+        end
+    end
+
+    -- Advanced Glitched
+    if access_ep_boss_advanced() then
+        if hasAny({ "bow", "bombs" }) or hasAny({ "msword", "niceirod" }) or (hasAny({ "boomerang", "hookshot" }) and attack()) then
+            return true_for("advanced")
+        end
+
+        -- Hell
+        if has("irod") then
+            return true_for("hell")
+        end
+    end
+
+    return false
 end
 
 function notNiceMode()
@@ -313,19 +351,21 @@ end
 
 -- Can reach House of Gales 2F (assume TRod)
 function hog2F()
-    if has("merge") and switch() then
-        return true
-    elseif hasAny({ "bow", "boomerang", "hookshot", "bombs", "irod", "msword" }) or hasAll({ "great_spin", "fsword" }) then
-        return true_for("hard")
-    else
-        return false
+    if has_amount("hg_small_keys", 1) then
+        if has("merge") and switch() then
+            return true
+        elseif hasAny({ "bow", "boomerang", "hookshot", "bombs", "irod", "msword" }) or hasAll({ "great_spin", "fsword" }) then
+            return true_for("hard")
+        end
     end
+
+    return false
 end
 
 -- Can reach House of Gales 3F (assume TRod)
 function hog3F()
     if hog2F() and has("merge") then
-        if fire_enemy() then
+        if has_amount("hg_small_keys", 3) and fire_enemy() then
             return fire_enemy()
         else
             return true_for("glitched")
@@ -384,7 +424,7 @@ end
 
 --
 function thEscapeEquipment()
-    return has("merge") and thB1B2DoorsOpen() and thDrainWaterB3()
+    return hasAll({"merge", "tt_small_key"}) and thB1B2DoorsOpen() and thDrainWaterB3()
 end
 
 -- Can statue clip OOB in Thieves' Hideout under Adv. Glitched Logic
@@ -502,17 +542,12 @@ end
 
 -- Can players complete Sanctuary
 function sanctuary()
-    return (has("lamp") and attack_normal()) or hasAll({ "lampless", "frod" })
-end
-
--- [Hard] Can players complete Sanctuary
-function hard_sanctuary()
-    return (has("lamp") and attack()) or hasAll({ "lampless", "frod" })
+    return has("hs_small_key") and ((has("lamp") and attack()) or hasAll({ "lampless", "frod" }))
 end
 
 -- [Lampless] Can players complete Sanctuary
 function lampless_sanctuary()
-    return has("frod") or sanctuary()
+    return has("hs_small_key") and (has("frod") or sanctuary())
 end
 
 -- Never in logic
@@ -554,9 +589,15 @@ function canEnterLC()
     if lc_requirement() and access_central_lorule() then
         return true
     end
-    if hasAll({ "crack_lc", "trials_door_open", "merge" }) then
+
+    if notCracksanity() and hasAll({"merge", "crack_hc", "lc_trials_door"}) then
         return true
     end
+
+    if hasAll({ "cracksanity", "crack_lc", "lc_trials_door", "merge" }) then
+        return true
+    end
+
     return false
 end
 
@@ -588,9 +629,23 @@ end
 function lc2F()
     if attack() then
         return true
-    else
-        return true_for("hard")
     end
+
+    if notCracksanity() and hasAll({"crack_hc", "lc_trials_door"}) then
+        return true
+    elseif hasAll({"cracksanity", "crack_lc", "lc_trials_door"}) then
+        return true
+    end
+
+    return true_for("hard")
+end
+
+function advanced_lc3F4F()
+    if hasAll({"nicebombs", "trod"}) and hasAny({"bow", "merge"}) then
+        return true_for("advanced")
+    end
+
+    return false
 end
 
 -- Map the Yuganon requirement from a progressive item to a number
@@ -627,7 +682,25 @@ end
 
 -- Returns only if we can reach the final boss, NOT if we can obtain Zelda's check or win the fight
 function can_reach_final_boss()
-    return has("merge") and lc_requirement() and (has("crack_lc") or (notCracksanity() and attack_normal() and (has("trials_skipped") or hasAll({"hookshot", "bombs", "lamp"}))))
+    if lc_requirement() then
+        if has("merge") and (hasAll({"not_cracksanity", "crack_hc"}) or hasAll({"cracksanity", "crack_lc"}))  then
+            return true
+        end
+
+        if access_central_lorule() and has("lc_trials_door") then
+            return true
+        end
+
+        if advanced_access_central_lorule() and hasAny({"lc_trials_door", "fsword"}) then
+            return true_for("advanced")
+        end
+
+        if hell_access_central_lorule() and hasAny({"lc_trials_door", "fsword"}) then
+            return true_for("hell")
+        end
+    end
+
+    return false
 end
 
 -- Returns only if we can perform Trial's Skip to fight Yuganon, NOT if we can obtain Zelda's check or win the fight
@@ -641,28 +714,6 @@ function can_skip_trials()
     end
 
     return false
-end
-
--- Returns if we can logically play tennis with Yuganon
-function can_play_tennis()
-    if has("sword") or hasAll({ "swordless", "net" }) then
-        return true
-    elseif has("net") then
-        return true_for("hard")
-    end
-
-    return false
-end
-
--- Return if we can reach Zelda in Lorule Castle
-function zelda()
-    if can_reach_final_boss() then
-        return can_play_tennis()
-    elseif can_play_tennis() then
-        return can_skip_trials()
-    else
-        return false
-    end
 end
 
 function countNiceItems()

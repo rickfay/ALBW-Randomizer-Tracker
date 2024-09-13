@@ -124,8 +124,8 @@ end
 
 -- Lorule Graveyard
 function access_lorule_graveyard()
-    if notCracksanity() and hasAll({ "merge", "quake" }) and attack() and has("lamp") then
-        return true
+    if notCracksanity() and hasAll({ "merge", "quake", "hs_small_key" }) and attack() then
+        return lampless()
     end
 
     if hasAll({ "cracksanity", "merge" }) and hasAny({ "crack_philosopher", "crack_graveyard_lorule" }) then
@@ -141,7 +141,7 @@ end
 
 -- [Lampless] Lorule Graveyard
 function lampless_access_lorule_graveyard()
-    if notCracksanity() and hasAll({ "merge", "quake", "frod" }) then
+    if notCracksanity() and hasAll({ "merge", "quake", "frod", "hs_small_key" }) then
         return true
     end
     return false

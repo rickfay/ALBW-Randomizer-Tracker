@@ -12,18 +12,18 @@
           [
             "logic",
             "lc_requirement",
-            "trials_door_open",
             "ped_requirement_3",
             "cracksanity",
-            "weathervania"
+            "weathervania",
+            "maiamai_map"
           ],
           [
             "progression_enemies",
             "lampless",
+            "lamp_net_not_weapons",
             "beeBoost_hide",
             "nice_mode",
-            "csmc",
-            "maiamai_map"
+            "csmc"
           ]
         ]
       }

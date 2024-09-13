@@ -11,8 +11,10 @@
         "item_margin": "0,0,22,22",
         "margin": "1",
         "rows": [
-          // Making an override?
-          // Move the great_spin to the same grid location as the Sword.
+          // Making an override? Hi! :)
+          // FYI - The Great Spin lives in a separate grid than the rest of the items, laid overtop of them.
+          // If you move the Sword and want the Great Spin to display properly, make this grid match your changes
+          // and put the Great Spin in the same spot relative to the Sword.
           [
             "great_spin",
             "",
@@ -63,7 +65,7 @@
                 "hint_glasses"
               ],
               [
-                "bell", // pouch
+                "bell",
                 "maiamai",
                 "ore",
                 "bottle",
@@ -72,8 +74,8 @@
                 "scoot"
               ],
               [
-                "quake", // bell
-                "", // quake
+                "quake",
+                "", // pouch
                 "wisdom",
                 "power",
                 "courage",

@@ -74,13 +74,12 @@
       {
         "name": "Graveyard",
         "access_rules": [
-          "{csmc}",
           "$access_lorule_graveyard",
           "[lampless], $lampless_access_lorule_graveyard"
         ],
         "children": [
           {
-            "name": "Graveyard\nLorule Sanctuary",
+            "name": "Graveyard - Lorule Sanctuary",
             "access_rules": [
               "titansmitt"
 //              "titansmitt, quake, merge, lamp, $attack",
@@ -126,30 +125,31 @@
                 "item_count": 1
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "name": "Graveyard - Lorule Sanctuary",
+        "map_locations": [
           {
-            "name": "Graveyard",
-            "map_locations": [
-              {
-                "map": "lorule",
-                "x": 945,
-                "y": 595
-              }
+            "map": "lorule",
+            "x": 945,
+            "y": 595
+          }
+        ],
+        "sections": [
+          {
+            "name": "Philosopher's Cave",
+            "chest_unopened_img": "images/checks/chest_big_unopened.png",
+            "chest_opened_img": "images/checks/chest_big_opened.png",
+            "access_rules": [
+              "{csmc, $access_lorule_graveyard}",
+              "{csmc, $lampless_access_lorule_graveyard}",
+              "$access_lorule_graveyard, titansmitt, [lamp], $attack, ls_small_key",
+              "$access_lorule_graveyard, titansmitt, [lampless], $attack, ls_small_key",
+              "$lampless_access_lorule_graveyard, titansmitt, [lampless], $attack, ls_small_key"
             ],
-            "sections": [
-              {
-                "name": "Philosopher's Cave",
-                "chest_unopened_img": "images/checks/chest_big_unopened.png",
-                "chest_opened_img": "images/checks/chest_big_opened.png",
-                "access_rules": [
-                  "{csmc, $access_lorule_graveyard}",
-                  "$access_lorule_graveyard, titansmitt, [lamp], $attack",
-                  "$access_lorule_graveyard, titansmitt, [lampless], $attack",
-                  "$lampless_access_lorule_graveyard, titansmitt, [lampless], $attack"
-                ],
-                "item_count": 1
-              }
-            ]
+            "item_count": 1
           }
         ]
       },
@@ -475,7 +475,7 @@
             ],
             "sections": [
               {
-                "name": "Octoball Derby\nScore 100+",
+                "name": "Octoball Derby (Score 100+)",
                 "item_count": 1
               }
             ]
@@ -491,7 +491,7 @@
             ],
             "sections": [
               {
-                "name": "Rupee Rush (Lorule)\nScore 150+",
+                "name": "Rupee Rush (Lorule) (Score 150+)",
                 "access_rules": [
                 ],
                 "item_count": 1

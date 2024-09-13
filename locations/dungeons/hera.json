@@ -5,7 +5,9 @@
     "chest_unopened_img": "images/checks/chest_small_unopened.png",
     "chest_opened_img": "images/checks/chest_small_opened.png",
     "access_rules": [
+      "power_glove, merge, hammer",
       "$access_dm_west_top, hammer",
+      "[glitched], merge, hammer",
       "[advanced], hammer, $adv_glitched_access_dm_west_top",
       "[hell], hammer, $hell_access_dm_west_top"
     ],

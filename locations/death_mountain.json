@@ -151,7 +151,9 @@
           {
             "name": "Donkey Cave Ledge",
             "access_rules": [
+              "power_glove, merge",
               "$access_dm_west_top",
+              "[glitched], merge",
               "[advanced], $adv_glitched_access_dm_west_top",
               "[hell], $hell_access_dm_west_top"
             ],
@@ -180,7 +182,9 @@
               "maiamai_map"
             ],
             "access_rules": [
+              "power_glove, merge",
               "merge, $access_dm_west_top",
+              "[glitched], merge",
               "[advanced], merge, $adv_glitched_access_dm_west_top",
               "[hell], merge, $hell_access_dm_west_top"
             ]
@@ -200,7 +204,9 @@
           {
             "name": "West Highest Cave",
             "access_rules": [
+              "power_glove, merge",
               "$access_dm_west_top",
+              "[glitched], merge",
               "[advanced], $adv_glitched_access_dm_west_top",
               "[hell], $hell_access_dm_west_top"
             ],
@@ -221,7 +227,9 @@
           {
             "name": "Spectacle Rock",
             "access_rules": [
+              "power_glove, merge",
               "$access_dm_west_top",
+              "[glitched], merge",
               "[advanced], $adv_glitched_access_dm_west_top",
               "[hell], $hell_access_dm_west_top"
             ],
@@ -243,6 +251,7 @@
             "name": "Hookshot Mini-Dungeon",
             "access_rules": [
               "$access_dm_east_top, merge, hookshot",
+              "[glitched], merge, hookshot",
               "[advanced], $adv_glitched_access_dm_east_top, merge, hookshot"
             ],
             "item_count": 1
@@ -272,6 +281,7 @@
             "access_rules": [
               //"{}",
               "$access_dm_east_top, merge",
+              "[glitched], merge, hookshot",
               "[advanced], $adv_glitched_access_dm_east_top, merge"
             ]
           }
@@ -292,6 +302,7 @@
             //"capture_item": true,
             "access_rules": [
               "$access_dm_east_top, merge, hammer",
+              "[glitched], merge, hookshot, hammer",
               "[advanced], $adv_glitched_access_dm_east_top, merge, hammer"
             ],
             "item_count": 1
@@ -312,6 +323,7 @@
             "name": "Bouldering Guy",
             "access_rules": [
               "$access_dm_east_top, merge, premium_milk",
+              "[glitched], merge, hookshot, premium_milk",
               "[advanced], $adv_glitched_access_dm_east_top, premium_milk, merge",
               "[advanced], $adv_glitched_access_dm_east_top, premium_milk, trod, boots"
             ],
@@ -419,8 +431,8 @@
           {
             "name": "Ice Gimos Fight",
             "access_rules": [
-              "$access_ldm_west, $margomill",
-              "[glitched], $glitched_access_ldm_west, $margomill"
+              "$access_ldm_west, $attack_iceproof",
+              "[glitched], $glitched_access_ldm_west, $attack_iceproof"
             ],
             "item_count": 1
           }
@@ -461,12 +473,12 @@
           {
             "name": "Treacherous Tower",
             "access_rules": [
-              "$access_ldm_west, $attack, bombs",
-              "$access_ldm_west, $attack, hammer",
-              "$access_ldm_west, $attack, trod",
-              "[glitched], $glitched_access_ldm_west, $attack, bombs",
-              "[glitched], $glitched_access_ldm_west, $attack, hammer",
-              "[glitched], $glitched_access_ldm_west, $attack, trod"
+              "$access_ldm_west, $attack, [bombs]",
+              "$access_ldm_west, $attack, [hammer]",
+              "$access_ldm_west, $attack, [trod]",
+              "[glitched], $glitched_access_ldm_west, $attack, [bombs]",
+              "[glitched], $glitched_access_ldm_west, $attack, [hammer]",
+              "[glitched], $glitched_access_ldm_west, $attack, [trod]"
             ],
             "item_count": 1
           }

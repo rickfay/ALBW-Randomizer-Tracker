@@ -123,7 +123,9 @@
             "hosted_item": "wv_hera",
             "access_rules": [
               "wv_hera",
+              "power_glove, merge",
               "$access_dm_west_top",
+              "[glitched], merge",
               "[advanced], $adv_glitched_access_dm_west_top",
               "[hell], $hell_access_dm_west_top"
             ],

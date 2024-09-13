@@ -36,7 +36,7 @@ end
 -- Hyrule Death Mountain West Top
 function access_dm_west_top()
     -- Vanilla
-    if hasAll({ "power_glove", "merge" }) then return true end
+    if access_dm_west_base() and has("merge") then return true end
 
     -- Hyrule DM Weather Vane
     if weather_vane("wv_death_hyrule") and has("merge") then return true end
@@ -212,6 +212,12 @@ end
 -- [Glitched] Lorule Death Mountain West
 function glitched_access_ldm_west()
     if access_ldm_west() then return true end
+
+    -- Power Glove Skip
+    if notCracksanity() and hasAll({"merge", "quake"}) then
+        return true
+    end
+
     -- LoFI Crack
     if has("crack_lofi") and hasAll({ "boots", "hookshot" }) then return true end
     return false
@@ -252,6 +258,7 @@ end
 -- [Glitched] Lorule Death Mountain East Base
 function glitched_access_ldm_east_base()
     if access_ldm_east_base() then return true end
+    if notCracksanity() and hasAll({ "merge", "quake", "hookshot" }) then return true end
     if has("hookshot") and weather_vane_lorule("wv_treacherous_tower") and (boost() or has("trod")) then return true end
     if hasAll({ "cracksanity", "crack_lorule_dm_west", "hookshot", "merge" }) and (boost() or has("trod")) then return true end
     if hasAll({ "cracksanity", "crack_lofi", "boots", "merge" }) then return true end
@@ -300,6 +307,7 @@ end
 -- [Glitched] Lorule Death Mountain East Top
 function glitched_access_ldm_east_top()
     if access_ldm_east_top() then return true end
+    if notCracksanity() and hasAll({ "merge", "quake", "hookshot" }) then return true end
     if has("hookshot") and weather_vane_lorule("wv_treacherous_tower") and (boost() or has("trod")) then return true end
     if hasAll({ "cracksanity", "crack_lorule_dm_west", "hookshot" }) and (boost() or has("trod")) then return true end
     -- LoFI Crack

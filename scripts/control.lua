@@ -74,6 +74,11 @@ function attack_bowproof()
     return hasAny({ "fsword", "bombs", "frod", "irod", "hammer", "boots", "nicetrod", "nicehookshot", "superlamp", "supernet" }) or (has("lamp_net_weapons") and hasAny({"lamp", "net"}))
 end
 
+-- Same as attack(), minus the Ice Rod
+function attack_iceproof()
+    return hasAny({ "fsword", "bow", "bombs", "frod", "hammer", "boots", "nicetrod", "nicehookshot", "superlamp", "supernet" }) or (has("lamp_net_weapons") and hasAny({"lamp", "net"}))
+end
+
 -- Return if the player can deal damage to enemies that are immune to fire
 function fire_enemy()
     return hasAny({ "fsword", "bow", "bombs", "irod", "hammer", "boots", "nicetrod", "nicehookshot", "supernet" })  or hasAll({ "lamp_net_weapons", "net" })
@@ -86,7 +91,7 @@ end
 -- Return if the player can attack Margomill
 -- This is the same as attack(), minus the ice rod
 function margomill()
-    if has("hg_big_key") and attack() then
+    if has("hg_big_key") and attack_iceproof() then
         if has_amount("hg_small_keys", 4) then
             return true
         elseif has_amount("hg_small_keys", 2) then
@@ -716,10 +721,6 @@ function can_skip_trials()
     return false
 end
 
-function countNiceItems()
-    return count("maiamai_bow") + count("maiamai_boomerang") + count("maiamai_hookshot") + count("maiamai_hammer") + count("maiamai_bombs") + count("maiamai_fire_rod") + count("maiamai_ice_rod") + count("maiamai_tornado_rod") + count("maiamai_sand_rod")
-end
-
 function maiamaiUpgradeAvailable()
     if has("maiamai_100") then
         return 10
@@ -747,7 +748,11 @@ function maiamaiUpgradeAvailable()
 end
 
 function canUpgradeItem()
-    return maiamaiUpgradeAvailable() > countNiceItems()
+    return maiamaiUpgradeAvailable() > motherMaiamaiItemsReceived()
+end
+
+function motherMaiamaiItemsReceived()
+    return count("maiamai_bow") + count("maiamai_boomerang") + count("maiamai_hookshot") + count("maiamai_hammer") + count("maiamai_bombs") + count("maiamai_fire_rod") + count("maiamai_ice_rod") + count("maiamai_tornado_rod") + count("maiamai_sand_rod")
 end
 
 function inspect_crack_lorule()

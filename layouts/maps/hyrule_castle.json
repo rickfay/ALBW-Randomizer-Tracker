@@ -1,6 +1,8 @@
 {
   "hyrule_castle": {
     "type": "viewbox",
+    "margin": "0,0,0,97",
+    "horizontal_scrollbar_visibility": "disabled",
     "content": [
       {
         "type": "array",
@@ -179,7 +181,7 @@
                 "type": "map",
                 "width": 250,
                 "scale": 1.5,
-                "margin": "-25,0,-25,-50",
+                "margin": "-25,0,-25,-25",
                 "maps": [
                   "hyrule2F"
                 ]

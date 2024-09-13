@@ -19,13 +19,19 @@
     "img": "images/labels/TH_big.png"
   },
   {
-    "name": "Hyrule Sewers",
+    "name": "Hyrule Castle",
+    "type": "static",
+    "codes": "hc_label",
+    "img": "images/labels/HC_big.png"
+  },
+  {
+    "name": "Hyrule Sanctuary",
     "type": "static",
     "codes": "hs_label",
     "img": "images/labels/HS_big.png"
   },
   {
-    "name": "Lorule Sewers",
+    "name": "Lorule Sanctuary",
     "type": "static",
     "codes": "ls_label",
     "img": "images/labels/LS_big.png"
@@ -105,6 +111,14 @@
     "codes": "ep_compass",
     "img": "images/items/compass.png"
   },
+  {
+    "name": "Eastern Palace Items",
+    "type": "consumable",
+    "codes": "ep_items",
+    "max_quantity": 9,
+    "allow_disabled": false,
+    "img": "images/checks/chest_small_unopened.png"
+  },
 
   // House of Gales
   {
@@ -127,6 +141,14 @@
     "loop": true,
     "codes": "hg_compass",
     "img": "images/items/compass.png"
+  },
+  {
+    "name": "House of Gales Items",
+    "type": "consumable",
+    "codes": "hg_items",
+    "max_quantity": 5,
+    "allow_disabled": false,
+    "img": "images/checks/chest_small_unopened.png"
   },
 
   // Tower of Hera
@@ -151,61 +173,59 @@
     "codes": "th_compass",
     "img": "images/items/compass.png"
   },
+  {
+    "name": "Tower of Hera Items",
+    "type": "consumable",
+    "codes": "th_items",
+    "max_quantity": 6,
+    "allow_disabled": false,
+    "img": "images/checks/chest_small_unopened.png"
+  },
 
+  // Hyrule Castle
+  {
+    "name": "Hyrule Castle Items",
+    "type": "consumable",
+    "codes": "hc_items",
+    "max_quantity": 3,
+    "allow_disabled": false,
+    "img": "images/checks/chest_small_unopened.png"
+  },
 
 
   // Hyrule Sanctuary
   {
-    "name": "Hyrule Sewers Key",
+    "name": "Hyrule Sanctuary Key",
     "type": "consumable",
     "max_quantity": 1,
     "codes": "hs_small_key",
     "img": "images/items/key_small.png"
   },
+  {
+    "name": "Hyrule Sanctuary Items",
+    "type": "consumable",
+    "codes": "hs_items",
+    "max_quantity": 3,
+    "allow_disabled": false,
+    "img": "images/checks/chest_small_unopened.png"
+  },
 
   // Lorule Sanctuary
   {
-    "name": "Lorule Sewers Key",
+    "name": "Lorule Sanctuary Key",
     "type": "consumable",
     "max_quantity": 1,
     "codes": "ls_small_key",
     "img": "images/items/key_small.png"
   },
-
-  // Sewer Keys
-//  {
-//    "name": "Hyrule/Lorule Sewers Keys",
-//    "type": "composite_toggle",
-//    "codes": "sewer_keys",
-//    "item_left": "hs_small_key",
-//    "item_right": "ls_small_key",
-//    "images": [
-//      {
-//        "left": false,
-//        "right": false,
-//        "img": "images/items/key_small.png",
-//        "img_mods": "@disabled"
-//      },
-//      {
-//        "left": true,
-//        "right": false,
-//        "img": "images/items/key_small.png",
-//        "img_mods": "overlay|images/labels/H.png"
-//      },
-//      {
-//        "left": false,
-//        "right": true,
-//        "img": "images/items/key_small.png",
-//        "img_mods": "overlay|images/labels/L.png"
-//      },
-//      {
-//        "left": true,
-//        "right": true,
-//        "img": "images/items/key_small.png",
-//        "img_mods": "overlay|images/labels/HL.png"
-//      }
-//    ]
-//  },
+  {
+    "name": "Lorule Sanctuary Items",
+    "type": "consumable",
+    "codes": "ls_items",
+    "max_quantity": 3,
+    "allow_disabled": false,
+    "img": "images/checks/chest_small_unopened.png"
+  },
 
   // Dark Palace
   {
@@ -228,6 +248,14 @@
     "loop": true,
     "codes": "pd_compass",
     "img": "images/items/compass.png"
+  },
+  {
+    "name": "Dark Palace Items",
+    "type": "consumable",
+    "codes": "pd_items",
+    "max_quantity": 8,
+    "allow_disabled": false,
+    "img": "images/checks/chest_small_unopened.png"
   },
 
   // Swamp Palace
@@ -252,6 +280,14 @@
     "codes": "sp_compass",
     "img": "images/items/compass.png"
   },
+  {
+    "name": "Swamp Palace Items",
+    "type": "consumable",
+    "codes": "sp_items",
+    "max_quantity": 6,
+    "allow_disabled": false,
+    "img": "images/checks/chest_small_unopened.png"
+  },
 
   // Skull Woods
   {
@@ -274,6 +310,14 @@
     "loop": true,
     "codes": "sw_compass",
     "img": "images/items/compass.png"
+  },
+  {
+    "name": "Skull Woods Items",
+    "type": "consumable",
+    "codes": "sw_items",
+    "max_quantity": 4,
+    "allow_disabled": false,
+    "img": "images/checks/chest_small_unopened.png"
   },
 
   // Thieves' Hideout
@@ -298,6 +342,14 @@
     "codes": "tt_compass",
     "img": "images/items/compass.png"
   },
+  {
+    "name": "Thieves' Hideout Items",
+    "type": "consumable",
+    "codes": "tt_items",
+    "max_quantity": 8,
+    "allow_disabled": false,
+    "img": "images/checks/chest_small_unopened.png"
+  },
 
   // Turtle Rock
   {
@@ -320,6 +372,14 @@
     "loop": true,
     "codes": "tr_compass",
     "img": "images/items/compass.png"
+  },
+  {
+    "name": "Turtle Rock Items",
+    "type": "consumable",
+    "codes": "tr_items",
+    "max_quantity": 8,
+    "allow_disabled": false,
+    "img": "images/checks/chest_small_unopened.png"
   },
 
   // Desert Palace
@@ -344,6 +404,14 @@
     "codes": "dp_compass",
     "img": "images/items/compass.png"
   },
+  {
+    "name": "Desert Palace Items",
+    "type": "consumable",
+    "codes": "dp_items",
+    "max_quantity": 9,
+    "allow_disabled": false,
+    "img": "images/checks/chest_small_unopened.png"
+  },
 
   // Ice Ruins
   {
@@ -367,6 +435,14 @@
     "codes": "ir_compass",
     "img": "images/items/compass.png"
   },
+  {
+    "name": "Ice Ruins Items",
+    "type": "consumable",
+    "codes": "ir_items",
+    "max_quantity": 10,
+    "allow_disabled": false,
+    "img": "images/checks/chest_small_unopened.png"
+  },
 
   // Lorule Castle
   {
@@ -374,7 +450,8 @@
     "type": "toggle",
     "loop": true,
     "codes": "lc_trials_door",
-    "img": "images/items/lc_trials_door.png"
+    "img": "images/items/lc_trials_door.png",
+    "disabled_img": "images/items/lc_trials_door_disabled.png"
   },
   {
     "name": "Lorule Castle Small Keys",
@@ -389,5 +466,13 @@
     "loop": true,
     "codes": "lc_compass",
     "img": "images/items/compass.png"
+  },
+  {
+    "name": "Lorule Castle Items",
+    "type": "consumable",
+    "codes": "lc_items",
+    "max_quantity": 10,
+    "allow_disabled": false,
+    "img": "images/checks/chest_small_unopened.png"
   }
 ]

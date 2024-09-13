@@ -1,6 +1,7 @@
 {
   "skull": {
     "type": "viewbox",
+    "margin": "0,0,0,97",
     "content": [
       {
         "type": "array",

@@ -1,6 +1,7 @@
 {
   "swamp": {
     "type": "viewbox",
+    "margin": "0,0,0,97",
     "horizontal_scrollbar_visibility": "disabled",
     "content": [
       {

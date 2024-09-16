@@ -22,15 +22,6 @@
             },
             {
               "type": "group",
-              "header": "Dungeons",
-              "dock": "top",
-              "content": {
-                "type": "layout",
-                "key": "dungeon_grid"
-              }
-            },
-            {
-              "type": "group",
               "header": "Settings",
               "dock": "bottom",
               "content": {
@@ -39,12 +30,27 @@
               }
             },
             {
-              "type": "group",
-              "header": "Weather Vanes",
-              "content": {
-                "type": "layout",
-                "key": "weather_vane_grid"
-              }
+              "type": "dock",
+              "orientation": "horizontal",
+              "content": [
+                {
+                  "type": "group",
+                  "header": "Weather Vanes",
+                  "dock": "left",
+                  "content": {
+                    "type": "layout",
+                    "key": "weather_vane_grid"
+                  }
+                },
+                {
+                  "type": "group",
+                  "header": "Dungeons",
+                  "content": {
+                    "type": "layout",
+                    "key": "dungeon_grid"
+                  }
+                }
+              ]
             }
           ]
         }

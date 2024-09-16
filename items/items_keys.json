@@ -471,7 +471,7 @@
     "name": "Lorule Castle Items",
     "type": "consumable",
     "codes": "lc_items",
-    "max_quantity": 10,
+    "max_quantity": 9,
     "allow_disabled": false,
     "img": "images/checks/chest_small_unopened.png"
   }

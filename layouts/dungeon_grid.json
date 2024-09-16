@@ -6,143 +6,95 @@
         "type": "itemgrid",
         "dropshadow": true,
         "h_alignment": "center",
-        "item_size": "32",
+        "item_size": "20",
         "item_margin": "3",
-        "margin": "1",
+        "margin": "0",
         "rows": [
           [
             "ep_label",
             "ep_small_keys",
             "ep_big_key",
             "ep_compass",
-            "pd_label",
-            "pd_small_keys",
-            "pd_big_key",
-            "pd_compass"
+            "ep_items"
           ],
           [
             "hg_label",
             "hg_small_keys",
             "hg_big_key",
             "hg_compass",
-            "sp_label",
-            "sp_small_keys",
-            "sp_big_key",
-            "sp_compass"
+            "hg_items"
           ],
           [
             "th_label",
             "th_small_keys",
             "th_big_key",
             "th_compass",
-            "sw_label",
-            "sw_small_keys",
-            "sw_big_key",
-            "sw_compass"
-          ],
-          [
-            "",
-            "",
-            "",
-            "",
-            "tt_label",
-            "tt_small_key",
-            "tt_big_key",
-            "tt_compass"
+            "th_items"
           ],
           [
             "hs_label",
             "hs_small_key",
             "ls_label",
             "ls_small_key",
+            ""
+          ],
+          [
+            "pd_label",
+            "pd_small_keys",
+            "pd_big_key",
+            "pd_compass",
+            "pd_items"
+          ],
+          [
+            "sp_label",
+            "sp_small_keys",
+            "sp_big_key",
+            "sp_compass",
+            "sp_items"
+          ],
+          [
+            "sw_label",
+            "sw_small_keys",
+            "sw_big_key",
+            "sw_compass",
+            "sw_items"
+          ],
+          [
+            "tt_label",
+            "tt_small_key",
+            "tt_big_key",
+            "tt_compass",
+            "tt_items"
+          ],
+          [
             "tr_label",
             "tr_small_keys",
             "tr_big_key",
-            "tr_compass"
+            "tr_compass",
+            "tr_items"
           ],
           [
-            "",
-            "",
-            "",
-            "",
             "dp_label",
             "dp_small_keys",
             "dp_big_key",
-            "dp_compass"
+            "dp_compass",
+            "dp_items"
+          ],
+          [
+            "ir_label",
+            "ir_small_keys",
+            "ir_big_key",
+            "ir_compass",
+            "ir_items"
           ],
           [
             "lc_label",
             "lc_small_keys",
             "lc_trials_door",
             "lc_compass",
-            "ir_label",
-            "ir_small_keys",
-            "ir_big_key",
-            "ir_compass"
+            "lc_items"
           ]
         ]
-
-
-        // --------------------------------
-        //          [
-        //            "ep_label",
-        //            "hg_label",
-        //            "th_label",
-        //            "hs_label",
-        //            "lc_label",
-        //            "",
-        //            ""
-        //          ],
-        //          [
-        //            "ep_big_key",
-        //            "hg_big_key",
-        //            "th_big_key",
-        //            "hs_small_key",
-        //            "",
-        //            "trials_door_open",
-        //            "trials_door_open"
-        //          ],
-        //          [
-        //            "ep_small_keys",
-        //            "hg_small_keys",
-        //            "th_small_keys",
-        //            "ls_small_key",
-        //            "lc_small_keys",
-        //            "trials_door_open",
-        //            "trials_door_open"
-        //          ],
-        //
-        //
-        //
-        //
-        ////          [
-        ////            "pd_label",
-        ////            "sp_label",
-        ////            "sw_label",
-        ////            "tt_label",
-        ////            "tr_label",
-        ////            "dp_label",
-        ////            "ir_label"
-        ////          ],
-        //          [
-        //            "pd_big_key",
-        //            "sp_big_key",
-        //            "sw_big_key",
-        //            "tt_big_key",
-        //            "tr_big_key",
-        //            "dp_big_key",
-        //            "ir_big_key"
-        //          ],
-        //          [
-        //            "pd_small_keys",
-        //            "sp_small_keys",
-        //            "sw_small_keys",
-        //            "tt_small_key",
-        //            "tr_small_keys",
-        //            "dp_small_keys",
-        //            "ir_small_keys"
-        //          ]
-//        ]
       }
     ]
   }

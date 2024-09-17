@@ -45,7 +45,7 @@
               "{csmc, glitched, merge}",
               "{csmc, glitched, $access_dm_west_top, $boom_hook_fire}",
               "{csmc, advanced, $adv_glitched_access_dm_west_top, $boom_hook_fire}",
-              "{csmc, hell, $hell_glitched_access_dm_west_top, $boom_hook_fire}",
+              "{csmc, hell, $hell_access_dm_west_top, $boom_hook_fire}",
 
               "$access_dm_west_base, merge, $boulder",
               "[glitched], merge, $boulder",
@@ -80,7 +80,7 @@
               "{csmc, glitched, merge}",
               "{csmc, $access_dm_west_top}",
               "{csmc, advanced, $adv_glitched_access_dm_west_top}",
-              "{csmc, hell, $hell_glitched_access_dm_west_top}",
+              "{csmc, hell, $hell_access_dm_west_top}",
 
               "$access_dm_west_top, hammer",
               "[glitched], merge, hammer",

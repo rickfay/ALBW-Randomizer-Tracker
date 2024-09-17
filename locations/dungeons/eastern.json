@@ -140,7 +140,7 @@
             "name": "(2F) Ball Room",
             "hosted_item": "ep_chest_06",
             "access_rules": [
-              "ep_small_keys:1, $attack"
+              "$ep_small_keys|1, $attack"
             ]
           }
         ]
@@ -159,7 +159,7 @@
             "name": "(2F) Defeat Popos",
             "hosted_item": "ep_chest_07",
             "access_rules": [
-              "ep_small_keys:1, $attack"
+              "$ep_small_keys|1, $attack"
             ]
           }
         ]
@@ -178,14 +178,14 @@
             "name": "(2F) Switch Room",
             "hosted_item": "ep_chest_08",
             "access_rules": [
-              "ep_small_keys:1, bow",
-              "ep_small_keys:1, bombs",
-              "ep_small_keys:1, irod",
-              "ep_small_keys:1, $attack, boomerang",
-              "ep_small_keys:1, $attack, hookshot",
-              "ep_small_keys:1, great_spin, fsword",
+              "$ep_small_keys|1, bow",
+              "$ep_small_keys|1, bombs",
+              "$ep_small_keys|1, irod",
+              "$ep_small_keys|1, $attack, boomerang",
+              "$ep_small_keys|1, $attack, hookshot",
+              "$ep_small_keys|1, great_spin, fsword",
               // You can use 4 of the 6 pots
-              "[hard], ep_small_keys:1, $attack"
+              "[hard], $ep_small_keys|1, $attack"
             ]
           }
         ]
@@ -204,8 +204,8 @@
             "name": "(2F) Big Chest",
             "hosted_item": "ep_chest_09",
             "access_rules": [
-              "ep_small_keys:2, $attack",
-              "[advanced], ep_small_keys:1, trod"
+              "$ep_small_keys|2, $attack",
+              "[advanced], $ep_small_keys|1, trod"
             ]
           }
         ]
@@ -356,36 +356,36 @@
             "name": "(2F) Ball Room",
             "hosted_item": "ep_chest_06",
             "access_rules": [
-              "ep_small_keys:1, $attack"
+              "$ep_small_keys|1, $attack"
             ]
           },
           {
             "name": "(2F) Defeat Popos",
             "hosted_item": "ep_chest_07",
             "access_rules": [
-              "ep_small_keys:1, $attack"
+              "$ep_small_keys|1, $attack"
             ]
           },
           {
             "name": "(2F) Switch Room",
             "hosted_item": "ep_chest_08",
             "access_rules": [
-              "ep_small_keys:1, bow",
-              "ep_small_keys:1, bombs",
-              "ep_small_keys:1, irod",
-              "ep_small_keys:1, $attack, boomerang",
-              "ep_small_keys:1, $attack, hookshot",
-              "ep_small_keys:1, great_spin, fsword",
+              "$ep_small_keys|1, bow",
+              "$ep_small_keys|1, bombs",
+              "$ep_small_keys|1, irod",
+              "$ep_small_keys|1, $attack, boomerang",
+              "$ep_small_keys|1, $attack, hookshot",
+              "$ep_small_keys|1, great_spin, fsword",
               // You can use 4 of the 6 pots
-              "[hard], ep_small_keys:1, $attack"
+              "[hard], $ep_small_keys|1, $attack"
             ]
           },
           {
             "name": "(2F) Big Chest",
             "hosted_item": "ep_chest_09",
             "access_rules": [
-              "ep_small_keys:2, $attack",
-              "[advanced], ep_small_keys:1, trod"
+              "$ep_small_keys|2, $attack",
+              "[advanced], $ep_small_keys|1, trod"
             ]
           },
           {

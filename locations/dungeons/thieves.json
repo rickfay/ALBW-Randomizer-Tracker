@@ -246,10 +246,10 @@
           {
             "name": "Stalblind",
             "access_rules": [
-              "tt_big_key, $thEscapeEquipment, merge, $attack",
-              "[hard], tt_big_key, $thEscapeEquipment, merge, $attack",
-              "[advanced], tt_big_key, tt_small_key, $adv_th_statue_clip, trod, $attack",
-              "[hell], tt_big_key, tt_small_key, $hell_th_statue_clip, trod, $attack"
+              "$tt_big_key, $thEscapeEquipment, merge, $attack",
+              "[hard], $tt_big_key, $thEscapeEquipment, merge, $attack",
+              "[advanced], $tt_big_key, $tt_small_key, $adv_th_statue_clip, trod, $attack",
+              "[hell], $tt_big_key, $tt_small_key, $hell_th_statue_clip, trod, $attack"
             ],
             //"capture_item": true,
             "hosted_item": "th_chest_11"
@@ -267,16 +267,16 @@
           }
         ],
         "sections": [
-          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["tt_big_key, tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], tt_big_key, tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], tt_big_key, tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_power_tt"]},
-          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["tt_big_key, tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], tt_big_key, tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], tt_big_key, tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_wisdom_tt"]},
-          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["tt_big_key, tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], tt_big_key, tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], tt_big_key, tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_courage_tt"]},
-          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["tt_big_key, tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], tt_big_key, tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], tt_big_key, tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_gulley_tt"]},
-          {"name": "Oren", "hosted_item": "oren", "access_rules": ["tt_big_key, tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], tt_big_key, tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], tt_big_key, tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_oren_tt"]},
-          {"name": "Seres", "hosted_item": "seres", "access_rules": ["tt_big_key, tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], tt_big_key, tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], tt_big_key, tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_seres_tt"]},
-          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["tt_big_key, tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], tt_big_key, tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], tt_big_key, tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_osfala_tt"]},
-          {"name": "Impa", "hosted_item": "impa", "access_rules": ["tt_big_key, tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], tt_big_key, tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], tt_big_key, tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_impa_tt"]},
-          {"name": "Irene", "hosted_item": "irene", "access_rules": ["tt_big_key, tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], tt_big_key, tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], tt_big_key, tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_irene_tt"]},
-          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["tt_big_key, tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], tt_big_key, tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], tt_big_key, tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_rosso_tt"]}
+          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["$tt_big_key, $tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], $tt_big_key, $tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], $tt_big_key, $tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_power_tt"]},
+          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["$tt_big_key, $tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], $tt_big_key, $tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], $tt_big_key, $tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_wisdom_tt"]},
+          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["$tt_big_key, $tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], $tt_big_key, $tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], $tt_big_key, $tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_courage_tt"]},
+          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["$tt_big_key, $tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], $tt_big_key, $tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], $tt_big_key, $tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_gulley_tt"]},
+          {"name": "Oren", "hosted_item": "oren", "access_rules": ["$tt_big_key, $tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], $tt_big_key, $tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], $tt_big_key, $tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_oren_tt"]},
+          {"name": "Seres", "hosted_item": "seres", "access_rules": ["$tt_big_key, $tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], $tt_big_key, $tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], $tt_big_key, $tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_seres_tt"]},
+          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["$tt_big_key, $tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], $tt_big_key, $tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], $tt_big_key, $tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_osfala_tt"]},
+          {"name": "Impa", "hosted_item": "impa", "access_rules": ["$tt_big_key, $tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], $tt_big_key, $tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], $tt_big_key, $tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_impa_tt"]},
+          {"name": "Irene", "hosted_item": "irene", "access_rules": ["$tt_big_key, $tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], $tt_big_key, $tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], $tt_big_key, $tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_irene_tt"]},
+          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["$tt_big_key, $tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], $tt_big_key, $tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], $tt_big_key, $tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_rosso_tt"]}
         ]
       },
       {
@@ -395,24 +395,24 @@
           {
             "name": "Stalblind",
             "access_rules": [
-              "tt_big_key, $thEscapeEquipment, merge, $attack",
-              "[hard], tt_big_key, $thEscapeEquipment, merge, $attack",
-              "[advanced], tt_big_key, tt_small_key, $adv_th_statue_clip, trod, $attack",
-              "[hell], tt_big_key, tt_small_key, $hell_th_statue_clip, trod, $attack"
+              "$tt_big_key, $thEscapeEquipment, merge, $attack",
+              "[hard], $tt_big_key, $thEscapeEquipment, merge, $attack",
+              "[advanced], $tt_big_key, $tt_small_key, $adv_th_statue_clip, trod, $attack",
+              "[hell], $tt_big_key, $tt_small_key, $hell_th_statue_clip, trod, $attack"
             ],
             //"capture_item": true,
             "hosted_item": "th_chest_11"
           },
-          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["tt_big_key, tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], tt_big_key, tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], tt_big_key, tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_power_tt"]},
-          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["tt_big_key, tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], tt_big_key, tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], tt_big_key, tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_wisdom_tt"]},
-          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["tt_big_key, tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], tt_big_key, tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], tt_big_key, tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_courage_tt"]},
-          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["tt_big_key, tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], tt_big_key, tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], tt_big_key, tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_gulley_tt"]},
-          {"name": "Oren", "hosted_item": "oren", "access_rules": ["tt_big_key, tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], tt_big_key, tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], tt_big_key, tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_oren_tt"]},
-          {"name": "Seres", "hosted_item": "seres", "access_rules": ["tt_big_key, tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], tt_big_key, tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], tt_big_key, tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_seres_tt"]},
-          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["tt_big_key, tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], tt_big_key, tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], tt_big_key, tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_osfala_tt"]},
-          {"name": "Impa", "hosted_item": "impa", "access_rules": ["tt_big_key, tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], tt_big_key, tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], tt_big_key, tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_impa_tt"]},
-          {"name": "Irene", "hosted_item": "irene", "access_rules": ["tt_big_key, tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], tt_big_key, tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], tt_big_key, tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_irene_tt"]},
-          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["tt_big_key, tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], tt_big_key, tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], tt_big_key, tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_rosso_tt"]}
+          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["$tt_big_key, $tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], $tt_big_key, $tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], $tt_big_key, $tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_power_tt"]},
+          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["$tt_big_key, $tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], $tt_big_key, $tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], $tt_big_key, $tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_wisdom_tt"]},
+          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["$tt_big_key, $tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], $tt_big_key, $tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], $tt_big_key, $tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_courage_tt"]},
+          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["$tt_big_key, $tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], $tt_big_key, $tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], $tt_big_key, $tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_gulley_tt"]},
+          {"name": "Oren", "hosted_item": "oren", "access_rules": ["$tt_big_key, $tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], $tt_big_key, $tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], $tt_big_key, $tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_oren_tt"]},
+          {"name": "Seres", "hosted_item": "seres", "access_rules": ["$tt_big_key, $tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], $tt_big_key, $tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], $tt_big_key, $tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_seres_tt"]},
+          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["$tt_big_key, $tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], $tt_big_key, $tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], $tt_big_key, $tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_osfala_tt"]},
+          {"name": "Impa", "hosted_item": "impa", "access_rules": ["$tt_big_key, $tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], $tt_big_key, $tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], $tt_big_key, $tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_impa_tt"]},
+          {"name": "Irene", "hosted_item": "irene", "access_rules": ["$tt_big_key, $tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], $tt_big_key, $tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], $tt_big_key, $tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_irene_tt"]},
+          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["$tt_big_key, $tt_small_key, $thEscapeEquipment, merge, $attack", "[advanced], $tt_big_key, $tt_small_key, $adv_th_statue_clip, trod, $attack", "[hell], $tt_big_key, $tt_small_key, $hell_th_statue_clip, trod, $attack"], "visibility_rules": ["label_rosso_tt"]}
         ]
       }
     ]

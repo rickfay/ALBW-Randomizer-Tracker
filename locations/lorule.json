@@ -145,9 +145,9 @@
             "access_rules": [
               "{csmc, $access_lorule_graveyard}",
               "{csmc, $lampless_access_lorule_graveyard}",
-              "$access_lorule_graveyard, titansmitt, [lamp], $attack, ls_small_key",
-              "$access_lorule_graveyard, titansmitt, [lampless], $attack, ls_small_key",
-              "$lampless_access_lorule_graveyard, titansmitt, [lampless], $attack, ls_small_key"
+              "$access_lorule_graveyard, titansmitt, [lamp], $attack, $ls_small_key",
+              "$access_lorule_graveyard, titansmitt, [lampless], $attack, $ls_small_key",
+              "$lampless_access_lorule_graveyard, titansmitt, [lampless], $attack, $ls_small_key"
             ],
             "capture_item": true,
             "item_count": 1

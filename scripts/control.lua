@@ -91,10 +91,10 @@ end
 -- Return if the player can attack Margomill
 -- This is the same as attack(), minus the ice rod
 function margomill()
-    if has("hg_big_key") and attack_iceproof() then
-        if has_amount("hg_small_keys", 4) then
+    if hg_big_key() and attack_iceproof() then
+        if hg_small_keys(4) then
             return true
-        elseif has_amount("hg_small_keys", 2) then
+        elseif hg_small_keys(2) then
             return true, AccessibilityLevel.SequenceBreak
         end
     end
@@ -220,21 +220,21 @@ function cutGrass()
 end
 
 function access_ep_boss()
-    return attack() and has("ep_big_key") and (has_amount("ep_small_keys", 2) or (has_amount("ep_small_keys", 1) and hasAny({ "bombs", "irod" })))
+    return attack() and ep_big_key() and (ep_small_keys(2) or (ep_small_keys(1) and hasAny({ "bombs", "irod" })))
 end
 
 function access_ep_boss_glitched()
     if access_ep_boss() then
         return true
     end
-    return has_amount("ep_small_keys", 1) and (has("msword") or (hasAll({ "fsword", "great_spin" })))
+    return ep_small_keys(1) and (has("msword") or (hasAll({ "fsword", "great_spin" })))
 end
 
 function access_ep_boss_advanced()
     if access_ep_boss_glitched() then
         return true
     end
-    return attack() and has_amount("ep_small_keys", 1) and has("trod")
+    return attack() and ep_small_keys(1) and has("trod")
 end
 
 -- Can defeat Yuga 1 in Eastern Palace
@@ -356,7 +356,7 @@ end
 
 -- Can reach House of Gales 2F (assume TRod)
 function hog2F()
-    if has_amount("hg_small_keys", 1) then
+    if hg_small_keys(1) then
         if has("merge") and switch() then
             return true
         elseif hasAny({ "bow", "boomerang", "hookshot", "bombs", "irod", "msword" }) or hasAll({ "great_spin", "fsword" }) then
@@ -370,7 +370,7 @@ end
 -- Can reach House of Gales 3F (assume TRod)
 function hog3F()
     if hog2F() and has("merge") then
-        if has_amount("hg_small_keys", 3) and fire_enemy() then
+        if hg_small_keys(3) and fire_enemy() then
             return fire_enemy()
         else
             return true_for("glitched")
@@ -429,7 +429,7 @@ end
 
 --
 function thEscapeEquipment()
-    return hasAll({"merge", "tt_small_key"}) and thB1B2DoorsOpen() and thDrainWaterB3()
+    return hasAll({"merge"}) and tt_small_key() and thB1B2DoorsOpen() and thDrainWaterB3()
 end
 
 -- Can statue clip OOB in Thieves' Hideout under Adv. Glitched Logic
@@ -547,12 +547,12 @@ end
 
 -- Can players complete Sanctuary
 function sanctuary()
-    return has("hs_small_key") and ((has("lamp") and attack()) or hasAll({ "lampless", "frod" }))
+    return hs_small_key() and ((has("lamp") and attack()) or hasAll({ "lampless", "frod" }))
 end
 
 -- [Lampless] Can players complete Sanctuary
 function lampless_sanctuary()
-    return has("hs_small_key") and (has("frod") or sanctuary())
+    return hs_small_key() and (has("frod") or sanctuary())
 end
 
 -- Never in logic
@@ -763,3 +763,30 @@ end
 function inspect_down_crack_lorule()
     return hasAll({ "merge", "quake" })
 end
+
+-- Small Keysy
+function ep_small_keys(amount) return has("keysy_small") or has_amount("ep_small_keys", tonumber(amount)) end
+function hg_small_keys(amount) return has("keysy_small") or has_amount("hg_small_keys", tonumber(amount)) end
+function th_small_keys(amount) return has("keysy_small") or has_amount("th_small_keys", tonumber(amount)) end
+function hs_small_key() return hasAny({ "keysy_small", "hs_small_key" }) end
+function ls_small_key() return hasAny({ "keysy_small", "ls_small_key" }) end
+function pd_small_keys(amount) return has("keysy_small") or has_amount("pd_small_keys", tonumber(amount)) end
+function sp_small_keys(amount) return has("keysy_small") or has_amount("sp_small_keys", tonumber(amount)) end
+function sw_small_keys(amount) return has("keysy_small") or has_amount("sw_small_keys", tonumber(amount)) end
+function tt_small_key() return hasAny({ "keysy_small", "tt_small_key" }) end
+function tr_small_keys(amount) return has("keysy_small") or has_amount("tr_small_keys", tonumber(amount)) end
+function dp_small_keys(amount) return has("keysy_small") or has_amount("dp_small_keys", tonumber(amount)) end
+function ir_small_keys(amount) return has("keysy_small") or has_amount("ir_small_keys", tonumber(amount)) end
+function lc_small_keys(amount) return has("keysy_small") or has_amount("lc_small_keys", tonumber(amount)) end
+
+-- Big Keysy
+function ep_big_key() return hasAny({ "keysy_big", "ep_big_key" }) end
+function hg_big_key() return hasAny({ "keysy_big", "hg_big_key" }) end
+function th_big_key() return hasAny({ "keysy_big", "th_big_key" }) end
+function pd_big_key() return hasAny({ "keysy_big", "pd_big_key" }) end
+function sp_big_key() return hasAny({ "keysy_big", "sp_big_key" }) end
+function sw_big_key() return hasAny({ "keysy_big", "sw_big_key" }) end
+function tt_big_key() return hasAny({ "keysy_big", "tt_big_key" }) end
+function tr_big_key() return hasAny({ "keysy_big", "tr_big_key" }) end
+function dp_big_key() return hasAny({ "keysy_big", "dp_big_key" }) end
+function ir_big_key() return hasAny({ "keysy_big", "ir_big_key" }) end

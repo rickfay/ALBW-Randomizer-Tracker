@@ -81,8 +81,8 @@
             "name": "(1F) West Room",
             "hosted_item": "hog_chest_04",
             "access_rules": [
-              "hg_small_keys:1, merge",
-              "[hard], hg_small_keys:1"
+              "$hg_small_keys|1, merge",
+              "[hard], $hg_small_keys|1"
             ]
           }
         ]
@@ -101,8 +101,8 @@
             "name": "(1F) West Room Secret",
             "hosted_item": "hog_chest_05",
             "access_rules": [
-              "{csmc, hg_small_keys:1}",
-              "hg_small_keys:1, merge"
+              "{csmc, $hg_small_keys|1}",
+              "$hg_small_keys|1, merge"
             ]
           }
         ]
@@ -144,7 +144,7 @@
           {
             "name": "(2F) Fire Ring",
             "access_rules": [
-              "$hog2F, merge, hg_small_keys:3", // should really be 2, but we're defending against bad key use
+              "$hog2F, merge, $hg_small_keys|3", // should really be 2, but we're defending against bad key use
               "[glitched], $hog2F, merge, boots", // HoG Skip Skip, boots can reverse defeat mini-boss
               "[hell], $hog2F, merge" // Awful Armos Boost
             ],
@@ -187,8 +187,8 @@
             "capture_item": true,
             "hosted_item": "hog_chest_09",
             "access_rules": [
-              "{csmc, $hog3F, hg_small_keys:4}",
-              "{glitched, csmc, $hog3F, hg_small_keys:2}",
+              "{csmc, $hog3F, $hg_small_keys|4}",
+              "{glitched, csmc, $hog3F, $hg_small_keys|2}",
               "$hog3F, $fire"
             ]
           }
@@ -209,10 +209,10 @@
             "hosted_item": "hog_chest_10",
             "access_rules": [
               "{csmc, glitched, $hog2F}",
-              "$hog3F, hg_small_keys:4",
-              "$hog3F, hg_small_keys:3, $fire",
+              "$hog3F, $hg_small_keys|4",
+              "$hog3F, $hg_small_keys|3, $fire",
               "[glitched], $hog3F, $fire",
-              "[], $hog3F, merge, hg_small_keys:2",
+              "[], $hog3F, merge, $hg_small_keys|2",
               "[], $hog3F, merge, $fire"
             ]
           }
@@ -293,16 +293,16 @@
             "name": "(1F) West Room",
             "hosted_item": "hog_chest_04",
             "access_rules": [
-              "hg_small_keys:1, merge",
-              "[hard], hg_small_keys:1"
+              "$hg_small_keys|1, merge",
+              "[hard], $hg_small_keys|1"
             ]
           },
           {
             "name": "(1F) West Room Secret",
             "hosted_item": "hog_chest_05",
             "access_rules": [
-              "{csmc, hg_small_keys:1}",
-              "hg_small_keys:1, merge"
+              "{csmc, $hg_small_keys|1}",
+              "$hg_small_keys|1, merge"
             ]
           },
           {
@@ -320,7 +320,7 @@
           {
             "name": "(2F) Fire Ring",
             "access_rules": [
-              "$hog2F, merge, hg_small_keys:3", // should really be 2, but we're defending against bad key use
+              "$hog2F, merge, $hg_small_keys|3", // should really be 2, but we're defending against bad key use
               "[glitched], $hog2F, merge, boots", // HoG Skip Skip, boots can reverse defeat mini-boss
               "[hell], $hog2F, merge" // Awful Armos Boost
             ],
@@ -339,8 +339,8 @@
             "capture_item": true,
             "hosted_item": "hog_chest_09",
             "access_rules": [
-              "{csmc, $hog3F, hg_small_keys:4}",
-              "{glitched, csmc, $hog3F, hg_small_keys:2}",
+              "{csmc, $hog3F, $hg_small_keys|4}",
+              "{glitched, csmc, $hog3F, $hg_small_keys|2}",
               "$hog3F, $fire"
             ]
           },
@@ -349,10 +349,10 @@
             "hosted_item": "hog_chest_10",
             "access_rules": [
               "{csmc, glitched, $hog2F}",
-              "$hog3F, hg_small_keys:4",
-              "$hog3F, hg_small_keys:3, $fire",
+              "$hog3F, $hg_small_keys|4",
+              "$hog3F, $hg_small_keys|3, $fire",
               "[glitched], $hog3F, $fire",
-              "[], $hog3F, merge, hg_small_keys:2",
+              "[], $hog3F, merge, $hg_small_keys|2",
               "[], $hog3F, merge, $fire"
             ]
           },

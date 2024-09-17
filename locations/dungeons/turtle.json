@@ -175,9 +175,9 @@
             "name": "(B1) Grate Chest (Small)",
             "hosted_item": "tr_chest_08",
             "access_rules": [
-              "$enterTR",
-              "[advanced], $advanced_enterTR",
-              "[hell], $hell_enterTR"
+              "$enterTR, $tr_small_keys|1",
+              "[advanced], $advanced_enterTR, $tr_small_keys|1",
+              "[hell], $hell_enterTR, $tr_small_keys|1"
             ]
           }
         ]
@@ -283,7 +283,7 @@
           {
             "name": "Grinexx",
             "access_rules": [
-              "tr_small_keys:3, tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"
+              "$tr_small_keys|3, $tr_big_key, $enterTR", "[], bow, $tr_small_keys|1, $tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"
             ],
             //"capture_item": true,
             "hosted_item": "tr_chest_13"
@@ -301,16 +301,16 @@
           }
         ],
         "sections": [
-          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["tr_small_keys:3, tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_power_tr"]},
-          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["tr_small_keys:3, tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_wisdom_tr"]},
-          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["tr_small_keys:3, tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_courage_tr"]},
-          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["tr_small_keys:3, tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_gulley_tr"]},
-          {"name": "Oren", "hosted_item": "oren", "access_rules": ["tr_small_keys:3, tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_oren_tr"]},
-          {"name": "Seres", "hosted_item": "seres", "access_rules": ["tr_small_keys:3, tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_seres_tr"]},
-          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["tr_small_keys:3, tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_osfala_tr"]},
-          {"name": "Impa", "hosted_item": "impa", "access_rules": ["tr_small_keys:3, tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_impa_tr"]},
-          {"name": "Irene", "hosted_item": "irene", "access_rules": ["tr_small_keys:3, tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_irene_tr"]},
-          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["tr_small_keys:3, tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_rosso_tr"]}
+          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["$tr_small_keys|3, $tr_big_key, $enterTR", "[], bow, $tr_small_keys|1, $tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_power_tr"]},
+          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["$tr_small_keys|3, $tr_big_key, $enterTR", "[], bow, $tr_small_keys|1, $tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_wisdom_tr"]},
+          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["$tr_small_keys|3, $tr_big_key, $enterTR", "[], bow, $tr_small_keys|1, $tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_courage_tr"]},
+          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["$tr_small_keys|3, $tr_big_key, $enterTR", "[], bow, $tr_small_keys|1, $tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_gulley_tr"]},
+          {"name": "Oren", "hosted_item": "oren", "access_rules": ["$tr_small_keys|3, $tr_big_key, $enterTR", "[], bow, $tr_small_keys|1, $tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_oren_tr"]},
+          {"name": "Seres", "hosted_item": "seres", "access_rules": ["$tr_small_keys|3, $tr_big_key, $enterTR", "[], bow, $tr_small_keys|1, $tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_seres_tr"]},
+          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["$tr_small_keys|3, $tr_big_key, $enterTR", "[], bow, $tr_small_keys|1, $tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_osfala_tr"]},
+          {"name": "Impa", "hosted_item": "impa", "access_rules": ["$tr_small_keys|3, $tr_big_key, $enterTR", "[], bow, $tr_small_keys|1, $tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_impa_tr"]},
+          {"name": "Irene", "hosted_item": "irene", "access_rules": ["$tr_small_keys|3, $tr_big_key, $enterTR", "[], bow, $tr_small_keys|1, $tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_irene_tr"]},
+          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["$tr_small_keys|3, $tr_big_key, $enterTR", "[], bow, $tr_small_keys|1, $tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_rosso_tr"]}
         ]
       },
       {
@@ -404,9 +404,9 @@
             "name": "(B1) Grate Chest (Small)",
             "hosted_item": "tr_chest_08",
             "access_rules": [
-              "$enterTR",
-              "[advanced], $advanced_enterTR",
-              "[hell], $hell_enterTR"
+              "$enterTR, $tr_small_keys|1",
+              "[advanced], $advanced_enterTR, $tr_small_keys|1",
+              "[hell], $hell_enterTR, $tr_small_keys|1"
             ]
           },
           {
@@ -442,21 +442,21 @@
           {
             "name": "Grinexx",
             "access_rules": [
-              "tr_small_keys:3, tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"
+              "$tr_small_keys|3, $tr_big_key, $enterTR", "[], bow, $tr_small_keys|1, $tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"
             ],
             //"capture_item": true,
             "hosted_item": "tr_chest_13"
           },
-          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["tr_small_keys:3, tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_power_tr"]},
-          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["tr_small_keys:3, tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_wisdom_tr"]},
-          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["tr_small_keys:3, tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_courage_tr"]},
-          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["tr_small_keys:3, tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_gulley_tr"]},
-          {"name": "Oren", "hosted_item": "oren", "access_rules": ["tr_small_keys:3, tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_oren_tr"]},
-          {"name": "Seres", "hosted_item": "seres", "access_rules": ["tr_small_keys:3, tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_seres_tr"]},
-          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["tr_small_keys:3, tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_osfala_tr"]},
-          {"name": "Impa", "hosted_item": "impa", "access_rules": ["tr_small_keys:3, tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_impa_tr"]},
-          {"name": "Irene", "hosted_item": "irene", "access_rules": ["tr_small_keys:3, tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_irene_tr"]},
-          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["tr_small_keys:3, tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_rosso_tr"]}
+          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["$tr_small_keys|3, $tr_big_key, $enterTR", "[], bow, $tr_small_keys|1, $tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_power_tr"]},
+          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["$tr_small_keys|3, $tr_big_key, $enterTR", "[], bow, $tr_small_keys|1, $tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_wisdom_tr"]},
+          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["$tr_small_keys|3, $tr_big_key, $enterTR", "[], bow, $tr_small_keys|1, $tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_courage_tr"]},
+          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["$tr_small_keys|3, $tr_big_key, $enterTR", "[], bow, $tr_small_keys|1, $tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_gulley_tr"]},
+          {"name": "Oren", "hosted_item": "oren", "access_rules": ["$tr_small_keys|3, $tr_big_key, $enterTR", "[], bow, $tr_small_keys|1, $tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_oren_tr"]},
+          {"name": "Seres", "hosted_item": "seres", "access_rules": ["$tr_small_keys|3, $tr_big_key, $enterTR", "[], bow, $tr_small_keys|1, $tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_seres_tr"]},
+          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["$tr_small_keys|3, $tr_big_key, $enterTR", "[], bow, $tr_small_keys|1, $tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_osfala_tr"]},
+          {"name": "Impa", "hosted_item": "impa", "access_rules": ["$tr_small_keys|3, $tr_big_key, $enterTR", "[], bow, $tr_small_keys|1, $tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_impa_tr"]},
+          {"name": "Irene", "hosted_item": "irene", "access_rules": ["$tr_small_keys|3, $tr_big_key, $enterTR", "[], bow, $tr_small_keys|1, $tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_irene_tr"]},
+          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["$tr_small_keys|3, $tr_big_key, $enterTR", "[], bow, $tr_small_keys|1, $tr_big_key, $enterTR", "[advanced], $advanced_enterTR, trod, nicebombs", "[hell], $hell_enterTR, trod, bombs"], "visibility_rules": ["label_rosso_tr"]}
         ]
       }
     ]

@@ -87,7 +87,7 @@
             "name": "(5F) Red/Blue Switches",
             "hosted_item": "toh_chest_04",
             "access_rules": [
-              "merge, th_small_keys:1",
+              "merge, $th_small_keys|1",
               "[advanced], merge, bombs, trod",
               "[advanced], fsword, bombs, trod"
             ]
@@ -109,7 +109,7 @@
             //"capture_item": true,
             "hosted_item": "toh_chest_05",
             "access_rules": [
-              "merge, th_small_keys:1",
+              "merge, $th_small_keys|1",
               "[advanced], merge, bombs, trod",
               "[advanced], fsword, bombs, trod"
             ]
@@ -130,7 +130,7 @@
             "name": "(6F) Right Mole",
             "hosted_item": "toh_chest_06",
             "access_rules": [
-              "merge, th_small_keys:1",
+              "merge, $th_small_keys|1",
               "[advanced], merge, bombs, trod",
               "[advanced], fsword, bombs, trod"
             ]
@@ -151,7 +151,7 @@
             "name": "(7F) Outside (Ledge)",
             "hosted_item": "toh_chest_07",
             "access_rules": [
-              "merge, th_small_keys:2",
+              "merge, $th_small_keys|2",
               "[advanced], merge, bombs, trod",
               "[advanced], fsword, bombs, trod"
             ]
@@ -173,7 +173,7 @@
             "capture_item": true,
             "hosted_item": "toh_chest_08",
             "access_rules": [
-              "merge, th_small_keys:2",
+              "merge, $th_small_keys|2",
               "[advanced], merge, bombs, trod",
               "[advanced], fsword, bombs, trod"
             ]
@@ -196,7 +196,7 @@
             "chest_opened_img": "images/chest_big_opened.png",
             "hosted_item": "toh_chest_09",
             "access_rules": [
-              "merge, th_small_keys:2",
+              "merge, $th_small_keys|2",
               "[advanced], merge, bombs, trod",
               "[advanced], fsword, bombs, trod"
             ]
@@ -218,9 +218,9 @@
             //"capture_item": true,
             "hosted_item": "toh_chest_10",
             "access_rules": [
-              "merge, th_small_keys:2, th_big_key",
-              "[advanced], merge, bombs, trod, th_big_key",
-              "[advanced], fsword, bombs, trod, th_big_key"
+              "merge, $th_small_keys|2, $th_big_key",
+              "[advanced], merge, bombs, trod, $th_big_key",
+              "[advanced], fsword, bombs, trod, $th_big_key"
             ]
           }
         ]
@@ -240,16 +240,16 @@
           }
         ],
         "sections": [
-          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["merge, th_small_keys:2, th_big_key", "[advanced], merge, bombs, trod, th_big_key", "[advanced], fsword, bombs, trod, th_big_key"], "visibility_rules": ["label_power_th"]},
-          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["merge, th_small_keys:2, th_big_key", "[advanced], merge, bombs, trod, th_big_key", "[advanced], fsword, bombs, trod, th_big_key"], "visibility_rules": ["label_wisdom_th"]},
-          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["merge, th_small_keys:2, th_big_key", "[advanced], merge, bombs, trod, th_big_key", "[advanced], fsword, bombs, trod, th_big_key"], "visibility_rules": ["label_courage_th"]},
-          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["merge, th_small_keys:2, th_big_key", "[advanced], merge, bombs, trod, th_big_key", "[advanced], fsword, bombs, trod, th_big_key"], "visibility_rules": ["label_gulley_th"]},
-          {"name": "Oren", "hosted_item": "oren", "access_rules": ["merge, th_small_keys:2, th_big_key", "[advanced], merge, bombs, trod, th_big_key", "[advanced], fsword, bombs, trod, th_big_key"], "visibility_rules": ["label_oren_th"]},
-          {"name": "Seres", "hosted_item": "seres", "access_rules": ["merge, th_small_keys:2, th_big_key", "[advanced], merge, bombs, trod, th_big_key", "[advanced], fsword, bombs, trod, th_big_key"], "visibility_rules": ["label_seres_th"]},
-          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["merge, th_small_keys:2, th_big_key", "[advanced], merge, bombs, trod, th_big_key", "[advanced], fsword, bombs, trod, th_big_key"], "visibility_rules": ["label_osfala_th"]},
-          {"name": "Impa", "hosted_item": "impa", "access_rules": ["merge, th_small_keys:2, th_big_key", "[advanced], merge, bombs, trod, th_big_key", "[advanced], fsword, bombs, trod, th_big_key"], "visibility_rules": ["label_impa_th"]},
-          {"name": "Irene", "hosted_item": "irene", "access_rules": ["merge, th_small_keys:2, th_big_key", "[advanced], merge, bombs, trod, th_big_key", "[advanced], fsword, bombs, trod, th_big_key"], "visibility_rules": ["label_irene_th"]},
-          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["merge, th_small_keys:2, th_big_key", "[advanced], merge, bombs, trod, th_big_key", "[advanced], fsword, bombs, trod, th_big_key"], "visibility_rules": ["label_rosso_th"]}
+          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["merge, $th_small_keys|2, $th_big_key", "[advanced], merge, bombs, trod, $th_big_key", "[advanced], fsword, bombs, trod, $th_big_key"], "visibility_rules": ["label_power_th"]},
+          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["merge, $th_small_keys|2, $th_big_key", "[advanced], merge, bombs, trod, $th_big_key", "[advanced], fsword, bombs, trod, $th_big_key"], "visibility_rules": ["label_wisdom_th"]},
+          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["merge, $th_small_keys|2, $th_big_key", "[advanced], merge, bombs, trod, $th_big_key", "[advanced], fsword, bombs, trod, $th_big_key"], "visibility_rules": ["label_courage_th"]},
+          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["merge, $th_small_keys|2, $th_big_key", "[advanced], merge, bombs, trod, $th_big_key", "[advanced], fsword, bombs, trod, $th_big_key"], "visibility_rules": ["label_gulley_th"]},
+          {"name": "Oren", "hosted_item": "oren", "access_rules": ["merge, $th_small_keys|2, $th_big_key", "[advanced], merge, bombs, trod, $th_big_key", "[advanced], fsword, bombs, trod, $th_big_key"], "visibility_rules": ["label_oren_th"]},
+          {"name": "Seres", "hosted_item": "seres", "access_rules": ["merge, $th_small_keys|2, $th_big_key", "[advanced], merge, bombs, trod, $th_big_key", "[advanced], fsword, bombs, trod, $th_big_key"], "visibility_rules": ["label_seres_th"]},
+          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["merge, $th_small_keys|2, $th_big_key", "[advanced], merge, bombs, trod, $th_big_key", "[advanced], fsword, bombs, trod, $th_big_key"], "visibility_rules": ["label_osfala_th"]},
+          {"name": "Impa", "hosted_item": "impa", "access_rules": ["merge, $th_small_keys|2, $th_big_key", "[advanced], merge, bombs, trod, $th_big_key", "[advanced], fsword, bombs, trod, $th_big_key"], "visibility_rules": ["label_impa_th"]},
+          {"name": "Irene", "hosted_item": "irene", "access_rules": ["merge, $th_small_keys|2, $th_big_key", "[advanced], merge, bombs, trod, $th_big_key", "[advanced], fsword, bombs, trod, $th_big_key"], "visibility_rules": ["label_irene_th"]},
+          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["merge, $th_small_keys|2, $th_big_key", "[advanced], merge, bombs, trod, $th_big_key", "[advanced], fsword, bombs, trod, $th_big_key"], "visibility_rules": ["label_rosso_th"]}
         ]
       },
       {
@@ -291,7 +291,7 @@
             "name": "(5F) Red/Blue Switches",
             "hosted_item": "toh_chest_04",
             "access_rules": [
-              "merge, th_small_keys:1",
+              "merge, $th_small_keys|1",
               "[advanced], merge, bombs, trod",
               "[advanced], fsword, bombs, trod"
             ]
@@ -301,7 +301,7 @@
             //"capture_item": true,
             "hosted_item": "toh_chest_05",
             "access_rules": [
-              "merge, th_small_keys:1",
+              "merge, $th_small_keys|1",
               "[advanced], merge, bombs, trod",
               "[advanced], fsword, bombs, trod"
             ]
@@ -310,7 +310,7 @@
             "name": "(6F) Right Mole",
             "hosted_item": "toh_chest_06",
             "access_rules": [
-              "merge, th_small_keys:1",
+              "merge, $th_small_keys|1",
               "[advanced], merge, bombs, trod",
               "[advanced], fsword, bombs, trod"
             ]
@@ -319,7 +319,7 @@
             "name": "(7F) Outside (Ledge)",
             "hosted_item": "toh_chest_07",
             "access_rules": [
-              "merge, th_small_keys:2",
+              "merge, $th_small_keys|2",
               "[advanced], merge, bombs, trod",
               "[advanced], fsword, bombs, trod"
             ]
@@ -329,7 +329,7 @@
             "capture_item": true,
             "hosted_item": "toh_chest_08",
             "access_rules": [
-              "merge, th_small_keys:2",
+              "merge, $th_small_keys|2",
               "[advanced], merge, bombs, trod",
               "[advanced], fsword, bombs, trod"
             ]
@@ -340,7 +340,7 @@
             "chest_opened_img": "images/chest_big_opened.png",
             "hosted_item": "toh_chest_09",
             "access_rules": [
-              "merge, th_small_keys:2",
+              "merge, $th_small_keys|2",
               "[advanced], merge, bombs, trod",
               "[advanced], fsword, bombs, trod"
             ]
@@ -350,21 +350,21 @@
             //"capture_item": true,
             "hosted_item": "toh_chest_10",
             "access_rules": [
-              "merge, th_small_keys:2, th_big_key",
-              "[advanced], merge, bombs, trod, th_big_key",
-              "[advanced], fsword, bombs, trod, th_big_key"
+              "merge, $th_small_keys|2, $th_big_key",
+              "[advanced], merge, bombs, trod, $th_big_key",
+              "[advanced], fsword, bombs, trod, $th_big_key"
             ]
           },
-          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["merge, th_small_keys:2, th_big_key", "[advanced], merge, bombs, trod, th_big_key", "[advanced], fsword, bombs, trod, th_big_key"], "visibility_rules": ["label_power_th"]},
-          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["merge, th_small_keys:2, th_big_key", "[advanced], merge, bombs, trod, th_big_key", "[advanced], fsword, bombs, trod, th_big_key"], "visibility_rules": ["label_wisdom_th"]},
-          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["merge, th_small_keys:2, th_big_key", "[advanced], merge, bombs, trod, th_big_key", "[advanced], fsword, bombs, trod, th_big_key"], "visibility_rules": ["label_courage_th"]},
-          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["merge, th_small_keys:2, th_big_key", "[advanced], merge, bombs, trod, th_big_key", "[advanced], fsword, bombs, trod, th_big_key"], "visibility_rules": ["label_gulley_th"]},
-          {"name": "Oren", "hosted_item": "oren", "access_rules": ["merge, th_small_keys:2, th_big_key", "[advanced], merge, bombs, trod, th_big_key", "[advanced], fsword, bombs, trod, th_big_key"], "visibility_rules": ["label_oren_th"]},
-          {"name": "Seres", "hosted_item": "seres", "access_rules": ["merge, th_small_keys:2, th_big_key", "[advanced], merge, bombs, trod, th_big_key", "[advanced], fsword, bombs, trod, th_big_key"], "visibility_rules": ["label_seres_th"]},
-          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["merge, th_small_keys:2, th_big_key", "[advanced], merge, bombs, trod, th_big_key", "[advanced], fsword, bombs, trod, th_big_key"], "visibility_rules": ["label_osfala_th"]},
-          {"name": "Impa", "hosted_item": "impa", "access_rules": ["merge, th_small_keys:2, th_big_key", "[advanced], merge, bombs, trod, th_big_key", "[advanced], fsword, bombs, trod, th_big_key"], "visibility_rules": ["label_impa_th"]},
-          {"name": "Irene", "hosted_item": "irene", "access_rules": ["merge, th_small_keys:2, th_big_key", "[advanced], merge, bombs, trod, th_big_key", "[advanced], fsword, bombs, trod, th_big_key"], "visibility_rules": ["label_irene_th"]},
-          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["merge, th_small_keys:2, th_big_key", "[advanced], merge, bombs, trod, th_big_key", "[advanced], fsword, bombs, trod, th_big_key"], "visibility_rules": ["label_rosso_th"]}
+          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["merge, $th_small_keys|2, $th_big_key", "[advanced], merge, bombs, trod, $th_big_key", "[advanced], fsword, bombs, trod, $th_big_key"], "visibility_rules": ["label_power_th"]},
+          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["merge, $th_small_keys|2, $th_big_key", "[advanced], merge, bombs, trod, $th_big_key", "[advanced], fsword, bombs, trod, $th_big_key"], "visibility_rules": ["label_wisdom_th"]},
+          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["merge, $th_small_keys|2, $th_big_key", "[advanced], merge, bombs, trod, $th_big_key", "[advanced], fsword, bombs, trod, $th_big_key"], "visibility_rules": ["label_courage_th"]},
+          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["merge, $th_small_keys|2, $th_big_key", "[advanced], merge, bombs, trod, $th_big_key", "[advanced], fsword, bombs, trod, $th_big_key"], "visibility_rules": ["label_gulley_th"]},
+          {"name": "Oren", "hosted_item": "oren", "access_rules": ["merge, $th_small_keys|2, $th_big_key", "[advanced], merge, bombs, trod, $th_big_key", "[advanced], fsword, bombs, trod, $th_big_key"], "visibility_rules": ["label_oren_th"]},
+          {"name": "Seres", "hosted_item": "seres", "access_rules": ["merge, $th_small_keys|2, $th_big_key", "[advanced], merge, bombs, trod, $th_big_key", "[advanced], fsword, bombs, trod, $th_big_key"], "visibility_rules": ["label_seres_th"]},
+          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["merge, $th_small_keys|2, $th_big_key", "[advanced], merge, bombs, trod, $th_big_key", "[advanced], fsword, bombs, trod, $th_big_key"], "visibility_rules": ["label_osfala_th"]},
+          {"name": "Impa", "hosted_item": "impa", "access_rules": ["merge, $th_small_keys|2, $th_big_key", "[advanced], merge, bombs, trod, $th_big_key", "[advanced], fsword, bombs, trod, $th_big_key"], "visibility_rules": ["label_impa_th"]},
+          {"name": "Irene", "hosted_item": "irene", "access_rules": ["merge, $th_small_keys|2, $th_big_key", "[advanced], merge, bombs, trod, $th_big_key", "[advanced], fsword, bombs, trod, $th_big_key"], "visibility_rules": ["label_irene_th"]},
+          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["merge, $th_small_keys|2, $th_big_key", "[advanced], merge, bombs, trod, $th_big_key", "[advanced], fsword, bombs, trod, $th_big_key"], "visibility_rules": ["label_rosso_th"]}
         ]
       }
     ]

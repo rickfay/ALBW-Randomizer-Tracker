@@ -123,12 +123,12 @@
             "chest_unopened_img": "images/chest_big_unopened.png",
             "chest_opened_img": "images/chest_big_opened.png",
             "access_rules": [
-              "sp_small_keys:2, merge, $progression_enemies_floor",
-              "[hard], sp_small_keys:2, bow, $progression_enemies_floor",
-              "[glitched], sp_small_keys:2, boots",
-              "[advanced], sp_small_keys:2, [not_nice_mode], irod",
-              "[], sp_small_keys:1, boots",
-              "[], sp_small_keys:1, [not_nice_mode], irod, $progression_enemies_floor",
+              "$sp_small_keys|2, merge, $progression_enemies_floor",
+              "[hard], $sp_small_keys|2, bow, $progression_enemies_floor",
+              "[glitched], $sp_small_keys|2, boots",
+              "[advanced], $sp_small_keys|2, [not_nice_mode], irod",
+              "[], $sp_small_keys|1, boots",
+              "[], $sp_small_keys|1, [not_nice_mode], irod, $progression_enemies_floor",
             ],
             "capture_item": true,
             "hosted_item": "sp_chest_07"
@@ -150,10 +150,10 @@
             "chest_unopened_img": "images/chest_big_unopened.png",
             "chest_opened_img": "images/chest_big_opened.png",
             "access_rules": [
-              "merge, $progression_enemies_floor, sp_small_keys:4",
-              "merge, $progression_enemies_floor, trod, sp_small_keys:2",
-              "merge, $progression_enemies_floor, irod, sp_small_keys:2",
-              "[hard], $progression_enemies_floor, merge, sp_small_keys:2",
+              "merge, $progression_enemies_floor, $sp_small_keys|4",
+              "merge, $progression_enemies_floor, trod, $sp_small_keys|2",
+              "merge, $progression_enemies_floor, irod, $sp_small_keys|2",
+              "[hard], $progression_enemies_floor, merge, $sp_small_keys|2",
               "[glitched], boots",
               "[advanced], [not_nice_mode], irod"
             ],
@@ -174,9 +174,9 @@
           {
             "name": "(1F) West Room",
             "access_rules": [
-              "merge, $progression_enemies_floor, sp_small_keys:2",
-              "[glitched], merge, boots, sp_small_keys:2",
-              "[], merge, boots, sp_small_keys:1",
+              "merge, $progression_enemies_floor, $sp_small_keys|2",
+              "[glitched], merge, boots, $sp_small_keys|2",
+              "[], merge, boots, $sp_small_keys|1",
               "[advanced], [not_nice_mode], irod"
             ],
             "hosted_item": "sp_chest_09"
@@ -196,9 +196,9 @@
           {
             "name": "(1F) East Room",
             "access_rules": [
-              "merge, $progression_enemies_floor, sp_small_keys:2",
-              "[glitched], merge, boots, sp_small_keys:2",
-              "[], merge, boots, sp_small_keys:1",
+              "merge, $progression_enemies_floor, $sp_small_keys|2",
+              "[glitched], merge, boots, $sp_small_keys|2",
+              "[], merge, boots, $sp_small_keys|1",
               "[advanced], [not_nice_mode], irod"
             ],
             "hosted_item": "sp_chest_10"
@@ -218,9 +218,9 @@
           {
             "name": "(1F) Water Puzzle",
             "access_rules": [
-              "merge, $progression_enemies_floor, sp_small_keys:2",
-              "[glitched], merge, boots, sp_small_keys:2",
-              "[], merge, boots, sp_small_keys:1",
+              "merge, $progression_enemies_floor, $sp_small_keys|2",
+              "[glitched], merge, boots, $sp_small_keys|2",
+              "[], merge, boots, $sp_small_keys|1",
               "[advanced], [not_nice_mode], irod"
             ],
             "hosted_item": "sp_chest_11"
@@ -230,7 +230,7 @@
       {
         "name": "Swamp Palace Post Boss",
         "access_rules": [
-          "merge, bombs, sp_small_keys:4, sp_big_key", "merge, hammer, sp_small_keys:4, sp_big_key", "merge, progression_enemies, $attack, sp_small_keys:4, sp_big_key", "[advanced], [not_nice_mode], irod, sp_big_key", "[advanced], [not_nice_mode], irod, trod", "[], merge, boots, bombs, sp_small_keys:2, sp_big_key", "[], merge, boots, hammer, sp_small_keys:2, sp_big_key", "[], merge, boots, progression_enemies, $attack, sp_small_keys:2, sp_big_key", "[], merge, bombs, sp_small_keys:3, sp_big_key", "[], merge, hammer, sp_small_keys:3, sp_big_key", "[], merge, progression_enemies, $attack, sp_small_keys:3, sp_big_key"
+          "merge, bombs, $sp_small_keys|4, $sp_big_key", "merge, hammer, $sp_small_keys|4, $sp_big_key", "merge, progression_enemies, $attack, $sp_small_keys|4, $sp_big_key", "[advanced], [not_nice_mode], irod, $sp_big_key", "[advanced], [not_nice_mode], irod, trod", "[], merge, boots, bombs, $sp_small_keys|2, $sp_big_key", "[], merge, boots, hammer, $sp_small_keys|2, $sp_big_key", "[], merge, boots, progression_enemies, $attack, $sp_small_keys|2, $sp_big_key", "[], merge, bombs, $sp_small_keys|3, $sp_big_key", "[], merge, hammer, $sp_small_keys|3, $sp_big_key", "[], merge, progression_enemies, $attack, $sp_small_keys|3, $sp_big_key"
         ],
         "children": [
           {
@@ -316,12 +316,12 @@
             "chest_unopened_img": "images/chest_big_unopened.png",
             "chest_opened_img": "images/chest_big_opened.png",
             "access_rules": [
-              "sp_small_keys:2, merge, $progression_enemies_floor",
-              "[hard], sp_small_keys:2, bow, $progression_enemies_floor",
-              "[glitched], sp_small_keys:2, boots",
-              "[advanced], sp_small_keys:2, [not_nice_mode], irod",
-              "[], sp_small_keys:1, boots",
-              "[], sp_small_keys:1, [not_nice_mode], irod, $progression_enemies_floor",
+              "$sp_small_keys|2, merge, $progression_enemies_floor",
+              "[hard], $sp_small_keys|2, bow, $progression_enemies_floor",
+              "[glitched], $sp_small_keys|2, boots",
+              "[advanced], $sp_small_keys|2, [not_nice_mode], irod",
+              "[], $sp_small_keys|1, boots",
+              "[], $sp_small_keys|1, [not_nice_mode], irod, $progression_enemies_floor",
             ],
             "capture_item": true,
             "hosted_item": "sp_chest_07"
@@ -329,9 +329,9 @@
           {
             "name": "(1F) Water Puzzle",
             "access_rules": [
-              "merge, $progression_enemies_floor, sp_small_keys:2",
-              "[glitched], merge, boots, sp_small_keys:2",
-              "[], merge, boots, sp_small_keys:1",
+              "merge, $progression_enemies_floor, $sp_small_keys|2",
+              "[glitched], merge, boots, $sp_small_keys|2",
+              "[], merge, boots, $sp_small_keys|1",
               "[advanced], [not_nice_mode], irod"
             ],
             "hosted_item": "sp_chest_11"
@@ -339,9 +339,9 @@
           {
             "name": "(1F) West Room",
             "access_rules": [
-              "merge, $progression_enemies_floor, sp_small_keys:2",
-              "[glitched], merge, boots, sp_small_keys:2",
-              "[], merge, boots, sp_small_keys:1",
+              "merge, $progression_enemies_floor, $sp_small_keys|2",
+              "[glitched], merge, boots, $sp_small_keys|2",
+              "[], merge, boots, $sp_small_keys|1",
               "[advanced], [not_nice_mode], irod"
             ],
             "hosted_item": "sp_chest_09"
@@ -349,9 +349,9 @@
           {
             "name": "(1F) East Room",
             "access_rules": [
-              "merge, $progression_enemies_floor, sp_small_keys:2",
-              "[glitched], merge, boots, sp_small_keys:2",
-              "[], merge, boots, sp_small_keys:1",
+              "merge, $progression_enemies_floor, $sp_small_keys|2",
+              "[glitched], merge, boots, $sp_small_keys|2",
+              "[], merge, boots, $sp_small_keys|1",
               "[advanced], [not_nice_mode], irod"
             ],
             "hosted_item": "sp_chest_10"
@@ -361,10 +361,10 @@
             "chest_unopened_img": "images/chest_big_unopened.png",
             "chest_opened_img": "images/chest_big_opened.png",
             "access_rules": [
-              "merge, $progression_enemies_floor, sp_small_keys:4",
-              "merge, $progression_enemies_floor, trod, sp_small_keys:2",
-              "merge, $progression_enemies_floor, irod, sp_small_keys:2",
-              "[hard], $progression_enemies_floor, merge, sp_small_keys:2",
+              "merge, $progression_enemies_floor, $sp_small_keys|4",
+              "merge, $progression_enemies_floor, trod, $sp_small_keys|2",
+              "merge, $progression_enemies_floor, irod, $sp_small_keys|2",
+              "[hard], $progression_enemies_floor, merge, $sp_small_keys|2",
               "[glitched], boots",
               "[advanced], [not_nice_mode], irod"
             ],
@@ -373,21 +373,21 @@
           {
             "name": "Arrghus",
             "access_rules": [
-              "merge, bombs, sp_small_keys:4, sp_big_key", "merge, hammer, sp_small_keys:4, sp_big_key", "merge, progression_enemies, $attack, sp_small_keys:4, sp_big_key", "[advanced], [not_nice_mode], irod, sp_big_key", "[advanced], [not_nice_mode], irod, trod", "[], merge, boots, bombs, sp_small_keys:2, sp_big_key", "[], merge, boots, hammer, sp_small_keys:2, sp_big_key", "[], merge, boots, progression_enemies, $attack, sp_small_keys:2, sp_big_key", "[], merge, bombs, sp_small_keys:3, sp_big_key", "[], merge, hammer, sp_small_keys:3, sp_big_key", "[], merge, progression_enemies, $attack, sp_small_keys:3, sp_big_key"
+              "merge, bombs, $sp_small_keys|4, $sp_big_key", "merge, hammer, $sp_small_keys|4, $sp_big_key", "merge, progression_enemies, $attack, $sp_small_keys|4, $sp_big_key", "[advanced], [not_nice_mode], irod, $sp_big_key", "[advanced], [not_nice_mode], irod, trod", "[], merge, boots, bombs, $sp_small_keys|2, $sp_big_key", "[], merge, boots, hammer, $sp_small_keys|2, $sp_big_key", "[], merge, boots, progression_enemies, $attack, $sp_small_keys|2, $sp_big_key", "[], merge, bombs, $sp_small_keys|3, $sp_big_key", "[], merge, hammer, $sp_small_keys|3, $sp_big_key", "[], merge, progression_enemies, $attack, $sp_small_keys|3, $sp_big_key"
             ],
             //"capture_item": true,
             "hosted_item": "sp_chest_12"
           },
-          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["merge, bombs, sp_small_keys:4, sp_big_key", "merge, hammer, sp_small_keys:4, sp_big_key", "merge, progression_enemies, $attack, sp_small_keys:4, sp_big_key", "[advanced], [not_nice_mode], irod, sp_big_key", "[advanced], [not_nice_mode], irod, trod", "[], merge, boots, bombs, sp_small_keys:2, sp_big_key", "[], merge, boots, hammer, sp_small_keys:2, sp_big_key", "[], merge, boots, progression_enemies, $attack, sp_small_keys:2, sp_big_key", "[], merge, bombs, sp_small_keys:3, sp_big_key", "[], merge, hammer, sp_small_keys:3, sp_big_key", "[], merge, progression_enemies, $attack, sp_small_keys:3, sp_big_key"], "visibility_rules": ["label_power_sp"]},
-          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["merge, bombs, sp_small_keys:4, sp_big_key", "merge, hammer, sp_small_keys:4, sp_big_key", "merge, progression_enemies, $attack, sp_small_keys:4, sp_big_key", "[advanced], [not_nice_mode], irod, sp_big_key", "[advanced], [not_nice_mode], irod, trod", "[], merge, boots, bombs, sp_small_keys:2, sp_big_key", "[], merge, boots, hammer, sp_small_keys:2, sp_big_key", "[], merge, boots, progression_enemies, $attack, sp_small_keys:2, sp_big_key", "[], merge, bombs, sp_small_keys:3, sp_big_key", "[], merge, hammer, sp_small_keys:3, sp_big_key", "[], merge, progression_enemies, $attack, sp_small_keys:3, sp_big_key"], "visibility_rules": ["label_wisdom_sp"]},
-          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["merge, bombs, sp_small_keys:4, sp_big_key", "merge, hammer, sp_small_keys:4, sp_big_key", "merge, progression_enemies, $attack, sp_small_keys:4, sp_big_key", "[advanced], [not_nice_mode], irod, sp_big_key", "[advanced], [not_nice_mode], irod, trod", "[], merge, boots, bombs, sp_small_keys:2, sp_big_key", "[], merge, boots, hammer, sp_small_keys:2, sp_big_key", "[], merge, boots, progression_enemies, $attack, sp_small_keys:2, sp_big_key", "[], merge, bombs, sp_small_keys:3, sp_big_key", "[], merge, hammer, sp_small_keys:3, sp_big_key", "[], merge, progression_enemies, $attack, sp_small_keys:3, sp_big_key"], "visibility_rules": ["label_courage_sp"]},
-          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["merge, bombs, sp_small_keys:4, sp_big_key", "merge, hammer, sp_small_keys:4, sp_big_key", "merge, progression_enemies, $attack, sp_small_keys:4, sp_big_key", "[advanced], [not_nice_mode], irod, sp_big_key", "[advanced], [not_nice_mode], irod, trod", "[], merge, boots, bombs, sp_small_keys:2, sp_big_key", "[], merge, boots, hammer, sp_small_keys:2, sp_big_key", "[], merge, boots, progression_enemies, $attack, sp_small_keys:2, sp_big_key", "[], merge, bombs, sp_small_keys:3, sp_big_key", "[], merge, hammer, sp_small_keys:3, sp_big_key", "[], merge, progression_enemies, $attack, sp_small_keys:3, sp_big_key"], "visibility_rules": ["label_gulley_sp"]},
-          {"name": "Oren", "hosted_item": "oren", "access_rules": ["merge, bombs, sp_small_keys:4, sp_big_key", "merge, hammer, sp_small_keys:4, sp_big_key", "merge, progression_enemies, $attack, sp_small_keys:4, sp_big_key", "[advanced], [not_nice_mode], irod, sp_big_key", "[advanced], [not_nice_mode], irod, trod", "[], merge, boots, bombs, sp_small_keys:2, sp_big_key", "[], merge, boots, hammer, sp_small_keys:2, sp_big_key", "[], merge, boots, progression_enemies, $attack, sp_small_keys:2, sp_big_key", "[], merge, bombs, sp_small_keys:3, sp_big_key", "[], merge, hammer, sp_small_keys:3, sp_big_key", "[], merge, progression_enemies, $attack, sp_small_keys:3, sp_big_key"], "visibility_rules": ["label_oren_sp"]},
-          {"name": "Seres", "hosted_item": "seres", "access_rules": ["merge, bombs, sp_small_keys:4, sp_big_key", "merge, hammer, sp_small_keys:4, sp_big_key", "merge, progression_enemies, $attack, sp_small_keys:4, sp_big_key", "[advanced], [not_nice_mode], irod, sp_big_key", "[advanced], [not_nice_mode], irod, trod", "[], merge, boots, bombs, sp_small_keys:2, sp_big_key", "[], merge, boots, hammer, sp_small_keys:2, sp_big_key", "[], merge, boots, progression_enemies, $attack, sp_small_keys:2, sp_big_key", "[], merge, bombs, sp_small_keys:3, sp_big_key", "[], merge, hammer, sp_small_keys:3, sp_big_key", "[], merge, progression_enemies, $attack, sp_small_keys:3, sp_big_key"], "visibility_rules": ["label_seres_sp"]},
-          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["merge, bombs, sp_small_keys:4, sp_big_key", "merge, hammer, sp_small_keys:4, sp_big_key", "merge, progression_enemies, $attack, sp_small_keys:4, sp_big_key", "[advanced], [not_nice_mode], irod, sp_big_key", "[advanced], [not_nice_mode], irod, trod", "[], merge, boots, bombs, sp_small_keys:2, sp_big_key", "[], merge, boots, hammer, sp_small_keys:2, sp_big_key", "[], merge, boots, progression_enemies, $attack, sp_small_keys:2, sp_big_key", "[], merge, bombs, sp_small_keys:3, sp_big_key", "[], merge, hammer, sp_small_keys:3, sp_big_key", "[], merge, progression_enemies, $attack, sp_small_keys:3, sp_big_key"], "visibility_rules": ["label_osfala_sp"]},
-          {"name": "Impa", "hosted_item": "impa", "access_rules": ["merge, bombs, sp_small_keys:4, sp_big_key", "merge, hammer, sp_small_keys:4, sp_big_key", "merge, progression_enemies, $attack, sp_small_keys:4, sp_big_key", "[advanced], [not_nice_mode], irod, sp_big_key", "[advanced], [not_nice_mode], irod, trod", "[], merge, boots, bombs, sp_small_keys:2, sp_big_key", "[], merge, boots, hammer, sp_small_keys:2, sp_big_key", "[], merge, boots, progression_enemies, $attack, sp_small_keys:2, sp_big_key", "[], merge, bombs, sp_small_keys:3, sp_big_key", "[], merge, hammer, sp_small_keys:3, sp_big_key", "[], merge, progression_enemies, $attack, sp_small_keys:3, sp_big_key"], "visibility_rules": ["label_impa_sp"]},
-          {"name": "Irene", "hosted_item": "irene", "access_rules": ["merge, bombs, sp_small_keys:4, sp_big_key", "merge, hammer, sp_small_keys:4, sp_big_key", "merge, progression_enemies, $attack, sp_small_keys:4, sp_big_key", "[advanced], [not_nice_mode], irod, sp_big_key", "[advanced], [not_nice_mode], irod, trod", "[], merge, boots, bombs, sp_small_keys:2, sp_big_key", "[], merge, boots, hammer, sp_small_keys:2, sp_big_key", "[], merge, boots, progression_enemies, $attack, sp_small_keys:2, sp_big_key", "[], merge, bombs, sp_small_keys:3, sp_big_key", "[], merge, hammer, sp_small_keys:3, sp_big_key", "[], merge, progression_enemies, $attack, sp_small_keys:3, sp_big_key"], "visibility_rules": ["label_irene_sp"]},
-          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["merge, bombs, sp_small_keys:4, sp_big_key", "merge, hammer, sp_small_keys:4, sp_big_key", "merge, progression_enemies, $attack, sp_small_keys:4, sp_big_key", "[advanced], [not_nice_mode], irod, sp_big_key", "[advanced], [not_nice_mode], irod, trod", "[], merge, boots, bombs, sp_small_keys:2, sp_big_key", "[], merge, boots, hammer, sp_small_keys:2, sp_big_key", "[], merge, boots, progression_enemies, $attack, sp_small_keys:2, sp_big_key", "[], merge, bombs, sp_small_keys:3, sp_big_key", "[], merge, hammer, sp_small_keys:3, sp_big_key", "[], merge, progression_enemies, $attack, sp_small_keys:3, sp_big_key"], "visibility_rules": ["label_rosso_sp"]}
+          {"name": "Pendant of Power", "hosted_item": "power", "access_rules": ["merge, bombs, $sp_small_keys|4, $sp_big_key", "merge, hammer, $sp_small_keys|4, $sp_big_key", "merge, progression_enemies, $attack, $sp_small_keys|4, $sp_big_key", "[advanced], [not_nice_mode], irod, $sp_big_key", "[advanced], [not_nice_mode], irod, trod", "[], merge, boots, bombs, $sp_small_keys|2, $sp_big_key", "[], merge, boots, hammer, $sp_small_keys|2, $sp_big_key", "[], merge, boots, progression_enemies, $attack, $sp_small_keys|2, $sp_big_key", "[], merge, bombs, $sp_small_keys|3, $sp_big_key", "[], merge, hammer, $sp_small_keys|3, $sp_big_key", "[], merge, progression_enemies, $attack, $sp_small_keys|3, $sp_big_key"], "visibility_rules": ["label_power_sp"]},
+          {"name": "Pendant of Wisdom", "hosted_item": "wisdom", "access_rules": ["merge, bombs, $sp_small_keys|4, $sp_big_key", "merge, hammer, $sp_small_keys|4, $sp_big_key", "merge, progression_enemies, $attack, $sp_small_keys|4, $sp_big_key", "[advanced], [not_nice_mode], irod, $sp_big_key", "[advanced], [not_nice_mode], irod, trod", "[], merge, boots, bombs, $sp_small_keys|2, $sp_big_key", "[], merge, boots, hammer, $sp_small_keys|2, $sp_big_key", "[], merge, boots, progression_enemies, $attack, $sp_small_keys|2, $sp_big_key", "[], merge, bombs, $sp_small_keys|3, $sp_big_key", "[], merge, hammer, $sp_small_keys|3, $sp_big_key", "[], merge, progression_enemies, $attack, $sp_small_keys|3, $sp_big_key"], "visibility_rules": ["label_wisdom_sp"]},
+          {"name": "Pendant of Courage", "hosted_item": "courage", "access_rules": ["merge, bombs, $sp_small_keys|4, $sp_big_key", "merge, hammer, $sp_small_keys|4, $sp_big_key", "merge, progression_enemies, $attack, $sp_small_keys|4, $sp_big_key", "[advanced], [not_nice_mode], irod, $sp_big_key", "[advanced], [not_nice_mode], irod, trod", "[], merge, boots, bombs, $sp_small_keys|2, $sp_big_key", "[], merge, boots, hammer, $sp_small_keys|2, $sp_big_key", "[], merge, boots, progression_enemies, $attack, $sp_small_keys|2, $sp_big_key", "[], merge, bombs, $sp_small_keys|3, $sp_big_key", "[], merge, hammer, $sp_small_keys|3, $sp_big_key", "[], merge, progression_enemies, $attack, $sp_small_keys|3, $sp_big_key"], "visibility_rules": ["label_courage_sp"]},
+          {"name": "Gulley", "hosted_item": "gulley", "access_rules": ["merge, bombs, $sp_small_keys|4, $sp_big_key", "merge, hammer, $sp_small_keys|4, $sp_big_key", "merge, progression_enemies, $attack, $sp_small_keys|4, $sp_big_key", "[advanced], [not_nice_mode], irod, $sp_big_key", "[advanced], [not_nice_mode], irod, trod", "[], merge, boots, bombs, $sp_small_keys|2, $sp_big_key", "[], merge, boots, hammer, $sp_small_keys|2, $sp_big_key", "[], merge, boots, progression_enemies, $attack, $sp_small_keys|2, $sp_big_key", "[], merge, bombs, $sp_small_keys|3, $sp_big_key", "[], merge, hammer, $sp_small_keys|3, $sp_big_key", "[], merge, progression_enemies, $attack, $sp_small_keys|3, $sp_big_key"], "visibility_rules": ["label_gulley_sp"]},
+          {"name": "Oren", "hosted_item": "oren", "access_rules": ["merge, bombs, $sp_small_keys|4, $sp_big_key", "merge, hammer, $sp_small_keys|4, $sp_big_key", "merge, progression_enemies, $attack, $sp_small_keys|4, $sp_big_key", "[advanced], [not_nice_mode], irod, $sp_big_key", "[advanced], [not_nice_mode], irod, trod", "[], merge, boots, bombs, $sp_small_keys|2, $sp_big_key", "[], merge, boots, hammer, $sp_small_keys|2, $sp_big_key", "[], merge, boots, progression_enemies, $attack, $sp_small_keys|2, $sp_big_key", "[], merge, bombs, $sp_small_keys|3, $sp_big_key", "[], merge, hammer, $sp_small_keys|3, $sp_big_key", "[], merge, progression_enemies, $attack, $sp_small_keys|3, $sp_big_key"], "visibility_rules": ["label_oren_sp"]},
+          {"name": "Seres", "hosted_item": "seres", "access_rules": ["merge, bombs, $sp_small_keys|4, $sp_big_key", "merge, hammer, $sp_small_keys|4, $sp_big_key", "merge, progression_enemies, $attack, $sp_small_keys|4, $sp_big_key", "[advanced], [not_nice_mode], irod, $sp_big_key", "[advanced], [not_nice_mode], irod, trod", "[], merge, boots, bombs, $sp_small_keys|2, $sp_big_key", "[], merge, boots, hammer, $sp_small_keys|2, $sp_big_key", "[], merge, boots, progression_enemies, $attack, $sp_small_keys|2, $sp_big_key", "[], merge, bombs, $sp_small_keys|3, $sp_big_key", "[], merge, hammer, $sp_small_keys|3, $sp_big_key", "[], merge, progression_enemies, $attack, $sp_small_keys|3, $sp_big_key"], "visibility_rules": ["label_seres_sp"]},
+          {"name": "Osfala", "hosted_item": "osfala", "access_rules": ["merge, bombs, $sp_small_keys|4, $sp_big_key", "merge, hammer, $sp_small_keys|4, $sp_big_key", "merge, progression_enemies, $attack, $sp_small_keys|4, $sp_big_key", "[advanced], [not_nice_mode], irod, $sp_big_key", "[advanced], [not_nice_mode], irod, trod", "[], merge, boots, bombs, $sp_small_keys|2, $sp_big_key", "[], merge, boots, hammer, $sp_small_keys|2, $sp_big_key", "[], merge, boots, progression_enemies, $attack, $sp_small_keys|2, $sp_big_key", "[], merge, bombs, $sp_small_keys|3, $sp_big_key", "[], merge, hammer, $sp_small_keys|3, $sp_big_key", "[], merge, progression_enemies, $attack, $sp_small_keys|3, $sp_big_key"], "visibility_rules": ["label_osfala_sp"]},
+          {"name": "Impa", "hosted_item": "impa", "access_rules": ["merge, bombs, $sp_small_keys|4, $sp_big_key", "merge, hammer, $sp_small_keys|4, $sp_big_key", "merge, progression_enemies, $attack, $sp_small_keys|4, $sp_big_key", "[advanced], [not_nice_mode], irod, sp_big_key", "[advanced], [not_nice_mode], irod, trod", "[], merge, boots, bombs, $sp_small_keys|2, sp_big_key", "[], merge, boots, hammer, $sp_small_keys|2, sp_big_key", "[], merge, boots, progression_enemies, $attack, $sp_small_keys|2, sp_big_key", "[], merge, bombs, $sp_small_keys|3, sp_big_key", "[], merge, hammer, $sp_small_keys|3, sp_big_key", "[], merge, progression_enemies, $attack, $sp_small_keys|3, sp_big_key"], "visibility_rules": ["label_impa_sp"]},
+          {"name": "Irene", "hosted_item": "irene", "access_rules": ["merge, bombs, $sp_small_keys|4, sp_big_key", "merge, hammer, $sp_small_keys|4, sp_big_key", "merge, progression_enemies, $attack, $sp_small_keys|4, sp_big_key", "[advanced], [not_nice_mode], irod, sp_big_key", "[advanced], [not_nice_mode], irod, trod", "[], merge, boots, bombs, $sp_small_keys|2, sp_big_key", "[], merge, boots, hammer, $sp_small_keys|2, sp_big_key", "[], merge, boots, progression_enemies, $attack, $sp_small_keys|2, sp_big_key", "[], merge, bombs, $sp_small_keys|3, sp_big_key", "[], merge, hammer, $sp_small_keys|3, sp_big_key", "[], merge, progression_enemies, $attack, $sp_small_keys|3, sp_big_key"], "visibility_rules": ["label_irene_sp"]},
+          {"name": "Rosso", "hosted_item": "rosso", "access_rules": ["merge, bombs, $sp_small_keys|4, sp_big_key", "merge, hammer, $sp_small_keys|4, sp_big_key", "merge, progression_enemies, $attack, $sp_small_keys|4, sp_big_key", "[advanced], [not_nice_mode], irod, sp_big_key", "[advanced], [not_nice_mode], irod, trod", "[], merge, boots, bombs, $sp_small_keys|2, sp_big_key", "[], merge, boots, hammer, $sp_small_keys|2, sp_big_key", "[], merge, boots, progression_enemies, $attack, $sp_small_keys|2, sp_big_key", "[], merge, bombs, $sp_small_keys|3, sp_big_key", "[], merge, hammer, $sp_small_keys|3, sp_big_key", "[], merge, progression_enemies, $attack, $sp_small_keys|3, sp_big_key"], "visibility_rules": ["label_rosso_sp"]}
         ]
       }
     ]

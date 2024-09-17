@@ -163,6 +163,7 @@
         "sections": [
           {
             "name": "(2F) Under Rock (Left)",
+            "capture_item": true,
             "hosted_item": "dp_chest_08",
             "access_rules": [
               "$dp2F",
@@ -183,6 +184,7 @@
         "sections": [
           {
             "name": "(2F) Under Rock (Right)",
+            "capture_item": true,
             "hosted_item": "dp_chest_09",
             "access_rules": [
               "$dp2F",
@@ -243,6 +245,7 @@
         "sections": [
           {
             "name": "(2F) Under Rock (Ball Room)",
+            "capture_item": true,
             "hosted_item": "dp_chest_12",
             "access_rules": [
               "$dp2F",
@@ -384,6 +387,7 @@
           },
           {
             "name": "(2F) Under Rock (Left)",
+            "capture_item": true,
             "hosted_item": "dp_chest_08",
             "access_rules": [
               "$dp2F",
@@ -392,6 +396,7 @@
           },
           {
             "name": "(2F) Under Rock (Right)",
+            "capture_item": true,
             "hosted_item": "dp_chest_09",
             "access_rules": [
               "$dp2F",
@@ -416,6 +421,7 @@
           },
           {
             "name": "(2F) Under Rock (Ball Room)",
+            "capture_item": true,
             "hosted_item": "dp_chest_12",
             "access_rules": [
               "$dp2F",

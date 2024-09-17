@@ -397,6 +397,48 @@
     ]
   },
   {
+    "name": "Small Keysy",
+    "type": "toggle",
+    "img": "",
+    "codes": "keysy_small"
+  },
+  {
+    "name": "Big Keysy",
+    "type": "toggle",
+    "img": "",
+    "codes": "keysy_big"
+  },
+  {
+    "name": "Keysy",
+    "type": "composite_toggle",
+    "codes": "keysy",
+    "item_left": "keysy_small",
+    "item_right": "keysy_big",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/settings/Keysy_off.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/settings/Keysy_small.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/settings/Keysy_big.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/settings/Keysy_all.png"
+      }
+    ]
+  },
+  {
     "name": "Regions",
     "type": "progressive",
     "loop": true,

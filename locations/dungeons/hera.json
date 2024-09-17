@@ -170,6 +170,7 @@
         "sections": [
           {
             "name": "(8F) Fairy Room",
+            "capture_item": true,
             "hosted_item": "toh_chest_08",
             "access_rules": [
               "merge, th_small_keys:2",
@@ -325,6 +326,7 @@
           },
           {
             "name": "(8F) Fairy Room",
+            "capture_item": true,
             "hosted_item": "toh_chest_08",
             "access_rules": [
               "merge, th_small_keys:2",

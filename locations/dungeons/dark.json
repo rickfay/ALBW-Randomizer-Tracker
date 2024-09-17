@@ -150,6 +150,7 @@
                   "bombs, pd_small_keys:4",
                   "[], bombs, pd_small_keys:2"
                 ],
+                "capture_item": true,
                 "hosted_item": "pod_chest_07"
               }
             ]
@@ -487,6 +488,7 @@
               "bombs, pd_small_keys:4, $lampless",
               "[], bombs, pd_small_keys:2, $lampless"
             ],
+            "capture_item": true,
             "hosted_item": "pod_chest_07"
           },
           {

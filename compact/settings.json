@@ -1,0 +1,5 @@
+{
+  "always_allow_chest_manipulation": true,
+  "auto_pin_capturing_locations": false,
+  "disabled_image_filter": "saturation|0|bt601,brightness|0.75"
+}

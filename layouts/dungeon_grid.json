@@ -6,8 +6,8 @@
         "type": "itemgrid",
         "dropshadow": true,
         "h_alignment": "center",
-        "item_size": "20",
-        "item_margin": "3",
+        "item_size": "24",
+        "item_margin": "1",
         "margin": "0",
         "rows": [
           [

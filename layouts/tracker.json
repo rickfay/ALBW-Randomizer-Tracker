@@ -5,6 +5,7 @@
     "content": [
       {
         "type": "scroll",
+        "width": 320,
         "dock": "left",
         "horizontal_scrollbar_visibility": "disabled",
         "content": {

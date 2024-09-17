@@ -148,7 +148,7 @@
               "[glitched], $hog2F, merge, boots", // HoG Skip Skip, boots can reverse defeat mini-boss
               "[hell], $hog2F, merge" // Awful Armos Boost
             ],
-            //"capture_item": true,
+            "capture_item": true,
             "hosted_item": "hog_chest_07"
           }
         ]
@@ -184,6 +184,7 @@
         "sections": [
           {
             "name": "(3F) Fire Bubbles",
+            "capture_item": true,
             "hosted_item": "hog_chest_09",
             "access_rules": [
               "{csmc, $hog3F, hg_small_keys:4}",
@@ -323,7 +324,7 @@
               "[glitched], $hog2F, merge, boots", // HoG Skip Skip, boots can reverse defeat mini-boss
               "[hell], $hog2F, merge" // Awful Armos Boost
             ],
-            //"capture_item": true,
+            "capture_item": true,
             "hosted_item": "hog_chest_07"
           },
           {
@@ -335,6 +336,7 @@
           },
           {
             "name": "(3F) Fire Bubbles",
+            "capture_item": true,
             "hosted_item": "hog_chest_09",
             "access_rules": [
               "{csmc, $hog3F, hg_small_keys:4}",

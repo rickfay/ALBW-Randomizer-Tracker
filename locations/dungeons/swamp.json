@@ -130,6 +130,7 @@
               "[], sp_small_keys:1, boots",
               "[], sp_small_keys:1, [not_nice_mode], irod, $progression_enemies_floor",
             ],
+            "capture_item": true,
             "hosted_item": "sp_chest_07"
           }
         ]
@@ -322,6 +323,7 @@
               "[], sp_small_keys:1, boots",
               "[], sp_small_keys:1, [not_nice_mode], irod, $progression_enemies_floor",
             ],
+            "capture_item": true,
             "hosted_item": "sp_chest_07"
           },
           {

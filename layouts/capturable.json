@@ -61,17 +61,16 @@
             "hint_glasses"
           ],
           [
-            "smooth_gem",
+            "bell",
             "maiamai_single",
             "ore",
-
             "bottles",
             "bottle_trade_items",
-            "bottle_bee_golden",
+            "foul",
             "scoot"
           ],
           [
-            "bell",
+            "quake",
             "",
             "compass",
             "key",
@@ -80,13 +79,13 @@
             "bow_of_light"
           ],
           [
-            "pouch",
+            "smooth_gem",
             "hp",
             "hc",
             "tail",
             "horn",
             "guts",
-            "foul"
+            "pouch"
           ],
           [
             "rupee_green",

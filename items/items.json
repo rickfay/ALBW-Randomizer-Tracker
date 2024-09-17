@@ -20,6 +20,12 @@
     "codes": "bigkey"
   },
   {
+    "name": "Compass",
+    "type": "toggle",
+    "img": "images/items/compass.png",
+    "codes": "compass"
+  },
+  {
     "name": "Blacksmith",
     "type": "toggle",
     "img": "images/checks/blacksmith.png",
@@ -64,50 +70,6 @@
       }
     ]
   },
-  //  {
-  //    "name": "Bottles",
-  //    "type": "progressive",
-  //    "loop": true,
-  //    "allow_disabled": false,
-  //    "stages": [
-  //      {
-  //        "name": "0 Bottles",
-  //        "img": "images/items/bottle.png",
-  //        "img_mods": "@disabled",
-  //        "codes": "bottle, bottles"
-  //      },
-  //      {
-  //        "name": "1 Bottle",
-  //        "img": "images/items/bottle.png",
-  //        "img_mods": "overlay|images/numbers/bottle_1.png",
-  //        "codes": "bottle_1"
-  //      },
-  //      {
-  //        "name": "2 Bottles",
-  //        "img": "images/items/bottle.png",
-  //        "img_mods": "overlay|images/numbers/bottle_2.png",
-  //        "codes": "bottle_2"
-  //      },
-  //      {
-  //        "name": "3 Bottles",
-  //        "img": "images/items/bottle.png",
-  //        "img_mods": "overlay|images/numbers/bottle_3.png",
-  //        "codes": "bottle_3"
-  //      },
-  //      {
-  //        "name": "4 Bottles",
-  //        "img": "images/items/bottle.png",
-  //        "img_mods": "overlay|images/numbers/bottle_4.png",
-  //        "codes": "bottle_4"
-  //      },
-  //      {
-  //        "name": "5 Bottles",
-  //        "img": "images/items/bottle.png",
-  //        "img_mods": "overlay|images/numbers/bottle_5.png",
-  //        "codes": "bottle_5"
-  //      }
-  //    ]
-  //  },
   {
     "name": "Empty Bottle / Golden Bee",
     "type": "progressive",
@@ -1308,38 +1270,43 @@
     "codes": "flippers"
   },
   {
-    "name": "Zora's Flippers / Smooth Gem",
-    "type": "toggle_badged",
-    "base_item": "flippers",
-    "img": "images/items/smooth_gem_small.png",
-    "disabled_img": "images/items/smooth_gem_small.png",
+    "name": "Smooth Gem",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/smooth_gem.png",
     "codes": "smooth_gem"
-
-    //    "images": [
-    //      {
-    //        "left": false,
-    //        "right": false,
-    //        "img": "images/items/flippers.png",
-    //        "img_mods": "@disabled,overlay|images/items/smooth_gem_small_disabled.png"
-    //      },
-    //      {
-    //        "left": true,
-    //        "right": false,
-    //        "img": "images/items/flippers.png",
-    //        "img_mods": "overlay|images/items/smooth_gem_small_disabled.png"
-    //      },
-    //      {
-    //        "left": false,
-    //        "right": true,
-    //        "img": "images/items/flippers.png",
-    //        "img_mods": "@disabled,overlay|images/items/smooth_gem_small.png"
-    //      },
-    //      {
-    //        "left": true,
-    //        "right": true,
-    //        "img": "images/items/flippers.png",
-    //        "img_mods": "overlay|images/items/smooth_gem_small.png"
-    //      }
-    //    ]
+  },
+  {
+    "name": "Zora's Flippers / Smooth Gem",
+    "type": "composite_toggle",
+    "item_left": "flippers",
+    "item_right": "smooth_gem",
+    "codes": "flippers_smooth_gem",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/items/flippers.png",
+        "img_mods": "overlay|images/items/smooth_gem_small.png,@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/items/flippers.png",
+        "img_mods": "overlay|images/items/smooth_gem_small_disabled.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/items/flippers.png",
+        "img_mods": "@disabled,overlay|images/items/smooth_gem_small.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/items/flippers.png",
+        "img_mods": "overlay|images/items/smooth_gem_small.png"
+      }
+    ]
   }
 ]

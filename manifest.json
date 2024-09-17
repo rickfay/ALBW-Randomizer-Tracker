@@ -9,6 +9,9 @@
     "standard": {
       "display_name": "Standard Map Tracker"
     },
+    "compact": {
+      "display_name": "Compact Map Tracker"
+    },
     "items_only": {
       "display_name": "Item Tracker"
     }

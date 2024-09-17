@@ -19,7 +19,6 @@
             "sections": [
               {
                 "name": "Lost Woods Chest",
-                "capture_item": true,
                 "access_rules": [
                   "{csmc}",
                   "{hell, boomerang}",
@@ -44,7 +43,6 @@
             "sections": [
               {
                 "name": "Lost Woods Alcove",
-                "capture_item": true,
                 "access_rules": [
                   //"{}",
                   "{glitched, boomerang}",
@@ -75,6 +73,7 @@
                   "ped_requirement_3, power, wisdom, courage",
                   "ped_requirement_2, power, wisdom"
                 ],
+                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -94,6 +93,7 @@
                 "access_rules": [
                   "rosso"
                 ],
+                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -101,6 +101,7 @@
                 "access_rules": [
                   "rosso, power_glove"
                 ],
+                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -284,7 +285,7 @@
               },
               {
                 "name": "Graveyard Ledge Cave",
-                //"capture_item": true,
+                "capture_item": true,
                 "access_rules": [
                   "merge, crack_graveyard",
                   "not_cracksanity, merge, quake, crack_graveyard_lorule"
@@ -332,6 +333,7 @@
                   "{csmc, bombs}",
                   "bombs, merge"
                 ],
+                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -410,7 +412,7 @@
             "sections": [
               {
                 "name": "Waterfall Cave",
-                //"capture_item": true,
+                "capture_item": true,
                 "access_rules": [
                   "flippers",
                   "[glitched], merge",
@@ -437,6 +439,7 @@
                   "merge, oren, smooth_gem",
                   "[hell], oren, smooth_gem, $beeBoost"
                 ],
+                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -523,6 +526,7 @@
                 "access_rules": [
                   "power_glove"
                 ],
+                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -550,6 +554,7 @@
                   "golden_bee",
                   "[hell], bottle, net"
                 ],
+                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -751,8 +756,8 @@
                 "access_rules": [
                   "ore_2"
                 ],
+                "capture_item": true,
                 "hosted_item": "blacksmith"
-                //"item_count": 1
               }
             ]
           },
@@ -797,6 +802,7 @@
                   "[glitched], $boost",
                   "[hell], $beeBoost"
                 ],
+                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -837,6 +843,7 @@
                 "access_rules": [
                   "courage"
                 ],
+                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -856,7 +863,7 @@
                 "access_rules": [
                   "merge"
                 ],
-                //"capture_item": true,
+                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -882,6 +889,7 @@
                 "access_rules": [
                   "flippers"
                 ],
+                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -958,6 +966,7 @@
                   "[advanced], trod",
                   "[hell], srod"
                 ],
+                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -1051,6 +1060,7 @@
                     "access_rules": [
                       "merge"
                     ],
+                    "capture_item": true,
                     "item_count": 1
                   }
                 ]
@@ -1159,6 +1169,7 @@
                   "[advanced], niceirod, flippers, hammer",
                   "[hell], niceirod"
                 ],
+                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -1206,6 +1217,7 @@
                   "{csmc, irod}",
                   "bombs"
                 ],
+                "capture_item": true,
                 "item_count": 1
               }
             ]

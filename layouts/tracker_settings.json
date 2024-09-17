@@ -6,13 +6,15 @@
       {
         "type": "itemgrid",
         "dropshadow": true,
-        "item_size": "40",
+        "item_size": "32",
+        "margin": "0",
         "v_alignment": "top",
         "rows": [
           [
             "logic",
             "lc_requirement",
             "ped_requirement_3",
+            "keysy",
             "cracksanity",
             "weathervania",
             "maiamai_map"

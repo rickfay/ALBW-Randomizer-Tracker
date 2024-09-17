@@ -49,10 +49,15 @@ Tracker:AddLayouts("layouts/maps/lorule_castle.json")
 
 Tracker:AddLayouts("layouts/maps.json")
 Tracker:AddLayouts("layouts/broadcast.json")
-Tracker:AddLayouts("layouts/tracker.json")
+
+--if Tracker.ActiveVariantUID == "standard" then
+    Tracker:AddLayouts("layouts/tracker.json")
+--elseif Tracker.ActiveVariantUID == "compact" then
+--    Tracker:AddLayouts("compact/layouts/tracker.json")
+--end
 
 --- Locations
-if Tracker.ActiveVariantUID == "standard" then
+if Tracker.ActiveVariantUID == "standard" or Tracker.ActiveVariantUID == "compact" then
     Tracker:AddLocations("locations/hyrule.json")
     Tracker:AddLocations("locations/lorule.json")
     Tracker:AddLocations("locations/death_mountain.json")

@@ -149,6 +149,7 @@
               "$access_lorule_graveyard, titansmitt, [lampless], $attack, ls_small_key",
               "$lampless_access_lorule_graveyard, titansmitt, [lampless], $attack, ls_small_key"
             ],
+            "capture_item": true,
             "item_count": 1
           }
         ]
@@ -228,6 +229,7 @@
                   "[hard], merge, power_glove, lamp",
                   "[hard], merge, power_glove, net"
                 ],
+                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -264,7 +266,6 @@
             "sections": [
               {
                 "name": "Dark Maze Ledge",
-                "capture_item": true,
                 "item_count": 1,
                 "access_rules": [
                   "merge",
@@ -314,6 +315,7 @@
                 "access_rules": [
                   "blacksmith, ore_4"
                 ],
+                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -357,6 +359,7 @@
                   "[], nicebow",
                   "[], niceirod"
                 ],
+                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -406,6 +409,7 @@
                   "label_irene_tt, irene",
                   "label_rosso_tt, rosso"
                 ],
+                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -476,6 +480,7 @@
             "sections": [
               {
                 "name": "Octoball Derby (Score 100+)",
+                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -510,6 +515,7 @@
             "sections": [
               {
                 "name": "Great Rupee Fairy",
+                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -539,6 +545,7 @@
                   "merge, srod, trod",
                   "[glitched], srod"
                 ],
+                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -569,7 +576,7 @@
           },
           {
             "name": "Ledge",
-            //"capture_item": true,
+            "capture_item": true,
             "access_rules": [
               //"{}",
               "merge, crack_mire_north",

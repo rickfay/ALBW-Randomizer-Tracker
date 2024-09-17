@@ -17,6 +17,10 @@
           "flags": [ "map", "pins", "chathud" ]
         },
         {
+          "name": "Compact Map Tracker",
+          "flags": [ "map", "pins", "chathud" ]
+        },
+        {
           "name": "Item Tracker",
           "flags": [ "chathud" ]
         }

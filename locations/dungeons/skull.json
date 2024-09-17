@@ -20,6 +20,7 @@
         "sections": [
           {
             "name": "(B1) South Chest",
+            "capture_item": true,
             "hosted_item": "sw_chest_01",
             "access_rules": [
               "$lampless"
@@ -123,6 +124,7 @@
             "name": "(B1) Big Chest (Eyes)",
             "chest_unopened_img": "images/chest_big_unopened.png",
             "chest_opened_img": "images/chest_big_opened.png",
+            "capture_item": true,
             "hosted_item": "sw_chest_08",
             "access_rules": [
               "sw_small_keys:3, $lampless, merge, $attack, $fire, $progression_enemies_floor",
@@ -235,6 +237,7 @@
         "sections": [
           {
             "name": "(B1) South Chest",
+            "capture_item": true,
             "hosted_item": "sw_chest_01",
             "access_rules": [
               "$lampless"
@@ -287,6 +290,7 @@
             "name": "(B1) Big Chest (Eyes)",
             "chest_unopened_img": "images/chest_big_unopened.png",
             "chest_opened_img": "images/chest_big_opened.png",
+            "capture_item": true,
             "hosted_item": "sw_chest_08",
             "access_rules": [
               "sw_small_keys:3, $lampless, merge, $attack, $fire, $progression_enemies_floor",

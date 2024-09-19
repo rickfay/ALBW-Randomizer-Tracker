@@ -307,7 +307,7 @@
         ],
         "sections": [
           {
-            "name": "(3F) Armos Room",
+            "name": "(3F) Gimos Room",
             "hosted_item": "dp_chest_15",
             "access_rules": [
               "$dp2F, $dp_small_keys|4",
@@ -447,7 +447,7 @@
             ]
           },
           {
-            "name": "(3F) Armos Room",
+            "name": "(3F) Gimos Room",
             "hosted_item": "dp_chest_15",
             "access_rules": [
               "$dp2F, $dp_small_keys|4",

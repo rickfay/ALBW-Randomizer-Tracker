@@ -1,0 +1,117 @@
+{
+  "layout_maps": {
+    "type": "container",
+    "content": [
+      {
+        "type": "tabbed",
+
+        "tabs": [
+          {
+            "title": "Worlds",
+            "icon": "images/icons/map.png",
+            "content": {
+              "type": "layout",
+              "key": "worlds"
+            }
+          },
+          {
+            "title": "EP",
+            "icon": "images/items/bow.png",
+            "content": {
+              "type": "layout",
+              "key": "eastern"
+            }
+          },
+          {
+            "title": "HG",
+            "icon": "images/items/trod.png",
+            "content": {
+              "type": "layout",
+              "key": "gales"
+            }
+          },
+          {
+            "title": "TH",
+            "icon": "images/items/hammer.png",
+            "content": {
+              "type": "layout",
+              "key": "hera"
+            }
+          },
+          {
+            "title": "HC",
+            "icon": "images/items/msword.png",
+            "content": {
+              "type": "layout",
+              "key": "hyrule_castle"
+            }
+          },
+          {
+            "title": "PD",
+            "icon": "images/items/bombs.png",
+            "content": {
+              "type": "layout",
+              "key": "dark"
+            }
+          },
+          {
+            "title": "SP",
+            "icon": "images/items/hookshot.png",
+            "content": {
+              "type": "layout",
+              "key": "swamp"
+            }
+          },
+          {
+            "title": "SW",
+            "icon": "images/items/lamp.png",
+            "content": {
+              "type": "layout",
+              "key": "skull"
+            }
+          },
+          {
+            "title": "TT",
+            "icon": "images/items/flippers.png",
+            "content": {
+              "type": "layout",
+              "key": "thieves"
+            }
+          },
+          {
+            "title": "TR",
+            "icon": "images/items/irod.png",
+            "content": {
+              "type": "layout",
+              "key": "turtle"
+            }
+          },
+          {
+            "title": "DP",
+            "icon": "images/items/srod.png",
+            "content": {
+              "type": "layout",
+              "key": "desert"
+            }
+          },
+          {
+            "title": "IR",
+            "icon": "images/items/frod.png",
+            "content": {
+              "type": "layout",
+              "key": "ice"
+            }
+          },
+          {
+            "title": "LC",
+            "icon": "images/items/bow_light.png",
+            "content": {
+              "type": "layout",
+              "key": "lorule_castle"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

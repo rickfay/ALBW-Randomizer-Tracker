@@ -4,20 +4,19 @@
     "children": [
       // Hyrule Weather Vanes ------------------------------------------------------------------------------------------
       {
-        "name": "Weather Vane 01",
-        "short_name": "Weather Vane",
+        "name": "Hyrule Castle Area",
         "map_locations": [
           {
             "map": "hyrule",
             "x": 1049,
             "y": 1377,
-            "size": 40,
-            "badge_size": 70
+            "size": 52,
+            "badge_size": 72
           }
         ],
         "sections": [
           {
-            "name": "Your House",
+            "name": "Your House Weather Vane",
             "hosted_item": "wv_your_house",
             "visibility_rules": [
               "weathervania"
@@ -26,20 +25,19 @@
         ]
       },
       {
-        "name": "Weather Vane 02",
-        "short_name": "Weather Vane",
+        "name": "Kakariko Village",
         "map_locations": [
           {
             "map": "hyrule",
             "x": 293,
             "y": 978,
-            "size": 40,
-            "badge_size": 70
+            "size": 52,
+            "badge_size": 72
           }
         ],
         "sections": [
           {
-            "name": "Kakariko Village",
+            "name": "Weather Vane",
             "hosted_item": "wv_kakariko",
             "visibility_rules": [
               "weathervania"
@@ -48,21 +46,32 @@
         ]
       },
       {
-        "name": "Weather Vane 03",
-        "short_name": "Weather Vane",
+        "name": "Eastern Ruins",
         "map_locations": [
           {
             "map": "hyrule",
-            "x": 1950,
+            "x": 1990,
             "y": 827,
-            "size": 40,
-            "badge_size": 70
+            "size": 52,
+            "badge_size": 72
           }
         ],
         "sections": [
           {
-            "name": "Eastern Palace",
+            "name": "Eastern Palace Weather Vane",
             "hosted_item": "wv_eastern",
+            "access_rules": [
+              "wv_eastern",
+              "merge",
+              "fsword, great_spin",
+              "bow",
+              "boomerang",
+              "hookshot",
+              "bombs",
+              "irod",
+              "bell, wv_eastern",
+              "[hard], power_glove"
+            ],
             "visibility_rules": [
               "weathervania"
             ]
@@ -70,21 +79,27 @@
         ]
       },
       {
-        "name": "Weather Vane 04",
-        "short_name": "Weather Vane",
+        "name": "Lake Hylia",
         "map_locations": [
           {
             "map": "hyrule",
             "x": 1559,
             "y": 1738,
-            "size": 40,
-            "badge_size": 70
+            "size": 52,
+            "badge_size": 72
           }
         ],
         "sections": [
           {
-            "name": "House of Gales",
+            "name": "House of Gales Weather Vane",
             "hosted_item": "wv_gales",
+            "access_rules": [
+              "wv_gales",
+              "flippers",
+              "[advanced], irod, hookshot",
+              "[advanced], $fakeFlippers",
+              "[hell], $beeFakeFlippers"
+            ],
             "visibility_rules": [
               "weathervania"
             ]
@@ -92,21 +107,28 @@
         ]
       },
       {
-        "name": "Weather Vane 05",
-        "short_name": "Weather Vane",
+        "name": "Death Mountain",
         "map_locations": [
           {
             "map": "hyrule",
             "x": 1224,
             "y": 95,
-            "size": 40,
-            "badge_size": 70
+            "size": 52,
+            "badge_size": 72
           }
         ],
         "sections": [
           {
-            "name": "Tower of Hera",
+            "name": "Tower of Hera Weather Vane",
             "hosted_item": "wv_hera",
+            "access_rules": [
+              "wv_hera",
+              "power_glove, merge",
+              "$access_dm_west_top",
+              "[glitched], merge",
+              "[advanced], $adv_glitched_access_dm_west_top",
+              "[hell], $hell_access_dm_west_top"
+            ],
             "visibility_rules": [
               "weathervania"
             ]
@@ -114,20 +136,19 @@
         ]
       },
       {
-        "name": "Weather Vane 06",
-        "short_name": "Weather Vane",
+        "name": "River Area",
         "map_locations": [
           {
             "map": "hyrule",
             "x": 1639,
             "y": 700,
-            "size": 40,
-            "badge_size": 70
+            "size": 52,
+            "badge_size": 72
           }
         ],
         "sections": [
           {
-            "name": "Witch's House",
+            "name": "Witch's House Weather Vane",
             "hosted_item": "wv_witch",
             "visibility_rules": [
               "weathervania"
@@ -136,21 +157,25 @@
         ]
       },
       {
-        "name": "Weather Vane 07",
-        "short_name": "Weather Vane",
+        "name": "Death Mountain",
         "map_locations": [
           {
             "map": "hyrule",
-            "x": 1022,
+            "x": 1027,
             "y": 349,
-            "size": 40,
-            "badge_size": 70
+            "size": 52,
+            "badge_size": 72
           }
         ],
         "sections": [
           {
-            "name": "Death Mountain (Hyrule)",
+            "name": "Weather Vane",
             "hosted_item": "wv_death_hyrule",
+            "access_rules": [
+              "wv_death_hyrule",
+              "$access_dm_west_base",
+              "[glitched]"
+            ],
             "visibility_rules": [
               "weathervania"
             ]
@@ -158,21 +183,27 @@
         ]
       },
       {
-        "name": "Weather Vane 08",
-        "short_name": "Weather Vane",
+        "name": "Desert",
         "map_locations": [
           {
             "map": "hyrule",
             "x": 186,
             "y": 1737,
-            "size": 40,
-            "badge_size": 70
+            "size": 52,
+            "badge_size": 72
           }
         ],
         "sections": [
           {
-            "name": "Desert Palace",
+            "name": "Desert Palace Weather Vane",
             "hosted_item": "wv_desert",
+            "access_rules": [
+              "wv_desert",
+              "$access_desert, srod, scroll",
+              "not_cracksanity, merge, quake, srod",
+              "cracksanity, merge, crack_desert_sw, srod",
+              "[glitched], $access_desert"
+            ],
             "visibility_rules": [
               "weathervania"
             ]
@@ -180,20 +211,19 @@
         ]
       },
       {
-        "name": "Weather Vane 09",
-        "short_name": "Weather Vane",
+        "name": "River Area",
         "map_locations": [
           {
             "map": "hyrule",
             "x": 918,
             "y": 652,
-            "size": 40,
-            "badge_size": 70
+            "size": 52,
+            "badge_size": 72
           }
         ],
         "sections": [
           {
-            "name": "Sanctuary",
+            "name": "Sanctuary Weather Vane",
             "hosted_item": "wv_sanctuary",
             "visibility_rules": [
               "weathervania"
@@ -203,21 +233,23 @@
       },
       // Lorule Weather Vanes ------------------------------------------------------------------------------------------
       {
-        "name": "Weather Vane 10",
-        "short_name": "Weather Vane",
+        "name": "Skull Woods Area",
         "map_locations": [
           {
             "map": "lorule",
-            "x": 363,
+            "x": 424,
             "y": 318,
-            "size": 40,
-            "badge_size": 70
+            "size": 52,
+            "badge_size": 72
           }
         ],
         "sections": [
           {
-            "name": "Skull Woods",
+            "name": "Skull Woods Weather Vane",
             "hosted_item": "wv_skull",
+            "access_rules": [
+              "$access_skull_woods_area"
+            ],
             "visibility_rules": [
               "weathervania"
             ]
@@ -225,21 +257,24 @@
         ]
       },
       {
-        "name": "Weather Vane 11",
-        "short_name": "Weather Vane",
+        "name": "Lorule Death Mountain",
         "map_locations": [
           {
             "map": "lorule",
             "x": 1171,
             "y": 131,
-            "size": 40,
-            "badge_size": 70
+            "size": 52,
+            "badge_size": 72
           }
         ],
         "sections": [
           {
-            "name": "Treacherous Tower",
+            "name": "Treacherous Tower Weather Vane",
             "hosted_item": "wv_treacherous_tower",
+            "access_rules": [
+              "$access_ldm_west",
+              "[glitched], $glitched_access_ldm_west"
+            ],
             "visibility_rules": [
               "weathervania"
             ]
@@ -247,21 +282,25 @@
         ]
       },
       {
-        "name": "Weather Vane 12",
-        "short_name": "Weather Vane",
+        "name": "Lorule Death Mountain",
         "map_locations": [
           {
             "map": "lorule",
             "x": 1832,
             "y": 226,
-            "size": 40,
-            "badge_size": 70
+            "size": 52,
+            "badge_size": 72
           }
         ],
         "sections": [
           {
-            "name": "Ice Ruins",
+            "name": "Ice Ruins Weather Vane",
             "hosted_item": "wv_ice",
+            "access_rules": [
+              "$access_ldm_east_top",
+              "[glitched], $glitched_access_ldm_east_top",
+              "[hell], $hell_access_ldm_east_top"
+            ],
             "visibility_rules": [
               "weathervania"
             ]
@@ -269,21 +308,25 @@
         ]
       },
       {
-        "name": "Weather Vane 13",
-        "short_name": "Weather Vane",
+        "name": "Lorule Castle Area",
         "map_locations": [
           {
             "map": "lorule",
             "x": 1005,
             "y": 975,
-            "size": 40,
-            "badge_size": 70
+            "size": 52,
+            "badge_size": 72
           }
         ],
         "sections": [
           {
-            "name": "Lorule Castle",
+            "name": "Lorule Castle Weather Vane",
             "hosted_item": "wv_lorule_castle",
+            "access_rules": [
+              "$access_central_lorule",
+              "[advanced], $advanced_access_central_lorule",
+              "[hell], $hell_access_central_lorule"
+            ],
             "visibility_rules": [
               "weathervania"
             ]
@@ -291,21 +334,24 @@
         ]
       },
       {
-        "name": "Weather Vane 14",
-        "short_name": "Weather Vane",
+        "name": "Graveyard",
         "map_locations": [
           {
             "map": "lorule",
             "x": 1233,
             "y": 683,
-            "size": 40,
-            "badge_size": 70
+            "size": 52,
+            "badge_size": 72
           }
         ],
         "sections": [
           {
-            "name": "Graveyard",
+            "name": "Weather Vane",
             "hosted_item": "wv_graveyard",
+            "access_rules": [
+              "$access_lorule_graveyard",
+              "[lampless], $lampless_access_lorule_graveyard"
+            ],
             "visibility_rules": [
               "weathervania"
             ]
@@ -313,21 +359,25 @@
         ]
       },
       {
-        "name": "Weather Vane 15",
-        "short_name": "Weather Vane",
+        "name": "Lorule Castle Area",
         "map_locations": [
           {
             "map": "lorule",
             "x": 139,
             "y": 1035,
-            "size": 40,
-            "badge_size": 70
+            "size": 52,
+            "badge_size": 72
           }
         ],
         "sections": [
           {
-            "name": "Thieves' Town",
+            "name": "Thieves' Town Weather Vane",
             "hosted_item": "wv_thieves",
+            "access_rules": [
+              "$access_central_lorule",
+              "[advanced], $advanced_access_central_lorule",
+              "[hell], $hell_access_central_lorule"
+            ],
             "visibility_rules": [
               "weathervania"
             ]
@@ -335,21 +385,26 @@
         ]
       },
       {
-        "name": "Weather Vane 16",
-        "short_name": "Weather Vane",
+        "name": "Dark Ruins",
         "map_locations": [
           {
             "map": "lorule",
-            "x": 1968,
+            "x": 1990,
             "y": 885,
-            "size": 40,
-            "badge_size": 70
+            "size": 52,
+            "badge_size": 72
           }
         ],
         "sections": [
           {
-            "name": "Dark Palace",
+            "name": "Dark Palace Weather Vane",
             "hosted_item": "wv_dark",
+            "access_rules": [
+              "$access_dark_ruins",
+              "[glitched], $glitched_access_dark_ruins",
+              "[advanced], $advanced_access_dark_ruins",
+              "[hell], $hell_access_dark_ruins"
+            ],
             "visibility_rules": [
               "weathervania"
             ]
@@ -357,21 +412,25 @@
         ]
       },
       {
-        "name": "Weather Vane 17",
-        "short_name": "Weather Vane",
+        "name": "Lorule Castle Area",
         "map_locations": [
           {
             "map": "lorule",
             "x": 684,
             "y": 1084,
-            "size": 40,
-            "badge_size": 70
+            "size": 52,
+            "badge_size": 72
           }
         ],
         "sections": [
           {
-            "name": "Blacksmith",
+            "name": "Blacksmith Weather Vane",
             "hosted_item": "wv_blacksmith",
+            "access_rules": [
+              "$access_central_lorule",
+              "[advanced], $advanced_access_central_lorule",
+              "[hell], $hell_access_central_lorule"
+            ],
             "visibility_rules": [
               "weathervania"
             ]
@@ -379,21 +438,25 @@
         ]
       },
       {
-        "name": "Weather Vane 18",
-        "short_name": "Weather Vane",
+        "name": "Lorule Castle Area",
         "map_locations": [
           {
             "map": "lorule",
-            "x": 1140,
+            "x": 1160,
             "y": 1401,
-            "size": 40,
-            "badge_size": 70
+            "size": 52,
+            "badge_size": 72
           }
         ],
         "sections": [
           {
-            "name": "Vacant House",
+            "name": "Vacant House Weather Vane",
             "hosted_item": "wv_vacant_house",
+            "access_rules": [
+              "$access_central_lorule",
+              "[advanced], $advanced_access_central_lorule",
+              "[hell], $hell_access_central_lorule"
+            ],
             "visibility_rules": [
               "weathervania"
             ]
@@ -401,21 +464,23 @@
         ]
       },
       {
-        "name": "Weather Vane 19",
-        "short_name": "Weather Vane",
+        "name": "Misery Mire",
         "map_locations": [
           {
             "map": "lorule",
             "x": 460,
             "y": 1828,
-            "size": 40,
-            "badge_size": 70
+            "size": 52,
+            "badge_size": 72
           }
         ],
         "sections": [
           {
-            "name": "Misery Mire",
+            "name": "Weather Vane",
             "hosted_item": "wv_mire",
+            "access_rules": [
+              "$access_misery_mire"
+            ],
             "visibility_rules": [
               "weathervania"
             ]
@@ -423,21 +488,25 @@
         ]
       },
       {
-        "name": "Weather Vane 20",
-        "short_name": "Weather Vane",
+        "name": "Lorule Castle Area",
         "map_locations": [
           {
             "map": "lorule",
             "x": 938,
             "y": 1849,
-            "size": 40,
-            "badge_size": 70
+            "size": 52,
+            "badge_size": 72
           }
         ],
         "sections": [
           {
-            "name": "Swamp Palace",
+            "name": "Swamp Palace Weather Vane",
             "hosted_item": "wv_swamp",
+            "access_rules": [
+              "hookshot, $access_central_lorule",
+              "hookshot, [advanced], $advanced_access_central_lorule",
+              "hookshot, [hell], $hell_access_central_lorule"
+            ],
             "visibility_rules": [
               "weathervania"
             ]
@@ -445,21 +514,25 @@
         ]
       },
       {
-        "name": "Weather Vane 21",
-        "short_name": "Weather Vane",
+        "name": "Turtle Rock Area",
         "map_locations": [
           {
             "map": "lorule",
             "x": 1611,
             "y": 1756,
-            "size": 40,
-            "badge_size": 70
+            "size": 52,
+            "badge_size": 72
           }
         ],
         "sections": [
           {
-            "name": "Turtle Rock",
+            "name": "Turtle Rock Weather Vane",
             "hosted_item": "wv_turtle",
+            "access_rules": [
+              "$access_turtleWV",
+              "[advanced], $advanced_access_turtleWV",
+              "[hell], $hell_access_turtleWV"
+            ],
             "visibility_rules": [
               "weathervania"
             ]
@@ -467,21 +540,25 @@
         ]
       },
       {
-        "name": "Weather Vane 22",
-        "short_name": "Weather Vane",
+        "name": "Lorule Death Mountain",
         "map_locations": [
           {
             "map": "lorule",
-            "x": 1497,
+            "x": 1517,
             "y": 383,
-            "size": 40,
-            "badge_size": 70
+            "size": 52,
+            "badge_size": 72
           }
         ],
         "sections": [
           {
-            "name": "Death Mountain (Lorule)",
+            "name": "Weather Vane",
             "hosted_item": "wv_death_lorule",
+            "access_rules": [
+              "$access_ldm_east_base",
+              "[glitched], $glitched_access_ldm_east_base",
+              "[hell], $hell_access_ldm_east_base"
+            ],
             "visibility_rules": [
               "weathervania"
             ]

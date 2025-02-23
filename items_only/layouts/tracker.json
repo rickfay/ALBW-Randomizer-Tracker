@@ -2,8 +2,8 @@
   "tracker_default": {
     "type": "container",
     "background": "#3c3c44",
-    "height": 180,
-    "width": 288,
+    "height": 262,
+    "width": 296,
     "content": [
       {
         "type": "layout",

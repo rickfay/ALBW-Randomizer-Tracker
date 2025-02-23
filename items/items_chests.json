@@ -1,80 +1,73 @@
 [
-  // Ravio's Shop
+  // Mother Maiamai
+//  "chest_unopened_img": "images/checks/chest_small_unopened.png",
+//  "chest_opened_img": "images/checks/chest_small_opened.png",
   {
-    "name": "Ice Rod Slot",
+    "name": "Maiamai Bow Upgrade",
     "type": "toggle",
-    "img": "images/checks/soldout.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "ravio_01"
+    "img": "images/items/framed_bow.png",
+    "loop": true,
+    "codes": "maiamai_bow"
   },
   {
-    "name": "Hookshot Slot",
+    "name": "Maiamai Boomerang Upgrade",
     "type": "toggle",
-    "img": "images/checks/soldout.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "ravio_02"
+    "img": "images/items/framed_boomerang.png",
+    "loop": true,
+    "codes": "maiamai_boomerang"
   },
   {
-    "name": "Tornado Rod Slot",
+    "name": "Maiamai Hookshot Upgrade",
     "type": "toggle",
-    "img": "images/checks/soldout.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "ravio_03"
+    "img": "images/items/framed_hookshot.png",
+    "loop": true,
+    "codes": "maiamai_hookshot"
   },
   {
-    "name": "Bombs Slot",
+    "name": "Maiamai Hammer Upgrade",
     "type": "toggle",
-    "img": "images/checks/soldout.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "ravio_04"
+    "img": "images/items/framed_hammer.png",
+    "loop": true,
+    "codes": "maiamai_hammer"
   },
   {
-    "name": "Bow Slot",
+    "name": "Maiamai Bombs Upgrade",
     "type": "toggle",
-    "img": "images/checks/soldout.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "ravio_05"
+    "img": "images/items/framed_bombs.png",
+    "loop": true,
+    "codes": "maiamai_bombs"
   },
   {
-    "name": "Sand Rod Slot",
+    "name": "Maiamai Fire Rod Upgrade",
     "type": "toggle",
-    "img": "images/checks/soldout.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "ravio_06"
+    "img": "images/items/framed_frod.png",
+    "loop": true,
+    "codes": "maiamai_fire_rod"
   },
   {
-    "name": "Hammer Slot",
+    "name": "Maiamai Ice Rod Upgrade",
     "type": "toggle",
-    "img": "images/checks/soldout.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "ravio_07"
+    "img": "images/items/framed_irod.png",
+    "loop": true,
+    "codes": "maiamai_ice_rod"
   },
   {
-    "name": "Boomerang Slot",
+    "name": "Maiamai Tornado Rod Upgrade",
     "type": "toggle",
-    "img": "images/checks/soldout.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "ravio_08"
+    "img": "images/items/framed_trod.png",
+    "loop": true,
+    "codes": "maiamai_tornado_rod"
   },
   {
-    "name": "Fire Rod Slot",
+    "name": "Maiamai Sand Rod Upgrade",
     "type": "toggle",
-    "img": "images/checks/soldout.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "ravio_09"
+    "img": "images/items/framed_srod.png",
+    "loop": true,
+    "codes": "maiamai_sand_rod"
   },
   // Eastern Palace
   {
-    "name": "1F Merge Chest",
+    "name": "(1F) Merge Chest",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -82,7 +75,7 @@
     "codes": "ep_chest_01"
   },
   {
-    "name": "1F Left Door Chest",
+    "name": "(1F) Left Door Chest",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -90,7 +83,7 @@
     "codes": "ep_chest_02"
   },
   {
-    "name": "1F Popo Room",
+    "name": "(1F) Popo Room",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -98,7 +91,7 @@
     "codes": "ep_chest_03"
   },
   {
-    "name": "1F Secret Room",
+    "name": "(1F) Secret Room",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -106,7 +99,7 @@
     "codes": "ep_chest_04"
   },
   {
-    "name": "1F Switch Room",
+    "name": "(1F) Switch Room",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -114,7 +107,7 @@
     "codes": "ep_chest_05"
   },
   {
-    "name": "2F Ball Room",
+    "name": "(2F) Ball Room",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -122,7 +115,7 @@
     "codes": "ep_chest_06"
   },
   {
-    "name": "2F Defeat Popos",
+    "name": "(2F) Defeat Popos",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -130,7 +123,7 @@
     "codes": "ep_chest_07"
   },
   {
-    "name": "2F Switch Room",
+    "name": "(2F) Switch Room",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -138,7 +131,7 @@
     "codes": "ep_chest_08"
   },
   {
-    "name": "2F Big Chest",
+    "name": "(2F) Big Chest",
     "type": "toggle",
     "img": "images/checks/chest_big_opened.png",
     "disabled_img": "images/checks/chest_big_unopened.png",
@@ -154,7 +147,7 @@
     "codes": "ep_chest_10_11"
   },
   {
-    "name": "3F Escape Chest",
+    "name": "(3F) Escape Chest",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -162,7 +155,7 @@
     "codes": "ep_chest_12"
   },
   {
-    "name": "1F Escape Chest",
+    "name": "(1F) Escape Chest",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -172,7 +165,7 @@
 
   // House of Gales
   {
-    "name": "1F Bubble Room Chest",
+    "name": "(1F) Fire Bubbles",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -180,7 +173,7 @@
     "codes": "hog_chest_01"
   },
   {
-    "name": "1F NE Room Chest",
+    "name": "(1F) Switch Room",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -188,7 +181,7 @@
     "codes": "hog_chest_02"
   },
   {
-    "name": "1F Torch Chest",
+    "name": "(1F) Torches",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -196,7 +189,7 @@
     "codes": "hog_chest_03"
   },
   {
-    "name": "1F Block Room Chest",
+    "name": "(1F) West Room",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -204,7 +197,7 @@
     "codes": "hog_chest_04"
   },
   {
-    "name": "1F Block Room Hidden Chest",
+    "name": "(1F) West Room Secret",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -212,7 +205,7 @@
     "codes": "hog_chest_05"
   },
   {
-    "name": "2F Narrow Ledge",
+    "name": "(2F) Narrow Ledge",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -220,7 +213,7 @@
     "codes": "hog_chest_06"
   },
   {
-    "name": "2F Fire Ring",
+    "name": "(2F) Fire Ring",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -228,7 +221,7 @@
     "codes": "hog_chest_07"
   },
   {
-    "name": "2F Big Chest",
+    "name": "(2F) Big Chest",
     "type": "toggle",
     "img": "images/checks/chest_big_opened.png",
     "disabled_img": "images/checks/chest_big_unopened.png",
@@ -236,7 +229,7 @@
     "codes": "hog_chest_08"
   },
   {
-    "name": "3F Bubble Room Chest",
+    "name": "(3F) Fire Bubbles",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -244,7 +237,7 @@
     "codes": "hog_chest_09"
   },
   {
-    "name": "3F Wind Chest",
+    "name": "(3F) Rat Room",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -252,7 +245,7 @@
     "codes": "hog_chest_10"
   },
   {
-    "name": "3F Margomill",
+    "name": "Margomill",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -262,7 +255,7 @@
 
   // Tower of Hera
   {
-    "name": "1F Window Chest",
+    "name": "(1F) Outside",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -270,7 +263,7 @@
     "codes": "toh_chest_01"
   },
   {
-    "name": "1F Center Chest",
+    "name": "(1F) Center",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -278,7 +271,7 @@
     "codes": "toh_chest_02"
   },
   {
-    "name": "3F Center",
+    "name": "(3F) Platform",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -286,7 +279,7 @@
     "codes": "toh_chest_03"
   },
   {
-    "name": "5F Red/Blue Chest",
+    "name": "(5F) Red/Blue Switches",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -294,7 +287,7 @@
     "codes": "toh_chest_04"
   },
   {
-    "name": "6F Right Tiles",
+    "name": "(6F) Left Mole",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -302,7 +295,7 @@
     "codes": "toh_chest_05"
   },
   {
-    "name": "6F Left Tiles",
+    "name": "(6F) Right Mole",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -310,7 +303,7 @@
     "codes": "toh_chest_06"
   },
   {
-    "name": "7F Ledge Chest",
+    "name": "(7F) Outside (Ledge)",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -318,7 +311,7 @@
     "codes": "toh_chest_07"
   },
   {
-    "name": "8F Fairy Room",
+    "name": "(8F) Fairy Room",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -326,7 +319,7 @@
     "codes": "toh_chest_08"
   },
   {
-    "name": "11F Big Chest",
+    "name": "(11F) Big Chest",
     "type": "toggle",
     "img": "images/checks/chest_big_opened.png",
     "disabled_img": "images/checks/chest_big_unopened.png",
@@ -334,7 +327,7 @@
     "codes": "toh_chest_09"
   },
   {
-    "name": "13F Moldorm",
+    "name": "Moldorm",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -344,7 +337,7 @@
 
   // Dark Palace
   {
-    "name": "1F Right Pit",
+    "name": "(1F) Right Pit",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -352,7 +345,7 @@
     "codes": "pod_chest_01"
   },
   {
-    "name": "1F Left Pit",
+    "name": "(1F) Left Pit",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -360,7 +353,7 @@
     "codes": "pod_chest_02"
   },
   {
-    "name": "1F Switches Chest",
+    "name": "(1F) Switch Puzzle",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -368,7 +361,7 @@
     "codes": "pod_chest_03"
   },
   {
-    "name": "1F Hidden Upper",
+    "name": "(1F) Hidden Room (Upper)",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -376,7 +369,7 @@
     "codes": "pod_chest_04"
   },
   {
-    "name": "1F Hidden Lower",
+    "name": "(1F) Hidden Room (Lower)",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -384,7 +377,7 @@
     "codes": "pod_chest_05"
   },
   {
-    "name": "1F Fall Chest",
+    "name": "(1F) Fall From 2F",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -392,7 +385,7 @@
     "codes": "pod_chest_06"
   },
   {
-    "name": "2F Big Chest",
+    "name": "(2F) Big Chest (Hidden)",
     "type": "toggle",
     "img": "images/checks/chest_big_opened.png",
     "disabled_img": "images/checks/chest_big_unopened.png",
@@ -400,7 +393,7 @@
     "codes": "pod_chest_07"
   },
   {
-    "name": "2F East Chest",
+    "name": "(2F) Alcove",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -408,7 +401,7 @@
     "codes": "pod_chest_08"
   },
   {
-    "name": "B1 Center Fall",
+    "name": "(B1) Fall From 1F",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -416,7 +409,7 @@
     "codes": "pod_chest_09"
   },
   {
-    "name": "B1 East Fall",
+    "name": "(B1) Helmasaur Room (Fall)",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -424,7 +417,7 @@
     "codes": "pod_chest_10"
   },
   {
-    "name": "B1 North East",
+    "name": "(B1) Helmasaur Room",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -432,7 +425,7 @@
     "codes": "pod_chest_11"
   },
   {
-    "name": "B1 Maze Room",
+    "name": "(B1) Glow-in-the-Dark Maze",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -440,7 +433,7 @@
     "codes": "pod_chest_12"
   },
   {
-    "name": "B1 Big Chest",
+    "name": "(B1) Bomb Bowling",
     "type": "toggle",
     "img": "images/checks/chest_big_opened.png",
     "disabled_img": "images/checks/chest_big_unopened.png",
@@ -448,7 +441,7 @@
     "codes": "pod_chest_13"
   },
   {
-    "name": "B1 Gemesaur King",
+    "name": "Gemesaur King",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -458,7 +451,7 @@
 
   // Swamp Palace
   {
-    "name": "B1 East Pillar",
+    "name": "(B1) Waterfall Room",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -466,7 +459,7 @@
     "codes": "sp_chest_01"
   },
   {
-    "name": "B1 West Pillar",
+    "name": "(B1) Raft Room (Pillar)",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -474,7 +467,7 @@
     "codes": "sp_chest_02"
   },
   {
-    "name": "B1 North Center",
+    "name": "(B1) Center",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -482,7 +475,7 @@
     "codes": "sp_chest_03"
   },
   {
-    "name": "B1 Staircase",
+    "name": "(B1) Raft Room (Right)",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -490,7 +483,7 @@
     "codes": "sp_chest_04"
   },
   {
-    "name": "B1 Raft Chest",
+    "name": "(B1) Raft Room (Left)",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -498,7 +491,7 @@
     "codes": "sp_chest_05"
   },
   {
-    "name": "B1 Side Room",
+    "name": "(B1) Gyorm",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -506,7 +499,7 @@
     "codes": "sp_chest_06"
   },
   {
-    "name": "B1 Big Chest",
+    "name": "(B1) Big Chest (Secret)",
     "type": "toggle",
     "img": "images/checks/chest_big_opened.png",
     "disabled_img": "images/checks/chest_big_unopened.png",
@@ -514,7 +507,7 @@
     "codes": "sp_chest_07"
   },
   {
-    "name": "1F Big Chest",
+    "name": "(1F) Big Chest (Fire)",
     "type": "toggle",
     "img": "images/checks/chest_big_opened.png",
     "disabled_img": "images/checks/chest_big_unopened.png",
@@ -522,7 +515,7 @@
     "codes": "sp_chest_08"
   },
   {
-    "name": "1F West Pillar",
+    "name": "(1F) West Room",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -530,7 +523,7 @@
     "codes": "sp_chest_09"
   },
   {
-    "name": "1F East Pillar",
+    "name": "(1F) East Room",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -538,7 +531,7 @@
     "codes": "sp_chest_10"
   },
   {
-    "name": "1F SW Room",
+    "name": "(1F) Water Puzzle",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -546,7 +539,7 @@
     "codes": "sp_chest_11"
   },
   {
-    "name": "1F Arrghus",
+    "name": "Arrghus",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -556,7 +549,7 @@
 
   // Skull Woods
   {
-    "name": "B1 South Chest",
+    "name": "(B1) South Chest",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -564,7 +557,7 @@
     "codes": "sw_chest_01"
   },
   {
-    "name": "B1 NE Room Fall",
+    "name": "(B1) Gibdo Room (Hole)",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -572,7 +565,7 @@
     "codes": "sw_chest_02"
   },
   {
-    "name": "B1 NE Room Lower",
+    "name": "(B1) Gibdo Room (Lower)",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -580,7 +573,7 @@
     "codes": "sw_chest_03"
   },
   {
-    "name": "B1 Grate Room",
+    "name": "(B1) Grate Room",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -588,7 +581,7 @@
     "codes": "sw_chest_04"
   },
   {
-    "name": "B1 Elevator Room",
+    "name": "(B2) Moving Platform Room",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -604,7 +597,7 @@
     "codes": "sw_chest_06"
   },
   {
-    "name": "B1 Big Chest (SW)",
+    "name": "(B1) Big Chest (Upper)",
     "type": "toggle",
     "img": "images/checks/chest_big_opened.png",
     "disabled_img": "images/checks/chest_big_unopened.png",
@@ -612,7 +605,7 @@
     "codes": "sw_chest_07"
   },
   {
-    "name": "B1 Big Chest (Eyes)",
+    "name": "(B1) Big Chest (Eyes)",
     "type": "toggle",
     "img": "images/checks/chest_big_opened.png",
     "disabled_img": "images/checks/chest_big_unopened.png",
@@ -620,7 +613,7 @@
     "codes": "sw_chest_08"
   },
   {
-    "name": "B1 Not Mothula",
+    "name": "Knucklemaster",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -630,7 +623,7 @@
 
   // Thieves' Hideout
   {
-    "name": "B1 Grate Chest",
+    "name": "(B1) Grate Chest",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -638,7 +631,7 @@
     "codes": "th_chest_01"
   },
   {
-    "name": "B1 Jail Cell",
+    "name": "(B1) Jail Cell",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -646,7 +639,7 @@
     "codes": "th_chest_02"
   },
   {
-    "name": "B2 NW Room",
+    "name": "(B2) Grate Chest (Fall)",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -654,7 +647,7 @@
     "codes": "th_chest_03"
   },
   {
-    "name": "B2 Jail Cell",
+    "name": "(B2) Jail Cell",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -662,7 +655,7 @@
     "codes": "th_chest_04"
   },
   {
-    "name": "B2 Eyegores",
+    "name": "(B2) Eyegores",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -670,7 +663,7 @@
     "codes": "th_chest_05"
   },
   {
-    "name": "B2 SE Room",
+    "name": "(B2) Switch Puzzle Room",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -678,7 +671,7 @@
     "codes": "th_chest_06"
   },
   {
-    "name": "B3 Underwater",
+    "name": "(B3) Underwater",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -686,7 +679,7 @@
     "codes": "th_chest_07"
   },
   {
-    "name": "B3 Big Chest",
+    "name": "(B3) Big Chest (Hidden)",
     "type": "toggle",
     "img": "images/checks/chest_big_opened.png",
     "disabled_img": "images/checks/chest_big_unopened.png",
@@ -694,7 +687,7 @@
     "codes": "th_chest_08"
   },
   {
-    "name": "B1 Behind Wall",
+    "name": "(B1) Behind Wall",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -702,7 +695,7 @@
     "codes": "th_chest_09"
   },
   {
-    "name": "B1 Big Chest",
+    "name": "(B1) Big Chest (Entrance)",
     "type": "toggle",
     "img": "images/checks/chest_big_opened.png",
     "disabled_img": "images/checks/chest_big_unopened.png",
@@ -718,261 +711,9 @@
     "codes": "th_chest_11"
   },
 
-  // Ice Ruins
-  {
-    "name": "1F Hidden Chest",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "ir_chest_01"
-  },
-  {
-    "name": "B1 Torches",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "ir_chest_02"
-  },
-  {
-    "name": "B1 East Chest",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "ir_chest_03"
-  },
-  {
-    "name": "B1 Center Chest",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "ir_chest_04"
-  },
-  {
-    "name": "B2 Icicle",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "ir_chest_05"
-  },
-  {
-    "name": "B2 Long Merge",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "ir_chest_06"
-  },
-  {
-    "name": "B3 Elevator Left",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "ir_chest_07"
-  },
-  {
-    "name": "B3 Elevator Right",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "ir_chest_08"
-  },
-  {
-    "name": "B3 Big Chest",
-    "type": "toggle",
-    "img": "images/checks/chest_big_opened.png",
-    "disabled_img": "images/checks/chest_big_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "ir_chest_09"
-  },
-  {
-    "name": "B4 Switches",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "ir_chest_10"
-  },
-  {
-    "name": "B4 SW Fall Chest",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "ir_chest_11"
-  },
-  {
-    "name": "B4 SE Fall Chest",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "ir_chest_12"
-  },
-  {
-    "name": "B4 Shortcut",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "ir_chest_13"
-  },
-  {
-    "name": "B5 Big Chest",
-    "type": "toggle",
-    "img": "images/checks/chest_big_opened.png",
-    "disabled_img": "images/checks/chest_big_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "ir_chest_14"
-  },
-  {
-    "name": "B6 Dharkstare",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "ir_chest_15"
-  },
-
-  // Desert Palace
-  {
-    "name": "1F Entrance",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "dp_chest_01"
-  },
-  {
-    "name": "1F Sand Island",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "dp_chest_02"
-  },
-  {
-    "name": "1F West Middle",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "dp_chest_03"
-  },
-  {
-    "name": "1F Sand Controls",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "dp_chest_04"
-  },
-  {
-    "name": "1F Miniboss Room",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "dp_chest_05"
-  },
-  {
-    "name": "1F Big Chest",
-    "type": "toggle",
-    "img": "images/checks/chest_big_opened.png",
-    "disabled_img": "images/checks/chest_big_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "dp_chest_06"
-  },
-  {
-    "name": "2F Center Room",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "dp_chest_07"
-  },
-  {
-    "name": "2F W Big Rock",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "dp_chest_08"
-  },
-  {
-    "name": "2F E Big Rock",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "dp_chest_09"
-  },
-  {
-    "name": "2F Big Chest",
-    "type": "toggle",
-    "img": "images/checks/chest_big_opened.png",
-    "disabled_img": "images/checks/chest_big_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "dp_chest_10"
-  },
-  {
-    "name": "2F Below Big Chest",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "dp_chest_11"
-  },
-  {
-    "name": "2F NE Big Rock",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "dp_chest_12"
-  },
-  {
-    "name": "2F Leever Room",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "dp_chest_13"
-  },
-  {
-    "name": "3F Behind Sand",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "dp_chest_14"
-  },
-  {
-    "name": "3F Gimos Chest",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "dp_chest_15"
-  },
-  {
-    "name": "Zaganaga",
-    "type": "toggle",
-    "img": "images/checks/chest_small_opened.png",
-    "disabled_img": "images/checks/chest_small_unopened.png",
-    "disabled_img_mods": "none",
-    "codes": "dp_chest_16"
-  },
-
   // Turtle Rock
   {
-    "name": "1F Center Switches",
+    "name": "(1F) Center",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -980,7 +721,7 @@
     "codes": "tr_chest_01"
   },
   {
-    "name": "1F Kill Flamolas",
+    "name": "(1F) Defeat Flamolas",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -988,7 +729,7 @@
     "codes": "tr_chest_02"
   },
   {
-    "name": "1F NE Ledge",
+    "name": "(1F) Northeast Ledge",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -996,7 +737,7 @@
     "codes": "tr_chest_03"
   },
   {
-    "name": "1F Miniboss Room",
+    "name": "(1F) Grate Chest",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -1004,7 +745,7 @@
     "codes": "tr_chest_04"
   },
   {
-    "name": "1F SE Room",
+    "name": "(1F) Southeast Chest",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -1012,7 +753,7 @@
     "codes": "tr_chest_05"
   },
   {
-    "name": "1F NW Room",
+    "name": "(1F) Northwest Room",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -1028,7 +769,7 @@
     "codes": "tr_chest_07"
   },
   {
-    "name": "B1 Under Big Chest",
+    "name": "(B1) Grate Chest (Small)",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -1036,7 +777,7 @@
     "codes": "tr_chest_08"
   },
   {
-    "name": "B1 North Big Chest",
+    "name": "(B1) Big Chest (Top)",
     "type": "toggle",
     "img": "images/checks/chest_big_opened.png",
     "disabled_img": "images/checks/chest_big_unopened.png",
@@ -1044,7 +785,7 @@
     "codes": "tr_chest_09"
   },
   {
-    "name": "B1 Center Big Chest",
+    "name": "(B1) Big Chest (Center)",
     "type": "toggle",
     "img": "images/checks/chest_big_opened.png",
     "disabled_img": "images/checks/chest_big_unopened.png",
@@ -1052,7 +793,7 @@
     "codes": "tr_chest_10"
   },
   {
-    "name": "B1 NE Room",
+    "name": "(B1) Northeast Room",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -1060,7 +801,7 @@
     "codes": "tr_chest_11"
   },
   {
-    "name": "B1 Kill Wizrobes",
+    "name": "(B1) Platform",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -1076,9 +817,261 @@
     "codes": "tr_chest_13"
   },
 
+  // Desert Palace
+  {
+    "name": "(1F) Entrance",
+    "type": "toggle",
+    "img": "images/checks/chest_small_opened.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "dp_chest_01"
+  },
+  {
+    "name": "(1F) Sand Room (North)",
+    "type": "toggle",
+    "img": "images/checks/chest_small_opened.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "dp_chest_02"
+  },
+  {
+    "name": "(1F) Sand Room (South)",
+    "type": "toggle",
+    "img": "images/checks/chest_small_opened.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "dp_chest_03"
+  },
+  {
+    "name": "(1F) Sand Switch Room",
+    "type": "toggle",
+    "img": "images/checks/chest_small_opened.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "dp_chest_04"
+  },
+  {
+    "name": "(1F) Behind Rocks",
+    "type": "toggle",
+    "img": "images/checks/chest_small_opened.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "dp_chest_05"
+  },
+  {
+    "name": "(1F) Big Chest (Behind Wall)",
+    "type": "toggle",
+    "img": "images/checks/chest_big_opened.png",
+    "disabled_img": "images/checks/chest_big_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "dp_chest_06"
+  },
+  {
+    "name": "(2F) Beamos Room",
+    "type": "toggle",
+    "img": "images/checks/chest_small_opened.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "dp_chest_07"
+  },
+  {
+    "name": "(2F) Under Rock (Left)",
+    "type": "toggle",
+    "img": "images/checks/chest_small_opened.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "dp_chest_08"
+  },
+  {
+    "name": "(2F) Under Rock (Right)",
+    "type": "toggle",
+    "img": "images/checks/chest_small_opened.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "dp_chest_09"
+  },
+  {
+    "name": "(2F) Big Chest (Puzzle)",
+    "type": "toggle",
+    "img": "images/checks/chest_big_opened.png",
+    "disabled_img": "images/checks/chest_big_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "dp_chest_10"
+  },
+  {
+    "name": "(2F) Red/Blue Switches",
+    "type": "toggle",
+    "img": "images/checks/chest_small_opened.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "dp_chest_11"
+  },
+  {
+    "name": "(2F) Under Rock (Ball Room)",
+    "type": "toggle",
+    "img": "images/checks/chest_small_opened.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "dp_chest_12"
+  },
+  {
+    "name": "(2F) Leever Room",
+    "type": "toggle",
+    "img": "images/checks/chest_small_opened.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "dp_chest_13"
+  },
+  {
+    "name": "(3F) Behind Falling Sand",
+    "type": "toggle",
+    "img": "images/checks/chest_small_opened.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "dp_chest_14"
+  },
+  {
+    "name": "(3F) Armos Room",
+    "type": "toggle",
+    "img": "images/checks/chest_small_opened.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "dp_chest_15"
+  },
+  {
+    "name": "Zaganaga",
+    "type": "toggle",
+    "img": "images/checks/chest_small_opened.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "dp_chest_16"
+  },
+
+  // Ice Ruins
+  {
+    "name": "(1F) Hidden Chest",
+    "type": "toggle",
+    "img": "images/checks/chest_small_opened.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "ir_chest_01"
+  },
+  {
+    "name": "(B1) Narrow Ledge",
+    "type": "toggle",
+    "img": "images/checks/chest_small_opened.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "ir_chest_02"
+  },
+  {
+    "name": "(B1) East Chest",
+    "type": "toggle",
+    "img": "images/checks/chest_small_opened.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "ir_chest_03"
+  },
+  {
+    "name": "(B1) Upper Chest",
+    "type": "toggle",
+    "img": "images/checks/chest_small_opened.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "ir_chest_04"
+  },
+  {
+    "name": "(B2) Ice Pillar",
+    "type": "toggle",
+    "img": "images/checks/chest_small_opened.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "ir_chest_05"
+  },
+  {
+    "name": "(B2) Long Merge Chest",
+    "type": "toggle",
+    "img": "images/checks/chest_small_opened.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "ir_chest_06"
+  },
+  {
+    "name": "(B3) Grate Chest (Left)",
+    "type": "toggle",
+    "img": "images/checks/chest_small_opened.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "ir_chest_07"
+  },
+  {
+    "name": "(B3) Grate Chest (Right)",
+    "type": "toggle",
+    "img": "images/checks/chest_small_opened.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "ir_chest_08"
+  },
+  {
+    "name": "(B3) Big Chest (Puzzle)",
+    "type": "toggle",
+    "img": "images/checks/chest_big_opened.png",
+    "disabled_img": "images/checks/chest_big_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "ir_chest_09"
+  },
+  {
+    "name": "(B4) Switches",
+    "type": "toggle",
+    "img": "images/checks/chest_small_opened.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "ir_chest_10"
+  },
+  {
+    "name": "(B4) Southwest Chest (Fall)",
+    "type": "toggle",
+    "img": "images/checks/chest_small_opened.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "ir_chest_11"
+  },
+  {
+    "name": "(B4) Southeast Chest (Fall)",
+    "type": "toggle",
+    "img": "images/checks/chest_small_opened.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "ir_chest_12"
+  },
+  {
+    "name": "(B4) Narrow Platform",
+    "type": "toggle",
+    "img": "images/checks/chest_small_opened.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "ir_chest_13"
+  },
+  {
+    "name": "(B5) Big Chest",
+    "type": "toggle",
+    "img": "images/checks/chest_big_opened.png",
+    "disabled_img": "images/checks/chest_big_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "ir_chest_14"
+  },
+  {
+    "name": "Dharkstare",
+    "type": "toggle",
+    "img": "images/checks/chest_small_opened.png",
+    "disabled_img": "images/checks/chest_small_unopened.png",
+    "disabled_img_mods": "none",
+    "codes": "ir_chest_15"
+  },
+
   // Lorule Castle
   {
-    "name": "1F Center",
+    "name": "(1F) Center",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -1086,7 +1079,7 @@
     "codes": "lc_chest_01"
   },
   {
-    "name": "1F Right Wall",
+    "name": "(1F) Ledge",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -1094,7 +1087,7 @@
     "codes": "lc_chest_02"
   },
   {
-    "name": "2F East Room",
+    "name": "(2F) Near Torches",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -1102,7 +1095,7 @@
     "codes": "lc_chest_03"
   },
   {
-    "name": "2F Dark Bridge",
+    "name": "(2F) Hidden Path",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -1110,7 +1103,7 @@
     "codes": "lc_chest_04"
   },
   {
-    "name": "2F West Wall",
+    "name": "(2F) Ledge",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -1118,7 +1111,7 @@
     "codes": "lc_chest_05"
   },
   {
-    "name": "4F Torches",
+    "name": "(4F) Center",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -1126,7 +1119,7 @@
     "codes": "lc_chest_06"
   },
   {
-    "name": "4F Big Chest",
+    "name": "(4F) Hidden Path",
     "type": "toggle",
     "img": "images/checks/chest_big_opened.png",
     "disabled_img": "images/checks/chest_big_unopened.png",
@@ -1134,7 +1127,7 @@
     "codes": "lc_chest_07"
   },
   {
-    "name": "3F Bomb Trial 1",
+    "name": "(3F) Bomb Trial (1)",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -1142,7 +1135,7 @@
     "codes": "lc_chest_08"
   },
   {
-    "name": "3F Bomb Trial 2",
+    "name": "(3F) Bomb Trial (2)",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -1150,7 +1143,7 @@
     "codes": "lc_chest_09"
   },
   {
-    "name": "3F Ball Trial 1",
+    "name": "(3F) Tile Trial (1)",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -1158,7 +1151,7 @@
     "codes": "lc_chest_10"
   },
   {
-    "name": "3F Ball Trial 2",
+    "name": "(3F) Tile Trial (2)",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -1166,7 +1159,7 @@
     "codes": "lc_chest_11"
   },
   {
-    "name": "4F Lamp Trial",
+    "name": "(4F) Lamp Trial",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -1174,7 +1167,7 @@
     "codes": "lc_chest_12"
   },
   {
-    "name": "4F Hookshot Trial 2",
+    "name": "(4F) Hookshot Trial (2)",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",
@@ -1182,7 +1175,7 @@
     "codes": "lc_chest_13"
   },
   {
-    "name": "4F Hookshot Trial 1",
+    "name": "(4F) Hookshot Trial (1)",
     "type": "toggle",
     "img": "images/checks/chest_small_opened.png",
     "disabled_img": "images/checks/chest_small_unopened.png",

@@ -1,0 +1,167 @@
+{
+  "key_grid": {
+    "type": "container",
+    "content": [
+//      {
+//        "type": "array",
+//        "orientation": "vertical",
+//        "content": [
+//          {
+//            "type": "itemgrid",
+//            "dropshadow": true,
+//            "h_alignment": "center",
+//            "item_size": "32",
+//            "item_margin": "40,0",
+//            "margin": "-17,0,-15,1",
+//            "rows": [
+//              [
+//                "ep_label",
+//                "hg_label",
+//                "th_label"
+//              ],
+//              [
+//                "s_label",
+//                "pd_label",
+//                "sp_label"
+//              ],
+//              [
+//                "sw_label",
+//                "tt_label",
+//                "tr_label"
+//              ],
+//              [
+//                "dp_label",
+//                "ir_label",
+//                "lc_label"
+//              ]
+//            ]
+//          }
+//        ]
+//      },
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "content": [
+          {
+            "type": "itemgrid",
+            "dropshadow": true,
+            "h_alignment": "center",
+            "item_size": "32",
+            "item_margin": "1,3",
+            "margin": "1",
+            "rows": [
+              [
+                "gales",
+                "hg_big_key",
+                "hg_small_keys",
+
+                "hera",
+                "th_big_key",
+                "th_small_keys",
+
+                "eastern",
+                "ep_big_key",
+                "ep_small_keys"
+              ],
+              [
+                "skull",
+                "sw_big_key",
+                "sw_small_keys",
+
+                "",
+                "",
+                "",
+
+                "ice",
+                "ir_big_key",
+                "ir_small_keys"
+              ],
+              [
+                "thieves",
+                "tt_big_key",
+                "tt_small_key",
+
+                "",
+                "",
+                "",
+
+                "dark",
+                "pd_big_key",
+                "pd_small_keys"
+              ],
+              [
+                "desert",
+                "dp_big_key",
+                "dp_small_keys",
+
+                "swamp",
+                "sp_big_key",
+                "sp_small_keys",
+
+                "turtle",
+                "tr_big_key",
+                "tr_small_keys"
+              ],
+              [
+                "hyrule_castle",
+                "yuga",
+                "sewer_keys",
+
+                "",
+
+                "triforce",
+                "",
+                "lc_small_keys"
+              ]
+
+
+              //              [
+//                "ep_big_key",
+//                "ep_small_keys",
+//                "",
+//                "hg_big_key",
+//                "hg_small_keys",
+//                "",
+//                "th_big_key",
+//                "th_small_keys"
+//              ],
+//              [
+//                "hs_small_key",
+//                "ls_small_key",
+//                "",
+//                "pd_big_key",
+//                "pd_small_keys",
+//                "",
+//                "sp_big_key",
+//                "sp_small_keys"
+//              ],
+//              [
+//                "sw_big_key",
+//                "sw_small_keys",
+//                "",
+//                "tt_big_key",
+//                "tt_small_key",
+//                "",
+//                "tr_big_key",
+//                "tr_small_keys"
+//              ],
+//              [
+//                "dp_big_key",
+//                "dp_small_keys",
+//                "",
+//                "ir_big_key",
+//                "ir_small_keys",
+//                "",
+//                "bow_of_light",
+//                "lc_small_keys"
+//              ]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+
+
+
+}

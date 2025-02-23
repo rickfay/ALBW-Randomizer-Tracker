@@ -1,0 +1,101 @@
+{
+  "tracker_default": {
+    "background": "#737387",
+    "type": "dock",
+    "content": [
+      {
+        "type": "scroll",
+        "width": 320,
+        "dock": "left",
+        "horizontal_scrollbar_visibility": "disabled",
+        "content": {
+          "type": "dock",
+          "orientation": "vertical",
+          "content": [
+            {
+              "type": "group",
+              "header": "Gear & Items",
+              "dock": "top",
+              "content": {
+                "type": "layout",
+                "key": "item_grid"
+              }
+            },
+            {
+              "type": "group",
+              "header": "",
+              "content": {
+                "type": "tabbed",
+                "tabs": [
+                  {
+                    "title": "Dungeons",
+                    "content": {
+                      "type": "layout",
+                      "key": "dungeon_grid"
+                    }
+                  },
+                  {
+                    "title": "Weather Vanes",
+                    "content": {
+                      "type": "layout",
+                      "key": "weather_vane_grid"
+                    }
+                  },
+                  {
+                    "title": "Settings",
+                    "content": {
+                      "type": "layout",
+                      "key": "tracker_settings"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "dock",
+        "orientation": "vertical",
+        "content": [
+          {
+            "type": "container",
+            "content": [
+              {
+                "type": "layout",
+                "key": "layout_maps"
+              },
+              {
+                "type": "dock",
+                "margin": "0,0,2,0",
+                "content": [
+                  {
+                    "type": "scroll",
+                    "dock": "bottom",
+                    "height": 102,
+                    "vertical_scrollbar_visibility": "disabled",
+                    "margin": "2,0,20,2",
+                    "content": [
+                      {
+                        "type": "container",
+                        "h_alignment": "center",
+                        "content": {
+                          "type": "recentpins",
+                          "orientation": "horizontal"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "container",
+                    "content": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

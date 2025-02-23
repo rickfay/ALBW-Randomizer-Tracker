@@ -1,0 +1,35 @@
+{
+  "tracker_settings": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "itemgrid",
+        "dropshadow": true,
+        "item_size": "32",
+        "margin": "0",
+        "v_alignment": "top",
+        "rows": [
+          [
+            "logic",
+            "lc_requirement",
+            "ped_requirement_3",
+            "progression_enemies",
+            "lampless",
+            "minigames_enabled",
+            "csmc"
+          ],
+          [
+            "cracksanity",
+            "keysy",
+            "lamp_net_not_weapons",
+            "nice_mode",
+            "beeBoost_hide",
+            "weathervania",
+            "maiamai_map",
+          ]
+        ]
+      }
+    ]
+  }
+}

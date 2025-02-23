@@ -1,0 +1,633 @@
+[
+  {
+    "name": "Pendant of Power Label",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/labels/unknown.png",
+        "img_mods": "@disabled",
+        "codes": "label_power"
+      },
+      {
+        "img": "images/labels/DP.png",
+        "codes": "label_power_dp",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/EP.png",
+        "codes": "label_power_ep",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/HG.png",
+        "codes": "label_power_hg",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/IR.png",
+        "codes": "label_power_ir",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/PD.png",
+        "codes": "label_power_pd",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/SP.png",
+        "codes": "label_power_sp",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/SW.png",
+        "codes": "label_power_sw",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TH.png",
+        "codes": "label_power_th",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TR.png",
+        "codes": "label_power_tr",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TT.png",
+        "codes": "label_power_tt",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Pendant of Wisdom Label",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/labels/unknown.png",
+        "img_mods": "@disabled",
+        "codes": "label_wisdom"
+      },
+      {
+        "img": "images/labels/DP.png",
+        "codes": "label_wisdom_dp",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/EP.png",
+        "codes": "label_wisdom_ep",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/HG.png",
+        "codes": "label_wisdom_hg",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/IR.png",
+        "codes": "label_wisdom_ir",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/PD.png",
+        "codes": "label_wisdom_pd",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/SP.png",
+        "codes": "label_wisdom_sp",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/SW.png",
+        "codes": "label_wisdom_sw",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TH.png",
+        "codes": "label_wisdom_th",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TR.png",
+        "codes": "label_wisdom_tr",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TT.png",
+        "codes": "label_wisdom_tt",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Pendant of Courage Label",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/labels/unknown.png",
+        "img_mods": "@disabled",
+        "codes": "label_courage"
+      },
+      {
+        "img": "images/labels/DP.png",
+        "codes": "label_courage_dp",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/EP.png",
+        "codes": "label_courage_ep",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/HG.png",
+        "codes": "label_courage_hg",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/IR.png",
+        "codes": "label_courage_ir",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/PD.png",
+        "codes": "label_courage_pd",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/SP.png",
+        "codes": "label_courage_sp",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/SW.png",
+        "codes": "label_courage_sw",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TH.png",
+        "codes": "label_courage_th",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TR.png",
+        "codes": "label_courage_tr",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TT.png",
+        "codes": "label_courage_tt",
+        "inherit_codes": false
+      }
+    ]
+  },
+
+  {
+    "name": "Irene Label",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/labels/unknown.png",
+        "img_mods": "@disabled",
+        "codes": "label_irene"
+      },
+      {
+        "img": "images/labels/DP.png",
+        "codes": "label_irene_dp",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/EP.png",
+        "codes": "label_irene_ep",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/HG.png",
+        "codes": "label_irene_hg",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/IR.png",
+        "codes": "label_irene_ir",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/PD.png",
+        "codes": "label_irene_pd",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/SP.png",
+        "codes": "label_irene_sp",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/SW.png",
+        "codes": "label_irene_sw",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TH.png",
+        "codes": "label_irene_th",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TR.png",
+        "codes": "label_irene_tr",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TT.png",
+        "codes": "label_irene_tt",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Impa Label",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/labels/unknown.png",
+        "img_mods": "@disabled",
+        "codes": "label_impa"
+      },
+      {
+        "img": "images/labels/DP.png",
+        "codes": "label_impa_dp",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/EP.png",
+        "codes": "label_impa_ep",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/HG.png",
+        "codes": "label_impa_hg",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/IR.png",
+        "codes": "label_impa_ir",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/PD.png",
+        "codes": "label_impa_pd",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/SP.png",
+        "codes": "label_impa_sp",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/SW.png",
+        "codes": "label_impa_sw",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TH.png",
+        "codes": "label_impa_th",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TR.png",
+        "codes": "label_impa_tr",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TT.png",
+        "codes": "label_impa_tt",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Oren Label",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/labels/unknown.png",
+        "img_mods": "@disabled",
+        "codes": "label_oren"
+      },
+      {
+        "img": "images/labels/DP.png",
+        "codes": "label_oren_dp",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/EP.png",
+        "codes": "label_oren_ep",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/HG.png",
+        "codes": "label_oren_hg",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/IR.png",
+        "codes": "label_oren_ir",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/PD.png",
+        "codes": "label_oren_pd",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/SP.png",
+        "codes": "label_oren_sp",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/SW.png",
+        "codes": "label_oren_sw",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TH.png",
+        "codes": "label_oren_th",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TR.png",
+        "codes": "label_oren_tr",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TT.png",
+        "codes": "label_oren_tt",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Gulley Label",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/labels/unknown.png",
+        "img_mods": "@disabled",
+        "codes": "label_gulley"
+      },
+      {
+        "img": "images/labels/DP.png",
+        "codes": "label_gulley_dp",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/EP.png",
+        "codes": "label_gulley_ep",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/HG.png",
+        "codes": "label_gulley_hg",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/IR.png",
+        "codes": "label_gulley_ir",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/PD.png",
+        "codes": "label_gulley_pd",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/SP.png",
+        "codes": "label_gulley_sp",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/SW.png",
+        "codes": "label_gulley_sw",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TH.png",
+        "codes": "label_gulley_th",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TR.png",
+        "codes": "label_gulley_tr",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TT.png",
+        "codes": "label_gulley_tt",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Seres Label",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/labels/unknown.png",
+        "img_mods": "@disabled",
+        "codes": "label_seres"
+      },
+      {
+        "img": "images/labels/DP.png",
+        "codes": "label_seres_dp",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/EP.png",
+        "codes": "label_seres_ep",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/HG.png",
+        "codes": "label_seres_hg",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/IR.png",
+        "codes": "label_seres_ir",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/PD.png",
+        "codes": "label_seres_pd",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/SP.png",
+        "codes": "label_seres_sp",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/SW.png",
+        "codes": "label_seres_sw",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TH.png",
+        "codes": "label_seres_th",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TR.png",
+        "codes": "label_seres_tr",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TT.png",
+        "codes": "label_seres_tt",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Osfala Label",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/labels/unknown.png",
+        "img_mods": "@disabled",
+        "codes": "label_osfala"
+      },
+      {
+        "img": "images/labels/DP.png",
+        "codes": "label_osfala_dp",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/EP.png",
+        "codes": "label_osfala_ep",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/HG.png",
+        "codes": "label_osfala_hg",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/IR.png",
+        "codes": "label_osfala_ir",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/PD.png",
+        "codes": "label_osfala_pd",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/SP.png",
+        "codes": "label_osfala_sp",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/SW.png",
+        "codes": "label_osfala_sw",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TH.png",
+        "codes": "label_osfala_th",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TR.png",
+        "codes": "label_osfala_tr",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TT.png",
+        "codes": "label_osfala_tt",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Rosso Label",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/labels/unknown.png",
+        "img_mods": "@disabled",
+        "codes": "label_rosso"
+      },
+      {
+        "img": "images/labels/DP.png",
+        "codes": "label_rosso_dp",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/EP.png",
+        "codes": "label_rosso_ep",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/HG.png",
+        "codes": "label_rosso_hg",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/IR.png",
+        "codes": "label_rosso_ir",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/PD.png",
+        "codes": "label_rosso_pd",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/SP.png",
+        "codes": "label_rosso_sp",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/SW.png",
+        "codes": "label_rosso_sw",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TH.png",
+        "codes": "label_rosso_th",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TR.png",
+        "codes": "label_rosso_tr",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/labels/TT.png",
+        "codes": "label_rosso_tt",
+        "inherit_codes": false
+      }
+    ]
+  }
+]

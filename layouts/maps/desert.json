@@ -1,0 +1,100 @@
+{
+  "desert": {
+    "type": "viewbox",
+    "margin": "0,0,0,97",
+    "horizontal_scrollbar_visibility": "disabled",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "max_width": 750,
+        "style": "wrap",
+        "content": [
+          {
+            "type": "container",
+            "content": [
+              {
+                "type": "map",
+                "width": 250,
+                "scale": 1.5,
+                "margin": "-25,0,-25,-50",
+                "maps": [
+                  "desert3F"
+                ]
+              },
+              {
+                "type": "canvas",
+                "dropshadow": true,
+                "content": [
+                  {
+                    "type": "image",
+                    "image": "images/floors/3F_Boss.png",
+                    "width": 50,
+                    "canvas_top": 30,
+                    "canvas_left": 235
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "content": [
+              {
+                "type": "map",
+                "width": 250,
+                "scale": 1.5,
+                "margin": "-25,0,-25,-50",
+                "maps": [
+                  "desert2F"
+                ]
+              },
+              {
+                "type": "canvas",
+                "dropshadow": true,
+                "content": [
+                  {
+                    "type": "image",
+                    "image": "images/floors/2F.png",
+                    "width": 50,
+                    "canvas_top": 30,
+                    "canvas_left": 235
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "container",
+            "content": [
+              {
+                "type": "map",
+                "width": 250,
+                "scale": 1.5,
+                "margin": "-25,0,-25,-25",
+                "maps": [
+                  "desert1F"
+                ]
+              },
+              {
+                "type": "canvas",
+                "dropshadow": true,
+                "content": [
+                  {
+                    "type": "image",
+                    "image": "images/floors/1F.png",
+                    "width": 50,
+                    "canvas_top": 30,
+                    "canvas_left": 235
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

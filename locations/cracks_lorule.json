@@ -1,0 +1,688 @@
+[
+  // Lorule Castle Area
+  {
+    "name": "Lorule Castle Area",
+    "sections": [
+      {
+        "hosted_item": "crack_vacant_house",
+        "name": "Vacant House Crack",
+        "access_rules": [
+          "crack_vacant_house",
+          "{$inspect_crack_lorule}",
+          "merge, quake, $access_central_lorule"
+        ],
+        "visibility_rules": [
+          "cracksanity"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 1120,
+        "y": 1440,
+        "badge_size": 40
+      }
+    ]
+  },
+  {
+    "name": "Lorule Castle Area",
+    "sections": [
+      {
+        "name": "Thieves' Town Crack",
+        "hosted_item": "crack_thieves_town",
+        "access_rules": [
+          "crack_thieves_town",
+          "{$inspect_crack_lorule}",
+          "merge, quake, $access_central_lorule"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 236,
+        "y": 1084,
+        "badge_size": 40
+      }
+    ]
+  },
+  {
+    "name": "Lorule Castle Area",
+    "sections": [
+      {
+        "hosted_item": "crack_swamp_pillar_lorule",
+        "name": "Lorule Swamp Pillar Crack",
+        "access_rules": [
+          "crack_swamp_pillar_lorule",
+          "{$inspect_down_crack_lorule}",
+          "merge, quake, $access_central_lorule"
+        ],
+        "visibility_rules": [
+          "cracksanity"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 952,
+        "y": 1561,
+        "badge_size": 40
+      }
+    ]
+  },
+  {
+    "name": "Lorule Castle Area",
+    "sections": [
+      {
+        "hosted_item": "crack_left_lorule_paradox",
+        "name": "Lorule Left Paradox Crack",
+        "access_rules": [
+          "crack_left_lorule_paradox",
+          "{$inspect_down_crack_lorule}",
+          "merge, quake, $access_central_lorule"
+        ],
+        "visibility_rules": [
+          "cracksanity"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 590,
+        "y": 1727,
+        "badge_size": 40
+      }
+    ]
+  },
+  {
+    "name": "Lorule Castle Area",
+    "sections": [
+      {
+        "hosted_item": "crack_right_lorule_paradox",
+        "name": "Lorule Right Paradox Crack",
+        "access_rules": [
+          "crack_right_lorule_paradox",
+          "{$inspect_down_crack_lorule}"
+        ],
+        "visibility_rules": [
+          "cracksanity"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 677,
+        "y": 1709,
+        "badge_size": 40
+      }
+    ]
+  },
+  // Skull Woods Area
+  {
+    "name": "Skull Woods Area",
+    "sections": [
+      {
+        "hosted_item": "crack_skull_woods_pillar",
+        "name": "Skull Woods Pillar Crack",
+        "access_rules": [
+          "crack_skull_woods_pillar",
+          "{$inspect_crack_lorule}",
+          "merge, quake, crack_n-shaped_house",
+          "merge, quake, crack_destroyed_house",
+          "merge, quake, $warpLorule, wv_skull"
+        ],
+        "visibility_rules": [
+          "cracksanity"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 102,
+        "y": 342,
+        "badge_size": 40
+      }
+    ]
+  },
+  {
+    "name": "Skull Woods Area",
+    "sections": [
+      {
+        "hosted_item": "crack_destroyed_house",
+        "name": "Destroyed House Crack",
+        "access_rules": [
+          "crack_destroyed_house",
+          "{$inspect_crack_lorule}",
+          "merge, quake, crack_n-shaped_house",
+          "merge, quake, crack_skull_woods_pillar",
+          "merge, quake, $warpLorule, wv_skull"
+        ],
+        "visibility_rules": [
+          "cracksanity"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 697,
+        "y": 146,
+        "badge_size": 40
+      }
+    ]
+  },
+  {
+    "name": "Skull Woods Area",
+    "sections": [
+      {
+        "hosted_item": "crack_n-shaped_house",
+        "name": "n-Shaped House Crack",
+        "access_rules": [
+          "crack_n-shaped_house",
+          "{$inspect_down_crack_lorule}",
+          "merge, quake, crack_skull_woods_pillar",
+          "merge, quake, crack_destroyed_house",
+          "merge, quake, $warpLorule, wv_skull"
+        ],
+        "visibility_rules": [
+          "cracksanity"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 343,
+        "y": 804,
+        "badge_size": 40
+      }
+    ]
+  },
+  // Misery Mire
+  {
+    "name": "Misery Mire",
+    "sections": [
+      {
+        "hosted_item": "crack_mire_exit",
+        "name": "Misery Mire Exit Crack",
+        "access_rules": [
+          "crack_mire_exit",
+          "{$inspect_crack_lorule}",
+          "merge, quake, crack_mire_north",
+          "merge, quake, crack_mire_pillar_left, flippers",
+          "merge, quake, crack_mire_pillar_right",
+          "merge, quake, crack_mire_middle",
+          "merge, quake, crack_mire_sw",
+          "merge, quake, $claimDesertPrize",
+          "merge, quake, $warpLorule, wv_mire"
+        ],
+        "visibility_rules": [
+          "cracksanity"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 651,
+        "y": 1845,
+        "badge_size": 40
+      }
+    ]
+  },
+  {
+    "name": "Misery Mire",
+    "sections": [
+      {
+        "hosted_item": "crack_mire_pillar_right",
+        "name": "Right Pillar Crack",
+        "access_rules": [
+          "crack_mire_pillar_right",
+          "{$inspect_crack_lorule}",
+          "merge, quake, crack_mire_north",
+          "merge, quake, crack_mire_pillar_left, flippers",
+          "merge, quake, crack_mire_exit",
+          "merge, quake, crack_mire_middle",
+          "merge, quake, crack_mire_sw",
+          "merge, quake, $claimDesertPrize",
+          "merge, quake, $warpLorule, wv_mire"
+        ],
+        "visibility_rules": [
+          "cracksanity"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 422,
+        "y": 1751,
+        "badge_size": 40
+      }
+    ]
+  },
+  {
+    "name": "Misery Mire",
+    "sections": [
+      {
+        "hosted_item": "crack_mire_pillar_left",
+        "name": "Left Pillar Crack",
+        "access_rules": [
+          "crack_mire_pillar_left",
+          "{$inspect_crack_lorule}"
+        ],
+        "visibility_rules": [
+          "cracksanity"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 351,
+        "y": 1751,
+        "badge_size": 40
+      }
+    ]
+  },
+  {
+    "name": "Misery Mire",
+    "sections": [
+      {
+        "name": "Middle Crack",
+        "hosted_item": "crack_mire_middle",
+        "access_rules": [
+          "crack_mire_middle",
+          "{$inspect_crack_lorule}",
+          "merge, quake, crack_mire_sw",
+          "[glitched], merge, quake, irod, trod, $access_misery_mire",
+          "[advanced], merge, quake, nicebombs, $access_misery_mire",
+          "[hell], merge, quake, bombs, $access_misery_mire"
+        ],
+        "visibility_rules": [
+          "cracksanity"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 242,
+        "y": 1855,
+        "badge_size": 40
+      }
+    ]
+  },
+  {
+    "name": "Misery Mire",
+    "sections": [
+      {
+        "hosted_item": "crack_mire_sw",
+        "name": "SW Crack",
+        "access_rules": [
+          "crack_mire_sw",
+          "{$inspect_crack_lorule}",
+          "merge, quake, crack_mire_middle",
+          "[glitched], merge, quake, irod, trod, $access_misery_mire",
+          "[advanced], merge, quake, nicebombs, $access_misery_mire",
+          "[hell], merge, quake, bombs, $access_misery_mire"
+        ],
+        "visibility_rules": [
+          "cracksanity"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 74,
+        "y": 1964,
+        "badge_size": 40
+      }
+    ]
+  },
+  {
+    "name": "Misery Mire",
+    "sections": [
+      {
+        "hosted_item": "crack_zaganaga",
+        "name": "Zaganaga Crack",
+        "access_rules": [
+          "crack_zaganaga",
+          "{$inspect_crack_lorule}",
+          "[advanced], merge, quake, $advanced_misery_mire_oob, crack_mire_north",
+          "[advanced], merge, quake, $advanced_misery_mire_oob, crack_mire_pillar_left, flippers",
+          "[advanced], merge, quake, $advanced_misery_mire_oob, crack_mire_pillar_right",
+          "[advanced], merge, quake, $advanced_misery_mire_oob, crack_mire_middle",
+          "[advanced], merge, quake, $advanced_misery_mire_oob, crack_mire_sw",
+          "[advanced], merge, quake, $advanced_misery_mire_oob, crack_mire_exit"
+        ],
+        "visibility_rules": [
+          "cracksanity"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 192,
+        "y": 1545,
+        "badge_size": 40
+      }
+    ]
+  },
+  // Graveyard
+  {
+    "name": "Graveyard",
+    "sections": [
+      {
+        "hosted_item": "crack_philosopher",
+        "name": "Philosopher's Cave Crack",
+        "access_rules": [
+          "crack_philosopher",
+          "{$inspect_crack_lorule}",
+          "merge, quake, crack_graveyard_lorule",
+          "merge, quake, $warpLorule, wv_graveyard"
+        ],
+        "visibility_rules": [
+          "cracksanity"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 945,
+        "y": 555,
+        "badge_size": 40
+      }
+    ]
+  },
+  // Dark Ruins
+  {
+    "name": "Dark Ruins",
+    "sections": [
+      {
+        "hosted_item": "crack_kus_domain",
+        "name": "Ku's Domain Crack",
+        "access_rules": [
+          "crack_kus_domain",
+          "{$inspect_down_crack_lorule}",
+          "merge, quake, crack_dark_ruins_pillar",
+          "merge, quake, crack_dark_ruins_se",
+          "merge, quake, crack_waterfall_lorule, flippers",
+          "merge, quake, $warpLorule, wv_dark"
+        ],
+        "visibility_rules": [
+          "cracksanity"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 1850,
+        "y": 687,
+        "badge_size": 40
+      }
+    ]
+  },
+  {
+    "name": "Dark Ruins",
+    "sections": [
+      {
+        "hosted_item": "crack_dark_ruins_pillar",
+        "name": "Pillar Crack",
+        "access_rules": [
+          "crack_dark_ruins_pillar",
+          "{$inspect_down_crack_lorule}",
+          "merge, quake, crack_kus_domain",
+          "merge, quake, crack_dark_ruins_se",
+          "merge, quake, crack_waterfall_lorule, flippers",
+          "merge, quake, $warpLorule, wv_dark"
+        ],
+        "visibility_rules": [
+          "cracksanity"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 1401,
+        "y": 1099,
+        "badge_size": 40
+      }
+    ]
+  },
+  {
+    "name": "Dark Ruins",
+    "sections": [
+      {
+        "hosted_item": "crack_dark_ruins_se",
+        "name": "SE Crack",
+        "access_rules": [
+          "crack_dark_ruins_se",
+          "{$inspect_crack_lorule}",
+          "merge, quake, crack_dark_ruins_pillar, bombs",
+          "merge, quake, crack_kus_domain, bombs",
+          "merge, quake, crack_waterfall_lorule, flippers, bombs",
+          "merge, quake, $warpLorule, wv_dark, bombs"
+        ],
+        "visibility_rules": [
+          "cracksanity"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 1803,
+        "y": 1313,
+        "badge_size": 40
+      }
+    ]
+  },
+  {
+    "name": "Dark Ruins",
+    "sections": [
+      {
+        "hosted_item": "crack_waterfall_lorule",
+        "name": "Lorule Waterfall Crack",
+        "access_rules": [
+          "crack_waterfall_lorule",
+          "{$inspect_crack_lorule}",
+          "merge, quake, crack_dark_ruins_pillar",
+          "merge, quake, crack_dark_ruins_se",
+          "merge, quake, crack_kus_domain",
+          "merge, quake, $warpLorule, wv_dark"
+        ],
+        "visibility_rules": [
+          "cracksanity"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 1425,
+        "y": 545,
+        "badge_size": 40
+      }
+    ]
+  },
+  // Turtle Rock Area
+  {
+    "name": "Turtle Rock Area",
+    "sections": [
+      {
+        "hosted_item": "crack_lake_lorule",
+        "name": "Lorule Lake Crack",
+        "access_rules": [
+          "crack_lake_lorule",
+          "{$inspect_crack_lorule}",
+          "[glitched], merge, quake, $glitched_access_dark_ruins, $boost",
+          "[advanced], merge, quake, $advanced_access_dark_ruins, $boost",
+          "[hell], merge, quake, $hell_access_dark_ruins, $boost",
+          "merge, quake, crack_river_lorule, flippers",
+          "merge, quake, crack_lorule_hotfoot, flippers",
+          "[advanced], merge, quake, crack_lorule_hotfoot, $fakeFlippers",
+          "[hell], merge, quake, crack_lorule_hotfoot, $beeFakeFlippers",
+          "merge, quake, $warpLorule, wv_turtle, flippers"
+        ],
+        "visibility_rules": [
+          "cracksanity"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 1327,
+        "y": 1845,
+        "badge_size": 40
+      }
+    ]
+  },
+  {
+    "name": "Turtle Rock Area",
+    "sections": [
+      {
+        "hosted_item": "crack_river_lorule",
+        "name": "Lorule River Crack",
+        "access_rules": [
+          "crack_river_lorule",
+          "{$inspect_crack_lorule}",
+          "merge, quake, crack_lake_lorule, flippers",
+          "merge, quake, crack_lorule_hotfoot, flippers",
+          "[advanced], merge, quake, crack_lorule_hotfoot, $fakeFlippers",
+          "[hell], merge, quake, crack_lorule_hotfoot, $beeFakeFlippers",
+          "merge, quake, $warpLorule, wv_turtle, flippers"
+        ],
+        "visibility_rules": [
+          "cracksanity"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 1611,
+        "y": 1410,
+        "badge_size": 40
+      }
+    ]
+  },
+  {
+    "name": "Turtle Rock Area",
+    "sections": [
+      {
+        "hosted_item": "crack_lorule_hotfoot",
+        "name": "Lorule Hotfoot Crack",
+        "access_rules": [
+          "crack_lorule_hotfoot",
+          "{$inspect_crack_lorule}",
+          "merge, quake, crack_lake_lorule, flippers",
+          "merge, quake, crack_river_lorule, flippers",
+          "[advanced], merge, quake, crack_lorule_hotfoot, $fakeFlippers",
+          "[hell], merge, quake, crack_lorule_hotfoot, $beeFakeFlippers",
+          "merge, quake, $warpLorule, wv_turtle, flippers"
+        ],
+        "visibility_rules": [
+          "cracksanity"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 1895,
+        "y": 1535,
+        "badge_size": 40
+      }
+    ]
+  },
+  // Lorule Death Mountain
+  {
+    "name": "Lorule Death Mountain",
+    "sections": [
+      {
+        "hosted_item": "crack_lorule_dm_west",
+        "name": "Lorule Death West Crack",
+        "access_rules": [
+          "crack_lorule_dm_west",
+          "{$inspect_crack_lorule}",
+          "merge, quake, $access_ldm_west",
+          "[glitched], merge, quake, $glitched_access_ldm_west"
+        ],
+        "visibility_rules": [
+          "cracksanity"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 957,
+        "y": 331,
+        "badge_size": 40
+      }
+    ]
+  },
+  {
+    "name": "Lorule Death Mountain",
+    "sections": [
+      {
+        "name": "Lorule Floating Island Crack",
+        "hosted_item": "crack_lofi",
+        "access_rules": [
+          "crack_lofi",
+          "{cracksanity, $inspect_crack_lorule}",
+          "merge, quake, trod, $access_ldm_east_top",
+          "merge, quake, trod, [glitched], $glitched_access_ldm_east_top",
+          "merge, quake, trod, [hell], $hell_access_ldm_east_top"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 1625,
+        "y": 83,
+        "badge_size": 40
+      }
+    ]
+  },
+  {
+    "name": "Lorule Death Mountain",
+    "sections": [
+      {
+        "name": "Lorule Rosso's Ore Mine Crack",
+        "hosted_item": "crack_rom_lorule",
+        "access_rules": [
+          "crack_rom_lorule",
+          "{$inspect_crack_lorule}",
+          "merge, quake, $access_ldm_east_base",
+          "merge, quake, [glitched], $glitched_access_ldm_east_base",
+          "merge, quake, [hell], $hell_access_ldm_east_base"
+        ],
+        "visibility_rules": [
+          "cracksanity"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 1478,
+        "y": 360,
+        "badge_size": 40
+      }
+    ]
+  }
+]

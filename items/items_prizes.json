@@ -1,0 +1,615 @@
+[
+  // Pendants
+  {
+    "name": "Pendant of Power",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/prizes/pendant_power.png",
+        "img_mods": "overlay|images/prizes/labels/unknown.png",
+        "codes": "pendant, power"
+      },
+      {
+        "img": "images/prizes/pendant_power.png",
+        "img_mods": "overlay|images/prizes/labels/EP.png",
+        "codes": "pendant, power, eastern"
+      },
+      {
+        "img": "images/prizes/pendant_power.png",
+        "img_mods": "overlay|images/prizes/labels/HG.png",
+        "codes": "pendant, power, gales"
+      },
+      {
+        "img": "images/prizes/pendant_power.png",
+        "img_mods": "overlay|images/prizes/labels/TH.png",
+        "codes": "pendant, power, hera"
+      },
+      {
+        "img": "images/prizes/pendant_power.png",
+        "img_mods": "overlay|images/prizes/labels/DP.png",
+        "codes": "pendant, power, dark"
+      },
+      {
+        "img": "images/prizes/pendant_power.png",
+        "img_mods": "overlay|images/prizes/labels/SP.png",
+        "codes": "pendant, power, swamp"
+      },
+      {
+        "img": "images/prizes/pendant_power.png",
+        "img_mods": "overlay|images/prizes/labels/SW.png",
+        "codes": "pendant, power, skull"
+      },
+      {
+        "img": "images/prizes/pendant_power.png",
+        "img_mods": "overlay|images/prizes/labels/TT.png",
+        "codes": "pendant, power, thieves"
+      },
+      {
+        "img": "images/prizes/pendant_power.png",
+        "img_mods": "overlay|images/prizes/labels/IR.png",
+        "codes": "pendant, power, ice"
+      },
+      {
+        "img": "images/prizes/pendant_power.png",
+        "img_mods": "overlay|images/prizes/labels/MM.png",
+        "codes": "pendant, power, desert"
+      },
+      {
+        "img": "images/prizes/pendant_power.png",
+        "img_mods": "overlay|images/prizes/labels/TR.png",
+        "codes": "pendant, power, turtle"
+      }
+    ]
+  },
+  {
+    "name": "Pendant of Wisdom",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/prizes/pendant_wisdom.png",
+        "img_mods": "overlay|images/prizes/labels/unknown.png",
+        "codes": "pendant, wisdom"
+      },
+      {
+        "img": "images/prizes/pendant_wisdom.png",
+        "img_mods": "overlay|images/prizes/labels/EP.png",
+        "codes": "pendant, wisdom, eastern"
+      },
+      {
+        "img": "images/prizes/pendant_wisdom.png",
+        "img_mods": "overlay|images/prizes/labels/HG.png",
+        "codes": "pendant, wisdom, gales"
+      },
+      {
+        "img": "images/prizes/pendant_wisdom.png",
+        "img_mods": "overlay|images/prizes/labels/TH.png",
+        "codes": "pendant, wisdom, hera"
+      },
+      {
+        "img": "images/prizes/pendant_wisdom.png",
+        "img_mods": "overlay|images/prizes/labels/DP.png",
+        "codes": "pendant, wisdom, dark"
+      },
+      {
+        "img": "images/prizes/pendant_wisdom.png",
+        "img_mods": "overlay|images/prizes/labels/SP.png",
+        "codes": "pendant, wisdom, swamp"
+      },
+      {
+        "img": "images/prizes/pendant_wisdom.png",
+        "img_mods": "overlay|images/prizes/labels/SW.png",
+        "codes": "pendant, wisdom, skull"
+      },
+      {
+        "img": "images/prizes/pendant_wisdom.png",
+        "img_mods": "overlay|images/prizes/labels/TT.png",
+        "codes": "pendant, wisdom, thieves"
+      },
+      {
+        "img": "images/prizes/pendant_wisdom.png",
+        "img_mods": "overlay|images/prizes/labels/IR.png",
+        "codes": "pendant, wisdom, ice"
+      },
+      {
+        "img": "images/prizes/pendant_wisdom.png",
+        "img_mods": "overlay|images/prizes/labels/MM.png",
+        "codes": "pendant, wisdom, desert"
+      },
+      {
+        "img": "images/prizes/pendant_wisdom.png",
+        "img_mods": "overlay|images/prizes/labels/TR.png",
+        "codes": "pendant, wisdom, turtle"
+      }
+    ]
+  },
+  {
+    "name": "Pendant of Courage",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/prizes/pendant_courage.png",
+        "img_mods": "overlay|images/prizes/labels/unknown.png",
+        "codes": "pendant, courage"
+      },
+      {
+        "img": "images/prizes/pendant_courage.png",
+        "img_mods": "overlay|images/prizes/labels/EP.png",
+        "codes": "pendant, courage, eastern"
+      },
+      {
+        "img": "images/prizes/pendant_courage.png",
+        "img_mods": "overlay|images/prizes/labels/HG.png",
+        "codes": "pendant, courage, gales"
+      },
+      {
+        "img": "images/prizes/pendant_courage.png",
+        "img_mods": "overlay|images/prizes/labels/TH.png",
+        "codes": "pendant, courage, hera"
+      },
+      {
+        "img": "images/prizes/pendant_courage.png",
+        "img_mods": "overlay|images/prizes/labels/DP.png",
+        "codes": "pendant, courage, dark"
+      },
+      {
+        "img": "images/prizes/pendant_courage.png",
+        "img_mods": "overlay|images/prizes/labels/SP.png",
+        "codes": "pendant, courage, swamp"
+      },
+      {
+        "img": "images/prizes/pendant_courage.png",
+        "img_mods": "overlay|images/prizes/labels/SW.png",
+        "codes": "pendant, courage, skull"
+      },
+      {
+        "img": "images/prizes/pendant_courage.png",
+        "img_mods": "overlay|images/prizes/labels/TT.png",
+        "codes": "pendant, courage, thieves"
+      },
+      {
+        "img": "images/prizes/pendant_courage.png",
+        "img_mods": "overlay|images/prizes/labels/IR.png",
+        "codes": "pendant, courage, ice"
+      },
+      {
+        "img": "images/prizes/pendant_courage.png",
+        "img_mods": "overlay|images/prizes/labels/MM.png",
+        "codes": "pendant, courage, desert"
+      },
+      {
+        "img": "images/prizes/pendant_courage.png",
+        "img_mods": "overlay|images/prizes/labels/TR.png",
+        "codes": "pendant, courage, turtle"
+      }
+    ]
+  },
+  // Sages
+  {
+    "name": "Sage Gulley",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/prizes/sage_gulley.png",
+        "img_mods": "overlay|images/prizes/labels/unknown.png",
+        "codes": "sage, gulley"
+      },
+      {
+        "img": "images/prizes/sage_gulley.png",
+        "img_mods": "overlay|images/prizes/labels/EP.png",
+        "codes": "sage, gulley, eastern"
+      },
+      {
+        "img": "images/prizes/sage_gulley.png",
+        "img_mods": "overlay|images/prizes/labels/HG.png",
+        "codes": "sage, gulley, gales"
+      },
+      {
+        "img": "images/prizes/sage_gulley.png",
+        "img_mods": "overlay|images/prizes/labels/TH.png",
+        "codes": "sage, gulley, hera"
+      },
+      {
+        "img": "images/prizes/sage_gulley.png",
+        "img_mods": "overlay|images/prizes/labels/DP.png",
+        "codes": "sage, gulley, dark"
+      },
+      {
+        "img": "images/prizes/sage_gulley.png",
+        "img_mods": "overlay|images/prizes/labels/SP.png",
+        "codes": "sage, gulley, swamp"
+      },
+      {
+        "img": "images/prizes/sage_gulley.png",
+        "img_mods": "overlay|images/prizes/labels/SW.png",
+        "codes": "sage, gulley, skull"
+      },
+      {
+        "img": "images/prizes/sage_gulley.png",
+        "img_mods": "overlay|images/prizes/labels/TT.png",
+        "codes": "sage, gulley, thieves"
+      },
+      {
+        "img": "images/prizes/sage_gulley.png",
+        "img_mods": "overlay|images/prizes/labels/IR.png",
+        "codes": "sage, gulley, ice"
+      },
+      {
+        "img": "images/prizes/sage_gulley.png",
+        "img_mods": "overlay|images/prizes/labels/MM.png",
+        "codes": "sage, gulley, desert"
+      },
+      {
+        "img": "images/prizes/sage_gulley.png",
+        "img_mods": "overlay|images/prizes/labels/TR.png",
+        "codes": "sage, gulley, turtle"
+      }
+    ]
+  },
+  {
+    "name": "Sage Oren",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/prizes/sage_oren.png",
+        "img_mods": "overlay|images/prizes/labels/unknown.png",
+        "codes": "sage, oren"
+      },
+      {
+        "img": "images/prizes/sage_oren.png",
+        "img_mods": "overlay|images/prizes/labels/EP.png",
+        "codes": "sage, oren, eastern"
+      },
+      {
+        "img": "images/prizes/sage_oren.png",
+        "img_mods": "overlay|images/prizes/labels/HG.png",
+        "codes": "sage, oren, gales"
+      },
+      {
+        "img": "images/prizes/sage_oren.png",
+        "img_mods": "overlay|images/prizes/labels/TH.png",
+        "codes": "sage, oren, hera"
+      },
+      {
+        "img": "images/prizes/sage_oren.png",
+        "img_mods": "overlay|images/prizes/labels/DP.png",
+        "codes": "sage, oren, dark"
+      },
+      {
+        "img": "images/prizes/sage_oren.png",
+        "img_mods": "overlay|images/prizes/labels/SP.png",
+        "codes": "sage, oren, swamp"
+      },
+      {
+        "img": "images/prizes/sage_oren.png",
+        "img_mods": "overlay|images/prizes/labels/SW.png",
+        "codes": "sage, oren, skull"
+      },
+      {
+        "img": "images/prizes/sage_oren.png",
+        "img_mods": "overlay|images/prizes/labels/TT.png",
+        "codes": "sage, oren, thieves"
+      },
+      {
+        "img": "images/prizes/sage_oren.png",
+        "img_mods": "overlay|images/prizes/labels/IR.png",
+        "codes": "sage, oren, ice"
+      },
+      {
+        "img": "images/prizes/sage_oren.png",
+        "img_mods": "overlay|images/prizes/labels/MM.png",
+        "codes": "sage, oren, desert"
+      },
+      {
+        "img": "images/prizes/sage_oren.png",
+        "img_mods": "overlay|images/prizes/labels/TR.png",
+        "codes": "sage, oren, turtle"
+      }
+    ]
+  },
+  {
+    "name": "Sage Seres",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/prizes/sage_seres.png",
+        "img_mods": "overlay|images/prizes/labels/unknown.png",
+        "codes": "sage, seres"
+      },
+      {
+        "img": "images/prizes/sage_seres.png",
+        "img_mods": "overlay|images/prizes/labels/EP.png",
+        "codes": "sage, seres, eastern"
+      },
+      {
+        "img": "images/prizes/sage_seres.png",
+        "img_mods": "overlay|images/prizes/labels/HG.png",
+        "codes": "sage, seres, gales"
+      },
+      {
+        "img": "images/prizes/sage_seres.png",
+        "img_mods": "overlay|images/prizes/labels/TH.png",
+        "codes": "sage, seres, hera"
+      },
+      {
+        "img": "images/prizes/sage_seres.png",
+        "img_mods": "overlay|images/prizes/labels/DP.png",
+        "codes": "sage, seres, dark"
+      },
+      {
+        "img": "images/prizes/sage_seres.png",
+        "img_mods": "overlay|images/prizes/labels/SP.png",
+        "codes": "sage, seres, swamp"
+      },
+      {
+        "img": "images/prizes/sage_seres.png",
+        "img_mods": "overlay|images/prizes/labels/SW.png",
+        "codes": "sage, seres, skull"
+      },
+      {
+        "img": "images/prizes/sage_seres.png",
+        "img_mods": "overlay|images/prizes/labels/TT.png",
+        "codes": "sage, seres, thieves"
+      },
+      {
+        "img": "images/prizes/sage_seres.png",
+        "img_mods": "overlay|images/prizes/labels/IR.png",
+        "codes": "sage, seres, ice"
+      },
+      {
+        "img": "images/prizes/sage_seres.png",
+        "img_mods": "overlay|images/prizes/labels/MM.png",
+        "codes": "sage, seres, desert"
+      },
+      {
+        "img": "images/prizes/sage_seres.png",
+        "img_mods": "overlay|images/prizes/labels/TR.png",
+        "codes": "sage, seres, turtle"
+      }
+    ]
+  },
+  {
+    "name": "Sage Osfala",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/prizes/sage_osfala.png",
+        "img_mods": "overlay|images/prizes/labels/unknown.png",
+        "codes": "sage, osfala"
+      },
+      {
+        "img": "images/prizes/sage_osfala.png",
+        "img_mods": "overlay|images/prizes/labels/EP.png",
+        "codes": "sage, osfala, eastern"
+      },
+      {
+        "img": "images/prizes/sage_osfala.png",
+        "img_mods": "overlay|images/prizes/labels/HG.png",
+        "codes": "sage, osfala, gales"
+      },
+      {
+        "img": "images/prizes/sage_osfala.png",
+        "img_mods": "overlay|images/prizes/labels/TH.png",
+        "codes": "sage, osfala, hera"
+      },
+      {
+        "img": "images/prizes/sage_osfala.png",
+        "img_mods": "overlay|images/prizes/labels/DP.png",
+        "codes": "sage, osfala, dark"
+      },
+      {
+        "img": "images/prizes/sage_osfala.png",
+        "img_mods": "overlay|images/prizes/labels/SP.png",
+        "codes": "sage, osfala, swamp"
+      },
+      {
+        "img": "images/prizes/sage_osfala.png",
+        "img_mods": "overlay|images/prizes/labels/SW.png",
+        "codes": "sage, osfala, skull"
+      },
+      {
+        "img": "images/prizes/sage_osfala.png",
+        "img_mods": "overlay|images/prizes/labels/TT.png",
+        "codes": "sage, osfala, thieves"
+      },
+      {
+        "img": "images/prizes/sage_osfala.png",
+        "img_mods": "overlay|images/prizes/labels/IR.png",
+        "codes": "sage, osfala, ice"
+      },
+      {
+        "img": "images/prizes/sage_osfala.png",
+        "img_mods": "overlay|images/prizes/labels/MM.png",
+        "codes": "sage, osfala, desert"
+      },
+      {
+        "img": "images/prizes/sage_osfala.png",
+        "img_mods": "overlay|images/prizes/labels/TR.png",
+        "codes": "sage, osfala, turtle"
+      }
+    ]
+  },
+  {
+    "name": "Sage Rosso",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/prizes/sage_rosso.png",
+        "img_mods": "overlay|images/prizes/labels/unknown.png",
+        "codes": "sage, rosso"
+      },
+      {
+        "img": "images/prizes/sage_rosso.png",
+        "img_mods": "overlay|images/prizes/labels/EP.png",
+        "codes": "sage, rosso, eastern"
+      },
+      {
+        "img": "images/prizes/sage_rosso.png",
+        "img_mods": "overlay|images/prizes/labels/HG.png",
+        "codes": "sage, rosso, gales"
+      },
+      {
+        "img": "images/prizes/sage_rosso.png",
+        "img_mods": "overlay|images/prizes/labels/TH.png",
+        "codes": "sage, rosso, hera"
+      },
+      {
+        "img": "images/prizes/sage_rosso.png",
+        "img_mods": "overlay|images/prizes/labels/DP.png",
+        "codes": "sage, rosso, dark"
+      },
+      {
+        "img": "images/prizes/sage_rosso.png",
+        "img_mods": "overlay|images/prizes/labels/SP.png",
+        "codes": "sage, rosso, swamp"
+      },
+      {
+        "img": "images/prizes/sage_rosso.png",
+        "img_mods": "overlay|images/prizes/labels/SW.png",
+        "codes": "sage, rosso, skull"
+      },
+      {
+        "img": "images/prizes/sage_rosso.png",
+        "img_mods": "overlay|images/prizes/labels/TT.png",
+        "codes": "sage, rosso, thieves"
+      },
+      {
+        "img": "images/prizes/sage_rosso.png",
+        "img_mods": "overlay|images/prizes/labels/IR.png",
+        "codes": "sage, rosso, ice"
+      },
+      {
+        "img": "images/prizes/sage_rosso.png",
+        "img_mods": "overlay|images/prizes/labels/MM.png",
+        "codes": "sage, rosso, desert"
+      },
+      {
+        "img": "images/prizes/sage_rosso.png",
+        "img_mods": "overlay|images/prizes/labels/TR.png",
+        "codes": "sage, rosso, turtle"
+      }
+    ]
+  },
+  {
+    "name": "Sage Irene",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/prizes/sage_irene.png",
+        "img_mods": "overlay|images/prizes/labels/unknown.png",
+        "codes": "sage, irene"
+      },
+      {
+        "img": "images/prizes/sage_irene.png",
+        "img_mods": "overlay|images/prizes/labels/EP.png",
+        "codes": "sage, irene, eastern"
+      },
+      {
+        "img": "images/prizes/sage_irene.png",
+        "img_mods": "overlay|images/prizes/labels/HG.png",
+        "codes": "sage, irene, gales"
+      },
+      {
+        "img": "images/prizes/sage_irene.png",
+        "img_mods": "overlay|images/prizes/labels/TH.png",
+        "codes": "sage, irene, hera"
+      },
+      {
+        "img": "images/prizes/sage_irene.png",
+        "img_mods": "overlay|images/prizes/labels/DP.png",
+        "codes": "sage, irene, dark"
+      },
+      {
+        "img": "images/prizes/sage_irene.png",
+        "img_mods": "overlay|images/prizes/labels/SP.png",
+        "codes": "sage, irene, swamp"
+      },
+      {
+        "img": "images/prizes/sage_irene.png",
+        "img_mods": "overlay|images/prizes/labels/SW.png",
+        "codes": "sage, irene, skull"
+      },
+      {
+        "img": "images/prizes/sage_irene.png",
+        "img_mods": "overlay|images/prizes/labels/TT.png",
+        "codes": "sage, irene, thieves"
+      },
+      {
+        "img": "images/prizes/sage_irene.png",
+        "img_mods": "overlay|images/prizes/labels/IR.png",
+        "codes": "sage, irene, ice"
+      },
+      {
+        "img": "images/prizes/sage_irene.png",
+        "img_mods": "overlay|images/prizes/labels/MM.png",
+        "codes": "sage, irene, desert"
+      },
+      {
+        "img": "images/prizes/sage_irene.png",
+        "img_mods": "overlay|images/prizes/labels/TR.png",
+        "codes": "sage, irene, turtle"
+      }
+    ]
+  },
+  {
+    "name": "Sage Impa",
+    "type": "progressive_toggle",
+    "stages": [
+      {
+        "img": "images/prizes/sage_impa.png",
+        "img_mods": "overlay|images/prizes/labels/unknown.png",
+        "codes": "sage, impa"
+      },
+      {
+        "img": "images/prizes/sage_impa.png",
+        "img_mods": "overlay|images/prizes/labels/EP.png",
+        "codes": "sage, impa, eastern"
+      },
+      {
+        "img": "images/prizes/sage_impa.png",
+        "img_mods": "overlay|images/prizes/labels/HG.png",
+        "codes": "sage, impa, gales"
+      },
+      {
+        "img": "images/prizes/sage_impa.png",
+        "img_mods": "overlay|images/prizes/labels/TH.png",
+        "codes": "sage, impa, hera"
+      },
+      {
+        "img": "images/prizes/sage_impa.png",
+        "img_mods": "overlay|images/prizes/labels/DP.png",
+        "codes": "sage, impa, dark"
+      },
+      {
+        "img": "images/prizes/sage_impa.png",
+        "img_mods": "overlay|images/prizes/labels/SP.png",
+        "codes": "sage, impa, swamp"
+      },
+      {
+        "img": "images/prizes/sage_impa.png",
+        "img_mods": "overlay|images/prizes/labels/SW.png",
+        "codes": "sage, impa, skull"
+      },
+      {
+        "img": "images/prizes/sage_impa.png",
+        "img_mods": "overlay|images/prizes/labels/TT.png",
+        "codes": "sage, impa, thieves"
+      },
+      {
+        "img": "images/prizes/sage_impa.png",
+        "img_mods": "overlay|images/prizes/labels/IR.png",
+        "codes": "sage, impa, ice"
+      },
+      {
+        "img": "images/prizes/sage_impa.png",
+        "img_mods": "overlay|images/prizes/labels/MM.png",
+        "codes": "sage, impa, desert"
+      },
+      {
+        "img": "images/prizes/sage_impa.png",
+        "img_mods": "overlay|images/prizes/labels/TR.png",
+        "codes": "sage, impa, turtle"
+      }
+    ]
+  }
+
+]

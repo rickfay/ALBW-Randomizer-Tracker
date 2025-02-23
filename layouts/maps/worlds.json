@@ -1,0 +1,115 @@
+{
+  "worlds": {
+    "type": "container",
+    "content": [
+      {
+        "type": "tabbed",
+        "tabs": [
+          {
+            "title": "Side-by-Side",
+            "icon": "images/icons/side-by-side.png",
+            "content": {
+              "type": "scroll",
+              "horizontal_scrollbar_visibility": "disabled",
+              "content": [
+                {
+                  "type": "container",
+                  "h_alignment": "center",
+                  "v_alignment": "top",
+                  "content": [
+                    // Item Maps
+                    {
+                      "type": "viewbox",
+                      "margin": "0,0,0,97",
+                      "content": {
+                        "type": "itemgrid",
+                        "dropshadow": true,
+                        "h_alignment": "center",
+                        "item_size": "2048",
+                        "item_margin": 25,
+                        "rows": [
+                          [
+                            "map_hyrule",
+                            "map_lorule"
+                          ]
+                        ]
+                      }
+                    },
+                    // Map Locations
+                    {
+                      "type": "array",
+                      "content": [
+                        {
+                          "type": "map",
+                          "maps": [
+                            "hyrule",
+                            "lorule"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "title": "Zoomed",
+            "icon": "images/icons/zoomed.png",
+            "content": {
+              "type": "scroll",
+              "horizontal_scrollbar_visibility": "disabled",
+              "content": [
+                {
+                  "type": "container",
+                  "v_alignment": "top",
+                  "margin": "0,0,0,97",
+                  "content": [
+                    // Item Maps
+                    {
+                      "type": "viewbox",
+                      "content": {
+                        "type": "itemgrid",
+                        "dropshadow": true,
+                        "h_alignment": "center",
+                        "item_size": "2048",
+                        "item_margin": 25,
+                        "rows": [
+                          [
+                            "map_hyrule"
+                          ],
+                          [
+                            "map_lorule"
+                          ]
+                        ]
+                      }
+                    },
+                    // Map Locations
+                    {
+                      "type": "array",
+                      "orientation": "vertical",
+                      "content": [
+                        {
+                          "type": "map",
+                          "maps": [
+                            "hyrule"
+                          ]
+                        },
+                        {
+                          "type": "map",
+                          "maps": [
+                            "lorule"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

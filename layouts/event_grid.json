@@ -1,0 +1,36 @@
+{
+  "event_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "itemgrid",
+        "dropshadow": false,
+        "h_alignment": "center",
+        "item_size": "40",
+        "item_margin": "1",
+        "margin": "1,1,1,0",
+        "rows": [
+          [
+            "ravio_shop",
+            "shadyguy",
+            "blacksmith",
+            "",
+            "",
+            "trial_lamp",
+            "trial_hook"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "trial_bomb",
+            "trial_tile"
+          ]
+        ]
+      }
+    ]
+  }
+}

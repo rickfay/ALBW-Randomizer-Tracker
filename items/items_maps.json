@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Hyrule",
+    "type": "static",
+    "img": "images/maps/hyrule.png",
+    "codes": "static_hyrule"
+  },
+  {
+    "name": "Hyrule",
+    "type": "toggle_badged",
+    "base_item": "static_hyrule",
+    "img": "images/maps/regions-hyrule.png",
+    "codes": "map_hyrule"
+  },
+  {
+    "name": "Lorule",
+    "type": "static",
+    "img": "images/maps/lorule.png",
+    "codes": "static_lorule"
+  },
+  {
+    "name": "Lorule",
+    "type": "toggle_badged",
+    "base_item": "static_lorule",
+    "img": "images/maps/regions-lorule.png",
+    "codes": "map_lorule"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "label_grid": {
+    "type": "itemgrid",
+    "dropshadow": true,
+    "h_alignment": "center",
+    "item_size": "40",
+    "item_margin": "1",
+    "margin": "1,-1,1,-12",
+    "rows": [
+      [
+        "label_irene",
+        "label_impa",
+        "label_oren",
+        "label_gulley",
+        "label_seres",
+        "label_osfala",
+        "label_rosso"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,567 @@
+[
+  {
+    "name": "Hyrule Cracks",
+    "access_rules": [
+      "{merge, quake}",
+      "merge, quake"
+    ],
+    "children": [
+      {
+        "name": "Hyrule Castle Area",
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1120,
+            "y": 1440,
+            "badge_size": 40
+          }
+        ],
+        "sections": [
+          {
+            "name": "Your House Crack",
+            "hosted_item": "crack_your_house",
+            "visibility_rules": [
+              "cracksanity"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lost Woods Area",
+        "sections": [
+          {
+            "hosted_item": "crack_lost_woods_pillar",
+            "name": "Lost Woods Pillar Crack",
+            "visibility_rules": [
+              "cracksanity"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 102,
+            "y": 342,
+            "badge_size": 40
+          }
+        ]
+      },
+      {
+        "name": "Death Mountain",
+        "sections": [
+          {
+            "hosted_item": "crack_dm_west",
+            "name": "Hyrule Death West Crack",
+            "access_rules": [
+              "$access_dm_west_base",
+              "[glitched]"
+            ],
+            "visibility_rules": [
+              "cracksanity"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 935,
+            "y": 310,
+            "badge_size": 40
+          }
+        ]
+      },
+      {
+        "name": "Death Mountain",
+        "sections": [
+          {
+            "hosted_item": "crack_rom",
+            "name": "Hyrule Rosso's Ore Mine Crack",
+            "access_rules": [
+              "{}",
+              "$access_dm_east_bottom",
+              "[advanced], $adv_glitched_access_dm_east_bottom"
+            ],
+            "visibility_rules": [
+              "cracksanity"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1478,
+            "y": 360,
+            "badge_size": 40
+          }
+        ]
+      },
+      {
+        "name": "River Area",
+        "sections": [
+          {
+            "hosted_item": "crack_sanctuary",
+            "name": "Sanctuary Crack",
+            "access_rules": [
+              "{cracksanity}",
+              "$sanctuary",
+              "[lampless], $lampless_sanctuary"
+            ],
+            "visibility_rules": [
+              "cracksanity"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 948,
+            "y": 555,
+            "badge_size": 40
+          }
+        ]
+      },
+      {
+        "name": "River Area",
+        "sections": [
+          {
+            "hosted_item": "crack_waterfall",
+            "name": "Hyrule Waterfall Crack",
+            "access_rules": [
+              "crack_waterfall",
+              "{}",
+              "flippers",
+              "[advanced], $fakeFlippers",
+              "[hell], $beeFakeFlippers",
+              "[hell], hookshot, $hellBoost",
+              "[hell], boots, $hellBoost"
+            ],
+            "visibility_rules": [
+              "cracksanity"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1425,
+            "y": 545,
+            "badge_size": 40
+          }
+        ]
+      },
+      {
+        "name": "River Area",
+        "sections": [
+          {
+            "hosted_item": "crack_zoras_domain",
+            "name": "Zora's Domain Crack",
+            "visibility_rules": [
+              "cracksanity"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1851,
+            "y": 765,
+            "badge_size": 40
+          }
+        ]
+      },
+      {
+        "name": "Kakariko Village",
+        "sections": [
+          {
+            "hosted_item": "crack_sahasrahlas_house",
+            "name": "Sahasrahla's House Crack",
+            "visibility_rules": [
+              "cracksanity"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 362,
+            "y": 834,
+            "badge_size": 40
+          }
+        ]
+      },
+      {
+        "name": "Eastern Ruins",
+        "sections": [
+          {
+            "hosted_item": "crack_eastern_ruins_pillar",
+            "name": "Pillar Crack",
+            "visibility_rules": [
+              "cracksanity"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1401,
+            "y": 1099,
+            "badge_size": 40
+          }
+        ]
+      },
+      {
+        "name": "Eastern Ruins",
+        "sections": [
+          {
+            "hosted_item": "crack_eastern_ruins_se",
+            "name": "SE Crack",
+            "access_rules": [
+              "{}",
+              "bombs"
+            ],
+            "visibility_rules": [
+              "cracksanity"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1803,
+            "y": 1313,
+            "badge_size": 40
+          }
+        ]
+      },
+      {
+        "name": "Eastern Ruins",
+        "sections": [
+          {
+            "hosted_item": "crack_river",
+            "name": "Hyrule River Crack",
+            "access_rules": [
+              "crack_river",
+              "{}",
+              "flippers",
+              "[glitched], $boost",
+              "[hell], $hellBoost"
+            ],
+            "visibility_rules": [
+              "cracksanity"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1611,
+            "y": 1410,
+            "badge_size": 40
+          }
+        ]
+      },
+      {
+        "name": "Southern Ruins",
+        "sections": [
+          {
+            "hosted_item": "crack_swamp_pillar",
+            "name": "Hyrule Swamp Pillar Crack",
+            "visibility_rules": [
+              "cracksanity"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 952,
+            "y": 1561,
+            "badge_size": 40
+          }
+        ]
+      },
+      {
+        "name": "Lake Hylia",
+        "sections": [
+          {
+            "hosted_item": "crack_lake_hylia",
+            "name": "Lake Hylia Crack",
+            "visibility_rules": [
+              "cracksanity"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1331,
+            "y": 1845,
+            "badge_size": 40
+          }
+        ]
+      },
+      {
+        "name": "Lake Hylia",
+        "sections": [
+          {
+            "hosted_item": "crack_hyrule_hotfoot",
+            "name": "Hyrule Hotfoot Crack",
+            "visibility_rules": [
+              "cracksanity"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 1895,
+            "y": 1535,
+            "badge_size": 40
+          }
+        ]
+      },
+      {
+        "name": "Hyrule Castle Area",
+        "sections": [
+          {
+            "hosted_item": "crack_left_hyrule_paradox",
+            "name": "Hyrule Left Paradox Crack",
+            "visibility_rules": [
+              "cracksanity"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 590,
+            "y": 1727,
+            "badge_size": 40
+          }
+        ]
+      },
+      {
+        "name": "Hyrule Castle Area",
+        "sections": [
+          {
+            "hosted_item": "crack_right_hyrule_paradox",
+            "name": "Hyrule Right Paradox Crack",
+            "visibility_rules": [
+              "cracksanity"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 677,
+            "y": 1709,
+            "badge_size": 40
+          }
+        ]
+      },
+      {
+        "name": "Desert",
+        "sections": [
+          {
+            "hosted_item": "crack_mire_entrance",
+            "name": "Misery Mire Entrance Crack",
+            "visibility_rules": [
+              "cracksanity"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 653,
+            "y": 1845,
+            "badge_size": 40
+          }
+        ]
+      },
+      {
+        "name": "Desert",
+        "sections": [
+          {
+            "hosted_item": "crack_desert_pillar_right",
+            "name": "Right Pillar Crack",
+            "access_rules": [
+              "crack_desert_pillar_right",
+              "{}",
+              "$access_desert"
+            ],
+            "visibility_rules": [
+              "cracksanity"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 422,
+            "y": 1751,
+            "badge_size": 40
+          }
+        ]
+      },
+      {
+        "name": "Desert",
+        "sections": [
+          {
+            "hosted_item": "crack_desert_pillar_left",
+            "name": "Left Pillar Crack",
+            "access_rules": [
+              "{}",
+              "$access_desert"
+            ],
+            "visibility_rules": [
+              "cracksanity"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 351,
+            "y": 1751,
+            "badge_size": 40
+          }
+        ]
+      },
+      {
+        "name": "Desert",
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 292,
+            "y": 1560,
+            "badge_size": 40
+          }
+        ],
+        "sections": [
+          {
+            "name": "North Crack",
+            "hosted_item": "crack_desert_north",
+            "access_rules": [
+              "crack_desert_north",
+              "{cracksanity}",
+              "$access_desert, merge, bombs, srod",
+              "$access_desert, merge, bombs, scroll",
+              "[advanced], $access_desert, merge, bombs, $boost",
+              "[hell], $access_desert, merge, bombs"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Desert",
+        "sections": [
+          {
+            "hosted_item": "crack_desert_middle",
+            "name": "Middle Crack",
+            "access_rules": [
+              "{}",
+              "srod, $access_desert"
+            ],
+            "visibility_rules": [
+              "cracksanity"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 242,
+            "y": 1855,
+            "badge_size": 40
+          }
+        ]
+      },
+      {
+        "name": "Desert",
+        "sections": [
+          {
+            "hosted_item": "crack_desert_sw",
+            "name": "SW Crack",
+            "access_rules": [
+              "{}",
+              "scroll, $access_desert",
+              "[advanced], $boost, $access_desert",
+              "[hell], $access_desert"
+            ],
+            "visibility_rules": [
+              "cracksanity"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 74,
+            "y": 1964,
+            "badge_size": 40
+          }
+        ]
+      },
+      {
+        "name": "Desert",
+        "sections": [
+          {
+            "hosted_item": "crack_desert_palace",
+            "name": "Desert Palace Crack",
+            "access_rules": [
+              "{}",
+              "$access_desert_palace, [progression_enemies], [srod], [titansmitt], [$switch], [$attack]",
+              "$access_desert_palace, [no_progression_enemies, bombs], [srod], [titansmitt], [$switch], [$attack]",
+              "[glitched], $glitched_access_desert_palace, [progression_enemies], [srod], [titansmitt], [$switch], [$attack]",
+              "[glitched], $glitched_access_desert_palace, [no_progression_enemies, bombs], [srod], [titansmitt], [$switch], [$attack]"
+            ],
+            "visibility_rules": [
+              "cracksanity"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hyrule",
+            "x": 192,
+            "y": 1530,
+            "badge_size": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Inside Hyrule Castle",
+    "map_locations": [
+      {
+        "map": "hyrule",
+        "x": 1024,
+        "y": 792,
+        "badge_size": 40
+      },
+      {
+        "map": "hyrule8F",
+        "x": 83,
+        "y": 33,
+        "size": 24,
+        "badge_size": 16
+      }
+    ],
+    "sections": [
+      {
+        "name": "Hyrule Castle Crack",
+        "hosted_item": "crack_hc",
+        "access_rules": [
+          "crack_hc",
+          "msword, merge",
+          "swordless, merge, $knucklemaster",
+          // Twoga is immune to Bow
+          "[], merge, $barrier_skip"
+        ]
+      }
+    ]
+  }
+]

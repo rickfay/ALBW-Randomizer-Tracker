@@ -5,8 +5,8 @@
       "name": "ALBW Randomizer Tracker",
       "author": "RickWithAnH",
       "game_name": "The Legend of Zelda: A Link Between Worlds",
-      "version": "3.2.1",
-      "required_app_version": "2.3.8.18",
+      "version": "4.0.4",
+      "required_app_version": "2.3.8.19",
       "uid": "lemonkong_albwr_tracker",
       "flags": [ "map", "pins", "chathud" ],
       "link": "https://rickfay.github.io/ALBW-Randomizer-Tracker/lemonkong_albwr_tracker.zip",
@@ -17,16 +17,20 @@
           "flags": [ "map", "pins", "chathud" ]
         },
         {
+          "name": "Compact Map Tracker",
+          "flags": [ "map", "pins", "chathud" ]
+        },
+        {
           "name": "Item Tracker",
           "flags": [ "chathud" ]
         }
       ]
     },
     {
-      "name": "[BETA] ALBW Randomizer (v0.4) Tracker",
+      "name": "[DEPRECATED] Old ALBWR Beta Tracker",
       "author": "RickWithAnH",
       "game_name": "The Legend of Zelda: A Link Between Worlds",
-      "version": "4.0.2",
+      "version": "4.0.4",
       "required_app_version": "2.3.8.19",
       "uid": "rickwithanh_albwr_tracker_beta",
       "flags": [ "map", "pins", "chathud" ],
@@ -35,11 +39,7 @@
       "variants": [
         {
           "name": "Standard Map Tracker",
-          "flags": [ "map", "pins", "chathud" ]
-        },
-        {
-          "name": "Item Tracker",
-          "flags": [ "chathud" ]
+          "flags": []
         }
       ]
     }

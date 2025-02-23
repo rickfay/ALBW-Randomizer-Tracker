@@ -1,0 +1,586 @@
+[
+  {
+    "name": "Lorule Castle",
+    "color": "#5e518d",
+    "chest_unopened_img": "images/checks/chest_small_unopened.png",
+    "chest_opened_img": "images/checks/chest_small_opened.png",
+    "access_rules": [
+      "$canEnterLC",
+      "[advanced], $advanced_canEnterLC",
+      "[hell], $hell_canEnterLC"
+    ],
+    "children": [
+      {
+        "name": "Lorule Castle",
+        "map_locations": [
+          {
+            "map": "lorule1F",
+            "x": 97,
+            "y": 106
+          }
+        ],
+        "sections": [
+          {
+            "name": "(1F) Center",
+            "hosted_item": "lc_chest_01",
+            "access_rules": [
+              "{csmc}",
+              "$lc2F"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lorule Castle",
+        "map_locations": [
+          {
+            "map": "lorule1F",
+            "x": 115,
+            "y": 106
+          }
+        ],
+        "sections": [
+          {
+            "name": "(1F) Ledge",
+            "hosted_item": "lc_chest_02",
+            "access_rules": [
+              "merge"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lorule Castle",
+        "map_locations": [
+          {
+            "map": "lorule2F",
+            "x": 133,
+            "y": 108
+          }
+        ],
+        "sections": [
+          {
+            "name": "(2F) Near Torches",
+            "hosted_item": "lc_chest_03",
+            "access_rules": [
+              "$lc2F"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lorule Castle",
+        "map_locations": [
+          {
+            "map": "lorule2F",
+            "x": 133,
+            "y": 140
+          }
+        ],
+        "sections": [
+          {
+            "name": "(2F) Hidden Path",
+            "access_rules": [
+              "$lc2F, $canExtinguishTorches",
+              "$lc2F, [hard]"
+            ],
+            "hosted_item": "lc_chest_04"
+          }
+        ]
+      },
+      {
+        "name": "Lorule Castle",
+        "map_locations": [
+          {
+            "map": "lorule2F",
+            "x": 78,
+            "y": 114
+          }
+        ],
+        "sections": [
+          {
+            "name": "(2F) Ledge",
+            "hosted_item": "lc_chest_05",
+            "access_rules": [
+              "$lc2F, merge",
+              "[glitched], $lc2F, boots",
+              "[advanced], $lc2F"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lorule Castle",
+        "map_locations": [
+          {
+            "map": "lorule4F",
+            "x": 97,
+            "y": 105
+          }
+        ],
+        "sections": [
+          {
+            "name": "(4F) Center",
+            "hosted_item": "lc_chest_06",
+            "access_rules": [
+              "$lc2F, $lc_small_keys|1",
+              "[advanced], $advanced_lc3F4F"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lorule Castle",
+        "map_locations": [
+          {
+            "map": "lorule4F",
+            "x": 97,
+            "y": 125
+          }
+        ],
+        "sections": [
+          {
+            "name": "(4F) Hidden Path",
+            "access_rules": [
+              "$lc2F, $lc_small_keys|1, $canExtinguishTorches",
+              "$lc2F, $lc_small_keys|1, [hard]",
+              "[advanced], $advanced_lc3F4F"
+            ],
+            "hosted_item": "lc_chest_07"
+          }
+        ]
+      },
+
+      // Bomb Trial
+      {
+        "name": "Lorule Castle",
+        "map_locations": [
+          {
+            "map": "lorule3F",
+            "x": 68,
+            "y": 64
+          }
+        ],
+        "sections": [
+          {
+            "name": "(3F) Bomb Trial (1)",
+            "access_rules": [
+              "{csmc}",
+              "bombs",
+              "[glitched], irod"
+            ],
+            "hosted_item": "lc_chest_08"
+          }
+        ]
+      },
+      {
+        "name": "Lorule Castle",
+        "map_locations": [
+          {
+            "map": "lorule3F",
+            "x": 57,
+            "y": 26
+          }
+        ],
+        "sections": [
+          {
+            "name": "(3F) Bomb Trial (2)",
+            "access_rules": [
+              "{csmc}",
+              "bombs, merge",
+              "[hard], bombs, bow",
+              "[], niceirod"
+            ],
+            "capture_item": true,
+            "hosted_item": "lc_chest_09"
+          }
+        ]
+      },
+
+      // Tile Trial
+      {
+        "name": "Lorule Castle",
+        "map_locations": [
+          {
+            "map": "lorule3F",
+            "x": 108,
+            "y": 44
+          }
+        ],
+        "sections": [
+          {
+            "name": "(3F) Tile Trial (1)",
+            "hosted_item": "lc_chest_10",
+            "access_rules": [
+              "$lc2F"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lorule Castle",
+        "map_locations": [
+          {
+            "map": "lorule3F",
+            "x": 139,
+            "y": 36
+          }
+        ],
+        "sections": [
+          {
+            "name": "(3F) Tile Trial (2)",
+            "hosted_item": "lc_chest_11",
+            "capture_item": true,
+            "access_rules": [
+              "$lc2F, merge"
+            ]
+          }
+        ]
+      },
+
+      // Lamp Trial
+      {
+        "name": "Lorule Castle",
+        "map_locations": [
+          {
+            "map": "lorule4F",
+            "x": 65,
+            "y": 35
+          }
+        ],
+        "sections": [
+          {
+            "name": "(4F) Lamp Trial",
+            "access_rules": [
+              "$lc2F, $fire, $lc_small_keys|1",
+              "[hard], $lc2F, $lc_small_keys|1",
+              "[advanced], $advanced_lc3F4F"
+            ],
+            "capture_item": true,
+            "hosted_item": "lc_chest_12"
+          }
+        ]
+      },
+      // Hookshot Trial
+      {
+        "name": "Lorule Castle",
+        "map_locations": [
+          {
+            "map": "lorule4F",
+            "x": 140,
+            "y": 47
+          }
+        ],
+        "sections": [
+          {
+            "name": "(4F) Hookshot Trial (1)",
+            "access_rules": [
+              "$lc2F, hookshot, $lc_small_keys|1",
+              "[advanced], $advanced_lc3F4F, hookshot",
+              "[advanced], $advanced_lc3F4F, irod"
+            ],
+            "hosted_item": "lc_chest_14"
+          }
+        ]
+      },
+      {
+        "name": "Lorule Castle",
+        "map_locations": [
+          {
+            "map": "lorule4F",
+            "x": 110,
+            "y": 58
+          }
+        ],
+        "sections": [
+          {
+            "name": "(4F) Hookshot Trial (2)",
+            "access_rules": [
+              "$lc2F, hookshot, merge, $lc_small_keys|1",
+              "$lc2F, hookshot, irod, $lc_small_keys|1",
+              "[advanced], $advanced_lc3F4F, hookshot",
+              "[advanced], $advanced_lc3F4F, irod"
+            ],
+            "capture_item": true,
+            "hosted_item": "lc_chest_13"
+          }
+        ]
+      },
+
+      {
+        "name": "Lorule Castle",
+        "map_locations": [
+          {
+            "map": "throneRoom",
+            "x": 89,
+            "y": 79
+          }
+        ],
+        "sections": [
+          {
+            "name": "Zelda",
+            "chest_unopened_img": "images/checks/chest_small_unopened.png",
+            "chest_opened_img": "images/checks/chest_small_opened.png",
+            "access_rules": [
+              "fsword, $can_reach_final_boss",
+              "[swordless], net, $can_reach_final_boss, $attack",
+              "[hard], net, $can_reach_final_boss"
+            ],
+            "capture_item": true,
+            "hosted_item": "lc_chest_15"
+          }
+        ]
+      },
+      {
+        "name": "Lorule Castle",
+        "color": "#ffdf4f",
+        "map_locations": [
+          {
+            "map": "throneRoom",
+            "x": 89,
+            "y": 26,
+            "size": 24
+          }
+        ],
+        "sections": [
+          {
+            "name": "Triforce",
+            "access_rules": [
+              "bow_of_light, fsword, $can_reach_final_boss",
+              "bow_of_light, [swordless], net, $can_reach_final_boss",
+              "bow_of_light, [hard], net, $can_reach_final_boss"
+            ],
+            "hosted_item": "triforce_full"
+          }
+        ]
+      },
+      {
+        "name": "Lorule Castle",
+        //        "color": "#ffdf4f",
+        "map_locations": [
+          {
+            "map": "lorule",
+            "x": 1024,
+            "y": 934
+          }
+        ],
+        "sections": [
+          {
+            "name": "(1F) Center",
+            "hosted_item": "lc_chest_01",
+            "access_rules": [
+              "{csmc}",
+              "$lc2F"
+            ]
+          },
+          {
+            "name": "(1F) Ledge",
+            "hosted_item": "lc_chest_02",
+            "access_rules": [
+              "merge"
+            ]
+          },
+          {
+            "name": "(2F) Near Torches",
+            "hosted_item": "lc_chest_03",
+            "access_rules": [
+              "$lc2F"
+            ]
+          },
+          {
+            "name": "(2F) Hidden Path",
+            "access_rules": [
+              "$lc2F, $canExtinguishTorches",
+              "$lc2F, [hard]"
+            ],
+            "hosted_item": "lc_chest_04"
+          },
+          {
+            "name": "(2F) Ledge",
+            "hosted_item": "lc_chest_05",
+            "access_rules": [
+              "$lc2F, merge",
+              "[glitched], $lc2F, boots",
+              "[advanced], $lc2F"
+            ]
+          },
+          {
+            "name": "(4F) Center",
+            "hosted_item": "lc_chest_06",
+            "access_rules": [
+              "$lc2F, $lc_small_keys|1",
+              "[advanced], $advanced_lc3F4F"
+            ]
+          },
+          {
+            "name": "(4F) Hidden Path",
+            "access_rules": [
+              "$lc2F, $lc_small_keys|1, $canExtinguishTorches",
+              "$lc2F, $lc_small_keys|1, [hard]",
+              "[advanced], $advanced_lc3F4F"
+            ],
+            "hosted_item": "lc_chest_07"
+          },
+          {
+            "name": "(3F) Bomb Trial (1)",
+            "access_rules": [
+              "{csmc}",
+              "bombs",
+              "[glitched], irod"
+            ],
+            "hosted_item": "lc_chest_08"
+          },
+          {
+            "name": "(3F) Bomb Trial (2)",
+            "access_rules": [
+              "{csmc}",
+              "bombs, merge",
+              "[hard], bombs, bow",
+              "[], niceirod"
+            ],
+            "capture_item": true,
+            "hosted_item": "lc_chest_09"
+          },
+          {
+            "name": "(3F) Tile Trial (1)",
+            "hosted_item": "lc_chest_10",
+            "access_rules": [
+              "$lc2F"
+            ]
+          },
+          {
+            "name": "(3F) Tile Trial (2)",
+            "capture_item": true,
+            "hosted_item": "lc_chest_11",
+            "access_rules": [
+              "$lc2F, merge"
+            ]
+          },
+          {
+            "name": "(4F) Lamp Trial",
+            "access_rules": [
+              "$lc2F, $fire, $lc_small_keys|1",
+              "[hard], $lc2F, $lc_small_keys|1",
+              "[advanced], $advanced_lc3F4F"
+            ],
+            "capture_item": true,
+            "hosted_item": "lc_chest_12"
+          },
+          {
+            "name": "(4F) Hookshot Trial (1)",
+            "access_rules": [
+              "$lc2F, hookshot, $lc_small_keys|1",
+              "[advanced], $advanced_lc3F4F, hookshot",
+              "[advanced], $advanced_lc3F4F, irod"
+            ],
+            "hosted_item": "lc_chest_14"
+          },
+          {
+            "name": "(4F) Hookshot Trial (2)",
+            "access_rules": [
+              "$lc2F, hookshot, merge, $lc_small_keys|1",
+              "$lc2F, hookshot, irod, $lc_small_keys|1",
+              "[advanced], $advanced_lc3F4F, hookshot",
+              "[advanced], $advanced_lc3F4F, irod"
+            ],
+            "capture_item": true,
+            "hosted_item": "lc_chest_13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lorule Castle",
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 1144,
+        "y": 792,
+        "size": 120,
+        "badge_size": 40
+      }
+    ],
+    "sections": [
+      {
+        "name": "Zelda",
+        "capture_item": true,
+        "hosted_item": "lc_chest_15",
+        "chest_unopened_img": "images/checks/chest_small_unopened.png",
+        "chest_opened_img": "images/checks/chest_small_opened.png",
+        "access_rules": [
+          "fsword, $can_reach_final_boss",
+          "[swordless], net, $can_reach_final_boss",
+          "[hard], net, $can_reach_final_boss"
+        ]
+      },
+      {
+        "name": "Triforce",
+        "access_rules": [
+          "bow_of_light, fsword, $can_reach_final_boss",
+          "bow_of_light, [swordless], net, $can_reach_final_boss",
+          "bow_of_light, [hard], net, $can_reach_final_boss"
+        ],
+        "hosted_item": "triforce_full"
+      }
+    ]
+  },
+  {
+    "name": "Lorule Castle",
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 1024,
+        "y": 792,
+        "badge_size": 40
+      },
+      {
+        "map": "throneRoom",
+        "x": 89,
+        "y": 133
+      }
+    ],
+    "sections": [
+      {
+        "name": "Lorule Castle Crack",
+        "hosted_item": "crack_lc",
+        "access_rules": [
+          "crack_lc",
+          "{$inspect_crack_lorule}",
+          "merge, quake, $lc2F, lc_trials_door"
+        ],
+        "visibility_rules": [
+          "cracksanity"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lorule Castle",
+    "map_locations": [
+      {
+        "map": "lorule",
+        "x": 1024,
+        "y": 863
+      },
+      {
+        "map": "lorule3F",
+        "x": 96.5,
+        "y": 93
+      }
+    ],
+    "sections": [
+      {
+        "name": "Lorule Castle Trials Door",
+        "access_rules": [
+          "{not_cracksanity, crack_hc}",
+          "{cracksanity, crack_lc}",
+          "$canEnterLC, $lc2F, [$lc_small_keys|5]",
+          "[advanced], $advanced_canEnterLC, $lc2F, [$lc_small_keys|5]",
+          "[hell], $hell_canEnterLC, $lc2F, [$lc_small_keys|5]"
+        ],
+        "hosted_item": "lc_trials_door"
+      }
+    ]
+  }
+]

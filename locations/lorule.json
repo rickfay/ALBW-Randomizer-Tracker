@@ -222,12 +222,11 @@
                 "access_rules": [
                   "merge, bow",
                   "merge, bombs",
-                  "merge, fsword",
+                  "merge, fsword, great_spin",
                   "merge, niceirod",
-                  "merge, nicetrod",
                   "merge, nicehookshot",
-                  "[hard], merge, power_glove, lamp",
-                  "[hard], merge, power_glove, net"
+                  "[hard], merge, msword",
+                  "[hard], merge, fsword, power_glove"
                 ],
                 "capture_item": true,
                 "item_count": 1

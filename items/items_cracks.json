@@ -32,8 +32,8 @@
     "codes": "crack_hc",
     "type": "toggle",
     "loop": true,
-    "img": "images/misc/Crack.png",
-    "disabled_img": "images/misc/Crack_Off.png",
+    "img": "images/misc/Crack_HC.png",
+    "disabled_img": "images/misc/Crack_HC_Off.png",
   },
 
   // Lorule Cracks

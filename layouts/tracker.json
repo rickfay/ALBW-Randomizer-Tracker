@@ -80,7 +80,7 @@
                     "content": [
                       {
                         "type": "container",
-                        "h_alignment": "center",
+                        "h_alignment": "left",
                         "content": {
                           "type": "recentpins",
                           "orientation": "horizontal"

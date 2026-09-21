@@ -8,8 +8,6 @@
         "orientation": "horizontal",
         "h_alignment": "center",
         "v_alignment": "center",
-        "max_width": 750,
-        "style": "wrap",
         "content": [
           {
             "type": "container",

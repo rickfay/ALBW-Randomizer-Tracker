@@ -27,6 +27,18 @@
         ]
       },
       {
+        "type": "itemgrid",
+        "dropshadow": true,
+        "h_alignment": "left",
+        "item_size": "44",
+        "item_margin": "46,165,0,0",
+        "rows": [
+          [
+            "crack_hc"
+          ]
+        ]
+      },
+      {
         "type": "container",
         "content": [
           {
@@ -79,7 +91,7 @@
                 "wisdom",
                 "power",
                 "courage",
-                "",
+                "", //"triforce_courage",
                 "bow_of_light"
               ]
             ]

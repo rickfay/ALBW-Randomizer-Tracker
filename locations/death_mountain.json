@@ -330,7 +330,6 @@
               "[advanced], $adv_glitched_access_dm_east_top, premium_milk, merge",
               "[advanced], $adv_glitched_access_dm_east_top, premium_milk, trod, boots"
             ],
-            "hosted_item": "bottle",
             "capture_item": true,
             "item_count": 1
           }

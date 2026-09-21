@@ -573,8 +573,8 @@
       {
         "name": "Lorule Castle Trials Door",
         "access_rules": [
-          "{not_cracksanity, crack_hc}",
-          "{cracksanity, crack_lc}",
+          "{not_cracksanity, crack_hc, merge}",
+          "{cracksanity, crack_lc, merge}",
           "$canEnterLC, $lc2F, [$lc_small_keys|5]",
           "[advanced], $advanced_canEnterLC, $lc2F, [$lc_small_keys|5]",
           "[hell], $hell_canEnterLC, $lc2F, [$lc_small_keys|5]"

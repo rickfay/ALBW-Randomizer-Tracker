@@ -512,10 +512,13 @@
             "name": "Desert Palace Crack",
             "access_rules": [
               "{}",
-              "$access_desert_palace, [progression_enemies], [srod], [titansmitt], [$switch], [$attack]",
-              "$access_desert_palace, [no_progression_enemies, bombs], [srod], [titansmitt], [$switch], [$attack]",
-              "[glitched], $glitched_access_desert_palace, [progression_enemies], [srod], [titansmitt], [$switch], [$attack]",
-              "[glitched], $glitched_access_desert_palace, [no_progression_enemies, bombs], [srod], [titansmitt], [$switch], [$attack]"
+              "$access_desert_palace, progression_enemies, srod, titansmitt, $switch, $attack, $dp_small_keys|4, [$dp_small_keys|5], $dp_big_key",
+              "$access_desert_palace, no_progression_enemies, bombs, srod, titansmitt, $switch, $attack, $dp_small_keys|4, [$dp_small_keys|5], $dp_big_key",
+              "[glitched], $glitched_access_desert_palace, progression_enemies, srod, titansmitt, $attack, $dp_small_keys|4, [$dp_small_keys|5], $dp_big_key",
+              "[glitched], $glitched_access_desert_palace, no_progression_enemies, bombs, srod, titansmitt, $dp_small_keys|4, [$dp_small_keys|5], $dp_big_key",
+              "[glitched], $glitched_access_desert_palace, no_progression_enemies, trod, srod, titansmitt, $attack, $dp_small_keys|3, [$dp_small_keys|4], $dp_big_key",
+              "[advanced], $glitched_access_desert_palace, trod, srod, titansmitt, $attack, $dp_small_keys|2",
+              "[advanced], $glitched_access_desert_palace, trod, srod, titansmitt, $attack, boots, $dp_small_keys|1"
             ],
             "visibility_rules": [
               "cracksanity"

@@ -24,6 +24,10 @@ end
 
 -- [Adv Glitched] Lorule Castle Area
 function advanced_access_central_lorule()
+    if access_central_lorule() then
+        return true
+    end
+
     -- Mire SLZ to Swamp Area
     if access_misery_mire() and advanced_misery_mire_oob() then
         return true

@@ -27,14 +27,6 @@
   { "name": "Desert Middle Crack", "codes": "crack_desert_middle", "type": "toggle", "loop": true, "img": "images/misc/Crack.png", "disabled_img": "images/misc/Crack_Off.png" },
   { "name": "Desert SW Crack", "codes": "crack_desert_sw", "type": "toggle", "loop": true, "img": "images/misc/Crack.png", "disabled_img": "images/misc/Crack_Off.png" },
   { "name": "Desert Palace Crack", "codes": "crack_desert_palace", "type": "toggle", "loop": true, "img": "images/misc/Crack.png", "disabled_img": "images/misc/Crack_Off.png" },
-  {
-    "name": "Hyrule Castle Crack",
-    "codes": "crack_hc",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/misc/Crack_HC.png",
-    "disabled_img": "images/misc/Crack_HC_Off.png",
-  },
 
   // Lorule Cracks
   { "name": "Vacant House Crack", "codes": "crack_vacant_house", "type": "toggle", "loop": true, "img": "images/misc/Crack.png", "disabled_img": "images/misc/Crack_Off.png" },

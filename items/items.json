@@ -399,6 +399,13 @@
     ]
   },
   {
+    "name": "Hyrule Castle Crack",
+    "codes": "crack_hc",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/curtain.png"
+  },
+  {
     "name": "Ice Rod",
     "type": "progressive",
     "stages": [
